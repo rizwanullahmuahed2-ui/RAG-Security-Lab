@@ -1,0 +1,243 @@
+{
+  "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.URB.TOTL.IN.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+  "retrieved_at": "2026-09-21T05:53:14.202874+00:00",
+  "response_sha256": "f31d17ff543d707cc6c3af0b99bcff1b1a830983b428fdb5a1992173725eaacf",
+  "response_body": "[{\"page\":1,\"pages\":1,\"per_page\":1000,\"total\":14,\"sourceid\":\"2\",\"lastupdated\":\"2026-07-13\"},[{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2023\",\"value\":25.4730529631167,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2022\",\"value\":25.3939250580909,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2021\",\"value\":25.3478620272481,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2020\",\"value\":25.2622103446137,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2019\",\"value\":25.1437258839803,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2018\",\"value\":24.9991645191406,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2017\",\"value\":24.8352821238871,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2016\",\"value\":24.6588345720126,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2015\",\"value\":24.4649118421568,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2014\",\"value\":24.1910166387726,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2013\",\"value\":23.8077136743646,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2012\",\"value\":23.3434391310979,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2011\",\"value\":22.8205691572485,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"SP.URB.TOTL.IN.ZS\",\"value\":\"Urban population (% of total population)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2010\",\"value\":22.2614799010924,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0}]]",
+  "category": "Demography",
+  "payload": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": 1000,
+      "total": 14,
+      "sourceid": "2",
+      "lastupdated": "2026-07-13"
+    },
+    [
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2023",
+        "value": 25.4730529631167,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2022",
+        "value": 25.3939250580909,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2021",
+        "value": 25.3478620272481,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2020",
+        "value": 25.2622103446137,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2019",
+        "value": 25.1437258839803,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2018",
+        "value": 24.9991645191406,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2017",
+        "value": 24.8352821238871,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2016",
+        "value": 24.6588345720126,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2015",
+        "value": 24.4649118421568,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2014",
+        "value": 24.1910166387726,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2013",
+        "value": 23.8077136743646,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2012",
+        "value": 23.3434391310979,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2011",
+        "value": 22.8205691572485,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.URB.TOTL.IN.ZS",
+          "value": "Urban population (% of total population)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2010",
+        "value": 22.2614799010924,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables / secrets (e.g. ANTHROPIC_API_KEY)
+.env
+
+# ChromaDB persisted data (only created if vector_db.persist_directory is
+# set to a real path in config.yaml instead of the default ephemeral mode —
+# these are large, regenerable binary files that don't belong in git)
+data/chroma/
+data/chroma_test/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
+*.log
+.env.*
+!.env.example
+# Experiment evidence can be large; generated locally and downloadable in the UI.
+results/runs/
+results/latest.json
+results/question-comparisons/
+deliverables/

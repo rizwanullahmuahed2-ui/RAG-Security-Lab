@@ -1,0 +1,243 @@
+{
+  "url": "https://api.worldbank.org/v2/country/AFG/indicator/IT.CEL.SETS.P2?date=2010:2023&format=json&per_page=1000&source=2",
+  "retrieved_at": "2026-09-21T05:53:15.876187+00:00",
+  "response_sha256": "76480b736c08ad17cd767e4fe8663ed92a23415c24eb7cfd229e0526bdaf12e4",
+  "response_body": "[{\"page\":1,\"pages\":1,\"per_page\":1000,\"total\":14,\"sourceid\":\"2\",\"lastupdated\":\"2026-07-13\"},[{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2023\",\"value\":55.5474967036959,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2022\",\"value\":56.2655188632539,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2021\",\"value\":56.6944760468967,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2020\",\"value\":58.0461137722591,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2019\",\"value\":59.6470805870469,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2018\",\"value\":59.8109345283062,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2017\",\"value\":67.0507903920361,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2016\",\"value\":62.2553342863232,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2015\",\"value\":58.256016446556,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2014\",\"value\":56.1322103822265,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2013\",\"value\":53.1490159728276,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2012\",\"value\":50.1966555403702,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2011\",\"value\":47.0151842862822,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"IT.CEL.SETS.P2\",\"value\":\"Mobile cellular subscriptions (per 100 people)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2010\",\"value\":36.1186814254474,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0}]]",
+  "category": "Technology",
+  "payload": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": 1000,
+      "total": 14,
+      "sourceid": "2",
+      "lastupdated": "2026-07-13"
+    },
+    [
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2023",
+        "value": 55.5474967036959,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2022",
+        "value": 56.2655188632539,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2021",
+        "value": 56.6944760468967,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2020",
+        "value": 58.0461137722591,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2019",
+        "value": 59.6470805870469,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2018",
+        "value": 59.8109345283062,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2017",
+        "value": 67.0507903920361,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2016",
+        "value": 62.2553342863232,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2015",
+        "value": 58.256016446556,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2014",
+        "value": 56.1322103822265,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2013",
+        "value": 53.1490159728276,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2012",
+        "value": 50.1966555403702,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2011",
+        "value": 47.0151842862822,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "IT.CEL.SETS.P2",
+          "value": "Mobile cellular subscriptions (per 100 people)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2010",
+        "value": 36.1186814254474,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  ]
+}

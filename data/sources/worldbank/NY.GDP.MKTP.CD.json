@@ -1,0 +1,243 @@
+{
+  "url": "https://api.worldbank.org/v2/country/AFG/indicator/NY.GDP.MKTP.CD?date=2010:2023&format=json&per_page=1000&source=2",
+  "retrieved_at": "2026-09-21T05:53:15.075719+00:00",
+  "response_sha256": "bbe1bbff5ef8fbaccb8c08d36f10c6eaba838ac6c82434bcafe57b1f2bc82bcd",
+  "response_body": "[{\"page\":1,\"pages\":1,\"per_page\":1000,\"total\":14,\"sourceid\":\"2\",\"lastupdated\":\"2026-07-13\"},[{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2023\",\"value\":17152234636.8715,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2022\",\"value\":14497243872.1337,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2021\",\"value\":14259995441.0759,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2020\",\"value\":19955929052.1496,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2019\",\"value\":18799444490.1128,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2018\",\"value\":18053222687.4126,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2017\",\"value\":18753456497.8159,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2016\",\"value\":18116572395.0772,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2015\",\"value\":19134221644.7325,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2014\",\"value\":20497128555.6972,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2013\",\"value\":20146416757.5987,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2012\",\"value\":19907329777.5872,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2011\",\"value\":17805098206.3141,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0},{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2010\",\"value\":15856668555.8336,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0}]]",
+  "category": "Economy",
+  "payload": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": 1000,
+      "total": 14,
+      "sourceid": "2",
+      "lastupdated": "2026-07-13"
+    },
+    [
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2023",
+        "value": 17152234636.8715,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2022",
+        "value": 14497243872.1337,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2021",
+        "value": 14259995441.0759,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2020",
+        "value": 19955929052.1496,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2019",
+        "value": 18799444490.1128,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2018",
+        "value": 18053222687.4126,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2017",
+        "value": 18753456497.8159,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2016",
+        "value": 18116572395.0772,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2015",
+        "value": 19134221644.7325,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2014",
+        "value": 20497128555.6972,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2013",
+        "value": 20146416757.5987,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2012",
+        "value": 19907329777.5872,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2011",
+        "value": 17805098206.3141,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2010",
+        "value": 15856668555.8336,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  ]
+}

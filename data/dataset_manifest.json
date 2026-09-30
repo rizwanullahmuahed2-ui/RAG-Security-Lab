@@ -1,0 +1,103 @@
+{
+  "schema_version": 2,
+  "counts": {
+    "documents": 224,
+    "chunks": 225,
+    "questions": 364,
+    "poisoned_passages": 104
+  },
+  "sources": [
+    {
+      "indicator": "AG.LND.AGRI.ZS",
+      "split": "development",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/AG.LND.AGRI.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:15.940813+00:00",
+      "sha256": "af35f8bc2036632366d79f6f64060fdc4be91a45138318005b97d955265b91a4"
+    },
+    {
+      "indicator": "AG.LND.FRST.ZS",
+      "split": "development",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/AG.LND.FRST.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:16.452545+00:00",
+      "sha256": "28d3a8c9ef08fda91350e7300835b510d4bdb5c7f95b5659d26dcbecf525b027"
+    },
+    {
+      "indicator": "EG.ELC.ACCS.ZS",
+      "split": "development",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/EG.ELC.ACCS.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:16.033507+00:00",
+      "sha256": "c94a466d2e79a01fff75566af637a9601ba3dab08cba5c5fe137e31de8d4c81c"
+    },
+    {
+      "indicator": "IT.CEL.SETS.P2",
+      "split": "development",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/IT.CEL.SETS.P2?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:15.876187+00:00",
+      "sha256": "76480b736c08ad17cd767e4fe8663ed92a23415c24eb7cfd229e0526bdaf12e4"
+    },
+    {
+      "indicator": "IT.NET.USER.ZS",
+      "split": "validation",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/IT.NET.USER.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:15.875247+00:00",
+      "sha256": "71dc2bf9724544303c3f3678688eb0e4901cda6c92cb087b3d8d2251005d4248"
+    },
+    {
+      "indicator": "NY.GDP.MKTP.CD",
+      "split": "validation",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/NY.GDP.MKTP.CD?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:15.075719+00:00",
+      "sha256": "bbe1bbff5ef8fbaccb8c08d36f10c6eaba838ac6c82434bcafe57b1f2bc82bcd"
+    },
+    {
+      "indicator": "NY.GDP.PCAP.CD",
+      "split": "validation",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/NY.GDP.PCAP.CD?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:15.135081+00:00",
+      "sha256": "20bdf6008106a10ff039a4ba1e47c4dc84032744aa32c747f62a98c01558541c"
+    },
+    {
+      "indicator": "SP.DYN.IMRT.IN",
+      "split": "validation",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.DYN.IMRT.IN?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:14.790288+00:00",
+      "sha256": "7d7f371ceb18a3ea58b5f2c5a8f206cc283aca6b79e41a486e517498c53fd221"
+    },
+    {
+      "indicator": "SP.DYN.LE00.IN",
+      "split": "test",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.DYN.LE00.IN?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:14.499756+00:00",
+      "sha256": "be2ee03990ae89e01e83b7ae0dd4fee9538109bf1f57d9ed377b6af0c3341990"
+    },
+    {
+      "indicator": "SP.DYN.TFRT.IN",
+      "split": "test",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.DYN.TFRT.IN?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:14.442513+00:00",
+      "sha256": "b0a87c324558678a11e204e2c99edb22d141b3ccafd02f80a8be25553d22b037"
+    },
+    {
+      "indicator": "SP.POP.TOTL",
+      "split": "test",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.POP.TOTL?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:14.669710+00:00",
+      "sha256": "abd0adbe165a2ef254ee7ed8df41985ab1d6f7af8fb0849d34f842f477eae052"
+    },
+    {
+      "indicator": "SP.URB.TOTL.IN.ZS",
+      "split": "test",
+      "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.URB.TOTL.IN.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+      "retrieved_at": "2026-09-21T05:53:14.202874+00:00",
+      "sha256": "f31d17ff543d707cc6c3af0b99bcff1b1a830983b428fdb5a1992173725eaacf"
+    }
+  ],
+  "legacy_fact_verification": "Inherited; not independently re-audited",
+  "split_policy": "All years and paraphrases of a WDI indicator share a split; legacy is development only",
+  "files": {
+    "chunks.csv": "d67a92e48fef7e2f159c91fdf5fe0a67674b8e9d7c201d15426ea20e1a797275",
+    "documents.csv": "17b66d5e08f67c8f9de1e260719f099ab1d780537e4b29b962c74be1eafc229f",
+    "poisoned_passages.csv": "f3078c6b511a8eb24b7cabc5b7a0988fea64479394f014881fa1a29982438e6f",
+    "questions.csv": "14334e66aa7f6103625399fa4f2bac8ef23be9d5051736faa1beb7237526d71c"
+  }
+}
