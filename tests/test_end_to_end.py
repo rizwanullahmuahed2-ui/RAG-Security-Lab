@@ -10,10 +10,13 @@ pipeline stage for real.
 """
 from __future__ import annotations
 
+import pytest
+
 from src.attacks.poison_generator import create_poisoned_kb
 from src.defenses.source_filter import SourceFilter
 from src.evaluation.evaluator import run_condition
 from src.vectorstore.indexer import index_chunks
+from src.vectorstore.exact_store import ExactVectorStore
 
 
 def test_clean_retrieval_finds_the_right_chunk(tiny_chunks, embedder, store):
@@ -76,3 +79,23 @@ def test_source_filtering_removes_poison_before_generation(
     # should ever appear in the final retrieved set.
     assert all(r["poison_retrieved"] is False for r in records)
     assert all(r["attack_success"] is False for r in records)
+
+
+@pytest.mark.parametrize("apply_reranking", [False, True])
+def test_evidence_keeps_source_urls_through_generation(
+        tiny_chunks, tiny_poison_pool, tiny_questions, embedder, reranker,
+        llm, source_filter, offline_config, apply_reranking):
+    """Exports must retain source links for clean evidence and none for poison."""
+    chunks = tiny_chunks.assign(source_url=lambda frame: "https://example.org/" + frame.document_id)
+    records = run_condition(
+        clean_chunks=chunks, poison_pool=tiny_poison_pool, questions=tiny_questions,
+        embedder=embedder, store=ExactVectorStore(), reranker=reranker,
+        source_filter=source_filter, llm=llm, config=offline_config, poison_count=3,
+        apply_reranking=apply_reranking, apply_filtering=False, collection_name="e2e-provenance",
+    )
+    evidence = [passage for record in records for passage in record["evidence"]]
+    expected = dict(zip(chunks.chunk_id, chunks.source_url))
+    expected.update(dict.fromkeys(tiny_poison_pool.poison_id, ""))
+    assert any(passage["source_url"] for passage in evidence)
+    assert any(passage["chunk_id"] in set(tiny_poison_pool.poison_id) for passage in evidence)
+    assert all(passage["source_url"] == expected[passage["chunk_id"]] for passage in evidence)

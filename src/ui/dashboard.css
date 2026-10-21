@@ -1,0 +1,31 @@
+/* Local assets only. Native Streamlit controls retain labels and keyboard behavior. */
+.stApp { background: #f7f8fc; }
+.block-container { max-width: 1480px; padding-top: 2.4rem; padding-bottom: 3rem; }
+h1, h2, h3 { letter-spacing: -0.035em; }
+h1 { font-weight: 750; }
+[data-testid="stSidebar"] { background: #17233c; }
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] summary,
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"] { color: #edf2ff; }
+[data-testid="stSidebar"] [data-testid="stExpander"] { border-color: #526079; }
+[data-testid="stMetric"] { background: white; border: 1px solid #dfe5f0; border-radius: 14px; padding: 1rem 1.2rem; }
+[data-testid="stMetricLabel"] { color: #53617a; }
+[data-testid="stMetricValue"] { color: #17233c; font-weight: 700; }
+[data-testid="stTabs"] [data-baseweb="tab-list"] { gap: 1.5rem; margin: 1rem 0; border-bottom: 1px solid #dfe5f0; }
+[data-testid="stTabs"] [data-baseweb="tab"] { font-weight: 600; padding: 0.8rem 0.1rem; }
+[data-testid="stExpander"] { background: #fff; border-radius: 12px; }
+[data-testid="stSidebar"] [data-testid="stExpander"] { background: #22334f; }
+[data-testid="stButton"] button, [data-testid="stDownloadButton"] button { border-radius: 9px; font-weight: 600; }
+.lab-kicker { color: #315cf3; font-size: .75rem; font-weight: 750; letter-spacing: .16em; margin-bottom: .5rem; }
+.lab-intro { max-width: 760px; color: #53617a; font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.4rem; }
+.lab-badge { display: inline-block; font-size: .78rem; color: #2445aa; background: #e8edff; border: 1px solid #cbd6ff; border-radius: 30px; padding: .3rem .7rem; margin-bottom: .75rem; }
+.lab-footer { font-size: .8rem; color: #53617a; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #dfe5f0; }
+@media (max-width: 700px) {
+  .block-container { padding-top: 1rem; }
+  [data-testid="stTabs"] [data-baseweb="tab-list"] { gap: .8rem; }
+  [data-testid="stMetric"] { padding: .7rem; }
+}

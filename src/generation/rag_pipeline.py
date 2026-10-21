@@ -37,7 +37,7 @@ def _to_dict(c: RetrievedChunk | RerankedChunk) -> dict[str, Any]:
         return {
             "chunk_id": c.chunk_id, "document_id": c.document_id, "title": c.title,
             "text": c.text,
-            "source": c.source, "trust_level": c.trust_level,
+            "source": c.source, "source_url": c.source_url, "trust_level": c.trust_level,
             "verification_status": c.verification_status,
             "original_rank": c.original_rank, "original_similarity": c.original_similarity,
             "reranked_rank": c.reranked_rank, "rerank_score": c.rerank_score,
@@ -45,7 +45,7 @@ def _to_dict(c: RetrievedChunk | RerankedChunk) -> dict[str, Any]:
     return {
         "chunk_id": c.chunk_id, "document_id": c.document_id, "title": c.title,
         "text": c.text,
-        "source": c.source, "trust_level": c.trust_level,
+        "source": c.source, "source_url": c.source_url, "trust_level": c.trust_level,
         "verification_status": c.verification_status,
         "original_rank": c.rank, "original_similarity": c.similarity_score,
         "reranked_rank": None, "rerank_score": None,

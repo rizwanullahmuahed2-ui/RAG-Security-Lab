@@ -210,7 +210,12 @@ def validate_relationships(documents, chunks, questions, poisoned) -> None:
             raise DataValidationError(f"{poison.poison_id}: target query or ground truth mismatch")
         if poison.correct_answer.casefold().strip() == poison.attacker_false_information.casefold().strip():
             raise DataValidationError(f"{poison.poison_id}: false claim equals ground truth")
-    missing = set(questions.loc[questions.targeted_for_attack, "attack_id"]) - set(poisoned.attack_id)
+    # Check the question/attack pair, not just the attack ID: two questions
+    # sharing an ID must not make an unassigned target appear covered.
+    targeted = questions.loc[questions.targeted_for_attack, ["question_id", "attack_id"]]
+    assigned = set(zip(poisoned.target_question_id, poisoned.attack_id))
+    missing = [question_id for question_id, attack_id in targeted.itertuples(index=False, name=None)
+               if (question_id, attack_id) not in assigned]
     if missing:
         raise DataValidationError(f"Targeted questions missing poisons: {sorted(missing)}")
     if set(chunks.chunk_id) & set(poisoned.poison_id):

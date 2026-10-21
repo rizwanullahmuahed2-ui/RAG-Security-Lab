@@ -76,6 +76,14 @@ def test_provenance_mismatch_rejected(tiny_documents, tiny_chunks, tiny_question
         validate_relationships(tiny_documents, tiny_chunks, tiny_questions, tiny_poison_pool)
 
 
+def test_shared_attack_id_does_not_hide_unassigned_target(
+        tiny_documents, tiny_chunks, tiny_questions, tiny_poison_pool):
+    questions = tiny_questions.assign(targeted_for_attack=tiny_questions.targeted_for_attack.eq("True"))
+    questions.loc[3, ["targeted_for_attack", "attack_id"]] = [True, "TATK-1"]
+    with pytest.raises(DataValidationError, match="Targeted questions missing poisons.*TQ-4"):
+        validate_relationships(tiny_documents, tiny_chunks, questions, tiny_poison_pool)
+
+
 def test_config_paths_independent_of_working_directory(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     config = load_config(ROOT / "config.yaml")
@@ -167,6 +175,15 @@ def test_invalid_chunk_parameters(size, overlap):
 def test_invalid_config_rejected(offline_config):
     offline_config.retrieval.candidate_k = 1
     with pytest.raises(ValueError, match="candidate_k"):
+        offline_config.validate()
+
+
+@pytest.mark.parametrize("seed", [-1, 2**32, True, 42.0, "42"])
+@pytest.mark.parametrize("section", ["config", "poisoning"])
+def test_invalid_config_seed_rejected(offline_config, seed, section):
+    target = offline_config if section == "config" else offline_config.poisoning
+    target.random_seed = seed
+    with pytest.raises(ValueError, match="random_seed must be an integer"):
         offline_config.validate()
 
 

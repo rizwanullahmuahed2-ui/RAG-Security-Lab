@@ -1,0 +1,5 @@
+# Keep dataset byte hashes identical in Windows and Unix checkouts.
+data/raw/*.csv text eol=lf
+data/legacy/*.csv text eol=lf
+documents.csv text eol=lf
+data/dataset_manifest.json text eol=lf

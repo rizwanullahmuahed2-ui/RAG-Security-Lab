@@ -53,3 +53,29 @@ def test_repeated_mode_is_connected_to_question_runner():
     assert saved["mode"] == REPEATED
     assert saved["target_copies_injected"] == 20
     assert len(saved["poison_ids"]) == 20
+
+
+def test_question_search_empty_state_and_recovery():
+    app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py"), default_timeout=30).run()
+    app.text_input(key="question_search").set_value("no-question-matches-this-literal-[").run()
+    assert not app.exception
+    assert app.button[0].disabled
+    assert any("No benchmark questions" in item.value for item in app.warning)
+    app.text_input(key="question_search").set_value("capital").run()
+    assert not app.exception and not app.button[0].disabled
+    app.button[0].click().run()
+    assert not app.exception and app.text_area[0].value
+    evidence = app.session_state["answer"]["result"].retrieved_documents
+    assert evidence and any(row["source_url"].startswith("https://") for row in evidence)
+    assert any("Similarity and rerank" in item.value for item in app.caption)
+
+
+def test_duplicate_seeds_show_actionable_error_without_starting_run(monkeypatch):
+    def execute(*args, **kwargs):
+        raise AssertionError("Invalid inputs must not launch the experiment")
+    monkeypatch.setattr("src.evaluation.runner.execute", execute)
+    app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py"), default_timeout=30).run()
+    next(item for item in app.text_input if item.label == "Selection seeds for this experiment").set_value("42 42").run()
+    app.button(key="compare_levels").click().run()
+    assert not app.exception
+    assert any("Use each seed once" in item.value for item in app.error)

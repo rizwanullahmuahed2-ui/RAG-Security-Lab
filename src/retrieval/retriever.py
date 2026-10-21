@@ -26,6 +26,7 @@ class RetrievedChunk:
     rank: int
     trust_level: str
     verification_status: str
+    source_url: str = ""
 
     @classmethod
     def from_hit(cls, hit: dict[str, Any]) -> "RetrievedChunk":
@@ -39,6 +40,7 @@ class RetrievedChunk:
             rank=hit["rank"],
             trust_level=hit.get("trust_level", ""),
             verification_status=hit.get("verification_status", ""),
+            source_url=hit.get("source_url", ""),
         )
 
 

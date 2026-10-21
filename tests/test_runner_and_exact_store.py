@@ -9,6 +9,18 @@ from src.vectorstore.indexer import index_chunks
 from src.evaluation.runner import execute
 
 
+@pytest.fixture
+def runner_config(tmp_path, offline_config, tiny_documents, tiny_chunks,
+                  tiny_questions, tiny_poison_pool):
+    offline_config.project_root = tmp_path
+    for name, frame in [("documents", tiny_documents), ("chunks", tiny_chunks),
+                        ("questions", tiny_questions), ("poisoned_passages", tiny_poison_pool)]:
+        path = tmp_path / f"{name}.csv"
+        frame.to_csv(path, index=False)
+        setattr(offline_config.paths, f"{name}_csv", str(path))
+    return offline_config
+
+
 def test_exact_ties_stable_under_insertion_order():
     store = ExactVectorStore()
     vectors = np.asarray([[1., 0.], [1., 0.], [0., 1.]])
@@ -84,3 +96,21 @@ def test_fallback_disabled_by_default(monkeypatch, offline_config):
         get_embedding_service(offline_config)
     offline_config.allow_fallback = True
     assert get_embedding_service(offline_config).backend_name.startswith("hashing")
+
+
+def test_clean_run_ignores_unused_poison_budgets(runner_config, monkeypatch):
+    """A clean baseline does not require passages from unused grid conditions."""
+    runner_config.poisoning.counts = [0, 10]
+    monkeypatch.setattr("src.evaluation.runner.generate_all_figures", lambda *args: None)
+    output, summary = execute(runner_config, experiment="clean")
+    assert summary.poison_count.tolist() == [0]
+    assert json.loads((output / "manifest.json").read_text())["n_records"] == 4
+    with pytest.raises(ValueError, match="exceeds available"):
+        execute(runner_config, experiment="poisoning")
+
+
+@pytest.mark.parametrize("seeds", [[], [17, 17], [-1], [2**32], [True], [17.0], ["17"]])
+def test_runner_rejects_invalid_seeds_before_allocating_run(runner_config, seeds):
+    with pytest.raises(ValueError, match="Seeds must be unique integers"):
+        execute(runner_config, experiment="clean", seeds=seeds)
+    assert not (runner_config.project_root / "results").exists()

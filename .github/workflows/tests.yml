@@ -1,9 +1,19 @@
 name: Offline regression tests
 on: [push, pull_request]
+permissions:
+  contents: read
+concurrency:
+  group: offline-tests-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      HF_HUB_OFFLINE: '1'
+      TRANSFORMERS_OFFLINE: '1'
     strategy:
+      fail-fast: false
       matrix:
         python-version: ['3.11', '3.13']
     steps:

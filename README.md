@@ -6,9 +6,22 @@ A reproducible research workbench for measuring knowledge-base poisoning against
 
 The default configuration runs locally without model downloads or paid API calls. It uses hashed lexical embeddings, deterministic exact cosine search, a TF-IDF reranker, and sentence extraction. These are **offline demonstration results**, not evidence about a reasoning LLM's robustness.
 
-## Start on Windows
+![Evidence workbench](docs/dashboard.png)
 
-Use Python 3.11–3.13. From this project directory:
+## Run locally
+
+Use Python 3.11–3.13. Clone the repository and run these commands from its root.
+
+**Linux / macOS**
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python main.py --validate-only
+.venv/bin/python -m streamlit run app.py
+```
+
+**Windows PowerShell**
 
 ```powershell
 python -m venv .venv
@@ -17,105 +30,56 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-If your active Python environment already contains the dependencies:
+Open the local URL printed by Streamlit, usually `http://localhost:8501`. Dataset validation checks table relationships without loading models. After activating an environment, the examples below use `python` directly.
 
-```powershell
-python -m streamlit run app.py
-```
+## Inspect an attack
 
-The UI provides searchable benchmark questions, custom queries, poison budgets, four defense configurations, visible evidence, exports, a multi-seed experiment runner, historical run selection, and dataset/source exploration.
+1. In **Ask & inspect**, select a benchmark question and run it with zero injected passages.
+2. Choose a poison budget and a defense, then run the same question again. Changed settings hide the previous answer until it is recomputed.
+3. Inspect the returned passages: distinguish source metadata, synthetic poison, retrieval score, and the question's assigned target attack. Download evidence for manual review.
+4. Use **Compare this question across levels** for one question, or the experiment runner for benchmark-wide comparisons.
 
-## Experiments
+The dashboard provides searchable questions, custom queries, four defenses, evidence exports, a multi-seed runner, historical run selection, and dataset exploration. The default configuration runs offline; the sidebar identifies configured backends.
 
-```powershell
+## Experiments and evidence
+
+```bash
 python main.py --offline --experiment clean
 python main.py --offline --experiment all --seeds 17 42 91
 python main.py --offline --experiment all --split test --seeds 17 42 91
 python -m pytest -q
 ```
 
-`--experiment` also accepts `poisoning`, `reranking`, `source_filtering`, and `filtering` (reranking plus filtering). The default grid is five budgets (0, 10, 20, 50, 104 passages) × four defenses = 20 configurations per seed. All questions are evaluated by default. A three-seed full run produces 21,840 per-question observations.
+The default grid is five poison budgets (0, 10, 20, 50, 104) × four defenses, or 20 configurations per seed. Three seeds across all 364 questions produce 21,840 observations. `--experiment` also accepts `poisoning`, `reranking`, `source_filtering`, and `filtering` (both defenses). Use `--config path/to/config.yaml` for alternative settings; paths resolve from that file.
 
-### Comparing poisoning levels and understanding seeds
+A selection seed controls the attack-pool shuffle. With the same dataset and seed, a budget of 20 includes the first 10 passages plus 10 more. In repeated-target stress mode, copies of one assigned attack are duplicate evidence; changing the seed does not change their text. More injected passages may leave an answer unchanged when retrieval, defenses, or the finite context prevent additional exposure.
 
-In the sidebar, select any available poison count (including 10, 20, and 50). Changing a setting hides the previous answer until you click **Run question**, so an old answer cannot be mistaken for a fresh result. The UI shows the count at which the selected question's poison enters the KB and how many poisoned passages reached the final context.
+Each experiment saves a unique directory under `results/runs/` with answers, retrieved evidence, metrics, charts, settings, actual backends, and input/code hashes. Failed runs retain a failure manifest and never replace the latest completed run. Generated evidence is Git-ignored, so a fresh clone has no completed benchmark runs in the dashboard.
 
-For an aggregate comparison, click **Compare poisoned answers: 0, 10, 20, 50** in the experiments tab. It tests the same question split, seed(s), and selected defense at all four levels and saves the results with the usual provenance. The count table and chart show successful poisoned answers, targets actually attacked, and the number of questions tested. `n_poisoned_answers` is also included in exported summaries.
+See the [experiment and evidence guide](docs/EXPERIMENTS.md) for exact controls, seeds, exported files, dataset reconstruction, scoring definitions, and optional backends.
 
-A **seed** is a number controlling the shuffle used to select passages. Seed 42 gives the same selection on repeated runs with the same dataset. At that seed, 20 passages contains the first 10 plus 10 more. Seed 17 gives a different shuffle, not a stronger attack. Start with 42; enter `17 42 91` to test sensitivity to three selections. It is an attack-selection seed, not an LLM randomness/temperature setting.
+## Data and interpretation
 
-In **Ask & inspect**, choose between **Benchmark: attacks across different questions** and **Stress test: repeat attack on this question**. The stress test inserts exactly the selected number of copies of one assigned false passage, all marked untrusted. These are deliberately duplicate evidence, not independent sources; the seed does not change their text. Only questions with an assigned attack are available in this mode.
+The corpus combines 56 inherited documents with 168 World Bank WDI observations: 12 indicators for 2010–2023, each with two question phrasings. All inherited documents are searchable; their original active index covered only 20. Canonical inputs are `data/raw/*.csv`; originals remain in `data/legacy/`. The [dataset card](data/DATASET_CARD.md) records source snapshots, terms, rounding, family-level splits, and verification boundaries. WDI values were checked against saved API responses; legacy labels are inherited and have not all been independently re-audited.
 
-Click **Compare this question across levels** to test 0, 1, 5, 10, 20, and 50 passages against the same question and defense. The table shows actual answers and target copies reaching context; JSON downloads include evidence, settings, backends and dataset hashes. Results are also saved in `results/question-comparisons/`. This stress test stays separate from benchmark-wide summaries. Once the finite retrieved context is saturated, adding more copies may leave the answer unchanged.
+Attack success requires the question's own poison in the final context, its false value in the answer, and absence of the true value. Compare both denominators: all targets and targets actually injected. Answer matching is lexical; negation, semantic equivalence, and time conflicts require manual review. Years and paraphrases are correlated, so Wilson intervals are descriptive and seed variation is not a significance test. Source filtering assumes trustworthy ingestion metadata and does not establish protection against compromised trusted sources.
 
-More poisoned passages do not guarantee a different answer to every individual question. New passages may attack other questions, fail retrieval, be filtered, or leave the answerer's best sentence unchanged. The default offline generator sees only the final context (usually five passages) and deterministically selects a sentence; it is not a reasoning LLM. The benchmark measures whether poisoned-answer counts rise, plateau, or fall; it never forces a rising curve.
-
-Configuration paths resolve from the location of `config.yaml`, so launching `main.py` with an absolute path works from other directories. `reranking.final_k` controls reranked context length; `retrieval.top_k` controls the other conditions. Keep them equal for comparable context budgets.
-
-`vector_db.backend: exact` scores every eligible vector and breaks ties by chunk ID, avoiding approximate-search variability. This is appropriate for the included corpus. Set it to `chroma` for larger experiments; Chroma uses approximate cosine search and may produce small ranking differences across rebuilt indexes. The experiment runner always uses fresh in-memory indexes; `persist_directory` remains available to direct Chroma library callers but is not used by the runner.
-
-## Dataset and provenance
-
-The original project contained 56 documents but indexed only 20 of them. All 56 are now searchable. The additional 168 documents are World Bank WDI observations covering 12 indicators for 2010–2023. Each has two question phrasings, yielding 336 new questions. Original inputs remain under `data/legacy/`.
-
-```powershell
-# Deterministic rebuild from saved responses; no network required:
-python scripts/build_dataset.py
-# Fetch only missing source snapshots:
-python scripts/fetch_worldbank.py
-# Intentionally update source snapshots, then rebuild:
-python scripts/fetch_worldbank.py --refresh
-python scripts/build_dataset.py
-```
-
-Canonical inputs are `data/raw/*.csv`; root `documents.csv` is a synchronized compatibility copy. Edit the canonical inputs for ordinary experiments. The builder intentionally reconstructs from `data/legacy/` and the saved API snapshots, so preserve custom edits separately before invoking it.
-
-Read [the dataset card](data/DATASET_CARD.md) for provenance, rounding, correlated paraphrases, family-level splits, source terms, and verification boundaries. New observations are checked against saved API responses. The original 56 documents retain inherited verification labels and have not all been independently re-audited.
-
-## What a run saves
-
-Every run receives a unique `results/runs/<timestamp>_<id>/` directory:
-
-- `manifest.json`: completion status, actual backends, dataset/code hashes, package versions, seeds, scope and limitations.
-- `config.json`: effective configuration.
-- `results.csv`: per-question answers, scores, exact target exposure, retrieved text and metadata, latency, split and seed.
-- `summary_metrics.csv`: per-condition, per-seed metrics and descriptive Wilson intervals.
-- `seed_summary.csv`: mean and standard deviation across attack-selection seeds.
-- `by_category.csv`, `by_split.csv`: subgroup summaries.
-- `figures/`: dose-response and defense comparisons from actual measured results.
-
-`results/latest.json` points to the latest completed run. Old runs are never merged into new summaries. Failed runs retain a failure manifest and never replace that pointer. Run evidence can be large and is excluded from Git by default.
-
-## Scoring and threat model
-
-An attacker can add passages, but cannot alter legitimate documents or assign trusted ingestion metadata. Compare no defense, reranking, source filtering, and both defenses. Source filtering runs inside vector retrieval so untrusted documents cannot exhaust the candidate pool. This is an idealized provenance policy, not a learned poison detector.
-
-The results distinguish:
-
-- Any poison retrieved vs the specific target's poison retrieved.
-- Target selected for attack vs its poison actually injected at this budget.
-- Answer containment accuracy vs strict normalized exact match and token F1.
-- All-target attack success rate vs attack success among actually attacked questions.
-- Ambiguous answers containing both true and false values, which require manual review.
-
-Attack success requires the target's own poison in the final context, a match to its false claim, and no simultaneous match to the true value. Numeric boundaries prevent `34` matching `134`. Scoring remains lexical: negation, semantic equivalence, and temporal inconsistencies still require human assessment. Exported evidence makes this review possible.
-
-WDI years and paraphrases are correlated, and seed variation only changes poison selection. Wilson intervals are descriptive; seed standard deviation is not a significance test. A filtering defense with zero ASR under trusted metadata is not proof of safety against compromised trusted sources.
-
-## Optional neural and API backends
-
-```powershell
-python -m pip install -r requirements-models.txt
-```
-
-Set `embedding_backend: sentence_transformers` and `reranking.backend: cross_encoder` in `config.yaml`. Initial use downloads model weights. Leave `allow_fallback: false` for fail-fast experiments; explicitly enable fallback only when that is part of the experiment design. The manifest records what actually loaded.
-
-For generative experiments, the existing Anthropic integration remains available: set `llm_backend: anthropic`, supply a provider-supported `llm_model`, and set `ANTHROPIC_API_KEY` in your environment. Do not put credentials in project files. API generation incurs provider usage; it was not used for the supplied validation run. A full grid generates one request per question per condition per seed.
-
-The offline pipeline is tested here; the neural and paid API paths require separate integration validation in your chosen environment.
+Historical measurements in [VALIDATION.md](VALIDATION.md) describe earlier local runs whose full directories are not committed. The separately committed `results/targeted-mode-validation/` contains targeted-mode validation artifacts. Optional neural retrieval and the existing Anthropic integration require separate configuration and validation; the [guide](docs/EXPERIMENTS.md#optional-neural-and-api-backends) explains downloads, usage costs, and fallback controls.
 
 ## Development and review
 
-[REVIEW.md](REVIEW.md) documents the weaknesses and fixes. [VALIDATION.md](VALIDATION.md) records completed checks and benchmark observations. `requirements-tested.txt` records exact direct dependency versions used locally; it is not a complete transitive lockfile. GitHub Actions is configured for offline tests on Python 3.11 and 3.13, but hosted CI has not been executed in this session.
+[REVIEW.md](REVIEW.md) documents earlier remediation. [VALIDATION.md](VALIDATION.md) retains historical checks and benchmark observations; [REVIEW_NOTES.md](REVIEW_NOTES.md) records this refresh and its verified checks. `requirements-tested.txt` records direct dependency versions from the historical Windows validation, not a full transitive lockfile. GitHub Actions is configured for dataset validation and offline tests on Python 3.11 and 3.13; consult workflow runs for hosted execution status.
 
-Architecture: `src/data` → `src/embeddings` + `src/vectorstore` → `src/retrieval` → `src/defenses` → `src/generation` → `src/evaluation`. The CLI and dashboard share the same pipeline, scoring functions, and experiment runner.
+| Location | Responsibility |
+|---|---|
+| `app.py`, `src/ui/` | Streamlit workbench and presentation helpers |
+| `main.py`, `config.yaml` | CLI entry point and shared configuration |
+| `src/data`, `src/preprocessing` | Validated tables and text preparation |
+| `src/embeddings`, `src/vectorstore`, `src/retrieval` | Evidence indexing and retrieval |
+| `src/defenses`, `src/generation` | Filtering, reranking, answer generation |
+| `src/evaluation` | Shared scoring, experiment runner, exports and charts |
+| `tests/` | Offline regressions and Streamlit interactions |
+| `data/` | Canonical inputs, legacy tables and source snapshots |
+| `research/` | Status and location of the unpublished manuscript |
+
+The CLI and dashboard share the pipeline, scoring functions, and experiment runner. The project owner reports an **approved but unpublished** RAG research paper; its manuscript has not yet been supplied. See [research/README.md](research/README.md) for its delivery location and status boundaries.

@@ -60,7 +60,7 @@ def test_dashboard_custom_capital_with_zero_poison():
     app=AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'),default_timeout=30).run()
     from src.evaluation.question_comparison import SPREAD
     app.radio(key='attack_mode').set_value(SPREAD).run()
-    app.text_input[0].set_value('what is capital of afghanistan').run()
+    app.text_input(key='custom_question').set_value('what is capital of afghanistan').run()
     app.button[0].click().run()
     assert not app.exception and not app.error
     saved=app.session_state['answer']

@@ -123,6 +123,10 @@ class Config:
             raise ValueError("poisoning.counts must be unique and include clean baseline 0")
         if type(self.allow_fallback) is not bool:
             raise ValueError("allow_fallback must be a boolean")
+        for name, value in (("random_seed", self.random_seed),
+                            ("poisoning.random_seed", self.poisoning.random_seed)):
+            if type(value) is not int or not 0 <= value < 2**32:
+                raise ValueError(f"{name} must be an integer in [0, 2**32)")
         if not self.filtering.allowed_trust_levels or not self.filtering.allowed_verification_statuses:
             raise ValueError("Filtering allow lists must not be empty")
 

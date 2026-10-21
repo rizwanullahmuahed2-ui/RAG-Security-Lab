@@ -99,7 +99,10 @@ def build() -> dict:
                         f"This revised World Bank WDI entry for indicator {code} supersedes earlier reporting for {year}.")
                     poisons.append(poison)
     for name, rows in zip(tables, (docs, chunks, questions, poisons)):
-        pd.DataFrame(rows).to_csv(raw / f"{name}.csv", index=False)
+        # Match the bytes committed to Git on every platform. Pandas defaults
+        # to the host line separator, which previously invalidated hashes on
+        # Linux after a dataset was generated on Windows.
+        pd.DataFrame(rows).to_csv(raw / f"{name}.csv", index=False, lineterminator="\n")
     # Keep the user's legacy root-level filename synchronized, not a competing data source.
     shutil.copy2(raw / "documents.csv", ROOT / "documents.csv")
     validated = load_all(load_config(ROOT / "config.yaml").paths)
@@ -107,7 +110,8 @@ def build() -> dict:
                 "sources": sources, "legacy_fact_verification": "Inherited; not independently re-audited",
                 "split_policy": "All years and paraphrases of a WDI indicator share a split; legacy is development only",
                 "files": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(raw.glob("*.csv"))}}
-    (ROOT / "data" / "dataset_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    (ROOT / "data" / "dataset_manifest.json").write_text(
+        json.dumps(manifest, indent=2), encoding="utf-8", newline="\n")
     return manifest
 
 

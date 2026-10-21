@@ -60,12 +60,12 @@ def execute(config, experiment="all", seeds=None, split="all", progress=None):
         questions = questions.loc[questions["split"] == split]
     if questions.empty:
         raise ValueError("No questions selected")
-    if max(config.poisoning.counts) > len(data["poisoned_passages"]):
+    plan = build_plan(experiment, config.poisoning.counts)
+    if max(count for count, *_ in plan) > len(data["poisoned_passages"]):
         raise ValueError("Configured poison count exceeds available poison pool")
     seeds = seeds if seeds is not None else [config.poisoning.random_seed]
     if not seeds or len(seeds) != len(set(seeds)) or any(type(s) is not int or not 0 <= s < 2**32 for s in seeds):
         raise ValueError("Seeds must be unique integers in [0, 2**32)")
-    plan = build_plan(experiment, config.poisoning.counts)
     root = config.resolve("results")
     run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "_" + uuid4().hex[:8]
     output = root / "runs" / run_id

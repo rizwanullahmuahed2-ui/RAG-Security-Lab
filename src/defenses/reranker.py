@@ -39,6 +39,7 @@ class RerankedChunk:
     original_similarity: float
     reranked_rank: int
     rerank_score: float
+    source_url: str = ""
 
 
 class Reranker(abc.ABC):
@@ -73,6 +74,7 @@ class CrossEncoderReranker(Reranker):
                 trust_level=candidates[i].trust_level, verification_status=candidates[i].verification_status,
                 original_rank=candidates[i].rank, original_similarity=candidates[i].similarity_score,
                 reranked_rank=new_rank, rerank_score=float(scores[i]),
+                source_url=candidates[i].source_url,
             )
             for new_rank, i in enumerate(order, start=1)
         ]
@@ -108,6 +110,7 @@ class LexicalOverlapReranker(Reranker):
                 trust_level=candidates[i].trust_level, verification_status=candidates[i].verification_status,
                 original_rank=candidates[i].rank, original_similarity=candidates[i].similarity_score,
                 reranked_rank=new_rank, rerank_score=float(scores[i]),
+                source_url=candidates[i].source_url,
             )
             for new_rank, i in enumerate(order, start=1)
         ]
