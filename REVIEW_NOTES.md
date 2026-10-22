@@ -11,4 +11,4 @@ Verified locally on 21 October 2026:
 - `python main.py --offline --experiment clean --split test`: 112 questions evaluated, seed 42, no injected passages. [Saved summary](docs/validation/clean-test-summary.csv).
 - Browser walkthrough: initial state, question execution and evidence view; screenshots show local execution.
 
-These checks do not repeat the entire historical multi-seed benchmark in `VALIDATION.md` or establish live LLM performance. Default embeddings and generation are offline lexical/extractive components. The research manuscript is still pending delivery; see `research/README.md`.
+These checks do not repeat the entire historical multi-seed benchmark in `VALIDATION.md` or establish live LLM performance. Default embeddings and generation are offline lexical/extractive components. The research manuscript has now been supplied and is available with version notes in `research/README.md`.

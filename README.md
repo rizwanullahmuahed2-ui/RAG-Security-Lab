@@ -4,6 +4,8 @@ A reproducible research workbench for measuring knowledge-base poisoning against
 
 **224 documents · 225 chunks · 364 questions · 104 controlled poisoning passages.**
 
+[Research paper (unpublished PDF)](research/RAG_Security_Research.pdf) · [Authors and study boundaries](research/README.md)
+
 The default configuration runs locally without model downloads or paid API calls. It uses hashed lexical embeddings, deterministic exact cosine search, a TF-IDF reranker, and sentence extraction. These are **offline demonstration results**, not evidence about a reasoning LLM's robustness.
 
 ![Evidence workbench](docs/dashboard.png)
@@ -82,4 +84,4 @@ Historical measurements in [VALIDATION.md](VALIDATION.md) describe earlier local
 | `data/` | Canonical inputs, legacy tables and source snapshots |
 | `research/` | Status and location of the unpublished manuscript |
 
-The CLI and dashboard share the pipeline, scoring functions, and experiment runner. The project owner reports an **approved but unpublished** RAG research paper; its manuscript has not yet been supplied. See [research/README.md](research/README.md) for its delivery location and status boundaries.
+The CLI and dashboard share the pipeline, scoring functions, and experiment runner. The supplied **unpublished RAG security manuscript** is available in [research/README.md](research/README.md), together with its printed authors, file fingerprint, citation and relationship to the current implementation.
