@@ -1,0 +1,14 @@
+{
+  "endpoint": "https://api.github.com/repos/rizwanullahmuahed2-ui/RAG-Security-Lab/branches?per_page=100",
+  "is_error": false,
+  "payload": [
+    {
+      "name": "main",
+      "commit": {
+        "sha": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "url": "https://api.github.com/repos/rizwanullahmuahed2-ui/RAG-Security-Lab/commits/6f76858df91277e4b962ee94b4286a25cfe08d4d"
+      },
+      "protected": false
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "created_at_utc": "2026-10-26T07:08:54.379409+00:00",
+  "purpose": "Claim-to-evidence ledger implemented before follow-up results; source files are immutable and each evidence path is hashed.",
+  "evidence_vocabulary": {
+    "verified_input_availability": "availability/construction checked, not factual certification",
+    "independently_reconstructed": "independent calculation from archived local inputs/outputs, not independent human adjudication",
+    "historically_reported_not_freshly_reestablished": "retain only attributed historical context",
+    "not_completed": "explicit pending work; no completion claim"
+  },
+  "claims": [
+    {
+      "id": "A-inputs",
+      "study": "A_historical",
+      "claim": "224 documents, 225 chunks, 364 questions and 104 attacks are publicly available and their construction is auditable.",
+      "evidence_status": "verified_input_availability",
+      "manuscript_action": "Update old blanket-unavailability wording.",
+      "limitation": "Snapshot reconstruction does not independently authenticate all inherited facts or reproduce historical output.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "sha256": "d2c3f4e13eeba12ed467f56aed59edf16d718f039150265c6a3df7d5fe67982c",
+          "meaning": "Canonical reconstruction"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/dataset_manifest.json",
+          "sha256": "d81ab5806d88db99dd4c78feaef289fa49a72f12139a72a5320849f541350388",
+          "meaning": "Input provenance hashes"
+        }
+      ]
+    },
+    {
+      "id": "A-replay",
+      "study": "A_historical",
+      "claim": "The original 21,840-row principal execution has been freshly reproduced.",
+      "evidence_status": "unsupported_in_present_revision",
+      "manuscript_action": "Do not assert; retain only reported historical numbers with explicit missing-archive limit.",
+      "limitation": "Exact original response archive, matching source/config and run manifest were not recovered.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673",
+          "meaning": "Historical/current boundary"
+        },
+        {
+          "path": "/workspace/rag_security_revision_v2/history/reproducibility_decision.json",
+          "sha256": "863740027c2f2d0929fbe14813ead7730138ad24f67d9bf0bfdfc836e705ce9f",
+          "meaning": "Bounded archive recovery decision"
+        }
+      ]
+    },
+    {
+      "id": "A-endpoints",
+      "study": "A_historical",
+      "claim": "At full budget, historical no-defense ASR was 73.1% and reranked ASR 72.1%.",
+      "evidence_status": "historically_reported_not_freshly_reestablished",
+      "manuscript_action": "Historical context only; caption and table identify reported source.",
+      "limitation": "No independent response-level recalculation in current implementation.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+          "sha256": "916eb88d8eab7f0ecb82e3335af78ba43ec47337a81bcb695a07ad0919a1814e",
+          "meaning": "Reported principal summary"
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "sha256": "3dfe7bdb26071aa7bb064cac4ed3fc7b2da4221487a18019a088cca9592afcef",
+          "meaning": "Historical manuscript"
+        }
+      ]
+    },
+    {
+      "id": "A-repetition",
+      "study": "A_repetition_historical",
+      "claim": "The 3,016-row repetition/accepted-label study has response-level reproducibility evidence here.",
+      "evidence_status": "not_recovered",
+      "manuscript_action": "Mark archive gap; do not pool with C doses or committed diagnostic.",
+      "limitation": "If neither original nor new repetition analysis is available, its expert-comment gap remains open.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673",
+          "meaning": "Historical/current boundary"
+        },
+        {
+          "path": "/workspace/rag_security_revision_v2/history/reproducibility_decision.json",
+          "sha256": "863740027c2f2d0929fbe14813ead7730138ad24f67d9bf0bfdfc836e705ce9f",
+          "meaning": "Bounded archive recovery decision"
+        }
+      ]
+    },
+    {
+      "id": "A-current-code",
+      "study": "repository_current_workbench",
+      "claim": "Current public workbench is the original principal implementation.",
+      "evidence_status": "contradicted_by_version_evidence",
+      "manuscript_action": "Distinguish versions and active ranking behavior.",
+      "limitation": "Backend-family and row-count similarity cannot establish code identity.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/repo_snapshot/config.yaml",
+          "sha256": "32c3ef0163fe2a5961c287b614ccdd8ea3705dad0cc8b646a85fa15eacd5df90",
+          "meaning": "Current budgets"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/retrieval/retriever.py",
+          "sha256": "12d594c87294df6eb53e404d3d175a94e96a717aa05f28ac5d4322a0e0a5f18d",
+          "meaning": "Current lexical ranking"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/diagnostic_source_hash_comparison.json",
+          "sha256": "528bc012b18d17e011aa2e9710146d3ff6d239d34d8f67b90f5c9a8eb2c06f3a",
+          "meaning": "Version differences"
+        }
+      ]
+    },
+    {
+      "id": "A-unit",
+      "study": "A_historical",
+      "claim": "21,840 rows are independent experimental samples.",
+      "evidence_status": "invalid_unit_claim",
+      "manuscript_action": "Use question/fact groups and distinguish attack-selection seeds.",
+      "limitation": "Three selection seeds are not repeated generative draws.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "sha256": "d2c3f4e13eeba12ed467f56aed59edf16d718f039150265c6a3df7d5fe67982c",
+          "meaning": "168 facts with two phrasings and related years"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-cost",
+      "study": "A_historical",
+      "claim": "No observed clean cost proves safe rejection of legitimate documents.",
+      "evidence_status": "unsupported_generalization",
+      "manuscript_action": "Report narrow benchmark observation and coverage limitation.",
+      "limitation": "The rejected legitimate facts are not directly tested by the original question set.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "sha256": "d2c3f4e13eeba12ed467f56aed59edf16d718f039150265c6a3df7d5fe67982c",
+          "meaning": "Two rejected mineral chunks have no gold question"
+        }
+      ]
+    },
+    {
+      "id": "B-real-model",
+      "study": "B_archived",
+      "claim": "Study B used real gpt-4.1-mini-2025-04-14 inference and neural API embeddings.",
+      "evidence_status": "supported_by_saved_execution_evidence",
+      "manuscript_action": "Retain actual model and executed-scope statement.",
+      "limitation": "Archive consistency is not third-party provider-origin certification.",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "sha256": "895e9e8288b618b082582a3cc72adf27e0dd335434f93bf80d478961bc18b77f",
+          "meaning": "Executed model and response count"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.json",
+          "sha256": "abf6b477afd74efd9b79f58242d151df013fee738eee7b9f8e109ae5a6212e04",
+          "meaning": "Independent archived numerical audit"
+        }
+      ]
+    },
+    {
+      "id": "B-counts",
+      "study": "B_archived",
+      "claim": "1,280 condition rows represent 376 distinct generation requests and 904 reuses.",
+      "evidence_status": "independently_reconstructed",
+      "manuscript_action": "Report both condition and unique-request counts.",
+      "limitation": "Cached condition reuse does not create independent generations.",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "sha256": "895e9e8288b618b082582a3cc72adf27e0dd335434f93bf80d478961bc18b77f",
+          "meaning": "Executed model and response count"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.json",
+          "sha256": "abf6b477afd74efd9b79f58242d151df013fee738eee7b9f8e109ae5a6212e04",
+          "meaning": "Independent archived numerical audit"
+        }
+      ]
+    },
+    {
+      "id": "B-score",
+      "study": "B_archived",
+      "claim": "34/64 targeted and 17/64 reranked outputs contain only the designated false number.",
+      "evidence_status": "numeric_recomputed_semantic_status_pending",
+      "manuscript_action": "Keep archived numerical results; attach separate reference and evaluator reanalysis.",
+      "limitation": "Some designated false values/references require source adjudication; number presence is not semantic endorsement.",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "sha256": "895e9e8288b618b082582a3cc72adf27e0dd335434f93bf80d478961bc18b77f",
+          "meaning": "Executed model and response count"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.json",
+          "sha256": "abf6b477afd74efd9b79f58242d151df013fee738eee7b9f8e109ae5a6212e04",
+          "meaning": "Independent archived numerical audit"
+        }
+      ]
+    },
+    {
+      "id": "B-semantic",
+      "study": "B_archived",
+      "claim": "The numerical accuracy field establishes factual correctness.",
+      "evidence_status": "unsupported_semantic_interpretation",
+      "manuscript_action": "Name lexical/numerical metric accurately and report separate evaluation axes.",
+      "limitation": "Negation, qualifications, wrong entities and UNKNOWN-plus-number cases require interpretation.",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "sha256": "895e9e8288b618b082582a3cc72adf27e0dd335434f93bf80d478961bc18b77f",
+          "meaning": "Executed model and response count"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.json",
+          "sha256": "abf6b477afd74efd9b79f58242d151df013fee738eee7b9f8e109ae5a6212e04",
+          "meaning": "Independent archived numerical audit"
+        }
+      ]
+    },
+    {
+      "id": "B-controls",
+      "study": "B_archived",
+      "claim": "Targeted versus unrelated results isolate generator robustness at equal exposure.",
+      "evidence_status": "unsupported_control_interpretation",
+      "manuscript_action": "Call it end-to-end targeting; use separately fixed-context follow-up for equal exposure.",
+      "limitation": "Targeted any-insertion exposure is 64/64 versus 16/64 unrelated without defense.",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "sha256": "895e9e8288b618b082582a3cc72adf27e0dd335434f93bf80d478961bc18b77f",
+          "meaning": "Executed model and response count"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.json",
+          "sha256": "abf6b477afd74efd9b79f58242d151df013fee738eee7b9f8e109ae5a6212e04",
+          "meaning": "Independent archived numerical audit"
+        }
+      ]
+    },
+    {
+      "id": "B-rerank",
+      "study": "B_archived",
+      "claim": "Reducing success from 34 to 17 means 17 attacks were prevented with no new failures.",
+      "evidence_status": "incorrect_transition_interpretation",
+      "manuscript_action": "Report 24 prevented, 11 numerical restorations and 7 newly successful cases.",
+      "limitation": "Net endpoint difference conceals newly introduced failures and incomplete restoration.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.json",
+          "sha256": "abf6b477afd74efd9b79f58242d151df013fee738eee7b9f8e109ae5a6212e04",
+          "meaning": "Paired outcome audit"
+        },
+        {
+          "path": "/workspace/revision/experiment/paired_defense_outcomes.csv",
+          "sha256": "37c28e2a1435c9614da67c1041bed9863fbcf530348f4703f20f7a2bcf5f83ac",
+          "meaning": "Archived transitions"
+        }
+      ]
+    },
+    {
+      "id": "B-filter",
+      "study": "B_archived",
+      "claim": "Filtering demonstrates operational authentication or fact checking.",
+      "evidence_status": "not_implemented",
+      "manuscript_action": "Describe an ideal supplied-label gate and its exact predicate.",
+      "limitation": "The trusted-label authority, authentication, protected audit and authorization workflow are not implemented.",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "sha256": "65785a2bc6fad599bf6edc2a5b044b2d6ca3f0203ab30a18747fa29e3e68c28e",
+          "meaning": "All clean labels accepted; base insertions rejected"
+        }
+      ]
+    },
+    {
+      "id": "B-label-change",
+      "study": "B_archived",
+      "claim": "Accepted-label experiment demonstrates a real compromise of document approval.",
+      "evidence_status": "not_demonstrated",
+      "manuscript_action": "Call it metadata-only intervention in attacker capability.",
+      "limitation": "Direct field mutation in a fixture is not an intrusion test.",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "sha256": "65785a2bc6fad599bf6edc2a5b044b2d6ca3f0203ab30a18747fa29e3e68c28e",
+          "meaning": "Text unchanged; accepted-label fields changed"
+        },
+        {
+          "path": "/workspace/revision/experiment/insertions.json",
+          "sha256": "bfac67c4c3ca4c34841881e0da42c56b8c0c895f2d08d7c31451369bc928e767",
+          "meaning": "Insertion text/IDs"
+        }
+      ]
+    },
+    {
+      "id": "B-then-heldout",
+      "study": "B_archived",
+      "claim": "The 64 questions remain untouched final test data for tuning the follow-up.",
+      "evidence_status": "no_longer_applicable_after_inspection",
+      "manuscript_action": "Keep B retrospective and use new prospectively frozen follow-up cases.",
+      "limitation": "Original held-out output timing does not restore freshness after observed outcomes guide changes.",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/freeze.json",
+          "sha256": "ad8f1238e5c1624dca09d1c777f175e4633811e7d1d5301d3d6314f32b2208f7",
+          "meaning": "Original pre-output freeze"
+        },
+        {
+          "path": "/workspace/research_phase/Research_Stage_Report_FA.md",
+          "sha256": "fe713f8a402a0c92f746833f94e2f8c672ab14a96c4dbc4ca0f9318d68fa7955",
+          "meaning": "Subsequent inspection and diagnostics"
+        }
+      ]
+    },
+    {
+      "id": "B-A-causal",
+      "study": "A_historical/B_archived",
+      "claim": "Differences between A and B isolate the effect of replacing extraction by an LLM.",
+      "evidence_status": "unsupported_causal_comparison",
+      "manuscript_action": "Report studies separately.",
+      "limitation": "Material, retriever, attack grid and answerer all differ.",
+      "evidence": [
+        {
+          "path": "/workspace/rag_security_revision_v2/baseline/study_registry.json",
+          "sha256": "79b8f879735ec5c8e66cea2967e6282cfefff4e23f58055369b61094704e5d95",
+          "meaning": "Dataset and retrieval changes"
+        }
+      ]
+    },
+    {
+      "id": "B-guard",
+      "study": "B_archived",
+      "claim": "A weak empty-cache pre-dispatch guard proves archived results were tampered with.",
+      "evidence_status": "not_supported",
+      "manuscript_action": "Fix guard prospectively without accusing the valid archive.",
+      "limitation": "Preventive weakness and evidence of historical tampering are separate questions.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/artifact_audit/guard_check_result.json",
+          "sha256": "77bd2afba6b819d2a767240f73331c2345ff383c55841b614ae67cc1f45b7695",
+          "meaning": "Offline fake-transport demonstration"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.json",
+          "sha256": "abf6b477afd74efd9b79f58242d151df013fee738eee7b9f8e109ae5a6212e04",
+          "meaning": "All archived hashes match"
+        }
+      ]
+    },
+    {
+      "id": "Human-review",
+      "study": "B_archived/C_followup",
+      "claim": "Independent human semantic review has been completed.",
+      "evidence_status": "not_completed",
+      "manuscript_action": "Keep genuine review as pending and prepare reviewer materials; no invented human labels.",
+      "limitation": "Owner explicitly requested that this work not be dropped; AI source audit and deterministic metrics cannot complete it.",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/human_review_blinded.csv",
+          "sha256": "e035ec6536c0a46fcab7d0d1304d57aad754924678ee00ae11dc4e57e5f83527",
+          "meaning": "Original empty human fields"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.json",
+          "sha256": "abf6b477afd74efd9b79f58242d151df013fee738eee7b9f8e109ae5a6212e04",
+          "meaning": "Zero completed human judgments"
+        }
+      ]
+    },
+    {
+      "id": "Trust-authority",
+      "study": "all",
+      "claim": "Printed affiliation identifies the actual authorized institutional approver of every source.",
+      "evidence_status": "not_established",
+      "manuscript_action": "State only dataset-constructor label assignment unless real approval evidence is supplied.",
+      "limitation": "No named official, approval record or authorization service is evidenced by these fields.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/manifest.json",
+          "sha256": "49e5927c8d9591116f389f3b813197ab22b145a9baffd302495b2d5ad7057216",
+          "meaning": "Affiliation as printed only"
+        },
+        {
+          "path": "/workspace/rag_security_revision_v2/baseline/study_registry.json",
+          "sha256": "79b8f879735ec5c8e66cea2967e6282cfefff4e23f58055369b61094704e5d95",
+          "meaning": "Trust-role boundary"
+        }
+      ]
+    },
+    {
+      "id": "Repository-public",
+      "study": "all",
+      "claim": "No public repository exists for this project.",
+      "evidence_status": "outdated",
+      "manuscript_action": "Cite pinned public repository while distinguishing local B/C artifacts from committed contents.",
+      "limitation": "Public code and canonical inputs do not imply all historical runs or the local new studies were published.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673",
+          "meaning": "Public repository and original historical statement"
+        },
+        {
+          "path": "/workspace/rag_security_revision_v2/history/refresh_branches.json",
+          "sha256": "4d9f1fbb1f5a2b1d06bf7f6aa274a8070ec7af9d9aca8e7a729eb74a8b80c782",
+          "meaning": "Current accessible main"
+        }
+      ]
+    },
+    {
+      "id": "Provenance-auth",
+      "study": "all",
+      "claim": "Local hashes establish source authenticity and truth.",
+      "evidence_status": "unsupported_generalization",
+      "manuscript_action": "Use hashes for archive identity/integrity only.",
+      "limitation": "A matching digest does not certify factual truth, provider origin or approval authority.",
+      "evidence": [
+        {
+          "path": "/workspace/research_phase/repository_snapshot_manifest.json",
+          "sha256": "26035d77a740ebf24dc6988c5391b52bab96bbbb85dba2862231f8329f646939",
+          "meaning": "Selected file identity"
+        },
+        {
+          "path": "/workspace/revision/experiment/generation_freeze.json",
+          "sha256": "168ca1d5e37a70974d30d1abcf7aa300e898842a385e7cde46cd8af8b69d95e4",
+          "meaning": "Pre-generation artifacts"
+        }
+      ]
+    },
+    {
+      "id": "Pretraining",
+      "study": "B_archived/C_followup",
+      "claim": "Public benchmark selection proves independence from model pretraining.",
+      "evidence_status": "not_established",
+      "manuscript_action": "Disclose public source and restricted overlap checks.",
+      "limitation": "No pretraining-membership test or source-family independence proof was performed.",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/source_dataset_metadata.json",
+          "sha256": "6aca657ba5a5c3d54ac74bbbe944dd33a99c765926d6f5bf94bba29286bada65",
+          "meaning": "Pinned public HotpotQA source"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/cross_study_overlap.json",
+          "sha256": "d8b38f07305924361a4ba5027ab5d87857e05f9b94cd0e6af8305ddffd1dad64",
+          "meaning": "Bounded input comparison"
+        }
+      ]
+    },
+    {
+      "id": "Figures",
+      "study": "A_historical/B_archived",
+      "claim": "All four existing figures are preserved unchanged as source assets.",
+      "evidence_status": "verified_bytes_at_registry_creation",
+      "manuscript_action": "Preserve originals and captions/version labels in final manuscript; separately add changed-result figures.",
+      "limitation": "Final PDF/DOCX embedding and caption accuracy must still be checked during release.",
+      "evidence": [
+        {
+          "path": "/workspace/rag_security_revision_v2/history/figure_preservation_registry.json",
+          "sha256": "0c29440456e4e9887217c79c46713ed9e8555560a1f7687feb207b6a4056e00f",
+          "meaning": "Four asset hashes checked"
+        }
+      ]
+    },
+    {
+      "id": "C-executed",
+      "study": "C_followup",
+      "claim": "The new follow-up experiment has produced final results.",
+      "evidence_status": "not_asserted_at_registry_creation",
+      "manuscript_action": "Fill only from actual completed frozen-run manifests after execution.",
+      "limitation": "Planning or dataset preparation is not completed real inference.",
+      "evidence": [
+        {
+          "path": "/workspace/implementation_plan/Experiment_Blueprint.json",
+          "sha256": "c84c90243e28cd76e511435c18095da5128eb4f7f84533b3697b1c5014a329c1",
+          "meaning": "Proposed design, not results"
+        }
+      ]
+    }
+  ],
+  "claim_count": 25,
+  "mandatory_preservation": {
+    "baseline_files_checked": 244,
+    "changed_files": [],
+    "four_figures": "/workspace/rag_security_revision_v2/history/figure_preservation_registry.json"
+  },
+  "required_live_updates_after_root_execution": [
+    "C-executed actual run status and final counts",
+    "Human-review actual human records/status",
+    "Figures final PDF/DOCX embedding/caption check",
+    "new reference audit and evaluator outputs appended as evidence rather than overwriting archived B scores"
+  ]
+}

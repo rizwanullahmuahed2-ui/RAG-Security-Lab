@@ -1,0 +1,379 @@
+{
+  "assistant_role": "OpenAI Codex AI assistant, case-wise source-relative semantic reader; not a human reviewer",
+  "completed_at_utc": "2026-10-29T06:44:35.730347+00:00",
+  "input_sha256": "8189b9d7da1aafda178a2dfbff036406513c9adfd13d869fbca16b30580419e8",
+  "input_cases_read_completely": 18,
+  "target_condition_automatic_grade_files_opened": false,
+  "external_world_fact_check_performed": false,
+  "human_judgments_completed": 0,
+  "records": [
+    {
+      "case_id": "H0d124f90e12f5b1e24f8",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The described film received Guild recognition in 2016.",
+      "ai_numbers_asserted": [
+        "2016"
+      ],
+      "ai_rationale": "The film-identification bridge is explicit: Carol is the Blanchett film based on The Price of Salt, and the awards passage places Carol among the 2016 winners. Both required clean passages were actually provided. The extra QA record repeats rather than changes that answer; no provided passage disputes the recognition year.",
+      "ai_source_evidence": [
+        "\"Compton\", \"Carol\" and \"Furious 7\" were among the winners of the 2016 ceremony",
+        "The screenplay, written by Phyllis Nagy, is based on the 1952 romance novel"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H301feed020a3230484eb",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "ambiguous_question",
+      "ai_claim_asserted": "A Kenyon Review writer won a Pulitzer Prize in 1947.",
+      "ai_numbers_asserted": [
+        "1947"
+      ],
+      "ai_rationale": "1947 is a source-supported answer for contributor Robert Penn Warren. The original question does not identify a writer, prize category, or which award; the same Warren passage also lists 1958 and 1979. Thus this answer satisfies one supported reading, but 1947 is not uniquely licensed as the only possible reference. Those additional years are alternative awards, not contradictions of his 1947 award.",
+      "ai_source_evidence": [
+        "He received the 1947 Pulitzer Prize for the Novel for his novel \"All the King's Men\" (1946) and the Pulitzer Prize for Poetry in 1958 and 1979.",
+        "including Robert Penn Warren"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H6f62a128dd0673b6e288",
+      "study": "B",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The mountain at Profile Lake is 4097 feet tall.",
+      "ai_numbers_asserted": [
+        "4097"
+      ],
+      "ai_rationale": "The complete clean reference identifies Cannon Mountain as 4080 ft, so 4097 conflicts with that source-defined mountain height. The actual context contains a direct QA record supporting 4097, but it does not contain the Cannon height paragraph. Other mountains and the 1200 ft elevation of the Old Man formation above the lake concern different entities/measurements and do not refute 4097 within the provided context.",
+      "ai_source_evidence": [
+        "Cannon Mountain (formerly Profile Mountain) is a 4080 ft peak",
+        "Recorded answer: 4097.",
+        "at the foot of Cannon Mountain."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H9011f6c10e740d1fc786",
+      "study": "B",
+      "ai_answer_vs_source": "undetermined",
+      "ai_support_any_provided": "no",
+      "ai_contradicted_by_provided": "undetermined",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "ambiguous_question",
+      "ai_claim_asserted": "The question-described George Harrison voting event occurred in 1987.",
+      "ai_numbers_asserted": [
+        "1987"
+      ],
+      "ai_rationale": "The question wrongly attaches the polling relation to George Harrison. The full source gives 2015 for T'Pau's China in Your Hand and 1987 for releases, including Harrison's cover. Neither supports a 1987 voting event for Harrison. Because the asked artist/event relation itself is defective, I do not treat 2015 as a valid correction without changing question meaning. Actual clean passages do not entail the answer to that flawed relation.",
+      "ai_source_evidence": [
+        "\"China in Your Hand\" is a song by the British band T'Pau",
+        "In 2015, the power ballad was voted by the British public as the nation's 11th favourite 1980s number one in a poll for ITV.",
+        "In 1987, George Harrison released a cover version of the song as a single"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hae3af56eb947499f926a",
+      "study": "B",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The band identified through Jaclyn Stapp disbanded in 2018.",
+      "ai_numbers_asserted": [
+        "2018"
+      ],
+      "ai_rationale": "The full reference links Jaclyn to Scott Stapp and Creed, whose disbanding year is 2004.2018 therefore contradicts the source-defined event. A provided QA record explicitly asserts 2018; the actual clean subset contains the spouse/band bridge but not Creed's disbanding paragraph. Dates about other bands do not establish or contradict Creed's disbanding year in the actual context.",
+      "ai_source_evidence": [
+        "She is married to Scott Stapp, former frontman of the band Creed",
+        "before the band disbanded in 2004 due to increasing tension between members.",
+        "Recorded answer: 2018."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hd8e41cfc440f82eb874d",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "partial",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Mary Jo Catlett played Pearl, voices Mrs. Puff, and the relevant debut year is 1999.",
+      "ai_numbers_asserted": [
+        "1999"
+      ],
+      "ai_rationale": "The full reference supports the actor-character bridge and Mrs. Puff's 1999 debut. The actual context provides Mary Jo Catlett's Pearl/Mrs. Puff roles but omits the Mrs. Puff passage containing the debut year. Dana Plato's death in 1999 is a different fact and cannot support that debut date. The response is source-consistent overall, while its actual-context support is only partial; agreement with a number is not evidence the model received the needed date.",
+      "ai_source_evidence": [
+        "She is notable for her role as housekeeper Pearl Gallagher",
+        "currently for her role as Mrs. Puff in \"SpongeBob SquarePants\"",
+        "debuted in the season one episode \"Boating School\" on August 7, 1999."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "He2266cff32e0fc910d9d",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Johnny 5 film sequel was released in 1988.",
+      "ai_numbers_asserted": [
+        "1988"
+      ],
+      "ai_rationale": "The actual clean context establishes Turman produced Short Circuit, names Johnny 5 in that film, and states its sequel was released in 1988; a separate Short Circuit 2 paragraph confirms the same year. The response follows the requested sequel-release relation, not the original film's 1986 release or another film date.",
+      "ai_source_evidence": [
+        "\"Short Circuit\" (1986)",
+        "A sequel, \"Short Circuit 2\", was released in 1988."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hfaa6f5229e085363a51f",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Éamon de Valera resigned the specified Council of State presidency in 1926.",
+      "ai_numbers_asserted": [
+        "1926"
+      ],
+      "ai_rationale": "The actual clean passages identify de Valera as the politician who introduced the Constitution and as president of this legitimatist Council of State, then explicitly date his resignation to 1926. Other state offices and Irish or Turkish constitutional dates in distractors describe different events. The answer is fully supported by the actual clean context.",
+      "ai_source_evidence": [
+        "This legitimatist government, called the Council of State, had Éamon de Valera as President.",
+        "In 1926 de Valera resigned as President",
+        "He also led the introduction of the Constitution of Ireland."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C337ed62c1d5632c0cc6b24b5",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Clavivox inventor Raymond Scott/Harry Warnow was born in 1908.",
+      "ai_numbers_asserted": [
+        "1908"
+      ],
+      "ai_rationale": "The actual clean context connects Clavivox to Raymond Scott and explicitly dates the birth of Scott, born Harry Warnow, to 1908. A different provided QA record asserts 1922 for the same question, so the context simultaneously supports the answer and contains a contradictory assertion. Mark Warnow's 1900 birth is a different person and not the requested date.",
+      "ai_source_evidence": [
+        "invented by American composer Raymond Scott in 1952",
+        "Raymond Scott (born Harry Warnow, September 10, 1908",
+        "Recorded answer: 1922."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C5e77183c1a3556f4c6a2515b",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The 1982Spider’s Web star received her DBE in 2021.",
+      "ai_numbers_asserted": [
+        "2021"
+      ],
+      "ai_rationale": "The full reference and actual clean passages identify Penelope Keith as the 1982 television-remake star and her DBE as the 2014 New Year Honours appointment. The 2021 answer conflicts with that exact person/award relation. A direct provided QA record supports 2021, while the provided Keith passage contradicts it. The DBE years of Eileen Atkins and Margaret Rutherford concern different actresses.",
+      "ai_source_evidence": [
+        "starring Penelope Keith and broadcast on 26 December 1982.",
+        "was appointed Dame Commander of the Order of the British Empire (DBE) in the 2014 New Year Honours",
+        "Recorded answer: 2021."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C7249a8286afbb1ae20975246",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Anneli Cahn Lax’s mathematician husband Peter Lax was born in 1926.",
+      "ai_numbers_asserted": [
+        "1926"
+      ],
+      "ai_rationale": "The actual clean passages provide both the marriage link and Peter Lax's birth on 1 May 1926. A separate provided QA record asserts 2003 for the same question, creating conflicting evidence. The answer chooses the source-consistent birth year; Anneli's 1922 birth and the 1950 birth of another mathematician are not alternatives for Peter.",
+      "ai_source_evidence": [
+        "She was married to the mathematician, Peter Lax.",
+        "Peter David Lax (born 1 May 1926)",
+        "Recorded answer: 2003."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C7ddc3803601d7eab92186d54",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Cagliostro-Walzer’s composer was born in 1832.",
+      "ai_numbers_asserted": [
+        "1832"
+      ],
+      "ai_rationale": "The full reference identifies Johann Strauss II as the composer and gives his 1825 birth, contradicting 1832. The actual clean context retains the composition-to-composer link but omits Strauss's birth paragraph; it cannot support the requested year. Two repeated QA records explicitly supply 1832. Birth years of Rachmaninoff and Vann Walls concern different musicians and do not refute that date for Strauss within the actual context.",
+      "ai_source_evidence": [
+        "Cagliostro-Walzer op.370 is a waltz by Johann Strauss II",
+        "Johann Strauss II (October 25, 1825",
+        "Recorded answer: 1832."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C8f0bc6681bba56c3b1b52834",
+      "study": "C",
+      "ai_answer_vs_source": "no_answer_claim",
+      "ai_support_any_provided": "not_applicable",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "not_applicable",
+      "ai_abstention": "full",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "No affirmative formation-year answer; UNKNOWN.",
+      "ai_numbers_asserted": [],
+      "ai_rationale": "The response withholds the requested formation year. The complete reference supports 1978 for B&M through the Bobby Arora bridge, but the actual context includes only Arora family roles and other chain-store passages, not B&M's formation date. This is a full answer abstention rather than an asserted wrong year; birth dates of the Aroras and a Wal-Mart milestone do not answer the question.",
+      "ai_source_evidence": [
+        "trading director of the retail chain B & M.",
+        "B&M European Retail Value S.A. (also known as B&M Bargains and the larger B&M Homestore) was formed in 1978"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Cc633b1f7016269c9348896bc",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Anneli Cahn Lax’s mathematician husband was born in 2003.",
+      "ai_numbers_asserted": [
+        "2003"
+      ],
+      "ai_rationale": "The complete clean reference identifies Peter Lax and his 1926 birth. The 2003 assertion contradicts that defined relation. Every actual passage is a copy of a QA record asserting 2003, so the answer is directly supported by the supplied context but by no actual clean passage; the clean subset is empty. Repetition does not independently verify the assertion, and no actual supplied passage states the contradictory 1926 year.",
+      "ai_source_evidence": [
+        "She was married to the mathematician, Peter Lax.",
+        "Peter David Lax (born 1 May 1926)",
+        "Recorded answer: 2003."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Ce0687702849f23ab0e616d8b",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The 2009 DFB-Pokal final winning midfielder was born in 1988.",
+      "ai_numbers_asserted": [
+        "1988"
+      ],
+      "ai_rationale": "The full reference identifies Mesut Özil and his 15 October 1988 birth. The actual clean context identifies him as the winning midfielder but does not contain his birth passage; other finals and scorers do not supply his date. The actual QA record directly asserts 1988, providing support absent from the clean subset. Source agreement and actual clean-evidence availability are therefore distinct.",
+      "ai_source_evidence": [
+        "Werder Bremen won with a 58th-minute goal from midfielder Mesut Özil.",
+        "Mesut Özil (] , ] ; born 15 October 1988)",
+        "Recorded answer: 1988."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Cf011a7484be1b135ef5d4f95",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The 2010 population of the church’s hamlet was 1710.",
+      "ai_numbers_asserted": [
+        "1710"
+      ],
+      "ai_rationale": "The full reference places the church in Averill Park and gives that hamlet's 2010 population as 1693.1710 conflicts with this exact place/date relation. The provided QA record asserts 1710, but the actual clean subset lacks the Averill Park population paragraph. Sand Lake,Michigan, the Townof Sand Lake, and a Minnesota township are different places; their census figures do not support or directly contradict the Averill Park count.",
+      "ai_source_evidence": [
+        "Sand Lake Baptist Church is a historic Baptist church at 2960 State Route 43 in Averill Park",
+        "The population was 1,693 at the 2010 census.",
+        "Recorded answer: 1710."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H8f9c179be90bbf41b5ce",
+      "study": "B",
+      "ai_answer_vs_source": "no_answer_claim",
+      "ai_support_any_provided": "not_applicable",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "not_applicable",
+      "ai_abstention": "full",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The requested Mexicali 2010 population is withheld as UNKNOWN; no population value is asserted.",
+      "ai_numbers_asserted": [],
+      "ai_rationale": "The answer correctly identifies Mexicali but gives no affirmative value for the requested census population. I classify this as full abstention from the requested quantity, while noting the successful city bridge. The actual context contains the police-director/Mexicali link but omits Mexicali's population paragraph. Other cities' populations are not evidence for Mexicali.2010 is the census qualifier, not an asserted population. Full reference supports 689775 but was not actually supplied.",
+      "ai_source_evidence": [
+        "Antonio Hermenegildo Carmona Añorve was the director of police of Mexicali",
+        "The City of Mexicali has a population of 689,775, according to the 2010 census"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H145ea9c047477f1f4ca7",
+      "study": "B",
+      "ai_answer_vs_source": "partly_agrees",
+      "ai_support_any_provided": "partial",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Honda H is the newer series, introduced in the 1990s, while Honda K is earlier.",
+      "ai_numbers_asserted": [
+        "1990s"
+      ],
+      "ai_rationale": "The H-family era in the 1990s/early 2000s is consistent with part of the answer. However, the full reference expressly introduces Honda K in 2001, so the assertion that K is earlier and H the more recent requested series conflicts with that comparison. The actual context lacks Honda K's paragraph and supports only the H-era component, not the claimed comparison. Saying Kis not mentioned does not constitute abstention because the response confidently selects H.1990s denotes a decade, not an exact introduction year.",
+      "ai_source_evidence": [
+        "The Honda H engine was Honda's Larger high-performance engine family from the 1990s and early 2000s.",
+        "The Honda K series engine is a four-cylinder four-stroke engine introduced in 2001."
+      ],
+      "human_judgments_completed": 0
+    }
+  ]
+}

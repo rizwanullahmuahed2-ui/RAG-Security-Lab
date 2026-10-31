@@ -1,0 +1,957 @@
+RAG SECURITY RESEARCH
+
+
+
+
+Security of Retrieval-Augmented Generation Against
+Targeted Knowledge-Base Poisoning
+               An exploratory offline study of retrieval and extractive answer selection
+                       Rizwanullah Muahed, Ramiz Mumtaz, Ebrahim Adham
+                                  Masihullah Yaqubi, Rohid Sharifi
+                          Department of Research and Development (R&D)
+                      Ministry of Communications and Information Technology
+
+
+
+Abstract
+Targeted knowledge-base poisoning can place an attacker-selected false claim alongside relevant
+evidence. This exploratory Afghanistan-focused study distinguishes supporting-evidence recovery,
+malicious exposure, targeted answer corruption, and correct-answer restoration. The archived
+principal experiment uses 224 documents, 225 chunks, 364 questions, 104 targets, and 21,840
+correlated question-condition evaluations. Its actual pipeline comprises 1,024-dimensional hashing,
+exact cosine retrieval, TF-IDF reranking, and deterministic sentence extraction; its numerical results
+do not measure generative LLM behavior. A local audit recomputed response scores and replayed the
+full grid with checksum-matched historical code. At full insertion, gold Recall@5 falls from 93.4% to
+5.8%, lexical answer-value accuracy from 82.4% to 3.6%, and exposure-confirmed lexical attack
+success reaches 73.1%. Reranking restores Recall@5 to 88.7% but leaves attack success at 72.1%; 73
+targets retain gold evidence while producing the intended false value. Eligibility filtering prevents
+rejected-label attacks. A separate target-specific accepted-label control yields 91/104 successes,
+demonstrating dependence on metadata authority rather than implemented source authentication.
+Separately archived neural retrieval controls and a 24-response generative development pilot
+demonstrate implementation progress, not held-out generalization or human-adjudicated security
+rates. The contribution is a bounded empirical analysis of distinct security outcomes. Fresh reference-
+checked data, independent semantic review, and a frozen final generative experiment remain
+necessary for broader claims.
+Keywords: retrieval-augmented generation; knowledge-base poisoning; retrieval integrity; answer
+integrity; provenance; adversarial evaluation
+
+1. Introduction
+Retrieval-augmented generation combines a language model with external evidence to support
+knowledge-intensive tasks [11–13]. In institutional applications, retrieved material may include
+public reports, administrative records, policy documents, or statistical observations. This access
+makes the integrity of the knowledge base a security concern: a document can be highly relevant to a
+question while supplying a false answer. A retrieval score consequently indicates relevance under a
+scoring rule, not the factual reliability or authorized origin of the retrieved claim.
+Prior research demonstrates that corpus insertions can influence downstream RAG responses [1–4].
+The resulting security question extends beyond whether malicious text can be retrieved. A useful
+assessment must distinguish whether supporting evidence remains available, whether attacker-
+controlled material enters the answer context, and whether the answer adopts the intended false claim.
+These outcomes can diverge. A defense that improves retrieval may preserve both correct and false
+evidence, leaving the decision between them unresolved.
+
+                                         Research manuscript | 1
+RAG SECURITY RESEARCH
+
+This study investigates those distinctions in an Afghanistan-focused factual corpus. The practical
+implementation is the experimental instrument. The principal results describe an offline retrieval-and-
+extraction pipeline whose deterministic behavior permits controlled comparisons. They must not be
+attributed to generative language models. Appendix D separately records subsequent neural and
+generative development checks; those checks do not replace the historical design or establish held-out
+performance.
+The research makes three bounded contributions. First, it evaluates supporting-evidence retrieval,
+malicious exposure, answer-value correctness, and target-specific success within one controlled
+design. Second, paired outcomes distinguish attack prevention from correctness restoration and newly
+introduced failures. Third, separate repetition and forged-label controls identify the limits of duplicate
+handling and metadata authority. The archived grid is accompanied by a local response-level audit
+and re-execution. These contributions constitute an exploratory domain study and analytical
+synthesis; no new attack algorithm, certified defense, or representative evaluation of deployed
+generative RAG is claimed.
+For institutions considering knowledge-based assistants, the resulting distinction is consequential:
+recovering the correct source is an intermediate property, while producing a reliable answer is the
+final objective. This paper examines that relationship and identifies the conditions under which the
+studied controls offer protection.
+
+2. Related research and study positioning
+
+2.1. Retrieval augmentation and evidence use
+RAG and dense passage retrieval establish the architectural basis for evidence-grounded question
+answering [11, 12]. REPLUG extends retrieval augmentation to black-box language models [13].
+These approaches motivate separate assessment of evidence selection and response construction.
+Work on long-context use also shows that a language model's use of evidence can depend on its
+placement [16]. The present extractive experiment does not reproduce those model-level effects; it
+examines the more limited relationship between context membership and selected answer values.
+
+2.2. Corpus poisoning and adjacent threats
+PoisonedRAG studies targeted knowledge corruption through malicious knowledge-base insertions
+[1]. CorruptRAG investigates practical attacks using a single poisoned text [2]. Su et al. examine
+adversarial context and retrieval robustness [3], while a broader benchmark compares multiple
+poisoning attacks and defenses [4]. These studies establish that targeted factual corruption is an
+existing research problem. Our contribution concerns the interpretation of defense outcomes within a
+bounded factual domain.
+Attacker capabilities must be distinguished when relating results. PR-Attack coordinates poisoned
+content with a prompt trigger [5], whereas the base attacker here controls corpus insertions only.
+PANDORA studies poisoning for jailbreak objectives [6]. Indirect prompt injection uses external
+content to convey instructions [14]; privacy attacks pursue information disclosure [7]; and
+instruction-tuning poisoning changes training data [15]. These threats share an interest in untrusted
+information but differ in access, intervention, and success criteria.
+
+2.3. Defenses and outcome measurement
+RobustRAG uses an isolate-then-aggregate strategy and develops guarantees under a defined
+retrieval-corruption model [8]. RAGPart and RAGMask examine retrieval-stage defenses [9]. The
+
+
+                                           Research manuscript | 2
+RAG SECURITY RESEARCH
+
+present lexical reranker and metadata gate implement neither those methods nor their guarantees.
+They are practical comparison conditions whose effects must be interpreted relative to the attacker
+and the provenance authority.
+Natural Questions and HotpotQA provide potential independent question-answering settings [17, 18].
+BEIR motivates heterogeneous retrieval evaluation [19]. RAGAs and citation-based answer
+evaluation address complementary dimensions of response quality and grounding [20, 21]. They do
+not remove the need to identify whether a particular attacker-selected false answer was produced.
+Table 1 positions the study by objective and threat boundary; it is not a cross-paper numerical
+ranking.
+Table 1. Selected research positioning. Descriptions summarize the cited research; methods are not claimed to have been
+reproduced.
+
+ Research                  Principal focus                        Relation to this study
+
+                           Targeted knowledge corruption in       Establishes the corpus-insertion threat; this pilot uses an
+ PoisonedRAG [1]
+                           generative RAG                         extractive answerer
+
+                                                                  Motivates separating insertion count from per-target
+ CorruptRAG [2]            Practical single-text poisoning
+                                                                  strength
+
+                           Adversarial context and retrieval
+ Su et al. [3]                                                    Supports separate retrieval and downstream assessment
+                           robustness
+
+ Benchmarking              Multiple attack and defense            Provides broader coverage than the present domain
+ poisoning [4]             comparisons                            study
+
+                           Certified robustness under retrieval
+ RobustRAG [8]                                                    Uses a different defense and guarantee model
+                           corruption
+
+ RAGPart and                                                      Provides advanced defense context; not implemented
+                           Retrieval-stage defenses
+ RAGMask [9]                                                      here
+
+                           Evidence recovery, paired answer
+                                                                  Controlled offline pilot with explicit limits on
+ Present study             outcomes, and provenance
+                                                                  generative conclusions
+                           assumptions
+
+
+
+
+3. Analytical framework and research questions
+
+3.1. Evidence availability, exposure, and answer integrity
+Let K be the clean knowledge base and P_B a set of B inserted malicious passages. For query q and
+defense d, the pipeline produces final context T_d(q, K ∪ P_B) and answer A_d(q). Let G(q) indicate
+the annotated supporting chunk in that context, R(q) the target question's own malicious passage, C(q)
+a lexical match to the expected value, and F(q) a lexical match to its designated false value. Let Z(q)
+identify designated targets. Matching indicators measure text containment under normalization and
+token boundaries; they do not establish semantic correctness.
+The scored answer-value correctness and targeted-success indicators are:
+                    V(q) = C(q) × [1 − F(q)];            S(q) = Z(q) × R(q) × F(q) × [1 − C(q)].
+
+For questions without an assigned false value, F(q) is zero. An answer matching both values is
+flagged as ambiguous and receives neither correctness credit nor attack-success credit. No such
+ambiguous answers occur in the archived main run, but the exclusion remains part of the scoring rule.
+
+
+                                                  Research manuscript | 3
+RAG SECURITY RESEARCH
+
+Mixed or negated claims can still be unsafe despite this conservative convention. Target-specific
+retrieval is necessary for credited attack success; another question's poison does not satisfy that
+requirement.
+The central analytical distinction follows from the pipeline: G(q) = 1 does not imply R(q) = 0, and
+neither context membership indicator determines the output value. Correct and malicious passages
+can coexist. Thus high gold recall cannot, on its own, establish resistance to targeted manipulation.
+Conversely, eliminating malicious context can restore clean behavior without correcting errors
+already present in the clean answerer.
+
+3.2. Attack coverage and interpretation of dose curves
+Let I_B(q) indicate whether the passage targeting q is inserted. The shared-corpus design inserts one
+passage per selected target, and the scored outcome requires retrieval of that target's own passage.
+Therefore S(q) ≤ I_B(q). With 104 designated targets and B distinct target passages, the all-target
+success rate satisfies:
+                                ASR_all(B) = Σ S(q) / 104 ≤ B / 104.
+
+This is a counting bound derived from the experiment's success definition, not a robustness guarantee.
+At B = 10, all-target ASR cannot exceed approximately 9.6% under this design, even if every inserted
+attack succeeds. An increasing ASR curve can consequently reflect wider coverage as well as changes
+in retrieval competition. To isolate per-target strength, the target set must remain fixed while attack
+multiplicity or diversity changes. The supplementary repetition experiment addresses multiplicity
+under a different protocol; it is analyzed separately.
+
+3.3. Research questions and exploratory expectations
+RQ1 examines how poisoning changes supporting-evidence retrieval and malicious exposure. RQ2
+examines the relationship between exposure, answer-value correctness, and intended false answers.
+RQ3 examines the protection provided by reranking, trusted-label filtering, and their combination.
+RQ4 examines the corresponding clean-performance cost.
+Four exploratory expectations are examined within the historical design: H2, poisoning is associated
+with increased incorrect or manipulated answers; H3, reranking reduces malicious rank or inclusion;
+H4, filtering with reranking provides greater protection than reranking alone; and H5, defenses may
+impose a clean-performance cost. Their original identifiers are retained for traceability; these
+expectations were not preregistered. H1, an advantage of targeted over matched unrelated poison, is
+an untested prospective question because the required comparison condition is absent. It is excluded
+from claims of empirical support.
+
+3.4. Attacker capabilities and trusted authority
+The base attacker inserts passages into a separate copy of the clean corpus. Each passage associates a
+designated question with a selected false value. Existing clean text, retrieval and answerer code, and
+defense implementation remain fixed. Prompt control, training-data modification, and production-
+system compromise are outside this base condition. The study does not establish performance against
+adaptive attack optimization.
+The metadata condition assumes that an ingestion authority assigns reliable trust and verification
+labels. All 104 base attack entries carry rejected labels: untrusted and unverified. Of the 225 clean
+chunks, 223 are eligible; two inherited mineral-resource chunks are verified but have low trust and
+are rejected. The filter implements an eligibility policy over supplied labels, without independently
+
+
+                                         Research manuscript | 4
+RAG SECURITY RESEARCH
+
+establishing source authenticity or factual truth. A separate forged-label control marks malicious
+entries high and verified, changing the attacker's capability. The two trust boundaries are analyzed
+separately.
+
+4. Materials and experimental method
+
+4.1. Corpus and reference questions
+The corpus combines 56 inherited public-information documents and 168 World Development
+Indicators observations across 12 Afghanistan indicator families for 2010–2023 [10]. It contains 224
+documents and 225 chunks. The question set contains 28 inherited questions and 336 indicator
+questions, with two formulations for each indicator-year observation. There are 104 designated
+targets and one original malicious passage per target. Table 2 summarizes the composition.
+Table 2. Composition of the experimental material.
+
+                                           Public-information
+ Component                                                                 Indicator material   Total
+                                                material
+
+ Documents                                           56                           168           224
+
+ Questions                                           28                           336           364
+
+ Attack targets                                      20                           84            104
+
+ Original target passages                            20                           84            104
+
+
+The 225 chunks form the complete clean retrieval collection. All 224 documents have indexed text.
+The 168 World Bank observations were checked against stored API response bodies and their
+recorded SHA-256 hashes. Each has two question formulations, giving 336 statistical questions;
+values are rounded to two decimals with decimal half-up rounding, without imputing missing
+observations. The 56 inherited documents retain verification labels that have not been independently
+re-audited. Related indicator-years and question formulations are correlated. Indicator-level
+development, validation, and test partitions exist, but were inspected during development; this all-
+question study therefore claims no untouched test set. The complete clean KB remains visible for
+every partition. The English question set does not establish capability in Dari or Pashto.
+
+4.2. Executed retrieval-and-extraction pipeline
+The principal experiment is the archived run of 21 September 2026, 20260921T061151Z_d1966106.
+Its manifest, response records, configuration, and checksum-matched source identify 1,024-
+dimensional token hashing, deterministic exact cosine search, a query-and-candidate TF-IDF
+reranker, and an extractive-stub answerer. The retriever produces 30 candidates; the final context
+contains at most five passages. The historical answerer scans sentences in context order and selects
+the sentence with greatest query-keyword overlap, retaining the first sentence on ties. It excludes a
+fixed stopword list, including Afghanistan, and does not reason about claim entailment.
+The extractive backend ignores the configured system prompt, temperature, and maximum output-
+token parameter. Their presence in a configuration file is consequently not evidence of instruction-
+following protection or controlled LLM generation. Neural embedding and cross-encoder model
+names also appear in configuration fields, but the recorded active backends are hashing and TF-IDF.
+Later lexical/evidence revisions change both ranking and sentence selection; Appendix B documents
+their separate diagnostic.
+
+                                                 Research manuscript | 5
+RAG SECURITY RESEARCH
+
+Filtering accepts passages labelled verified with high or medium trust. It implements an eligibility
+rule over supplied metadata; it does not authenticate a publisher, validate a document signature or
+determine whether a claim is true. Eligibility precedes candidate retrieval; the combined condition
+then reranks eligible candidates. This order can prevent rejected entries from exhausting the candidate
+pool. It differs from reranking all candidates before filtering, which can leave an undersized context.
+Figure 1 shows the implemented conditions under the assumed label authority.
+Table 3. Executed settings for the principal pilot.
+
+ Setting                                Recorded configuration
+
+ Clean collection                       225 chunks
+
+ Retriever                              1,024-dimensional hashing; exact cosine similarity
+
+ Candidate count                        30
+
+ Maximum final context                  5 passages
+
+ Reranker                               TF-IDF cosine similarity fitted to query and candidates
+
+ Answerer                               Deterministic lexical extraction (`extractive-stub`)
+
+ Filter rule                            Verified and high/medium trust; before retrieval
+
+ Shared-corpus budgets                  0, 10, 30, 60, 104 inserted passages
+
+ Selection seeds                        17, 42, 91
+
+ Defense settings                       None; reranking; eligibility filtering; filtering then reranking
+
+
+
+
+Figure 1. Conceptual view of the executed pilot. The four conditions share the same clean collection, insertion pool, and
+extractive answerer. Eligibility precedes retrieval where enabled. Attacker access is limited to corpus insertion in the base
+experiment; label forgery is a separate control.
+
+
+
+
+                                                      Research manuscript | 6
+RAG SECURITY RESEARCH
+
+4.3. Experimental comparisons
+Each of 364 questions is evaluated at insertion budgets 0, 10, 30, 60, and 104, under four defense
+settings and three attack-selection seeds (17, 42, 91): 364 × 5 × 4 × 3 = 21,840 evaluations. The
+corresponding inserted shares are 0.0%, 4.3%, 11.8%, 21.1%, and 31.6%, calculated as B/(225 + B).
+Each malicious passage is indexed as one preconstructed chunk; the budgets count passages rather
+than independently sampled documents or sources. A seeded permutation selects nested subsets at
+intermediate budgets. At full insertion, 104/225 = 46.2% is the amount added relative to the clean
+corpus, whereas 104/329 = 31.6% is the malicious share of the resulting corpus. This severe stress
+condition does not estimate institutional prevalence or performance at 1% contamination.
+Seeds select reproducible subsets from the fixed attack pool. They do not sample independent
+generated responses. At zero and full budget, selections are identical across seeds. Intermediate
+budgets change both target coverage and shared-corpus competition, as explained in Section 3.2.
+
+4.4. Outcomes and denominators
+Gold Recall@5 is the fraction of all 364 questions whose single annotated supporting chunk appears
+in the final context. MRR averages its reciprocal final-context rank, with zero when absent. These
+annotations may omit alternative legitimate support. Answer-value accuracy averages V(q) over the
+same 364 questions. Target-specific exposure and all-target ASR use the 104 designated targets. ASR
+among injected targets uses only questions whose own attack is present in the KB: the denominator
+equals B at each positive budget in this all-question protocol. It is undefined at B = 0 because no
+target has an inserted attack. All-designated-target ASR is zero at that budget under the exposure-
+confirmed rule; that zero is not evidence of protection. Any-poison exposure uses all 364 questions;
+malicious occupancy is the fraction of final context slots containing any inserted poison.
+Answer-value scoring lowercases and normalizes text, strips selected hedge prefixes and parenthetical
+material from reference values, removes commas and currency symbols, and uses token boundaries. It
+excludes simultaneous expected/false-value matches from accuracy. Strict normalized exact match
+and token F1 are auxiliary measures. Value containment cannot reliably distinguish negation,
+quotation, the wrong entity, the wrong year, or incompatible units. The metric is therefore lexical
+answer-value accuracy, not fully adjudicated factual or semantic accuracy.
+For defense d, let U be the targets with successful undefended attacks at a fixed budget. Paired
+prevention counts targets in U whose defended attacks no longer succeed, divided by |U|. Correctness
+restoration counts targets in U with correct defended answers, using the same denominator. Newly
+successful attacks count targets outside U whose defended outputs become scored successes. Clean
+cost is the clean accuracy without defense minus clean accuracy with defense, in percentage points.
+These quantities describe different transitions and should not be substituted for one another.
+
+4.5. Analysis and supplementary protocol
+Across-seed means and sample standard deviations describe sensitivity to attack selection. At zero
+and full budget, the attack sets, contexts, and answers are identical across seeds. These repeated rows
+are not independent samples, and no confirmatory p-values or population confidence intervals are
+claimed. The archived software exports descriptive Wilson intervals; the article does not interpret
+them as inferential uncertainty. Figures are generated from unrounded per-question proportions rather
+than from rounded summary percentages.
+Evidence verification used a separate analysis script to check archived output hashes, current input
+hashes, question-to-reference links, attack selections, retrieved text and metadata, and all five lexical
+verdict fields. All 21,840 main records were rescored without disagreement. The full grid was then
+
+                                           Research manuscript | 7
+RAG SECURITY RESEARCH
+
+locally re-executed using all 32 source files recovered exactly to the main manifest's recorded hashes.
+Answers, retrieved IDs and rounded scores, exposure indicators, lexical verdicts, and token F1
+matched the archive for every record. Latency was excluded from equivalence claims. This is local
+reproducibility evidence, not an external replication or semantic adjudication; Appendix C records the
+verification scope.
+The supplementary protocol evaluates the 104 targets separately at 0, 1, 2, 5, 10, 20, and 50 identical
+copies, under no defense, reranking, metadata filtering, and exact-text duplicate collapse. It contains
+2,912 evaluations, plus 104 forged-label evaluations at 50 copies, for 3,016 in total. This target-
+specific intervention differs from adding distinct attacks to a shared corpus, so its outcomes are not
+pooled with the factorial experiment. A later revised-backend diagnostic is documented separately in
+Appendix B.
+
+5. Results
+
+5.1. Supporting evidence and malicious exposure
+At full insertion, undefended gold Recall@5 falls from 93.4% to 5.8%, while MRR falls from 0.837
+to 0.045. The target's own poison appears in the final context for 97 of 104 targets. Any poison
+appears for 97.5% of all questions, and malicious passages occupy 93.0% of final context slots on
+average. Poisoning therefore affects both directly targeted questions and the broader availability of
+useful evidence.
+Reranking restores full-budget gold Recall@5 to 88.7% and MRR to 0.637, yet own-poison exposure
+rises from 97 to 98 of 104 targets. In 73 target questions, the final reranked context contains the gold
+chunk and the target poison while the answer meets the false-only attack-success rule. This observed
+coexistence directly demonstrates that evidence recovery does not establish answer integrity. H1
+remains untested because there is no matched unrelated-poison condition.
+Table 4. Principal pilot endpoints. Recall and answer-value accuracy use 364 questions; own-poison exposure and ASR use
+104 targets. Values are percentages rounded to one decimal place. Endpoints are identical across selection seeds.
+
+                                                             Own-poison            Answer-value
+  Budget     Defense                         Recall@5                                                        ASR
+                                                              exposure               accuracy
+
+     0       None                               93.4              0.0                   82.4                 0.0
+
+     0       Reranking                          98.1              0.0                   81.3                 0.0
+
+     0       Eligibility filter                 93.4              0.0                   82.4                 0.0
+
+     0       Filter then reranking              98.1              0.0                   81.3                 0.0
+
+    104      None                               5.8               93.3                   3.6                 73.1
+
+    104      Reranking                          88.7              94.2                  42.0                 72.1
+
+    104      Eligibility filter                 93.4              0.0                   82.4                 0.0
+
+    104      Filter then reranking              98.1              0.0                   81.3                 0.0
+
+
+
+5.2. Exposure and intended answer corruption
+Undefended all-target ASR averages 9.0%, 23.1%, 46.8%, and 73.1% at budgets 10, 30, 60, and 104.
+Sample standard deviations across selection seeds are 0.6, 1.0, 1.1, and 0.0 percentage points. Among
+
+                                                Research manuscript | 8
+RAG SECURITY RESEARCH
+
+injected targets, the corresponding mean ASRs are 93.3%, 80.0%, 81.1%, and 73.1%. The increasing
+all-target curve consequently combines increasing coverage with changing corpus competition; it
+does not show increasing susceptibility of a fixed attacked population. Both denominators are
+retained in the reproducibility tables.
+At full budget, 76 attacks succeed among 104 designated targets, compared with 97 targets exposed to
+their own poison. Exposure therefore does not guarantee scored success even for this simple
+answerer. Overall answer-value accuracy falls from 300/364 clean answers to 13/364. This damage
+extends beyond the 76 intended manipulations: non-targeted questions can lose supporting evidence
+or retrieve another target's poison.
+Among the 83 targets answered correctly in the clean condition, 73 suffer a scored targeted success at
+full insertion, or 88.0%. This paired restriction distinguishes newly induced failures from inherited
+clean errors. The results are consistent with H2 for the implemented answerer, but do not establish its
+magnitude for generative LLMs.
+Strict normalized exact match is zero throughout the factorial run because extracted sentences do not
+exactly match the short reference strings. Clean token F1 is 0.093 without defense, decreasing to
+0.006 at full insertion; reranking yields 0.050 at that budget. These auxiliary results chiefly expose
+output/reference format sensitivity and do not independently validate semantic correctness.
+
+5.3. Prevention, restoration, and newly induced failures
+At full budget, reranking raises overall answer-value accuracy from 3.6% to 42.0%, but targeted
+successes decline only from 76 to 75. Paired analysis explains the distinction: two undefended
+successes cease to succeed, one previously unsuccessful attack becomes successful, and only one of
+the 76 initially successful attacks receives a correct defended answer. Paired prevention is 2.6%;
+correctness restoration is 1.3%. Table 5 retains these transitions rather than representing the net ASR
+change as comprehensive protection.
+Table 5. Paired defense outcomes at budget 104. Prevention and restoration use the 76 undefended successful attacks. A
+single endpoint seed is sufficient because the inserted pool is identical across seeds.
+
+                                                                           Correct answers         Newly successful
+ Defense                                      Prevented successes
+                                                                              restored                 attacks
+
+ Reranking                                             2/76                     1/76                       1
+
+ Eligibility filter                                   76/76                     73/76                      0
+
+ Filter then reranking                                76/76                     73/76                      0
+
+
+Filtering eliminates own-poison exposure and scored success at every budget, recovering the
+corresponding clean pipeline behavior. It prevents all 76 full-budget successes but restores
+correctness for only 73 because some targets remain wrong even without poisoning. The combined
+condition provides stronger protection than reranking alone under the authoritative-label assumption,
+consistent with a restricted interpretation of H4. It does not improve ASR over filtering alone. The
+ablation attributes the prevention effect to eligibility rather than to an additional protective interaction
+with reranking.
+H3 receives mixed support. Reranking reduces overall malicious occupancy and recovers annotated
+support, yet it does not reduce full-budget own-poison inclusion. Relevance discrimination and
+factual discrimination are distinct properties. These observations do not establish the behavior of a
+learned cross-encoder.
+
+                                                 Research manuscript | 9
+RAG SECURITY RESEARCH
+
+
+
+
+Figure 2. Answer-value accuracy across all 364 questions. Points are means over seeds 17, 42, and 91; error bars show
+sample standard deviations, not confidence intervals. Eligibility filtering retains its clean baseline; filtering then reranking
+retains the reranked baseline. Values describe deterministic extractive responses under lexical scoring.
+
+
+
+
+Figure 3. Target-specific, exposure-confirmed attack success across 104 designated targets. Points average the same three
+seeds; error bars show sample standard deviations. The two filtered curves coincide at zero under rejected attack labels.
+Increasing insertion count also increases the number of attacked targets; these percentages are not complements of Figure
+2.
+The accuracy curves measure overall utility, whereas the success curves measure intended target
+manipulation. At full budget, reranking raises answer-value accuracy from 3.6% to 42.0% but leaves
+ASR at 72.1%, compared with 73.1% without defense. Its clean accuracy is 81.3%. A preserved
+filtered baseline does not imply correction of clean errors, and neither figure estimates generative
+LLM response probabilities.
+
+5.4. Clean-performance cost
+On the clean corpus, reranking raises gold Recall@5 from 340/364 to 357/364 while answer-value
+accuracy decreases from 300/364 to 296/364. The net clean cost is 1.1 percentage points. This
+
+
+                                                    Research manuscript | 10
+RAG SECURITY RESEARCH
+
+observed decrease is consistent with H5 within the pilot; no significance or population-level effect is
+claimed.
+Filtering preserves clean answer-value accuracy at 82.4%; filtering then reranking preserves the
+reranked baseline at 81.3%. The filter removes two low-trust clean chunks out of 225, but this
+benchmark shows no net clean answer-accuracy loss attributable to filtering. Zero observed loss is
+therefore a property of the supplied questions and labels, not proof that legitimate information is
+never rejected or that source review is cost-free. False rejection, source-review effort, latency, and
+memory costs require a separately designed operational evaluation.
+
+5.5. Repetition and forged-label controls
+In the separate target-specific repetition experiment, undefended successes are 90/104 with one
+malicious copy and 91/104 with two or more. All 104 answer strings remain unchanged between five,
+ten, twenty, and fifty copies. The plateau is consistent with saturation of a five-slot context; it does
+not imply that nominal insertion counts determine continuously worsening answers.
+Reranked successes increase from 37/104 with one copy to 61/104 with two and 92/104 with five or
+more. Exact duplicate collapse retains 90/104 successes at every positive nominal dose: it reduces
+identical multiplicity to one effective passage without making that passage reliable. The intervention
+concerns exact repeated text, not diverse or semantically similar poisons.
+At 50 identical copies per target, filtering yields 0/104 scored successes under rejected metadata;
+changing only those entries to high trust and verified yields 91/104 successes (87.5%) in the matched
+target-specific control. Each target has its own KB, rather than 5,200 copies sharing one collection.
+This result identifies dependence on metadata authority under changed attacker capability; it is not a
+direct comparison with the main shared-KB 76/104 result or an implemented authentication test. Only
+saved-response rescoring, not a new replay of this supplementary experiment, was performed. Table 6
+keeps the protocols separate.
+Table 6. Selected supplementary outcomes. Each condition evaluates 104 targets. Identical-copy conditions are target-
+specific and are not directly comparable to the shared-corpus budget in Table 4.
+
+ Condition                          Copies per target                                 Successful attacks
+
+ No defense                                 1                                               90/104
+
+ No defense                                 2                                               91/104
+
+ No defense                                5–50                                  91/104 at every measured dose
+
+ Reranking                                  1                                               37/104
+
+ Reranking                                  2                                               61/104
+
+ Reranking                                 5–50                                  92/104 at every measured dose
+
+ Exact duplicate collapse                  1–50                              90/104 at every positive measured dose
+
+ Eligibility filter;
+                                            50                                               0/104
+ rejected attack labels
+
+ Eligibility filter; forged
+                                            50                                              91/104
+ accepted labels
+
+
+
+
+                                                  Research manuscript | 11
+RAG SECURITY RESEARCH
+
+
+6. Discussion and institutional implications
+
+6.1. Recovering evidence is an intermediate security outcome
+The principal finding is a separation between evidence recovery and answer integrity. Reranking can
+recover the annotated supporting passage while keeping the malicious passage in context. Its large
+Recall@5 improvement would therefore overstate protection if considered without targeted outputs.
+Overall answer improvement also masks persistent vulnerability among the attacked targets.
+Conversely, zero scored attacks after filtering does not imply perfect correctness, because clean
+answer errors remain.
+These distinctions support reporting a sequence of outcomes: supporting-evidence availability,
+malicious exposure, intended false output, and correct-answer restoration. No single measure captures
+the sequence. This reporting approach is especially useful when evaluating an assistant whose sources
+may contain competing assertions rather than explicit malicious instructions.
+
+6.2. Trust labels represent governance assumptions
+The eligibility policy is effective because its accepted/rejected labels separate malicious insertions
+from useful clean material. Its security boundary is therefore the authority that assigns and protects
+those labels. A trusted source may still be outdated or factually wrong, and compromised accepted
+metadata changes the threat model. Source authentication and claim validation address related but
+distinct problems.
+The forged-label control motivates careful accounting of where trust enters a pipeline. A provenance
+gate should be described by its authority, verification process, update rules, and attacker access, rather
+than by a label name alone. The present experiment measures neither authentication implementation
+nor the real-world cost of source review.
+
+6.3. Implications for institutional knowledge management
+For prospective institutional use, the results support evaluating source governance and answer
+integrity alongside retrieval quality. Table 7 presents proposed actions tied to the observed
+mechanisms. These recommendations do not constitute ministry approval, evidence of deployment, or
+measured operational effectiveness. An institutional pilot would need accountable ownership of
+ingestion decisions, verifiable changes to source and trust metadata, and an answer-review process
+suitable for the actual user tasks.
+Table 7. Proposed institutional actions and the limits of their supporting evidence.
+
+ Function                   Proposed action                         Research basis and boundary
+
+                            Assign accountable source
+                                                                    Base filtering works under authoritative labels; review
+ Ingestion                  ownership and review corpus
+                                                                    effectiveness is unmeasured
+                            additions
+
+                            Protect label changes and retain
+ Provenance                                                         Forged accepted labels remove the observed protection
+                            source identity, dates, and versions
+
+                            Evaluate answers as well as
+ Quality assurance                                                  High gold recall coexists with targeted false answers
+                            retrieval; check conflicting claims
+
+                            Retain query, context, ranking,
+ Monitoring                                                         Paired outcomes require response-level evidence
+                            output, and decision records
+
+
+
+
+                                                  Research manuscript | 12
+RAG SECURITY RESEARCH
+
+
+Function                Proposed action                      Research basis and boundary
+
+                        Quarantine suspect entries and       Shared-corpus contamination reaches beyond selected
+Incident response
+                        identify affected questions          targets
+
+                        Restore a clean snapshot and
+                                                             Preventing an attack does not necessarily restore
+Recovery                reassess both clean and attacked
+                                                             correctness
+                        questions
+
+                        Verify actual model backends and     Offline extractive findings cannot quantify deployed
+Deployment assessment
+                        measure retained utility             LLM behavior
+
+
+The proposed actions apply to corpus administration and evaluation design. The research does not
+justify autonomous high-stakes decisions or quantify effects on a particular public service. An
+institutional deployment assessment would require its actual documents, source governance, user
+tasks, and generative configuration.
+
+7. Validity limitations and future research
+7.1. Scope of the empirical evidence
+The principal factorial study contains no generative LLM inference. Hashing and deterministic
+extraction do not capture neural retrieval, parametric knowledge, instruction following, stochastic
+generation or semantic handling of conflicting evidence. The historical answerer ignores the
+configured system prompt. Its numerical findings characterize that pipeline. Subsequent neural and
+generative development checks in Appendix D have distinct protocols and no independent human
+adjudication; they do not establish the original ASR for an LLM.
+The small corpus is dominated by templated statistical observations. Correlated years and question
+formulations limit independent-sample interpretation, and inherited references require further
+checking. A single annotated gold chunk can omit alternative support. All existing splits were
+inspected, preventing claims of held-out generalization. The severe full-pool contamination rate and
+the absence of adaptive attack optimization also limit external validity.
+
+7.2. Measurement and comparison limitations
+Lexical scoring may misclassify negation, quotation, temporal mismatches, and mixed explanations.
+The success definition confirms a false-only lexical outcome with target-specific exposure; it is not a
+complete semantic safety measure. Strict exact match is poorly aligned with the answer format.
+Future evaluation should distinguish correct answers, intended false answers, other errors, conflicting
+claims, abstentions, and execution failures.
+The dose curve combines target coverage with competition. Repeated-copy and shared-corpus
+experiments differ in their surrounding attack sets and must not be pooled. The present study does not
+independently identify effects of corpus size, context length, attack diversity, or correct-evidence
+density. Across-seed SD measures selection sensitivity; zero endpoint variation is not population
+certainty. No untouched test set, external replication, or permanent artifact identifier is claimed.
+
+7.3. Research continuation
+The final generative evaluation must freeze retriever and generator revisions, prompts, generation
+parameters, defense order, attack protocol and scoring rules before test outcomes are inspected. The
+neural components and generator have passed separate development integration checks (Appendix
+
+
+                                             Research manuscript | 13
+RAG SECURITY RESEARCH
+
+D), but fresh data and independent semantic assessment remain outstanding. Failures must stop
+execution or create separately labelled conditions, without silent model substitution. Partition fresh
+questions by underlying fact and linked sources; keep related formulations together.
+Matched unrelated poison and benign insertions are needed to test H1 and separate targeted effects
+from generic index competition. A fixed-target design should report insertion coverage, exposure
+among attacked targets, and success conditional on exposure. The pre-retrieval gate should be
+compared with a separately specified rerank-then-filter condition, including context backfilling and
+false rejection of legitimate documents.
+Blinded human adjudication should check intended false claims and factual correctness, with
+independent second review and documented disagreement resolution. Numeric answers require entity,
+relation, year, units, and tolerance. Uncertainty should account for shared facts and source families
+rather than treating deterministic repetitions as independent samples. An additional QA dataset and
+additional generative models would strengthen external validity, but are extensions beyond the
+completed pilot.
+
+8. Conclusion
+This research analyzes targeted knowledge-base poisoning through a controlled offline study
+supported by prior literature and verified local evidence. Retrieval recovery, attack prevention, and
+correctness restoration are distinct outcomes: reranking recovers much of the annotated evidence
+while leaving most full-budget target manipulations successful. An authoritative metadata gate
+prevents rejected-label attacks, but accepted-label forgery removes that protection in a separate
+control. Repeated-copy experiments show that nominal insertion volume can exceed the effective
+five-passage context without changing the answer.
+The study offers a bounded empirical basis for institutional evaluation of knowledge integrity. Its
+principal response-level results were recomputed and locally reproduced with checksum-matched
+historical code. That verification strengthens reproducibility within the pilot; it does not establish
+semantic correctness, independent-source validation of inherited facts, or general robustness of
+generative RAG. Further scientific claims should follow fresh evaluation data, blinded adjudication,
+and explicitly versioned neural and generative experiments.
+
+Data availability and reproducibility
+The local research artifact contains the archived principal run 20260921T061151Z_d1966106 (21,840
+evaluations), the separately archived repetition and forged-label control (3,016 evaluations), and the
+revised-backend diagnostic (1,092 evaluations). All three sets were inspected at response level and
+their reported counts recomputed. Only the principal grid was fully re-executed in the present
+verification. Datasets, manifests, exact historical source, independent audit scripts, recomputed tables,
+and two independent plotting outputs are retained with the revised manuscript. Counts refer to
+evaluations, not independent samples, and protocols are not pooled. Subsequent development
+archives retain 1,120 neural retrieval records, 24 neural/generative responses and 1,344 fixed-target
+retrieval-control records, with separate manifests and analysis boundaries (Appendix D). These
+counts are not added to the principal sample size.
+No public repository, permanent artifact identifier, or external replication is claimed. The main
+archived                       results.csv                        has                       SHA-256
+349c3bcfd7847843c44bd745111e2872d23cd28e26de4ff2361f6543bad485cf. Reproduction requires
+the frozen data and source hashes, original backend settings and budgets, dependency versions, attack
+selections, scoring implementation, and response records. The current application's defaults and later
+
+                                          Research manuscript | 14
+RAG SECURITY RESEARCH
+
+response-selection code are not a substitute for the archived experiment. A public release remains
+subject to provenance and licensing review.
+
+Responsible research
+Experiments concern a local research corpus. Artificial false passages must remain identified as
+attack material and separated from factual source records. Any artifact release requires provenance
+and licensing review and removal of private credentials. The research does not require modifying
+public sources or attacking third-party systems.
+
+References
+[1] Wei Zou, Runpeng Geng, Binghui Wang, and Jinyuan Jia. 2025. PoisonedRAG: Knowledge Corruption Attacks
+    to Retrieval-Augmented Generation of Large Language Models. USENIX Security, 3827-3844.
+    https://www.usenix.org/conference/usenixsecurity25/presentation/zou-poisonedrag
+[2] Baolei Zhang, Yuxi Chen, Minghong Fang, Zhuqing Liu, Lihai Nie, Tong Li, and Zheli Liu. 2025. Practical
+     Poisoning Attacks against Retrieval-Augmented Generation. arXiv:2504.03957v1.
+     https://arxiv.org/abs/2504.03957v1
+[3] Jinyan Su, Jin Peng Zhou, Zhengxin Zhang, Preslav Nakov, and Claire Cardie. 2025. Towards More Robust
+     Retrieval-Augmented Generation: Evaluating RAG Under Adversarial Poisoning Attacks. arXiv:2412.16708v2.
+     https://arxiv.org/abs/2412.16708v2
+[4] Baolei Zhang, Haoran Xin, Jiatong Li, Dongzhe Zhang, Minghong Fang, Zhuqing Liu, Lihai Nie, and Zheli Liu.
+     2025. Benchmarking Poisoning Attacks against Retrieval-Augmented Generation. arXiv:2505.18543.
+     https://arxiv.org/abs/2505.18543
+[5] Yang Jiao, Xiaodong Wang, and Kai Yang. 2025. PR-Attack: Coordinated Prompt-RAG Attacks on Retrieval-
+     Augmented Generation in Large Language Models via Bilevel Optimization. SIGIR.
+     https://doi.org/10.1145/3726302.3730058; author preprint: https://arxiv.org/abs/2504.07717v3
+[6] Gelei Deng, Yi Liu, Kailong Wang, Yuekang Li, Tianwei Zhang, and Yang Liu. 2024. PANDORA: Jailbreak
+     GPTs by Retrieval Augmented Generation Poisoning. arXiv:2402.08416v1. https://arxiv.org/abs/2402.08416v1
+[7] Shenglai Zeng, Jiankun Zhang, Pengfei He, Yue Xing, Yiding Liu, Han Xu, Jie Ren, Shuaiqiang Wang, Dawei
+     Yin, Yi Chang, and Jiliang Tang. 2024. The Good and The Bad: Exploring Privacy Issues in Retrieval-
+     Augmented Generation (RAG). Findings of ACL, 4505-4524. https://aclanthology.org/2024.findings-acl.267/
+[8] Chong Xiang, Tong Wu, Zexuan Zhong, David Wagner, Danqi Chen, and Prateek Mittal. 2026. Certifiably
+     Robust RAG against Retrieval Corruption. arXiv:2405.15556v2; originally submitted 2024, revised 2026.
+     https://arxiv.org/abs/2405.15556v2
+[9] Pankayaraj Pathmanathan, Michael-Andrei Panaitescu-Liess, Cho-Yu Jason Chiang, and Furong Huang. 2025.
+     RAGPart & RAGMask: Retrieval-Stage Defenses Against Corpus Poisoning in Retrieval-Augmented
+     Generation. arXiv:2512.24268. https://arxiv.org/abs/2512.24268
+[10] World Bank. World Development Indicators, source 2. Afghanistan observations, 2010-2023; local API
+     snapshots retrieved 21 September 2026. Indicator-specific URLs, raw responses, retrieval timestamps, and SHA-
+     256 hashes are recorded in data/dataset_manifest.json and data/sources/worldbank/.
+[11] Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich
+     Kuttler, Mike Lewis, Wen-tau Yih, Tim Rocktaschel, Sebastian Riedel, and Douwe Kiela. 2020. Retrieval-
+     Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS. https://arxiv.org/abs/2005.11401
+[12] Vladimir Karpukhin, Barlas Oguz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, and
+     Wen-tau Yih. 2020. Dense Passage Retrieval for Open-Domain Question Answering. EMNLP, 6769-6781.
+     https://aclanthology.org/2020.emnlp-main.550/
+[13] Weijia Shi, Sewon Min, Michihiro Yasunaga, Minjoon Seo, Richard James, Mike Lewis, Luke Zettlemoyer, and
+     Wen-tau Yih. 2024. REPLUG: Retrieval-Augmented Black-Box Language Models. NAACL, 8371-8384.
+     https://aclanthology.org/2024.naacl-long.463/
+[14] Kai Greshake, Sahar Abdelnabi, Shailesh Mishra, Christoph Endres, Thorsten Holz, and Mario Fritz. 2023. Not
+     what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt
+     Injection. arXiv:2302.12173. https://arxiv.org/abs/2302.12173
+
+
+                                             Research manuscript | 15
+RAG SECURITY RESEARCH
+
+[15] Alexander Wan, Eric Wallace, Sheng Shen, and Dan Klein. 2023. Poisoning Language Models During
+     Instruction Tuning. Proceedings of Machine Learning Research 202, 35413-35425.
+     https://proceedings.mlr.press/v202/wan23b.html
+[16] Nelson F. Liu, Kevin Lin, John Hewitt, Ashwin Paranjape, Michele Bevilacqua, Fabio Petroni, and Percy Liang.
+     2024. Lost in the Middle: How Language Models Use Long Contexts. Transactions of the Association for
+     Computational Linguistics 12, 157-173. https://aclanthology.org/2024.tacl-1.9/
+[17] Tom Kwiatkowski, Jennimaria Palomaki, Olivia Redfield, Michael Collins, Ankur Parikh, Chris Alberti,
+     Danielle Epstein, Illia Polosukhin, Jacob Devlin, Kenton Lee, Kristina Toutanova, Llion Jones, Matthew Kelcey,
+     Ming-Wei Chang, Andrew M. Dai, Jakob Uszkoreit, Quoc Le, and Slav Petrov. 2019. Natural Questions: A
+     Benchmark for Question Answering Research. Transactions of the Association for Computational Linguistics 7,
+     452-466. https://aclanthology.org/Q19-1026/
+[18] Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan Salakhutdinov, and Christopher
+     D. Manning. 2018. HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering. EMNLP,
+     2369-2380. https://aclanthology.org/D18-1259/
+[19] Nandan Thakur, Nils Reimers, Andreas Ruckle, Abhishek Srivastava, and Iryna Gurevych. 2021. BEIR: A
+     Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models. arXiv:2104.08663.
+     https://arxiv.org/abs/2104.08663
+[20] Shahul Es, Jithin James, Luis Espinosa Anke, and Steven Schockaert. 2024. RAGAs: Automated Evaluation of
+     Retrieval Augmented Generation. EACL System Demonstrations, 150-158. https://aclanthology.org/2024.eacl-
+     demo.16/
+[21] Tianyu Gao, Howard Yen, Jiatong Yu, and Danqi Chen. 2023. Enabling Large Language Models to Generate
+     Text with Citations. EMNLP, 6465-6488. https://aclanthology.org/2023.emnlp-main.398/
+
+Appendix A. Relationship to the original research plan
+The original proposal document was not supplied for independent inspection. The following
+comparison therefore concerns the research plan as described in earlier manuscripts, rather than
+confirmed compliance with a separately reviewed proposal. That description anticipated
+approximately 100-150 documents, 500-1,500 chunks, 200-300 questions, and 50 targets. The
+executed corpus instead contains 224 documents, 225 chunks, 364 questions, and 104 targets. Many
+records are short statistical observations, so document count does not measure linguistic diversity.
+The described plan involved ChromaDB, neural embeddings, a fixed generative LLM, and filtering
+after reranking. The verified principal run instead uses exact cosine search, token hashing,
+deterministic extraction, and eligibility before retrieval. Its budgets are 0, 10, 30, 60, and 104,
+compared with described planned budgets of 0, 5, 10, and 20. Current application defaults use 0, 10,
+20, 50, and 104 and must not replace the principal run's configuration. These are disclosed
+implementation and protocol deviations; the planned neural and generative components were not
+executed in the principal study. Subsequent development checks are reported separately in Appendix
+D.
+
+Appendix B. Later diagnostic and version sensitivity
+The diagnostic of 30 September 2026 uses hashing-lexical-v2:1024d retrieval with sentence-coverage
+heuristics and an extractive-evidence-v2 answerer. All 364 benchmark questions receive synthetic
+QA assertions, including questions untargeted in the principal 104-target pool. Each question is
+evaluated in a separate KB with either zero or ten identical copies of its own assertion. Complete
+response records confirm 355/364 clean answer matches, 337/364 with ten copies and no defense, and
+355/364 with filtering. There are 27 scored target successes without defense and zero with filtering.
+The diagnostic contains 1,092 evaluations.
+This diagnostic changes retrieval, sentence selection, attack wording, and the target population. Its
+27/364 success count (7.4%) consequently has a different denominator and protocol from principal
+
+                                              Research manuscript | 16
+RAG SECURITY RESEARCH
+
+ASR. It includes successes on some questions already wrong at clean baseline and cannot be equated
+with the net loss of 18 answer matches. The filtered answers match their corresponding clean answers
+exactly. Results are retained as a separate implementation diagnostic; they are not a replication of the
+principal grid, a real-LLM experiment, or an estimate of a single isolated software change.
+
+Appendix C Evidence verification and reproducibility
+Local verification separates original measurements, recomputation of saved responses, and historical
+pipeline re-execution. Evidence copies and checksum-matched modules are retained separately from
+the current application. A later evaluator export line was removed only after the resulting complete
+file matched the main manifest's original SHA-256.
+Table 8. Verification scope and remaining boundaries.
+
+Evidence                                Completed verification                  Boundary
+
+                                        5 CSV hashes matched; 21,840 unique     Manifest consistency; no external
+Principal archive
+                                        records in 60 groups                    certification
+
+                                        4 input hashes; 168 WDI observations    Inherited documents not independently
+Reference data
+                                        and 336 reference values matched        fact-checked
+
+                                        Every main lexical verdict and saved
+Scoring and retrieval                                                           Value containment remains a heuristic
+                                        context membership checked
+
+                                        32 checksum-matched modules;
+Historical re-execution                                                         Local execution; latency excluded
+                                        21,840 outcomes replayed
+
+                                        3,016 records rescored; result and
+Repetition and label forgery                                                    Separate protocol; no new replay
+                                        protocol hashes matched
+
+                                        1,092 records; ten own-assertion       Different backend, attacks, and target
+Later diagnostic
+                                        copies per attacked question confirmed set
+
+The replay used Python 3.13.9, NumPy 2.3.5, pandas 2.3.3, and scikit-learn 1.7.2. Answer strings,
+retrieved IDs and rounded scores, exposure and scoring flags, and token F1 matched all 21,840
+archived records. No model download or API generation was used. Timing and raw output-byte
+equivalence are excluded.
+Verification scripts and derived tables are retained in research/audit, including audit_evidence.py,
+reproduce_historical.py, and replication/replication_report.json. Archived evidence and historical
+code are in research/evidence. The independent plots are Figure_2_Answer_Accuracy.png and
+Figure_3_Attack_Success.png. These are local artifact paths; no public archive or institutional
+endorsement is claimed.
+
+Appendix D Subsequent development evidence
+This appendix records development work completed on 6 October 2026. None of these checks is an
+untouched final test, an adaptive attack search, independent human adjudication or an external
+replication. The historical numerical results remain attributed to their original backend.
+
+D1 Pinned neural retrieval and generator integration
+Run 20261006T064427Z_4cf05372 completed 1,120 retrieval-only records on 140 previously seen
+development questions with 48 targets and four defenses. Local all-MiniLM-L6-v2 embeddings use
+revision 1110a243fdf4706b3f48f1d95db1a4f5529b4d41; the MS MARCO MiniLM cross-encoder
+
+
+                                                Research manuscript | 17
+RAG SECURITY RESEARCH
+
+uses revision 233902d25c440f23af6f7d6e94d2946bac0bee0a. Weight hashes and runtime versions
+are retained. CPU exact cosine retrieval selects 30 candidates and five final passages; eligibility
+filtering precedes retrieval. No answer generation occurred in that run.
+Run 20261006T070136Z_e3ed4898 used frozen neural contexts with gpt-4.1-mini-2025-04-14. It
+completed 24 responses: three development agricultural-land indicator-year facts (2010, 2012, 2014),
+clean versus three total malicious insertions, and four defenses. Requests used temperature 0, at most
+300 output tokens and no fallback. All returned model snapshots, payload/output hashes and usage
+totals passed audit. Temperature 0 is not a determinism guarantee. Usage was 10,119 input and 927
+output tokens; the estimate at recorded standard uncached rates is USD 0.0055308, not a verified
+invoice.
+All 24 final contexts contained the reference chunk. The target poison also appeared in the six
+attacked unfiltered contexts, including the three reranked contexts. One answer mentions the correct
+58.13 but gives priority to 48.25 as a revised value. This illustrative response motivates endorsement-
+aware scoring: mentioning a correct number does not establish correctness. No semantic accuracy or
+ASR is estimated from these three correlated facts. Two independent review templates exist, but zero
+independent human judgments are completed.
+
+D2 Fixed-target retrieval controls
+Run 20261006T071953Z_ee1839e0 completed 1,344 retrieval-only records for a fixed set of 48
+previously seen development targets. The seven corpus conditions are clean and one, two or five
+exact copies per target, under rejected metadata or accepted-metadata compromise. All positive doses
+cover every target. Corresponding rejected/accepted conditions change only trust and verification
+labels, keeping assertion text and insertion count identical. Four defense conditions retain 30
+candidates and five final passages. Copy doses produce 48, 96 or 240 insertions; the resulting
+contamination shares are 17.6%, 29.9% and 51.6%. These remain stress conditions rather than
+evidence about low operational contamination.
+At five copies per target with source filtering, own-poison exposure is 0/48 under rejected labels and
+43/48 under accepted-label compromise. These are final-context inclusion counts, not successful
+answers. Saved insertion files, fixed coverage, paired metadata, output hashes and every retrieval
+indicator were checked. No generator was called and no ASR, semantic correctness or H1 comparison
+is established. Exact repetition does not implement the proposed diverse-poison dose experiment.
+
+D3 Final evaluation work remaining
+Two source-traceable drafts contain 82 candidate facts and 164 question formulations. Fourteen
+heritage candidates remain development-only because their family was seen; 68 others await source,
+date, unit, question-quality and overlap review. None is frozen or test-eligible. Additional source-
+family diversity, matched benign and unrelated controls, independently checked references, a frozen
+final generative protocol and independent semantic adjudication remain necessary. Additional models
+and adaptive optimization are separately specified extensions; claims must follow the capabilities and
+conditions actually tested.
+Development evidence and audit reports are retained in research/continuation:
+NEURAL_DEVELOPMENT_STATUS.json, NEURAL_GENERATIVE_PILOT_STATUS.json,
+FIXED_TARGET_CONTROL_STATUS.json and DATASET_EXPANSION_STATUS.json. A
+source/configuration/input snapshot accompanies the generative pilot. Review templates have not
+been substituted for labels. No public repository, formal institutional approval or journal acceptance is
+claimed.
+
+
+                                          Research manuscript | 18
+

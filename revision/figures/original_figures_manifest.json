@@ -1,0 +1,46 @@
+{
+  "source_pdf_name": "1-RAG_Security_Research.pdf",
+  "source_pdf_sha256": "87059e66898a6aaecede4d4d8224e2de97ed045f79b822eb2d903fbd3cc7533f",
+  "description": "Three historical figures preserved unchanged from supplied PDF; no new historical data reconstruction.",
+  "figures": [
+    {
+      "file": "original_pipeline.png",
+      "original_page": 6,
+      "pdf_image_xref": 38,
+      "original_description": "Original Figure 1: historical extractive-pipeline flowchart",
+      "width_px": 1290,
+      "height_px": 752,
+      "image_sha256": "b54b430ba3444a62141c5b316b9f7605831a7649d9583b49efc409626a562fc6",
+      "pixel_sha256": "c32371c7ff7a624507c25ad7a836357932377422dfa4a7b83eb1fea2988b3fd9",
+      "pixel_identity_verified": true,
+      "resampled": false,
+      "redrawn": false
+    },
+    {
+      "file": "original_answer_accuracy.png",
+      "original_page": 10,
+      "pdf_image_xref": 47,
+      "original_description": "Original Figure 2: historical answer-value accuracy",
+      "width_px": 1289,
+      "height_px": 644,
+      "image_sha256": "bd7a6c532b0d6f6bec97b0d4f37d9e7bedf28c85f961ed82484154b1cb2765b2",
+      "pixel_sha256": "331bf1d332578aa3a64c9183185358f783de6bb1fd14f9dfa138d49405ee9cad",
+      "pixel_identity_verified": true,
+      "resampled": false,
+      "redrawn": false
+    },
+    {
+      "file": "original_attack_success.png",
+      "original_page": 10,
+      "pdf_image_xref": 48,
+      "original_description": "Original Figure 3: historical targeted attack success",
+      "width_px": 1289,
+      "height_px": 644,
+      "image_sha256": "c8572a1c0a9d486d8b6b56510357c0d3230e1862cf82890c7fa80e950115a354",
+      "pixel_sha256": "5fdea094625b2219a1126c3aaaf1cc88353291b7a16ff09f58afda7f8aad8c15",
+      "pixel_identity_verified": true,
+      "resampled": false,
+      "redrawn": false
+    }
+  ]
+}

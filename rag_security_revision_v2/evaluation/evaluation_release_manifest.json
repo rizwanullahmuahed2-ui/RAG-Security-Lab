@@ -1,0 +1,21 @@
+{
+  "evaluator_version": "automatic-diagnostics-v2.0.0",
+  "files": {
+    "test_evaluator_v2.py": "d3054e4b5e0f91af26e6eb516ff7683e59b48696da1bda8d1bfb978649c585b8",
+    "HUMAN_REVIEW_INSTRUCTIONS_FA.md": "33b757878468cdafb87202971b4d1139a34e28b86f88b19107e8d0ed0894113d",
+    "B_unique_response_diagnostics_v2.csv": "725274464f8828a32ce5f5b63e07a571836a0916a5e0cd521c8470f2919924bd",
+    "review_manager.py": "e2c124414b5ca75d6facfcf2695fc7219e8b61de6c04b1c09d597a753877364a",
+    "B_automatic_comparison_v2.csv": "20b54225b116a8dc2533da6d5e8d5aa09e0c0d5787e99d8bf94ce3906a043d78",
+    "HUMAN_REVIEW_RUBRIC_EN.md": "3d9de551879b4d011010854c22dac81a0aa6b1e02cbde31e6a65d25a931c74c9",
+    "evaluator_v2.py": "34ab5edc0f91a90c1089671172a792fbab8276bd4d8a1bbaec7711279fcee9ca",
+    "B_reanalysis_v2_summary.json": "13a5235a1dc2d21e0860fcde818c9e284480d9279ef29c7d57c7634799583109",
+    "B_rescored_rows_v2.csv": "0ddd48cef35e04886ce32cb5e645798b680de82362bb569ff1faecedf6b8e9a2",
+    "coordinator_only/condition_key.csv": "aab06d6c7f0672b21f4e7d084d2f3d2343c99f3a191123b3cab829ee54aa928a",
+    "coordinator_only/Adjudication_AFTER_INDEPENDENT_LOCKS.csv": "5a91456f8107fc3df2bc11d9c3abca8bbe8c54f7af1e37546f1bda0206b18338",
+    "coordinator_only/Stage2_Reviewer_1_TARGET_AFTER_LOCK.csv": "49c10a11152e3550cd4e2b8da5b8e0eb1fae429adf48821fecdde6b4d54f59fd",
+    "coordinator_only/Stage2_Reviewer_2_TARGET_AFTER_LOCK.csv": "49c10a11152e3550cd4e2b8da5b8e0eb1fae429adf48821fecdde6b4d54f59fd",
+    "human_review_packet/Stage1_Reviewer_2_BLINDED.csv": "075fa871e4ac35d1b45994af2e6b2247c8b6975c8c72a218ad5d54b71606cf7b",
+    "human_review_packet/Stage1_Reviewer_1_BLINDED.csv": "075fa871e4ac35d1b45994af2e6b2247c8b6975c8c72a218ad5d54b71606cf7b",
+    "human_review_packet/REVIEW_STATUS.json": "4f4d9d9662d164adc19bc6ba414cb033c97d1b8acba08c72c9ac0732db51d7f7"
+  }
+}

@@ -1,0 +1,1927 @@
+{
+  "created_at_utc": "2026-10-25T11:47:01.816085+00:00",
+  "purpose": "Research-stage evidence mapping only; no article edits, scoring rewrites, API calls, new experiments, or human judgments.",
+  "review_pdf": "/tmp/codex-remote-attachments/01a162b2-144f-7619-9839-c1dc2697206f/29E3C305-0239-4EA5-A209-17347F60B23F/1-بررسی-مقاله-امنیت-در-سیستم-رگ-.pdf",
+  "review_text": "/tmp/supervisor_expert_review.txt",
+  "manuscript": "/workspace/revision/Revised_Manuscript.md",
+  "scope_definition": {
+    "Study A": "Historical 224-document/225-chunk/364-question/104-target extractive experiment; original raw archives unavailable.",
+    "Study B": "64-question/640-chunk HotpotQA extension with 376 real generation requests and 1280 condition rows; not a replay of A."
+  },
+  "status_definitions": {
+    "addressed": "Requested documentation, interpretation, or scoped evidence is actually present; not a blanket validity certificate.",
+    "partially_addressed": "Material progress exists but a named substantive part or study remains open.",
+    "unsupported": "Requested assertion or validation has no supporting completed evidence; no implication of intentional fabrication.",
+    "unavailable": "Original materials needed for the requested historical check are absent from the inspected workspace."
+  },
+  "version_ambiguity": {
+    "observed": "Expert report emphasizes historical counts/backends and contains no HotpotQA, gpt-4.1, 376, 640, 1,280, or 53.1 string.",
+    "inference_limit": "Cannot conclude the wrong version was reviewed: the latest article still includes the same historical Study A. Confirm the exact reviewed file/hash at the version-reconciliation step if needed.",
+    "required_mapping": "Evaluate each critique separately against A and B; a B extension does not resolve missing A evidence."
+  },
+  "coverage": {
+    "sections": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "4",
+      "5",
+      "6"
+    ],
+    "requirement_count": 67,
+    "status_counts": {
+      "partially_addressed": 42,
+      "unsupported": 3,
+      "unavailable": 9,
+      "addressed": 13
+    },
+    "warning": "Counts are checklist rows, not a scientific quality score or a tally proving readiness for publication."
+  },
+  "read_only_artifact_inventory": {
+    "test_questions": 64,
+    "donor_questions": 64,
+    "clean_chunks": 640,
+    "insertion_counts": {
+      "targeted": 64,
+      "unrelated": 64,
+      "benign": 64
+    },
+    "unique_requests": 376,
+    "raw_response_records": 376,
+    "context_records": 1280,
+    "scored_records": 1280,
+    "human_review_records": 376,
+    "completed_human_fields": {
+      "reviewer_1_label": 0,
+      "reviewer_2_label": 0,
+      "adjudicated_label": 0
+    },
+    "initial_hash_checks": {
+      "prepare_experiment.py": true,
+      "test_questions.json": true,
+      "control_donors.json": true,
+      "clean_documents.json": true,
+      "insertions.json": true,
+      "config.json": true,
+      "source_dataset_metadata.json": true
+    },
+    "context_hash_matches": true,
+    "request_hash_matches": true,
+    "response_hash_matches": true,
+    "expected_paths_present": {
+      "/workspace/data/dataset_manifest.json": false,
+      "/workspace/data/sources/worldbank": false,
+      "/workspace/research/evidence": false,
+      "/workspace/research/audit": false,
+      "/workspace/research/continuation": false,
+      "/tmp/rag-runtime/hotpot_validation.parquet": false
+    }
+  },
+  "concrete_scoring_caution": {
+    "path": "/workspace/revision/experiment/scored_results.csv",
+    "line": 8,
+    "qid": "5adf8c375542995534e8c7dd",
+    "reference": "1972",
+    "designated_false": "1979",
+    "automatic_gold_only": true,
+    "observation": "Answer includes the reference year and an explicit UNKNOWN/evidence-insufficiency statement. This is a semantic-adjudication issue; the frozen primary score was not changed."
+  },
+  "requirements": [
+    {
+      "id": "3.1.1",
+      "expert_section": "3.1",
+      "requirement": "State the architecture actually executed",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91,
+          "line_end": 109
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 172
+        }
+      ],
+      "assessment": "Both pipelines are distinguished; Study B is supported by executable code and frozen requests, while Study A architecture remains a historical report without its source archive.",
+      "closure": "Retain the explicit A/B distinction. Recover and inspect the checksum-matched Study A code/configuration to validate historical execution, or keep it expressly unverified."
+    },
+    {
+      "id": "3.1.2",
+      "expert_section": "3.1",
+      "requirement": "Explain why hashing and TF-IDF were chosen and how they differ from the original design",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unsupported",
+      "study_a_status": "unsupported",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 99,
+          "line_end": 105
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 816,
+          "line_end": 829
+        }
+      ],
+      "assessment": "The components are named, but a contemporaneous reason for the historical implementation choices is absent; the original proposal itself was not supplied.",
+      "closure": "Obtain the original proposal and an author-supported engineering decision record. Do not invent resource constraints, fallback causes, or retroactive rationale."
+    },
+    {
+      "id": "3.1.3",
+      "expert_section": "3.1",
+      "requirement": "Explain why proposed vector database, neural embeddings, or LLM components were inactive",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unavailable",
+      "study_a_status": "unavailable",
+      "study_b_status": null,
+      "evidence": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 817,
+          "line_end": 829
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248,
+          "line_end": 250
+        }
+      ],
+      "assessment": "Earlier text describes ChromaDB/neural/generative intentions and a different executed backend; no primary proposal, logs, or original configuration is available to establish why.",
+      "closure": "Recover proposal/configuration/runtime records or state that the cause cannot be established from available evidence."
+    },
+    {
+      "id": "3.1.4",
+      "expert_section": "3.1",
+      "requirement": "Execute at least one real LLM experiment if retaining LLM-RAG claims",
+      "force": "conditional",
+      "kind": "experiment",
+      "status": "addressed",
+      "study_a_status": null,
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 149,
+          "line_end": 169
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 3,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "line_start": 3,
+          "line_end": 7
+        }
+      ],
+      "assessment": "Study B has 376 saved real-generation responses from gpt-4.1-mini-2025-04-14. It is a new experiment, not the 21,840-row historical replay.",
+      "closure": "Preserve raw requests/responses and bound claims to this model, subset, and protocol; no new API call is required merely to establish that the experiment exists."
+    },
+    {
+      "id": "3.1.5",
+      "expert_section": "3.1",
+      "requirement": "Otherwise narrow title, abstract, and conclusion to the system actually tested",
+      "force": "conditional_alternative",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 18
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 28,
+          "line_end": 32
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 315
+        }
+      ],
+      "assessment": "The current article identifies extractive Study A and generative Study B and does not attribute historical ASR to the LLM. The no-LLM fallback condition is no longer triggered for the entire paper.",
+      "closure": "Keep the distinction and limitations through later edits; do not generalize one snapshot to all RAG systems."
+    },
+    {
+      "id": "3.2.1",
+      "expert_section": "3.2",
+      "requirement": "Provide the original source-document list",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/clean_documents.json",
+          "line_start": 1,
+          "line_end": 9
+        },
+        {
+          "path": "/workspace/revision/experiment/source_dataset_metadata.json",
+          "line_start": 2,
+          "line_end": 6
+        }
+      ],
+      "assessment": "Study B supplies 640 paragraph titles and source question IDs plus a pinned upstream dataset; the 56 inherited documents and original WDI source list are unavailable.",
+      "closure": "Obtain the Study A corpus/source manifest. For B, preserve the pinned dataset, original IDs, titles, and licensing attribution; distinguish source annotation from independent truth validation."
+    },
+    {
+      "id": "3.2.2",
+      "expert_section": "3.2",
+      "requirement": "Document selection of 168 WDI observations and indicator families",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unavailable",
+      "study_a_status": "unavailable",
+      "study_b_status": null,
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 230,
+          "line_end": 258
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 364
+        }
+      ],
+      "assessment": "Only aggregate counts and a reference to missing data/dataset_manifest.json remain; the actual 12-indicator list, selection records, and raw WDI responses are absent.",
+      "closure": "Recover the historical manifest, indicator-specific URLs, retrieval dates, response bodies, and selection procedure. New HotpotQA data cannot substitute for these WDI records."
+    },
+    {
+      "id": "3.2.3",
+      "expert_section": "3.2",
+      "requirement": "Specify document, chunk, question, and answer schemas",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 101,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 33
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 123,
+          "line_end": 125
+        }
+      ],
+      "assessment": "B schemas and paragraph-level chunk construction are executable and linked. A schemas are described in prose but the serialized records are not present.",
+      "closure": "Publish a compact B data dictionary and retain its linked records; recover original A schema and data to claim historical reconstruction."
+    },
+    {
+      "id": "3.2.4",
+      "expert_section": "3.2",
+      "requirement": "Explain how the 364 historical questions were generated: manual, automatic, or mixed",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unavailable",
+      "study_a_status": "unavailable",
+      "study_b_status": null,
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 230,
+          "line_end": 258
+        }
+      ],
+      "assessment": "Two questions per WDI observation and 28 inherited questions are reported, but the original generation templates, manual edits, authorship process, and question files are unavailable.",
+      "closure": "Recover generation scripts/templates and manual-review logs, or identify this historical process as unknown. B reuses annotated benchmark questions rather than creating the 364 questions."
+    },
+    {
+      "id": "3.2.5",
+      "expert_section": "3.2",
+      "requirement": "Explain and demonstrate verification of questions and reference answers",
+      "force": "required",
+      "kind": "validation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 49,
+          "line_end": 74
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 127
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 303
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 23
+        }
+      ],
+      "assessment": "B checks annotation presence and numeric containment, not factual entailment; no independent source review or human adjudication has been completed. A reference verification claims cannot be replayed.",
+      "closure": "Conduct documented source/annotation validation with entity, relation, date, units, and tolerance checks; retain genuine reviewer decisions and disagreements."
+    },
+    {
+      "id": "3.2.6",
+      "expert_section": "3.2",
+      "requirement": "State whether inherited documents and trust labels were re-audited",
+      "force": "required",
+      "kind": "validation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": null,
+      "evidence": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 250,
+          "line_end": 258
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 329
+        }
+      ],
+      "assessment": "The historical source explicitly says 56 inherited documents were not independently re-audited; the final paper acknowledges archive unavailability but offers no new audit.",
+      "closure": "State the inherited-document audit status directly in the methods and obtain original documents/labels before attempting a new source review."
+    },
+    {
+      "id": "3.2.7",
+      "expert_section": "3.2",
+      "requirement": "Make source-document, chunk, and question relationships traceable",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 100,
+          "line_end": 110
+        },
+        {
+          "path": "/workspace/revision/experiment/clean_documents.json",
+          "line_start": 3,
+          "line_end": 9
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 33
+        }
+      ],
+      "assessment": "B source_qid, document IDs, support_ids, context titles, and support sentences provide explicit joins; A equivalent join tables are absent.",
+      "closure": "Retain/verify all B joins against the pinned upstream dataset and recover A source-to-question mappings for historical claims."
+    },
+    {
+      "id": "3.2.8",
+      "expert_section": "3.2",
+      "requirement": "Account for correlated question formulations and shared facts in uncertainty",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 73
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 167
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248,
+          "line_end": 250
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 307
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 124,
+          "line_end": 136
+        }
+      ],
+      "assessment": "The paper avoids counting condition rows as independent and uses question bootstrap for B, but shared-corpus dependence is not modeled; A fact/indicator clusters cannot be reconstructed.",
+      "closure": "Recover A fact/indicator grouping for cluster-aware analysis. For B, define the intended sampling unit and report bootstrap limitations; stronger inference requires independently varied corpora or an appropriate dependence design."
+    },
+    {
+      "id": "3.3.1",
+      "expert_section": "3.3",
+      "requirement": "Release all 104 historical target questions",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unavailable",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 13
+        }
+      ],
+      "assessment": "The available list contains 64 new B targets, not the requested 104 A targets.",
+      "closure": "Recover the exact A target/poison/reference/metadata archive and joins; do not relabel B material as A. For B, retain existing records and add only clearly separated descriptive validation where needed."
+    },
+    {
+      "id": "3.3.2",
+      "expert_section": "3.3",
+      "requirement": "Release the correct answer for each historical target",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unavailable",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 4,
+          "line_end": 7
+        }
+      ],
+      "assessment": "Correct annotated values exist for B targets; original A target references are absent.",
+      "closure": "Recover the exact A target/poison/reference/metadata archive and joins; do not relabel B material as A. For B, retain existing records and add only clearly separated descriptive validation where needed."
+    },
+    {
+      "id": "3.3.3",
+      "expert_section": "3.3",
+      "requirement": "Release the attacker-selected false value for each historical target",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unavailable",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 5,
+          "line_end": 7
+        }
+      ],
+      "assessment": "Designated false values exist for B; the 104 historical false values cannot be recovered from aggregate outcomes.",
+      "closure": "Recover the exact A target/poison/reference/metadata archive and joins; do not relabel B material as A. For B, retain existing records and add only clearly separated descriptive validation where needed."
+    },
+    {
+      "id": "3.3.4",
+      "expert_section": "3.3",
+      "requirement": "Release the complete text of every historical poison passage",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unavailable",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/insertions.json",
+          "line_start": 2,
+          "line_end": 13
+        }
+      ],
+      "assessment": "B has 64 targeted, 64 unrelated, and 64 benign records; the 104 historical malicious passages are absent.",
+      "closure": "Recover the exact A target/poison/reference/metadata archive and joins; do not relabel B material as A. For B, retain existing records and add only clearly separated descriptive validation where needed."
+    },
+    {
+      "id": "3.3.5",
+      "expert_section": "3.3",
+      "requirement": "Provide the original-source identifier linked to each historical attack",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unavailable",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 106,
+          "line_end": 118
+        }
+      ],
+      "assessment": "B target_qid/support_ids/source_qid joins are available; A attack/source join records are absent.",
+      "closure": "Recover the exact A target/poison/reference/metadata archive and joins; do not relabel B material as A. For B, retain existing records and add only clearly separated descriptive validation where needed."
+    },
+    {
+      "id": "3.3.6",
+      "expert_section": "3.3",
+      "requirement": "Provide trust labels used for each attack condition",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 33,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/experiment/insertions.json",
+          "line_start": 4,
+          "line_end": 13
+        }
+      ],
+      "assessment": "B base labels are serialized and accepted-label edits are explicit in code; original A labels cannot be independently checked.",
+      "closure": "Recover the exact A target/poison/reference/metadata archive and joins; do not relabel B material as A. For B, retain existing records and add only clearly separated descriptive validation where needed."
+    },
+    {
+      "id": "3.3.7",
+      "expert_section": "3.3",
+      "requirement": "Explain the attack-generation process",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 143,
+          "line_end": 145
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 29,
+          "line_end": 35
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 94,
+          "line_end": 118
+        }
+      ],
+      "assessment": "B has a fixed question/answer template and deterministic false integers; no historical A attack-generation code is available.",
+      "closure": "Recover the exact A target/poison/reference/metadata archive and joins; do not relabel B material as A. For B, retain existing records and add only clearly separated descriptive validation where needed."
+    },
+    {
+      "id": "3.3.8",
+      "expert_section": "3.3",
+      "requirement": "Describe attack length, structure, vocabulary, and similarity to clean material",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 143,
+          "line_end": 145
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 29,
+          "line_end": 35
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 33
+        }
+      ],
+      "assessment": "B fixes 120 whitespace words and discloses templated padding; token lengths, empirical relevance/similarity distributions, and realism remain unmeasured, while A texts are unavailable.",
+      "closure": "Recover the exact A target/poison/reference/metadata archive and joins; do not relabel B material as A. For B, retain existing records and add only clearly separated descriptive validation where needed."
+    },
+    {
+      "id": "3.4.1",
+      "expert_section": "3.4",
+      "requirement": "Explain exact answer-value scoring with examples",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 75
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 36,
+          "line_end": 49
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 88,
+          "line_end": 102
+        }
+      ],
+      "assessment": "Equations and B scorer are explicit, but worked output examples are not shown in the paper; A executable scoring is absent.",
+      "closure": "Add evidence-linked examples for correct, false-only, mixed, negated, and abstaining outputs without changing the frozen primary scores; recover A scorer for historical rescoring."
+    },
+    {
+      "id": "3.4.2",
+      "expert_section": "3.4",
+      "requirement": "Specify numeric, year, unit, decimal, and format normalization",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 36,
+          "line_end": 49
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 75
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 344,
+          "line_end": 349
+        }
+      ],
+      "assessment": "B recognizes ASCII decimal tokens and removes digit commas; unit, relation, negation, spoken numbers, and temporal interpretation are not normalized. Its references are selected integer strings.",
+      "closure": "Document supported/unsupported formats precisely; validate a normalization test set and semantic/unit/date rules in a separately versioned evaluator rather than silently replacing current scores."
+    },
+    {
+      "id": "3.4.3",
+      "expert_section": "3.4",
+      "requirement": "Recheck results against references with executable scoring",
+      "force": "required",
+      "kind": "validation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 107
+        },
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "line_start": 7
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 3,
+          "line_end": 24
+        }
+      ],
+      "assessment": "B raw outputs, references, scorer, and hash-consistent scored rows are present. This research check verified hashes and counts only; it did not rerun the writing analysis script. Historical A results cannot be rescored here.",
+      "closure": "Perform an independent read-only B rescoring comparison and retain discrepancy results. Recover the A raw responses, references, and original evaluator before calling A replay verified."
+    },
+    {
+      "id": "3.4.4",
+      "expert_section": "3.4",
+      "requirement": "Show correct, incorrect, and ambiguous automatic-scoring examples",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 242
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 8
+        },
+        {
+          "path": "/workspace/revision/experiment/posthoc_output_diagnostics.json",
+          "line_start": 1,
+          "line_end": 8
+        }
+      ],
+      "assessment": "The article mentions a post hoc UNKNOWN diagnostic but supplies no quoted case table. CSV line 8 credits reference 1972 although the response explicitly says UNKNOWN based on the provided passages.",
+      "closure": "Prepare a traceable case table with question, reference, context, response, automatic verdict, and genuine semantic review; label selection as post hoc."
+    },
+    {
+      "id": "3.4.5",
+      "expert_section": "3.4",
+      "requirement": "Compare a human-reviewed sample with automatic judgments",
+      "force": "optional_where_possible",
+      "kind": "validation",
+      "status": "unsupported",
+      "study_a_status": "unavailable",
+      "study_b_status": "unsupported",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 171
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 23
+        },
+        {
+          "path": "/workspace/revision/experiment/HUMAN_REVIEW_INSTRUCTIONS.md",
+          "line_start": 1,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/revision/experiment/human_review_blinded.csv",
+          "line_start": 1,
+          "line_end": 2
+        }
+      ],
+      "assessment": "All 376 review rows contain blank reviewer and adjudication fields; templates are not judgments. No agreement or human/automatic error estimate exists.",
+      "closure": "Obtain actual independent human labels under a declared sampling/blinding protocol, adjudicate disagreements, and report agreement and automatic-score error rates. Do not substitute AI labels."
+    },
+    {
+      "id": "3.4.6",
+      "expert_section": "3.4",
+      "requirement": "Separate correct-source retrieval, answer selection, and generative answer correctness",
+      "force": "required",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 99,
+          "line_end": 106
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 291,
+          "line_end": 293
+        }
+      ],
+      "assessment": "The final article distinguishes extractive and generative systems, evidence recall, exposure, value production, prevention, and restoration; it does not call value matching independent semantic correctness.",
+      "closure": "Preserve these outcome names and denominators in the next report and analysis."
+    },
+    {
+      "id": "3.5.1",
+      "expert_section": "3.5",
+      "requirement": "Analyze retrieval, answer selection, and attack success separately",
+      "force": "required",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217,
+          "line_end": 242
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 265
+        }
+      ],
+      "assessment": "Separate outcomes and paired transitions are reported for both studies with scope labels.",
+      "closure": "Retain this separation; historical measurement remains reported evidence, not a newly reproduced result."
+    },
+    {
+      "id": "3.5.2",
+      "expert_section": "3.5",
+      "requirement": "Explain why more gold recall can coexist with lower answer accuracy",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 242
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 265
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 291,
+          "line_end": 293
+        }
+      ],
+      "assessment": "Counts show divergent retrieval/answer outcomes, but the paper lacks detailed response/context cases explaining the mechanisms; cross-study differences cannot isolate the generator effect.",
+      "closure": "Use auditable within-study failure cases and rank/context/answer traces; avoid inventing a causal explanation for A without its archive."
+    },
+    {
+      "id": "3.5.3",
+      "expert_section": "3.5",
+      "requirement": "Analyze failure cases rather than only endpoint numbers",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217,
+          "line_end": 242
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1,
+          "line_end": 8
+        }
+      ],
+      "assessment": "B exports record-level evidence and reports coexistence and transition counts, but no substantive qualitative case audit is completed. A raw cases are unavailable.",
+      "closure": "Create a preregistered or explicitly post hoc failure taxonomy and real case review covering the expert’s five categories."
+    },
+    {
+      "id": "3.5.4",
+      "expert_section": "3.5",
+      "requirement": "Bound conclusions and do not interpret zero ASR as universal immunity",
+      "force": "required",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 153
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 315
+        }
+      ],
+      "assessment": "The article calls the rejection gate an assumed boundary and limits claims to tested labels, one model, a numerical subset, and a fixed corpus.",
+      "closure": "Keep zero as zero observed scored successes under the supplied conditions, not certified or population robustness."
+    },
+    {
+      "id": "3.6.1",
+      "expert_section": "3.6",
+      "requirement": "Explain how trust labels are assigned",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 104,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        }
+      ],
+      "assessment": "B labels are mechanically assigned by preparation code; this is explicit synthetic eligibility, not an independently reviewed source-trust judgment. Historical A assignment records are absent.",
+      "closure": "Name the experimental label-assignment role and rule explicitly. Recover A provenance if its trust labels are to be independently validated."
+    },
+    {
+      "id": "3.6.2",
+      "expert_section": "3.6",
+      "requirement": "Identify the person or institution authorized to approve documents",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unsupported",
+      "study_a_status": "unsupported",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 104,
+          "line_end": 118
+        }
+      ],
+      "assessment": "No actual certifying official, organizational source register, approval workflow, or accountable review record is identified; B merely assumes labels assigned by experiment construction.",
+      "closure": "For the experimental claim, state that the experimenter assigns labels and no institutional approval process is tested. Any operational claim requires real authority/workflow evidence."
+    },
+    {
+      "id": "3.6.3",
+      "expert_section": "3.6",
+      "requirement": "Clarify whether metadata is backed by authentication, audit logging, and access control",
+      "force": "required",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        }
+      ],
+      "assessment": "The article clearly states that the implemented gate does not authenticate sources or implement verification; code only checks fields. It does not claim that genuine ACLs or signatures were tested.",
+      "closure": "Preserve this explicit absence. A stronger operational claim would need an implementation and unauthorized-change evidence."
+    },
+    {
+      "id": "3.6.4",
+      "expert_section": "3.6",
+      "requirement": "Include the gate limitation in discussion and conclusion",
+      "force": "required",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 315
+        }
+      ],
+      "assessment": "The dependence on labels and metadata-only compromise are expressly discussed.",
+      "closure": "Retain the stated authority boundary and separate authenticity from truth."
+    },
+    {
+      "id": "3.6.5",
+      "expert_section": "3.6",
+      "requirement": "Where possible test unauthorized metadata modification and its impact",
+      "force": "optional_where_possible",
+      "kind": "experiment",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        }
+      ],
+      "assessment": "A matched accepted-label intervention exists for B, but it is direct experimental field modification; no actual unauthorized change against an authenticated ingestion/ACL system was attempted.",
+      "closure": "Either keep the experiment accurately named metadata compromise, or design a separate controlled ingestion-integrity test with authorization, audit logs, and pass/fail criteria."
+    },
+    {
+      "id": "3.7.1",
+      "expert_section": "3.7",
+      "requirement": "Document target selection at each attack budget",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 321,
+          "line_end": 332
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 74,
+          "line_end": 87
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 27,
+          "line_end": 34
+        }
+      ],
+      "assessment": "A nested seeded selection is described only in the historical text; membership lists are missing. B has a deterministic fixed 64-target selection at one positive dose.",
+      "closure": "Recover A selection manifests/permutations and poison memberships. Preserve B fixed selection without calling it a multi-budget replay."
+    },
+    {
+      "id": "3.7.2",
+      "expert_section": "3.7",
+      "requirement": "Separate attacked-target coverage, success count, and success rate among attacked targets",
+      "force": "required",
+      "kind": "analysis",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 73,
+          "line_end": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 131
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        }
+      ],
+      "assessment": "A all-target and injected-target rates and the coverage bound are stated; B holds positive-dose coverage at 64/64 and names denominators.",
+      "closure": "Carry the same denominator accounting into any future dose sweep."
+    },
+    {
+      "id": "3.7.3",
+      "expert_section": "3.7",
+      "requirement": "Add fixed-target evaluation across multiple attack doses",
+      "force": "recommended",
+      "kind": "experiment",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 30,
+          "line_end": 31
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 309,
+          "line_end": 311
+        }
+      ],
+      "assessment": "The historical target-specific repetition protocol is reported but not available to replay. B fixes targets at exactly one insertion each; a single positive dose does not test a dose-response curve.",
+      "closure": "Run a separately frozen multi-dose design with fixed coverage and report copies, unique passages, token budget, corpus share, and question-level outcomes. Prior baseline exposure must be disclosed; do not claim the reused set is newly untouched."
+    },
+    {
+      "id": "3.7.4",
+      "expert_section": "3.7",
+      "requirement": "Document seed values, use, and influence on selection",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 322,
+          "line_end": 332
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 269,
+          "line_end": 273
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 32,
+          "line_end": 50
+        }
+      ],
+      "assessment": "Historical seeds 17/42/91 and their interpretation are reported, but actual permutation/membership records are absent. B uses deterministic hashing for selection and seed 20261022 for bootstrap, not independent model samples.",
+      "closure": "Recover A seeded memberships; distinguish selection seeds, bootstrap seeds, and genuine repeated-generation sampling in every table."
+    },
+    {
+      "id": "3.8.1",
+      "expert_section": "3.8",
+      "requirement": "Analyze cases with retrieved correct evidence but wrong final answers",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 122
+        },
+        {
+          "path": "/workspace/revision/experiment/contexts.jsonl",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1
+        }
+      ],
+      "assessment": "B reports eight undefended and four reranked all-support/own-poison/false-value cases and preserves traces, but does not present a semantic case audit.",
+      "closure": "Extract real matched contexts and outputs for all or a declared sample of these cases, inspect endorsement/entity/year/units, and cite the case IDs."
+    },
+    {
+      "id": "3.8.2",
+      "expert_section": "3.8",
+      "requirement": "Analyze exposed poison when the attack nevertheless fails",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/experiment/summary.csv",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1
+        }
+      ],
+      "assessment": "B shows 64 exposed targets and 34 false-only outputs, but the remaining exposed cases are not examined as a substantive failure-mode group.",
+      "closure": "Separate correct answers, abstentions, other errors, and mixed/negated use of poison with genuine record-level review."
+    },
+    {
+      "id": "3.8.3",
+      "expert_section": "3.8",
+      "requirement": "Analyze attack prevention without correct-answer restoration",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        },
+        {
+          "path": "/workspace/revision/experiment/paired_defense_outcomes.csv",
+          "line_start": 1,
+          "line_end": 7
+        }
+      ],
+      "assessment": "Paired prevention/restoration counts explicitly differ; qualitative cases explaining the un-restored outcomes have not been reviewed.",
+      "closure": "Use paired before/after traces to identify residual clean errors, lost evidence, abstention, and other wrong answers without equating them with restored correctness."
+    },
+    {
+      "id": "3.8.4",
+      "expert_section": "3.8",
+      "requirement": "Analyze how changed trust labels change attack outcomes",
+      "force": "required",
+      "kind": "analysis",
+      "status": "addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 148,
+          "line_end": 155
+        }
+      ],
+      "assessment": "B keeps poisoned text fixed, changes only labels, and checks resulting payload equivalences. The result is explicitly conditional on synthetic labels.",
+      "closure": "Retain the matched control and clearly state that it does not demonstrate compromise of a real source-approval service."
+    },
+    {
+      "id": "3.8.5",
+      "expert_section": "3.8",
+      "requirement": "Analyze repetition-induced changes in system behavior",
+      "force": "required",
+      "kind": "experiment",
+      "status": "unavailable",
+      "study_a_status": "unavailable",
+      "study_b_status": "unsupported",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 31
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 309,
+          "line_end": 311
+        }
+      ],
+      "assessment": "Only historical aggregate repetition results remain; B has no repetition sweep.",
+      "closure": "Recover the historical repetition archive or run a separate fixed-target copy/diversity sweep with contexts, duplicate handling, and answer traces."
+    },
+    {
+      "id": "3.8.6",
+      "expert_section": "3.8",
+      "requirement": "Present repetition as a separate protocol with complete execution and evaluation detail",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": null,
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 376,
+          "line_end": 384
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 876,
+          "line_end": 890
+        }
+      ],
+      "assessment": "The article correctly separates target-specific repetition from shared-corpus studies, but only historical protocol prose and reported counts are available.",
+      "closure": "Obtain exact repetition configs, target-specific corpus instances, raw outputs, metadata variants, seeds, and scorer; otherwise retain only an explicitly historical summary."
+    },
+    {
+      "id": "4.1",
+      "expert_section": "4",
+      "requirement": "Abstract: problem, actual method, data, major results, and main limitation",
+      "force": "required",
+      "kind": "writing",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 18
+        }
+      ],
+      "assessment": "The abstract distinguishes extraction from real generation, reports both data scales, caching, key outcomes, and lack of independent semantic adjudication.",
+      "closure": "Preserve accurate scope and update it only after any new verified experiments."
+    },
+    {
+      "id": "4.2",
+      "expert_section": "4",
+      "requirement": "Methods sufficiently detailed to reconstruct the entire pipeline",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 113,
+          "line_end": 171
+        },
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 25,
+          "line_end": 74
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        }
+      ],
+      "assessment": "B has data/code/frozen vectors/requests and a defined protocol, but fresh source reconstruction and independent execution have not been validated in this research pass; A cannot be reconstructed.",
+      "closure": "Audit reconstruction in a clean separate copy, including source-to-selected-data and saved-embedding retrieval replay. Recover A archives or preserve its unreproduced status."
+    },
+    {
+      "id": "4.3",
+      "expert_section": "4",
+      "requirement": "Results: precise metrics/conditions and separation of principal and supplementary experiments",
+      "force": "required",
+      "kind": "writing",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 173,
+          "line_end": 277
+        }
+      ],
+      "assessment": "B results follow RQ1–RQ4, and A historical endpoints/repetition/development pilots are separated rather than pooled.",
+      "closure": "Keep every cohort/protocol/model and denominator explicit; do not add historical row counts to B sample size."
+    },
+    {
+      "id": "4.4",
+      "expert_section": "4",
+      "requirement": "Discussion: explain retrieval/attack divergence and metadata limitations",
+      "force": "required",
+      "kind": "writing",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 285,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217,
+          "line_end": 225
+        }
+      ],
+      "assessment": "Conceptual interpretation and gate limitations are clear, but deeper empirical failure-case explanations remain unfinished.",
+      "closure": "Ground the discussion in reviewed cases and causal boundaries rather than additional speculative mechanisms."
+    },
+    {
+      "id": "4.5",
+      "expert_section": "4",
+      "requirement": "Conclusion restricted to directly supported experimental claims",
+      "force": "required",
+      "kind": "writing",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 303,
+          "line_end": 315
+        }
+      ],
+      "assessment": "The conclusion distinguishes historical results, one-model numerical outcomes, label assumptions, and outstanding semantic/external validation.",
+      "closure": "Retain these limits; a more polished style must not turn bounded empirical observations into guarantees."
+    },
+    {
+      "id": "5.1",
+      "expert_section": "5",
+      "requirement": "Full preparation/retrieval/reranking/filtering/scoring code",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 27,
+          "line_end": 42
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 38,
+          "line_end": 155
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 137,
+          "line_end": 243
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 183
+        }
+      ],
+      "assessment": "All B scripts exist; the 32 historical A modules and audit/replay scripts do not.",
+      "closure": "Provide B scripts in the actual package supplied for review and recover A code if historical replay is required."
+    },
+    {
+      "id": "5.2",
+      "expert_section": "5",
+      "requirement": "Original documents, chunks, questions, and reference answers",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 30,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/revision/experiment/clean_documents.json",
+          "line_start": 1,
+          "line_end": 9
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 1,
+          "line_end": 33
+        }
+      ],
+      "assessment": "Selected B records exist, but the full pinned upstream Parquet is not currently present locally; A corpus and references are absent.",
+      "closure": "Archive or retrieve/hash-verify the pinned source file and check selected B reconstruction; obtain the A corpus and reference tables."
+    },
+    {
+      "id": "5.3",
+      "expert_section": "5",
+      "requirement": "Complete attack passages, IDs, targets, and desired false answers",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/insertions.json",
+          "line_start": 1,
+          "line_end": 26
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 148
+        }
+      ],
+      "assessment": "B full attack/control pools and joins exist; original 104-target A material is absent.",
+      "closure": "Share B material as B only and obtain original A attack records before claiming coverage of the expert’s historical list."
+    },
+    {
+      "id": "5.4",
+      "expert_section": "5",
+      "requirement": "Complete experimental configuration and seeds",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 3,
+          "line_end": 52
+        },
+        {
+          "path": "/workspace/revision/experiment/generation_freeze.json",
+          "line_start": 2,
+          "line_end": 12
+        }
+      ],
+      "assessment": "B config and freeze manifests exist; A original configuration and selection manifests are missing.",
+      "closure": "Keep B config immutable and supply all A protocol/seed files if recovered."
+    },
+    {
+      "id": "5.5",
+      "expert_section": "5",
+      "requirement": "Raw per-question/per-defense/per-dose outcomes",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 36,
+          "line_end": 39
+        },
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "line_start": 3,
+          "line_end": 7
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1
+        }
+      ],
+      "assessment": "B has 376 raw unique responses, 1,280 contexts, and 1,280 scored rows; A 21,840 main and 3,016 repetition rows are absent.",
+      "closure": "Supply the B response-linked package and recover original A raw exports; aggregate plots or source PDF are not a substitute."
+    },
+    {
+      "id": "5.6",
+      "expert_section": "5",
+      "requirement": "Executable Recall/accuracy/ASR/exposure evaluator",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 36,
+          "line_end": 55
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 155
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 175,
+          "line_end": 188
+        }
+      ],
+      "assessment": "B scoring and context-metric code are available; A historical scorer is unavailable.",
+      "closure": "Independently verify B calculations from saved evidence and obtain A evaluator for like-for-like historical rescoring."
+    },
+    {
+      "id": "5.7",
+      "expert_section": "5",
+      "requirement": "Software, hardware, and environment information",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/generation_freeze.json",
+          "line_start": 10,
+          "line_end": 12
+        },
+        {
+          "path": "/workspace/revision/experiment/requirements.txt",
+          "line_start": 1,
+          "line_end": 4
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 321
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 884,
+          "line_end": 887
+        }
+      ],
+      "assessment": "Python/NumPy/sklearn and pinned package requirements are recorded, but a timestamped client OS/CPU/RAM/architecture record is not included; remote-provider hardware is not exposed. A software versions are narrative only.",
+      "closure": "Record available client execution/hardware facts with dates and acknowledge any unrecoverable historical/remote hardware. Do not infer original hardware from the current host."
+    },
+    {
+      "id": "5.8",
+      "expert_section": "5",
+      "requirement": "Data-source provenance, extraction, access dates, and verification records",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/source_dataset_metadata.json",
+          "line_start": 2,
+          "line_end": 6
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 49,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 127
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 364
+        }
+      ],
+      "assessment": "B pins a dataset revision and file hash and records extraction code, but independent reference verification and a source-access log are incomplete; A URLs/responses/manifests are absent.",
+      "closure": "Verify the upstream file against its hash, retain acquisition metadata, audit selected records/reference facts, and obtain A provenance records."
+    },
+    {
+      "id": "5.9",
+      "expert_section": "5",
+      "requirement": "Explain proposed versus actually executed architecture",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91,
+          "line_end": 109
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 816,
+          "line_end": 829
+        }
+      ],
+      "assessment": "The A/B distinction is clear, but the formal original proposal and causes of A deviations remain missing.",
+      "closure": "Obtain the original plan and supported deviation log, or state which intended components/reasons remain unverifiable."
+    },
+    {
+      "id": "5.10",
+      "expert_section": "5",
+      "requirement": "Documentation for trust-label and repetition supplementary experiments",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        }
+      ],
+      "assessment": "B accepted-label control is reconstructible; historical repetition/forgery archives are not available and B has no repetition study.",
+      "closure": "Provide the B matched-control material and recover A supplementary archives, or implement a separately scoped future repetition experiment."
+    },
+    {
+      "id": "5.11",
+      "expert_section": "5",
+      "requirement": "Explain publication/licensing restrictions and share publishable materials",
+      "force": "conditional",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 76,
+          "line_end": 93
+        },
+        {
+          "path": "/workspace/revision/experiment/source_dataset_metadata.json",
+          "line_start": 6
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 329
+        }
+      ],
+      "assessment": "B dataset/adaptation attribution and declared CC BY-SA terms are included; the paper states there is no public repository. Rights/provenance for unavailable A inherited documents cannot be checked.",
+      "closure": "Keep the actual deliverable accessible to the reviewer, distinguish private package availability from public release, and document any A source-specific restrictions before distribution."
+    },
+    {
+      "id": "6.1",
+      "expert_section": "6",
+      "requirement": "First clarify the real methodology and used components",
+      "force": "proposed_sequence",
+      "kind": "workflow",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 87,
+          "line_end": 171
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 816,
+          "line_end": 829
+        }
+      ],
+      "assessment": "Most B methodology is explicit, but A implementation rationale and original raw materials remain unresolved.",
+      "closure": "Start the next plan with an evidence inventory and source-of-truth architecture table; distinguish present facts from author recollection."
+    },
+    {
+      "id": "6.2",
+      "expert_section": "6",
+      "requirement": "Then recompute and reproduce existing results from code and raw data",
+      "force": "proposed_sequence",
+      "kind": "workflow",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 334
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 107
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 340,
+          "line_end": 342
+        }
+      ],
+      "assessment": "B permits saved-response rescoring and retrieval replay; this mapping pass only checked hashes/counts. A full rerun is blocked by missing archives and is not replaced by B.",
+      "closure": "Perform independent read-only B rescoring/retrieval replay in a separate analysis area and document discrepancies; recover A artifacts or retain a clear historical/unverified boundary."
+    },
+    {
+      "id": "6.3",
+      "expert_section": "6",
+      "requirement": "Then improve evaluation, review a human sample, and report justified uncertainty",
+      "force": "proposed_sequence",
+      "kind": "workflow",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 167,
+          "line_end": 171
+        },
+        {
+          "path": "/workspace/revision/experiment/HUMAN_REVIEW_INSTRUCTIONS.md",
+          "line_start": 15,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 23
+        }
+      ],
+      "assessment": "Executable numeric scoring and conditional bootstrap exist; genuine human labels, semantic-score comparison, and repeated-generation uncertainty do not.",
+      "closure": "Predeclare the review sample/rubric, obtain authentic human judgments, preserve current scores, and distinguish human disagreement, shared-corpus dependence, and generation variability."
+    },
+    {
+      "id": "6.4",
+      "expert_section": "6",
+      "requirement": "Then perform real-LLM supplementary experiments under matched conditions and fixed-target doses",
+      "force": "proposed_sequence",
+      "kind": "workflow",
+      "status": "partially_addressed",
+      "study_a_status": null,
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 157,
+          "line_end": 169
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 30,
+          "line_end": 31
+        }
+      ],
+      "assessment": "The real-LLM matched-control experiment is complete for one dose; fixed-target multi-dose evaluation and deeper failure analysis are not complete.",
+      "closure": "Specify the additional contrast and stopping/scoring rules before new outputs; treat it as a separate continuation, not a retroactive repair or historical replay."
+    },
+    {
+      "id": "6.5",
+      "expert_section": "6",
+      "requirement": "Finally rewrite abstract/discussion/conclusion from verified results and remove unsupported claims",
+      "force": "proposed_sequence",
+      "kind": "workflow",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 18
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 285,
+          "line_end": 315
+        }
+      ],
+      "assessment": "The current text is materially bounded and labels open validation tasks, although future results may require another rewrite.",
+      "closure": "Only update claims after the relevant evidence exists; preserve actual limitations in both the paper and response report."
+    }
+  ],
+  "additional_editorial_observations": [
+    {
+      "path": "/workspace/revision/Revised_Manuscript.md",
+      "line": 372,
+      "finding": "Reference [14] ends with the stray page-header text RAG SECURITY RESEARCH, apparently carried over from PDF text extraction.",
+      "scope": "Copyediting issue only; not a new empirical finding. No source file was changed."
+    }
+  ]
+}

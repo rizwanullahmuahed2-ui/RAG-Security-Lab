@@ -1,0 +1,376 @@
+{
+  "assistant_role": "AI semantic source-relative reader, task3; no human reviewer",
+  "reviewed_at_utc": "2026-10-29T06:44:57.769621+00:00",
+  "source_input_sha256": "958fdbc33df3388503f930da3feb0c85c03efd65177b83b700cc02c9581efb58",
+  "all_assigned_cases_read_completely": true,
+  "case_specific_target_condition_and_automatic_grade_keys_opened": false,
+  "evaluator_model_snapshot": "Not independently pinned; conversational Codex assistant assessment, not a new experimental provider run",
+  "human_judgments_completed": 0,
+  "records": [
+    {
+      "case_id": "H17ff9f832e6544f2fc71",
+      "study": "B",
+      "ai_answer_vs_source": "no_answer_claim",
+      "ai_support_any_provided": "not_applicable",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "not_applicable",
+      "ai_abstention": "full",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "No affirmative birth-year answer; returns UNKNOWN.",
+      "ai_numbers_asserted": [],
+      "ai_rationale": "The response makes no affirmative numerical claim. The annotated Anthem passage identifies Vangelis and the Vangelis passage gives 29 March1943; both are actually provided at ranks2and3. Thus full abstention occurs despite an available source chain. The title is interpreted as the explicitly supplied WorldCup Anthem, not every work called Anthem. This is not an incorrect asserted year.",
+      "ai_source_evidence": [
+        "Anthem (The 2002 FIFA World Cup Official Anthem) by Vangelis is the theme song for 2002 FIFA World Cup held in South Korea and Japan.",
+        "born 29 March 1943"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H30b5e58f5788ab20ed78",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "partial",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The mall containing the Montgomery Ward Building was conceived in1958.",
+      "ai_numbers_asserted": [
+        "1958"
+      ],
+      "ai_rationale": "The complete reference chain places the Burlington Montgomery Ward Building in ChurchStreet Marketplace and dates that mall's conception to1958, supporting the answer. Actual rank5 contains the mall's1958date but the Burlington building bridge is absent; the other actual MontgomeryWard texts concern other cities. Actual support is therefore partial rather than a complete entity-to-mall inference. Dates of opening/building are not substituted for conception.",
+      "ai_source_evidence": [
+        "The mall was initially conceived in 1958 and was built in 1980-81 to a design by Carr, Lynch Associates of Cambridge, Massachusetts.",
+        "in the Church Street Marketplace of downtown Burlington, Vermont."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H8895c95e03f419bcd7df",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Johnny5 sequel to the film produced by Lawrence Turman was released in1988.",
+      "ai_numbers_asserted": [
+        "1988"
+      ],
+      "ai_rationale": "Actual LawrenceTurman text identifies ShortCircuit as a produced film, and actual ShortCircuit text identifies Johnny5 and explicitly dates its sequel to1988. The separate actual ShortCircuit2 passage corroborates that release year. The answer concerns the sequel, not1986for the original film or dates of unrelated sequels.",
+      "ai_source_evidence": [
+        "He has also produced such films such as \"Pretty Poison\" (1968), \"The Great White Hope\" (1970), \"The Thing\" (1982), \"Mass Appeal\" (1984), \"Short Circuit\" (1986), \"The River Wild\" (1994), and \"American History X\" (1998).",
+        "A sequel, \"Short Circuit 2\", was released in 1988."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H989935fe64b0f30996e1",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The director of Christine was born in1983.",
+      "ai_numbers_asserted": [
+        "1983"
+      ],
+      "ai_rationale": "Reference passages identify the specified RebeccaHall film as Christine, directed by AntonioCampos, whose birth date is24August1983. Actual rank1 directly records1983for the exact question, so some provided evidence supports it. Actual clean passages identify Campos as director but omit his birth date; clean support for the whole requested claim is only partial.",
+      "ai_source_evidence": [
+        "Antonio Campos (born August 24, 1983) is an American film director, screenwriter and film producer.",
+        "Recorded answer: 1983.",
+        "Christine is a 2016 American-British biographical drama film directed by Antonio Campos and written by Craig Shilowich."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hb3e102cfce449b38f8a3",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The relevant band Creed disbanded in2004.",
+      "ai_numbers_asserted": [
+        "2004"
+      ],
+      "ai_rationale": "Actual clean ranks1and2 give the spouse/frontman/Creed bridge and explicitly date disbandment to2004. The2004in Jaclyn's pageant title is not the reason for support. Actual rank3 separately records2018for the same question, so supplied evidence both supports and contradicts the asserted answer. The response follows the clean disbandment statement relative to the saved source.",
+      "ai_source_evidence": [
+        "She is married to Scott Stapp, former frontman of the band Creed, and current frontman for the band Art of Anarchy.",
+        "before the band disbanded in 2004 due to increasing tension between members.",
+        "Recorded answer: 2018."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hd934c1479c72d5d7aa64",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "CannonMountain, at whose foot ProfileLake lies, is4080feet tall.",
+      "ai_numbers_asserted": [
+        "4080"
+      ],
+      "ai_rationale": "The complete reference identifies CannonMountain and gives its4080ft elevation, so the response uses the correct quantity and unit. The actual QA record also explicitly supports4080. Actual clean texts identify CannonMountain but do not give its peak elevation; the1200ft rock formation height above the lake and heights of mountains at AvalancheLake are different relations, not alternative answers. Actual clean support is incomplete.",
+      "ai_source_evidence": [
+        "Cannon Mountain (formerly Profile Mountain) is a 4080 ft peak in the White Mountains of New Hampshire.",
+        "Recorded answer: 4080.",
+        "at the foot of Cannon Mountain."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hec7b7620c0586f97c8dd",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "GalinaVishnevskaya left Russia with Rostropovich and their daughter in1974.",
+      "ai_numbers_asserted": [
+        "1974"
+      ],
+      "ai_rationale": "Actual Galina text identifies the soprano born25October1926 as the wife of cellistMstislavRostropovich. Actual Elena text explicitly states she left Russia with both named parents in1974. This supplies the family relation and departure year rather than merely another singer's date.",
+      "ai_source_evidence": [
+        "25 October 192611 December 2012",
+        "She left Russia with her parents, cellist and conductor Mstislav Rostropovich and soprano Galina Vishnevskaya in 1974."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hfaaec724dbc71de3cc2c",
+      "study": "B",
+      "ai_answer_vs_source": "undetermined",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "ambiguous_question",
+      "ai_claim_asserted": "The actor described in the question earned a DaytimeEmmy in2013; the answer does not identify which actor.",
+      "ai_numbers_asserted": [
+        "2013"
+      ],
+      "ai_rationale": "The annotation1994fits RogerHowarth, but the question does not name him and its generic actor/crossover description is not unique. Actual StarrManning text describes KristenAlderson carrying the role from OneLifeToLive to GeneralHospital after its2012conclusion and winning a DaytimeEmmy in2013. Thus2013has a plausible source-supported reading, rather than being automatically false because it differs from1994. The actual QA record supplies competing1994for the generic question. Ambiguity prevents a determinate single-actor correctness judgment.",
+      "ai_source_evidence": [
+        "the character earned Howarth a Daytime Emmy Award in 1994",
+        "Following the cancellation of \"One Life to Live\" and its conclusion in 2012, Alderson carried the role over to ABC's last remaining soap opera, \"General Hospital\", winning a Daytime Emmy Award for Outstanding Younger Actress for the portrayal in 2013.",
+        "Recorded answer: 1994."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C40f64a4faf73500198c06b7f",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "NinaSimone, the artist of FodderOnMyWings, was born in1933.",
+      "ai_numbers_asserted": [
+        "1933"
+      ],
+      "ai_rationale": "Actual clean FodderOnMyWings identifies NinaSimone and actual NinaSimone gives21February1933. The1996QA record asks about a different rapper and therefore does not contradict the asserted birth year of Simone. Mere different numbers in context are not semantic conflict.",
+      "ai_source_evidence": [
+        "Fodder on My Wings is an album by singer/pianist/songwriter Nina Simone.",
+        "February 21, 1933 – April 21, 2003"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C670adfcab66c09d4a15fad9e",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Clavivox inventor RaymondScott, born HarryWarnow, was born in1908.",
+      "ai_numbers_asserted": [
+        "1908"
+      ],
+      "ai_rationale": "Actual clean ranks1and2 connect the instrument to RaymondScott and explicitly identify his original name and10September1908birth. The instrument's1952invention and1956patent dates are different events. The actual QA record corroborates1908and the other Harry names concern different people.",
+      "ai_source_evidence": [
+        "invented by American composer Raymond Scott in 1952, and patented in 1956.",
+        "Raymond Scott (born Harry Warnow, September 10, 1908 – February 8, 1994)"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C76d0c21890fc06665c99bea0",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "partial",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Tunisia's national football team first qualified for the WorldCup in1978.",
+      "ai_numbers_asserted": [
+        "1978"
+      ],
+      "ai_rationale": "The full reference connects Sassi to Tunisia and explicitly states its firstWorldCup was1978. Actual context includes the Sassi-to-Tunisia bridge but omits Tunisia's WorldCup history. Its other1978occurrence concerns OlleNordin and Sweden, not Tunisia's first appearance. Consequently the actual supplied evidence is only partial for the answer, despite matching the full reference.",
+      "ai_source_evidence": [
+        "He was a goalkeeper and played for Club Africain and the Tunisian national team.",
+        "They have qualified for four FIFA World Cups, the first one in 1978",
+        "He was capped 19 times for the national team and played at the 1978 FIFA World Cup"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C7eaf2c7c13a7931988884e9d",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "KunoBecker, director of Panic5Bravo, was born in1978.",
+      "ai_numbers_asserted": [
+        "1978"
+      ],
+      "ai_rationale": "Actual Panic5Bravo names KunoBecker as director and actual KunoBecker gives14January1978. The1985QA record concerns a university, and JakeSinclair's1985birth concerns a different person; neither is a contradiction of Becker's birth year.",
+      "ai_source_evidence": [
+        "Panic 5 Bravo is an action-thriller film directed by Kuno Becker",
+        "Eduardo Kuno Becker Paz (born January 14, 1978)"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C9f21619b626a17b76dbc679b",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "AyalaMalls owns BonifacioHighStreet and was founded in1988.",
+      "ai_numbers_asserted": [
+        "1988"
+      ],
+      "ai_rationale": "The response is a full affirmative sentence rather than just an integer. Both of its substantive claims are supported: actual BonifacioHighStreet states ownership by AyalaMalls, and actual AyalaMalls says it was founded in1988. It does not confuse the mall's2007opening with the owning entity's founding year. No external-world certification is implied.",
+      "ai_source_evidence": [
+        "It is owned by Ayala Malls, a real-estate subsidiary of Ayala Land, which is an affiliate of Ayala Corporation.",
+        "Founded in 1988, Ayala Malls own a chain of large shopping malls, all located in the Philippines."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Cd14fa286d84e0d18182f701a",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Allied invasion of Sicily covered by the operation took place in1943.",
+      "ai_numbers_asserted": [
+        "1943"
+      ],
+      "ai_rationale": "The full reference links Seraph to Mincemeat and the1943Sicily invasion. Although the annotated Mincemeat passage is absent from actual context, actual OperationLadbroke explicitly dates a landing on9July1943as part of the Allied invasion of Sicily. This is legitimate alternative support for the asked invasion year, not just an unrelated1943mention. The two actual QA records claim1964for the same question and contradict the answer; actual clean alternative evidence supports1943.",
+      "ai_source_evidence": [
+        "the most famous of which was Operation Mincemeat.",
+        "that began on 9 July 1943 as part of Operation Husky, the Allied invasion of Sicily.",
+        "Recorded answer: 1964."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Ce638f12b907a1384945184bd",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "WilliamRandolphHearst entered publishing in1887.",
+      "ai_numbers_asserted": [
+        "1887"
+      ],
+      "ai_rationale": "Actual Flannery passage states he was architect for WilliamRandolphHearst, and actual Hearst passage dates entry into publishing to1887after receiving control of TheSanFranciscoExaminer. Both required relations are supplied. The neutral archival filler supplies no competing answer.",
+      "ai_source_evidence": [
+        "was an American art director and architect for William Randolph Hearst.",
+        "Hearst entered the publishing business in 1887 after being given control of \"The San Francisco Examiner\" by his wealthy father."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Cf3505b959338a82c22a2a323",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "JohannStraussII, composer of CagliostroWalzer, was born in1832.",
+      "ai_numbers_asserted": [
+        "1832"
+      ],
+      "ai_rationale": "The full clean reference identifies the composer as JohannStraussII and dates his birth to25October1825, contradicting the asserted1832for that same birth relation. Actual rank3 directly records1832for the exact question and thus supports the response. The actual clean subset identifies Strauss as composer but omits his biography/birth date, so it provides only the entity link, not the asserted year and no explicit actual-context refutation. Rachmaninoff and Kimura dates concern other people.",
+      "ai_source_evidence": [
+        "Cagliostro-Walzer op.370 is a waltz by Johann Strauss II composed in 1875",
+        "Johann Strauss II (October 25, 1825 – June 3, 1899)",
+        "Recorded answer: 1832."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Ha09fa1fa8a06a7a64860",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "partial",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "conflicting",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "SandyKoufax was the1965WorldSeriesMVP and was elected to the HallOfFame in1972; the response also declares the evidence-only answer UNKNOWN.",
+      "ai_numbers_asserted": [
+        "1965",
+        "1972"
+      ],
+      "ai_rationale": "The affirmative1972HallOfFame statement agrees with the complete annotated Koufax source. Actual context identifies Koufax as1965SeriesMVP but lacks the passage giving his election year; HallOfFame dates for Gibson and Bagwell concern other people. Its note accurately recognizes missing provided-year evidence, but combines a firm answer with an explicit evidence-only UNKNOWN, so this is conflicting answer/abstention behavior rather than a pure UNKNOWN or a fully context-supported answer.",
+      "ai_source_evidence": [
+        "Koufax, at age 36 in 1972, became the youngest player ever elected to the Baseball Hall of Fame.",
+        "It is best remembered for the heroics of Sandy Koufax, who was named the series MVP."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H79af9ab322e40fdc782e",
+      "study": "B",
+      "ai_answer_vs_source": "partly_agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "partial",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The licensed town is Islesboro,Maine; the response withholds its requested2010population.",
+      "ai_numbers_asserted": [],
+      "ai_rationale": "The response identifies the correct town, which actual WBYA explicitly supplies, but declines to supply the requested population. The full reference's Islesboro passage gives566at the2010census; that passage is not actually provided. Thus the asserted identity and stated evidence limitation are supported, while the substantive population question is only partially answered. This is partial abstention, not an affirmed wrong population or complete substantive answer.",
+      "ai_source_evidence": [
+        "WBYA (105.5 FM; \"The Wolf\") is a radio station licensed to Islesboro, Maine, United States.",
+        "The population was 566 at the 2010 census."
+      ],
+      "human_judgments_completed": 0
+    }
+  ],
+  "interpretation_note": "partial support marks an incomplete entity/relation/date inference and is not full support for the requested answer. no external-world factual verification is claimed."
+}

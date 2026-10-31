@@ -1,0 +1,1020 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-26T17:14:12.084724+00:00",
+  "source_candidates_file": "/workspace/rag_security_revision_v2/data/expanded_candidates/candidates.json",
+  "source_candidates_sha256": "4fdc2f119126864e88bd5115c70e7e96f72dc26d2ce282b384aaa8d79d70b54d",
+  "indices_zero_based": [
+    64,
+    127
+  ],
+  "review_method": "Assistant source-snapshot review before Study C inference; original questions and answers unchanged",
+  "independent_external_fact_validation": false,
+  "human_judgments_completed": 0,
+  "decision_counts": {
+    "accepted_source_supported": 47,
+    "needs_resolution": 7,
+    "exclude": 10
+  },
+  "interpretation": "accepted_source_supported means consistency of the written question and reference with the described source interpretation; it is not completed human validation or universal external factual truth. Unresolved and excluded cases must not be silently filled into a frozen test.",
+  "records": [
+    {
+      "index": 64,
+      "qid": "5aba18ee5542994dbf0198b4",
+      "question": "In what year was the scientific journal for which Danilo Erricolo is currently Editor-in-Chief established?",
+      "original_reference": "1952",
+      "decision": "accepted_source_supported",
+      "reason": "The Erricolo passage identifies IEEE Transactions on Antennas and Propagation; that journal passage states it was established in 1952. Entity, establishment event and year align. The present-tense editor role is a snapshot attribution, not a verified current appointment in 2026.",
+      "reviewed_support_titles": [
+        "Danilo Erricolo",
+        "IEEE Transactions on Antennas and Propagation"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 65,
+      "qid": "5a8782f25542996e4f308818",
+      "question": "Live Acoustic America features a cover of a Beatles song that peaked at what number in the United Kingdom?",
+      "original_reference": "4",
+      "decision": "accepted_source_supported",
+      "reason": "Live Acoustic America explicitly includes the Beatles cover Come Together; the Come Together passage states its UK chart peak was No. 4. The answer is a chart rank, not a general quantity, and the UK qualifier is preserved.",
+      "reviewed_support_titles": [
+        "Come Together",
+        "Live Acoustic America"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0,
+      "corrected_unit_class": "chart_rank"
+    },
+    {
+      "index": 66,
+      "qid": "5a8a5a1955429930ff3c0da7",
+      "question": "In what year was the Sayrevill, New Jersey rock band that Frankie LaRocka played drums for formed?",
+      "original_reference": "1983",
+      "decision": "accepted_source_supported",
+      "reason": "Frankie LaRocka is explicitly said to have played drums with Bon Jovi; the Bon Jovi passage identifies the Sayreville band and says it formed in 1983. The minor spelling error Sayrevill does not change the entity or founding-year relation.",
+      "reviewed_support_titles": [
+        "Bon Jovi",
+        "Frankie LaRocka"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 67,
+      "qid": "5a75e16055429976ec32bc6a",
+      "question": "Miller County is named after a governor who was born in which year ?",
+      "original_reference": "1776",
+      "decision": "needs_resolution",
+      "reason": "The intended Arkansas Territory county is named for Governor James Miller, whose birth year is 1776. However, another supplied context passage says Miller County, Missouri was named for Governor John Miller. The original question does not specify a state, territory or which governor; the county description is therefore not unique in its own context.",
+      "reviewed_support_titles": [
+        "James Miller (general)",
+        "Miller County, Arkansas Territory"
+      ],
+      "reviewed_extra_context_titles": [
+        "Miller County, Missouri",
+        "Miller County, Georgia"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 68,
+      "qid": "5a8d263f554299653c1aa139",
+      "question": "what year did the band that sang Gives You Hell form?",
+      "original_reference": "1999",
+      "decision": "accepted_source_supported",
+      "reason": "Gives You Hell explicitly identifies The All-American Rejects; the band passage states formation in Stillwater in 1999. The song-to-band-to-formation-year bridge and exact historical year are supported.",
+      "reviewed_support_titles": [
+        "Gives You Hell",
+        "The All-American Rejects"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 69,
+      "qid": "5a89a128554299669944a552",
+      "question": "Den Dover was born in a suburb with what total resident population?",
+      "original_reference": "6,396",
+      "decision": "exclude",
+      "reason": "Den Dover is linked to Stockton Heath and the source gives resident population 6,396, but neither the original population question nor the population sentence specifies a census or reference date. This unrestricted population value fails the prospective dated-quantity criterion.",
+      "reviewed_support_titles": [
+        "Den Dover",
+        "Stockton Heath"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 70,
+      "qid": "5abd0296554299114383a1d1",
+      "question": "Douglas D. Scott is an American archaeologist most notable for his work at the site of a battle that occurred in what year?",
+      "original_reference": "1876",
+      "decision": "accepted_source_supported",
+      "reason": "Douglas D. Scott is linked to archaeological work at Little Bighorn; the monument passage gives the Battle of the Little Bighorn dates as June 25 and 26, 1876. The question asks the battle year, not the later archaeological fieldwork year.",
+      "reviewed_support_titles": [
+        "Douglas D. Scott",
+        "Little Bighorn Battlefield National Monument"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 71,
+      "qid": "5a8ba59a554299240d9c2058",
+      "question": "The Duke Steps Out stars an actress who was ranked tenth on a list of greatest female Hollywood stars in what year?",
+      "original_reference": "1999",
+      "decision": "accepted_source_supported",
+      "reason": "The Duke Steps Out names Joan Crawford as a star; her passage states that the American Film Institute ranked her tenth in 1999. The rank and ranking year are explicitly connected to the same actress.",
+      "reviewed_support_titles": [
+        "Joan Crawford",
+        "The Duke Steps Out"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 72,
+      "qid": "5abd9c2355429924427fd06c",
+      "question": "In what year did the actor who starred in the TV Land original series \"The Soul Man\" host the Black Movie Awards?",
+      "original_reference": "2005",
+      "decision": "accepted_source_supported",
+      "reason": "Cedric the Entertainer is explicitly a star of The Soul Man, and Black Movie Awards identifies him as host of the 2005 ceremony. The 2006 host is Tyler Perry; the additional Soul Man cast passages do not attribute that hosting event to the other actors. This supports the intended source-defined bridge.",
+      "reviewed_support_titles": [
+        "Black Movie Awards",
+        "Cedric the Entertainer"
+      ],
+      "reviewed_extra_context_titles": [
+        "The Soul Man",
+        "Wesley Jonathan",
+        "Gary Anthony Williams"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 73,
+      "qid": "5addce005542997dc790703c",
+      "question": "How many daily flights are made by the Thai long-haul low-fare airline (part of the AirAsia Group) headquartered and based at Don Mueang International Airport?",
+      "original_reference": "21",
+      "decision": "exclude",
+      "reason": "The question identifies Thai AirAsia X, but the numerical source explicitly assigns 21 daily flights to AirAsia X itself. Thai AirAsia X is a joint venture involving AirAsia X, not the same airline. In addition, the question lacks the 2017 reference date used by the destinations source.",
+      "reviewed_support_titles": [
+        "AirAsia Group destinations",
+        "Thai AirAsia X"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 74,
+      "qid": "5a8dacf2554299068b959d91",
+      "question": "Which year did the band, who released \"Hooligan's Holiday,\" retire?",
+      "original_reference": "2015",
+      "decision": "accepted_source_supported",
+      "reason": "Hooligan's Holiday is explicitly by Motley Crue and the Mick Mars passage states the band retired in 2015. The endpoint is the historical retirement event as described by this snapshot; it must not be expanded into a claim that the band remained permanently retired.",
+      "reviewed_support_titles": [
+        "Hooligan's Holiday",
+        "Mick Mars"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 75,
+      "qid": "5a714b645542994082a3e78b",
+      "question": "What year did Lindsey Broad star in the movie with Russell Brand and Jonah Hill?",
+      "original_reference": "2010",
+      "decision": "accepted_source_supported",
+      "reason": "Lindsey Broad lists Get Him to the Greek among her film credits; the film passage identifies Russell Brand and Jonah Hill as stars and dates the film and its release to 2010. The requested film-year relation is supported.",
+      "reviewed_support_titles": [
+        "Get Him to the Greek",
+        "Lindsey Broad"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 76,
+      "qid": "5a7de63c5542995f4f4022f5",
+      "question": "In what year was the Commander of the second human spaceflight mission in the United States Apollo space program born?",
+      "original_reference": "1928",
+      "decision": "accepted_source_supported",
+      "reason": "Apollo 8 is explicitly the second human Apollo flight and names Frank Borman as Commander; the Borman passage gives his birth as March 14, 1928. The commander identity and requested birth year agree.",
+      "reviewed_support_titles": [
+        "Apollo 8",
+        "Frank Borman"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 77,
+      "qid": "5a7b8f5e554299294a54a9f6",
+      "question": "What was the population during the 2000 census of the town in Sagadahoc County, Maine that had a population of 3,411 during the 2010 census?",
+      "original_reference": "1,864",
+      "decision": "exclude",
+      "reason": "The 2010 figure 3,411 identifies the town of Richmond, Maine, but reference 1,864 in 2000 belongs to Richmond CDP, a distinct census unit within the town. The question asks for the same town, so the CDP value cannot be substituted for the town population.",
+      "reviewed_support_titles": [
+        "Richmond (CDP), Maine",
+        "Richmond, Maine"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 78,
+      "qid": "5ae256435542992decbdccc3",
+      "question": "In what year did the playwright who wrote \"The City Heiress\" die?",
+      "original_reference": "1689",
+      "decision": "accepted_source_supported",
+      "reason": "The City Heiress is explicitly a play by Aphra Behn; her biographical date range gives death on April 16, 1689. The uncertain birth date in the same passage is unrelated to the death-year question.",
+      "reviewed_support_titles": [
+        "Aphra Behn",
+        "The City Heiress"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 79,
+      "qid": "5a7c9ead5542990527d554e4",
+      "question": "As of 2010, what was the population of the county that was named after the 13th Speaker of the House of Representatives?",
+      "original_reference": "16,825",
+      "decision": "accepted_source_supported",
+      "reason": "The two passages identify the intended entity as Polk County, Tennessee, named for James K. Polk, and identify him as the 13th Speaker. The county passage explicitly dates population 16,825 to the 2010 census. Acceptance is for this source-defined county, not proof that the description uniquely identifies a county outside the supplied collection.",
+      "reviewed_support_titles": [
+        "James K. Polk",
+        "Polk County, Tennessee"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 80,
+      "qid": "5a849c135542992a431d1a7a",
+      "question": "What was the 2016 population of the city on the Bay Fundy which had an office of the Bank of British North America?",
+      "original_reference": "67,575",
+      "decision": "accepted_source_supported",
+      "reason": "The bank passage lists an office at Saint John, New Brunswick, and the city passage identifies Saint John as the Bay of Fundy port city. It separately gives city population 67,575 in 2016 and metropolitan population 126,202; the question asks the city in 2016, so the smaller figure is correctly selected.",
+      "reviewed_support_titles": [
+        "Bank of British North America",
+        "Saint John, New Brunswick"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 81,
+      "qid": "5ae532365542992663a4f150",
+      "question": "What year was Playford B Power Station permanently closed in by its Australian operator?",
+      "original_reference": "2015",
+      "decision": "needs_resolution",
+      "reason": "The station passage says Playford B was mothballed in 2012 and its permanent closure was announced in October 2015. The question asks when it was permanently closed, not when closure was announced. The supplied text does not explicitly equate the announcement date with the effective closure date.",
+      "reviewed_support_titles": [
+        "Alinta Energy",
+        "Playford B Power Station"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 82,
+      "qid": "5ae7535c5542997b22f6a6d8",
+      "question": "The 53rd National Hockey League All-Star Game took place at the indoor arena that was completed in what year?",
+      "original_reference": "1998",
+      "decision": "accepted_source_supported",
+      "reason": "The All-Star Game passage places the 53rd game at the Office Depot Center; the arena passage lists that former name for the BB&T Center and explicitly states completion in 1998. The naming alias and completion event align.",
+      "reviewed_support_titles": [
+        "53rd National Hockey League All-Star Game",
+        "BB&amp;T Center (Sunrise, Florida)"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 83,
+      "qid": "5a7c6bcc55429935c91b519c",
+      "question": "Rock Springs is a collection of short stories by an author born in what year?",
+      "original_reference": "1944",
+      "decision": "accepted_source_supported",
+      "reason": "Rock Springs is explicitly a short-story collection by Richard Ford and the Ford passage gives birth on February 16, 1944. The author-work identity and birth year are exact in the snapshot.",
+      "reviewed_support_titles": [
+        "Richard Ford",
+        "Rock Springs (short story collection)"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 84,
+      "qid": "5adcbc645542994d58a2f6b6",
+      "question": "Fodder on My Wings is an album by a singer/pianist/songwriter born in which year ?",
+      "original_reference": "1933",
+      "decision": "accepted_source_supported",
+      "reason": "Fodder on My Wings is explicitly an album by Nina Simone; her passage gives birth on February 21, 1933. The source discusses alternate album-title spellings but they do not change the named performer or birth year.",
+      "reviewed_support_titles": [
+        "Fodder on My Wings",
+        "Nina Simone"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 85,
+      "qid": "5a7a43245542994f819ef19d",
+      "question": "What is the birth year of the rapper who made The Cold Corner 2?",
+      "original_reference": "1982",
+      "decision": "accepted_source_supported",
+      "reason": "The Cold Corner 2 is explicitly a mixtape by Lloyd Banks, and his biography gives birth on April 30, 1982. The requested performer-birth-year bridge is supported, distinct from the mixtape release year 2011.",
+      "reviewed_support_titles": [
+        "Lloyd Banks",
+        "The Cold Corner 2"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 86,
+      "qid": "5a7b116a554299042af8f6c4",
+      "question": "What year did the prison where William Penn wrote No Cross, No Crown stop being used as a prison?",
+      "original_reference": "1952",
+      "decision": "accepted_source_supported",
+      "reason": "No Cross, No Crown was written during Penn's imprisonment in the Tower of London; the Tower passage explicitly says it was used as a prison until 1952. The endpoint of the stated prison-use interval answers the cessation-year question.",
+      "reviewed_support_titles": [
+        "No Cross, No Crown",
+        "Tower of London"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 87,
+      "qid": "5ae688065542996d980e7beb",
+      "question": "What was the population at the 2010 census of the city which, along with Clayton, is covered by the Mount Diablo Unified School District?",
+      "original_reference": "122,067",
+      "decision": "needs_resolution",
+      "reason": "The district text explicitly pairs Concord and Clayton and the Concord passage gives 122,067 at the 2010 census, supporting the intended answer. However, the district also covers most of Pleasant Hill and parts of other named cities; the extra Northgate passage confirms Walnut Creek coverage. The question does not require full-city coverage or otherwise uniquely distinguish Concord, so city identity needs resolution before prospective use.",
+      "reviewed_support_titles": [
+        "Concord, California",
+        "Mount Diablo Unified School District"
+      ],
+      "reviewed_extra_context_titles": [
+        "Northgate High School (Walnut Creek, California)"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 88,
+      "qid": "5adccdab5542994d58a2f6db",
+      "question": "What year was the album featuring the trio made up of Posdnuos, Dave, and Maseo, alongside Lebanese-Syrian rapper Eslam Jawaad release?",
+      "original_reference": "2009",
+      "decision": "accepted_source_supported",
+      "reason": "The trio membership Posdnuos, Dave and Maseo identifies De La Soul. The Mammoth Tusk passage identifies Eslam Jawaad, lists De La Soul as a collaborator and gives release on July 6, 2009; the extra Jawaad passage corroborates album and year.",
+      "reviewed_support_titles": [
+        "De La Soul",
+        "The Mammoth Tusk"
+      ],
+      "reviewed_extra_context_titles": [
+        "Eslam Jawaad"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 89,
+      "qid": "5ab9547755429970cfb8ea6c",
+      "question": "St Dionis Backchurch was rebuilt after a major conflagration that consumed how many parish churches?",
+      "original_reference": "87",
+      "decision": "accepted_source_supported",
+      "reason": "St Dionis Backchurch was rebuilt after the Great Fire of London. The fire passage states it consumed 87 parish churches, listing St Paul's Cathedral separately. The requested historical parish-church count is exact rather than the nearby estimated population displacement.",
+      "reviewed_support_titles": [
+        "Great Fire of London",
+        "St Dionis Backchurch"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0,
+      "corrected_unit_class": "parish_church_count"
+    },
+    {
+      "index": 90,
+      "qid": "5ab1eac95542993be8fa987f",
+      "question": "How many Senate seats will be contested during the midterm elections that Nancy Soderberg has filed to run for Congress in?",
+      "original_reference": "33",
+      "decision": "needs_resolution",
+      "reason": "Soderberg is linked to the 2018 midterms, and the election snapshot prospectively states 33 Senate seats will be contested. The extra classes passage explains regular class sizes of 33 or 34, while the question asks all contested Senate seats without restricting regular-class seats or fixing the forecast date. The all-seats versus regular/forecast scope is not sufficiently settled for a fresh exact-count item.",
+      "reviewed_support_titles": [
+        "Nancy Soderberg",
+        "United States elections, 2018"
+      ],
+      "reviewed_extra_context_titles": [
+        "Classes of United States Senators"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 91,
+      "qid": "5a88f7855542993b751ca8da",
+      "question": "In what year did a movie that starred both Nicholas Cage and Cher come out? ",
+      "original_reference": "1987",
+      "decision": "accepted_source_supported",
+      "reason": "Moonstruck identifies both Cher and Nicolas Cage and dates the film to 1987; the Cage filmography in his biography also lists Moonstruck (1987). The question's spelling Nicholas is a minor name error and does not create a different supported actor.",
+      "reviewed_support_titles": [
+        "Moonstruck",
+        "Nicolas Cage"
+      ],
+      "reviewed_extra_context_titles": [
+        "Cher filmography"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 92,
+      "qid": "5ae6fee3554299572ea54670",
+      "question": "The player who defeated Johnny Majors for the Heisman Trophy in 1956 was born in what year?",
+      "original_reference": "1935",
+      "decision": "accepted_source_supported",
+      "reason": "Johnny Majors is explicitly said to have finished second to Paul Hornung in the 1956 Heisman voting, and Hornung's biography gives birth in 1935. Both players happen to have birth year 1935, so the answer can be obtained through a shortcut; that limits the necessity of multi-hop reasoning but does not make this reference false.",
+      "reviewed_support_titles": [
+        "Johnny Majors",
+        "Paul Hornung"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0,
+      "multi_hop_necessity_warning": "Both named players share reference birth year 1935; full bridge is not necessary to emit that number."
+    },
+    {
+      "index": 93,
+      "qid": "5a8cd6de55429941ae14df07",
+      "question": "Charlotte Hatherley initially came to prominence in a band formed in what year?",
+      "original_reference": "1992",
+      "decision": "accepted_source_supported",
+      "reason": "Hatherley's biography identifies Ash as the band through which she first came to prominence; the Ash passage states formation in Downpatrick in 1992. Her later solo and touring projects are distinct and do not change this bridge.",
+      "reviewed_support_titles": [
+        "Ash (band)",
+        "Charlotte Hatherley"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 94,
+      "qid": "5a8ef1e35542995a26add57a",
+      "question": "The creator of the Lisa Simpson character was born in what year?",
+      "original_reference": "1954",
+      "decision": "accepted_source_supported",
+      "reason": "The Lisa Simpson passage explicitly attributes creation and design to Matt Groening; his biography gives birth on February 15, 1954. The character's voice actor and first television appearance are separate relations.",
+      "reviewed_support_titles": [
+        "Lisa Simpson",
+        "Matt Groening"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 95,
+      "qid": "5a7633ff5542994ccc918712",
+      "question": "When was the Chief Aerodynamicist for the British supersonic land vehicle, whose goal is to match or exceed 1000 mph achieving a new world land speed record, born?",
+      "original_reference": "1932",
+      "decision": "accepted_source_supported",
+      "reason": "The vehicle goal identifies Bloodhound SSC; the Ron Ayers passage names him as its Chief Aerodynamicist and explicitly gives birth in 1932. The 1000-mph target is a project goal, not the numerical endpoint being evaluated.",
+      "reviewed_support_titles": [
+        "Bloodhound SSC",
+        "Ron Ayers"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 96,
+      "qid": "5a88f2cc55429938390d3ffb",
+      "question": "What year did the Jang Hoon directed film, starring Song Kang-ho in the title role and selected as the South Korean entry for the Best Foreign Language Film at the 90th Academy Awards, debut?",
+      "original_reference": "2017",
+      "decision": "accepted_source_supported",
+      "reason": "A Taxi Driver is explicitly directed by Jang Hoon, stars Song Kang-ho in the title role and was selected for the 90th Academy Awards category specified. Its South Korean release date is August 2, 2017, and Jang's film list corroborates 2017.",
+      "reviewed_support_titles": [
+        "A Taxi Driver",
+        "Jang Hoon"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 97,
+      "qid": "5ae5429355429908b63265c5",
+      "question": "In what year was the aviator in whose honour the Quai d'Auteuil was renamed born?",
+      "original_reference": "1872",
+      "decision": "accepted_source_supported",
+      "reason": "Quai Louis-Bleriot was renamed from Quai d'Auteuil in honour of Louis Bleriot; his biographical date range gives birth on July 1, 1872. The question asks birth year, not the 1937 renaming year or 1909 Channel-flight year.",
+      "reviewed_support_titles": [
+        "Louis Blériot",
+        "Quai Louis-Blériot"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 98,
+      "qid": "5ae25d2b554299495565da46",
+      "question": "Who has more singles titles, Brian Gottfried or Peter Fleming?",
+      "original_reference": "21",
+      "decision": "exclude",
+      "reason": "The original question asks WHO has more singles titles. The passages state Brian Gottfried won 25 and Peter Fleming three; the requested answer is a player name, not 21. The reference 21 appears as the day of Fleming's birth and is not a singles-title total or an answer to the written question.",
+      "reviewed_support_titles": [
+        "Brian Gottfried",
+        "Peter Fleming (tennis)"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0,
+      "corrected_unit_class": "person_name_requested_not_integer"
+    },
+    {
+      "index": 99,
+      "qid": "5ae331fb55429928c4239670",
+      "question": "What year did the father of Willem van Oldenbarnevelt die?",
+      "original_reference": "1619",
+      "decision": "accepted_source_supported",
+      "reason": "Willem van Oldenbarnevelt is explicitly a son of Johan van Oldenbarnevelt; Johan's biography gives death on May 13, 1619. Willem's own uncertain death before 1638 is not the requested event.",
+      "reviewed_support_titles": [
+        "Johan van Oldenbarnevelt",
+        "Willem van Oldenbarnevelt"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 100,
+      "qid": "5a8dae82554299068b959d99",
+      "question": "What year was the actor son of Jeremiah Porter born? ",
+      "original_reference": "1997",
+      "decision": "exclude",
+      "reason": "The Jeremiah Porter passage says Porter was adopted by Glenn Cook, who was the father of Ben Cook. It does not make Ben the son of Jeremiah; it instead places them in an adoptive-sibling relationship. Ben's 1997 birth year does not repair the original question's wrong parent-child premise.",
+      "reviewed_support_titles": [
+        "Ben Cook (actor)",
+        "Jeremiah Porter"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 101,
+      "qid": "5ac195455542991316484b40",
+      "question": "In what year did the man who shot the Chris Stockley, of The Dingoes, die?",
+      "original_reference": "1987",
+      "decision": "accepted_source_supported",
+      "reason": "The Dingoes passage explicitly identifies Dennis Allen as the man who shot Chris Stockley; Allen's biography gives death in prison custody in 1987. The perpetrator identity and death-year relation are supported.",
+      "reviewed_support_titles": [
+        "Dennis Allen (criminal)",
+        "The Dingoes"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 102,
+      "qid": "5ade04d75542997dc7907125",
+      "question": "In what year did the director of The Lion King win the Tony Awards?",
+      "original_reference": "1998",
+      "decision": "accepted_source_supported",
+      "reason": "Julie Taymor is identified as director of the stage musical The Lion King and a Tony winner for directing it; the 67th Tony Awards passage states that Taymor had won in 1998. The extra franchise passage distinguishes the film directors from the stage musical, and Donald Holder is a lighting designer rather than the director. Acceptance uses the theatrical interpretation indicated by the Tony-award context.",
+      "reviewed_support_titles": [
+        "67th Tony Awards",
+        "Julie Taymor"
+      ],
+      "reviewed_extra_context_titles": [
+        "Donald Holder",
+        "The Lion King (franchise)"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 103,
+      "qid": "5abe79c755429976d4830b2a",
+      "question": "Mesih Pasha's uncle became emperor in what year?",
+      "original_reference": "1449",
+      "decision": "accepted_source_supported",
+      "reason": "Mesih Pasha is explicitly a nephew of Constantine XI Palaiologos; the emperor passage states his reign began in 1449. That start year answers became emperor, distinct from his 1405 birth and 1453 death.",
+      "reviewed_support_titles": [
+        "Constantine XI Palaiologos",
+        "Mesih Pasha"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 104,
+      "qid": "5ae22eae554299495565da30",
+      "question": "What was the 2010 population of the town where Black Crescent Mountain was located? ",
+      "original_reference": "310",
+      "decision": "needs_resolution",
+      "reason": "The annotated Black Crescent Mountain passage gives distances north of Randolph and southwest of Berlin without explicitly placing the summit inside Randolph. An extra unannotated Mount Crescent passage does supply the missing link, stating both mountains are in Randolph's Ice Gulch Town Forest; Randolph's 2010 population is 310. The reference is supported only after adding a third required passage. The two-support controlled-context protocol therefore needs resolution before this item is accepted.",
+      "reviewed_support_titles": [
+        "Black Crescent Mountain",
+        "Randolph, New Hampshire"
+      ],
+      "reviewed_extra_context_titles": [
+        "Crescent Range",
+        "Mount Crescent"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0,
+      "controlled_two_support_eligible": false
+    },
+    {
+      "index": 105,
+      "qid": "5ae3287f5542991a06ce993b",
+      "question": "When was the group formed whose Japanese debut EP/ video album is called Nobody for Everybody ?",
+      "original_reference": "2006",
+      "decision": "accepted_source_supported",
+      "reason": "Nobody for Everybody is explicitly the Japanese debut EP/video album of Wonder Girls, and the group passage states formation in 2006 and debut in 2007. The question asks formation, so 2006 is correctly distinguished from the debut year.",
+      "reviewed_support_titles": [
+        "Nobody for Everybody",
+        "Wonder Girls"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 106,
+      "qid": "5ae4f6c755429960a22e022a",
+      "question": "What is the 2010 population of the village at which Smith Haven Mall was located? ",
+      "original_reference": "11,163",
+      "decision": "accepted_source_supported",
+      "reason": "Smith Haven Mall is explicitly located in Lake Grove, New York; the village passage gives 11,163 at the 2010 census. The village is separately distinguished from the larger town of Brookhaven, avoiding a town-versus-village population substitution.",
+      "reviewed_support_titles": [
+        "Lake Grove, New York",
+        "Smith Haven Mall"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 107,
+      "qid": "5abc40835542993a06baf8ba",
+      "question": "When was the peer-reviewed open access scientific journal established in which Milivoje Kostic Editor-in-Chief of the Thermodynamics section?",
+      "original_reference": "1999",
+      "decision": "accepted_source_supported",
+      "reason": "The Kostic passage names him as editor-in-chief of the Thermodynamics SECTION of Entropy; the journal passage states establishment in 1999. Kevin Knuth is identified as overall journal editor, which is a different role and does not contradict the section-editor bridge. Appointment currency is not externally verified.",
+      "reviewed_support_titles": [
+        "Entropy (journal)",
+        "Milivoje Kostic"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 108,
+      "qid": "5a7cfb2755429907fabef084",
+      "question": "What year did the director of The Quiet American die?",
+      "original_reference": "1993",
+      "decision": "needs_resolution",
+      "reason": "The intended 1958 adaptation is directed by Joseph L. Mankiewicz, who died in 1993. However, the supplied collection explicitly includes a 2002 adaptation directed by Phillip Noyce and a novel passage noting both films. The original question does not specify the adaptation, so the director identity is underdetermined before asking a death year.",
+      "reviewed_support_titles": [
+        "Joseph L. Mankiewicz",
+        "The Quiet American (1958 film)"
+      ],
+      "reviewed_extra_context_titles": [
+        "The Quiet American",
+        "The Quiet American (2002 film)"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 109,
+      "qid": "5a7a27b35542996a35c1710b",
+      "question": "What was the release year of the song which, according to Peter Viney, appeared on most subsequent live album and compilations?",
+      "original_reference": "1968",
+      "decision": "needs_resolution",
+      "reason": "The Peter Viney quotation describes Chest Fever but qualifies its frequency as second only to The Weight. The question omits that qualification and can refer to the quoted song or the actual most-frequent song. Both passages happen to give 1968, but equal years do not resolve the song-identity ambiguity.",
+      "reviewed_support_titles": [
+        "Chest Fever",
+        "The Weight"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 110,
+      "qid": "5a7c084d5542997c3ec972c8",
+      "question": "Syracuse Orange men's basketball team was part of a conference that participated in how many total sports?",
+      "original_reference": "24",
+      "decision": "exclude",
+      "reason": "The intended 2011-12 team belonged to the Big East, whose members participated in 24 sports. But the question does not specify that season or conference. Other supplied team passages explicitly document the 2013 move to the ACC and later ACC membership, so an unrestricted historical conference description cannot uniquely select Big East's count.",
+      "reviewed_support_titles": [
+        "2011–12 Syracuse Orange men's basketball team",
+        "Big East Conference (1979–2013)"
+      ],
+      "reviewed_extra_context_titles": [
+        "2013–14 Syracuse Orange men's basketball team",
+        "2015–16 Syracuse Orange men's basketball team",
+        "Syracuse Orange men's basketball"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 111,
+      "qid": "5ae7a6da5542994a481bbdb9",
+      "question": "In what year did Mets fans start taking New York City Bus: Q48 to watch home games?",
+      "original_reference": "2009",
+      "decision": "exclude",
+      "reason": "The source says the Mets moved to Citi Field in 2009 and the Citi Field fragment lists bus Q48. Neither passage states when fans first began taking that bus to home games. A stadium move does not establish inception of bus use; the reference year answers a different event.",
+      "reviewed_support_titles": [
+        "Alex Anthony",
+        "Citi Field"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 112,
+      "qid": "5a8ac38855429970aeb70300",
+      "question": "When was the colony William Bradford was governor of founded?",
+      "original_reference": "1620",
+      "decision": "accepted_source_supported",
+      "reason": "The Babcock passage identifies William Bradford as Plymouth Colony governor, the extra governor biography corroborates the association, and the colony passage dates the English colonial venture from 1620 to 1691. The founding/start year 1620 is the requested event, not Bradford's later governorship start.",
+      "reviewed_support_titles": [
+        "Mabel Keyes Babcock",
+        "Plymouth Colony"
+      ],
+      "reviewed_extra_context_titles": [
+        "William Bradford (Plymouth Colony governor)"
+      ],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 113,
+      "qid": "5aba14195542994dbf0198a9",
+      "question": "How many animals does the wall running between the West Gate Lodge and Cardiff Castle depict?",
+      "original_reference": "15",
+      "decision": "accepted_source_supported",
+      "reason": "West Lodge identifies the Animal Wall as the wall running between the lodge and Cardiff Castle; the Animal Wall passage states it depicts 15 animals. This is the exact depicted structural count, not the approximate 100-metre lodge distance.",
+      "reviewed_support_titles": [
+        "Animal Wall",
+        "West Lodge, Cardiff Castle"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0,
+      "corrected_unit_class": "depicted_animal_count"
+    },
+    {
+      "index": 114,
+      "qid": "5ab6f7415542991d322236f4",
+      "question": "Sadok Sassi played for a national team that made its first World Cup in what year?",
+      "original_reference": "1978",
+      "decision": "accepted_source_supported",
+      "reason": "Sassi is explicitly linked to the Tunisian national team; the team passage states its first FIFA World Cup was in 1978. The outdated total of four participations is not the asked endpoint and does not alter the stated first-participation year.",
+      "reviewed_support_titles": [
+        "Sadok Sassi",
+        "Tunisia national football team"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 115,
+      "qid": "5ae3263455429928c4239634",
+      "question": "On November 2, 2010, John Spratt lost to an AMerican politician who served in the South Carolina General Assembly from 2007 until when?",
+      "original_reference": "2011",
+      "decision": "accepted_source_supported",
+      "reason": "John Spratt's 2010 opponent is explicitly Mick Mulvaney, and Mulvaney's biography gives service in the South Carolina General Assembly from 2007 to 2011. The original question asks the endpoint of that interval, so 2011 is supported.",
+      "reviewed_support_titles": [
+        "John Spratt",
+        "Mick Mulvaney"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 116,
+      "qid": "5a7b4d765542995eb53be8fe",
+      "question": "For how many years did a player, who woke up on March 28, 1996 without vision in his right eye, play for the Minnesota Twins?",
+      "original_reference": "12",
+      "decision": "accepted_source_supported",
+      "reason": "The 1996 season passage identifies Kirby Puckett as the player who woke without right-eye vision on the specified date. His biography explicitly describes an entire 12-year MLB career with the Twins, 1984-95. The reference is the stated career/season count, not a subtraction of calendar-year endpoints.",
+      "reviewed_support_titles": [
+        "1996 Minnesota Twins season",
+        "Kirby Puckett"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0,
+      "corrected_unit_class": "stated_career_years_or_seasons"
+    },
+    {
+      "index": 117,
+      "qid": "5a8b027e55429950cd6afc45",
+      "question": "The song \"Only a Pawn in Their Game\" was based on a crime whose perpetrator was convicted in this year.",
+      "original_reference": "1994",
+      "decision": "accepted_source_supported",
+      "reason": "Only a Pawn in Their Game identifies the Medgar Evers assassination and names Byron De La Beckwith; his biography explicitly gives conviction in 1994. The 1964 hung-jury trials and 2001 death are distinct events.",
+      "reviewed_support_titles": [
+        "Byron De La Beckwith",
+        "Only a Pawn in Their Game"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 118,
+      "qid": "5ae66d785542996d980e7b67",
+      "question": "When was the company that produced rectangular crackers that have 18 holes in a 3x6 pattern founded?",
+      "original_reference": "1853",
+      "decision": "accepted_source_supported",
+      "reason": "The rectangular 18-hole cracker description identifies Club Crackers and explicitly names Keebler as manufacturer; the Keebler passage states founding in 1853. Product design and company-founding year are connected without treating the hole count as the endpoint.",
+      "reviewed_support_titles": [
+        "Club Crackers",
+        "Keebler Company"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 119,
+      "qid": "5a7cb8bc554299452d57b9be",
+      "question": "What is the capacity of the stadium that is the home ground of the Lahore Eagles?",
+      "original_reference": "27,000",
+      "decision": "exclude",
+      "reason": "The home-ground bridge to Gaddafi Stadium is explicit and the source states capacity 27,000, but the question requests an unqualified current capacity and neither the question nor the capacity sentence fixes a reference date. Stadium capacity can change with renovation, so this fails the prospective dated/time-varying-count rule.",
+      "reviewed_support_titles": [
+        "Gaddafi Stadium",
+        "Lahore Eagles"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0,
+      "corrected_unit_class": "stadium_capacity"
+    },
+    {
+      "index": 120,
+      "qid": "5ae444b55542996836b02c63",
+      "question": "When was the brewery founded which has The Stag Inn Hastings as a tied house ?",
+      "original_reference": "1698",
+      "decision": "accepted_source_supported",
+      "reason": "The Stag Inn passage explicitly names Shepherd Neame as its tied-house brewery; the brewery passage states founding in 1698. The pub's construction era and the brewery's later family-ownership date are separate facts.",
+      "reviewed_support_titles": [
+        "Shepherd Neame Brewery",
+        "Stag Inn, Hastings"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 121,
+      "qid": "5ab85e9e55429934fafe6d8b",
+      "question": "What is the founding year of this public research university in the Netherlands, where Jan Borgman was a professor from 1968 to 1988?",
+      "original_reference": "1614",
+      "decision": "accepted_source_supported",
+      "reason": "Jan Borgman is explicitly linked to a professorship at the University of Groningen from 1968 to 1988; the university passage states its founding in 1614. The institution, country and requested founding-year relation align.",
+      "reviewed_support_titles": [
+        "Jan Borgman",
+        "University of Groningen"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 122,
+      "qid": "5ae26c435542994d89d5b420",
+      "question": "Cagliostro-Walzer op.370 was composed by a man born in what year?",
+      "original_reference": "1825",
+      "decision": "accepted_source_supported",
+      "reason": "Cagliostro-Walzer op. 370 is explicitly by Johann Strauss II, and his biography gives birth on October 25, 1825. The composition year 1875 and the father's similar name are not substituted for the requested composer-birth year.",
+      "reviewed_support_titles": [
+        "Cagliostro-Walzer",
+        "Johann Strauss II"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 123,
+      "qid": "5a8b2a0355429971feec465b",
+      "question": "How much longer after Sambou Yatabaré was born did Werder Bremen get founded in the northwest German federal state Free Hanseatic City of Bremen?",
+      "original_reference": "1899",
+      "decision": "exclude",
+      "reason": "The question asks how much later the club was founded after Yatabare's birth, but the source puts the club founding in 1899 and his birth in 1989: founding was earlier, not later. Moreover, 1899 is a year, not the requested elapsed duration. Both temporal direction and output unit conflict with the written question.",
+      "reviewed_support_titles": [
+        "SV Werder Bremen",
+        "Sambou Yatabaré"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0,
+      "corrected_unit_class": "elapsed_duration_requested_not_founding_year"
+    },
+    {
+      "index": 124,
+      "qid": "5ae28058554299495565da90",
+      "question": "In what year was the fantasy and science fiction author of the short story \"Recovery\" born?",
+      "original_reference": "1958",
+      "decision": "accepted_source_supported",
+      "reason": "Recovery is explicitly a short story by Troy Denning; his biography gives birth in 1958 and identifies the fantasy/science-fiction author. The series-installment label and novel title do not change the author identity.",
+      "reviewed_support_titles": [
+        "Recovery (novel)",
+        "Troy Denning"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 125,
+      "qid": "5a8a03985542992e4fca84d6",
+      "question": "When was the star of the 1982 remake of The Spider's Web appointed to Dame Commander of the Order of the British Empire (DBE)?",
+      "original_reference": "2014",
+      "decision": "accepted_source_supported",
+      "reason": "The Spider's Web passage explicitly names Penelope Keith as star of the 1982 television remake; her biography states appointment as DBE in the 2014 New Year Honours. The accepted value is the stated honours-list year, not the 1982 broadcast date or an independently verified announcement date.",
+      "reviewed_support_titles": [
+        "Penelope Keith",
+        "The Spider's Web (1960 film)"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 126,
+      "qid": "5a7d158155429909bec76947",
+      "question": "The star of \"Lady in a Cage\" was born in what year?",
+      "original_reference": "1916",
+      "decision": "accepted_source_supported",
+      "reason": "Lady in a Cage explicitly stars Olivia de Havilland and separately features James Caan. Her biography gives birth on July 1, 1916. The singular star descriptor therefore supports the intended actress rather than the featured actor.",
+      "reviewed_support_titles": [
+        "Lady in a Cage",
+        "Olivia de Havilland"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    },
+    {
+      "index": 127,
+      "qid": "5ab55e015542992aa134a2d3",
+      "question": "The Hong Kong Museum of Coastal Defence is located on an island with a population of what?",
+      "original_reference": "1,289,500",
+      "decision": "exclude",
+      "reason": "The museum-to-Hong-Kong-Island bridge is explicit, but the source dates population 1,289,500 to 2008 while the original question provides no population reference date. This unrestricted population question cannot silently turn the source's 2008 value into an unqualified present-day answer.",
+      "reviewed_support_titles": [
+        "Hong Kong Island",
+        "Hong Kong Museum of Coastal Defence"
+      ],
+      "reviewed_extra_context_titles": [],
+      "review_scope": "AI assistant reading of original question, full annotated support passages, all context titles and the named additional full passages; not human or independent external factual validation",
+      "human_judgments_completed": 0
+    }
+  ]
+}

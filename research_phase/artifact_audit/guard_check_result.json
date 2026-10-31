@@ -1,0 +1,9 @@
+{
+  "offline_mock": true,
+  "network_requests_made": 0,
+  "model_responses_created": 0,
+  "requests_file_differs_from_manifest": true,
+  "individual_payload_differs_from_its_stored_hash": true,
+  "modified_payload_reached_mock_transport": true,
+  "conclusion": "Fresh-cache generation path does not reject altered requests before transport; no impact demonstrated on the intact archived run."
+}

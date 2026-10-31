@@ -1,0 +1,24 @@
+name: Verify published research evidence
+on:
+  push:
+    paths:
+      - 'rag_security_revision_v2/**'
+      - 'revision/**'
+      - 'research_phase/**'
+      - 'implementation_plan/**'
+      - 'final_submission/**'
+      - '.github/workflows/research-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  saved-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify hashes, saved responses and recorded metrics without API calls
+        run: python rag_security_revision_v2/release/verify_evidence.py

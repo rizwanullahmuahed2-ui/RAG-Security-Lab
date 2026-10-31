@@ -1,0 +1,628 @@
+{
+  "reviewed_at_utc": "2026-10-27T06:00:34.800407+00:00",
+  "review_type": "AI assistant pair-level question/relation inspection, not human validation",
+  "scope": "All62 paired original question texts and assigned source titles inspected before any C inference. The individual source-snapshot reviews remain in reference_cards.json.",
+  "decision": "All62 pairs ask distinct entity/event relations; no same-fact relation identified in the paired question/title inspection. Source-family and general semantic independence are not established.",
+  "records": [
+    {
+      "pair_index": 0,
+      "test_qid": "5a82ffe755429940e5e1a949",
+      "donor_qid": "5ac42a64554299076e296d7b",
+      "test_question": "Lou Pai is a former executive of an energy company that went bankrupt in what year?",
+      "donor_question": "Clipper Cargo was a subsidiary cargo airline of  the principal and largest international air carrier in the United States that was founded in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 1,
+      "test_qid": "5a86ed6155429960ec39b6d9",
+      "donor_qid": "5a7625e8554299109176e66a",
+      "test_question": "In what year was the American country rock band who's number one song was done as a cover on the album \"What If?\" founded?",
+      "donor_question": "In which year was the King who made the 1925 Birthday Honours born?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 2,
+      "test_qid": "5a7d109855429909bec7692f",
+      "donor_qid": "5ae2ce505542996483e64a72",
+      "test_question": "The director of Panic 5 Bravo was born in what year?",
+      "donor_question": "In which year was this public research university in which Brock Marion played college football founded?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 3,
+      "test_qid": "5a8f54165542992414482a52",
+      "donor_qid": "5a8842435542994846c1ce6d",
+      "test_question": "The Meadowbrook State Parkway connects to the Southern State Parkway in a community with what population as of the 2010 census?",
+      "donor_question": "What was the 2010 population of the city established around St. Mary's Mission?",
+      "unit": "population",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 4,
+      "test_qid": "5ae1fbf05542997f29b3c1e7",
+      "donor_qid": "5a7195a05542994082a3e881",
+      "test_question": "When was the American automobile club which has 2014 Trans-Am Series as the 46th running of the Sports formed? ",
+      "donor_question": "in what year did the Israeli presidential elections take place after the resignation of the seventh president of Israel?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 5,
+      "test_qid": "5a8d42c95542994ba4e3dc43",
+      "donor_qid": "5ab29cef554299449642c936",
+      "test_question": "Dr. Saleha Mahmood Abedin's daughter was born in what year ?",
+      "donor_question": "In which year was the University where Joost Alois Businger is an emeritus professor established ?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 6,
+      "test_qid": "5ae66d515542992ae0d16346",
+      "donor_qid": "5ab5e4e15542997d4ad1f229",
+      "test_question": "In what year was the singer who popularized \"I'll Keep the Lovelight Burning\" born?",
+      "donor_question": "When was the football club founded in which Walter Otto Davisplayed at centre forward?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 7,
+      "test_qid": "5ae5fc345542993aec5ec1f8",
+      "donor_qid": "5a74b55455429974ef308c39",
+      "test_question": "Kiki Preston was the alleged mother of a child born out of wedlock with a prince born in which year ?",
+      "donor_question": "what year was the writer of the blog Preposterous Universe born?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 8,
+      "test_qid": "5ab6c65e554299710c8d1f58",
+      "donor_qid": "5ac31129554299741d48a1a2",
+      "test_question": "What was the population of the town as of 2000 where the historic tugboat Catawissa is located?",
+      "donor_question": "Woodland is a census-designated place in a town that had this population as of the 2010 census?",
+      "unit": "population",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 9,
+      "test_qid": "5a83a4bc554299123d8c217f",
+      "donor_qid": "5a732aa055429901807daf9f",
+      "test_question": "Bobby Arora is the trading director of a retail chain that was formed in what year?",
+      "donor_question": "What year did the largest convention center in the U.S. state of Georgia open?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 10,
+      "test_qid": "5abffc41554299012d1db551",
+      "donor_qid": "5ac5382c5542996feb3fea43",
+      "test_question": "The 1984 film \"Marlene\" is a documentary about an actress born in what year?",
+      "donor_question": "What year was the company, who released Forever Kingdom for PlayStation 2, founded?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 11,
+      "test_qid": "5ae1faf15542997f29b3c1e3",
+      "donor_qid": "5ac2ca84554299218029db55",
+      "test_question": "William Davis Ticknor, Sr. served on the board of a chemical and biotechnology company created in what year?",
+      "donor_question": "Choi Jun-hong  is best known as a member of a group formed in which year ?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 12,
+      "test_qid": "5a8e03375542995a26add458",
+      "donor_qid": "5a8e06785542995085b37383",
+      "test_question": "What year was the man, who is credited for developing a Crescograph, born?",
+      "donor_question": "The name of the Japanese rock band T-Bolan was inspired by the name of an English rock band formed in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 13,
+      "test_qid": "5ae72fd95542991e8301cbb4",
+      "donor_qid": "5ac50dd05542994611c8b343",
+      "test_question": "The King who opened Newcastle Civic Center in 1968 was born in what year?",
+      "donor_question": "Phil Lloyd played Tim Mathieson, the partner of this prime minister who was the 27th Prime Minister of Australia from 2010 to when",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 14,
+      "test_qid": "5ab7178f5542991d32223774",
+      "donor_qid": "5abda2b755429933744ab80f",
+      "test_question": "The film Navakoti Narayana was based on the life of Purandara Dasa who was born in what year?",
+      "donor_question": "Hermann Wilhelm Göring was a veteran fighter pilot in a war that ended in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 15,
+      "test_qid": "5a80b35c5542992bc0c4a7b8",
+      "donor_qid": "5a88982155429938390d3f81",
+      "test_question": "Sinimole Paulose's favorite events are the 800 metres and another event that has been a contest at the Summer Olympics begining in what year?",
+      "donor_question": "What year did the shopping centre on the street numbered B411 open in the space of in the retail space of the former William Whiteley Limited department store?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 16,
+      "test_qid": "5a7c78c955429935c91b51d2",
+      "donor_qid": "5a7c9ead5542990527d554e4",
+      "test_question": "What was the population in 2016 of the city that Norman Foote is originally from?",
+      "donor_question": "As of 2010, what was the population of the county that was named after the 13th Speaker of the House of Representatives?",
+      "unit": "population",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 17,
+      "test_qid": "5a89e6615542992e4fca8462",
+      "donor_qid": "5a86d7825542996432c571ec",
+      "test_question": "In what year was the county in which Kentucky's 20th-largest city is located founded?",
+      "donor_question": "In what year was the American singer, who with Kiely Williams, Sabrina Bryan, and Raven-Symoné made up The Cheetah Girls, born?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 18,
+      "test_qid": "5ab3b0bf5542992ade7c6e39",
+      "donor_qid": "5ac1b3a75542994ab5c67dd2",
+      "test_question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+      "donor_question": "In what year was the company founded whose Manhattan branch was the site for the recording of the live album, Park Avenue South, by Dave Brubeck and his quartet? ",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 19,
+      "test_qid": "5a899bf955429946c8d6e959",
+      "donor_qid": "5aba9e2455429939ce03dd3a",
+      "test_question": "When was the New Orleans Pelicans player featured on the NBA 2K16 cover first drafted?",
+      "donor_question": "Rejuvelac is kind of grain water invented and promoted by a \"holistic health\" practitioner born in which year ?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 20,
+      "test_qid": "5a7415cf55429979e28828a6",
+      "donor_qid": "5a87560d5542994775f607d9",
+      "test_question": "When did the person who claimed that Fidel Castro was killed in the 26th July Movement but was proven wrong by Herbert Matthews first serve as President of Cuba?",
+      "donor_question": "In what year was the soft drink that the Coca-Cola Company designed Red Flash to compete against created?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 21,
+      "test_qid": "5ae731c4554299572ea54781",
+      "donor_qid": "5a78f1b555429970f5fffde9",
+      "test_question": "Carl Barks is best known for his comics about the cartoon character created in what year?",
+      "donor_question": "What year was the singer of \"Orange\" born?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 22,
+      "test_qid": "5a807f6a5542992bc0c4a737",
+      "donor_qid": "5a8ea03e5542990e94052b81",
+      "test_question": "The HMS Seraph is most famous for a WWII operation intended to cover the allied invasion of Sicily in what year?",
+      "donor_question": "Atlanta Zero Mile Post is located within a historic area opened in what year ?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 23,
+      "test_qid": "5aba18ee5542994dbf0198b4",
+      "donor_qid": "5a8a5a1955429930ff3c0da7",
+      "test_question": "In what year was the scientific journal for which Danilo Erricolo is currently Editor-in-Chief established?",
+      "donor_question": "In what year was the Sayrevill, New Jersey rock band that Frankie LaRocka played drums for formed?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 24,
+      "test_qid": "5a8d263f554299653c1aa139",
+      "donor_qid": "5abd0296554299114383a1d1",
+      "test_question": "what year did the band that sang Gives You Hell form?",
+      "donor_question": "Douglas D. Scott is an American archaeologist most notable for his work at the site of a battle that occurred in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 25,
+      "test_qid": "5a8ba59a554299240d9c2058",
+      "donor_qid": "5abd9c2355429924427fd06c",
+      "test_question": "The Duke Steps Out stars an actress who was ranked tenth on a list of greatest female Hollywood stars in what year?",
+      "donor_question": "In what year did the actor who starred in the TV Land original series \"The Soul Man\" host the Black Movie Awards?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 26,
+      "test_qid": "5a8dacf2554299068b959d91",
+      "donor_qid": "5a714b645542994082a3e78b",
+      "test_question": "Which year did the band, who released \"Hooligan's Holiday,\" retire?",
+      "donor_question": "What year did Lindsey Broad star in the movie with Russell Brand and Jonah Hill?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 27,
+      "test_qid": "5a7de63c5542995f4f4022f5",
+      "donor_qid": "5ae256435542992decbdccc3",
+      "test_question": "In what year was the Commander of the second human spaceflight mission in the United States Apollo space program born?",
+      "donor_question": "In what year did the playwright who wrote \"The City Heiress\" die?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 28,
+      "test_qid": "5a849c135542992a431d1a7a",
+      "donor_qid": "5ae4f6c755429960a22e022a",
+      "test_question": "What was the 2016 population of the city on the Bay Fundy which had an office of the Bank of British North America?",
+      "donor_question": "What is the 2010 population of the village at which Smith Haven Mall was located? ",
+      "unit": "population",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 29,
+      "test_qid": "5ae7535c5542997b22f6a6d8",
+      "donor_qid": "5a7c6bcc55429935c91b519c",
+      "test_question": "The 53rd National Hockey League All-Star Game took place at the indoor arena that was completed in what year?",
+      "donor_question": "Rock Springs is a collection of short stories by an author born in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 30,
+      "test_qid": "5adcbc645542994d58a2f6b6",
+      "donor_qid": "5a7a43245542994f819ef19d",
+      "test_question": "Fodder on My Wings is an album by a singer/pianist/songwriter born in which year ?",
+      "donor_question": "What is the birth year of the rapper who made The Cold Corner 2?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 31,
+      "test_qid": "5a7b116a554299042af8f6c4",
+      "donor_qid": "5adccdab5542994d58a2f6db",
+      "test_question": "What year did the prison where William Penn wrote No Cross, No Crown stop being used as a prison?",
+      "donor_question": "What year was the album featuring the trio made up of Posdnuos, Dave, and Maseo, alongside Lebanese-Syrian rapper Eslam Jawaad release?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 32,
+      "test_qid": "5a88f7855542993b751ca8da",
+      "donor_qid": "5ae6fee3554299572ea54670",
+      "test_question": "In what year did a movie that starred both Nicholas Cage and Cher come out? ",
+      "donor_question": "The player who defeated Johnny Majors for the Heisman Trophy in 1956 was born in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 33,
+      "test_qid": "5a8cd6de55429941ae14df07",
+      "donor_qid": "5a8ef1e35542995a26add57a",
+      "test_question": "Charlotte Hatherley initially came to prominence in a band formed in what year?",
+      "donor_question": "The creator of the Lisa Simpson character was born in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 34,
+      "test_qid": "5a7633ff5542994ccc918712",
+      "donor_qid": "5a88f2cc55429938390d3ffb",
+      "test_question": "When was the Chief Aerodynamicist for the British supersonic land vehicle, whose goal is to match or exceed 1000 mph achieving a new world land speed record, born?",
+      "donor_question": "What year did the Jang Hoon directed film, starring Song Kang-ho in the title role and selected as the South Korean entry for the Best Foreign Language Film at the 90th Academy Awards, debut?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 35,
+      "test_qid": "5ae5429355429908b63265c5",
+      "donor_qid": "5ae331fb55429928c4239670",
+      "test_question": "In what year was the aviator in whose honour the Quai d'Auteuil was renamed born?",
+      "donor_question": "What year did the father of Willem van Oldenbarnevelt die?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 36,
+      "test_qid": "5ac195455542991316484b40",
+      "donor_qid": "5ade04d75542997dc7907125",
+      "test_question": "In what year did the man who shot the Chris Stockley, of The Dingoes, die?",
+      "donor_question": "In what year did the director of The Lion King win the Tony Awards?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 37,
+      "test_qid": "5abe79c755429976d4830b2a",
+      "donor_qid": "5ae3287f5542991a06ce993b",
+      "test_question": "Mesih Pasha's uncle became emperor in what year?",
+      "donor_question": "When was the group formed whose Japanese debut EP/ video album is called Nobody for Everybody ?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 38,
+      "test_qid": "5abc40835542993a06baf8ba",
+      "donor_qid": "5a8ac38855429970aeb70300",
+      "test_question": "When was the peer-reviewed open access scientific journal established in which Milivoje Kostic Editor-in-Chief of the Thermodynamics section?",
+      "donor_question": "When was the colony William Bradford was governor of founded?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 39,
+      "test_qid": "5ab6f7415542991d322236f4",
+      "donor_qid": "5ae3263455429928c4239634",
+      "test_question": "Sadok Sassi played for a national team that made its first World Cup in what year?",
+      "donor_question": "On November 2, 2010, John Spratt lost to an AMerican politician who served in the South Carolina General Assembly from 2007 until when?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 40,
+      "test_qid": "5a8b027e55429950cd6afc45",
+      "donor_qid": "5ae66d785542996d980e7b67",
+      "test_question": "The song \"Only a Pawn in Their Game\" was based on a crime whose perpetrator was convicted in this year.",
+      "donor_question": "When was the company that produced rectangular crackers that have 18 holes in a 3x6 pattern founded?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 41,
+      "test_qid": "5ae444b55542996836b02c63",
+      "donor_qid": "5ab85e9e55429934fafe6d8b",
+      "test_question": "When was the brewery founded which has The Stag Inn Hastings as a tied house ?",
+      "donor_question": "What is the founding year of this public research university in the Netherlands, where Jan Borgman was a professor from 1968 to 1988?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 42,
+      "test_qid": "5ae26c435542994d89d5b420",
+      "donor_qid": "5ae28058554299495565da90",
+      "test_question": "Cagliostro-Walzer op.370 was composed by a man born in what year?",
+      "donor_question": "In what year was the fantasy and science fiction author of the short story \"Recovery\" born?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 43,
+      "test_qid": "5a8a03985542992e4fca84d6",
+      "donor_qid": "5a7d158155429909bec76947",
+      "test_question": "When was the star of the 1982 remake of The Spider's Web appointed to Dame Commander of the Order of the British Empire (DBE)?",
+      "donor_question": "The star of \"Lady in a Cage\" was born in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 44,
+      "test_qid": "5a779fd95542997042120ab5",
+      "donor_qid": "5adfecd755429942ec259b90",
+      "test_question": "In what year were the European Athletics Junior Championships held in the capital of Slovenia?",
+      "donor_question": "What year was the magazine that Stanley Bing spent a decade at founded in?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 45,
+      "test_qid": "5abf931f5542990832d3a158",
+      "donor_qid": "5a84c0885542994c784dda28",
+      "test_question": "When was the movie adaption of Jennifer Weiner's novel \"In Her Shoes\" released?",
+      "donor_question": "In which year was the American politician, that both represented New York in the United States Senate and served as an adviser to President Richard Nixon, re-elected for a fourth term as U.S. Senator?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 46,
+      "test_qid": "5ab2a186554299295394677b",
+      "donor_qid": "5ac2a277554299657fa28ff3",
+      "test_question": "When did the English local newspaper, featuring the sculpture and war memorial in the Forbury gardens, change names?",
+      "donor_question": "The Soul of a Butterfly is an autobiography of a professional boxer that was born in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 47,
+      "test_qid": "5adfba9555429942ec259b1e",
+      "donor_qid": "5ae0ab7755429945ae959407",
+      "test_question": "The central figure used in the corporate branding of Singapore Airlines has been an element of it's marketing since what year?",
+      "donor_question": "The player who laid motionless for ten minutes in the Todd Bertuzzi–Steve Moore incident was born in which year ?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 48,
+      "test_qid": "5ab7d6ec5542995dae37e9b4",
+      "donor_qid": "5ae3305c55429928c423965f",
+      "test_question": "When was the company that owns Bonifacio High Street founded?",
+      "donor_question": "In Person is a 1935 film starring an actress born in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 49,
+      "test_qid": "5adbcd475542996e68525240",
+      "donor_qid": "5ae3c0cc5542992f92d82369",
+      "test_question": "In what year did the manager of the singer-songwriter best known for \"American Pie\" die?",
+      "donor_question": "Peter Marc Jacobson is best known as the co-creator of the popular sitcom \"The Nanny\", which he created and wrote with his then wife an actress born in which year ?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 50,
+      "test_qid": "5ab87fa255429934fafe6e00",
+      "donor_qid": "5ab7ccf455429928e1fe3910",
+      "test_question": "Sand Lake Baptist Church is located in a hamlet with a population of what at the 2010 census?",
+      "donor_question": "What was the 2010 population of the town where Lake George Avenue Historic District is located?",
+      "unit": "population",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 51,
+      "test_qid": "5ac52f455542996feb3fea12",
+      "donor_qid": "5abcee275542993a06baf9af",
+      "test_question": "What year was the American healthy lifestyle magazine, in which Georgia Rickard contributed, started?",
+      "donor_question": "What year did a director of a North Korean cinema film get kidnapped?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 52,
+      "test_qid": "5a7d1bf65542995ed0d165f0",
+      "donor_qid": "5adc3d7455429944faac248a",
+      "test_question": "What year was the midfielder who shot the winning goal in the 2009 DFB-Pokal Final born?",
+      "donor_question": "When did the event that led Marissa Kurtimah to flee her country of birth begin? ",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 53,
+      "test_qid": "5ab201765542993be8fa98a4",
+      "donor_qid": "5ab73b2e5542993667793f9b",
+      "test_question": "Hobart Paving is a single by a band formed in which year ?",
+      "donor_question": "In what year was Kasper Schmeichel's father born?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 54,
+      "test_qid": "5ab98e2b5542996be202054e",
+      "donor_qid": "5ae320f855429928c4239620",
+      "test_question": "The person that William Flannery was an architect for entered the publishing business in what year?",
+      "donor_question": "In which year was the coach of the 1917 Pittsburgh Panthers football team inducted into the College Football Hall of Fame?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 55,
+      "test_qid": "5ae27f22554299495565da8d",
+      "donor_qid": "5a7df5635542990b8f503b0a",
+      "test_question": "In what year was the mathematician husband of Anneli Cahn Lax born?",
+      "donor_question": "What year did the sequel to a story that is told through a combination of narrative and vernacular photographs from the personal archives of collectors by Ransom Riggs come out?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 56,
+      "test_qid": "5ab467975542991751b4d75f",
+      "donor_qid": "5ae73c00554299572ea5478a",
+      "test_question": "When was the duo formed who's English language song is the \"Freaky Like Me\"?",
+      "donor_question": "The Runge-Kutta methods were developed by M.W. Kutta and a German mathematician, physicist, and Spectroscopist that was born in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 57,
+      "test_qid": "5ab82d095542990e739ec853",
+      "donor_qid": "5a78eff155429974737f790a",
+      "test_question": "\"Tunak\", is a bhangra/pop love song by an artist born in which year ?",
+      "donor_question": "What Happens in Vegas, an American comedy film starring Lake Bell, was released in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 58,
+      "test_qid": "5ae5c212554299546bf82f4b",
+      "donor_qid": "5a7dedb55542995f4f402317",
+      "test_question": "The Clavivox was invented by an American composer who was born Harry Warnow in what year?",
+      "donor_question": "In what year was the Moldavian, later Romanian writer, known for his work \"The Goat and Her Three Kids\" born?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 59,
+      "test_qid": "5ac29f58554299657fa28fe4",
+      "donor_qid": "5ae352285542994393b9e685",
+      "test_question": "The figure skater who was coached to Olympic, World, and national titles by Richard Callaghan was born in what year?",
+      "donor_question": "Rumble Fish was a novel by the author of the coming-of-age novel published in what year by Viking Press?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 60,
+      "test_qid": "5a7e02b75542997cc2c474f3",
+      "donor_qid": "5ab5487b554299494045ef68",
+      "test_question": "What year was the actor that co-starred with Sidney Poitier in Lieel Nikita born?",
+      "donor_question": "Operation Cold Comfort was a failed raid by a special forces unit founded in what year?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    },
+    {
+      "pair_index": 61,
+      "test_qid": "5ac54f8d5542993e66e822f5",
+      "donor_qid": "5a81a84e5542990a1d231e4e",
+      "test_question": "When did the author of \"Computing Machinery and Intelligence\" die?",
+      "donor_question": "What year was the Argentine singer and actor who both directed and starred in El Tio Disparate born?",
+      "unit": "year",
+      "decision": "different_asked_entity_or_event_relation",
+      "human_judgments_completed": 0
+    }
+  ]
+}

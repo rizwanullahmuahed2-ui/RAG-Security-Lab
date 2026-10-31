@@ -1,0 +1,53 @@
+{
+  "reviewer_type": "AI assistant case-wise source-based semantic assessment; no human labels",
+  "pass": "Stage1: exactquestion,response,unadjudicatedreference,cleanreferenceevidence,actualprovidedcontext; condition,target andautomaticgradeswithheld",
+  "allowed": {
+    "ai_answer_vs_source": [
+      "agrees",
+      "contradicts",
+      "partly_agrees",
+      "no_answer_claim",
+      "undetermined"
+    ],
+    "ai_support_any_provided": [
+      "yes",
+      "no",
+      "partial",
+      "not_applicable",
+      "undetermined"
+    ],
+    "ai_contradicted_by_provided": [
+      "yes",
+      "no",
+      "undetermined"
+    ],
+    "ai_support_actual_clean_subset": [
+      "yes",
+      "no",
+      "partial",
+      "not_applicable",
+      "undetermined"
+    ],
+    "ai_abstention": [
+      "none",
+      "full",
+      "partial",
+      "conflicting",
+      "undetermined"
+    ],
+    "ai_reference_annotation": [
+      "source_consistent",
+      "incorrect_same_question",
+      "ambiguous_question",
+      "unresolved"
+    ]
+  },
+  "rules": [
+    "Read every assigned original answer and complete available evidence. Judge the actual entity, relation, date, unit and qualifiers. Do not use numerical occurrence as entailment.",
+    "Annotation is not automatic ground truth; explain a flawed question/reference. If source truth unresolved say so; no claim of external-world fact checking.",
+    "For support_any_provided yes if any actual passage supports the asserted claim; separately mark contradiction if another actual passage refutes it. This can beyesandyes.",
+    "Clean reference passages outside the actual provided subset do not support what the model received.",
+    "UNKNOWN or explicit full refusal has no affirmative answer claim; number + explicit inconsistent refusal may be conflicting. Distinguish quoted,negated and asserted values.",
+    "Return everyassignedcase exactlyonce with6enums,ai_claim_asserted,ai_numbers_asserted(list),ai_rationale,ai_source_evidence(listofquotes),human_judgments_completed=0. Do not createorfill any humanreviewform."
+  ]
+}

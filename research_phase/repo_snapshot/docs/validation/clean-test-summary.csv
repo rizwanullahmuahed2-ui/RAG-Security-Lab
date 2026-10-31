@@ -1,0 +1,2 @@
+condition,defense_method,n_questions,n_targeted,seed,poison_count,n_attacked,n_poisoned_answers,attack_success_rate_injected,injected_asr_ci_low,injected_asr_ci_high,accuracy_ci_low,accuracy_ci_high,ambiguous_answers,strict_exact_match,mean_latency_ms,recall_at_k,mrr,poison_retrieval_rate,answer_accuracy,mean_f1,attack_success_rate
+KB-Clean,none,112,28,42,0,0,0,,,,0.9668386529330562,1.0,0,0.0,11.384330357142858,1.0,1.0,0.0,1.0,0.1191,0.0

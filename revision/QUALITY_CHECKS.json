@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-10-22T11:42:41.821420+00:00",
+  "status": "Final version prepared for supervisor review",
+  "main_pdf_pages": 16,
+  "persian_supervisor_report_pages": 1,
+  "word_tables": 7,
+  "sequential_table_numbers": true,
+  "word_figures": 4,
+  "restored_original_figures": 3,
+  "original_word_image_bytes_identical": true,
+  "original_pdf_image_pixels_identical": true,
+  "no_pdf_text_outside_page": true,
+  "bibliography_entries": 25,
+  "unfilled_result_placeholders": 0,
+  "frozen_experiment_unchanged": true,
+  "unique_real_llm_calls": 376,
+  "condition_rows": 1280,
+  "question_units": 64,
+  "human_judgments_completed": 0,
+  "secret_files_in_package": false,
+  "visual_checks": "Final title page, original figures, results tables, and one-page Persian report inspected."
+}

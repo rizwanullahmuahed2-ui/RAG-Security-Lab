@@ -1,0 +1,238 @@
+{
+  "status": "proposed_unexecuted_not_a_frozen_protocol",
+  "source_plan": "Implementation_Plan_FA.md",
+  "studies": {
+    "A": "Historical extractive study; exact completed principal-run archive not present in inspected repository commit",
+    "B": "Frozen 64-question real-LLM study; retrospective reanalysis only",
+    "C": "Prospective follow-up proposed here; no responses generated"
+  },
+  "research_questions": {
+    "RQ1": {
+      "contrasts": [
+        "targeted-unrelated",
+        "targeted-benign"
+      ],
+      "defense": "none",
+      "priority": "primary",
+      "outcomes": [
+        "Primary in adjudicated route: semantic endorsement of an independently documented false target proposition",
+        "Secondary: numeric containment, EM/F1; factual correctness per completed rubric"
+      ],
+      "automatic_fallback": "Before freeze, explicitly change primary endpoint and claims to designated-value production if actual semantic adjudication is unavailable; not completion of semantic primary"
+    },
+    "RQ2": {
+      "outcomes": [
+        "all-support recall",
+        "assigned and any-insertion exposure",
+        "context support",
+        "answer outcomes"
+      ],
+      "controlled_exposure": "Separate experiment, not natural retrieval"
+    },
+    "RQ3": {
+      "outcomes": [
+        "paired prevention",
+        "restoration",
+        "new failures",
+        "effect of supplied trust labels"
+      ]
+    },
+    "RQ4": {
+      "outcomes": [
+        "clean answer utility",
+        "retrieval-only stress of rejecting an answer-required legitimate support"
+      ],
+      "operational_claim": "No measured real-world authorization or security guarantee"
+    }
+  },
+  "selection": {
+    "target_test_n": 64,
+    "target_donor_n": 64,
+    "development": "Existing observed Study B cases; cannot be called untouched test cases again",
+    "preferred_source": "Unused HotpotQA validation candidates from pinned HF revision 1908d6afbbead072334abe2965f91bd2709910ab",
+    "feasibility_fallback": "Before outputs, check train at same pinned revision if insufficient eligible validation groups; version and document any change",
+    "exclude_prior": "All 128 B test and donor IDs and titles; compare A inputs and shared facts/supports",
+    "selection_order": "SHA256('rag-security-followup-v1:' + id), ascending",
+    "grouping": "Keep shared entity-relation-time facts and support groups within a single role; title disjointness alone is insufficient",
+    "eligibility": "Documented exact relation/time/unit and reference, evidenced contradiction of designated false value, verified donor unrelatedness; exclude unresolved/ambiguous cases before outputs",
+    "n_is_not_verified_available": true,
+    "control_pairing": "Targeted and unrelated insertions use the same designated false value; validate that it is also false for the donor relation, not merely unrelated to the test question",
+    "attack_documentation": "Report creation method, text structure, word/token counts, vocabulary and similarity to clean material; do not assume unrelated and targeted natural exposure are equal"
+  },
+  "core": {
+    "test_n": 64,
+    "clean_passages": 640,
+    "insertions_per_positive_condition": 64,
+    "insertion_words": 120,
+    "conditions": [
+      "clean",
+      "targeted",
+      "unrelated",
+      "benign",
+      "accepted_label"
+    ],
+    "defenses": [
+      "none",
+      "rerank",
+      "filter",
+      "filter_rerank"
+    ],
+    "retrieval": {
+      "embedding_model": "text-embedding-3-small",
+      "dimensions": 1536,
+      "candidate_count": 30,
+      "final_count": 5,
+      "metric": "normalized exact cosine",
+      "tie_break": "stable corpus order, frozen in protocol",
+      "reranker": "TF-IDF fit on query and candidate texts; exact implementation and dependency versions frozen before outputs"
+    },
+    "gate": "verified AND trust in {high,medium}, before retrieval; all clean passages accepted, base insertions rejected; accepted_label changes only labels on identical targeted passages",
+    "metadata_in_prompt": false,
+    "rows": 3840,
+    "max_unique_payloads_per_question_per_round": 8,
+    "max_logical_generation_calls": 1536
+  },
+  "controlled_exposure": {
+    "included_in_main_route": true,
+    "eligible_n_max": 64,
+    "conditions": [
+      "clean",
+      "targeted",
+      "unrelated",
+      "benign"
+    ],
+    "context": "2 complete support passages + 2 fixed clean distractors + 1 replacement slot; clean filler and inserted passages matched in length",
+    "slot": "Balanced across ranks before outputs and fixed across arms per question; other passages unchanged",
+    "no_defenses_applied": true,
+    "rows_max": 768,
+    "generation_calls_max": 768,
+    "ineligible": "Exclude from this module before freeze if two passages do not cover all required support; report actual denominator"
+  },
+  "optional_fixed_target_dose": {
+    "status": "Predefine inclusion before core outputs; independent of favorable/unfavorable core results",
+    "copies_per_target": [
+      1,
+      2,
+      5
+    ],
+    "targets_fixed": 64,
+    "defenses": [
+      "none",
+      "rerank"
+    ],
+    "insertions": [
+      64,
+      128,
+      320
+    ],
+    "contamination_fraction": [
+      0.09090909090909091,
+      0.16666666666666666,
+      0.3333333333333333
+    ],
+    "text_variants": "Same text; distinct IDs; retain exact duplicates with documented ordering",
+    "extra_rows": 768,
+    "extra_generation_calls_max": 768
+  },
+  "legitimate_support_rejection_stress": {
+    "scope": "Retrieval only; not final-answer utility or operational authentication",
+    "treatment": "Per-question paired index variants: select lowest lexicographically sorted support ID before outputs; compare accepting versus rejecting that support with identical text",
+    "controls": "All accepted; selected support rejected; or lowest sorted eligible clean non-support rejected; compare with and without filtering. Each question has separate index variants, not simultaneous label changes to all questions.",
+    "extra_generation_calls": 0
+  },
+  "generation": {
+    "preferred_model": "gpt-4.1-mini-2025-04-14",
+    "temperature": 0,
+    "max_output_tokens": 64,
+    "store": false,
+    "rounds": 3,
+    "cache_key": [
+      "round_id",
+      "sha256_exact_request"
+    ],
+    "within_round_identical_payload_reuse": true,
+    "across_round_response_reuse": false,
+    "statistical_warning": "Fresh provider invocations do not guarantee statistically independent draws; 64 questions do not become 192 independent questions",
+    "model_unavailable": "Fail closed; select and refreeze an explicit new protocol before new inference, never silently substitute a local model or provider",
+    "max_attempts_total_per_logical_call": 3,
+    "fail_closed_on": [
+      "hash mismatch",
+      "permanent provider error",
+      "returned model mismatch",
+      "cost ceiling breach"
+    ]
+  },
+  "budget": {
+    "main_condition_rows": 4608,
+    "main_logical_generation_calls_max": 2304,
+    "main_transport_attempts_max": 6912,
+    "main_successful_output_tokens_max": 147456,
+    "with_dose_condition_rows": 5376,
+    "with_dose_logical_generation_calls_max": 3072,
+    "with_dose_transport_attempts_max": 9216,
+    "with_dose_successful_output_tokens_max": 196608,
+    "exact_count": "Compute frozen payload hash census before generation; counts can be lower",
+    "embedding_calls": "Count unique embedding texts/tokens and SDK batches separately; cache exact duplicate texts",
+    "money": "Use verified current rates and actual frozen token census; include retry contingency and enforce a recorded ceiling before dispatch",
+    "not_executed": true
+  },
+  "evaluation": {
+    "axes": [
+      "factual correctness",
+      "support from any provided context, including poison",
+      "support from verified clean evidence",
+      "endorsement/rejection of designated false claim",
+      "full/partial/contradictory abstention"
+    ],
+    "lexical_metrics": "Keep numerical containment, EM and token F1 explicitly separate from semantic correctness",
+    "human_preferred": "Two actual independent English-proficient reviewers, initially blinded to defense/condition labels, automatic scores and each other; adjudicate after recording initial labels",
+    "unit": "Exact question-context-response tuple, with mappings to all reused rows retained",
+    "if_no_humans": "Continue engineering and report automatic assessment with scope limits; no independent semantic or human-validation claim",
+    "old_results": "Preserve archived B scores unchanged; corrected version and reasons in separate retrospective analysis",
+    "route_decision": "Record human/adjudicated versus automatic route and primary endpoint before final freeze",
+    "reference_vs_question_change": "Rescoring the same question with a corrected reference differs from changing the question; archived answers are never represented as responses to a rewritten question"
+  },
+  "analysis": {
+    "primary_unit": "Question or group of shared facts/supports, not condition row",
+    "rounds": "Report per-round results; do not equate cache reuse with replications",
+    "bootstrap": {
+      "draws": 10000,
+      "seed": 20261025,
+      "unit": "shared-fact/support group",
+      "scope": "descriptive conditional on this shared corpus and frozen protocol, retain within-group paired conditions and rounds"
+    },
+    "if_groups_inadequate": "Use paired tables and per-round ranges, without confirmatory population claims",
+    "case_groups": [
+      "gold present but wrong output",
+      "poison present but attack fails",
+      "prevention without restoration",
+      "changed labels"
+    ],
+    "missingness": "Errors and unresolved outputs are unknown, not failures; report lower/upper rates with planned denominator, plus paired-complete sensitivity analysis with explicit denominator",
+    "aggregation": "Mean of three fresh rounds within question, then mean across questions; never replace with any-of-three attack success as primary"
+  },
+  "freeze_gates": [
+    "all baseline copies/hashes retained",
+    "reference audit and evaluator versions recorded",
+    "new execution guard passes offline tamper/no-dispatch check",
+    "eligible test/donor selection feasible and final",
+    "all unresolved reference cases handled before outputs",
+    "all conditions/context payloads and analysis frozen",
+    "optional modules decided before outputs",
+    "exact request/token census and money ceiling recorded"
+  ],
+  "delivery": [
+    "revised paper PDF and DOCX",
+    "formal Dari report and point-by-point response",
+    "all four preexisting figures preserved with provenance",
+    "publishable code/data/raw responses/scoring/config/environment",
+    "SHA-256 manifest and 67-item closure map",
+    "exclude API keys and confidential files",
+    "Per-source license, attribution, redistribution permission/uncertainty and access-instruction inventory"
+  ],
+  "historical_fallback": "If exact archive cannot be recovered, document the unresolved gap and restrict historical claims; optional A-prime reimplementation is explicitly new, not an automatic completion requirement",
+  "freeze_phases": {
+    "before_embeddings": "Freeze validated data, code, embedding texts, embedding requests/model/settings and selection/evaluation rules; verify these fields before every embedding dispatch",
+    "before_generation": "Freeze returned vectors, candidate/final contexts and all generation requests linked to the initial manifest; verify complete generation inputs before every generation dispatch, including empty-cache and resume paths"
+  }
+}

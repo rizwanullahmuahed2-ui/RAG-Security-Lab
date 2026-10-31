@@ -1,0 +1,1346 @@
+[
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2010",
+    "raw_value": 58.134400441562,
+    "rounded_reference": "58.13",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2010",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2010-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2011",
+    "raw_value": 58.131334038606,
+    "rounded_reference": "58.13",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2011",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2011-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2012",
+    "raw_value": 58.129800837128,
+    "rounded_reference": "58.13",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2012",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2012-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2013",
+    "raw_value": 58.123668031216,
+    "rounded_reference": "58.12",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2013",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2013-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2014",
+    "raw_value": 58.123668031216,
+    "rounded_reference": "58.12",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2014",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2014-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2015",
+    "raw_value": 58.123668031216,
+    "rounded_reference": "58.12",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2015",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2015-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2016",
+    "raw_value": 58.123668031216,
+    "rounded_reference": "58.12",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2016",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2016-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2017",
+    "raw_value": 58.123668031216,
+    "rounded_reference": "58.12",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2017",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2017-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2018",
+    "raw_value": 58.2769881790166,
+    "rounded_reference": "58.28",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2018",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2018-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2019",
+    "raw_value": 58.2769881790166,
+    "rounded_reference": "58.28",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2019",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2019-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2020",
+    "raw_value": 58.7415482268525,
+    "rounded_reference": "58.74",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2020",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2020-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2021",
+    "raw_value": 58.7415482268525,
+    "rounded_reference": "58.74",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2021",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2021-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2022",
+    "raw_value": 58.7415482268525,
+    "rounded_reference": "58.74",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2022",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2022-01"
+  },
+  {
+    "indicator": "AG.LND.AGRI.ZS",
+    "year": "2023",
+    "raw_value": 58.4395075356853,
+    "rounded_reference": "58.44",
+    "document_id": "DOC-WB-AG.LND.AGRI.ZS-2023",
+    "chunk_id": "CHK-WB-AG.LND.AGRI.ZS-2023-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2010",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2010",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2010-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2011",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2011",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2011-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2012",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2012",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2012-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2013",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2013",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2013-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2014",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2014",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2014-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2015",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2015",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2015-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2016",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2016",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2016-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2017",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2017",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2017-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2018",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2018",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2018-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2019",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2019",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2019-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2020",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2020",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2020-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2021",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2021",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2021-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2022",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2022",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2022-01"
+  },
+  {
+    "indicator": "AG.LND.FRST.ZS",
+    "year": "2023",
+    "raw_value": 1.85278199408184,
+    "rounded_reference": "1.85",
+    "document_id": "DOC-WB-AG.LND.FRST.ZS-2023",
+    "chunk_id": "CHK-WB-AG.LND.FRST.ZS-2023-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2010",
+    "raw_value": 42.7,
+    "rounded_reference": "42.70",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2010",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2010-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2011",
+    "raw_value": 43.2,
+    "rounded_reference": "43.20",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2011",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2011-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2012",
+    "raw_value": 69.1,
+    "rounded_reference": "69.10",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2012",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2012-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2013",
+    "raw_value": 68,
+    "rounded_reference": "68.00",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2013",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2013-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2014",
+    "raw_value": 89.5,
+    "rounded_reference": "89.50",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2014",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2014-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2015",
+    "raw_value": 71.5,
+    "rounded_reference": "71.50",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2015",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2015-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2016",
+    "raw_value": 97.7,
+    "rounded_reference": "97.70",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2016",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2016-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2017",
+    "raw_value": 97.7,
+    "rounded_reference": "97.70",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2017",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2017-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2018",
+    "raw_value": 93.4,
+    "rounded_reference": "93.40",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2018",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2018-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2019",
+    "raw_value": 97.7,
+    "rounded_reference": "97.70",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2019",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2019-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2020",
+    "raw_value": 97.7,
+    "rounded_reference": "97.70",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2020",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2020-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2021",
+    "raw_value": 97.7,
+    "rounded_reference": "97.70",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2021",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2021-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2022",
+    "raw_value": 85.3,
+    "rounded_reference": "85.30",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2022",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2022-01"
+  },
+  {
+    "indicator": "EG.ELC.ACCS.ZS",
+    "year": "2023",
+    "raw_value": 85.3,
+    "rounded_reference": "85.30",
+    "document_id": "DOC-WB-EG.ELC.ACCS.ZS-2023",
+    "chunk_id": "CHK-WB-EG.ELC.ACCS.ZS-2023-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2010",
+    "raw_value": 36.1186814254474,
+    "rounded_reference": "36.12",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2010",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2010-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2011",
+    "raw_value": 47.0151842862822,
+    "rounded_reference": "47.02",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2011",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2011-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2012",
+    "raw_value": 50.1966555403702,
+    "rounded_reference": "50.20",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2012",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2012-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2013",
+    "raw_value": 53.1490159728276,
+    "rounded_reference": "53.15",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2013",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2013-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2014",
+    "raw_value": 56.1322103822265,
+    "rounded_reference": "56.13",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2014",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2014-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2015",
+    "raw_value": 58.256016446556,
+    "rounded_reference": "58.26",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2015",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2015-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2016",
+    "raw_value": 62.2553342863232,
+    "rounded_reference": "62.26",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2016",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2016-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2017",
+    "raw_value": 67.0507903920361,
+    "rounded_reference": "67.05",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2017",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2017-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2018",
+    "raw_value": 59.8109345283062,
+    "rounded_reference": "59.81",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2018",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2018-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2019",
+    "raw_value": 59.6470805870469,
+    "rounded_reference": "59.65",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2019",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2019-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2020",
+    "raw_value": 58.0461137722591,
+    "rounded_reference": "58.05",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2020",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2020-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2021",
+    "raw_value": 56.6944760468967,
+    "rounded_reference": "56.69",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2021",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2021-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2022",
+    "raw_value": 56.2655188632539,
+    "rounded_reference": "56.27",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2022",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2022-01"
+  },
+  {
+    "indicator": "IT.CEL.SETS.P2",
+    "year": "2023",
+    "raw_value": 55.5474967036959,
+    "rounded_reference": "55.55",
+    "document_id": "DOC-WB-IT.CEL.SETS.P2-2023",
+    "chunk_id": "CHK-WB-IT.CEL.SETS.P2-2023-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2010",
+    "raw_value": 4,
+    "rounded_reference": "4.00",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2010",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2010-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2011",
+    "raw_value": 5,
+    "rounded_reference": "5.00",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2011",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2011-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2012",
+    "raw_value": 5.454500198,
+    "rounded_reference": "5.45",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2012",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2012-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2013",
+    "raw_value": 5.900000095,
+    "rounded_reference": "5.90",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2013",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2013-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2014",
+    "raw_value": 7,
+    "rounded_reference": "7.00",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2014",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2014-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2015",
+    "raw_value": 8.260000229,
+    "rounded_reference": "8.26",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2015",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2015-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2016",
+    "raw_value": 11,
+    "rounded_reference": "11.00",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2016",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2016-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2017",
+    "raw_value": 13.5,
+    "rounded_reference": "13.50",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2017",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2017-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2018",
+    "raw_value": 16.79999924,
+    "rounded_reference": "16.80",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2018",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2018-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2019",
+    "raw_value": 17.60000038,
+    "rounded_reference": "17.60",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2019",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2019-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2020",
+    "raw_value": 17.04850006,
+    "rounded_reference": "17.05",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2020",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2020-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2021",
+    "raw_value": 16.51429939,
+    "rounded_reference": "16.51",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2021",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2021-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2022",
+    "raw_value": 15.86629963,
+    "rounded_reference": "15.87",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2022",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2022-01"
+  },
+  {
+    "indicator": "IT.NET.USER.ZS",
+    "year": "2023",
+    "raw_value": 15.92840004,
+    "rounded_reference": "15.93",
+    "document_id": "DOC-WB-IT.NET.USER.ZS-2023",
+    "chunk_id": "CHK-WB-IT.NET.USER.ZS-2023-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2010",
+    "raw_value": 15856668555.8336,
+    "rounded_reference": "15,856,668,555.83",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2010",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2010-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2011",
+    "raw_value": 17805098206.3141,
+    "rounded_reference": "17,805,098,206.31",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2011",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2011-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2012",
+    "raw_value": 19907329777.5872,
+    "rounded_reference": "19,907,329,777.59",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2012",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2012-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2013",
+    "raw_value": 20146416757.5987,
+    "rounded_reference": "20,146,416,757.60",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2013",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2013-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2014",
+    "raw_value": 20497128555.6972,
+    "rounded_reference": "20,497,128,555.70",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2014",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2014-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2015",
+    "raw_value": 19134221644.7325,
+    "rounded_reference": "19,134,221,644.73",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2015",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2015-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2016",
+    "raw_value": 18116572395.0772,
+    "rounded_reference": "18,116,572,395.08",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2016",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2016-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2017",
+    "raw_value": 18753456497.8159,
+    "rounded_reference": "18,753,456,497.82",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2017",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2017-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2018",
+    "raw_value": 18053222687.4126,
+    "rounded_reference": "18,053,222,687.41",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2018",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2018-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2019",
+    "raw_value": 18799444490.1128,
+    "rounded_reference": "18,799,444,490.11",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2019",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2019-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2020",
+    "raw_value": 19955929052.1496,
+    "rounded_reference": "19,955,929,052.15",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2020",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2020-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2021",
+    "raw_value": 14259995441.0759,
+    "rounded_reference": "14,259,995,441.08",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2021",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2021-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2022",
+    "raw_value": 14497243872.1337,
+    "rounded_reference": "14,497,243,872.13",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2022",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2022-01"
+  },
+  {
+    "indicator": "NY.GDP.MKTP.CD",
+    "year": "2023",
+    "raw_value": 17152234636.8715,
+    "rounded_reference": "17,152,234,636.87",
+    "document_id": "DOC-WB-NY.GDP.MKTP.CD-2023",
+    "chunk_id": "CHK-WB-NY.GDP.MKTP.CD-2023-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2010",
+    "raw_value": 560.621505463146,
+    "rounded_reference": "560.62",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2010",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2010-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2011",
+    "raw_value": 606.694676337726,
+    "rounded_reference": "606.69",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2011",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2011-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2012",
+    "raw_value": 651.417134470046,
+    "rounded_reference": "651.42",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2012",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2012-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2013",
+    "raw_value": 637.087099117099,
+    "rounded_reference": "637.09",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2013",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2013-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2014",
+    "raw_value": 625.054941813938,
+    "rounded_reference": "625.05",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2014",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2014-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2015",
+    "raw_value": 565.569730408751,
+    "rounded_reference": "565.57",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2015",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2015-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2016",
+    "raw_value": 522.082215583898,
+    "rounded_reference": "522.08",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2016",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2016-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2017",
+    "raw_value": 525.469770891619,
+    "rounded_reference": "525.47",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2017",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2017-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2018",
+    "raw_value": 491.337221382603,
+    "rounded_reference": "491.34",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2018",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2018-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2019",
+    "raw_value": 496.6025042585,
+    "rounded_reference": "496.60",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2019",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2019-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2020",
+    "raw_value": 510.787063366811,
+    "rounded_reference": "510.79",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2020",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2020-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2021",
+    "raw_value": 356.496214115892,
+    "rounded_reference": "356.50",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2021",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2021-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2022",
+    "raw_value": 357.261152798144,
+    "rounded_reference": "357.26",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2022",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2022-01"
+  },
+  {
+    "indicator": "NY.GDP.PCAP.CD",
+    "year": "2023",
+    "raw_value": 413.757894705303,
+    "rounded_reference": "413.76",
+    "document_id": "DOC-WB-NY.GDP.PCAP.CD-2023",
+    "chunk_id": "CHK-WB-NY.GDP.PCAP.CD-2023-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2010",
+    "raw_value": 76.9,
+    "rounded_reference": "76.90",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2010",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2010-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2011",
+    "raw_value": 74,
+    "rounded_reference": "74.00",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2011",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2011-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2012",
+    "raw_value": 71.2,
+    "rounded_reference": "71.20",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2012",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2012-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2013",
+    "raw_value": 68.6,
+    "rounded_reference": "68.60",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2013",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2013-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2014",
+    "raw_value": 66.2,
+    "rounded_reference": "66.20",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2014",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2014-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2015",
+    "raw_value": 64,
+    "rounded_reference": "64.00",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2015",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2015-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2016",
+    "raw_value": 61.9,
+    "rounded_reference": "61.90",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2016",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2016-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2017",
+    "raw_value": 60.1,
+    "rounded_reference": "60.10",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2017",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2017-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2018",
+    "raw_value": 58.3,
+    "rounded_reference": "58.30",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2018",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2018-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2019",
+    "raw_value": 56.6,
+    "rounded_reference": "56.60",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2019",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2019-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2020",
+    "raw_value": 54.9,
+    "rounded_reference": "54.90",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2020",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2020-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2021",
+    "raw_value": 53.2,
+    "rounded_reference": "53.20",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2021",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2021-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2022",
+    "raw_value": 51.6,
+    "rounded_reference": "51.60",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2022",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2022-01"
+  },
+  {
+    "indicator": "SP.DYN.IMRT.IN",
+    "year": "2023",
+    "raw_value": 49.9,
+    "rounded_reference": "49.90",
+    "document_id": "DOC-WB-SP.DYN.IMRT.IN-2023",
+    "chunk_id": "CHK-WB-SP.DYN.IMRT.IN-2023-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2010",
+    "raw_value": 60.702,
+    "rounded_reference": "60.70",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2010",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2010-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2011",
+    "raw_value": 61.25,
+    "rounded_reference": "61.25",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2011",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2011-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2012",
+    "raw_value": 61.735,
+    "rounded_reference": "61.74",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2012",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2012-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2013",
+    "raw_value": 62.188,
+    "rounded_reference": "62.19",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2013",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2013-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2014",
+    "raw_value": 62.26,
+    "rounded_reference": "62.26",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2014",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2014-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2015",
+    "raw_value": 62.27,
+    "rounded_reference": "62.27",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2015",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2015-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2016",
+    "raw_value": 62.646,
+    "rounded_reference": "62.65",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2016",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2016-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2017",
+    "raw_value": 62.406,
+    "rounded_reference": "62.41",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2017",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2017-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2018",
+    "raw_value": 62.443,
+    "rounded_reference": "62.44",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2018",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2018-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2019",
+    "raw_value": 62.941,
+    "rounded_reference": "62.94",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2019",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2019-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2020",
+    "raw_value": 61.454,
+    "rounded_reference": "61.45",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2020",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2020-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2021",
+    "raw_value": 60.417,
+    "rounded_reference": "60.42",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2021",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2021-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2022",
+    "raw_value": 65.617,
+    "rounded_reference": "65.62",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2022",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2022-01"
+  },
+  {
+    "indicator": "SP.DYN.LE00.IN",
+    "year": "2023",
+    "raw_value": 66.035,
+    "rounded_reference": "66.04",
+    "document_id": "DOC-WB-SP.DYN.LE00.IN-2023",
+    "chunk_id": "CHK-WB-SP.DYN.LE00.IN-2023-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2010",
+    "raw_value": 6.195,
+    "rounded_reference": "6.20",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2010",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2010-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2011",
+    "raw_value": 6.094,
+    "rounded_reference": "6.09",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2011",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2011-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2012",
+    "raw_value": 5.985,
+    "rounded_reference": "5.99",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2012",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2012-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2013",
+    "raw_value": 5.879,
+    "rounded_reference": "5.88",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2013",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2013-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2014",
+    "raw_value": 5.77,
+    "rounded_reference": "5.77",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2014",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2014-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2015",
+    "raw_value": 5.652,
+    "rounded_reference": "5.65",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2015",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2015-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2016",
+    "raw_value": 5.542,
+    "rounded_reference": "5.54",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2016",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2016-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2017",
+    "raw_value": 5.433,
+    "rounded_reference": "5.43",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2017",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2017-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2018",
+    "raw_value": 5.327,
+    "rounded_reference": "5.33",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2018",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2018-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2019",
+    "raw_value": 5.238,
+    "rounded_reference": "5.24",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2019",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2019-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2020",
+    "raw_value": 5.145,
+    "rounded_reference": "5.15",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2020",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2020-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2021",
+    "raw_value": 5.039,
+    "rounded_reference": "5.04",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2021",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2021-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2022",
+    "raw_value": 4.932,
+    "rounded_reference": "4.93",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2022",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2022-01"
+  },
+  {
+    "indicator": "SP.DYN.TFRT.IN",
+    "year": "2023",
+    "raw_value": 4.84,
+    "rounded_reference": "4.84",
+    "document_id": "DOC-WB-SP.DYN.TFRT.IN-2023",
+    "chunk_id": "CHK-WB-SP.DYN.TFRT.IN-2023-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2010",
+    "raw_value": 28284089,
+    "rounded_reference": "28,284,089.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2010",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2010-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2011",
+    "raw_value": 29347708,
+    "rounded_reference": "29,347,708.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2011",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2011-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2012",
+    "raw_value": 30560034,
+    "rounded_reference": "30,560,034.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2012",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2012-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2013",
+    "raw_value": 31622704,
+    "rounded_reference": "31,622,704.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2013",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2013-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2014",
+    "raw_value": 32792523,
+    "rounded_reference": "32,792,523.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2014",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2014-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2015",
+    "raw_value": 33831764,
+    "rounded_reference": "33,831,764.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2015",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2015-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2016",
+    "raw_value": 34700612,
+    "rounded_reference": "34,700,612.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2016",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2016-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2017",
+    "raw_value": 35688935,
+    "rounded_reference": "35,688,935.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2017",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2017-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2018",
+    "raw_value": 36743039,
+    "rounded_reference": "36,743,039.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2018",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2018-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2019",
+    "raw_value": 37856121,
+    "rounded_reference": "37,856,121.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2019",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2019-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2020",
+    "raw_value": 39068979,
+    "rounded_reference": "39,068,979.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2020",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2020-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2021",
+    "raw_value": 40000412,
+    "rounded_reference": "40,000,412.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2021",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2021-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2022",
+    "raw_value": 40578842,
+    "rounded_reference": "40,578,842.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2022",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2022-01"
+  },
+  {
+    "indicator": "SP.POP.TOTL",
+    "year": "2023",
+    "raw_value": 41454761,
+    "rounded_reference": "41,454,761.00",
+    "document_id": "DOC-WB-SP.POP.TOTL-2023",
+    "chunk_id": "CHK-WB-SP.POP.TOTL-2023-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2010",
+    "raw_value": 22.2614799010924,
+    "rounded_reference": "22.26",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2010",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2010-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2011",
+    "raw_value": 22.8205691572485,
+    "rounded_reference": "22.82",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2011",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2011-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2012",
+    "raw_value": 23.3434391310979,
+    "rounded_reference": "23.34",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2012",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2012-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2013",
+    "raw_value": 23.8077136743646,
+    "rounded_reference": "23.81",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2013",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2013-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2014",
+    "raw_value": 24.1910166387726,
+    "rounded_reference": "24.19",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2014",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2014-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2015",
+    "raw_value": 24.4649118421568,
+    "rounded_reference": "24.46",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2015",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2015-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2016",
+    "raw_value": 24.6588345720126,
+    "rounded_reference": "24.66",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2016",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2016-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2017",
+    "raw_value": 24.8352821238871,
+    "rounded_reference": "24.84",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2017",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2017-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2018",
+    "raw_value": 24.9991645191406,
+    "rounded_reference": "25.00",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2018",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2018-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2019",
+    "raw_value": 25.1437258839803,
+    "rounded_reference": "25.14",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2019",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2019-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2020",
+    "raw_value": 25.2622103446137,
+    "rounded_reference": "25.26",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2020",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2020-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2021",
+    "raw_value": 25.3478620272481,
+    "rounded_reference": "25.35",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2021",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2021-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2022",
+    "raw_value": 25.3939250580909,
+    "rounded_reference": "25.39",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2022",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2022-01"
+  },
+  {
+    "indicator": "SP.URB.TOTL.IN.ZS",
+    "year": "2023",
+    "raw_value": 25.4730529631167,
+    "rounded_reference": "25.47",
+    "document_id": "DOC-WB-SP.URB.TOTL.IN.ZS-2023",
+    "chunk_id": "CHK-WB-SP.URB.TOTL.IN.ZS-2023-01"
+  }
+]

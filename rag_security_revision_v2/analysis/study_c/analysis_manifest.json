@@ -1,0 +1,17 @@
+{
+  "analysis_version": "study-c-automatic-analysis-v1.0.0",
+  "files": {
+    "analysis.json": "8934b4eb844814523dd24aca3c3b5180a25203d4c4a625656fc73874b1410632",
+    "case_index.csv": "2f2f1b9e909ed11e9512a3e89958780b85002f013924ff4a17bc9ae6590b12ed",
+    "cases.jsonl": "e71121babbefc627117474a42ccefa5ded4da0544afa1983254bcb6aadd0bcfe",
+    "contrasts.csv": "952ed7d4f431bce6196aff1597c517dca3ed2b7012c9c302f6e8e5809f77c446",
+    "exposure_conditioned_summary.csv": "32944528dedaf344d41ec986b257993cfac41ea0b4f4fe6a1a8583e7c95e6300",
+    "paired_defense_outcomes.csv": "5e16336a4505f42487d8fede9c5b471e76820820011c29372e86f4fd7ec4706f",
+    "scored_rows.csv": "9cc0a1d340880d527a303614f223fca508d4cb323a05dd1edc0908dc9c22f583",
+    "strata_summary.csv": "d82e88d26e85c10b7edfd76edf13f09b71a497319865081c8c3146c72f335139",
+    "study_c_outcomes.pdf": "2b49a5150dbde65dcc1ea90ef49ceeb97b645d34ef42f7ac31f6e874496b653c",
+    "study_c_outcomes.png": "6a10fd33020d1998988205578caeb19f4a431b6d7ed166e7ea8f97a819973623",
+    "summary.csv": "9914c2ad4ae8aa9637f9d14bbe2ffad7b0f7269d2dd90d2315309845b4e3239a",
+    "summary_by_round.csv": "fe6d6f78f1e9c98d8572ee8ccf991596e67e07c36d454b0466943f8ec8f5305b"
+  }
+}

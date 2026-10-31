@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-10-27T06:01:05.231510+00:00",
+  "scope": "Final pre-inference data, controls and preserved baseline verification",
+  "independent_assistant_audit": "Second assistant read-only audit found no material execution blocker. This is not a human semantic review or external replication.",
+  "selected_source_records": 124,
+  "test_questions": 62,
+  "year_pairs": 57,
+  "population_pairs": 5,
+  "clean_passages": 620,
+  "unique_context_titles": 1240,
+  "controlled_question_coverage": 62,
+  "controlled_rows": 248,
+  "controlled_slot_counts": [
+    13,
+    13,
+    12,
+    12,
+    12
+  ],
+  "insertions_per_positive_condition": 62,
+  "insertion_whitespace_words": 120,
+  "prior_B_ID_and_title_overlap": 0,
+  "current_A_exact_question_and_title_overlap": 0,
+  "baseline_files_verified_unchanged": 244,
+  "human_judgments_completed": 0,
+  "remaining_limits": [
+    "No pretraining or general semantic/source-family independence guarantee.",
+    "Source acceptance is assistant screening, pending actual human judgments.",
+    "Exact original A principal/repetition archives remain unrecovered."
+  ]
+}

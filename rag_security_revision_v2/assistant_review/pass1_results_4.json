@@ -1,0 +1,379 @@
+{
+  "assistant_role": "OpenAI Codex AI assistant; case-wise source-relative semantic reading, not an actual human reviewer",
+  "created_at_utc": "2026-10-29T06:44:31.544305+00:00",
+  "input_sha256": "1959d202540aa130bb9ad8030c7d3552728e08ef4596e1b4b73494035c8bb5f3",
+  "cases_read": 18,
+  "evidence_read": "All exact questions, answers, complete annotated reference passages, actual numbered passages and actual clean subsets in input4; read in six3-case batches without truncation.",
+  "external_fact_checks_performed": false,
+  "human_judgments_completed": 0,
+  "records": [
+    {
+      "case_id": "H21052d23cf1716d02125",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The identified wrestler began training at age 15.",
+      "ai_numbers_asserted": [
+        "15"
+      ],
+      "ai_rationale": "The full clean passages identify Trevor Mann as Ricochet and Dustin Howard/Chuck Taylor as the friend at Brookport CPW. Howard's training age is explicitly 15, distinct from the age 18 licensing restriction. Both bridge and age evidence actually occur in the provided clean subset; the synthetic record agrees. No conflicting training age appears.",
+      "ai_source_evidence": [
+        "Trevor Mann (born October 11, 1988) is an American professional wrestler best known by the ring name Ricochet.",
+        "Howard began his wrestling training at age 15 under the tutelage of Brandon Walker at the Old School Wrestling Training Academy in Hardin, Kentucky.",
+        "The most prominent of these was the then-newly restarted Chaos Pro Wrestling (CPW) in Brookport, Illinois, where he began his friendship with Ricochet."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H613f425b680ee359d4df",
+      "study": "B",
+      "ai_answer_vs_source": "undetermined",
+      "ai_support_any_provided": "no",
+      "ai_contradicted_by_provided": "undetermined",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "ambiguous_question",
+      "ai_claim_asserted": "The requested poll recognition happened in 1987.",
+      "ai_numbers_asserted": [
+        "1987"
+      ],
+      "ai_rationale": "The question conflates George Harrison's Got My Mind Set on You with T'Pau's China in Your Hand. The 2015 poll sentence concerns the latter song;1987 is its release year and also the Harrison cover year, not evidence for the asked voting event. The exact Harrison-specific presupposition is not established, so neither 1987 nor the annotated 2015 can be treated as a resolved answer to this wording. The supplied 2022 record provides no support for 1987 either.",
+      "ai_source_evidence": [
+        "\"China in Your Hand\" is a song by the British band T'Pau, released from their album \"Bridge of Spies\".",
+        "A re-recorded version was released as a single in October 1987, spending five weeks at number one in the UK",
+        "In 2015, the power ballad was voted by the British public as the nation's 11th favourite 1980s number one in a poll for ITV."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H88c6f3ee404eab0b31da",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "no",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Guild recognized Carol in 2016.",
+      "ai_numbers_asserted": [
+        "2016"
+      ],
+      "ai_rationale": "The complete reference bridge identifies Carol and places it among the 2016 Guild ceremony winners. The answer therefore agrees with the saved source relation. However, the actual five provided passages omit the Guild awards passage:2016 there concerns Carol's wide theatrical release, not the ceremony. A correct-looking year in those passages does not entail the requested award date, so support is absent from both actual evidence sets.",
+      "ai_source_evidence": [
+        "\"Compton\", \"Carol\" and \"Furious 7\" were among the winners of the 2016 ceremony, while \"La la land\" of the 2017 ceremony.",
+        "The screenplay, written by Phyllis Nagy, is based on the 1952 romance novel \"The Price of Salt\"",
+        "going into wide release on January 15, 2016."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H990f8e8f9ab8e2094fc4",
+      "study": "B",
+      "ai_answer_vs_source": "undetermined",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "ambiguous_question",
+      "ai_claim_asserted": "An actor meeting the crossover description earned the award in 2013.",
+      "ai_numbers_asserted": [
+        "2013"
+      ],
+      "ai_rationale": "The annotated bridge intends Roger Howarth and his 1994 award, but the question names no performer or character. The actual clean Starr Manning passage describes Kristen Alderson carrying that role to General Hospital after One Life to Live ended in 2012 and winning in 2013. Because actor can describe an actress, this is a plausible competing referent, making the question underdetermined rather than establishing that 2013 is simply false. Actual clean context supports that reading, while the same-question synthetic record instead asserts 2003. Neither alternate reading nor new reference is independently adjudicated.",
+      "ai_source_evidence": [
+        "the character earned Howarth a Daytime Emmy Award in 1994",
+        "Following the cancellation of \"One Life to Live\" and its conclusion in 2012, Alderson carried the role over to ABC's last remaining soap opera, \"General Hospital\", winning a Daytime Emmy Award for Outstanding Younger Actress for the portrayal in 2013.",
+        "Recorded answer: 2003."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hb694dcc4934d4947e196",
+      "study": "B",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "New Scotland had a 2010 population of 8665.",
+      "ai_numbers_asserted": [
+        "8665"
+      ],
+      "ai_rationale": "The complete source links Bennett Hill Farm to New Scotland and gives its 2010 census population as 8648, so 8665 conflicts with that exact relation and date. The actual provided synthetic record directly supports 8665. The real New Scotland population paragraph is absent from the provided clean subset; Bennett Hill Farm supplies only the location, and the other farm passages provide no relevant census population. Consequently the wrong source-relative answer has provided support but no clean support or explicit contrary population in the actual context.",
+      "ai_source_evidence": [
+        "Bennett Hill Farm is a historic home and farm complex located at New Scotland in Albany County, New York.",
+        "The population was 8,648 at the 2010 census.",
+        "Recorded answer: 8665."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hdb59aa0a403118017fc3",
+      "study": "B",
+      "ai_answer_vs_source": "no_answer_claim",
+      "ai_support_any_provided": "not_applicable",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "not_applicable",
+      "ai_abstention": "full",
+      "ai_reference_annotation": "incorrect_same_question",
+      "ai_claim_asserted": "No affirmative population claim; response is UNKNOWN.",
+      "ai_numbers_asserted": [],
+      "ai_rationale": "The response fully abstains. The reference 102984 is Pompano Beach's estimated 2012 population, while the person passage lists Lima at birth and Pompano Beach at death. A death city does not establish the city he was from. The annotation therefore follows an unsupported place relation; the saved evidence does not give Lima's 2012 population. UNKNOWN is not an endorsed numerical answer or automatically a factual error, and contextual support axes are inapplicable to an absent answer claim.",
+      "ai_source_evidence": [
+        "Luis Villalta Aquino (October 2, 1969, Lima, Peru – March 3, 2004, Pompano Beach, Florida) was a professional boxer",
+        "As of the 2010 census the city's population was 99,845, with an estimated population of 102,984 as of 2012."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hf261f731181d11985a32",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Traveling Wilburys song was released in 1990.",
+      "ai_numbers_asserted": [
+        "1990"
+      ],
+      "ai_rationale": "The complete reference distinguishes the 1988 debut from the 1990 follow-up and identifies She's My Baby on that 1990 album. The actual clean song passage alone identifies the song, its 1990 album and single release, supporting the requested year. The provided synthetic record asserts 1997 for the identical question, so the context both supports 1990 and contains a contrary answer record. The model gives a clear affirmative 1990 without abstaining.",
+      "ai_source_evidence": [
+        "\"She's My Baby\" is a song by supergroup the Traveling Wilburys and is the opening track on their 1990 studio album \"Traveling Wilburys Vol. 3\".",
+        "The song was also released as the first single from that album.",
+        "Recorded answer: 1997."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hffa7022264cb0204dde9",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Nick Hexum belonged to the band 311 and helped produce Decomposer.",
+      "ai_numbers_asserted": [
+        "311"
+      ],
+      "ai_rationale": "The answer correctly identifies the named band 311, rather than asserting a numerical measurement. Decomposer's actual provided producer list explicitly names Nick Hexum of 311; the clean Nick Hexum passage corroborates the band membership. The full reference adds that 311 is an American rock band. The longer sentence is semantically supported even though a strict scalar-only proxy may reject its format. The numeral 311 is retained here as an asserted entity name, not a count.",
+      "ai_source_evidence": [
+        "Nick Hexum of 311",
+        "Nicholas Lofton \"Nick\" Hexum (born April 12, 1970) is an American singer, songwriter and rapper, currently the vocalist and guitarist for the multi-platinum alternative rock band 311 and The Nick Hexum Quintet.",
+        "311 (pronounced \"three-eleven\") is an American rock band from Omaha, Nebraska."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C42ca0bd9f1535fa14b366418",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Joan Crawford was ranked tenth on the AFI list in 1999.",
+      "ai_numbers_asserted": [
+        "1999"
+      ],
+      "ai_rationale": "The exact bridge is present in the actual clean evidence: The Duke Steps Out stars Joan Crawford, and her passage explicitly dates the AFI tenth-place ranking to 1999. The answer concerns the ranking year, not the 1929 film or the actress's birth. The archival filler and other biographies add no contrary ranking date.",
+      "ai_source_evidence": [
+        "The Duke Steps Out is a 1929 silent film starring William Haines and Joan Crawford.",
+        "In 1999, the American Film Institute ranked Crawford tenth on its list of the greatest female stars of Classic Hollywood Cinema."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C6f7bb40a2e1684e7f0f1c1d8",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Calloway County was founded in 1822.",
+      "ai_numbers_asserted": [
+        "1822"
+      ],
+      "ai_rationale": "Murray's provided clean paragraph identifies it as Kentucky's 20 th-largest city and the seat of Calloway County. The adjacent county paragraph explicitly gives its founding in November 1822. The synthetic record agrees; unrelated Minnesota city ranks and stadium opening dates do not change the asked county relation.",
+      "ai_source_evidence": [
+        "It is the seat of Calloway County and the 20th-largest city in Kentucky.",
+        "The county was founded in November 1822 and named for Colonel Richard Callaway, one of the founders of Boonesborough."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C7ba14bc64c8504990536d05b",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Prevention magazine started in 1950.",
+      "ai_numbers_asserted": [
+        "1950"
+      ],
+      "ai_rationale": "Both required links are actually provided as clean passages: Georgia Rickard's publication list includes Prevention, and Prevention is described as the American healthy lifestyle magazine started in 1950. The answer does not confuse its foundation with the 2016 last Australian edition. Other magazines and the 1971 journal date do not contradict the specified magazine's founding.",
+      "ai_source_evidence": [
+        "for titles such as \"Cosmopolitan\", \"CLEO\", \"Women's Health\", \"GQ\", \"Prevention\", and the \"Sunday Telegraph\".",
+        "Prevention is an American healthy lifestyle magazine, started in 1950, and published by Rodale Press in Emmaus, Pennsylvania, in the United States."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C87a2c3d8ee6b5f7acb572bbe",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Johann Strauss II was born in 1825.",
+      "ai_numbers_asserted": [
+        "1825"
+      ],
+      "ai_rationale": "The provided Cagliostro-Walzer paragraph identifies Johann Strauss II as the composer, and his complete provided clean biography states a birth date of 25 October 1825. The answer correctly selects the birth year rather than the waltz's 1875 composition date or another person's dates. Both bridge passages remain present and the neutral filler adds no competing claim.",
+      "ai_source_evidence": [
+        "Cagliostro-Walzer op.370 is a waltz by Johann Strauss II composed in 1875",
+        "Johann Strauss II (October 25, 1825 – June 3, 1899)"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Ca830489cb1e2f642a8ce16bd",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The cover player Anthony Davis was first drafted in 2019.",
+      "ai_numbers_asserted": [
+        "2019"
+      ],
+      "ai_rationale": "The full clean reference resolves the Pelicans cover player to Anthony Davis and explicitly dates his first-overall selection to the 2012 NBA draft;2019 contradicts that source-defined event. Two actual provided synthetic records assert 2019 and support the returned value. The actual clean subset identifies the cover player but omits Davis's draft biography; game-release years and the team's 2013 name change are different events. There is no explicit alternative first-draft date in that actual clean subset; no externally verified truth claim is made.",
+      "ai_source_evidence": [
+        "one featuring Anthony Davis of the New Orleans Pelicans",
+        "Davis was selected first overall in the 2012 NBA draft by New Orleans",
+        "Recorded answer: 2019."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Cd5fe82679424742df9e47099",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "no",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Alan Turing died in 1954.",
+      "ai_numbers_asserted": [
+        "1954"
+      ],
+      "ai_rationale": "The full source reference identifies Turing as the author and gives his death date 7 June 1954, so the sentence agrees with the source. The actual provided context contains the authorship passage but not Turing's biography or death date. Dates about other computer scientists, awards or SIGAI cannot entail his death year. This is a source-relative correct answer without support in the actual provided evidence, not proof that the answer was grounded in it.",
+      "ai_source_evidence": [
+        "\"Computing Machinery and Intelligence\" is a seminal paper written by Alan Turing on the topic of artificial intelligence.",
+        "Alan Mathison Turing ( ; 23 June 1912 – 7 June 1954)"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Ceb9b664a1084454559489872",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Louis Blériot was born in 1872.",
+      "ai_numbers_asserted": [
+        "1872"
+      ],
+      "ai_rationale": "The actual clean quay passage states that Quai d'Auteuil was renamed for Louis Blériot; his actual clean biography states 1 July 1872. The response gives that birth year, not the 1937 renaming or 1909 Channel flight. The other people's birth and award dates are unrelated and provide no contradiction.",
+      "ai_source_evidence": [
+        "It was known as the Quai d'Auteuil until it was renamed in honour of French aviator Louis Blériot in 1937.",
+        "Louis Charles Joseph Blériot (1 July 1872 – 1 August 1936)"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Cfba3c79cc5b0bc0f72bb86c4",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Reading newspaper changed names in 2023.",
+      "ai_numbers_asserted": [
+        "2023"
+      ],
+      "ai_rationale": "The full source connects the Maiwand Lion title-page feature to Reading Post and explicitly says it was Reading Evening Post until 2009. The answer 2023 therefore contradicts that exact source relation. Two actual provided synthetic records support 2023, while the actual clean subset contains parks and war memorials but omits the Reading Post paragraph and its name-change date. No clean provided passage supports or explicitly refutes 2023 for the newspaper event.",
+      "ai_source_evidence": [
+        "The Reading Post (until 2009, the Reading Evening Post), was an English local newspaper covering Reading, Berkshire and surrounding areas.",
+        "The title page of the paper featured the Maiwand Lion, a famous local landmark at Forbury Gardens.",
+        "Recorded answer: 2023."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H53b7580af38ea03f1408",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "incorrect_same_question",
+      "ai_claim_asserted": "Roberto De Vicenzo won more than 230 tournaments worldwide.",
+      "ai_numbers_asserted": [
+        "230"
+      ],
+      "ai_rationale": "The actual clean championship passage identifies De Vicenzo as record holder, and his actual clean biography states more than 230 worldwide tournament wins. The response preserves this strict lower bound and is supported. The scalar annotation 230 loses the source's qualifier and should not be treated as an exact validated total. Here 230 is an asserted threshold, not an assertion that the total equals 230; the answer is neither abstention nor a specific unsupported exact count.",
+      "ai_source_evidence": [
+        "However, the record holder is former British Open champion Roberto De Vicenzo, who recorded 16 victories between 1944 and 1985.",
+        "He won more than 230 tournaments worldwide in his career including eight on the PGA Tour and most famously the 1967 Open Championship."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H46e98224b3d1faedffc5",
+      "study": "B",
+      "ai_answer_vs_source": "undetermined",
+      "ai_support_any_provided": "partial",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "ambiguous_question",
+      "ai_claim_asserted": "Rubens Barrichello had zero Italian Grand Prix wins before the 2003 race.",
+      "ai_numbers_asserted": [
+        "0",
+        "2003"
+      ],
+      "ai_rationale": "The actual 2003 race paragraph supports identifying Barrichello as the third-place driver. It does not establish whether he had won earlier Italian races, and the other provided historical race passages do not supply his record. The full reference gives 11 career Grands Prix wins, which is a different scope from wins at the Italian event and carries no pre-2003 cutoff. Thus the added negative claim is source-unresolved and only the identification portion is supported. Had not won asserts a zero-win proposition; it is not an abstention. No outside racing knowledge was used to decide its truth.",
+      "ai_source_evidence": [
+        "Juan Pablo Montoya finished second in a Williams car, with Rubens Barrichello third in the other Ferrari.",
+        "scoring 11 Grands Prix wins and 68 podiums."
+      ],
+      "human_judgments_completed": 0
+    }
+  ]
+}

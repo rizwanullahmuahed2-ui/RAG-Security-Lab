@@ -1,0 +1,153 @@
+{
+  "scope": "Post hoc bounded exact-string, phrase, and declared-keyword audit; no semantic entity/fact matching or pretraining-contamination test",
+  "repository_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+  "denominators": {
+    "study_a_questions": 364,
+    "study_b_test_questions": 64,
+    "study_b_donor_questions": 64,
+    "study_a_document_titles": 224,
+    "study_b_test_and_donor_context_titles": 1280,
+    "study_a_document_and_chunk_text_fields": 449,
+    "study_a_unique_clean_texts_after_strict_normalization": 226,
+    "study_b_indexed_paragraphs": 640,
+    "study_b_test_and_donor_support_sentence_fields": 318
+  },
+  "normalization_definitions": {
+    "NFKC_casefold_whitespace": "Unicode NFKC, casefold, whitespace collapse",
+    "NFKC_casefold_alphanumeric_tokens": "Unicode NFKC, casefold, nonword/underscore characters replaced by spaces, whitespace collapse"
+  },
+  "exact_matches": {
+    "NFKC_casefold_whitespace": {
+      "questions": [],
+      "document_titles_vs_all_selected_context_titles": [],
+      "clean_text_vs_prefixed_paragraphs": [],
+      "clean_text_vs_paragraph_bodies": [],
+      "clean_text_vs_annotated_support_sentences": []
+    },
+    "NFKC_casefold_alphanumeric_tokens": {
+      "questions": [],
+      "document_titles_vs_all_selected_context_titles": [],
+      "clean_text_vs_prefixed_paragraphs": [],
+      "clean_text_vs_paragraph_bodies": [],
+      "clean_text_vs_annotated_support_sentences": []
+    }
+  },
+  "literal_shared_ngrams": {
+    "8": {
+      "shared_phrase_records": 0,
+      "examples": []
+    },
+    "12": {
+      "shared_phrase_records": 0,
+      "examples": []
+    }
+  },
+  "bounded_domain_keyword_scan": {
+    "Afghanistan": {
+      "questions": {
+        "count": 0,
+        "record_ids": []
+      },
+      "selected_context_titles": {
+        "count": 0,
+        "record_ids": []
+      },
+      "paragraph_bodies": {
+        "count": 0,
+        "record_ids": []
+      }
+    },
+    "Kabul": {
+      "questions": {
+        "count": 0,
+        "record_ids": []
+      },
+      "selected_context_titles": {
+        "count": 0,
+        "record_ids": []
+      },
+      "paragraph_bodies": {
+        "count": 0,
+        "record_ids": []
+      }
+    },
+    "Bamiyan": {
+      "questions": {
+        "count": 0,
+        "record_ids": []
+      },
+      "selected_context_titles": {
+        "count": 0,
+        "record_ids": []
+      },
+      "paragraph_bodies": {
+        "count": 0,
+        "record_ids": []
+      }
+    },
+    "Kandahar": {
+      "questions": {
+        "count": 0,
+        "record_ids": []
+      },
+      "selected_context_titles": {
+        "count": 0,
+        "record_ids": []
+      },
+      "paragraph_bodies": {
+        "count": 0,
+        "record_ids": []
+      }
+    },
+    "Herat": {
+      "questions": {
+        "count": 0,
+        "record_ids": []
+      },
+      "selected_context_titles": {
+        "count": 0,
+        "record_ids": []
+      },
+      "paragraph_bodies": {
+        "count": 0,
+        "record_ids": []
+      }
+    },
+    "Hindu Kush": {
+      "questions": {
+        "count": 0,
+        "record_ids": []
+      },
+      "selected_context_titles": {
+        "count": 0,
+        "record_ids": []
+      },
+      "paragraph_bodies": {
+        "count": 0,
+        "record_ids": []
+      }
+    },
+    "World Bank": {
+      "questions": {
+        "count": 0,
+        "record_ids": []
+      },
+      "selected_context_titles": {
+        "count": 0,
+        "record_ids": []
+      },
+      "paragraph_bodies": {
+        "count": 0,
+        "record_ids": []
+      }
+    }
+  },
+  "original_files_unchanged": true,
+  "limits": [
+    "Zero exact matches would rule out only duplicate strings under the specified normalizations, not paraphrases, same entities, same facts, or shared source families.",
+    "Donor full context paragraphs are not retained in the local Study B donor file; donor questions, context titles and annotated support sentences were inspected, not their full paragraph bodies.",
+    "Only committed current canonical Study A inputs at this Git revision were compared; exact historical principal-run input identity is not established without its missing manifest/archive.",
+    "Both studies draw on publicly available material. These checks do not establish independence from model pretraining, and no model-contamination test was performed.",
+    "Shared short phrases or domain keywords, if present, are literal overlap findings, not proof of identical underlying facts."
+  ]
+}

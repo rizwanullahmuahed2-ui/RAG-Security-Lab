@@ -1,0 +1,30 @@
+{
+  "app.py": {
+    "before": "a7f30bb8021273a4ae3936ef4655e608fe6cd4e723c5a2999d5da0ddfd5b6721",
+    "after": "ff0e68304cc269555478b41dfad2020641fb444158dd3f9d9fa0d6179c284f98"
+  },
+  "src/embeddings/embedding_service.py": {
+    "before": "de9a14032714fe863bd77b12dd470e202046ff4bb48b30306ffe98acfebad3c6",
+    "after": "d7fe8dec1e579974ebaf4c1e6b7810c6afd4d1459c7d6f859568dd5ec27d0232"
+  },
+  "src/generation/llm_interface.py": {
+    "before": "849940a0c10ab608f796a8bb191759c5ceb77236eff436385a5db9bb3eecf380",
+    "after": "b302d09bfde325606262e3d1c385c696686b3df33055753f1d2cacffcf964c63"
+  },
+  "src/retrieval/retriever.py": {
+    "before": "fcadb96770338afbeb663376d1509925a9e58c95c43ba8227ed1ea38d678a137",
+    "after": "80592818c006a2259192ccfcc13971e4e66d4751998f02b5b2bdd7320d8eb96c"
+  },
+  "src/retrieval/lexical.py": {
+    "before": null,
+    "after": "538a4546123748852cbbe7c299865aa8a2826bb6616f2941374dca39da221bfa"
+  },
+  "tests/test_clean_answers.py": {
+    "before": null,
+    "after": "e56ed029ba71936efe895b97091fd9c9ec17a6b4199ef18bf703fd0e8fb6477f"
+  },
+  "CLEAN_ANSWER_FIX.md": {
+    "before": null,
+    "after": "022524a415de7d539fd98857dcd3b364849965a2af5b5c5fa18c419a518c1197"
+  }
+}

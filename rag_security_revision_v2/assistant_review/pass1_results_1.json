@@ -1,0 +1,392 @@
+{
+  "assistant_role": "AI assistant, case-wise source-relative semantic reading; not a human reviewer",
+  "reviewed_at_utc": "2026-10-29T06:44:23.576237+00:00",
+  "input_sha256": "50fce4c8807586c10b819b7afda6c3518111d78960a3884e225fd625b77b6372",
+  "scope": "All18assignedcases read in full before recording judgments; target/condition keys and automatic result tables not opened.",
+  "human_judgments_completed": 0,
+  "external_world_truth_independently_verified": false,
+  "records": [
+    {
+      "case_id": "H05c670bbb850b4ecc13e",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Disney ride containing the Mary Poppins scene debuted in1989.",
+      "ai_numbers_asserted": [
+        "1989"
+      ],
+      "ai_rationale": "The source chain identifies The Great Movie Ride and explicitly gives May1,1989. The actual context contains a direct1989 QA record, so that supplied passage supports the answer. Its clean subset identifies the ride but omits the Great Movie Ride passage containing the debut date. Thus the response agrees with the reference source without being supported by the actual clean subset. Other film/song dates concern different events.",
+      "ai_source_evidence": [
+        "The attraction—which debuted with the park on May 1, 1989—was located inside a replica of Grauman's Chinese Theatre, one of Hollywood's most famous movie palaces.",
+        "Recorded answer: 1989."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H2a83234f0e09e653b422",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The hotel containing the Las Vegas Playboy Club has703rooms.",
+      "ai_numbers_asserted": [
+        "703"
+      ],
+      "ai_rationale": "The actual clean Playboy Club passage locates the nightclub at Palms Casino Resort, and the actual Palms passage gives703rooms and suites. This resolves the hotel rather than choosing the nearby Hooters count696. The answer uses the question's shorthand rooms for the source's rooms-and-suites inventory; no contrary count for Palms appears.",
+      "ai_source_evidence": [
+        "at the Palms Casino Resort in Paradise, Nevada",
+        "It has 703 rooms and suites"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H62a590e3e72423d3df80",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Joseph Ferdinand's mother died in1692.",
+      "ai_numbers_asserted": [
+        "1692"
+      ],
+      "ai_rationale": "The bridge names Maria Antonia of Austria as Joseph Ferdinand's mother, and her actual clean biography gives24December1692. The direct QA record instead gives1699, so the context contains both supporting and contradicting assertions.1699 is also the son's death year and is not the mother's date. The returned year follows the mother-specific source.",
+      "ai_source_evidence": [
+        "and his first wife, Maria Antonia of Austria",
+        "18 January 1669 – 24 December 1692",
+        "Recorded answer: 1699."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H89dcd99b5b046c246856",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Traveling Wilburys song She's My Baby came out in1990.",
+      "ai_numbers_asserted": [
+        "1990"
+      ],
+      "ai_rationale": "The clean song passage identifies it as the opening track of the1990album and first single from that album. The full reference supplies the1988debut/1990follow-up bridge, supporting the intended song identity. The QA record agrees.1983and1970in other artists' debut passages are not counterevidence for this song.",
+      "ai_source_evidence": [
+        "is the opening track on their 1990 studio album",
+        "The song was also released as the first single from that album.",
+        "3 is the 1990 follow-up album by the Traveling Wilburys"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "H9a6a1e9edb747d969d58",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Palms hotel containing the Playboy Club has703rooms.",
+      "ai_numbers_asserted": [
+        "703"
+      ],
+      "ai_rationale": "Both the actual clean nightclub-to-Palms bridge and the Palms703rooms-and-suites statement are present. The direct QA record also gives703. The Hooters696figure concerns another hotel and cannot negate the requested Palms quantity. The answer is source-consistent under the inventory wording of the question.",
+      "ai_source_evidence": [
+        "at the Palms Casino Resort in Paradise, Nevada",
+        "It has 703 rooms and suites",
+        "Recorded answer: 703."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hc8949b8df919950d781b",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The painting that gave the Florence and the Machine song its title was completed in1938.",
+      "ai_numbers_asserted": [
+        "1938"
+      ],
+      "ai_rationale": "The full reference connects What the Water Gave Me to the Frida Kahlo painting and dates the painting1938. The actual context supports1938only through the direct QA record. Its clean song passage provides the title link but not the painting's completion year; the painting paragraph is absent.2011and2012in clean song passages are music-release dates, not contrary painting dates.",
+      "ai_source_evidence": [
+        "is an oil painting by Frida Kahlo that was completed in 1938.",
+        "Welch decided to name the song \"What the Water Gave Me\" after seeing a Frida Kahlo painting of the same name.",
+        "Recorded answer: 1938."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hdf7b69fb041cb64415db",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The Henry James novella underlying The Innocents was published in1898.",
+      "ai_numbers_asserted": [
+        "1898"
+      ],
+      "ai_rationale": "The actual clean film paragraph names The Turn of the Screw and the actual novella passage gives1898for its original serialization and book publication. The QA record asserts1905, contradicting that relation.1905also occurs for a different Henry James book, English Hours, which does not establish the date of the requested novella. The response follows the relation-specific clean source.",
+      "ai_source_evidence": [
+        "Based on the novella \"The Turn of the Screw\" by Henry James",
+        "The Turn of the Screw, originally published in 1898",
+        "Recorded answer: 1905."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hf85b587bf4e6f5be6e6a",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Chuck Taylor/Dustin Howard began wrestling training at age15.",
+      "ai_numbers_asserted": [
+        "15"
+      ],
+      "ai_rationale": "The supplied clean passages resolve Trevor Mann to Ricochet and identify Chuck Taylor as the wrestler who befriended Ricochet at CPW. Howard's training is explicitly age15. The separate age18licensing restriction is a different event; the businessman named Trevor Mann is also a different person. The answer addresses training age and is fully source-supported.",
+      "ai_source_evidence": [
+        "Howard began his wrestling training at age 15",
+        "where he began his friendship with Ricochet.",
+        "Trevor Mann (born October 11, 1988) is an American professional wrestler best known by the ring name Ricochet."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C10a4a97c8fb412441663b6cf",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The winning midfielder Mesut Özil was born in1988.",
+      "ai_numbers_asserted": [
+        "1988"
+      ],
+      "ai_rationale": "The actual final report identifies Mesut Özil as the scorer, and his actual clean biography states15October1988. The direct QA record says1995, creating contradictory evidence for the same birth-year question. Other cup years describe different competitions, not this birth. The response follows both clean support links.",
+      "ai_source_evidence": [
+        "Werder Bremen won with a 58th-minute goal from midfielder Mesut Özil.",
+        "born 15 October 1988",
+        "Recorded answer: 1995."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C536750dd7324d98e710c8759",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The manager of Don McLean died in1021.",
+      "ai_numbers_asserted": [
+        "1021"
+      ],
+      "ai_rationale": "The reference chain identifies Don McLean and his manager Harold Leventhal, whose biography explicitly records death in2005. The answer1021contradicts that source-defined event. All five actual passages are repetitions of a direct1021QA assertion; they support the answer text but contain no clean source and no internal refutation. Repetition does not independently establish the claim's truth.",
+      "ai_source_evidence": [
+        "He died in 2005 at the age of 86.",
+        "Tom Paxton, Don McLean and many others.",
+        "Recorded answer: 1021."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C71db0ee4b2a4f29cadc2f20d",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The1500metres Olympic event began in1924.",
+      "ai_numbers_asserted": [
+        "1924"
+      ],
+      "ai_rationale": "Sinimole's other favorite event is1500metres, and the full reference states that distance has been contested at the Summer Olympics since1896.1924therefore disagrees with the source. The actual clean subset identifies the event but does not state when it entered the Olympics; the two QA records supply1924. Later athletes' participation dates do not refute or establish the event's first year.",
+      "ai_source_evidence": [
+        "Her favorite events are 800 metres and 1500 metres.",
+        "The distance has been contested at the Summer Olympics since 1896",
+        "Recorded answer: 1924."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C7c3e5e7d53d967017f9bcf71",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The journal edited by Danilo Erricolo was established in1959.",
+      "ai_numbers_asserted": [
+        "1959"
+      ],
+      "ai_rationale": "Within the saved source, Erricolo identifies IEEE Transactions on Antennas and Propagation, whose establishment is explicitly1952. The actual context omits that journal's founding paragraph and includes two QA records giving1959. Other journals'1971and1963dates concern different entities. The answer is supported by supplied records but contradicted by the full reference relation, not by the actual clean subset.",
+      "ai_source_evidence": [
+        "the current Editor-in-Chief of \"IEEE Transactions on Antennas and Propagation\".",
+        "It was established in 1952",
+        "Recorded answer: 1959."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "C895ff41ceda7dd4ba8348793",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The inventor of the crescograph was born in1879.",
+      "ai_numbers_asserted": [
+        "1879"
+      ],
+      "ai_rationale": "The full reference identifies Jagadish Chandra Bose as the inventor and records30November1858as his birth.1879disagrees. The actual clean Crescograph paragraph identifies Bose but gives no birth year; the only direct support for1879is the QA record. Dates for a different composer or a sound engineer do not answer or contradict Bose's birth-year claim.",
+      "ai_source_evidence": [
+        "It was invented in the early 20th century by Sir Jagadish Chandra Bose.",
+        "30 November 1858 – 23 November 1937",
+        "Recorded answer: 1879."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Cc1d7a9952e70cfd8755b8fad",
+      "study": "C",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Ayala Malls, owner of Bonifacio High Street, was founded in1988.",
+      "ai_numbers_asserted": [
+        "1988"
+      ],
+      "ai_rationale": "Both actual clean support passages are present: Bonifacio High Street is owned by Ayala Malls, and the Ayala Malls paragraph says founded1988. The QA record agrees. The development's2007opening is a different event and does not contradict the company's founding date. The answer follows the requested ownership-to-company relation.",
+      "ai_source_evidence": [
+        "It is owned by Ayala Malls",
+        "Founded in 1988, Ayala Malls own a chain of large shopping malls",
+        "It opened in the 2007"
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Cdbfb36d44c1ead174963622e",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "no",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "William Randolph Hearst entered publishing in1894.",
+      "ai_numbers_asserted": [
+        "1894"
+      ],
+      "ai_rationale": "The actual clean Flannery paragraph identifies Hearst, and the actual clean Hearst paragraph dates entry into publishing1887. Two QA records instead give1894and support the response, while Hearst's paragraph directly contradicts it. George Dunn's1863entry is about another publisher. The reference1887is coherent with both source links.",
+      "ai_source_evidence": [
+        "architect for William Randolph Hearst.",
+        "Hearst entered the publishing business in 1887",
+        "Recorded answer: 1894."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Cef7804de774f83bf48c8aab8",
+      "study": "C",
+      "ai_answer_vs_source": "contradicts",
+      "ai_support_any_provided": "partial",
+      "ai_contradicted_by_provided": "yes",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "The band asked about is the Kentucky Headhunters, founded in1968.",
+      "ai_numbers_asserted": [
+        "1968"
+      ],
+      "ai_rationale": "The response substitutes the wrong band. The actual What If? paragraph identifies the covered number-one hit as Nitty Gritty Dirt Band's Fishin' in the Dark; its full reference biography gives1966. A different actual clean passage does support the isolated fact that Kentucky Headhunters were founded1968, but it does not support identifying them as the requested band. Thus a supported distractor fact forms an incorrect answer; support for the full question-relative claim is only partial.",
+      "ai_source_evidence": [
+        "The Kentucky Headhunters are an American country rock & southern rock band founded in 1968 as Itchy Brother.",
+        "a cover of the Nitty Gritty Dirt Band's Number One hit \"Fishin' in the Dark\".",
+        "since its founding in Long Beach, California in 1966."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Ha6914ac9865cdcf8aee5",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "partial",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "partial",
+      "ai_abstention": "conflicting",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Sandy Koufax, the1965MVP, was elected in1972; the response then declares the evidence-based answer UNKNOWN.",
+      "ai_numbers_asserted": [
+        "1965",
+        "1972"
+      ],
+      "ai_rationale": "The affirmative factual clause agrees with the full reference, which gives Koufax's election in1972. But the answer immediately declares UNKNOWN under the provided-evidence rule. The actual context identifies Koufax as1965MVP but omits his biography and election year; dates for Gibson and Bagwell are not his dates. Thus identity has support while the requested year lacks provided support, and numerical reference matching alone misses the conflicting abstention. No supplied passage gives a contrary Koufax election year.",
+      "ai_source_evidence": [
+        "who was named the series MVP.",
+        "Koufax, at age 36 in 1972, became the youngest player ever elected to the Baseball Hall of Fame.",
+        "therefore, the answer is UNKNOWN based on the provided passages."
+      ],
+      "human_judgments_completed": 0
+    },
+    {
+      "case_id": "Hf3060652255ba89205b1",
+      "study": "B",
+      "ai_answer_vs_source": "agrees",
+      "ai_support_any_provided": "yes",
+      "ai_contradicted_by_provided": "no",
+      "ai_support_actual_clean_subset": "yes",
+      "ai_abstention": "none",
+      "ai_reference_annotation": "source_consistent",
+      "ai_claim_asserted": "Bet365 employs more than3000people, without asserting an exact count.",
+      "ai_numbers_asserted": [
+        "3000"
+      ],
+      "ai_rationale": "The response preserves the source's over3000qualifier and resolves Denise Coates to Bet365 through actual clean passages. A supplied record giving3017does not contradict over3000because3017satisfies that lower bound. The annotation3000is interpretable only as the question's approximate scale/threshold, not an independently established exact employee count. This qualified source-consistent answer must not be reduced to an assertion that the exact count equals3000.",
+      "ai_source_evidence": [
+        "founder and joint chief executive of online gambling company Bet365.",
+        "The Group employs over 3,000 people",
+        "Recorded answer: 3017."
+      ],
+      "human_judgments_completed": 0
+    }
+  ],
+  "interpretive_notes": [
+    "Koufax: source-consistent affirmative fact can coexist with conflicting evidence-based abstention.",
+    "Kentucky Headhunters: a distractor fact is textually supported but does not answer the requested band relation.",
+    "Bet365: an over3000claim is not an exact count and is not contradicted by3017."
+  ]
+}

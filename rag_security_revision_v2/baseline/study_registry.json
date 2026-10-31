@@ -1,0 +1,184 @@
+{
+  "created_at_utc": "2026-10-26T07:08:54.379409+00:00",
+  "status_time_scope": "Entries describe evidence at registry creation; Study C and human-review entries must be updated from actual outputs after execution/review.",
+  "repository": {
+    "name": "rizwanullahmuahed2-ui/RAG-Security-Lab",
+    "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+    "paper_sha256": "87059e66898a6aaecede4d4d8224e2de97ed045f79b822eb2d903fbd3cc7533f"
+  },
+  "studies": [
+    {
+      "id": "A_historical",
+      "kind": "reported extractive principal experiment",
+      "data": {
+        "documents": 224,
+        "chunks": 225,
+        "questions": 364,
+        "targets": 104
+      },
+      "grid": {
+        "budgets": [
+          0,
+          10,
+          30,
+          60,
+          104
+        ],
+        "seeds": [
+          17,
+          42,
+          91
+        ],
+        "defenses": 4,
+        "correlated_rows_reported": 21840
+      },
+      "active_components_reported": {
+        "embedding": "hashing 1024d",
+        "retrieval": "exact cosine candidates",
+        "reranking": "query/candidate TF-IDF",
+        "answerer": "deterministic sentence extraction",
+        "candidate_k": 30,
+        "context_k": 5
+      },
+      "evidence_level": "canonical inputs reconstructed; exact historical output/code/config archive not recovered",
+      "inference_limit": "No real generative LLM inference can be inferred from extractive historical results.",
+      "evidence_paths": [
+        "/workspace/research_phase/repo_snapshot/research/README.md",
+        "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+        "/workspace/rag_security_revision_v2/history/reproducibility_decision.json"
+      ]
+    },
+    {
+      "id": "A_repetition_historical",
+      "kind": "separately reported target-specific repetition and accepted-label controls",
+      "correlated_rows_reported": 3016,
+      "target_questions": 104,
+      "corpus_scope": "separate corpus per target; not shared-corpus principal/B/C",
+      "archive_status": "not recovered",
+      "fresh_rescoring_completed": false,
+      "evidence_paths": [
+        "/workspace/revision/source_original_article.txt",
+        "/workspace/rag_security_revision_v2/history/reproducibility_decision.json"
+      ]
+    },
+    {
+      "id": "A_diagnostic_committed",
+      "kind": "separate September 30 targeted-mode diagnostic",
+      "correlated_rows_reported": 1092,
+      "n_questions": 364,
+      "conditions": "clean, ten synthetic own-assertion copies, filtered",
+      "summary_available": true,
+      "full_records_remote_path": "results/targeted-mode-validation/records.json",
+      "full_records_git_blob_sha1": "29bd04ae120dcb5ba5057c779de6e7d3e2d14947",
+      "full_records_bytes": 6822461,
+      "fresh_response_rescoring_completed_by_this_task": false,
+      "evidence_level": "summary and synthetic pool verified in prior audit; do not substitute for original principal run"
+    },
+    {
+      "id": "repository_current_workbench",
+      "kind": "versioned software, not a frozen principal study",
+      "default_budgets": [
+        0,
+        10,
+        20,
+        50,
+        104
+      ],
+      "active_components_at_default_config": {
+        "embedding": "hashing-lexical-v2:1024d",
+        "retrieval": "eligible pool sentence lexical coverage/proximity, vector similarity tie-breaker",
+        "reranker": "lexical_overlap_tfidf",
+        "answerer": "extractive-evidence-v2",
+        "store": "exact"
+      },
+      "configured_but_inactive_defaults": [
+        "sentence-transformers/all-MiniLM-L6-v2",
+        "cross-encoder/ms-marco-MiniLM-L-6-v2",
+        "Anthropic generative backend"
+      ],
+      "backend_fallback_allowed_at_default": false,
+      "historical_identity": "not byte-identical to principal runtime; six files differ from separate diagnostic source manifest",
+      "evidence_paths": [
+        "/workspace/research_phase/repo_snapshot/config.yaml",
+        "/workspace/research_phase/repo_snapshot/src/retrieval/retriever.py",
+        "/workspace/research_phase/repo_snapshot/src/generation/llm_interface.py"
+      ]
+    },
+    {
+      "id": "B_archived",
+      "kind": "executed external real-LLM exploratory study",
+      "questions": 64,
+      "donors": 64,
+      "clean_paragraphs": 640,
+      "conditions": [
+        "clean",
+        "targeted",
+        "unrelated",
+        "benign",
+        "accepted_label"
+      ],
+      "defenses": [
+        "none",
+        "rerank",
+        "filter",
+        "filter_rerank"
+      ],
+      "condition_rows": 1280,
+      "unique_generation_payloads_and_responses": 376,
+      "reused_condition_rows": 904,
+      "generation_rounds_per_unique_payload": 1,
+      "generator": "gpt-4.1-mini-2025-04-14",
+      "embedding": "text-embedding-3-small",
+      "embedding_dimensions": 1536,
+      "retrieval": "frozen normalized API vectors, exact cosine, stable corpus-order ties",
+      "reranker": "scikit-learn TfidfVectorizer(stop_words='english', lowercase=True, norm='l2'); fit on query and 30 candidates; cosine; retrieval-order ties",
+      "gate": "verified AND trust in {high,medium}; applied before retrieval",
+      "evidence_level": "saved payload/context/response hashes and all 1280 numerical outcomes independently reconstructed; semantic/human validation still pending",
+      "api_model_fallbacks": 0,
+      "completed_at_utc": "2026-10-22T10:56:56.372004+00:00",
+      "human_judgments_completed": 0,
+      "interpretation_limit": "numerical containment is not verified factual correctness or semantic adoption; the observed subset is now development/retrospective material for follow-up design",
+      "evidence_paths": [
+        "/workspace/revision/experiment/freeze.json",
+        "/workspace/revision/experiment/generation_freeze.json",
+        "/workspace/revision/experiment/completion.json",
+        "/workspace/research_phase/artifact_audit/audit_report.json"
+      ]
+    },
+    {
+      "id": "C_followup",
+      "kind": "prospective follow-up being implemented",
+      "execution_status_at_registry_creation": "in preparation; no completed result asserted by this registry",
+      "target_questions_planned": 64,
+      "donors_planned": 64,
+      "planned_generator": "gpt-4.1-mini-2025-04-14",
+      "planned_rounds": 3,
+      "planned_modules": [
+        "shared-corpus core",
+        "controlled exposure",
+        "fixed-target doses if prospectively included",
+        "retrieval-only legitimate-support rejection sensitivity"
+      ],
+      "freeze_requirement": "two stages: design/embedding requests first; vectors/contexts/generation requests second before generation",
+      "human_review_requirement": "retained as pending genuine human work per owner clarification; no AI/human substitution",
+      "update_rule": "After actual execution, replace planned sizes/model/requests/status with observed manifests and preserve this earlier registry as provenance."
+    }
+  ],
+  "trust_roles": {
+    "label_assigner_supported_by_evidence": "dataset constructor supplies label fields",
+    "real_authorized_person_or_institution_for_document_approval": null,
+    "printed_affiliation_is_not_document_approval_evidence": true,
+    "implemented_authorization_authentication_signature_protected_audit_workflow": false,
+    "base_attack": "poison text is supplied with rejected labels",
+    "accepted_label_intervention": "direct test-fixture change of verified/trust fields on identical target text, not demonstrated intrusion into an approval process",
+    "approved_claim": "effect conditional on supplied eligibility labels",
+    "unsupported_claim": "deployed institutional source authentication or resistance to unauthorized approval modification"
+  },
+  "architecture_decision_provenance": {
+    "current_documented_rationale": "dependency-light deterministic offline workbench permits auditable local evaluation; documented current design rationale, not reconstructed original intent",
+    "historical_reported_rationale": "VALIDATION.md says approximate Chroma variability motivated exact search; original trial archive and contemporaneous decision log were not recovered",
+    "original_proposal_or_decision_log_status": "not recovered from inspected repository material",
+    "rule": "Do not infer that a configured model name was active or invent a historical reason for omitted components."
+  },
+  "figures_registry": "/workspace/rag_security_revision_v2/history/figure_preservation_registry.json"
+}

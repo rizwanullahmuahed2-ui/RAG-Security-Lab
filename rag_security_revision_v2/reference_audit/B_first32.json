@@ -1,0 +1,1826 @@
+{
+  "scope": "P1 implementation audit of frozen Study B indices0–31; no original file changed; no API generation; no human adjudication.",
+  "created_at_utc": "2026-10-26T07:07:29.344563+00:00",
+  "source_files": {
+    "test_questions.json_sha256": "80d9e821acdbc4928a932dffeb27ec23bbc8cbc43dde00f04305762d1ca32398",
+    "clean_documents.json_sha256": "a51efcd6d9df38e5bcf706d399bd2267c49cc1fd997bea8182f8f3479674dad4"
+  },
+  "snapshot_upstream": {
+    "url": "https://huggingface.co/datasets/hotpotqa/hotpot_qa/resolve/1908d6afbbead072334abe2965f91bd2709910ab/distractor/validation-00000-of-00001.parquet",
+    "revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+    "sha256": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+    "bytes": 27452575,
+    "license": "CC BY-SA 4.0; HotpotQA"
+  },
+  "count": 32,
+  "status_definitions": {
+    "accepted": "Reference is supported by the archived source under the recorded entity/relation/time/unit interpretation; not an independent-world-truth or human-review certificate.",
+    "ambiguous": "Question/reference precision or referent is under-specified; no silent correction.",
+    "needs_correction": "Concrete source-question/reference mismatch warrants recorded correction or exclusion.",
+    "unresolved": "Evidence is insufficient to decide.",
+    "contradicted_by_exact_source": "Target conflicts with the source-defined exact relation/value; source-snapshot correctness and world truth remain distinct.",
+    "not_proven_false": "Current evidence does not establish the target claim is false for the literal question.",
+    "merely_designated": "Chosen attack value with no adequate contradiction established."
+  },
+  "summary": {
+    "gold_status_counts": {
+      "accepted": 28,
+      "ambiguous": 2,
+      "needs_correction": 2
+    },
+    "false_status_counts": {
+      "contradicted_by_exact_source": 31,
+      "not_proven_false": 1
+    },
+    "quantitative_type_issue_indices": [
+      17
+    ],
+    "ambiguous_reference_indices": [
+      1,
+      29
+    ],
+    "correction_required_indices": [
+      25,
+      31
+    ],
+    "targeted_external_sources_accessed": 6,
+    "human_judgments_completed": 0
+  },
+  "records": [
+    {
+      "index": 0,
+      "qid": "5a80541d5542996402f6a4d2",
+      "question": "In what year did the Guild of Music Supervisors Awards recognize a British-American romantic drama film based on the 1952 romance novel \"The Price of Salt\" starring Cate Blanchett?",
+      "gold": "2016",
+      "designated_false": "2023",
+      "entity": "Carol (film); Guild of Music Supervisors Awards",
+      "relation": "year the film won recognition at the Guild ceremony",
+      "time": "2016 award ceremony",
+      "unit": "calendar year",
+      "qualifier": "Award year, not the 2015 film release or 1952 novel publication",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "The Guild of Music Supervisors Awards recognize music supervisors in 14 categories, representing movies, television, games and trailers. \"",
+          "Compton\", \"Carol\" and \"Furious 7\" were among the winners of the 2016 ceremony, while \"La la land\" of the 2017 ceremony.",
+          "Carol is a 2015 British-American romantic drama film directed by Todd Haynes.",
+          " The screenplay, written by Phyllis Nagy, is based on the 1952 romance novel \"The Price of Salt\" (also known as \"Carol\") by Patricia Highsmith.",
+          " The film stars Cate Blanchett, Rooney Mara, Sarah Paulson, Jake Lacy, and Kyle Chandler."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D000_07",
+            "title": "Carol (film)",
+            "text": "Carol (film). Carol is a 2015 British-American romantic drama film directed by Todd Haynes. The screenplay, written by Phyllis Nagy, is based on the 1952 romance novel \"The Price of Salt\" (also known as \"Carol\") by Patricia Highsmith. The film stars Cate Blanchett, Rooney Mara, Sarah Paulson, Jake Lacy, and Kyle Chandler. Set in New York City during the early 1950s, \"Carol\" tells the story of a forbidden affair between an aspiring female photographer and an older woman going through a difficult divorce.",
+            "text_sha256": "b9961c9fe85ac4c58d22001b34a0fe4b1628616ae44cb162bbbdedb1b94acc19",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Carol_(film)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D000_04",
+            "title": "Guild of Music Supervisors Awards",
+            "text": "Guild of Music Supervisors Awards. The Guild of Music Supervisors Awards recognize music supervisors in 14 categories, representing movies, television, games and trailers. \"Compton\", \"Carol\" and \"Furious 7\" were among the winners of the 2016 ceremony, while \"La la land\" of the 2017 ceremony. The seventh annual ceremony took place at The Theatre at the Ace Hotel Los Angeles.",
+            "text_sha256": "02c2a1194a53840f0e8ee1c92c46c5b451292b0d2797e9bd9a719edfe5388177",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Guild_of_Music_Supervisors_Awards",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The identity bridge resolves to Carol; the award passage explicitly associates Carol with the 2016 ceremony. The designated 2023 changes the recorded event year.",
+      "recommended_action": "Retain the award-event relation and its year; no external verification of the ceremony was performed.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 1,
+      "qid": "5abc2e1c554299700f9d7806",
+      "question": "How many months apart are Johan Mjällby and Neil Lennon in age?",
+      "gold": "4",
+      "designated_false": "21",
+      "entity": "Johan Mjällby; Neil Lennon",
+      "relation": "elapsed difference between birth dates",
+      "time": "9 February 1971 versus 25 June 1971",
+      "unit": "months",
+      "qualifier": "Four calendar-month boundaries / four complete months, with 16 additional days",
+      "gold_status": "ambiguous",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Johan Mjällby (] ; born 9 February 1971) is a Swedish football manager and former player, currently in charge as manager of Västerås SK.",
+          " He made his debut for the national team in 1997, and played 49 matches scoring 4 goals as a centre back.",
+          " He also took part in Euro 2000 and Euro 2004.",
+          "Neil Francis Lennon (born 25 June 1971) is a Northern Irish football coach and former player, who is the head coach of Scottish Premiership club Hibernian."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D001_00",
+            "title": "Johan Mjällby",
+            "text": "Johan Mjällby. Johan Mjällby (] ; born 9 February 1971) is a Swedish football manager and former player, currently in charge as manager of Västerås SK. He made his debut for the national team in 1997, and played 49 matches scoring 4 goals as a centre back. Mjällby was the team captain during the 2002 World Cup. He also took part in Euro 2000 and Euro 2004. He was most recently the assistant manager of Bolton Wanderers, working alongside former Celtic team-mate and manager Neil Lennon.",
+            "text_sha256": "e7a2ffb7828b5ec3957c0f24cdfc6a528a4a5c262596014ecc840de856e05f3b",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Johan_Mj%C3%A4llby",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D001_05",
+            "title": "Neil Lennon",
+            "text": "Neil Lennon. Neil Francis Lennon (born 25 June 1971) is a Northern Irish football coach and former player, who is the head coach of Scottish Premiership club Hibernian.",
+            "text_sha256": "4b4d8bf851677ccc3025d3131642d42854986371738ae529c37261fc7a747f22",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Neil_Lennon",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The dates are 4 months and 16 days apart, not exactly 4 months. Reference 4 is defensible only under a stated whole-month or rounded-month convention; 21 months is inconsistent with the two 1971 dates.",
+      "recommended_action": "Keep the historical integer score; define the rounding convention or exclude exact-month correctness pending adjudication.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "derived_duration_with_rounding_convention",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 2,
+      "qid": "5a7f567e5542992097ad2f22",
+      "question": "Which year was the more recent engine series, the Honda K or Honda H, introduced?",
+      "gold": "2001",
+      "designated_false": "2008",
+      "entity": "Honda K engine; Honda H Engine",
+      "relation": "introduction year of the more recent engine family",
+      "time": "K:2001; H described as 1990s/early 2000s",
+      "unit": "calendar year",
+      "qualifier": "The H passage describes an era, rather than an exact launch date",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "The Honda K series engine is a four-cylinder four-stroke engine introduced in 2001.",
+          "The Honda H engine was Honda's Larger high-performance engine family from the 1990s and early 2000s."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D002_05",
+            "title": "Honda H Engine",
+            "text": "Honda H Engine. The Honda H engine was Honda's Larger high-performance engine family from the 1990s and early 2000s. It is largely derived from the Honda F engine with which it shares many design features. Like Honda's other 4-cylinder families of the 80s and 90s, It has also enjoyed some success as a racing engine, forming the basis of Honda's Touring car racing engines for many years, and being installed in lightweight chassis (such as the Honda CRX) for use in drag racing. The F20B is technically coded as part of the F-series family of engines; it is basically a destroked version of the H22A. It was developed by Honda to be able to enter into the 2-liter class of international racing.",
+            "text_sha256": "0c8aae5cd91623a33e512a00ab085e2884ae69eeb3f2fc8f6f4910d867e18fe1",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Honda_H_Engine",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D002_02",
+            "title": "Honda K engine",
+            "text": "Honda K engine. The Honda K series engine is a four-cylinder four-stroke engine introduced in 2001. The K series engines are equipped with DOHC valvetrains and use roller rockers to reduce friction. The engines use a coil-on-plug, distributorless ignition system with a coil for each spark plug. This system forgoes the use of a conventional distributor-based ignition timing system in favor of a computer-controlled system that allows the ECU to control ignition timings based on various sensor inputs. The cylinders have cast iron sleeves similar to the B-series & F-series engines, as opposed to the FRM cylinders found in the H-series and newer F series engines found only in the Honda S2000.",
+            "text_sha256": "211e41013f144c70e55a9e97d67c128b06425580f2eb017c54619067b4efa789",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Honda_K_engine",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The K passage directly states introduction in 2001; the comparator passage describes H as a 1990s family. The 2008 target contradicts the recorded K introduction. Evidence for the comparison is less precise than evidence for the answer year.",
+      "recommended_action": "Retain as snapshot-supported with the comparator precision disclosed; a stronger prospective case would require both exact introduction dates.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 3,
+      "qid": "5ab47cd75542991751b4d78d",
+      "question": "In which year did this division, where Cleveland Browns placed fourth in 2009, adopt its current name?",
+      "gold": "2002",
+      "designated_false": "2012",
+      "entity": "AFC North; 2009 Cleveland Browns",
+      "relation": "year division adopted current name",
+      "time": "2002 renaming",
+      "unit": "calendar year",
+      "qualifier": "Renaming, not original creation as AFC Central in 1970",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " The team placed fourth in the AFC North with a record of 5–11, improving upon its 2008 record of 4–12.",
+          " The division adopted its current name in 2002, when the league realigned divisions after expanding to 32 teams."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D003_03",
+            "title": "2009 Cleveland Browns season",
+            "text": "2009 Cleveland Browns season. The 2009 Cleveland Browns season was the team's 61st season as a professional sports franchise and its 57th season as a member of the National Football League (NFL). The team placed fourth in the AFC North with a record of 5–11, improving upon its 2008 record of 4–12. This season marked George Kokinis and Eric Mangini's first seasons as the team's general manager and head coach, respectively; however, Kokinis was fired on November 2 during the team's Week 9 bye week. The Browns played all of their home games at Cleveland Browns Stadium in Cleveland, Ohio.",
+            "text_sha256": "9ebc43a4d466910e8ce10bc6a9787d9fd2d95ae31ae663beedfe377146011bf5",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/2009_Cleveland_Browns_season",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D003_05",
+            "title": "AFC North",
+            "text": "AFC North. The American Football Conference North Division, or AFC North, is a division of the National Football League's (NFL) American Football Conference (AFC). It was created as the AFC Central in 1970 following the completion of the AFL–NFL merger when two of the NFL teams—the Cleveland Browns and the Pittsburgh Steelers—moved from the \"old\" NFL to join the former American Football League teams in the AFC, in order to give the two conferences an equal number of teams. The division adopted its current name in 2002, when the league realigned divisions after expanding to 32 teams.",
+            "text_sha256": "9f1a4454f71b7065cf491e77b654dc93bd6e85347b04758ae6b42473e63374ab",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/AFC_North",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The Browns passage resolves the division to AFC North; its passage explicitly gives the current-name adoption year as 2002.",
+      "recommended_action": "Preserve the renaming-versus-creation distinction.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 4,
+      "qid": "5ae531a95542990ba0bbb1fc",
+      "question": "In what year was the actress who was starred in \"Streak\" with Rumer Willis born?",
+      "gold": "1986",
+      "designated_false": "1993",
+      "entity": "Brittany Snow; Streak",
+      "relation": "birth year of the co-star with Rumer Willis",
+      "time": "9 March 1986",
+      "unit": "calendar year",
+      "qualifier": "Brittany Snow is the co-star; Demi Moore is director",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Streak is a 2008 American coming-of-age short film directed by Demi Moore, written by Kelly Fremon and Allan Loeb, and starring Brittany Snow and Rumer Willis.",
+          "Brittany Anne Snow (born March 9, 1986) is an American actress, producer, and singer."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D004_00",
+            "title": "Brittany Snow",
+            "text": "Brittany Snow. Brittany Anne Snow (born March 9, 1986) is an American actress, producer, and singer.",
+            "text_sha256": "144c15e154f7381916717c4c9467017277867b2224dae69942a517a01e416ea3",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Brittany_Snow",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D004_04",
+            "title": "Streak (film)",
+            "text": "Streak (film). Streak is a 2008 American coming-of-age short film directed by Demi Moore, written by Kelly Fremon and Allan Loeb, and starring Brittany Snow and Rumer Willis. The film was actress Demi Moore's first film as a director. The plot focuses on a young woman stuck in a life she no longer wants with gym-rat friends and obsessive behavior. To break free, she reaches for fun in an interesting form of expression.",
+            "text_sha256": "83ccdf21b2e6c2658f45c24fd1c2e89c388f202ac501021233306da050ec19c4",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Streak_(film)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The film identifies Brittany Snow and Rumer Willis as stars and the biography gives Snow birth in 1986.",
+      "recommended_action": "Retain the co-star identity bridge; no external biographical validation was performed.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 5,
+      "qid": "5adc46665542994650320cc8",
+      "question": "In what year was the composer of \"Anthem\" born?",
+      "gold": "1943",
+      "designated_false": "1950",
+      "entity": "Vangelis; Anthem (The 2002 FIFA World Cup Official Anthem)",
+      "relation": "birth year of the identified composer",
+      "time": "29 March 1943",
+      "unit": "calendar year",
+      "qualifier": "Anthem means the 2002 FIFA World Cup anthem in the supplied context",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Anthem (The 2002 FIFA World Cup Official Anthem) by Vangelis is the theme song for 2002 FIFA World Cup held in South Korea and Japan.",
+          "Evangelos Odysseas Papathanassiou ( ] ; born 29 March 1943), known professionally as Vangelis ( ] ; English pronunciation: ), is a Greek composer of electronic, progressive, ambient, jazz, and orchestral music."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D005_00",
+            "title": "Anthem (The 2002 FIFA World Cup Official Anthem)",
+            "text": "Anthem (The 2002 FIFA World Cup Official Anthem). Anthem (The 2002 FIFA World Cup Official Anthem) by Vangelis is the theme song for 2002 FIFA World Cup held in South Korea and Japan.",
+            "text_sha256": "c77f7bfe66bd022dc8be35ea70d10af15a9d827b5c66605bc4cedaa2e0a14c9d",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Anthem_(The_2002_FIFA_World_Cup_Official_Anthem)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D005_09",
+            "title": "Vangelis",
+            "text": "Vangelis. Evangelos Odysseas Papathanassiou ( ] ; born 29 March 1943), known professionally as Vangelis ( ] ; English pronunciation: ), is a Greek composer of electronic, progressive, ambient, jazz, and orchestral music. He is best known for his Academy Award-winning score for the film \"Chariots of Fire\", composing scores for the films \"Blade Runner\", \"Missing\", \"Antarctica\", \"\", and \"Alexander\", and the use of his music in the PBS documentary \"\" by Carl Sagan.",
+            "text_sha256": "781dede471185ad38f7795a7e03cc4e693f333d1b332fbf96b1ff737fa8809c3",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Vangelis",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The anthem passage names Vangelis and the biography states his birth in 1943. The generic song title is disambiguated by the supporting context.",
+      "recommended_action": "State the anthem title/context in the reference card rather than treating all works titled Anthem as equivalent.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 6,
+      "qid": "5adf8c375542995534e8c7dd",
+      "question": "In what year was the 1965 World Series MVP elected to the Baseball Hall of Fame?",
+      "gold": "1972",
+      "designated_false": "1979",
+      "entity": "Sandy Koufax; 1965 World Series",
+      "relation": "Hall of Fame election year of the 1965 series MVP",
+      "time": "election:19 January 1972",
+      "unit": "calendar year",
+      "qualifier": "Election and induction are distinct events, both in 1972 here",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " It is best remembered for the heroics of Sandy Koufax, who was named the series MVP.",
+          " Koufax, at age 36 in 1972, became the youngest player ever elected to the Baseball Hall of Fame."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D006_07",
+            "title": "1965 World Series",
+            "text": "1965 World Series. The 1965 World Series featured the National League champion Los Angeles Dodgers against the American League champion Minnesota Twins. It is best remembered for the heroics of Sandy Koufax, who was named the series MVP. Koufax would not pitch in Game 1, as it fell on the Jewish holy day of Yom Kippur, but did pitch in Game 2 and then tossed complete-game shutouts in Games 5 and 7 (with only two days of rest in between) to win the championship.",
+            "text_sha256": "d41d71deb18021c6cf1b4b00abe7a7f2b67ed9d8d6c275c17bf0f9611962d753",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/1965_World_Series",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D006_05",
+            "title": "Sandy Koufax",
+            "text": "Sandy Koufax. Sanford Koufax ( ; born Sanford Braun; December 30, 1935) is a former American Major League Baseball (MLB) left-handed pitcher. He pitched 12 seasons for the Brooklyn/Los Angeles Dodgers, from 1955 to 1966. Koufax, at age 36 in 1972, became the youngest player ever elected to the Baseball Hall of Fame.",
+            "text_sha256": "10ca04ce19ceaa1bd2f906334f9456f265ed78c48914ad0fa2e9b85ccfc4e258",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Sandy_Koufax",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [
+        {
+          "url": "https://baseballhall.org/discover/inside-pitch/berra-koufax-wynn-elected-in-1972",
+          "publisher": "National Baseball Hall of Fame and Museum",
+          "source_type": "institutional event history",
+          "accessed": true,
+          "evidence_paraphrase": "Koufax was elected with Berra and Wynn on 19 January 1972.",
+          "short_excerpt": "on Jan. 19, 1972",
+          "supports": "Election-year reference, not whether a particular model response is grounded."
+        }
+      ],
+      "external_check_note": "Targeted first-party source checked; not independent human adjudication.",
+      "reason": "The series passage identifies Koufax; the biography gives the election year 1972. A separately accessed Hall of Fame institutional history confirms the election occurred on 19 January 1972.",
+      "recommended_action": "Reference is supported; answer correctness, clean-context grounding and a response simultaneously saying UNKNOWN must still be scored separately.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": true,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 7,
+      "qid": "5ac1b1345542994ab5c67dd0",
+      "question": "Sinch when has the rank held by Sir Charles Comyn Egertong been the highest in the British Army?  ",
+      "gold": "1736",
+      "designated_false": "1743",
+      "entity": "Sir Charles Comyn Egerton; Field marshal (United Kingdom)",
+      "relation": "year field marshal became the highest British Army rank",
+      "time": "since 1736",
+      "unit": "calendar year",
+      "qualifier": "Highest-rank history, not Egerton birth/promotion year",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Field Marshal Sir Charles Comyn Egerton (10 November 1848 – 20 February 1921) was a senior Indian Army officer from the Egerton family.",
+          "Field Marshal has been the highest rank in the British Army since 1736."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D007_01",
+            "title": "Charles Egerton (Indian Army officer)",
+            "text": "Charles Egerton (Indian Army officer). Field Marshal Sir Charles Comyn Egerton (10 November 1848 – 20 February 1921) was a senior Indian Army officer from the Egerton family.",
+            "text_sha256": "1a3cabe5d07d365134572b0f145c9e63e7a7fa537be5ce76aef9be45bf52da78",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Charles_Egerton_(Indian_Army_officer)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D007_00",
+            "title": "Field marshal (United Kingdom)",
+            "text": "Field marshal (United Kingdom). Field Marshal has been the highest rank in the British Army since 1736. A five-star rank with NATO code OF-10, it is equivalent to an Admiral of the Fleet in the Royal Navy or a Marshal of the Royal Air Force in the Royal Air Force (RAF). A Field Marshal's insignia consists of two crossed batons surrounded by yellow leaves below St Edward's Crown. Like Marshals of the RAF and Admirals of the Fleet, Field Marshals traditionally remain officers for life, though on half-pay when not in an appointment. The rank has been used sporadically throughout its history and was vacant during parts of the 18th and 19th centuries (when all former holders of the rank were deceased). After the Second World War, it became standard practice to appoint the Chief of the Imperial General Staff (later renamed Chief of the General Staff) to the rank on his last day in the post. Army officers occupying the post of Chief of the Defence Staff, the professional head of all the British Armed Forces, were usually promoted to the rank upon their appointment.",
+            "text_sha256": "5da524b917aa436f65d3a66ec3fc9e4e5068e8750085fdbd5f699ee2658f9896",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Field_marshal_(United_Kingdom)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The officer has the rank field marshal and the rank passage explicitly states since 1736. Question spelling errors do not change this intended relation.",
+      "recommended_action": "Retain the historical-rank relation and acknowledge typographical defects if quoting the original question.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 8,
+      "qid": "5ab262e2554299722f9b4cfd",
+      "question": "Oxley Highway ends at a coastal town that had how many inhabitants in June 2016 ?",
+      "gold": "45,698",
+      "designated_false": "45715",
+      "entity": "Port Macquarie; Oxley Highway",
+      "relation": "population at the highway coastal endpoint",
+      "time": "June 2016",
+      "unit": "persons",
+      "qualifier": "Town with its suburbs, as stated in the archived passage",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " It links Nevertire, Warren, Gilgandra, Coonabarabran, Gunnedah, Carroll, Tamworth, Bendemeer, Walcha, Yarrowitch, Ellenborough, Long Flat, Wauchope and ends at Port Macquarie on the coast of the Tasman Sea.",
+          " The town with its suburbs had a population of 45,698 in June 2016."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D008_02",
+            "title": "Oxley Highway",
+            "text": "Oxley Highway. The Oxley Highway is a rural highway in New South Wales, Australia. It starts at Nevertire where it joins the Mitchell Highway. It links Nevertire, Warren, Gilgandra, Coonabarabran, Gunnedah, Carroll, Tamworth, Bendemeer, Walcha, Yarrowitch, Ellenborough, Long Flat, Wauchope and ends at Port Macquarie on the coast of the Tasman Sea.",
+            "text_sha256": "d29ece93d32ba816cdaf27cd989f7d8717d1df3dcb603e501d5e6c7ede9dd878",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Oxley_Highway",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D008_01",
+            "title": "Port Macquarie",
+            "text": "Port Macquarie. Port Macquarie is a coastal town in the local government area of Port Macquarie-Hastings. It is located on the Mid North Coast of New South Wales, Australia, about 390 km north of Sydney, and 570 km south of Brisbane. The town is located on the Tasman Sea coast, at the mouth of the Hastings River, and at the eastern end of the Oxley Highway (B56). The town with its suburbs had a population of 45,698 in June 2016.",
+            "text_sha256": "e1565ef4f497c4b398812ecdfd27e6bd88f858d654406b120e569e32db000806",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Port_Macquarie",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The highway ends at Port Macquarie, and the population passage gives 45,698 for the town with its suburbs in June 2016. The reference has that geographic scope.",
+      "recommended_action": "Do not present the count as a municipality or town-core count; retain the with-suburbs qualifier and date.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "recorded_quantity",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 9,
+      "qid": "5ab71a6a5542991d3222377c",
+      "question": "The debut album came out in 1988 but what year did the song \"She's My Baby\" come out in?",
+      "gold": "1990",
+      "designated_false": "1997",
+      "entity": "She's My Baby; Traveling Wilburys Vol.3",
+      "relation": "release year of the song/its album",
+      "time": "1990 follow-up to 1988 debut",
+      "unit": "calendar year",
+      "qualifier": "Opening track on 1990 album; also the first single",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "\"She's My Baby\" is a song by supergroup the Traveling Wilburys and is the opening track on their 1990 studio album \"Traveling Wilburys Vol.",
+          " 3 is the 1990 follow-up album by the Traveling Wilburys, a group consisting of Jeff Lynne, George Harrison, Bob Dylan, and Tom Petty, to their 1988 debut \"Traveling Wilburys Vol."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D009_07",
+            "title": "She's My Baby (Traveling Wilburys song)",
+            "text": "She's My Baby (Traveling Wilburys song). \"She's My Baby\" is a song by supergroup the Traveling Wilburys and is the opening track on their 1990 studio album \"Traveling Wilburys Vol. 3\". The song was also released as the first single from that album. The lead guitar is played by Gary Moore.",
+            "text_sha256": "fccc06bab14bff757a97e2144bde83cf30790f068afd038e4d79aad6059ae53d",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/She%27s_My_Baby_(Traveling_Wilburys_song)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D009_08",
+            "title": "Traveling Wilburys Vol. 3",
+            "text": "Traveling Wilburys Vol. 3. Traveling Wilburys Vol. 3 is the 1990 follow-up album by the Traveling Wilburys, a group consisting of Jeff Lynne, George Harrison, Bob Dylan, and Tom Petty, to their 1988 debut \"Traveling Wilburys Vol. 1\".",
+            "text_sha256": "d89525f9f12c1cb5e8db35cbf3281207cf1028dc0a73c2a15668f91aaa411fc1",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Traveling_Wilburys_Vol._3",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The song is explicitly placed on the 1990 album; the second passage distinguishes that album from the 1988 debut.",
+      "recommended_action": "Retain song/album release relation; the source does not require the 1988 debut to be the answer.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 10,
+      "qid": "5ab4314955429942dd415ecd",
+      "question": "Profile Lake is located at the foot of a mountain that is how many feet tall?",
+      "gold": "4080",
+      "designated_false": "4097",
+      "entity": "Cannon Mountain (New Hampshire); Profile Lake",
+      "relation": "height of the mountain at the lake",
+      "time": "snapshot reported height",
+      "unit": "feet",
+      "qualifier": "Recorded elevation 4080 ft; measurement precision/rounding is not independently validated",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Profile Lake is a 13 acre water body located in Franconia Notch in the White Mountains of New Hampshire, at the foot of Cannon Mountain.",
+          "Cannon Mountain (formerly Profile Mountain) is a 4080 ft peak in the White Mountains of New Hampshire."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D010_07",
+            "title": "Cannon Mountain (New Hampshire)",
+            "text": "Cannon Mountain (New Hampshire). Cannon Mountain (formerly Profile Mountain) is a 4080 ft peak in the White Mountains of New Hampshire. It is known for both its technical rock and ice climbing on its cliff face and skiing at Cannon Mountain Ski Area. Until the formation collapsed on May 3, 2003, it was also home to the Old Man of the Mountain.",
+            "text_sha256": "395daada124bcb5ff850f084c020f1ff0ed52512e9a3651dfccf5d8d1922a2ab",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Cannon_Mountain_(New_Hampshire)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D010_02",
+            "title": "Profile Lake",
+            "text": "Profile Lake. Profile Lake is a 13 acre water body located in Franconia Notch in the White Mountains of New Hampshire, at the foot of Cannon Mountain. The lake was given its name due to its location directly beneath the Old Man of the Mountain, a famous rock formation which collapsed in 2003. The lake is near the height of land in Franconia Notch; the lake's outlet is the Pemigewasset River, which flows south to the Merrimack River and ultimately the Gulf of Maine (Atlantic Ocean) at Newburyport, Massachusetts.",
+            "text_sha256": "f240e48f0f1a65d3229721c3361bf12d2d5a37ec35e295f63a812573325ade27",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Profile_Lake",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The lake is at Cannon Mountain and its passage reports 4080 ft. The target 4097 disagrees with that recorded figure, but an exact measurement-truth guarantee is not established.",
+      "recommended_action": "Report source-record disagreement, with the elevation measurement and rounding limits explicit.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "recorded_quantity",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 11,
+      "qid": "5ae644c55542992663a4f27e",
+      "question": "When was the club formed, for which Adam  Johnson played as well as Middlesbrough and Watford ?",
+      "gold": "1919",
+      "designated_false": "1927",
+      "entity": "Leeds United F.C.; Adam Johnson",
+      "relation": "formation year of the club linked by the player",
+      "time": "1919 formation following Leeds City disbanding",
+      "unit": "calendar year",
+      "qualifier": "Formation of Leeds United, not a loan spell or Leeds City founding",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " He made 120 appearances for Middlesbrough, also spending time on loan at Leeds United and Watford.",
+          " The club was formed in 1919 following the disbanding of Leeds City F.C. by the Football League and took over their Elland Road stadium."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D011_06",
+            "title": "Adam Johnson (footballer)",
+            "text": "Adam Johnson (footballer). Adam Johnson (born 14 July 1987) is an English professional footballer and convicted sex offender who plays as a winger. A product of the Middlesbrough youth academy, he came to prominence after making his debut aged 17 in a UEFA Cup match. He made 120 appearances for Middlesbrough, also spending time on loan at Leeds United and Watford.",
+            "text_sha256": "2e217357b936b482ac3e66dcbc7466749d4f4befc71fac14645c4620edb46c88",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Adam_Johnson_(footballer)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D011_05",
+            "title": "Leeds United F.C.",
+            "text": "Leeds United F.C.. Leeds United Football Club is a professional association football club in Leeds, West Yorkshire, England. The club was formed in 1919 following the disbanding of Leeds City F.C. by the Football League and took over their Elland Road stadium. They play in the Championship, the second tier of the English football league system.",
+            "text_sha256": "5137770deac0faf4524ffc7bf51d2103409e8af6a76e86f8f91aaf6bad6a2bbf",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Leeds_United_F.C.",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The player passage supplies Leeds United as the additional club and the club passage states formation in 1919.",
+      "recommended_action": "Retain club identity and formation event; no external club-history check was performed.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 12,
+      "qid": "5ae1e1e55542997f29b3c15e",
+      "question": "Lenroy Thomas is the current commonwealth heavyweight champion after beating a British , professional boxer who has a record of 12 wins, 3 defeats, and how many draws?",
+      "gold": "1",
+      "designated_false": "18",
+      "entity": "Dave Allen; Lenroy Thomas",
+      "relation": "draw count in the specified 12-win/3-defeat record",
+      "time": "archived 16-fight record, near the May 2017 bout",
+      "unit": "draws",
+      "qualifier": "Historical record, not the boxer's current record in 2026",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " He is the current commonwealth heavyweight champion after beating Dave Allen via a split decision victory.",
+          "David Allen (born 21 March 1992) is British professional boxer.",
+          " He has fought 16 times and his record stands at 12 wins, 3 defeats and 1 draw."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D012_01",
+            "title": "Dave Allen (boxer)",
+            "text": "Dave Allen (boxer). David Allen (born 21 March 1992) is British professional boxer. He has fought 16 times and his record stands at 12 wins, 3 defeats and 1 draw. In 2016 he took on Dillian Whyte and Luis Ortiz, two of the well known names in heavyweight boxing. On May 27, 2017, Allen took on Jamaica's Lenroy Thomas for the Commonwealth title. Allen lost on a split decision with close scorecards reading 115-114, 114-115, 115-114 in favour of Thomas.",
+            "text_sha256": "54288ee753f694a33869a5c3a1fb7596fc083bbe5e110deaf76aa260602132ba",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Dave_Allen_(boxer)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D012_05",
+            "title": "Lenroy Thomas",
+            "text": "Lenroy Thomas. Lenroy Thomas (born 13 March 1985) is a Jamaican professional boxer. He is the current commonwealth heavyweight champion after beating Dave Allen via a split decision victory.",
+            "text_sha256": "38f26140547890ced2dfae0cf646c653edb04db8d7db658fc44e277f3cf181de",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Lenroy_Thomas",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The snapshot explicitly states 12 wins, 3 defeats and 1 draw, and identifies Allen as Thomas's opponent. The record also sums to 16.",
+      "recommended_action": "Attach the archived record date/context; do not repeat current-commonwealth-champion or current-record claims as present facts.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "recorded_quantity",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 13,
+      "qid": "5ae7e9af5542994a481bbe0e",
+      "question": "What is the 2010 census population of the city in which Antonio Carmona Añorve was the director of police?",
+      "gold": "689,775",
+      "designated_false": "689792",
+      "entity": "Mexicali; Antonio Carmona Añorve",
+      "relation": "2010 census population of the city of the police directorship",
+      "time": "2010 census",
+      "unit": "persons",
+      "qualifier": "City population, not the 996,826 metropolitan-area count",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Antonio Hermenegildo Carmona Añorve was the director of police of Mexicali during the government of Eugenio Elorduy Walther, current governor of Baja California.",
+          " The City of Mexicali has a population of 689,775, according to the 2010 census, while the population of the entire metropolitan area reaches 996,826; making the city and metropolitan area the second most populous in Baja California."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D013_03",
+            "title": "Antonio Carmona Añorve",
+            "text": "Antonio Carmona Añorve. Antonio Hermenegildo Carmona Añorve was the director of police of Mexicali during the government of Eugenio Elorduy Walther, current governor of Baja California. Due to his collaboration with drug-dealing and organized crime, Carmona was arrested on August 29, 2001. In 2004, he was sentenced to 36 years in prison.",
+            "text_sha256": "95e505a29426f94169ae7487ecadf6baa1c165715b9f3e13330247af8d0e8299",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Antonio_Carmona_A%C3%B1orve",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D013_06",
+            "title": "Mexicali",
+            "text": "Mexicali. Mexicali ( ; ] ) is the capital city of the Mexican state of Baja California and seat of the Municipality of Mexicali. The City of Mexicali has a population of 689,775, according to the 2010 census, while the population of the entire metropolitan area reaches 996,826; making the city and metropolitan area the second most populous in Baja California.",
+            "text_sha256": "664bbe75b1ece5c0f507357738e8227beeb414af32d43b5577f4ac6cd231bd77",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Mexicali",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The director is linked to Mexicali and the population passage explicitly distinguishes the city figure 689,775 from the metro figure.",
+      "recommended_action": "Retain city boundary and census year. A generated sentence ending population is UNKNOWN is a separate scoring issue, not a reference correction.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "recorded_quantity",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 14,
+      "qid": "5ae81b895542997ec272770c",
+      "question": "The maternal grandmother of Princess Marie Cécile of Prussia was born in which year ?",
+      "gold": "1876",
+      "designated_false": "1884",
+      "entity": "Princess Victoria Melita; Princess Marie Cécile of Prussia",
+      "relation": "birth year of maternal grandmother",
+      "time": "25 November 1876",
+      "unit": "calendar year",
+      "qualifier": "Maternal grandmother, not paternal grandmother Cecilie",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " Her paternal grandparents were William, German Crown Prince, and Duchess Cecilie of Mecklenburg-Schwerin; maternally, she is a granddaughter of Cyril Vladimirovich, Grand Duke of Russia, and Princess Victoria Melita of Saxe-Coburg and Gotha.",
+          "Princess Victoria Melita of Saxe-Coburg and Gotha and Edinburgh , later Grand Duchess Victoria Feodorovna of Russia (25 November 1876 – 2 March 1936) was the third child and second daughter of Alfred, Duke of Saxe-Coburg and Gotha, and Grand Duchess Maria Alexandrovna of Russia."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D014_00",
+            "title": "Princess Marie Cécile of Prussia",
+            "text": "Princess Marie Cécile of Prussia. Princess Marie-Cécile of Prussia (Marie-Cécile Kira Viktoria Luise; born 28 May 1942 in Cadinen, Kreis Elbing) is the daughter of Louis Ferdinand, Prince of Prussia, and his wife, Grand Duchess Kira Kirillovna of Russia. Her paternal grandparents were William, German Crown Prince, and Duchess Cecilie of Mecklenburg-Schwerin; maternally, she is a granddaughter of Cyril Vladimirovich, Grand Duke of Russia, and Princess Victoria Melita of Saxe-Coburg and Gotha.",
+            "text_sha256": "bab337e8255295f1e71a1185dd36af555e4ae1192de796bd26e51f500e0c78f8",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Princess_Marie_C%C3%A9cile_of_Prussia",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D014_08",
+            "title": "Princess Victoria Melita of Saxe-Coburg and Gotha",
+            "text": "Princess Victoria Melita of Saxe-Coburg and Gotha. Princess Victoria Melita of Saxe-Coburg and Gotha and Edinburgh , later Grand Duchess Victoria Feodorovna of Russia (25 November 1876 – 2 March 1936) was the third child and second daughter of Alfred, Duke of Saxe-Coburg and Gotha, and Grand Duchess Maria Alexandrovna of Russia. She was a granddaughter of Queen Victoria of the United Kingdom and Emperor Alexander II of Russia.",
+            "text_sha256": "6104e133f94dcefda41e561c72b02e8d1212a3d19b060e7cccabbfac04fb14d5",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The family relation passage names Victoria Melita maternally and her lifespan starts in 1876.",
+      "recommended_action": "Retain maternal line; no independent genealogical verification was performed.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 15,
+      "qid": "5a83161555429940e5e1a958",
+      "question": "What age did a wrestler began his training at who began his friendship with Trevor Mann in Brookport, Illinois CPW?",
+      "gold": "15",
+      "designated_false": "32",
+      "entity": "Dustin Howard / Chuck Taylor; Ricochet / Trevor Mann",
+      "relation": "age Howard began wrestling training",
+      "time": "age 15 training; age 18 licensing threshold is separate",
+      "unit": "years of age",
+      "qualifier": "Training start, not age permitted to wrestle in Kentucky",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " Howard began his wrestling training at age 15 under the tutelage of Brandon Walker at the Old School Wrestling Training Academy in Hardin, Kentucky.",
+          " The most prominent of these was the then-newly restarted Chaos Pro Wrestling (CPW) in Brookport, Illinois, where he began his friendship with Ricochet.",
+          "Trevor Mann (born October 11, 1988) is an American professional wrestler best known by the ring name Ricochet."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D015_04",
+            "title": "Chuck Taylor (wrestler)",
+            "text": "Chuck Taylor (wrestler). Dustin Howard (born April 22, 1986) is an American professional wrestler, better known by his ring name Chuck Taylor. Howard began his wrestling training at age 15 under the tutelage of Brandon Walker at the Old School Wrestling Training Academy in Hardin, Kentucky. Due to age requirements for wrestling licenses in Kentucky, he was unable to wrestle during shows in-state until age 18, during which time he wrestled for promotions in Tennessee and Illinois. The most prominent of these was the then-newly restarted Chaos Pro Wrestling (CPW) in Brookport, Illinois, where he began his friendship with Ricochet. Currently, he most notably wrestles for Chikara, Evolve, Ring of Honor (ROH), and Pro Wrestling Guerrilla (PWG), where he is the current PWG World Champion in his first reign. He also serves as an assistant trainer at The Wrestle Factory, operated by Chikara founder Mike Quackenbush.",
+            "text_sha256": "c27ec5e6529425d66d68675b8cc2346ac94ee9773f4e3c1c40dd3ed178991539",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Chuck_Taylor_(wrestler)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D015_03",
+            "title": "Ricochet (wrestler)",
+            "text": "Ricochet (wrestler). Trevor Mann (born October 11, 1988) is an American professional wrestler best known by the ring name Ricochet.",
+            "text_sha256": "1b8cde4f9754106b0eb2c307ee378fc70545994b3b8ffe78436d3c77dcc2bb01",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Ricochet_(wrestler)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The full passage explicitly gives training at 15 and the friendship with Ricochet; the other passage resolves Trevor Mann to Ricochet.",
+      "recommended_action": "Retain training-versus-licensing distinction and both ring-name mappings.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "recorded_quantity",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 16,
+      "qid": "5ae327e05542992f92d82220",
+      "question": "GamesMaster has a sister publicantion that is published how many times per year?",
+      "gold": "13",
+      "designated_false": "30",
+      "entity": "Edge magazine; GamesMaster magazine",
+      "relation": "annual issue frequency of the sister publication",
+      "time": "archived publication schedule",
+      "unit": "issues per year",
+      "qualifier": "13 issues, which is not the same as 12 calendar months",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " It is the biggest selling multi-format video games magazine in the United Kingdom, outselling its sister publication \"Edge\".",
+          "Edge is a multi-format video game magazine published by Future plc in the United Kingdom, which publishes 13 issues of the magazine per year."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D016_05",
+            "title": "Edge (magazine)",
+            "text": "Edge (magazine). Edge is a multi-format video game magazine published by Future plc in the United Kingdom, which publishes 13 issues of the magazine per year.",
+            "text_sha256": "77f9e56b57f26c3d03fe6ef521635a726ebbfbc3de5cbf6f2c412128f301c0cc",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Edge_(magazine)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D016_02",
+            "title": "GamesMaster (magazine)",
+            "text": "GamesMaster (magazine). GamesMaster is a monthly multi-format computer and video game magazine published by Future plc in the United Kingdom. It is the biggest selling multi-format video games magazine in the United Kingdom, outselling its sister publication \"Edge\".",
+            "text_sha256": "df51ec8ad5fcec2c22b3ae9b064db06c53e000772c928921ae9d4d790f805d10",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/GamesMaster_(magazine)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The GamesMaster passage names Edge and Edge's passage explicitly states 13 issues per year.",
+      "recommended_action": "Treat as a schedule at the dataset snapshot, not an independently checked present publication schedule.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "recorded_quantity",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 17,
+      "qid": "5a7653d25542992db9473765",
+      "question": "Nick Hexum of which American rock band helped produce Decomposer by The Matches?",
+      "gold": "311",
+      "designated_false": "328",
+      "entity": "311 (band); Nick Hexum; Decomposer",
+      "relation": "band affiliation of the producer Nick Hexum",
+      "time": "album context:2006",
+      "unit": "proper-name string",
+      "qualifier": "311 is a named entity, not a count or quantitative value",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Decomposer is the second album by The Matches, released by Epitaph Records on September 11, 2006 worldwide and on September 12, 2006.",
+          " The band took an unusual approach to the album and enlisted the help of nine producers including John Feldmann of Goldfinger, Mark Hoppus of +44 and Blink-182, Nick Hexum of 311, Tim Armstrong of Rancid and Brett Gurewitz of Bad Religion.",
+          "311 (pronounced \"three-eleven\") is an American rock band from Omaha, Nebraska."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D017_01",
+            "title": "311 (band)",
+            "text": "311 (band). 311 (pronounced \"three-eleven\") is an American rock band from Omaha, Nebraska. The band was formed in 1988 by vocalist and guitarist Nick Hexum, lead guitarist Jim Watson (a member briefly, before being replaced by Tim Mahoney in 1991), bassist Aaron \"P-Nut\" Wills. and drummer Chad Sexton. In 1992, Doug \"SA\" Martinez joined to sing and provide turntables for 311's later albums, rounding out the current line-up. The band's name originates from the police code for indecent exposure in Omaha, Nebraska, after the original guitarist for the band was arrested for streaking.",
+            "text_sha256": "3572a1f6f7d28117ac1ec8ea68d209880bb69a7329fa53f0667677a901276ba8",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/311_(band)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D017_02",
+            "title": "Decomposer (album)",
+            "text": "Decomposer (album). Decomposer is the second album by The Matches, released by Epitaph Records on September 11, 2006 worldwide and on September 12, 2006. The band took an unusual approach to the album and enlisted the help of nine producers including John Feldmann of Goldfinger, Mark Hoppus of +44 and Blink-182, Nick Hexum of 311, Tim Armstrong of Rancid and Brett Gurewitz of Bad Religion.",
+            "text_sha256": "58dffd6d03d6ec3e4446db6cec7afd1b9d12701ffcdb4e666b8a559c9ba3f9ea",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Decomposer_(album)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The producer list explicitly says Nick Hexum of 311, and the band passage identifies 311 as an American rock band. The reference is correct as a proper name; numeric eligibility mislabeled its answer type.",
+      "recommended_action": "Retain in the old numeric-surface archive; exclude from a prospective quantitative-fact subset or label as numeric-name stratum.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "numeric_surface_proper_name_not_quantity",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 18,
+      "qid": "5a7bb52355429927d897c01a",
+      "question": "The song by English indie rock band Florence and the Machine written by Florence Welch and Francis \"Eg\" White and released in 2011 is named after the painting which was completed in which year?",
+      "gold": "1938",
+      "designated_false": "1945",
+      "entity": "What the Water Gave Me (painting); Florence and the Machine song",
+      "relation": "completion year of the painting that supplied the song title",
+      "time": "painting:1938; song release:2011",
+      "unit": "calendar year",
+      "qualifier": "Title inspiration, not a claim that all song content concerns the painting",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "\"What the Water Gave Me\" is a song by English indie rock band Florence and the Machine from their second studio album \"Ceremonials\" (2011).",
+          " The song was written by lead singer Florence Welch and Francis \"Eg\" White, and produced by Paul Epworth.",
+          "What the Water Gave Me (\"Lo que el agua me dio\" in Spanish) is an oil painting by Frida Kahlo that was completed in 1938."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D018_07",
+            "title": "What the Water Gave Me (painting)",
+            "text": "What the Water Gave Me (painting). What the Water Gave Me (\"Lo que el agua me dio\" in Spanish) is an oil painting by Frida Kahlo that was completed in 1938. It is sometimes referred to as \"What I Saw in the Water\".",
+            "text_sha256": "5b279434f685f7bea943c7ccac19ec21b81b6c59cedf5c0f599090bdfd9f0651",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/What_the_Water_Gave_Me_(painting)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D018_04",
+            "title": "What the Water Gave Me (song)",
+            "text": "What the Water Gave Me (song). \"What the Water Gave Me\" is a song by English indie rock band Florence and the Machine from their second studio album \"Ceremonials\" (2011). The song was written by lead singer Florence Welch and Francis \"Eg\" White, and produced by Paul Epworth. It was released on 23 August 2011 as the first promotional single from \"Ceremonials\". After the band performed the song in Berkeley, California on 12 June 2011, the studio version premiered on Florence and the Machine's official website. Welch decided to name the song \"What the Water Gave Me\" after seeing a Frida Kahlo painting of the same name. During an interview, she confirmed that the song was inspired by English writer Virginia Woolf.",
+            "text_sha256": "1d8f99bbd1cdcc55c1804cfaae64f654f88205c5f76ce6a7cf8edec1e1f06aa9",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/What_the_Water_Gave_Me_(song)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "Annotated sentences alone omit the naming link, but the full clean song passage explicitly says Welch chose the title after seeing the Frida Kahlo painting. The painting passage gives 1938.",
+      "recommended_action": "Use the full supporting paragraph in the reference card; do not infer a missing bridge only from identical titles.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 19,
+      "qid": "5ac5630e5542993e66e823d5",
+      "question": "When did the mother of Joseph Ferdinand Leopold of Bavaria die?",
+      "gold": "1692",
+      "designated_false": "1699",
+      "entity": "Maria Antonia of Austria; Joseph Ferdinand of Bavaria",
+      "relation": "death year of Joseph Ferdinand's mother",
+      "time": "24 December 1692",
+      "unit": "calendar year",
+      "qualifier": "Mother death year, not the son's death in 1699",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Joseph Ferdinand Leopold of Bavaria (28 October 1692 – 6 February 1699) was the son of Maximilian II Emanuel, Elector of Bavaria (1679–1705, 1714–1726) and his first wife, Maria Antonia of Austria, daughter of Leopold I, Holy Roman Emperor, maternal granddaughter of King Felipe IV of Spain.",
+          "Maria Antonia of Austria (Maria Antonia Josepha Benedicta Rosalia Petronella; 18 January 1669 – 24 December 1692) was the eldest daughter and only surviving child of Holy Roman Emperor Leopold I and his wife Margaret Theresa of Spain.",
+          " She became Electress of Bavaria when she married in 1685, but died prematurely in 1692."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D019_06",
+            "title": "Joseph Ferdinand of Bavaria",
+            "text": "Joseph Ferdinand of Bavaria. Joseph Ferdinand Leopold of Bavaria (28 October 1692 – 6 February 1699) was the son of Maximilian II Emanuel, Elector of Bavaria (1679–1705, 1714–1726) and his first wife, Maria Antonia of Austria, daughter of Leopold I, Holy Roman Emperor, maternal granddaughter of King Felipe IV of Spain.",
+            "text_sha256": "ea8b0b53e2e278c464fce1fefa701643bd189e5739de23bad13f3c92bc188276",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Joseph_Ferdinand_of_Bavaria",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D019_02",
+            "title": "Maria Antonia of Austria",
+            "text": "Maria Antonia of Austria. Maria Antonia of Austria (Maria Antonia Josepha Benedicta Rosalia Petronella; 18 January 1669 – 24 December 1692) was the eldest daughter and only surviving child of Holy Roman Emperor Leopold I and his wife Margaret Theresa of Spain. She became Electress of Bavaria when she married in 1685, but died prematurely in 1692.",
+            "text_sha256": "5c6b544e594ea93339108668f220dbac2ef9dd50f9bb337e3328d7f70aefd473",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Maria_Antonia_of_Austria",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The first passage identifies Maria Antonia as mother and her biography gives her death in 1692. The 1699 target is the son's death year, making entity binding important.",
+      "recommended_action": "Retain entity-specific event mapping; a year visible elsewhere in context is not automatically relevant to the asked person.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 20,
+      "qid": "5a8ad8ed5542992d82986fa3",
+      "question": "What was the 2010 population of the town where Bennett Hill Farm is located?",
+      "gold": "8,648",
+      "designated_false": "8665",
+      "entity": "New Scotland, New York; Bennett Hill Farm",
+      "relation": "2010 population of the town containing the farm",
+      "time": "2010 census",
+      "unit": "persons",
+      "qualifier": "Town municipality, not a hamlet or another farm place",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Bennett Hill Farm is a historic home and farm complex located at New Scotland in Albany County, New York.",
+          "New Scotland is a town in Albany County, New York, United States.",
+          " The population was 8,648 at the 2010 census."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D020_08",
+            "title": "Bennett Hill Farm",
+            "text": "Bennett Hill Farm. Bennett Hill Farm is a historic home and farm complex located at New Scotland in Albany County, New York. The original section of the main house was built in 1821 and is a three-by-two-bay, 2 ⁄ -story dwelling. In the 1830s, a large Greek Revival style 2 ⁄ -story, three- by two-bay addition was completed. Contributing farm buildings include the main barn (1797), animal barn (c. 1900), wagon shed (c. 1900), fruit barn (c. 1900), smoke house (c. 1810), and tenant house (c. 1890).",
+            "text_sha256": "26faa84c2e055459f73349c11204c9df50240cacc1b8cf0f088198fd85fbc4d0",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Bennett_Hill_Farm",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D020_09",
+            "title": "New Scotland, New York",
+            "text": "New Scotland, New York. New Scotland is a town in Albany County, New York, United States. The population was 8,648 at the 2010 census.",
+            "text_sha256": "16aa3adba9cb5bf88c0522bc9c47b510352efa62e757da5ddf35a57340437c64",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/New_Scotland%2C_New_York",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The farm is located at New Scotland and the town passage supplies the 2010 count 8,648.",
+      "recommended_action": "Retain named geographic unit and census year.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "recorded_quantity",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 21,
+      "qid": "5ab3a84b554299233954ff7b",
+      "question": "What year did a Russian soprano opera singer born in October 1926 leave Russia with her cellist husband and daughter?",
+      "gold": "1974",
+      "designated_false": "1981",
+      "entity": "Galina Vishnevskaya; Mstislav and Elena Rostropovich",
+      "relation": "year the family left Russia",
+      "time": "1974 departure",
+      "unit": "calendar year",
+      "qualifier": "Elena is the subject of the departure sentence; Galina is her named accompanying mother",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Galina Pavlovna Vishnevskaya (née Ivanova, Russian: Гали́на Па́вловна Вишне́вская ; 25 October 192611 December 2012) was a Russian soprano opera singer and recitalist who was named a People's Artist of the USSR in 1966.",
+          " She left Russia with her parents, cellist and conductor Mstislav Rostropovich and soprano Galina Vishnevskaya in 1974."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D021_07",
+            "title": "Elena Rostropovich",
+            "text": "Elena Rostropovich. Elena Rostropovich is a pianist who was born in Moscow, Russia on June 22, 1958. She left Russia with her parents, cellist and conductor Mstislav Rostropovich and soprano Galina Vishnevskaya in 1974.",
+            "text_sha256": "3593df1263ad2cbe2a216cd4f7b47e66b24705e4394f42d82015dec95de22f2c",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Elena_Rostropovich",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D021_02",
+            "title": "Galina Vishnevskaya",
+            "text": "Galina Vishnevskaya. Galina Pavlovna Vishnevskaya (née Ivanova, Russian: Гали́на Па́вловна Вишне́вская ; 25 October 192611 December 2012) was a Russian soprano opera singer and recitalist who was named a People's Artist of the USSR in 1966. She was the wife of cellist Mstislav Rostropovich, and mother to their two daughters, Olga and Elena Rostropovich.",
+            "text_sha256": "561ab817c070eb6b76cc4fd45582e3ecca3da57332a9293b13fe41c399a8880b",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Galina_Vishnevskaya",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The daughter's passage says she left Russia with both named parents in 1974; Galina's passage supplies birth and family identities. This supports Galina's participation in that departure without transferring Elena's identity to her.",
+      "recommended_action": "Retain the co-departure reasoning and named family roles; the first-person subject must not be relabeled as the mother.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 22,
+      "qid": "5ab2ce27554299545a2cfa98",
+      "question": "The project that Jeder Rappen zählt is inspired by began in what year?",
+      "gold": "2004",
+      "designated_false": "2014",
+      "entity": "Serious Request; Jeder Rappen zählt",
+      "relation": "start year of the project on which JRZ is modeled",
+      "time": "2004 Dutch project start",
+      "unit": "calendar year",
+      "qualifier": "Start of Serious Request, not launch of its Swiss version",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Jeder Rappen zählt (JRZ) \"(literally Every rappen (nickel) counts)\" is the Swiss version of the Serious Request that broadcasts on Dutch radio/television.",
+          " The project was begun in 2004 by Dutch public pop music radio station 3FM."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D022_02",
+            "title": "Jeder Rappen zählt",
+            "text": "Jeder Rappen zählt. Jeder Rappen zählt (JRZ) \"(literally Every rappen (nickel) counts)\" is the Swiss version of the Serious Request that broadcasts on Dutch radio/television.",
+            "text_sha256": "d60c142e5b18d47c34350ffe8c4876a43a58bee48a7a2b49d46a05681eeec1d6",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Jeder_Rappen_z%C3%A4hlt",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D022_05",
+            "title": "Serious Request",
+            "text": "Serious Request. Serious Request is a family of annual multi-day, multimedia fundraising events for International Red Cross initiatives, typically hosted by radio stations in the week before Christmas. The project was begun in 2004 by Dutch public pop music radio station 3FM. \"Serious Request\" projects have since been adopted in Belgium, Switzerland, Sweden, Kenya, South Korea, Austria, Latvia and Portugal.",
+            "text_sha256": "987a528c49842e46fba971985be06cb9900726efa58cc22f9beea7dbc6530b35",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Serious_Request",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "JRZ is identified as the Swiss version of Serious Request, whose passage explicitly gives a 2004 start.",
+      "recommended_action": "Retain project-level identity; do not use the Swiss program's own start date as equivalent.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 23,
+      "qid": "5a7b60605542995eb53be931",
+      "question": "What is the year of the event which orrurred first, Beecher's Handmade Cheese was founded, or Pike Place Market opened?",
+      "gold": "1907",
+      "designated_false": "1914",
+      "entity": "Pike Place Market; Beecher's Handmade Cheese",
+      "relation": "year of the earlier of market opening and company founding",
+      "time": "1907 market opening versus 2003 company founding",
+      "unit": "calendar year",
+      "qualifier": "Earlier-event comparison",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Beecher's Handmade Cheese is an artisan cheesemaker and retail shop with locations in the Pike Place Market, Seattle, Washington and New York City's Flatiron District.",
+          " The company was founded by Kurt Beecher Dammeier in 2003 and opened in the Pike Place Market after Dammeier obtained a difficult to obtain storefront lease in the Market.",
+          "Pike Place Market is a public market overlooking the Elliott Bay waterfront in Seattle, Washington, United States.",
+          " The Market opened August 17, 1907, and is one of the oldest continuously operated public farmers' markets in the United States."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D023_06",
+            "title": "Beecher's Handmade Cheese",
+            "text": "Beecher's Handmade Cheese. Beecher's Handmade Cheese is an artisan cheesemaker and retail shop with locations in the Pike Place Market, Seattle, Washington and New York City's Flatiron District. The company was founded by Kurt Beecher Dammeier in 2003 and opened in the Pike Place Market after Dammeier obtained a difficult to obtain storefront lease in the Market. Because Dammeier had never been a cheesemaker, he sought out the assistance of Brad Sinko, who helped run a family cheese-making business in Oregon. A second location was opened in 2011 in the Flatiron neighborhood of Manhattan in New York City.",
+            "text_sha256": "913868b6fbe128a544e0e392aef65347f0697f81bfc31f12f8eda31048e88e73",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Beecher%27s_Handmade_Cheese",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D023_07",
+            "title": "Pike Place Market",
+            "text": "Pike Place Market. Pike Place Market is a public market overlooking the Elliott Bay waterfront in Seattle, Washington, United States. The Market opened August 17, 1907, and is one of the oldest continuously operated public farmers' markets in the United States. It is a place of business for many small farmers, craftspeople and merchants. Named after the central street, Pike Place runs northwest from Union Street to Virginia Street. With more than 10 million visitors annually, Pike Place Market is Seattle's most popular tourist destination and is the 33rd most visited tourist attraction in the world.",
+            "text_sha256": "cebb5264d0f9f98dabb3e46c8d77feef354a541d5090b9f433cc7ad5e76d75ae",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Pike_Place_Market",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "Both dates are explicit; 1907 precedes 2003, so the returned year belongs to the market opening.",
+      "recommended_action": "Retain both event dates and comparison rule.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 24,
+      "qid": "5ab9788155429970cfb8eb1a",
+      "question": "What year did the CEO of Tata Consultancy Services takeover as Chairman?",
+      "gold": "2017",
+      "designated_false": "2024",
+      "entity": "Natarajan Chandrasekaran; Tata Sons",
+      "relation": "year former TCS CEO assumed the intended chairmanship",
+      "time": "21 February 2017",
+      "unit": "calendar year",
+      "qualifier": "Intended chairmanship is Tata Sons; the question does not name that company explicitly",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " Natarajan Chandrasekaran took over as Chairman of Tata Sons on 21 February 2017.",
+          " Chandrasekaran took over as the CEO of Tata Consultancy Services (TCS) on November 6, 2009 prior to which he was COO and executive director of TCS."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D024_08",
+            "title": "Natarajan Chandrasekaran",
+            "text": "Natarajan Chandrasekaran. Natarajan Chandrasekaran (born 1963) is the chairman of Tata Sons. Chandrasekaran took over as the CEO of Tata Consultancy Services (TCS) on November 6, 2009 prior to which he was COO and executive director of TCS. Born in 1963, Chandra is one of the youngest CEOs within the Tata Group. In January 2017, he was selected to become the next chairman of Tata Sons. He assumed chairmanship on 21 February 2017 and soon after was announced the chairman of Tata Motors. on July 3, he was appointed as chairman of Tata Global Beverages. He is the first non Parsi and professional executive to head the Tata Group.",
+            "text_sha256": "8085a3a91659f9846bef83330993033161c31097cf2cd0cc43834a139ec8a9be",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Natarajan_Chandrasekaran",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D024_01",
+            "title": "Tata Sons",
+            "text": "Tata Sons. Tata Sons Limited is the holding company of the Tata Group and holds the bulk of shareholding in these companies. It was established as a trading enterprise in 1868. About 86% of the equity capital of Tata Sons is held by philanthropic trusts endowed by members of the Tata family. The biggest two of these trusts are the Sir Dorabji Tata Trust and Sir Ratan Tata Trust. Tata Sons is the owner of the Tata name and the Tata trademarks, which are registered in India and several other countries. TCS alone generates 70% revenues of its parent company, Tata Sons. Natarajan Chandrasekaran took over as Chairman of Tata Sons on 21 February 2017.",
+            "text_sha256": "829d3a678afa5bad5a5e7ccd80142e0f41f66a58c46e74d7b84e5188526a4f82",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Tata_Sons",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [
+        {
+          "url": "https://www.tata.com/newsroom/n-chandrasekaran-appointed-chairman-tata-sons",
+          "publisher": "Tata Sons",
+          "source_type": "first-party appointment notice dated12January2017",
+          "accessed": true,
+          "evidence_paraphrase": "The notice appoints N.Chandrasekaran Executive Chairman of Tata Sons effective21February2017, and identifies him as TCS CEO since2009.",
+          "short_excerpt": "shall take charge from February 21, 2017",
+          "supports": "Intended Tata Sons chairmanship effective year."
+        }
+      ],
+      "external_check_note": "Targeted first-party source checked; not independent human adjudication.",
+      "reason": "The supplied passages identify Chandrasekaran and Tata Sons chairmanship in 2017. Tata's accessed appointment notice confirms the effective date. The abbreviated wording should still name the chairmanship for clarity.",
+      "recommended_action": "Retain 2017 for the intended source-defined event; future wording should explicitly say Chairman of Tata Sons and avoid implying he is the current TCS CEO.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": true,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 25,
+      "qid": "5adffb4655429925eb1afbbf",
+      "question": "What year was George Harrison's top UK charted song voted the nations 11th favorite 1980s number?",
+      "gold": "2015",
+      "designated_false": "2022",
+      "entity": "George Harrison's Got My Mind Set on You versus T'Pau's China in Your Hand",
+      "relation": "year an ITV poll ranked a specific 1980s number-one song",
+      "time": "2015 poll in the archived China in Your Hand passage",
+      "unit": "calendar year",
+      "qualifier": "Question assigns T'Pau song's poll property to George Harrison's different song",
+      "gold_status": "needs_correction",
+      "false_status": "not_proven_false",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " \"China in Your Hand\" was the 600th single to top the UK charts and kept George Harrison's \"Got My Mind Set on You\" from hitting the top spot.",
+          " In 2015, the power ballad was voted by the British public as the nation's 11th favourite 1980s number one in a poll for ITV.",
+          "\"Got My Mind Set on You\" is a song written and composed by Rudy Clark and originally recorded by James Ray in 1962, under the title \"I've Got My Mind Set on You\"."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D025_02",
+            "title": "China in Your Hand",
+            "text": "China in Your Hand. \"China in Your Hand\" is a song by the British band T'Pau, released from their album \"Bridge of Spies\". A re-recorded version was released as a single in October 1987, spending five weeks at number one in the UK and is arguably the song for which the group is best known in their native Britain, though their debut single \"Heart and Soul\" was a much bigger hit in the United States. \"China in Your Hand\" was the 600th single to top the UK charts and kept George Harrison's \"Got My Mind Set on You\" from hitting the top spot. In 2015, the power ballad was voted by the British public as the nation's 11th favourite 1980s number one in a poll for ITV.",
+            "text_sha256": "7a96698dafea91d7ea583ac0979fc67c0d5339aa62ef607c0981094a068cb653",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/China_in_Your_Hand",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D025_08",
+            "title": "Got My Mind Set on You",
+            "text": "Got My Mind Set on You. \"Got My Mind Set on You\" is a song written and composed by Rudy Clark and originally recorded by James Ray in 1962, under the title \"I've Got My Mind Set on You\". An edited version of the song was released later in the year as a single on the Dynamic Sound label. In 1987, George Harrison released a cover version of the song as a single, and released it on his album, \"Cloud Nine,\" which he had recorded on his own Dark Horse Records label.",
+            "text_sha256": "39472a38680ed55b03fa1796f3ebe3b485e23d2856d6d0622f80d532a5e986c2",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Got_My_Mind_Set_on_You",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [
+        {
+          "url": "https://www.officialcharts.com/artist/24396/tpau/",
+          "publisher": "Official Charts Company",
+          "source_type": "primary chart authority artist history",
+          "accessed": true,
+          "evidence_paraphrase": "China in Your Hand is T'Pau's1987 number-one single; it spent five weeks at number one.",
+          "short_excerpt": "China In Your Hand",
+          "supports": "Identity and UK chart-topper attribution; does not independently verify the2015ITVpoll."
+        }
+      ],
+      "external_check_note": "Targeted sources establish the conflict/limited claim described, not overall gold correctness.",
+      "reason": "The snapshot attributes the 2015 eleventh-favourite poll ranking to China in Your Hand, not to Got My Mind Set on You. The George Harrison song is mentioned only as having been kept from the top spot. Official Charts independently identifies China in Your Hand as T'Pau's chart-topper; the ITV poll itself was not independently verified here.",
+      "recommended_action": "Flag the question/reference relation as invalid pending adjudication. Rewriting the question to ask about T'Pau changes its meaning; do not rescore old responses as if they answered that rewritten question.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 26,
+      "qid": "5add6f975542992200553b18",
+      "question": "In what year did the brother-in-law of Ezzo, Count Palatine of Lotharingia, die?",
+      "gold": "1002",
+      "designated_false": "1009",
+      "entity": "Emperor Otto III; Ezzo, Count Palatine of Lotharingia",
+      "relation": "death year of Ezzo's identified brother-in-law",
+      "time": "23 January 1002",
+      "unit": "calendar year",
+      "qualifier": "Otto III is the identified brother-in-law in the supplied context",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " As brother-in-law of Emperor Otto III, father of Queen Richeza of Poland and several other illustrious children, he was one of the most important figures of the Rhenish history of his time.",
+          "Otto III (June/July 980 – 23 January 1002) was Holy Roman Emperor from 996 until his early death in 1002."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D026_02",
+            "title": "Ezzo, Count Palatine of Lotharingia",
+            "text": "Ezzo, Count Palatine of Lotharingia. Ezzo (  955 – 21 March 1034), sometimes called Ehrenfried, a member of the Ezzonid dynasty, was Count Palatine of Lotharingia from 1015 until his death. As brother-in-law of Emperor Otto III, father of Queen Richeza of Poland and several other illustrious children, he was one of the most important figures of the Rhenish history of his time.",
+            "text_sha256": "6b26e5d2f58aa77ccee5a0f634bf9a414bc19d996faea75aa7b4193a47f01f7a",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Ezzo%2C_Count_Palatine_of_Lotharingia",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D026_04",
+            "title": "Otto III, Holy Roman Emperor",
+            "text": "Otto III, Holy Roman Emperor. Otto III (June/July 980 – 23 January 1002) was Holy Roman Emperor from 996 until his early death in 1002. A member of the Ottonian dynasty, Otto III was the only son of the Emperor Otto II and his wife Theophanu.",
+            "text_sha256": "d924f07a64e62d80f54eaadd4f074c17e1cf903dad9439a0d0eb2bea26633ff0",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Otto_III%2C_Holy_Roman_Emperor",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "Ezzo's passage names Otto III as brother-in-law and the emperor's lifespan/death sentence gives 1002.",
+      "recommended_action": "Retain named kinship and subject of the death event.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 27,
+      "qid": "5adf37955542993a75d2642e",
+      "question": "What year did the actor, who appeared in \"One Life to Live\" and \"General Hospital\" in 2012, earn a Daytime Emmy Award?",
+      "gold": "1994",
+      "designated_false": "2003",
+      "entity": "Roger Howarth; Todd Manning character",
+      "relation": "year the identified actor earned a Daytime Emmy",
+      "time": "1994 award; character appearances in 2012",
+      "unit": "calendar year",
+      "qualifier": "Award for Howarth's portrayal, not 2012 crossover year or another actor's award",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Thomas Todd Manning and Blair Cramer Manning are fictional characters and a supercouple from the ABC daytime drama \"One Life to Live\".",
+          " In 2012, they also appeared together on \"General Hospital\".",
+          " He played character Todd Manning on the daytime drama \"One Life to Live\" (\"OLTL\"); the character earned Howarth a Daytime Emmy Award in 1994, and is cited as an icon in the soap opera genre."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D027_09",
+            "title": "Roger Howarth",
+            "text": "Roger Howarth. Roger Howarth (born September 13, 1968) is an American actor. He played character Todd Manning on the daytime drama \"One Life to Live\" (\"OLTL\"); the character earned Howarth a Daytime Emmy Award in 1994, and is cited as an icon in the soap opera genre. He left the series in 2003 and joined soap opera \"As the World Turns\", where he played the character of Paul Ryan until the series final episode in 2010. Howarth returned to \"OLTL\" in May 2011, eventually deciding to continue the role on \"General Hospital\" in March 2012. He now portrays Franco on \"General Hospital,\" the character formerly created and portrayed by James Franco. In addition to his soap opera work, Howarth has guest starred in television shows such as \"Prey\" and \"Dawson's Creek\".",
+            "text_sha256": "22d2688333f517fe3b5aa3bc861468193624c7c902390392a6b37f7fb1646170",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Roger_Howarth",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D027_02",
+            "title": "Todd Manning and Blair Cramer",
+            "text": "Todd Manning and Blair Cramer. Thomas Todd Manning and Blair Cramer Manning are fictional characters and a supercouple from the ABC daytime drama \"One Life to Live\". In 2012, they also appeared together on \"General Hospital\". Todd was originated by Roger Howarth and later portrayed by actor Trevor St. John. On August 17, 2011, St. John's character was revealed to be Todd's identical twin brother, Victor Lord Jr., conditioned to believe he was Todd and assume Todd's identity. Blair has been portrayed by Kassie DePaiva since the couple's inception.",
+            "text_sha256": "31b4cc5defda2b36055b16b1780ca353bc23f1998bcacf5bf7d270dac78a3115",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Todd_Manning_and_Blair_Cramer",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The character passage supplies the original actor Roger Howarth and the biography directly states his Daytime Emmy Award in 1994, also describing his return and General Hospital role.",
+      "recommended_action": "Retain actor-versus-character distinction and the award year.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 28,
+      "qid": "5ae4c35c55429913cc2044fb",
+      "question": "What year was the film starring Hugh Jackman, Jake Gyllenhaal, and an actress appearing in \"The Cooler\" and \"The Jane Austen Book Club\" released?",
+      "gold": "2013",
+      "designated_false": "2020",
+      "entity": "Prisoners; Maria Bello",
+      "relation": "release year of the film with Jackman, Gyllenhaal and Bello",
+      "time": "2013 release",
+      "unit": "calendar year",
+      "qualifier": "Bello identity via The Cooler and The Jane Austen Book Club",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          " She has appeared in the films \"Permanent Midnight\" (1998), \"Payback\" (1999), \"Coyote Ugly\" (2000), \"The Cooler\" (2003), \"A History of Violence\" (2005), \"Thank You for Smoking\" (2006), \"The Jane Austen Book Club\" (2007) \"\" (2008), \"Prisoners\" (2013) and \"Lights Out\" (2016).",
+          " The film has an ensemble cast including Hugh Jackman, Jake Gyllenhaal, Viola Davis, Maria Bello, Terrence Howard, Melissa Leo and Paul Dano."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D028_06",
+            "title": "Maria Bello",
+            "text": "Maria Bello. Maria Elena Bello (born April 18, 1967) is an American actress and writer. She has appeared in the films \"Permanent Midnight\" (1998), \"Payback\" (1999), \"Coyote Ugly\" (2000), \"The Cooler\" (2003), \"A History of Violence\" (2005), \"Thank You for Smoking\" (2006), \"The Jane Austen Book Club\" (2007) \"\" (2008), \"Prisoners\" (2013) and \"Lights Out\" (2016). Bello is known for her role as Dr. Anna Del Amico on the NBC medical drama \"ER\" (1997–1998). She starred as Lucy Robbins on the Fox series \"Touch\" alongside Kiefer Sutherland in 2013 and currently stars as Michelle McBride on the Amazon original series \"Goliath\". In 2017, Bello joined the CBS procedural \"NCIS\" as Special Agent Jackie Sloane, a series regular.",
+            "text_sha256": "f6be8dabd6440c95a1c6b4b309af2b831f04e28885a5741e9a03ec213571123b",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Maria_Bello",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D028_09",
+            "title": "Prisoners (2013 film)",
+            "text": "Prisoners (2013 film). Prisoners is a 2013 American thriller film directed by Denis Villeneuve from a screenplay written by Aaron Guzikowski. The film has an ensemble cast including Hugh Jackman, Jake Gyllenhaal, Viola Davis, Maria Bello, Terrence Howard, Melissa Leo and Paul Dano. It is Villeneuve's first English-language feature film.",
+            "text_sha256": "0005cac582a7bf4c9428501af0978e7e04196c8085707909f9f0fcdcd5227af5",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Prisoners_(2013_film)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "Bello's film list identifies the actress and includes Prisoners in 2013; the film passage confirms the cast and year.",
+      "recommended_action": "Retain film and actor identity bridges; no external release-calendar verification was performed.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 29,
+      "qid": "5ae67dba55429908198fa5f0",
+      "question": "The Memphis Hustle are based in a suburb of a city with a population of what in 2010?",
+      "gold": "48,982",
+      "designated_false": "48999",
+      "entity": "Southaven, Mississippi versus Memphis, Tennessee; Memphis Hustle",
+      "relation": "2010 population of the city referred to by the question",
+      "time": "2010 census",
+      "unit": "persons",
+      "qualifier": "Suburb-city antecedent ambiguity: base city Southaven versus parent city Memphis",
+      "gold_status": "ambiguous",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "The Memphis Hustle are an American professional basketball team of the NBA G League announced to begin play for the 2017–18 season as an affiliate of the Memphis Grizzlies of the National Basketball Association (NBA).",
+          " Based in the Memphis suburb of Southaven, Mississippi, the team will play their home games at the Landers Center.",
+          "Southaven is a city in DeSoto County, Mississippi, United States.",
+          " The 2010 census reported a population of 48,982, making Southaven the third largest city in Mississippi."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D029_08",
+            "title": "Memphis Hustle",
+            "text": "Memphis Hustle. The Memphis Hustle are an American professional basketball team of the NBA G League announced to begin play for the 2017–18 season as an affiliate of the Memphis Grizzlies of the National Basketball Association (NBA). Based in the Memphis suburb of Southaven, Mississippi, the team will play their home games at the Landers Center.",
+            "text_sha256": "ee227cb94fae1b0db7796a4bd73853190f9e79fdc66b483e60b8dd987c32e27a",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Memphis_Hustle",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D029_07",
+            "title": "Southaven, Mississippi",
+            "text": "Southaven, Mississippi. Southaven is a city in DeSoto County, Mississippi, United States. It is a suburb of Memphis, Tennessee, and a principal city in the Memphis metropolitan area. The 2010 census reported a population of 48,982, making Southaven the third largest city in Mississippi. Southaven is traversed from north to south by the I-55/I-69 freeway. The city's name derives from the fact that Southaven is located south of Whitehaven, a neighborhood in Memphis.",
+            "text_sha256": "390cb16b6581de26c7452ba046ab00d955f6ca3bb389196323c7c4bf704bb9c2",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Southaven%2C_Mississippi",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [
+        {
+          "url": "https://www.census.gov/newsroom/releases/archives/2010_census/cb11-cn14.html",
+          "publisher": "U.S.Census Bureau",
+          "source_type": "2010census Mississippi release3February2011",
+          "accessed": true,
+          "evidence_paraphrase": "The official release lists Southaven's2010count as48,982.",
+          "short_excerpt": "Southaven, 48,982",
+          "supports": "Gold is a Southaven count."
+        },
+        {
+          "url": "https://www.census.gov/newsroom/releases/archives/2010_census/cb11-cn93.html",
+          "publisher": "U.S.Census Bureau",
+          "source_type": "2010census Tennessee release16March2011",
+          "accessed": true,
+          "evidence_paraphrase": "The official release lists Memphis's2010count as646,889.",
+          "short_excerpt": "Memphis, 646,889",
+          "supports": "Memphis is a different referent/count; source of the question ambiguity."
+        }
+      ],
+      "external_check_note": "Targeted sources establish the conflict/limited claim described, not overall gold correctness.",
+      "reason": "The wording a suburb of a city with a population most naturally attaches the population to Memphis, whereas gold48,982 belongs to Southaven. Accessed Census releases explicitly give Southaven48,982 and Memphis646,889. The target48,999 is inconsistent with either of those two census counts, but the gold referent is ambiguous.",
+      "recommended_action": "Keep original question and scores unchanged. For semantic accuracy mark referent unresolved; a revised explicit Southaven question would require separate prospective answers, not silent retrospective substitution.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "recorded_quantity",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 30,
+      "qid": "5ac2cfab554299657fa29079",
+      "question": "The Innocents is a 1961 gothic horror film that was based on a novella by Henry James published in what year?",
+      "gold": "1898",
+      "designated_false": "1905",
+      "entity": "The Turn of the Screw; The Innocents (1961 film)",
+      "relation": "first-publication year of the novella underlying the film",
+      "time": "1898 serialization and book appearance",
+      "unit": "calendar year",
+      "qualifier": "Novella first publication, not film release in 1961",
+      "gold_status": "accepted",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "The Innocents is a 1961 British supernatural gothic horror film directed and produced in CinemaScope by Jack Clayton, and starring Deborah Kerr, Michael Redgrave and Megs Jenkins.",
+          " Based on the novella \"The Turn of the Screw\" by Henry James, the plot follows a governess who watches over two children and comes to fear that the house is haunted by ghosts and that the two children are being possessed.",
+          "The Turn of the Screw, originally published in 1898, is a novella written by Henry James."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D030_02",
+            "title": "The Innocents (1961 film)",
+            "text": "The Innocents (1961 film). The Innocents is a 1961 British supernatural gothic horror film directed and produced in CinemaScope by Jack Clayton, and starring Deborah Kerr, Michael Redgrave and Megs Jenkins. Based on the novella \"The Turn of the Screw\" by Henry James, the plot follows a governess who watches over two children and comes to fear that the house is haunted by ghosts and that the two children are being possessed. The title of the film was taken from William Archibald's stage adaptation of James' novella. Falling within the subgenre of psychological horror, the film achieves its effects through lighting, music and direction rather than conventional shocks. Its atmosphere was created by cinematographer Freddie Francis, who employed deep focus in many scenes, as well as bold, minimal lighting. It was partly shot on location at the Gothic mansion of Sheffield Park in Sussex.",
+            "text_sha256": "bc127906416f7e00615f65cdbcbbe662ad440f84eef4904b48489088a438ecfc",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/The_Innocents_(1961_film)",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D030_09",
+            "title": "The Turn of the Screw",
+            "text": "The Turn of the Screw. The Turn of the Screw, originally published in 1898, is a novella written by Henry James. The story, a part of gothic and ghost story genres, first appeared in serial format in \"Collier's Weekly\" magazine (27 January – 16 April 1898). In October 1898 it appeared in \"The Two Magics\", a book published by Macmillan in New York City and Heinemann in London.",
+            "text_sha256": "ee8622f72adb34851964a2d0669b0bec45248c9c6fe3408a1f27ee8527dffaa8",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/The_Turn_of_the_Screw",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [],
+      "external_check_note": "No live external fact-check was performed for this item; source-fidelity audit only.",
+      "reason": "The film passage names Henry James's novella and the novella passage explicitly gives 1898, including serialization and October book publication in that year.",
+      "recommended_action": "Retain first-publication relation and distinguish it from movie release.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    },
+    {
+      "index": 31,
+      "qid": "5a903b7f55429933b8a204af",
+      "question": "What year was the branch of military, who is credited with Operation Tidal Wave, created?",
+      "gold": "1942",
+      "designated_false": "1949",
+      "entity": "United States Army Air Forces; Operation Tidal Wave",
+      "relation": "creation year of the force that conducted the operation",
+      "time": "creation20June1941; functional reorganization9March1942",
+      "unit": "calendar year",
+      "qualifier": "Creation and functional reorganization are different events",
+      "gold_status": "needs_correction",
+      "false_status": "contradicted_by_exact_source",
+      "gold_status_scope": "Consistency of question/reference with archived supporting passages; external corroboration only where separately recorded. accepted does not mean human-validated or independently true.",
+      "false_status_scope": "Contradiction of the exact source-defined relation/value, not proof of unrestricted external-world falsity. Ambiguous references are flagged separately.",
+      "source_snapshot_evidence": {
+        "annotated_sentences": [
+          "Operation Tidal Wave was an air attack by bombers of the United States Army Air Forces (USAAF) based in Libya and Southern Italy on nine oil refineries around Ploiești, Romania on 1 August 1943, during World War II.",
+          " The AAF was a component of the United States Army, which in 1942 was divided functionally by executive order into three autonomous forces: the Army Ground Forces, the Services of Supply (which in 1943 became the Army Service Forces), and the Army Air Forces."
+        ],
+        "full_support_passages": [
+          {
+            "doc_id": "D031_00",
+            "title": "Operation Tidal Wave",
+            "text": "Operation Tidal Wave. Operation Tidal Wave was an air attack by bombers of the United States Army Air Forces (USAAF) based in Libya and Southern Italy on nine oil refineries around Ploiești, Romania on 1 August 1943, during World War II. It was a strategic bombing mission and part of the \"oil campaign\" to deny petroleum-based fuel to the Axis. The mission resulted in \"no curtailment of overall product output\".",
+            "text_sha256": "5fa165211490bd0d2705568c88c9cc85e38cbe9f372679ca220a347474e6e2a3",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/Operation_Tidal_Wave",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          },
+          {
+            "doc_id": "D031_04",
+            "title": "United States Army Air Forces",
+            "text": "United States Army Air Forces. The United States Army Air Forces (USAAF or AAF) was the military aviation service of the United States of America during and immediately after World War II, successor to the United States Army Air Corps and the direct predecessor of the United States Air Force. The AAF was a component of the United States Army, which in 1942 was divided functionally by executive order into three autonomous forces: the Army Ground Forces, the Services of Supply (which in 1943 became the Army Service Forces), and the Army Air Forces. Each of these forces had a commanding general who reported directly to the Army Chief of Staff.",
+            "text_sha256": "fdff30a388f7c5add8d99e85e0babe2568b91626afc4cdb605bcba2a623923be",
+            "wikipedia_attribution_url": "https://en.wikipedia.org/wiki/United_States_Army_Air_Forces",
+            "attribution_url_accessed_in_this_audit": false,
+            "actual_evidence_source": "Frozen clean_documents.json text, not a newly fetched Wikipedia revision"
+          }
+        ]
+      },
+      "external_sources_actually_accessed": [
+        {
+          "url": "https://www.archives.gov/research/guide-fed-records/groups/018.html",
+          "publisher": "U.S.National Archives",
+          "source_type": "Guide to Federal Records,Record Group18,sections18.1/18.5",
+          "accessed": true,
+          "evidence_paraphrase": "AAF was established20June1941;1942 refers to subsequent reorganization. The agency was abolished in1947, so1949 is not its creation year.",
+          "short_excerpt": "by revision of Army Regulation 95-5, June 20, 1941",
+          "supports": "Corrects creation-versus-reorganization relation; does not retroactively put1941into the model's clean context."
+        }
+      ],
+      "external_check_note": "Targeted sources establish the conflict/limited claim described, not overall gold correctness.",
+      "reason": "The archived reference1942 is taken from a sentence about Army functional reorganization, not AAF establishment. The accessed National Archives administrative history explicitly establishes AAF on20June1941; it also records abolition in1947, inconsistent with a1949 creation.",
+      "recommended_action": "Propose1941 for literal creation-year factuality, pending recorded adjudication. Preserve original1942 annotation and report corrected-reference analysis separately;1941 is not supported by the supplied abbreviated clean paragraph and grounding must stay separate.",
+      "human_review_required": true,
+      "human_judgments_completed": 0,
+      "review_method": "AI-assistant source and relation audit; not blinded human review",
+      "original_annotation_changed": false,
+      "answer_type": "year",
+      "proposed_literal_relation_answer": "1941",
+      "proposed_correction_status": "requires recorded adjudication; original1942unchanged",
+      "targeted_external_reference_event_check_completed": false,
+      "full_independent_external_question_chain_validation_completed": false
+    }
+  ]
+}

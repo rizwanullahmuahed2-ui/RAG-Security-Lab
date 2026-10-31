@@ -1,0 +1,24 @@
+{
+  "checked_at_utc": "2026-10-31T07:23:12.578208+00:00",
+  "tool": "Poppler pdftotext geometry and extraction; separate visual samples",
+  "status": "passed",
+  "documents": {
+    "paper": {
+      "path": "manuscript/Working_Manuscript_v2.pdf",
+      "pages": 26,
+      "text_words": 11288,
+      "text_boxes_outside_page": 0,
+      "replacement_characters": 0,
+      "sha256": "1ff6478dcc8b78b019c288ac98eb0d826315d9a1ff9796b91a9f95f6f5517525"
+    },
+    "report": {
+      "path": "report/Implementation_Report_FA.pdf",
+      "pages": 17,
+      "text_words": 5250,
+      "text_boxes_outside_page": 0,
+      "replacement_characters": 0,
+      "sha256": "f87f14160b571afb686e9784805a66d8b58cd51f92d425df4a109012a894567d"
+    }
+  },
+  "scope": "Export legibility/geometry checks, not human semantic validation"
+}

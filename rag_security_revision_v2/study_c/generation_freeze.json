@@ -1,0 +1,30 @@
+{
+  "phase": "generation_before_completions",
+  "frozen_at_utc": "2026-10-27T06:01:37.977453+00:00",
+  "run_hashes": {
+    "design_freeze.json": "da229ba28d82de3a5a0b7d827f646e6aaebeb47593a7548dfdf440f62819878c",
+    "design_freeze.json.sha256": "7b1ae6bd6426bfeb800238bfef38d24674f7308c876ce3f67c23c018d155daa0",
+    "embedding_texts.json": "98d474c14e225b456b23a393f5a7ecde18c265201ca44dcf13efb85523e94edd",
+    "embedding_requests.json": "1e93ce8f87b3eeb389be95d73404c4e5624bca7902b6dfbde0ad6b7c1d3d98ab",
+    "embedding_responses.jsonl": "da52fb651d61b30e2cc216384ec97c6c43cf4b246df0dcfb20e6d002754ccfe9",
+    "embeddings.npz": "a3134c00b66826fae1bac0abef74fc681e368c61e3e7f52da562eb05c1708468",
+    "embeddings_manifest.json": "0ed5cb7276f11194088a4dd246f98cdea732f37a0b7c28f9d5bb92f319844d75",
+    "contexts.jsonl": "26cc3dd797e51db02fb2df2cade79a0640b9d8a31abf3e8558785ec9426ccbb7",
+    "requests.json": "aa54bf9311b9e1cbd10b9c929fe685f2eba2ff775630413dae68e89ec25ebe86",
+    "request_census.json": "b684f0a57e6fbf470bbc12e1433a16c295236809901464edcb97538ff40791b5"
+  },
+  "census": {
+    "context_rows_per_round": 1736,
+    "rounds": 3,
+    "condition_evaluations": 5208,
+    "unique_payloads": 853,
+    "logical_generation_calls": 2559,
+    "max_transport_attempts": 7677,
+    "successful_output_tokens_max": 163776,
+    "input_token_byte_upper_all_rounds": 10349298,
+    "primary_unit": "Question/shared-fact group; condition rows and rounds are not independent questions"
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scikit_learn": "1.8.0"
+}

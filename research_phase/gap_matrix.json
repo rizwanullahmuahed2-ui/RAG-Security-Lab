@@ -1,0 +1,4072 @@
+{
+  "created_at_utc": "2026-10-25T11:47:01.816085+00:00",
+  "purpose": "Research-stage mapping updated after a verified public repository snapshot; no article/frozen experiment edits, model calls, or new experiments.",
+  "review_pdf": "/tmp/codex-remote-attachments/01a162b2-144f-7619-9839-c1dc2697206f/29E3C305-0239-4EA5-A209-17347F60B23F/1-بررسی-مقاله-امنیت-در-سیستم-رگ-.pdf",
+  "review_text": "/tmp/supervisor_expert_review.txt",
+  "manuscript": "/workspace/revision/Revised_Manuscript.md",
+  "scope_definition": {
+    "Study A": "Historical 224-document/225-chunk/364-question/104-target experiment. Canonical inputs, legacy inputs, WDI snapshots, and current workbench code are now available at the pinned repository. Exact completed historical output archives and matching source/config manifest remain absent from the inspected commit.",
+    "Study B": "64-question/640-chunk HotpotQA extension with 376 real generation requests and 1280 condition rows; not a replay of A.",
+    "Current repository workbench": "Revised lexical/extractive v2 code with default budgets 0/10/20/50/104; not the frozen historical principal implementation.",
+    "Targeted-mode diagnostic": "Separate 1,092-row September 30 diagnostic: 364 questions, synthetic own-attack assertions, 0/10 copies and none/filter conditions; not main Study A or the original 3,016-row repetition study."
+  },
+  "status_definitions": {
+    "addressed": "The specific requested availability/disclosure/scoped evidence is present. Input availability does not imply independent truth validation or completed historical replay.",
+    "partially_addressed": "Material progress exists but a named substantive part or study remains open.",
+    "unsupported": "Requested assertion or validation has no supporting completed evidence; no implication of intentional fabrication.",
+    "unavailable": "The specific original run or proposal material required is not present in the inspected local artifacts/pinned repository commit; this is not a claim that it never existed or cannot be recovered elsewhere."
+  },
+  "version_ambiguity": {
+    "observed": "Expert report emphasizes historical counts/backends and contains no HotpotQA, gpt-4.1, 376, 640, 1,280, or 53.1 string.",
+    "inference_limit": "Which file the expert received is not confirmed. The review emphasizes A; both the old repository PDF and the latest local paper contain A, so emphasis does not prove receipt history.",
+    "required_mapping": "Evaluate each critique separately against A and B; a B extension does not resolve missing A evidence.",
+    "repository_paper": "Verified original 18-page manuscript, identical to original source PDF.",
+    "local_latest_paper": "16 pages; SHA256 1e34c849fa0361c69f918d0685f45db6205b59a4c794be7ec090c8b15b3eb8d1."
+  },
+  "coverage": {
+    "sections": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "4",
+      "5",
+      "6"
+    ],
+    "requirement_count": 67,
+    "status_counts": {
+      "partially_addressed": 39,
+      "addressed": 25,
+      "unsupported": 2,
+      "unavailable": 1
+    },
+    "warning": "Counts are checklist rows, not a scientific quality score or a tally proving readiness for publication.",
+    "updated_requirement_rows": 44,
+    "updated_requirement_rows_including_research_audit_context": 50
+  },
+  "read_only_artifact_inventory": {
+    "test_questions": 64,
+    "donor_questions": 64,
+    "clean_chunks": 640,
+    "insertion_counts": {
+      "targeted": 64,
+      "unrelated": 64,
+      "benign": 64
+    },
+    "unique_requests": 376,
+    "raw_response_records": 376,
+    "context_records": 1280,
+    "scored_records": 1280,
+    "human_review_records": 376,
+    "completed_human_fields": {
+      "reviewer_1_label": 0,
+      "reviewer_2_label": 0,
+      "adjudicated_label": 0
+    },
+    "initial_hash_checks": {
+      "prepare_experiment.py": true,
+      "test_questions.json": true,
+      "control_donors.json": true,
+      "clean_documents.json": true,
+      "insertions.json": true,
+      "config.json": true,
+      "source_dataset_metadata.json": true
+    },
+    "context_hash_matches": true,
+    "request_hash_matches": true,
+    "response_hash_matches": true,
+    "expected_paths_present": {
+      "/workspace/data/dataset_manifest.json": false,
+      "/workspace/data/sources/worldbank": false,
+      "/workspace/research/evidence": false,
+      "/workspace/research/audit": false,
+      "/workspace/research/continuation": false,
+      "/tmp/rag-runtime/hotpot_validation.parquet": false
+    },
+    "scope_note": "Initial local-only inventory. Canonical repository data are now located under repo_snapshot; absence at older /workspace/data paths is no longer a blanket unavailability conclusion."
+  },
+  "concrete_scoring_caution": {
+    "path": "/workspace/revision/experiment/scored_results.csv",
+    "line": 8,
+    "qid": "5adf8c375542995534e8c7dd",
+    "reference": "1972",
+    "designated_false": "1979",
+    "automatic_gold_only": true,
+    "observation": "Answer includes the reference year and an explicit UNKNOWN/evidence-insufficiency statement. This is a semantic-adjudication issue; the frozen primary score was not changed."
+  },
+  "requirements": [
+    {
+      "id": "3.1.1",
+      "expert_section": "3.1",
+      "requirement": "State the architecture actually executed",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91,
+          "line_end": 109
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 172
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 19,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L19-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/config.yaml",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/config.yaml#L1-L39",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 39,
+          "git_blob_sha": "46b67458d21d24edb81579a5a8d27b47793fd46a",
+          "snapshot_sha256": "32c3ef0163fe2a5961c287b614ccdd8ea3705dad0cc8b646a85fa15eacd5df90"
+        }
+      ],
+      "assessment": "The committed workbench architecture and source are now inspectable, but the repository explicitly says current code is not the frozen historical experiment. Study B remains a separate local experiment.",
+      "closure": "Distinguish the principal historical runtime from the current v2 workbench and local B; recover the principal run manifest and its exact code before a historical replay claim.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "partially_addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.1.2",
+      "expert_section": "3.1",
+      "requirement": "Explain why hashing and TF-IDF were chosen and how they differ from the original design",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 99,
+          "line_end": 105
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 816,
+          "line_end": 829
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 9,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L9",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+          "line_start": 27,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/VALIDATION.md#L27",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "87c592c1e0e50f6539ce32eea71fa0f3abb5ccac",
+          "snapshot_sha256": "916eb88d8eab7f0ecb82e3335af78ba43ec47337a81bcb695a07ad0919a1814e"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/REVIEW.md",
+          "line_start": 15,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/REVIEW.md#L15-L28",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 28,
+          "git_blob_sha": "baa2ed23611c802027f03bfb77afe11cf81826cd",
+          "snapshot_sha256": "23b1b0ec5debd120e30573e64e87c7c2c2818703e56bf2113aa927f244d533a4"
+        }
+      ],
+      "assessment": "Offline defaults are now documented as avoiding model downloads/paid APIs, and exact search is motivated by approximate-ranking variability. These repository explanations are not a formal original proposal or independent proof of all historical design decisions.",
+      "closure": "Cite the documented current rationale, identify retrospective explanations as such, and obtain the proposal/decision records for historical intent.",
+      "initial_local_status": {
+        "status": "unsupported",
+        "study_a_status": "unsupported",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.1.3",
+      "expert_section": "3.1",
+      "requirement": "Explain why proposed vector database, neural embeddings, or LLM components were inactive",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": null,
+      "evidence": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 817,
+          "line_end": 829
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248,
+          "line_end": 250
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/config.yaml",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/config.yaml#L1-L17",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 17,
+          "git_blob_sha": "46b67458d21d24edb81579a5a8d27b47793fd46a",
+          "snapshot_sha256": "32c3ef0163fe2a5961c287b614ccdd8ea3705dad0cc8b646a85fa15eacd5df90"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 86,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L86-L96",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 96,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+          "line_start": 46,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/VALIDATION.md#L46-L48",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 48,
+          "git_blob_sha": "87c592c1e0e50f6539ce32eea71fa0f3abb5ccac",
+          "snapshot_sha256": "916eb88d8eab7f0ecb82e3335af78ba43ec47337a81bcb695a07ad0919a1814e"
+        }
+      ],
+      "assessment": "Current config explicitly opts into offline hashing/extraction and documents optional neural/Anthropic paths; validation states those optional paths were not run. The formal original proposal is still not present in the inspected commit.",
+      "closure": "Explain current defaults from the available config, but do not invent why every original intended component was inactive. Obtain the original proposal or acknowledge that limit.",
+      "initial_local_status": {
+        "status": "unavailable",
+        "study_a_status": "unavailable",
+        "study_b_status": null
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.1.4",
+      "expert_section": "3.1",
+      "requirement": "Execute at least one real LLM experiment if retaining LLM-RAG claims",
+      "force": "conditional",
+      "kind": "experiment",
+      "status": "addressed",
+      "study_a_status": null,
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 149,
+          "line_end": 169
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 3,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "line_start": 3,
+          "line_end": 7
+        }
+      ],
+      "assessment": "Study B has 376 saved real-generation responses from gpt-4.1-mini-2025-04-14. It is a new experiment, not the 21,840-row historical replay.",
+      "closure": "Preserve raw requests/responses and bound claims to this model, subset, and protocol; no new API call is required merely to establish that the experiment exists.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": null,
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.1.5",
+      "expert_section": "3.1",
+      "requirement": "Otherwise narrow title, abstract, and conclusion to the system actually tested",
+      "force": "conditional_alternative",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 18
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 28,
+          "line_end": 32
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 315
+        }
+      ],
+      "assessment": "The current article identifies extractive Study A and generative Study B and does not attribute historical ASR to the LLM. The no-LLM fallback condition is no longer triggered for the entire paper.",
+      "closure": "Keep the distinction and limitations through later edits; do not generalize one snapshot to all RAG systems.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.2.1",
+      "expert_section": "3.2",
+      "requirement": "Provide the original source-document list",
+      "force": "required",
+      "kind": "documentation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/clean_documents.json",
+          "line_start": 1,
+          "line_end": 9
+        },
+        {
+          "path": "/workspace/revision/experiment/source_dataset_metadata.json",
+          "line_start": 2,
+          "line_end": 6
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/documents.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/documents.csv#L1-L2",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 2,
+          "git_blob_sha": "0cc6cf352184b34bd1c953fec1d722a7c5bd0e83",
+          "snapshot_sha256": "0282dff7366adfe8d6cb1cec635aed28cd55c216ab30308f2a3571169d18e1ea"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 18,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L18-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 10,
+          "line_end": 54
+        }
+      ],
+      "assessment": "All 224 canonical documents now exist with nonempty source URLs; legacy 56 inputs and twelve WDI snapshots are available. This closes document-list availability, not independent factual verification.",
+      "closure": "Cross-reference the commit-pinned source tables and preserve source-verification boundaries; establish original-run input identity separately.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.2.2",
+      "expert_section": "3.2",
+      "requirement": "Document selection of 168 WDI observations and indicator families",
+      "force": "required",
+      "kind": "documentation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": null,
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 230,
+          "line_end": 258
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 364
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 24,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L24-L43",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 43,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 44,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L44-L91",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 91,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/dataset_manifest.json",
+          "line_start": 9,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/dataset_manifest.json#L9-L95",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 95,
+          "git_blob_sha": "ede2759ce3f790b7b336efdea05a7703b8be54c5",
+          "snapshot_sha256": "d81ab5806d88db99dd4c78feaef289fa49a72f12139a72a5320849f541350388"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 55,
+          "line_end": 68
+        }
+      ],
+      "assessment": "The twelve indicator codes, 2010–2023 range, nonmissing-observation rule, source URLs/timestamps/body hashes, rounding, and 168 saved observations are now available and have been checked against committed tables.",
+      "closure": "Update methods/provenance links using these sources. Do not refresh the historical source snapshots silently or equate snapshot agreement with independently measured truth.",
+      "initial_local_status": {
+        "status": "unavailable",
+        "study_a_status": "unavailable",
+        "study_b_status": null
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.2.3",
+      "expert_section": "3.2",
+      "requirement": "Specify document, chunk, question, and answer schemas",
+      "force": "required",
+      "kind": "documentation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 101,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 33
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 123,
+          "line_end": 125
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L6",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 6,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/chunks.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/chunks.csv#L1-L2",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 2,
+          "git_blob_sha": "ac7898b4c2aaf09e5678c1be48888a3064a82d7b",
+          "snapshot_sha256": "e7a1d2b244eb7f38d717367c585ae86faaafb48b96d4dd20768860fc9e779d84"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 31,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L31-L43",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 43,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 65,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L65-L100",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 100,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 54
+        }
+      ],
+      "assessment": "Canonical CSV schemas, legacy records, deterministic construction code, and all document/chunk/question/attack joins are now present and checked. Historical completed-run identity remains a separate issue.",
+      "closure": "Describe actual CSV schemas and joins, and link them at the pinned commit; no input file needs to be fabricated or inferred from the PDF.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.2.4",
+      "expert_section": "3.2",
+      "requirement": "Explain how the 364 historical questions were generated: manual, automatic, or mixed",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": null,
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 230,
+          "line_end": 258
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 31,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L31-L35",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 35,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 80,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L80-L91",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 91,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/legacy/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/legacy/questions.csv#L1-L3",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 3,
+          "git_blob_sha": "192917394ab40bde11877efbf39f20b1fba0d193",
+          "snapshot_sha256": "f44d20b150c92b2afd8ec722a159d466d1857e820436e7bce61d15958970eaf2"
+        }
+      ],
+      "assessment": "The 336 WDI questions are demonstrably deterministic two-template outputs, and original 28 legacy question texts are now present. The provenance of manual authoring/editing of those 28 remains undocumented beyond inherited status.",
+      "closure": "Report the two-template WDI construction exactly, and obtain or acknowledge the missing legacy authoring/review history.",
+      "initial_local_status": {
+        "status": "unavailable",
+        "study_a_status": "unavailable",
+        "study_b_status": null
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.2.5",
+      "expert_section": "3.2",
+      "requirement": "Explain and demonstrate verification of questions and reference answers",
+      "force": "required",
+      "kind": "validation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 49,
+          "line_end": 74
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 127
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 303
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 23
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 41,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L41-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 49,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L49-L64",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 64,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 55,
+          "line_end": 68
+        }
+      ],
+      "assessment": "The 168 WDI values and all 336 WDI reference rows now match saved response bodies and the documented half-up rounding rule. This is snapshot verification; legacy factual claims and B semantic/reference review still lack independent human adjudication.",
+      "closure": "Preserve the distinction between source-snapshot checks and independent factual/semantic review; perform and retain genuine review where required.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.2.6",
+      "expert_section": "3.2",
+      "requirement": "State whether inherited documents and trust labels were re-audited",
+      "force": "required",
+      "kind": "validation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": null,
+      "evidence": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 250,
+          "line_end": 258
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 329
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 45,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L45-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 63,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L63-L67",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 67,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        }
+      ],
+      "assessment": "The repository explicitly states inherited documents/labels were not independently re-audited. The requested disclosure is available; the re-audit itself has not been performed.",
+      "closure": "State this directly in the article and response. If stronger legacy-truth claims are desired, obtain real independent checks of the now-available 56 documents.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": null
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.2.7",
+      "expert_section": "3.2",
+      "requirement": "Make source-document, chunk, and question relationships traceable",
+      "force": "required",
+      "kind": "documentation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 100,
+          "line_end": 110
+        },
+        {
+          "path": "/workspace/revision/experiment/clean_documents.json",
+          "line_start": 3,
+          "line_end": 9
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 33
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L4",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 4,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 65,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L65-L100",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 100,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 68
+        }
+      ],
+      "assessment": "All committed source/doc/chunk/question/attack joins are present and valid. The repository data audit reconstructed the canonical tables field-for-field from legacy inputs plus saved WDI responses.",
+      "closure": "Publish the traceable mapping and source definitions without calling the input reconstruction a replay of the old outcome archive.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.2.8",
+      "expert_section": "3.2",
+      "requirement": "Account for correlated question formulations and shared facts in uncertainty",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 73
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 167
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248,
+          "line_end": 250
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 307
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 124,
+          "line_end": 136
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 16,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L16",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 49,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L49-L64",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 64,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        }
+      ],
+      "assessment": "Fact/indicator family and split fields now exist, making the 168-fact/336-question dependence explicit. Historical outcome rows remain missing, so cluster-aware historical uncertainty cannot be independently recalculated.",
+      "closure": "Use available fact/family joins in a future authorized analysis and retain conditional/shared-corpus limits for B; do not treat 364 or 21,840 rows as independent facts.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "partially_addressed",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.3.1",
+      "expert_section": "3.3",
+      "requirement": "Release all 104 historical target questions",
+      "force": "required",
+      "kind": "documentation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L6",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 6,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 51,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L51-L55",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 55,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        }
+      ],
+      "assessment": "The pinned canonical inputs now provide all 104 target questions. Availability and structural joins are verified; an archived principal-run manifest associating these exact bytes with its results is still not present in the inspected commit.",
+      "closure": "Link the actual committed material in the revised data/attack description. Verify historical run association before claiming recovery of the original 21,840-response evidence.",
+      "initial_local_status": {
+        "status": "unavailable",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.3.2",
+      "expert_section": "3.3",
+      "requirement": "Release the correct answer for each historical target",
+      "force": "required",
+      "kind": "documentation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 4,
+          "line_end": 7
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L6",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 6,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        }
+      ],
+      "assessment": "The pinned canonical inputs now provide the correct reference answer for each committed target. Availability and structural joins are verified; an archived principal-run manifest associating these exact bytes with its results is still not present in the inspected commit.",
+      "closure": "Link the actual committed material in the revised data/attack description. Verify historical run association before claiming recovery of the original 21,840-response evidence.",
+      "initial_local_status": {
+        "status": "unavailable",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.3.3",
+      "expert_section": "3.3",
+      "requirement": "Release the attacker-selected false value for each historical target",
+      "force": "required",
+      "kind": "documentation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 5,
+          "line_end": 7
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        }
+      ],
+      "assessment": "The pinned canonical inputs now provide the designated false value for each of the 104 attacks. Availability and structural joins are verified; an archived principal-run manifest associating these exact bytes with its results is still not present in the inspected commit.",
+      "closure": "Link the actual committed material in the revised data/attack description. Verify historical run association before claiming recovery of the original 21,840-response evidence.",
+      "initial_local_status": {
+        "status": "unavailable",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.3.4",
+      "expert_section": "3.3",
+      "requirement": "Release the complete text of every historical poison passage",
+      "force": "required",
+      "kind": "documentation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/insertions.json",
+          "line_start": 2,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        }
+      ],
+      "assessment": "The pinned canonical inputs now provide the complete text of all 104 committed poison passages. Availability and structural joins are verified; an archived principal-run manifest associating these exact bytes with its results is still not present in the inspected commit.",
+      "closure": "Link the actual committed material in the revised data/attack description. Verify historical run association before claiming recovery of the original 21,840-response evidence.",
+      "initial_local_status": {
+        "status": "unavailable",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.3.5",
+      "expert_section": "3.3",
+      "requirement": "Provide the original-source identifier linked to each historical attack",
+      "force": "required",
+      "kind": "documentation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 106,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L4",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 4,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L6",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 6,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 54
+        }
+      ],
+      "assessment": "The pinned canonical inputs now provide attack-to-question-to-document/chunk joins. Availability and structural joins are verified; an archived principal-run manifest associating these exact bytes with its results is still not present in the inspected commit.",
+      "closure": "Link the actual committed material in the revised data/attack description. Verify historical run association before claiming recovery of the original 21,840-response evidence.",
+      "initial_local_status": {
+        "status": "unavailable",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.3.6",
+      "expert_section": "3.3",
+      "requirement": "Provide trust labels used for each attack condition",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 33,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/experiment/insertions.json",
+          "line_start": 4,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 53,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L53-L64",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 64,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "assessment": "All 104 committed base attacks carry untrusted/unverified labels. Per-record evidence for the historical accepted-label/repetition outcome archive is still not present in the inspected commit; B has its own reconstructible metadata-only control.",
+      "closure": "Distinguish the available base label table, the unavailable historical forged-label execution records, and the separately available B control.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.3.7",
+      "expert_section": "3.3",
+      "requirement": "Explain the attack-generation process",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 143,
+          "line_end": 145
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 29,
+          "line_end": 35
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 94,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 84,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L84-L100",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 100,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/attacks/poison_generator.py",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/attacks/poison_generator.py#L3-L16",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 16,
+          "git_blob_sha": "4a1a0ffc5f982bd48e170944a993486e252138b2",
+          "snapshot_sha256": "53ccb8396220731a6650b79cd9f48cb15f83c1557eb2a0c025f26f23e744a4bb"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/legacy/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/legacy/poisoned_passages.csv#L1-L3",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 3,
+          "git_blob_sha": "09979d050292a45c7428d1756f166708bc8c6413",
+          "snapshot_sha256": "4c8382f5370832a3f6425a69032bfac62bae97ed44d0f04633212e37f4aa80b5"
+        }
+      ],
+      "assessment": "Generation code now specifies 84 WDI attacks, the 0.83 false-value rule, correction wording, and seed. The original 20 poison texts exist but a contemporaneous manual authoring/review log is not supplied.",
+      "closure": "Describe the automatic and inherited components separately; do not present a current generator docstring as proof of how every legacy passage was written.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.3.8",
+      "expert_section": "3.3",
+      "requirement": "Describe attack length, structure, vocabulary, and similarity to clean material",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 143,
+          "line_end": 145
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 29,
+          "line_end": 35
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 33
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 53,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L53-L55",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 55,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        }
+      ],
+      "assessment": "All attack texts can now be inspected and their actual length/lexical features measured. Dataset documentation explains the synthetic correction style, but no complete empirical length/similarity/realism analysis is yet in the manuscript.",
+      "closure": "Derive descriptive features from the pinned texts and report the synthetic attack boundary; a matched 120-word B template is not the same as the 104-passage A pool.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.4.1",
+      "expert_section": "3.4",
+      "requirement": "Explain exact answer-value scoring with examples",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 75
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 36,
+          "line_end": 49
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 88,
+          "line_end": 102
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/evaluation/metrics.py",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/evaluation/metrics.py#L1-L68",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 68,
+          "git_blob_sha": "a5c2eafd5c69c2349ed5f782526efd0996e00271",
+          "snapshot_sha256": "2cec48fd4a2f8de320807ab8d23b7ad923c0364beb4c4acba767ee3634796972"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 75,
+          "line_end": 90
+        }
+      ],
+      "assessment": "Current repository scoring code now exists and explicitly documents lexical containment, numeric boundaries, ambiguity, and strict-match companions. It is not yet established as the exact historical scorer; worked examples are still absent from the main article.",
+      "closure": "Add traceable examples and distinguish current repository scorer, historical scorer provenance, and B evaluator rather than merging their implementations.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.4.2",
+      "expert_section": "3.4",
+      "requirement": "Specify numeric, year, unit, decimal, and format normalization",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 36,
+          "line_end": 49
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 75
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 344,
+          "line_end": 349
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/evaluation/metrics.py",
+          "line_start": 23,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/evaluation/metrics.py#L23-L68",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 68,
+          "git_blob_sha": "a5c2eafd5c69c2349ed5f782526efd0996e00271",
+          "snapshot_sha256": "2cec48fd4a2f8de320807ab8d23b7ad923c0364beb4c4acba767ee3634796972"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 70,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L70-L84",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 84,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        }
+      ],
+      "assessment": "The committed scorer documents hedge/parenthesis stripping, comma/currency normalization, percent/numeric boundaries, and mixed-value handling. It still does not adjudicate negation, entity, period, units, or endorsement; B has a distinct decimal-token implementation.",
+      "closure": "Document each evaluator version and supported formats; validate semantic/unit/date cases with genuine review before promoting lexical output rates to factual accuracy.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.4.3",
+      "expert_section": "3.4",
+      "requirement": "Recheck results against references with executable scoring",
+      "force": "required",
+      "kind": "validation",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 107
+        },
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "line_start": 7
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 3,
+          "line_end": 24
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 59,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L59-L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 69,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "assessment": "The local Study B audit independently reconstructed all 1,280 contexts/payloads and rescored saved outputs without arithmetic disagreement. The principal historical 21,840 raw response archive is still not present in the inspected commit; current inputs/code do not reproduce those old outputs by themselves.",
+      "closure": "Retain B’s independent offline audit. Recover the historical run manifest, response rows, and code pin for A, or clearly retain A as unreplayed historical evidence.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.4.4",
+      "expert_section": "3.4",
+      "requirement": "Show correct, incorrect, and ambiguous automatic-scoring examples",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 242
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 8
+        },
+        {
+          "path": "/workspace/revision/experiment/posthoc_output_diagnostics.json",
+          "line_start": 1,
+          "line_end": 8
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "assessment": "The research-stage offline B audit now supplies concrete examples for numeric-match/UNKNOWN, nonliteral abstention, numeric-surface named entities, qualifier loss, and reference ambiguity. These have not been incorporated into the unchanged manuscript or independently human-adjudicated. Principal A output cases remain absent.",
+      "closure": "Use the traceable audit cases in the later authorized paper/report revision, distinguish automated/assistant analysis from human review, and preserve the frozen primary scores.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false,
+        "research_audit_context_updated": true
+      }
+    },
+    {
+      "id": "3.4.5",
+      "expert_section": "3.4",
+      "requirement": "Compare a human-reviewed sample with automatic judgments",
+      "force": "optional_where_possible",
+      "kind": "validation",
+      "status": "unsupported",
+      "study_a_status": "unavailable",
+      "study_b_status": "unsupported",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 171
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 23
+        },
+        {
+          "path": "/workspace/revision/experiment/HUMAN_REVIEW_INSTRUCTIONS.md",
+          "line_start": 1,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/revision/experiment/human_review_blinded.csv",
+          "line_start": 1,
+          "line_end": 2
+        }
+      ],
+      "assessment": "All 376 review rows contain blank reviewer and adjudication fields; templates are not judgments. No agreement or human/automatic error estimate exists.",
+      "closure": "Obtain actual independent human labels under a declared sampling/blinding protocol, adjudicate disagreements, and report agreement and automatic-score error rates. Do not substitute AI labels.",
+      "initial_local_status": {
+        "status": "unsupported",
+        "study_a_status": "unavailable",
+        "study_b_status": "unsupported"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.4.6",
+      "expert_section": "3.4",
+      "requirement": "Separate correct-source retrieval, answer selection, and generative answer correctness",
+      "force": "required",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 99,
+          "line_end": 106
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 291,
+          "line_end": 293
+        }
+      ],
+      "assessment": "The final article distinguishes extractive and generative systems, evidence recall, exposure, value production, prevention, and restoration; it does not call value matching independent semantic correctness.",
+      "closure": "Preserve these outcome names and denominators in the next report and analysis.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.5.1",
+      "expert_section": "3.5",
+      "requirement": "Analyze retrieval, answer selection, and attack success separately",
+      "force": "required",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217,
+          "line_end": 242
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 265
+        }
+      ],
+      "assessment": "Separate outcomes and paired transitions are reported for both studies with scope labels.",
+      "closure": "Retain this separation; historical measurement remains reported evidence, not a newly reproduced result.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.5.2",
+      "expert_section": "3.5",
+      "requirement": "Explain why more gold recall can coexist with lower answer accuracy",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 242
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 265
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 291,
+          "line_end": 293
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "assessment": "The paper reports divergent recall/value outcomes; the new offline B audit reconstructs cases and payloads that clarify several mechanisms. Historical principal A context/output records are still not present, so its mechanism claims cannot be independently case-replayed.",
+      "closure": "Integrate reviewed B cases into the later discussion, retain causal and cross-study limits, and recover the principal A archive for historical case verification.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "partially_addressed",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false,
+        "research_audit_context_updated": true
+      }
+    },
+    {
+      "id": "3.5.3",
+      "expert_section": "3.5",
+      "requirement": "Analyze failure cases rather than only endpoint numbers",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217,
+          "line_end": 242
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1,
+          "line_end": 8
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "assessment": "B record-level evidence has now received a separate offline computational/assistant failure analysis, but the unchanged main article still contains mainly aggregate counts and no completed human case review. Principal A raw outcome cases are absent from the inspected commit.",
+      "closure": "In the later authorized revision, add the real case taxonomy, evidence/answer IDs, and bounded interpretation; obtain actual human labels for semantic claims.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false,
+        "research_audit_context_updated": true
+      }
+    },
+    {
+      "id": "3.5.4",
+      "expert_section": "3.5",
+      "requirement": "Bound conclusions and do not interpret zero ASR as universal immunity",
+      "force": "required",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 153
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 315
+        }
+      ],
+      "assessment": "The article calls the rejection gate an assumed boundary and limits claims to tested labels, one model, a numerical subset, and a fixed corpus.",
+      "closure": "Keep zero as zero observed scored successes under the supplied conditions, not certified or population robustness.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.6.1",
+      "expert_section": "3.6",
+      "requirement": "Explain how trust labels are assigned",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 104,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 71,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L71-L76",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 76,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 45,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L45-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 65,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L65-L67",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 67,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        }
+      ],
+      "assessment": "WDI labels are assigned high/verified after matching stored API snapshots, while legacy labels are inherited. The code and card make the assignment rule inspectable, but this is not an operational or independent source-certification process.",
+      "closure": "Explain label assignment using the actual builder and inherited status; reserve stronger governance claims for documented institutional review.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "3.6.2",
+      "expert_section": "3.6",
+      "requirement": "Identify the person or institution authorized to approve documents",
+      "force": "required",
+      "kind": "documentation",
+      "status": "unsupported",
+      "study_a_status": "unsupported",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 104,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 45,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L45-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 70,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L70-L84",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 84,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        }
+      ],
+      "assessment": "No named authorized certifying office, approval workflow, or genuine ingestion audit trail is established by repository ownership or document metadata. Experimental label rules are available, not institutional certification.",
+      "closure": "State that labels are experiment inputs. If operational claims remain, obtain actual authority/workflow evidence rather than inferring it from affiliation or GitHub authorship.",
+      "initial_local_status": {
+        "status": "unsupported",
+        "study_a_status": "unsupported",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.6.3",
+      "expert_section": "3.6",
+      "requirement": "Clarify whether metadata is backed by authentication, audit logging, and access control",
+      "force": "required",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 70,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L70-L84",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 84,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 63,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L63-L65",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 65,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        }
+      ],
+      "assessment": "Repository documentation and code make the idealized metadata predicate explicit; no authentication/ACL/signature mechanism is claimed or tested. This closes the disclosure question, not operational security.",
+      "closure": "Preserve this boundary in both study descriptions.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "partially_addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.6.4",
+      "expert_section": "3.6",
+      "requirement": "Include the gate limitation in discussion and conclusion",
+      "force": "required",
+      "kind": "interpretation",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 315
+        }
+      ],
+      "assessment": "The dependence on labels and metadata-only compromise are expressly discussed.",
+      "closure": "Retain the stated authority boundary and separate authenticity from truth.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.6.5",
+      "expert_section": "3.6",
+      "requirement": "Where possible test unauthorized metadata modification and its impact",
+      "force": "optional_where_possible",
+      "kind": "experiment",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        }
+      ],
+      "assessment": "A matched accepted-label intervention exists for B, but it is direct experimental field modification; no actual unauthorized change against an authenticated ingestion/ACL system was attempted.",
+      "closure": "Either keep the experiment accurately named metadata compromise, or design a separate controlled ingestion-integrity test with authorization, audit logs, and pass/fail criteria.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.7.1",
+      "expert_section": "3.7",
+      "requirement": "Document target selection at each attack budget",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 321,
+          "line_end": 332
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 74,
+          "line_end": 87
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 27,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/attacks/poison_generator.py",
+          "line_start": 120,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/attacks/poison_generator.py#L120-L137",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 137,
+          "git_blob_sha": "4a1a0ffc5f982bd48e170944a993486e252138b2",
+          "snapshot_sha256": "53ccb8396220731a6650b79cd9f48cb15f83c1557eb2a0c025f26f23e744a4bb"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/config.yaml",
+          "line_start": 38,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/config.yaml#L38-L40",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 40,
+          "git_blob_sha": "46b67458d21d24edb81579a5a8d27b47793fd46a",
+          "snapshot_sha256": "32c3ef0163fe2a5961c287b614ccdd8ea3705dad0cc8b646a85fa15eacd5df90"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 55,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L55-L59",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 59,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/VALIDATION.md#L25-L27",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 27,
+          "git_blob_sha": "87c592c1e0e50f6539ce32eea71fa0f3abb5ccac",
+          "snapshot_sha256": "916eb88d8eab7f0ecb82e3335af78ba43ec47337a81bcb695a07ad0919a1814e"
+        }
+      ],
+      "assessment": "The current committed selection function uses one seeded pandas permutation and nested prefixes, with all 104 base attacks available. Original main-run selection manifests are still not present in the inspected commit; current default budgets differ from the historical grid.",
+      "closure": "Pin data/code/config and verify exact historical memberships if recovered. Do not silently rerun the current 0/10/20/50/104 default as the historical 0/10/30/60/104 experiment.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.7.2",
+      "expert_section": "3.7",
+      "requirement": "Separate attacked-target coverage, success count, and success rate among attacked targets",
+      "force": "required",
+      "kind": "analysis",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 73,
+          "line_end": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 131
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        }
+      ],
+      "assessment": "A all-target and injected-target rates and the coverage bound are stated; B holds positive-dose coverage at 64/64 and names denominators.",
+      "closure": "Carry the same denominator accounting into any future dose sweep.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.7.3",
+      "expert_section": "3.7",
+      "requirement": "Add fixed-target evaluation across multiple attack doses",
+      "force": "recommended",
+      "kind": "experiment",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 30,
+          "line_end": 31
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 309,
+          "line_end": 311
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 24,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L24-L30",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 30,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/results/targeted-mode-validation/summary.json",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/results/targeted-mode-validation/summary.json#L3-L35",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 35,
+          "git_blob_sha": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "snapshot_sha256": "8fdb96bfbc3a2a1f919a8bf788d71edc3214e471d771f207eba0a9f8f9e1b34a"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/validate_targeted.py",
+          "line_start": 19,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/validate_targeted.py#L19-L38",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 38,
+          "git_blob_sha": "89c6561741daea62624118be3cee05adf07a46d2",
+          "snapshot_sha256": "d107338ba555c04e148d516a3d7c163f8890b1705d65516f8df5e89b1a0e3089"
+        }
+      ],
+      "assessment": "Current repeated-question tooling and a targeted-mode validation at 0/10 exist, but neither is the original seven-dose/104-target repetition archive or a fixed-target multi-dose real-LLM experiment. B remains single positive dose.",
+      "closure": "Specify a separately frozen multi-dose protocol or recover the original repetition evidence. Do not equate UI capability or the 1,092-row v2 diagnostic with the missing original experiment.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.7.4",
+      "expert_section": "3.7",
+      "requirement": "Document seed values, use, and influence on selection",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 322,
+          "line_end": 332
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 269,
+          "line_end": 273
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 32,
+          "line_end": 50
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 22,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L22-L28",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 28,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/attacks/poison_generator.py",
+          "line_start": 120,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/attacks/poison_generator.py#L120-L137",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 137,
+          "git_blob_sha": "4a1a0ffc5f982bd48e170944a993486e252138b2",
+          "snapshot_sha256": "53ccb8396220731a6650b79cd9f48cb15f83c1557eb2a0c025f26f23e744a4bb"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/requirements-tested.txt",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/requirements-tested.txt#L1-L10",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 10,
+          "git_blob_sha": "6b6c58cffa8d053ef36ea99a04245443f4899a5d",
+          "snapshot_sha256": "d3f106019f8792eea14836ccf2725de1e0aaf79f94c9b7411bc333b4bfc8ee83"
+        }
+      ],
+      "assessment": "Selection seeds and their exact use are now documented in current code; bootstrap seeds and generation randomness remain separate. The exact principal-run metadata/selection outputs are still not present in the inspected commit.",
+      "closure": "Retain explicit seed roles and software versions; match the historical configuration before any claim of exact historical seed replication.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.8.1",
+      "expert_section": "3.8",
+      "requirement": "Analyze cases with retrieved correct evidence but wrong final answers",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 122
+        },
+        {
+          "path": "/workspace/revision/experiment/contexts.jsonl",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "assessment": "B reports all-support/poison/false coexistence and the offline audit now reconstructs every context plus selected semantic-warning cases. This is stronger traceability, not a completed independent human review or an A historical replay.",
+      "closure": "Present matched evidence-linked cases and distinguish computational verification from factual/endorsement adjudication.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false,
+        "research_audit_context_updated": true
+      }
+    },
+    {
+      "id": "3.8.2",
+      "expert_section": "3.8",
+      "requirement": "Analyze exposed poison when the attack nevertheless fails",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/experiment/summary.csv",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "assessment": "B exposure and outputs are independently replayed, with abstention and other-error examples identified in the offline audit. A principal outcome traces remain absent; semantic labeling of all exposed-but-unsuccessful cases is unfinished.",
+      "closure": "Use the existing real trace cases and a declared classification protocol; separate correct answers, abstention, other error, and non-endorsement rather than treating every non-success as safety.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false,
+        "research_audit_context_updated": true
+      }
+    },
+    {
+      "id": "3.8.3",
+      "expert_section": "3.8",
+      "requirement": "Analyze attack prevention without correct-answer restoration",
+      "force": "required",
+      "kind": "analysis",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        },
+        {
+          "path": "/workspace/revision/experiment/paired_defense_outcomes.csv",
+          "line_start": 1,
+          "line_end": 7
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "assessment": "B paired prevention/restoration transitions are independently reproduced in the research audit. The main paper states the counts, but human interpretation of why specific prevented cases remain incorrect is not complete.",
+      "closure": "Add traceable paired case examples in the later report and retain the difference between prevention, restoration, and newly successful attacks.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false,
+        "research_audit_context_updated": true
+      }
+    },
+    {
+      "id": "3.8.4",
+      "expert_section": "3.8",
+      "requirement": "Analyze how changed trust labels change attack outcomes",
+      "force": "required",
+      "kind": "analysis",
+      "status": "addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 148,
+          "line_end": 155
+        }
+      ],
+      "assessment": "B keeps poisoned text fixed, changes only labels, and checks resulting payload equivalences. The result is explicitly conditional on synthetic labels.",
+      "closure": "Retain the matched control and clearly state that it does not demonstrate compromise of a real source-approval service.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.8.5",
+      "expert_section": "3.8",
+      "requirement": "Analyze repetition-induced changes in system behavior",
+      "force": "required",
+      "kind": "experiment",
+      "status": "unavailable",
+      "study_a_status": "unavailable",
+      "study_b_status": "unsupported",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 31
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 309,
+          "line_end": 311
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/results/targeted-mode-validation/summary.json",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/results/targeted-mode-validation/summary.json#L3-L35",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 35,
+          "git_blob_sha": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "snapshot_sha256": "8fdb96bfbc3a2a1f919a8bf788d71edc3214e471d771f207eba0a9f8f9e1b34a"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 26,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L26-L30",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 30,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        }
+      ],
+      "assessment": "The current repository contains repetition tooling and a separate revised-backend targeted-mode diagnostic, but the original 3,016-row repetition/label-forgery archive is still not present in the inspected commit. No B multi-dose inference was performed.",
+      "closure": "Recover the original repetition evidence or plan a separately identified prospective copy/diversity study; do not substitute the 0/10 v2 diagnostic.",
+      "initial_local_status": {
+        "status": "unavailable",
+        "study_a_status": "unavailable",
+        "study_b_status": "unsupported"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "3.8.6",
+      "expert_section": "3.8",
+      "requirement": "Present repetition as a separate protocol with complete execution and evaluation detail",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": null,
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 376,
+          "line_end": 384
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 876,
+          "line_end": 890
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/evaluation/question_comparison.py",
+          "line_start": 16,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/evaluation/question_comparison.py#L16-L65",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 65,
+          "git_blob_sha": "5702b1bc35060dc0d2710896d6c8e194c5a3f13d",
+          "snapshot_sha256": "4e596d78cb73990e6c33ffca11fd6084396baab62ff7c05aa4bbbfcebe25a815"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 26,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L26-L30",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 30,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "assessment": "The current repeated-passage algorithm and configurable level comparison are documented and inspectable. That supports a new current-version reconstruction, but not the unavailable historical repetition/forgery output record.",
+      "closure": "Keep the current tool, the September 30 targeted diagnostic, and the historical seven-dose repetition experiment separate in methods and result labels.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": null
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "4.1",
+      "expert_section": "4",
+      "requirement": "Abstract: problem, actual method, data, major results, and main limitation",
+      "force": "required",
+      "kind": "writing",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 18
+        }
+      ],
+      "assessment": "The abstract distinguishes extraction from real generation, reports both data scales, caching, key outcomes, and lack of independent semantic adjudication.",
+      "closure": "Preserve accurate scope and update it only after any new verified experiments.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "4.2",
+      "expert_section": "4",
+      "requirement": "Methods sufficiently detailed to reconstruct the entire pipeline",
+      "force": "required",
+      "kind": "documentation",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 113,
+          "line_end": 171
+        },
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 25,
+          "line_end": 74
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 55,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L55-L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 69,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 23,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L23-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13
+        }
+      ],
+      "assessment": "Canonical A inputs and current application code are now available, while exact historical completed-run reconstruction remains unestablished. Study B retrieval/payload/scoring replay has been independently checked from saved vectors; its original upstream 461-candidate source replay remains open.",
+      "closure": "Update availability wording, describe the pinned current code separately, and finish version-specific reproduction claims only where matching artifacts exist.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "4.3",
+      "expert_section": "4",
+      "requirement": "Results: precise metrics/conditions and separation of principal and supplementary experiments",
+      "force": "required",
+      "kind": "writing",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 173,
+          "line_end": 277
+        }
+      ],
+      "assessment": "B results follow RQ1–RQ4, and A historical endpoints/repetition/development pilots are separated rather than pooled.",
+      "closure": "Keep every cohort/protocol/model and denominator explicit; do not add historical row counts to B sample size.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "4.4",
+      "expert_section": "4",
+      "requirement": "Discussion: explain retrieval/attack divergence and metadata limitations",
+      "force": "required",
+      "kind": "writing",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 285,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217,
+          "line_end": 225
+        }
+      ],
+      "assessment": "Conceptual interpretation and gate limitations are clear, but deeper empirical failure-case explanations remain unfinished.",
+      "closure": "Ground the discussion in reviewed cases and causal boundaries rather than additional speculative mechanisms.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "partially_addressed",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "4.5",
+      "expert_section": "4",
+      "requirement": "Conclusion restricted to directly supported experimental claims",
+      "force": "required",
+      "kind": "writing",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 303,
+          "line_end": 315
+        }
+      ],
+      "assessment": "The conclusion distinguishes historical results, one-model numerical outcomes, label assumptions, and outstanding semantic/external validation.",
+      "closure": "Retain these limits; a more polished style must not turn bounded empirical observations into guarantees.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "5.1",
+      "expert_section": "5",
+      "requirement": "Full preparation/retrieval/reranking/filtering/scoring code",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 27,
+          "line_end": 42
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 38,
+          "line_end": 155
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 137,
+          "line_end": 243
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 183
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 75,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L75-L85",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 85,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 23,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L23-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/generation/llm_interface.py",
+          "line_start": 39,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/generation/llm_interface.py#L39-L48",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 48,
+          "git_blob_sha": "cb0dff0dd1a178bc8250b9af2c22806dec50ce80",
+          "snapshot_sha256": "b302d09bfde325606262e3d1c385c696686b3df33055753f1d2cacffcf964c63"
+        }
+      ],
+      "assessment": "The public pinned snapshot supplies the current preparation, loading, chunking, retrieval, defense, generation, and scoring code plus historical backup subsets. Exact checksum-matched principal-run source is still not established.",
+      "closure": "Provide commit-pinned source links and preserve the current-vs-historical distinction; obtain original main-run source hashes/modules for exact replay.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "5.2",
+      "expert_section": "5",
+      "requirement": "Original documents, chunks, questions, and reference answers",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 30,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/revision/experiment/clean_documents.json",
+          "line_start": 1,
+          "line_end": 9
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 1,
+          "line_end": 33
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/dataset_manifest.json",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/dataset_manifest.json#L3-L8",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 8,
+          "git_blob_sha": "ede2759ce3f790b7b336efdea05a7703b8be54c5",
+          "snapshot_sha256": "d81ab5806d88db99dd4c78feaef289fa49a72f12139a72a5320849f541350388"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/dataset_manifest.json",
+          "line_start": 95,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/dataset_manifest.json#L95-L102",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 102,
+          "git_blob_sha": "ede2759ce3f790b7b336efdea05a7703b8be54c5",
+          "snapshot_sha256": "d81ab5806d88db99dd4c78feaef289fa49a72f12139a72a5320849f541350388"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 68
+        }
+      ],
+      "assessment": "All four canonical A input tables and the legacy subset plus twelve WDI source snapshots are now present and independently reconstructed field-for-field. B selected input records remain present; the upstream full Parquet cache remains absent.",
+      "closure": "Revise data-availability wording and distribute/cite the pinned inputs. Preserve the distinction between available canonical input material and the absent historical output/run archive.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "5.3",
+      "expert_section": "5",
+      "requirement": "Complete attack passages, IDs, targets, and desired false answers",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/insertions.json",
+          "line_start": 1,
+          "line_end": 26
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 148
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L6",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 6,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 54
+        }
+      ],
+      "assessment": "The 104 canonical A poison records now include IDs, targets, correct/false answers, complete texts, and base labels, with valid joins. B’s independent three-pool material also remains available.",
+      "closure": "Link the actual commit-pinned attack table; verify principal-run identity separately and retain the historical accepted-label execution gap.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "5.4",
+      "expert_section": "5",
+      "requirement": "Complete experimental configuration and seeds",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 3,
+          "line_end": 52
+        },
+        {
+          "path": "/workspace/revision/experiment/generation_freeze.json",
+          "line_start": 2,
+          "line_end": 12
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/config.yaml",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/config.yaml#L1-L49",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 49,
+          "git_blob_sha": "46b67458d21d24edb81579a5a8d27b47793fd46a",
+          "snapshot_sha256": "32c3ef0163fe2a5961c287b614ccdd8ea3705dad0cc8b646a85fa15eacd5df90"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 55,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L55-L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 69,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "assessment": "Current config, seeds, runner, package versions, and actual-backend export logic are available. The main historical run’s effective config and manifests are still not present in the inspected commit, and current budgets/backends differ.",
+      "closure": "Cite current configuration as current; recover the run-specific historical config/source/input manifest before claiming exact 21,840-grid reconstruction.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "5.5",
+      "expert_section": "5",
+      "requirement": "Raw per-question/per-defense/per-dose outcomes",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 36,
+          "line_end": 39
+        },
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "line_start": 3,
+          "line_end": 7
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 59,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L59-L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 69,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/results/targeted-mode-validation/summary.json",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/results/targeted-mode-validation/summary.json#L3-L35",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 35,
+          "git_blob_sha": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "snapshot_sha256": "8fdb96bfbc3a2a1f919a8bf788d71edc3214e471d771f207eba0a9f8f9e1b34a"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "assessment": "The repository tree commits a revised targeted-mode records.json/summary/pool, while the original principal 21,840 rows and 3,016 repetition/forgery rows are not present in the inspected commit. B’s 376 raw responses/1,280 condition rows remain locally available.",
+      "closure": "Acquire the committed diagnostic records separately if auditing that diagnostic; do not label them as original principal outputs. Recover the original archives or explicitly retain an unreplayed historical status.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "5.6",
+      "expert_section": "5",
+      "requirement": "Executable Recall/accuracy/ASR/exposure evaluator",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 36,
+          "line_end": 55
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 155
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 175,
+          "line_end": 188
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/evaluation/metrics.py",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/evaluation/metrics.py#L1-L68",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 68,
+          "git_blob_sha": "a5c2eafd5c69c2349ed5f782526efd0996e00271",
+          "snapshot_sha256": "2cec48fd4a2f8de320807ab8d23b7ad923c0364beb4c4acba767ee3634796972"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/evaluation/metrics.py",
+          "line_start": 112,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/evaluation/metrics.py#L112-L165",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 165,
+          "git_blob_sha": "a5c2eafd5c69c2349ed5f782526efd0996e00271",
+          "snapshot_sha256": "2cec48fd4a2f8de320807ab8d23b7ad923c0364beb4c4acba767ee3634796972"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "assessment": "An executable current-repository evaluator now exists for A-style outcomes, and B’s distinct evaluator is independently replayed. Exact principal historical scorer identity is not yet established.",
+      "closure": "Compare version-specific scoring/code hashes before applying current code to historical claims; preserve current and historical evaluator labels.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "5.7",
+      "expert_section": "5",
+      "requirement": "Software, hardware, and environment information",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/generation_freeze.json",
+          "line_start": 10,
+          "line_end": 12
+        },
+        {
+          "path": "/workspace/revision/experiment/requirements.txt",
+          "line_start": 1,
+          "line_end": 4
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 321
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 884,
+          "line_end": 887
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+          "line_start": 13,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/VALIDATION.md#L13",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "87c592c1e0e50f6539ce32eea71fa0f3abb5ccac",
+          "snapshot_sha256": "916eb88d8eab7f0ecb82e3335af78ba43ec47337a81bcb695a07ad0919a1814e"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/requirements-tested.txt",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/requirements-tested.txt#L1-L10",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 10,
+          "git_blob_sha": "6b6c58cffa8d053ef36ea99a04245443f4899a5d",
+          "snapshot_sha256": "d3f106019f8792eea14836ccf2725de1e0aaf79f94c9b7411bc333b4bfc8ee83"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 71,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L71-L73",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 73,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        }
+      ],
+      "assessment": "The repository records Windows/Python 3.13.9 and direct tested dependency versions, not a full transitive lockfile or complete hardware record. Current/source-stage environment information has improved, but original client hardware and remote-model hardware remain unestablished.",
+      "closure": "Record known version-specific environment facts without inferring historical hardware from the present host; retain unavailable fields explicitly.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "partially_addressed",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "5.8",
+      "expert_section": "5",
+      "requirement": "Data-source provenance, extraction, access dates, and verification records",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/source_dataset_metadata.json",
+          "line_start": 2,
+          "line_end": 6
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 49,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 127
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 364
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/dataset_manifest.json",
+          "line_start": 9,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/dataset_manifest.json#L9-L95",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 95,
+          "git_blob_sha": "ede2759ce3f790b7b336efdea05a7703b8be54c5",
+          "snapshot_sha256": "d81ab5806d88db99dd4c78feaef289fa49a72f12139a72a5320849f541350388"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/fetch_worldbank.py",
+          "line_start": 34,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/fetch_worldbank.py#L34-L56",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 56,
+          "git_blob_sha": "d237b3eee3a4cb5014d35a6052caf813dbb1ba0f",
+          "snapshot_sha256": "165ad596c0c942b4145bcd21b46300622adec37b1d0cba781db1bc345118b929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 41,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L41-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 55,
+          "line_end": 68
+        }
+      ],
+      "assessment": "A source URLs, access timestamps, exact WDI response bodies, checksum manifest, extraction code, and numeric snapshot checks are now available. Legacy primary facts and labels remain unaudited; B’s external reference/semantic review remains incomplete.",
+      "closure": "Use these real provenance materials and clearly distinguish source-snapshot validation from independent factual/human validation.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "5.9",
+      "expert_section": "5",
+      "requirement": "Explain proposed versus actually executed architecture",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91,
+          "line_end": 109
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 816,
+          "line_end": 829
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 17,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L17-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 86,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L86-L96",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 96,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        }
+      ],
+      "assessment": "Current versus historical architecture is explicitly distinguished in repository documentation, and optional neural/API paths are documented. The formal original proposal and exact principal source pin remain unestablished.",
+      "closure": "Reference the pinned workbench and historical paper separately; obtain the original proposal before treating inferred intentions as an independently reviewed design.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "partially_addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "5.10",
+      "expert_section": "5",
+      "requirement": "Documentation for trust-label and repetition supplementary experiments",
+      "force": "requested_artifact",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 69,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/results/targeted-mode-validation/summary.json",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/results/targeted-mode-validation/summary.json#L3-L35",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 35,
+          "git_blob_sha": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "snapshot_sha256": "8fdb96bfbc3a2a1f919a8bf788d71edc3214e471d771f207eba0a9f8f9e1b34a"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 26,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L26-L30",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 30,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "assessment": "The repository supplies targeted-mode diagnostic artifacts and repetition tooling. It does not supply the original principal/repetition/forged-label archives; B has its own metadata-only control and no repetition sweep.",
+      "closure": "Give each supplementary protocol its own data/code/config/result identifiers and state exactly which records are available at which stage.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "5.11",
+      "expert_section": "5",
+      "requirement": "Explain publication/licensing restrictions and share publishable materials",
+      "force": "conditional",
+      "kind": "artifact",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 76,
+          "line_end": 93
+        },
+        {
+          "path": "/workspace/revision/experiment/source_dataset_metadata.json",
+          "line_start": 6
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 329
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 63,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L63-L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 69,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 41,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L41-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "assessment": "A public software/input repository is now identified, with World Bank source terms and inherited verification limits documented. Publication of a repo does not establish independent legacy accuracy, publish missing run archives, or place local B outputs in that repo.",
+      "closure": "Update public-availability links and source-specific terms, while keeping B’s private/local package status and unresolved legacy rights/verification explicit.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "6.1",
+      "expert_section": "6",
+      "requirement": "First clarify the real methodology and used components",
+      "force": "proposed_sequence",
+      "kind": "workflow",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 87,
+          "line_end": 171
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 816,
+          "line_end": 829
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 5,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L5-L57",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 57,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 23,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L23-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "assessment": "The research stage can now ground methodology in actual canonical inputs, builders, current code, and commit-pinned documentation. The original proposal and exact principal historical runtime remain distinct unresolved records.",
+      "closure": "Begin the plan with the stage/version inventory and update any stale blanket claim that all A data/code are unavailable.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "partially_addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": true
+      }
+    },
+    {
+      "id": "6.2",
+      "expert_section": "6",
+      "requirement": "Then recompute and reproduce existing results from code and raw data",
+      "force": "proposed_sequence",
+      "kind": "workflow",
+      "status": "partially_addressed",
+      "study_a_status": "partially_addressed",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 334
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 107
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 340,
+          "line_end": 342
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 68
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "assessment": "Canonical input reconstruction has been verified read-only, and B saved-context/output analysis has been independently replayed. The original 21,840 response/code/config archive is still not present in the inspected commit; a fresh current-code run would be a new result, not proof of historical reproduction.",
+      "closure": "Preserve independent audit receipts and recover exact original run evidence before certifying its figures. Any later rerun must specify its own code/config/data stage.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "reason": "New commit-pinned repository evidence; previous local-only assessment retained in initial_local_mapping.json.",
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "evidence_stages": [
+          "canonical_inputs",
+          "current_workbench",
+          "historical_completed_runs",
+          "local_study_b"
+        ],
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "6.3",
+      "expert_section": "6",
+      "requirement": "Then improve evaluation, review a human sample, and report justified uncertainty",
+      "force": "proposed_sequence",
+      "kind": "workflow",
+      "status": "partially_addressed",
+      "study_a_status": "unavailable",
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 167,
+          "line_end": 171
+        },
+        {
+          "path": "/workspace/revision/experiment/HUMAN_REVIEW_INSTRUCTIONS.md",
+          "line_start": 15,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 23
+        }
+      ],
+      "assessment": "Executable numeric scoring and conditional bootstrap exist; genuine human labels, semantic-score comparison, and repeated-generation uncertainty do not.",
+      "closure": "Predeclare the review sample/rubric, obtain authentic human judgments, preserve current scores, and distinguish human disagreement, shared-corpus dependence, and generation variability.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": "unavailable",
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "6.4",
+      "expert_section": "6",
+      "requirement": "Then perform real-LLM supplementary experiments under matched conditions and fixed-target doses",
+      "force": "proposed_sequence",
+      "kind": "workflow",
+      "status": "partially_addressed",
+      "study_a_status": null,
+      "study_b_status": "partially_addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 157,
+          "line_end": 169
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 30,
+          "line_end": 31
+        }
+      ],
+      "assessment": "The real-LLM matched-control experiment is complete for one dose; fixed-target multi-dose evaluation and deeper failure analysis are not complete.",
+      "closure": "Specify the additional contrast and stopping/scoring rules before new outputs; treat it as a separate continuation, not a retroactive repair or historical replay.",
+      "initial_local_status": {
+        "status": "partially_addressed",
+        "study_a_status": null,
+        "study_b_status": "partially_addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    },
+    {
+      "id": "6.5",
+      "expert_section": "6",
+      "requirement": "Finally rewrite abstract/discussion/conclusion from verified results and remove unsupported claims",
+      "force": "proposed_sequence",
+      "kind": "workflow",
+      "status": "addressed",
+      "study_a_status": "addressed",
+      "study_b_status": "addressed",
+      "evidence": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 18
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 285,
+          "line_end": 315
+        }
+      ],
+      "assessment": "The current text is materially bounded and labels open validation tasks, although future results may require another rewrite.",
+      "closure": "Only update claims after the relevant evidence exists; preserve actual limitations in both the paper and response report.",
+      "initial_local_status": {
+        "status": "addressed",
+        "study_a_status": "addressed",
+        "study_b_status": "addressed"
+      },
+      "repository_update": {
+        "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+        "assessment": "No status change: repository discovery does not close this requested interpretation, human-validation, historical-outcome, or new-experiment requirement.",
+        "manuscript_update_needed": false
+      }
+    }
+  ],
+  "additional_editorial_observations": [
+    {
+      "path": "/workspace/revision/Revised_Manuscript.md",
+      "line": 372,
+      "finding": "Reference [14] ends with the stray page-header text RAG SECURITY RESEARCH, apparently carried over from PDF text extraction.",
+      "scope": "Copyediting issue only; not a new empirical finding. No source file was changed."
+    }
+  ],
+  "updated_at_utc": "2026-10-25T12:07:24.760151+00:00",
+  "assessment_history": [
+    {
+      "stage": "initial_local_only",
+      "path": "/workspace/research_phase/initial_local_mapping.json",
+      "sha256": "f14eebe439c9a022096ff8a2468c887f4df148ffae640107df96a6131cd44317",
+      "scope": "Only locally supplied article/revision artifacts; no repository had yet been identified."
+    },
+    {
+      "stage": "repo_aware",
+      "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+      "snapshot_manifest": "/workspace/research_phase/repository_snapshot_manifest.json",
+      "scope": "117 text blobs plus separately verified historical PDF; old completed benchmark output archives not present in inspected commit."
+    }
+  ],
+  "repository_provenance": {
+    "repository": "rizwanullahmuahed2-ui/RAG-Security-Lab",
+    "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+    "tree": "93825d8c8155bab368560fa3c57d466e532fb48a",
+    "source": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/tree/6f76858df91277e4b962ee94b4286a25cfe08d4d",
+    "snapshot_manifest": "/workspace/research_phase/repository_snapshot_manifest.json",
+    "text_file_count": 117,
+    "git_blob_and_sha256_verification": "All 117 local text files independently match connector manifest blob SHA-1 and SHA-256.",
+    "original_input_audit": "/workspace/research_phase/repo_audit/original_data_audit.json",
+    "diagnostic_hash_audit": "/workspace/research_phase/repo_audit/diagnostic_source_hash_comparison.json",
+    "version_identification": "/workspace/research_phase/version_identification.json",
+    "canonical_counts": {
+      "documents": 224,
+      "chunks": 225,
+      "questions": 364,
+      "poisoned_passages": 104
+    },
+    "legacy_counts": {
+      "documents": 56,
+      "chunks": 21,
+      "questions": 28,
+      "poisoned_passages": 20
+    },
+    "canonical_csv_hashes_match": true,
+    "all_structural_joins_valid": true,
+    "full_input_field_reconstruction_verified": true,
+    "wdi_response_snapshots": 12,
+    "wdi_nonmissing_observations": 168,
+    "wdi_question_references_verified_against_saved_values": 336,
+    "legacy_independent_factual_reaudit": false,
+    "independent_human_judgments_completed": 0,
+    "targeted_diagnostic_current_csv_byte_sha_mismatches": 4,
+    "all_four_match_crlf_variants": true,
+    "targeted_diagnostic_changed_current_source_modules": 6,
+    "principal_completed_run_archive": "Not present in the inspected commit; results/runs ignored and historical directories explicitly not committed.",
+    "historical_repetition_forged_label_raw_archive": "Not present in the inspected commit.",
+    "original_proposal": "Not present in the inspected commit."
+  },
+  "artifact_stages": [
+    {
+      "id": "legacy_inputs",
+      "available": true,
+      "description": "56/21/28/20 legacy CSVs, inherited factual/label status; not an independent source re-audit."
+    },
+    {
+      "id": "expanded_canonical_inputs",
+      "available": true,
+      "description": "224/225/364/104 raw CSVs, twelve exact WDI response snapshots and deterministic builder. Input reconstruction checked, not main output replay."
+    },
+    {
+      "id": "principal_historical_run",
+      "available": false,
+      "description": "Run 20260921T061151Z_d1966106, 21,840 responses, original 0/10/30/60/104 config and checksum-matched historical code: completed archive not present in inspected commit."
+    },
+    {
+      "id": "current_workbench",
+      "available": true,
+      "description": "Current hashing-lexical-v2/extractive-evidence-v2 code; 0/10/20/50/104 defaults; optional neural/Anthropic paths are not proof of validated live generation."
+    },
+    {
+      "id": "targeted_mode_validation",
+      "available_in_repository": true,
+      "description": "Committed summary.json, records.json, synthetic_attack_pool.csv; separate revised-backend 1,092-row diagnostic. Large records.json excluded from selected text snapshot; can be fetched separately."
+    },
+    {
+      "id": "repository_manuscript",
+      "available": true,
+      "description": "Verified original 18-page PDF, SHA256 87059e66898a6aaecede4d4d8224e2de97ed045f79b822eb2d903fbd3cc7533f."
+    },
+    {
+      "id": "local_study_b",
+      "available": true,
+      "description": "64 questions/640 chunks/376 real requests/1280 rows, separate local OpenAI-backed package; not published or reproduced by the inspected repository."
+    }
+  ],
+  "publication_wording_to_revise_after_authorized_plan": [
+    {
+      "path": "/workspace/revision/Revised_Manuscript.md",
+      "line": 91,
+      "change": "Replace blanket historical-data/code unavailability with precise distinction: public canonical inputs/current workbench now available, exact completed principal archive still absent."
+    },
+    {
+      "path": "/workspace/revision/Revised_Manuscript.md",
+      "line": 329,
+      "change": "Cite the public repository for A inputs/current code and original 18-page manuscript, while preserving that local B artifacts are not published there and original run archives remain absent."
+    },
+    {
+      "path": "/workspace/revision/Revised_Manuscript.md",
+      "line": 342,
+      "change": "Retain the no-independent-historical-replay boundary; available inputs/current source are not the exact old completed run."
+    }
+  ],
+  "research_audit_addendum": {
+    "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+    "scope": "Independent local B saved-artifact reconstruction/rescoring, no new model calls, no human semantic labels.",
+    "verified": "1280 context/payload rows reconstructed and numerical verdicts matched; original frozen files preserved.",
+    "remaining_issues": "Future-run request-freeze guard, semantic/abstention/reference problems, unequal control exposure, single positive dose, and zero human judgments."
+  }
+}

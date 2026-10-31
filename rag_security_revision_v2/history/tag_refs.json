@@ -1,0 +1,22 @@
+{
+  "endpoint": "https://api.github.com/repos/rizwanullahmuahed2-ui/RAG-Security-Lab/git/refs/tags",
+  "is_error": true,
+  "payload": {
+    "content": [
+      {
+        "type": "text",
+        "text": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/git/refs#get-all-references-in-a-namespace\",\"status\":\"404\"}"
+      }
+    ],
+    "structuredContent": {
+      "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/git/refs#get-all-references-in-a-namespace\",\"status\":\"404\"}",
+      "error_code": "NOT_FOUND",
+      "error_data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/git/refs#get-all-references-in-a-namespace",
+        "status": "404"
+      }
+    },
+    "isError": true
+  }
+}

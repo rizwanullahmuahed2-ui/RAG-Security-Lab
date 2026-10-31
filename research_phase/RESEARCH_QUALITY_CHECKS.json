@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-10-25T12:31:19.423193+00:00",
+  "scope": "Research stage only; no manuscript change or new LLM call",
+  "report_pages": 11,
+  "report_tables": 3,
+  "gap_items": 67,
+  "source_catalog_entries": 18,
+  "selected_report_references": 14,
+  "all_prior_released_files_unchanged": true,
+  "study_b_arithmetic_consistency": "passed independent reconstruction and rescoring",
+  "human_judgments_completed": 0,
+  "new_llm_calls": 0,
+  "no_text_outside_pdf_page": true,
+  "pdf_replacement_glyphs": 0,
+  "visual_review": "First page, numeric result table, reference-conflict discussion, and bibliography inspected.",
+  "repo_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+  "original_principal_run_archive": "Not present in inspected commit",
+  "credentials_included": false
+}

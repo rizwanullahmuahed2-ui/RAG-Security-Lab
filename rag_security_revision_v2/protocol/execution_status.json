@@ -1,0 +1,35 @@
+{
+  "updated_at_utc": "2026-10-28T13:16:09.022178+00:00",
+  "status": "real_api_generation_completed_saved_output_analysis_available",
+  "design_frozen_at_utc": "2026-10-27T06:01:06.540903+00:00",
+  "generation_frozen_at_utc": "2026-10-27T06:01:37.977453+00:00",
+  "selected_questions": 62,
+  "embedding_unique_texts": 868,
+  "embedding_batches": 7,
+  "planned_fresh_generation_calls": 2559,
+  "unique_exact_payloads": 853,
+  "condition_evaluations": 5208,
+  "generation_workers": 4,
+  "money_ceiling_usd": 5,
+  "local_llm_inference_used": false,
+  "human_semantic_judgments_completed": 0,
+  "completion": {
+    "completed_at_utc": "2026-10-27T06:12:17.372148+00:00",
+    "model": "gpt-4.1-mini-2025-04-14",
+    "rounds": 3,
+    "unique_payloads": 853,
+    "fresh_provider_successes": 2559,
+    "condition_evaluations": 5208,
+    "normal_stop": 2559,
+    "truncations": 0,
+    "other_finish_reasons": 0,
+    "responses_sha256": "bb4ff4158cf486c1c133389d5a9df84adf3c69999adde8d6cf7d4c938e645d7a",
+    "cost_committed_usd": 0.7295299000000001,
+    "model_fallbacks": 0,
+    "note": "Fresh calls do not guarantee independent provider samples; within-round payload reuse is explicit."
+  },
+  "human_unique_cases": {
+    "B": 376,
+    "C": 897
+  }
+}

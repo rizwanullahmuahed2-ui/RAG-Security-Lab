@@ -1,0 +1,26 @@
+{
+  "retrieved_at_utc": "2026-10-26T07:03:45.354Z",
+  "endpoint": "https://api.github.com/repos/rizwanullahmuahed2-ui/RAG-Security-Lab/branches?per_page=100",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "content": "[{\"name\":\"main\",\"commit\":{\"sha\":\"6f76858df91277e4b962ee94b4286a25cfe08d4d\",\"url\":\"https://api.github.com/repos/rizwanullahmuahed2-ui/RAG-Security-Lab/commits/6f76858df91277e4b962ee94b4286a25cfe08d4d\"},\"protected\":false}]",
+      "title": "branches",
+      "modified_date": null,
+      "url": "https://api.github.com/repos/rizwanullahmuahed2-ui/RAG-Security-Lab/branches?per_page=100",
+      "display_url": "https://api.github.com/repos/rizwanullahmuahed2-ui/RAG-Security-Lab/branches?per_page=100",
+      "display_title": "branches",
+      "structuredContent": {
+        "title": "branches",
+        "content": "[{\"name\":\"main\",\"commit\":{\"sha\":\"6f76858df91277e4b962ee94b4286a25cfe08d4d\",\"url\":\"https://api.github.com/repos/rizwanullahmuahed2-ui/RAG-Security-Lab/commits/6f76858df91277e4b962ee94b4286a25cfe08d4d\"},\"protected\":false}]",
+        "display_url": "https://api.github.com/repos/rizwanullahmuahed2-ui/RAG-Security-Lab/branches?per_page=100"
+      }
+    },
+    "isError": false
+  }
+}

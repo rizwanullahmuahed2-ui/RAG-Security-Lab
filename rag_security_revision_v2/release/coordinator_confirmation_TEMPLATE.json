@@ -1,0 +1,11 @@
+{
+  "template_only_not_a_confirmation": true,
+  "actual_human_reviewers_confirmed": false,
+  "initial_independence_confirmed": false,
+  "reviewer_ids": [],
+  "study": "Fill separately for B and C after the actual independent submissions exist",
+  "coordinator_id": "",
+  "confirmed_at_utc": "",
+  "qualifications_and_construction_involvement_record_location": "",
+  "note": "Keep real identity details privately. Set confirmations only when actually established. Save the completed version as coordinator_only/coordinator_confirmation.json in the relevant study review root. This template contains no human judgment or identity verification."
+}

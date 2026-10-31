@@ -1,0 +1,10 @@
+# Exact direct dependency versions used for validation on Python 3.13.9 / Windows.
+# This is not a complete transitive lockfile.
+pandas==2.3.3
+numpy==2.3.5
+scikit-learn==1.7.2
+chromadb==1.5.9
+matplotlib==3.10.6
+streamlit==1.51.0
+PyYAML==6.0.3
+pytest==8.4.2

@@ -1,0 +1,11 @@
+{
+  "recorded_at_utc": "2026-10-31T07:14:32.432163+00:00",
+  "primary_evidence": "Prospective C and its controlled modules",
+  "B": "Retrospective numerical/source-validity diagnostics; not validated factual ASR",
+  "A": "Historical context only; exact response archives remain unrecovered",
+  "manual_inspection": "Author-reported72-case source-based semantic inspection,64main cases+8diagnostics",
+  "two_reviewer_requirement": false,
+  "unperformed_two_reviewer_workflow": "Removed from current scope; archived definitions retained only where frozen integrity requires",
+  "numeric_experiment_results": "Unchanged saved outputs; no new inference or selective rescoring",
+  "generalization": "62fixedyear/population questions,one generator snapshot,templated attacks and fixed context size"
+}

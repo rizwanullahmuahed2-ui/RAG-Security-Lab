@@ -1,0 +1,105 @@
+{
+  "status": "post hoc output-format diagnostic; primary scores unchanged",
+  "groups": [
+    {
+      "condition": "clean",
+      "defense": "none",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "clean",
+      "defense": "rerank",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "clean",
+      "defense": "filter",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "clean",
+      "defense": "filter_rerank",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "targeted",
+      "defense": "none",
+      "gold_only_with_unknown_language": 0
+    },
+    {
+      "condition": "targeted",
+      "defense": "rerank",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "targeted",
+      "defense": "filter",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "targeted",
+      "defense": "filter_rerank",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "unrelated",
+      "defense": "none",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "unrelated",
+      "defense": "rerank",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "unrelated",
+      "defense": "filter",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "unrelated",
+      "defense": "filter_rerank",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "benign",
+      "defense": "none",
+      "gold_only_with_unknown_language": 0
+    },
+    {
+      "condition": "benign",
+      "defense": "rerank",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "benign",
+      "defense": "filter",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "benign",
+      "defense": "filter_rerank",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "accepted_label",
+      "defense": "none",
+      "gold_only_with_unknown_language": 0
+    },
+    {
+      "condition": "accepted_label",
+      "defense": "rerank",
+      "gold_only_with_unknown_language": 1
+    },
+    {
+      "condition": "accepted_label",
+      "defense": "filter",
+      "gold_only_with_unknown_language": 0
+    },
+    {
+      "condition": "accepted_label",
+      "defense": "filter_rerank",
+      "gold_only_with_unknown_language": 1
+    }
+  ]
+}

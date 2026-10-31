@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "recorded_at_utc": "2026-10-31T07:12:23.946220+00:00",
+  "completed_status": "reported_completed_by_author",
+  "source_type": "Author-supplied review declaration and aggregate findings",
+  "reviewer_role": "author",
+  "number_of_reviewed_responses": 72,
+  "sample_unit": "unique question-context-answer case",
+  "study_scope": {
+    "B_main_cases": 32,
+    "C_main_cases": 32,
+    "B_diagnostic_cases": 8
+  },
+  "main_sample_n": 64,
+  "main_sample_findings": {
+    "source_consistent": 41,
+    "source_contradicted": 16,
+    "full_abstention_no_answer_claim": 3,
+    "undetermined": 4
+  },
+  "diagnostic_sample_n": 8,
+  "diagnostic_findings": {
+    "conflicting_assertion_and_abstention": 2
+  },
+  "findings_supplied_by_author": [
+    "An affirmative1972Koufaxanswerfollowedbyanevidence-onlyUNKNOWNdisclaimer.",
+    "Ambiguousactor/awardquestionpermittinga2013interpretationbesidethe1994annotation.",
+    "A lowerboundover3000doesnotestablishanexactcountorrefute3017.",
+    "Reference-consistentanswerscanlackadequatesupportintheactualmodelcontext.",
+    "AlternativecleanOperationLadbrokeevidencecanestablish1943despitemissingannotatedsupport."
+  ],
+  "author_review_independence": "Single-author retrospective case inspection; no independent inter-rater design is claimed.",
+  "item_level_human_annotation_table_provided": false,
+  "aggregate_findings_supplied_by_author": true,
+  "quantitative_human_agreement_available": false,
+  "assistance_provenance": "Earlier assistant case notes and quotations are retained as preparation/audit aids. Original AI notes have not been relabelled as individual human ratings.",
+  "current_scope": "The author has removed the proposed two-reviewer requirement. The current manuscript reports completed author case inspection and the observed automatic experiment endpoints."
+}

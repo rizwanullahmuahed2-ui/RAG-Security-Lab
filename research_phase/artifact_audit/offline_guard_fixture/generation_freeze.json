@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-10-22T10:54:26.147433+00:00",
+  "condition_evaluations": 1280,
+  "unique_requests": 376,
+  "contexts_sha256": "b1a0393dfa08ebd96abaf87657266c22ae6ee72163fa4ddd5313b2f903666a2f",
+  "requests_sha256": "159ce2230093597a346aa25ddd9ba293467c91ceb25de5df2801ce4c321acd4e",
+  "run_script_sha256": "4176d3bea198c5fc9771e4f4820528d1d806178d3fb09842b3ad494432adba1a",
+  "input_freeze_sha256": "ad8f1238e5c1624dca09d1c777f175e4633811e7d1d5301d3d6314f32b2208f7",
+  "embeddings_manifest_sha256": "ebcfeeebe19eb4d8c23fa5a1948fbd4260fde68986105fff9551c3bcdc123bb6",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scikit_learn": "1.8.0"
+}

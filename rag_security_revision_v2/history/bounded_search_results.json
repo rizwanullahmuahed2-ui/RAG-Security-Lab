@@ -1,0 +1,218 @@
+{
+  "created_at_utc": "2026-10-26T07:08:54.379409+00:00",
+  "repository": "rizwanullahmuahed2-ui/RAG-Security-Lab",
+  "pinned_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+  "refresh_completed_at_utc": "2026-10-26T07:03:45.916Z",
+  "visible_branches": [
+    {
+      "name": "main",
+      "sha": "6f76858df91277e4b962ee94b4286a25cfe08d4d"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+      "committed_at_utc": "2026-10-22T01:23:22Z",
+      "message": "Add supplied research manuscript with authors and version notes",
+      "parents": [
+        "35040f8c29c507ac2555e5aa3274611b78399703"
+      ]
+    },
+    {
+      "sha": "35040f8c29c507ac2555e5aa3274611b78399703",
+      "committed_at_utc": "2026-10-21T18:03:14Z",
+      "message": "Improve evidence dashboard and repair reproducibility regressions",
+      "parents": [
+        "b82a5ecfe6640e14c025687b4e790fa72c04cc0e"
+      ]
+    },
+    {
+      "sha": "b82a5ecfe6640e14c025687b4e790fa72c04cc0e",
+      "committed_at_utc": "2026-09-30T07:11:10Z",
+      "message": " commit",
+      "parents": []
+    }
+  ],
+  "main_chain_reaches_parentless_initial_commit": true,
+  "recursive_trees": [
+    {
+      "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+      "tree_sha": "93825d8c8155bab368560fa3c57d466e532fb48a",
+      "tree_truncated": false,
+      "blob_count": 121,
+      "local_response": "tree_main.json",
+      "response_sha256": "be5de36de7e9c509b76fd64b49b1b151323993debb0d0cc24739cb467ff873aa",
+      "evidence_candidate_paths": [
+        {
+          "path": "backups/clean-answer-fix-20260928-120104/deployment_manifest.json",
+          "git_blob_sha1": "1b08829269f52ab9286467adbb9fa563ee0a3c83",
+          "bytes": 1209
+        },
+        {
+          "path": "backups/targeted-question-fix-20260930-105354/deployment_manifest.json",
+          "git_blob_sha1": "092d3c548b96095ed7cd0bc6cae76099404e7a99",
+          "bytes": 1631
+        },
+        {
+          "path": "data/dataset_manifest.json",
+          "git_blob_sha1": "ede2759ce3f790b7b336efdea05a7703b8be54c5",
+          "bytes": 4918
+        },
+        {
+          "path": "research/manifest.json",
+          "git_blob_sha1": "74d7007ad800da6eca710300a2713eeaca7cb2ab",
+          "bytes": 879
+        },
+        {
+          "path": "results/targeted-mode-validation/records.json",
+          "git_blob_sha1": "29bd04ae120dcb5ba5057c779de6e7d3e2d14947",
+          "bytes": 6822461
+        },
+        {
+          "path": "results/targeted-mode-validation/summary.json",
+          "git_blob_sha1": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "bytes": 4712
+        },
+        {
+          "path": "results/targeted-mode-validation/synthetic_attack_pool.csv",
+          "git_blob_sha1": "9094e10eab3e3e373e23798ae849a03162da6da7",
+          "bytes": 213221
+        }
+      ]
+    },
+    {
+      "commit": "35040f8c29c507ac2555e5aa3274611b78399703",
+      "tree_sha": "92d319848934f6205380051ef5b190366bb2856e",
+      "tree_truncated": false,
+      "blob_count": 118,
+      "local_response": "tree_oct21.json",
+      "response_sha256": "72886ad15f9d1f5dfb321022b3e9dada810c6319f222dbc7d862eb543727f266",
+      "evidence_candidate_paths": [
+        {
+          "path": "backups/clean-answer-fix-20260928-120104/deployment_manifest.json",
+          "git_blob_sha1": "1b08829269f52ab9286467adbb9fa563ee0a3c83",
+          "bytes": 1209
+        },
+        {
+          "path": "backups/targeted-question-fix-20260930-105354/deployment_manifest.json",
+          "git_blob_sha1": "092d3c548b96095ed7cd0bc6cae76099404e7a99",
+          "bytes": 1631
+        },
+        {
+          "path": "data/dataset_manifest.json",
+          "git_blob_sha1": "ede2759ce3f790b7b336efdea05a7703b8be54c5",
+          "bytes": 4918
+        },
+        {
+          "path": "results/targeted-mode-validation/records.json",
+          "git_blob_sha1": "29bd04ae120dcb5ba5057c779de6e7d3e2d14947",
+          "bytes": 6822461
+        },
+        {
+          "path": "results/targeted-mode-validation/summary.json",
+          "git_blob_sha1": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "bytes": 4712
+        },
+        {
+          "path": "results/targeted-mode-validation/synthetic_attack_pool.csv",
+          "git_blob_sha1": "9094e10eab3e3e373e23798ae849a03162da6da7",
+          "bytes": 213221
+        }
+      ]
+    },
+    {
+      "commit": "b82a5ecfe6640e14c025687b4e790fa72c04cc0e",
+      "tree_sha": "aaa68ecc48a8f6ed05860f863202bb2448f6ca9d",
+      "tree_truncated": false,
+      "blob_count": 104,
+      "local_response": "tree_initial.json",
+      "response_sha256": "1a807dad2cf301c035e1d38efbfb53692aa6bf10f33b63a8e5aaa27ed82d7c97",
+      "evidence_candidate_paths": [
+        {
+          "path": "backups/clean-answer-fix-20260928-120104/deployment_manifest.json",
+          "git_blob_sha1": "1b08829269f52ab9286467adbb9fa563ee0a3c83",
+          "bytes": 1209
+        },
+        {
+          "path": "backups/targeted-question-fix-20260930-105354/deployment_manifest.json",
+          "git_blob_sha1": "092d3c548b96095ed7cd0bc6cae76099404e7a99",
+          "bytes": 1631
+        },
+        {
+          "path": "data/dataset_manifest.json",
+          "git_blob_sha1": "26242b6b9471d4b8f3f2253947dbe61544071638",
+          "bytes": 4918
+        },
+        {
+          "path": "results/targeted-mode-validation/records.json",
+          "git_blob_sha1": "29bd04ae120dcb5ba5057c779de6e7d3e2d14947",
+          "bytes": 6822461
+        },
+        {
+          "path": "results/targeted-mode-validation/summary.json",
+          "git_blob_sha1": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "bytes": 4712
+        },
+        {
+          "path": "results/targeted-mode-validation/synthetic_attack_pool.csv",
+          "git_blob_sha1": "9094e10eab3e3e373e23798ae849a03162da6da7",
+          "bytes": 213221
+        }
+      ]
+    }
+  ],
+  "release_count_returned": 0,
+  "tag_matching_refs_count_returned": 0,
+  "workflow_total_count_reported": 3,
+  "workflow_runs_inspected": [
+    {
+      "run_id": 39705393558,
+      "name": "Offline regression tests",
+      "head_sha": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+      "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/actions/runs/39705393558",
+      "returned_artifact_count": 0,
+      "artifact_list_first_page_only": true,
+      "response_file": "refresh_workflow_artifacts_39705393558.json",
+      "response_sha256": "94d4f505bd06428e44b9493bad3a55676680a05de5b5f28f58528ae295c40c72"
+    },
+    {
+      "run_id": 39650060943,
+      "name": "Offline regression tests",
+      "head_sha": "35040f8c29c507ac2555e5aa3274611b78399703",
+      "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/actions/runs/39650060943",
+      "returned_artifact_count": 0,
+      "artifact_list_first_page_only": true,
+      "response_file": "refresh_workflow_artifacts_39650060943.json",
+      "response_sha256": "43b250d964e942fb9ea501e5963795797467324dc5fb0c869ecfc6142a2f7e7d"
+    },
+    {
+      "run_id": 36682383040,
+      "name": "Offline regression tests",
+      "head_sha": "b82a5ecfe6640e14c025687b4e790fa72c04cc0e",
+      "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/actions/runs/36682383040",
+      "returned_artifact_count": 0,
+      "artifact_list_first_page_only": true,
+      "response_file": "refresh_workflow_artifacts_36682383040.json",
+      "response_sha256": "1326be38c211b4d268399fcec9378adfef84ecb76e34bd4b5592ff36b59ac2aa"
+    }
+  ],
+  "archive_extension_candidates_in_three_trees": [],
+  "principal_or_question_comparison_run_paths_in_three_trees": [],
+  "unsupported_endpoints_preserved_as_failures": [
+    "tags.json",
+    "workflow_artifacts.json"
+  ],
+  "failed_endpoint_is_not_evidence_of_absence": true,
+  "successful_alternatives": [
+    "refresh_tag_matching_refs.json",
+    "refresh_workflow_artifacts_39705393558.json",
+    "refresh_workflow_artifacts_39650060943.json",
+    "refresh_workflow_artifacts_36682383040.json"
+  ],
+  "limits": [
+    "Only publicly visible branch/history and saved complete recursive trees were inspected; unreachable Git objects, deleted branches, private forks, local disks and backups outside this workspace were not searched.",
+    "Three workflow artifact wrappers expose their first page. All returned an empty list; expired or deleted historical artifacts cannot be recovered or ruled out from these responses.",
+    "No release or tag was returned at refresh time; this does not show that no such material ever existed.",
+    "The committed 6.8 MB targeted diagnostic records are available remotely but were not downloaded or rescored by this history task; that protocol is separate from the principal and repetition experiments."
+  ]
+}

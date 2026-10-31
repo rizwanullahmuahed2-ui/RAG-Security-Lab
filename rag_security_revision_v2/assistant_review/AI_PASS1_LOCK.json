@@ -1,0 +1,24 @@
+{
+  "locked_at_utc": "2026-10-29T06:46:05.573972+00:00",
+  "stage": "AI initial case reading before target-sheet release",
+  "records": 72,
+  "human_judgments_completed": 0,
+  "selection_sha256": "bbaef63ede64f1632ae4ca5513c2d5841f45b335486a17c1e948f3902099b7c0",
+  "ai_notes_sha256": "da29a04a920e11e0bd90d8c044b700638296ea875cb9fc5aed22cca0536f5759",
+  "inputs_and_partitions_sha256": {
+    "pass1_results_1.json": "ff9e1131f116a39c6836371efa79ce425ecaac6f5edee0020faccdded1e6d727",
+    "pass1_input_1.json": "50fce4c8807586c10b819b7afda6c3518111d78960a3884e225fd625b77b6372",
+    "pass1_results_2.json": "718f77a4cae3ea817f5aeacedd85d30bc4f3995893fff6afec92077069af148f",
+    "pass1_input_2.json": "8189b9d7da1aafda178a2dfbff036406513c9adfd13d869fbca16b30580419e8",
+    "pass1_results_3.json": "e54866dcedcd000a052d90125497a9a2e69b09944fc7550af9d72d7aa5156e9c",
+    "pass1_input_3.json": "958fdbc33df3388503f930da3feb0c85c03efd65177b83b700cc02c9581efb58",
+    "pass1_results_4.json": "8b5ce55c11f1066139cb3826947d296a20171dc49cf88d023af2ba84c92ecfef",
+    "pass1_input_4.json": "1959d202540aa130bb9ad8030c7d3552728e08ef4596e1b4b73494035c8bb5f3"
+  },
+  "quote_checks": {
+    "total": 188,
+    "verbatim_found": 187,
+    "unmatched": 1
+  },
+  "independence_limit": "Assistant contexts had study background and prior automatic results in their conversation. Input fields hid targets/condition labels but this is not an independent or fully blinded human pass."
+}

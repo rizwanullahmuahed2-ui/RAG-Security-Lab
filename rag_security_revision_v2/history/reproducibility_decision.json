@@ -1,0 +1,102 @@
+{
+  "created_at_utc": "2026-10-26T07:08:54.379409+00:00",
+  "scope": "P0/P3 implementation: evidence identity, bounded recovery search and explicit claim decision; no experimental replay",
+  "primary_path": "H0",
+  "principal_run_id": "20260921T061151Z_d1966106",
+  "principal_archive_status": "not_recovered_in_bounded_public_repository_search",
+  "repetition_3016_archive_status": "not_recovered_in_bounded_public_repository_search",
+  "matching_principal_code_and_effective_config_status": "not_recovered",
+  "canonical_224_225_364_104_inputs_status": "available_and_previously_reconstructed_independently",
+  "separate_diagnostic_1092_status": "remote_records_path_exists_summary_available_not_a_substitute_for_principal",
+  "principal_fresh_rescoring_completed": false,
+  "principal_exact_replay_completed": false,
+  "repetition_fresh_rescoring_completed": false,
+  "new_A_prime_executed": false,
+  "new_A_prime_required_for_completion": false,
+  "allowed_claims": [
+    "The historical manuscript reports a 21,840-row extractive experiment and a separate 3,016-row repetition/accepted-label experiment.",
+    "The canonical source tables and current workbench are publicly available at the specified commit, with independent input reconstruction documented in the prior audit.",
+    "The exact completed principal/repetition archives were not recovered from the bounded accessible repository search, so their historical numerical outcomes are not independently re-established here.",
+    "An explicitly new A-prime reimplementation may be performed if scientifically needed; it must name its code, input, config and deviations and cannot substitute for the missing historical archive."
+  ],
+  "disallowed_claims": [
+    "All historical results were freshly reproduced or independently certified.",
+    "Current workbench source is the original principal runtime because counts and backend families resemble the paper.",
+    "The 1,092-row diagnostic reproduces the 21,840-row principal or the 3,016-row repetition experiment.",
+    "No original archive exists anywhere, was destroyed, or can never be recovered.",
+    "A hash mismatch caused solely by LF/CRLF differences proves source-data tampering."
+  ],
+  "branch_if_original_archive_later_supplied": [
+    "verify original file hashes and run identity",
+    "link exact source/config/input/output",
+    "rescore saved outputs as H2",
+    "execute exact historical version only if possible as H3, documenting environmental differences"
+  ],
+  "branch_if_new_A_prime_scientifically_needed": {
+    "label": "A-prime new reimplementation",
+    "historical_comparison_grid": {
+      "n_questions": 364,
+      "budgets": [
+        0,
+        10,
+        30,
+        60,
+        104
+      ],
+      "defenses": [
+        "none",
+        "rerank",
+        "filter",
+        "filter_rerank"
+      ],
+      "attack_selection_seeds": [
+        17,
+        42,
+        91
+      ],
+      "rows_if_all_executed": 21840
+    },
+    "requirement": "Freeze before executing; identical row count does not imply an identical experiment."
+  },
+  "repetition_gap": "If original repetitions are not recovered and the separately designed fixed-target Study C dose module is not executed, the repetition analysis remains an explicit unresolved gap; reducing claims does not complete an unperformed experiment.",
+  "evidence": [
+    {
+      "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+      "sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673",
+      "meaning": "Explicitly distinguishes the supplied historical manuscript from current code and says full historical archives are not bundled."
+    },
+    {
+      "path": "/workspace/research_phase/repo_snapshot/README.md",
+      "sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd",
+      "meaning": "Current workbench defaults and Git-ignored generated run directories."
+    },
+    {
+      "path": "/workspace/research_phase/repo_snapshot/.gitignore",
+      "sha256": "f2bd01a57ff1524737d41cb4bf92b3fea492e732a9a7dd71a17f164bb846af3a",
+      "meaning": "results/runs/ excluded; explains publication practice, not independent proof of nonexistence."
+    },
+    {
+      "path": "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+      "sha256": "916eb88d8eab7f0ecb82e3335af78ba43ec47337a81bcb695a07ad0919a1814e",
+      "meaning": "Historical run ID and reported metrics; not its raw execution archive."
+    },
+    {
+      "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+      "sha256": "d2c3f4e13eeba12ed467f56aed59edf16d718f039150265c6a3df7d5fe67982c",
+      "meaning": "Previously completed independent reconstruction and provenance checks of available canonical inputs."
+    },
+    {
+      "path": "/workspace/rag_security_revision_v2/history/bounded_search_results.json",
+      "sha256": "f0a4572d2c1fceb7b2065608f0e5c9e1669ff642d4abe439abdfde1ec807c793",
+      "meaning": "Fresh repository metadata and verified complete trees used in the bounded search."
+    }
+  ],
+  "baseline_integrity": {
+    "files_checked": 244,
+    "changed_files": []
+  },
+  "human_review": {
+    "completed_here": 0,
+    "owner_latest_requirement": "Keep genuine human semantic validation as pending work; do not present AI review or blank forms as a substitute."
+  }
+}

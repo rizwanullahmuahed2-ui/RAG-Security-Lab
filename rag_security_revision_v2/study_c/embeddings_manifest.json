@@ -1,0 +1,10 @@
+{
+  "model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "normalization": "float32 L2",
+  "texts_sha256": "7e76c108e9c259e9d1229249d65b2f6b19ef4fea882fe29d85818f591851c6e4",
+  "matrix_sha256": "a3134c00b66826fae1bac0abef74fc681e368c61e3e7f52da562eb05c1708468",
+  "raw_responses_sha256": "da52fb651d61b30e2cc216384ec97c6c43cf4b246df0dcfb20e6d002754ccfe9",
+  "unique_texts": 868,
+  "batches": 7
+}

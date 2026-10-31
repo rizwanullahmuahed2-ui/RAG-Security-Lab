@@ -1,0 +1,4196 @@
+{
+  "purpose_fa": "پلان اجرایی پژوهش؛ پوشش تمام ۶۷ درخواست متخصص، بدون اجرای اصلاحات یا API در این مرحله",
+  "scope": "planning_only",
+  "source_files": [
+    {
+      "path": "/workspace/research_phase/gap_matrix.json",
+      "sha256": "4ce9adbd06ef63a07ffc445c687d2bee70abb8e5693b9ad413f4010692c18404"
+    },
+    {
+      "path": "/workspace/research_phase/Research_Stage_Report_FA.md",
+      "sha256": "fe713f8a402a0c92f746833f94e2f8c672ab14a96c4dbc4ca0f9318d68fa7955"
+    },
+    {
+      "path": "/workspace/implementation_plan/Implementation_Plan_FA.md",
+      "sha256": "6026e879a7ef193a5a25367e0bfa0c1362d63162b8799388507485eb1bbd68dd",
+      "role": "root_authoritative_plan_snapshot_at_mapping_time"
+    }
+  ],
+  "baseline_repository_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+  "non_negotiable_boundaries_fa": [
+    "آرشیو اصلی ۲۱٬۸۴۰ردیفی و مکمل ۳٬۰۱۶ردیفی در snapshot بررسی‌شده موجود فرض نمی‌شود.",
+    "مطالعهٔ ۶۴پرسشی B بازاجرای مطالعهٔ تاریخی نیست.",
+    "معیار و پاسخ‌های قدیمی تغییر خاموش نمی‌کنند؛ هر اصلاح با نسخهٔ جدا است.",
+    "داوری AI، تأیید مستقل انسانی نیست.",
+    "وجود آزمایش LLM در B از قبل مستند است؛ اجرای تازه فقط برای مقایسهٔ مصوب آینده است.",
+    "هیچ API، اصلاح مقاله، تغییر آزمایش یا نشر/ارسال بیرونی در این مرحله انجام نمی‌شود."
+  ],
+  "coverage": {
+    "requirement_count": 67,
+    "unique_requirement_count": 67,
+    "all_source_ids_mapped": true,
+    "one_primary_package_per_requirement": true,
+    "force_counts": {
+      "required": 46,
+      "conditional": 2,
+      "conditional_alternative": 1,
+      "optional_where_possible": 2,
+      "recommended": 1,
+      "requested_artifact": 10,
+      "proposed_sequence": 5
+    },
+    "note_fa": "پوشش فهرست کنترل، نمرهٔ کیفیت یا آمادگی نشر نیست.",
+    "primary_counts": {
+      "P0": 13,
+      "P1": 9,
+      "P2": 7,
+      "P3": 7,
+      "P4": 1,
+      "P5": 0,
+      "P6": 2,
+      "P7": 10,
+      "P8": 18
+    },
+    "unmapped_source_ids": []
+  },
+  "work_packages": [
+    {
+      "id": "P0",
+      "title": "ثبت دامنه، نسخه‌ها و مسئولیت‌ها",
+      "priority": "اولویت صفر",
+      "depends_on": [],
+      "acceptance_fa": [
+        "دفتر ادعاها به مطالعه، نسخه و فایل شاهد وصل باشد؛ ابهام نسخهٔ دریافت‌شده توسط متخصص حدس زده نشود.",
+        "A تاریخی، کد فعلی، آزمایش تشخیصی، B و C آینده جدا تعریف شود؛ اجزای فعال و دلیل مستند انتخاب آن‌ها ثبت گردد.",
+        "مرجع تأیید اسناد تنها با شاهد واقعی معرفی شود؛ در نبود آن، برچسب صفت آزمایشی سازنده است.",
+        "شرط LLM واقعی با B موجود پاسخ دارد؛ آزمایش تازه برای اثبات صرف وجود LLM لازم نیست."
+      ],
+      "outputs_fa": [
+        "دفتر ادعاها و نسخه‌ها",
+        "جدول معماری واقعی/پیشنهادی",
+        "جدول نقش و صلاحیت",
+        "فهرست شکل‌ها و فلوچارت‌ها"
+      ],
+      "primary_requirement_ids": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3",
+        "3.1.4",
+        "3.1.5",
+        "3.3.6",
+        "3.6.1",
+        "3.6.2",
+        "3.6.3",
+        "3.6.4",
+        "3.6.5",
+        "5.9",
+        "6.1"
+      ],
+      "supporting_requirement_ids": [
+        "3.2.6",
+        "3.8.4",
+        "4.1",
+        "4.2",
+        "4.4",
+        "4.5",
+        "5.3",
+        "5.10"
+      ]
+    },
+    {
+      "id": "P1",
+      "title": "صحت‌سنجی مرجع، سؤال و مقدار حمله",
+      "priority": "اولویت صفر",
+      "depends_on": [
+        "P0"
+      ],
+      "acceptance_fa": [
+        "پروندهٔ هر۶۴ پرسش B، پاسخ، منبع، رابطه، واحد، سال، قید و دلیل نادرستی هدف حمله کامل باشد.",
+        "WDI و منابع قبلی، منشأ ساخت۳۳۶+۲۸ پرسش و وضعیت بازبینی۵۶ سند و۱۰۴ هدف با شاهد ثبت شود.",
+        "موارد۱۹۴۱/۱۹۴۲، بیش‌از۲۳۰/۲۴۷ و۳۱۱ تعیین وضعیت شوند؛ امتناع وUNKNOWN به ارزیابP2 نیز وصل شود.",
+        "اصلاح مرجع همان سؤال با تغییر معنای سؤال جدا باشد؛ پاسخ قدیمی پاسخ به سؤال تازه نامیده نشود."
+      ],
+      "outputs_fa": [
+        "دفتر نسخه‌دار مرجع و هدف حمله",
+        "کارت منشأ داده و حمله",
+        "فهرست موارد معتبر/اصلاحی/حل‌نشده"
+      ],
+      "primary_requirement_ids": [
+        "3.2.2",
+        "3.2.4",
+        "3.2.5",
+        "3.2.6",
+        "3.3.2",
+        "3.3.3",
+        "3.3.7",
+        "3.3.8",
+        "5.8"
+      ],
+      "supporting_requirement_ids": [
+        "3.2.1",
+        "3.2.3",
+        "3.2.7",
+        "3.2.8",
+        "3.3.1",
+        "3.3.4",
+        "3.3.5",
+        "3.4.2",
+        "3.6.1",
+        "4.2",
+        "5.2",
+        "5.3",
+        "5.11",
+        "6.3"
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "تعریف ارزیابی و بازتحلیل مطالعهٔ B",
+      "priority": "اولویت صفر",
+      "depends_on": [
+        "P1"
+      ],
+      "acceptance_fa": [
+        "صحت واقعیت، پشتیبانی زمینه، تأیید مقدار مهاجم، امتناع و ابهام با قواعد مستقل سنجیده شود.",
+        "نارمل‌سازی، نفی، نقل قول، قید، هم‌زمانی دو عدد وUNKNOWN جمله‌ای با مثال اجرایی مستند شود.",
+        "ارقام قدیمی محفوظ و بازتحلیل نسخه‌دار با جدول تغییر و مخرج شفاف تولید شود.",
+        "اگر بررسی انسانی انجام شد، برچسب واقعی، طرح نمونه، حدود کورسازی، اختلاف و روش حل آن ثبت شود؛ در غیر آن ادعای بررسی انسانی یا صحت معنایی مستقل نشود."
+      ],
+      "outputs_fa": [
+        "دستورالعمل و ارزیاب نسخه‌دار",
+        "مثال‌های واقعی و مرزی ضروری",
+        "طرح/نتیجهٔ واقعی داوری انسانی در صورت امکان",
+        "بازتحلیل B و دفتر تغییرها"
+      ],
+      "primary_requirement_ids": [
+        "3.4.1",
+        "3.4.2",
+        "3.4.3",
+        "3.4.4",
+        "3.4.5",
+        "3.4.6",
+        "6.3"
+      ],
+      "supporting_requirement_ids": [
+        "3.2.5",
+        "3.2.8",
+        "3.3.3",
+        "3.5.2",
+        "3.5.3",
+        "3.8.1",
+        "3.8.2",
+        "3.8.3",
+        "4.2",
+        "5.6",
+        "6.2"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "تعیین تکلیف بازتولید مطالعهٔ A",
+      "priority": "اولویت صفر",
+      "depends_on": [
+        "P0"
+      ],
+      "conditional_dependency_fa": "برای نتیجهٔ مبتنی بر مرجع اصلاحی، P1 نیز لازم است؛ جست‌وجوی آرشیو از آغاز می‌تواند موازی باشد.",
+      "acceptance_fa": [
+        "جست‌وجوی آرشیو اصلی و مکمل با محل، نسخه و وضعیت ثبت شود؛ نبود در یکcommit، نبود در همه‌جا نامیده نشود.",
+        "بازیابی، بازنمره‌دهی، بازاجرای تاریخی و اجرایA′ چهار عنوان جدا بماند.",
+        "هویت ورودی، کد، config، seed، خروجی و محیط باrun_id مرتبط باشد؛ بودجهٔ تاریخی با پیش‌فرض فعلی عوض نشود.",
+        "اگر آرشیو بازیابی نشد،A′ تنها با نام و تفاوت‌های خود گزارش شود؛ آرشیو۳٬۰۱۶ردیفی و تشخیص۱٬۰۹۲ردیفی جانشین یکدیگر نشوند.",
+        "برای تحلیل تکرار۳.۸.۵، بازیابی یا مطالعهٔ تازهٔ مستقل لازم است؛ در نبود هر دو، شکاف باقیمانده و محدودسازی ادعای تاریخی صریح باشد."
+      ],
+      "outputs_fa": [
+        "فهرست بازیابی و مجهولات",
+        "گزارش هویت و تطبیق آرشیو در صورت یافتن",
+        "تصمیمA/A′ و جدول تفاوت‌ها",
+        "وضعیت مستقل آزمایش تکرار و برچسب"
+      ],
+      "primary_requirement_ids": [
+        "3.7.1",
+        "3.7.4",
+        "3.8.5",
+        "3.8.6",
+        "5.4",
+        "5.5",
+        "6.2"
+      ],
+      "supporting_requirement_ids": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3",
+        "3.3.6",
+        "3.4.3",
+        "3.5.2",
+        "3.6.5",
+        "3.7.3",
+        "4.2",
+        "5.1",
+        "5.6",
+        "5.7",
+        "5.9",
+        "5.10",
+        "6.1",
+        "6.4"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "اصلاح کنترول اجرا در نسخهٔ جدید",
+      "priority": "اولویت صفر",
+      "depends_on": [
+        "P0"
+      ],
+      "acceptance_fa": [
+        "پیش از نخستین ارسال و ادامهٔ اجرا، هش همهٔ ورودی‌های مؤثر و درخواست در انتظار کنترل شود؛ کش خالی استثنا نداشته باشد.",
+        "آزمون ساختگیِ تغییر درخواست باید صفر ارسال ایجاد کند؛ ورودی سالم مسیر عادی را بگذراند.",
+        "نسخهٔ تازه، مدل، کلیدکش وابسته به نوبت، خطا، ادامه و محیط ثبت شود؛ فایل تاریخی دست‌نخورده بماند.",
+        "ضعف پیشگیری آینده به‌عنوان شاهد دستکاری آرشیو موجود معرفی نشود."
+      ],
+      "outputs_fa": [
+        "نسخهٔ تازهٔ کد",
+        "گزارش آزمون اجباری هش",
+        "محیط و وابستگی‌ها",
+        "قواعد ادامه/خطا/کش"
+      ],
+      "primary_requirement_ids": [
+        "5.7"
+      ],
+      "supporting_requirement_ids": [
+        "3.6.3",
+        "4.2",
+        "5.1",
+        "5.4",
+        "6.4"
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "ساخت و انجماد مطالعهٔ C",
+      "priority": "اولویت یک",
+      "depends_on": [
+        "P1",
+        "P2",
+        "P4"
+      ],
+      "acceptance_fa": [
+        "هدف۶۴ پرسش تازه و۶۴ اهداکننده، قواعد انتخاب و دامنهٔ منبع پیش از خروجی روشن شود؛ کمبود داده پس از دیدن نتیجه با تعویض مورد جبران نشود.",
+        "تمام۱۲۸ مورد قبلی، عنوان و واقعیت/شاهد مشترک کنترل شود؛ قواعد گروه‌بندی و انتخاب پایدار ثبت گردد.",
+        "مرجع، نادرستی مقدار هدف و نامرتبط‌بودن اهداکننده به‌طور مستند بررسی شود؛ آزمون عمومیِ مشتق‌شده، آزمون مخفی رسمی نامیده نشود.",
+        "پرسش، سند، حمله، دفاع، معیار، seed، تعداد تکرار، payload، ماژول‌های انتخاب‌شده و طرح تحلیل پیش از ارسال منجمد شود."
+      ],
+      "outputs_fa": [
+        "دیتای تازهٔ نسخه‌دار",
+        "گزارش انتخاب/هم‌پوشانی و کنترل منبع",
+        "پروتکل وfreeze manifest",
+        "سرشماری درخواست، توکن و سقف هزینه"
+      ],
+      "primary_requirement_ids": [],
+      "supporting_requirement_ids": [
+        "3.7.3",
+        "3.8.5",
+        "6.4"
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "اجرای مطالعهٔ C و کنترول‌های آن",
+      "priority": "اولویت یک",
+      "depends_on": [
+        "P5"
+      ],
+      "acceptance_fa": [
+        "فقط طرح منجمد اجرا شود؛ مدل محلی یا مدل جایگزین خودکار وارد نتیجه نگردد.",
+        "هستهٔ کل خط لوله و زمینهٔ کنترول‌شده با پروتکل و نام نتیجهٔ جدا گزارش شود.",
+        "سه نوبت تولید واقعاً تازه از استفادهٔ مجدد درون همان نوبت جدا باشد؛ برابر بودنpayload ازهش ثابت شود.",
+        "ماژول دوز۱/۲/۵ یکسان با اهداف ثابت پیش از نتیجه انتخاب یا کنار گذاشته شود؛ این توصیه، شرط اجباری کلC نیست.",
+        "پاسخ و خطا و هزینه، مدل برگشتی، علت پایان، مصرف، کش، تلاش مجدد و وضعیت نقص بهrun_id وصل باشد."
+      ],
+      "outputs_fa": [
+        "آرشیو تازهٔ C در صورت مرحلهٔ اجرای آینده",
+        "نتیجهٔ هسته و مواجههٔ برابر",
+        "ماژول تکرار در صورت انتخاب",
+        "گزارش مصرف، خطا و اجرای ناقص"
+      ],
+      "primary_requirement_ids": [
+        "3.7.3",
+        "6.4"
+      ],
+      "supporting_requirement_ids": [
+        "3.1.4",
+        "3.3.8",
+        "3.6.5",
+        "3.7.1",
+        "3.7.2",
+        "3.7.4",
+        "3.8.5",
+        "3.8.6",
+        "5.4",
+        "5.10"
+      ]
+    },
+    {
+      "id": "P7",
+      "title": "تحلیل نهایی، خطاها و عدم‌قطعیت",
+      "priority": "اولویت یک",
+      "depends_on": [
+        "P2",
+        "P3",
+        "P6"
+      ],
+      "conditional_dependency_fa": "بازتحلیل اولیهٔ B پس ازP2 قابل انجام است؛ تحلیل نهایی شاملC بهP6 وابسته است.",
+      "acceptance_fa": [
+        "موفقیت همهٔ اهداف، شرط مواجهه، جلوگیری، بازگشت صحت و خطای تازه با مخرج مستقل و شمار جفتی نمایش یابد.",
+        "صورت‌های مشترک یک فکت، نمایهٔ مشترک، کش و نوبت‌های تولید در واحد تحلیل و حدودفاصله منعکس شود.",
+        "۲۱٬۸۴۰ و۱٬۲۸۰ ردیف نمونهٔ مستقل معرفی نشود؛ فاصلهٔ توصیفی مشروط، تعمیم بهcorpusتازه نباشد.",
+        "موارد شاهد درست/پاسخ غلط، مواجهه/عدم موفقیت، جلوگیری/عدم بازگشت و برچسب تغییریافته باقاعدهٔ انتخاب و ردگیری در ضمیمه بیاید.",
+        "همهٔ جدول‌ها و شکل‌ها از یک تحلیل نسخه‌دار و ممیزی‌پذیر تولید و موارد ناقص یا حل‌نشده پنهان نشود."
+      ],
+      "outputs_fa": [
+        "جدول‌های نهایی و تحلیل حساسیت",
+        "گزارش انتقال‌های جفتی",
+        "عدم‌قطعیت موجه و محدودیت‌ها",
+        "پروندهٔ موارد خطا و نمودارها"
+      ],
+      "primary_requirement_ids": [
+        "3.2.8",
+        "3.5.1",
+        "3.5.2",
+        "3.5.3",
+        "3.5.4",
+        "3.7.2",
+        "3.8.1",
+        "3.8.2",
+        "3.8.3",
+        "3.8.4"
+      ],
+      "supporting_requirement_ids": [
+        "3.2.5",
+        "3.4.1",
+        "3.4.2",
+        "3.4.3",
+        "3.4.4",
+        "3.4.5",
+        "3.4.6",
+        "3.7.3",
+        "3.8.5",
+        "4.1",
+        "4.3",
+        "4.4",
+        "4.5",
+        "5.6",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5"
+      ]
+    },
+    {
+      "id": "P8",
+      "title": "بازنویسی مقاله و آماده‌سازی بستهٔ تحویل",
+      "priority": "اولویت دو",
+      "depends_on": [
+        "P7"
+      ],
+      "acceptance_fa": [
+        "چکیده، روش، نتیجه، بحث و جمع‌بندی به شواهد نهایی وصل و معماری‌ها و پروتکل‌ها جدا بماند.",
+        "هر ده قلم§۵ فایل/پیوند ثابت و وضعیت دسترسی/نقص و شرایط نشر منبع داشته باشد؛ وضعیت محلیB با نشرعمومی خلط نشود.",
+        "چهار شکل موجود و فلوچارت با دفتر نگه‌داری/اصلاح/نسخهٔ تاریخی تطبیق و از حذف خاموش محفوظ باشد.",
+        "تمام۶۷ بند پاسخ، اقدام، شاهد و محدودیت باقی‌مانده داشته باشند؛ پیشنهاد انجام‌نشده نتیجه نامیده نشود.",
+        "PDF/Wordانگلیسی، گزارش رسمی دری، خلاصه و بستهٔ شواهد از نظر عدد، منبع، نمایش و محرمانه‌نبودن باهم تطبیق شوند."
+      ],
+      "outputs_fa": [
+        "مقالهٔ انگلیسیPDF/Word",
+        "گزارش رسمی دری و پاسخ بندبه‌بند",
+        "خلاصهٔ دری",
+        "ده قلم شواهد،README وmanifest نهایی"
+      ],
+      "primary_requirement_ids": [
+        "3.2.1",
+        "3.2.3",
+        "3.2.7",
+        "3.3.1",
+        "3.3.4",
+        "3.3.5",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.6",
+        "5.10",
+        "5.11",
+        "6.5"
+      ],
+      "supporting_requirement_ids": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3",
+        "3.1.4",
+        "3.1.5",
+        "3.2.2",
+        "3.2.4",
+        "3.2.5",
+        "3.2.6",
+        "3.2.8",
+        "3.3.2",
+        "3.3.3",
+        "3.3.6",
+        "3.3.7",
+        "3.3.8",
+        "3.4.1",
+        "3.4.2",
+        "3.4.3",
+        "3.4.4",
+        "3.4.5",
+        "3.4.6",
+        "3.5.1",
+        "3.5.2",
+        "3.5.3",
+        "3.5.4",
+        "3.6.1",
+        "3.6.2",
+        "3.6.3",
+        "3.6.4",
+        "3.6.5",
+        "3.7.1",
+        "3.7.2",
+        "3.7.3",
+        "3.7.4",
+        "3.8.1",
+        "3.8.2",
+        "3.8.3",
+        "3.8.4",
+        "3.8.5",
+        "3.8.6",
+        "5.4",
+        "5.5",
+        "5.7",
+        "5.8",
+        "5.9",
+        "6.1",
+        "6.2"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "requirement_id": "3.1.1",
+      "expert_section": "3.1",
+      "requirement_original": "State the architecture actually executed",
+      "requirement_fa": "معماری واقعاً اجراشده",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P3",
+        "P8"
+      ],
+      "completion_criterion_fa": "برای مطالعهٔ تاریخی، کد فعلی، آزمایش تشخیصی و مطالعهٔ B، اجزای فعال، شناسهٔ نسخه و نوع خروجی جدا ثبت شود؛ ناشناخته‌ها مشخص بماند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91,
+          "line_end": 109
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 172
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 19,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L19-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/config.yaml",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/config.yaml#L1-L39",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 39,
+          "git_blob_sha": "46b67458d21d24edb81579a5a8d27b47793fd46a",
+          "snapshot_sha256": "32c3ef0163fe2a5961c287b614ccdd8ea3705dad0cc8b646a85fa15eacd5df90"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.1.2",
+      "expert_section": "3.1",
+      "requirement_original": "Explain why hashing and TF-IDF were chosen and how they differ from the original design",
+      "requirement_fa": "دلیل انتخاب Hashing و TF-IDF",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P3",
+        "P8"
+      ],
+      "completion_criterion_fa": "دلیل مستند فعلی از توضیح پسینی و نیت تاریخی جدا شود؛ طرح اصلی یا سابقهٔ تصمیم ضمیمه، یا نبود آن آشکار بیان گردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 99,
+          "line_end": 105
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 816,
+          "line_end": 829
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 9,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L9",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+          "line_start": 27,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/VALIDATION.md#L27",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "87c592c1e0e50f6539ce32eea71fa0f3abb5ccac",
+          "snapshot_sha256": "916eb88d8eab7f0ecb82e3335af78ba43ec47337a81bcb695a07ad0919a1814e"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/REVIEW.md",
+          "line_start": 15,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/REVIEW.md#L15-L28",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 28,
+          "git_blob_sha": "baa2ed23611c802027f03bfb77afe11cf81826cd",
+          "snapshot_sha256": "23b1b0ec5debd120e30573e64e87c7c2c2818703e56bf2113aa927f244d533a4"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.1.3",
+      "expert_section": "3.1",
+      "requirement_original": "Explain why proposed vector database, neural embeddings, or LLM components were inactive",
+      "requirement_fa": "علت غیرفعال‌بودن اجزای پیشنهادی",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P3",
+        "P8"
+      ],
+      "completion_criterion_fa": "جدول پیشنهادی/اجراشده تنها بر سند تکیه کند؛ از روی نام مدل در تنظیمات، فعال‌بودن یا علت عدم استفاده استنباط نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 817,
+          "line_end": 829
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248,
+          "line_end": 250
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/config.yaml",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/config.yaml#L1-L17",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 17,
+          "git_blob_sha": "46b67458d21d24edb81579a5a8d27b47793fd46a",
+          "snapshot_sha256": "32c3ef0163fe2a5961c287b614ccdd8ea3705dad0cc8b646a85fa15eacd5df90"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 86,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L86-L96",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 96,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+          "line_start": 46,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/VALIDATION.md#L46-L48",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 48,
+          "git_blob_sha": "87c592c1e0e50f6539ce32eea71fa0f3abb5ccac",
+          "snapshot_sha256": "916eb88d8eab7f0ecb82e3335af78ba43ec47337a81bcb695a07ad0919a1814e"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.1.4",
+      "expert_section": "3.1",
+      "requirement_original": "Execute at least one real LLM experiment if retaining LLM-RAG claims",
+      "requirement_fa": "حداقل یک آزمایش با LLM واقعی، مشروط به ادعای مولد",
+      "expert_force": "conditional",
+      "expert_force_fa": "مشروط به ادعا/وضعیت",
+      "research_status": "addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P6",
+        "P8"
+      ],
+      "completion_criterion_fa": "مطالعهٔ B موجود با آرشیو و حدودش مستند بماند؛ وجود LLM به درخواست تازهٔ API نیاز ندارد. آزمایش تازه فقط برای مقایسهٔ علمی تعیین‌شده طراحی شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 149,
+          "line_end": 169
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 3,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "line_start": 3,
+          "line_end": 7
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.1.5",
+      "expert_section": "3.1",
+      "requirement_original": "Otherwise narrow title, abstract, and conclusion to the system actually tested",
+      "requirement_fa": "بدیل محدودسازی عنوان و ادعاها",
+      "expert_force": "conditional_alternative",
+      "expert_force_fa": "بدیل مشروطِ محدودسازی ادعا",
+      "research_status": "addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "عنوان، چکیده و نتیجه با شواهد حفظ‌شده هم‌خوان شود؛ مطالعات بازیابی و مولد و حدود تعمیم یک مدل جدا بماند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 18
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 28,
+          "line_end": 32
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 315
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.2.1",
+      "expert_section": "3.2",
+      "requirement_original": "Provide the original source-document list",
+      "requirement_fa": "فهرست منابع اصلی",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P1"
+      ],
+      "completion_criterion_fa": "فهرست سندها و URLها با پیوند commit ثابت و تعریف وضعیت بررسی منتشر شود؛ دسترسی ورودی با بازتولید خروجی تاریخی خلط نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/clean_documents.json",
+          "line_start": 1,
+          "line_end": 9
+        },
+        {
+          "path": "/workspace/revision/experiment/source_dataset_metadata.json",
+          "line_start": 2,
+          "line_end": 6
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/documents.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/documents.csv#L1-L2",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 2,
+          "git_blob_sha": "0cc6cf352184b34bd1c953fec1d722a7c5bd0e83",
+          "snapshot_sha256": "0282dff7366adfe8d6cb1cec635aed28cd55c216ab30308f2a3571169d18e1ea"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 18,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L18-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 10,
+          "line_end": 54
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.2.2",
+      "expert_section": "3.2",
+      "requirement_original": "Document selection of 168 WDI observations and indicator families",
+      "requirement_fa": "انتخاب ۱۶۸ مشاهده و خانواده‌های WDI",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P1",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "۱۲ خانواده، بازه و قواعد انتخاب، گردکردن و ۱۶۸ مشاهده به snapshotهای ذخیره‌شده وصل شود؛ تطبیق snapshot، حقیقت مستقل نامیده نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 230,
+          "line_end": 258
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 364
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 24,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L24-L43",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 43,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 44,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L44-L91",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 91,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/dataset_manifest.json",
+          "line_start": 9,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/dataset_manifest.json#L9-L95",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 95,
+          "git_blob_sha": "ede2759ce3f790b7b336efdea05a7703b8be54c5",
+          "snapshot_sha256": "d81ab5806d88db99dd4c78feaef289fa49a72f12139a72a5320849f541350388"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 55,
+          "line_end": 68
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.2.3",
+      "expert_section": "3.2",
+      "requirement_original": "Specify document, chunk, question, and answer schemas",
+      "requirement_fa": "شِمای اسناد، قطعه‌ها، پرسش‌ها و پاسخ‌ها",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P1"
+      ],
+      "completion_criterion_fa": "نام فیلدها، نوع، کلید و رابطهٔ چهار جدول و نمونهٔ واقعی در فرهنگ داده درج و آزمون پیوندها ارایه شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 101,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 33
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 123,
+          "line_end": 125
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L6",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 6,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/chunks.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/chunks.csv#L1-L2",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 2,
+          "git_blob_sha": "ac7898b4c2aaf09e5678c1be48888a3064a82d7b",
+          "snapshot_sha256": "e7a1d2b244eb7f38d717367c585ae86faaafb48b96d4dd20768860fc9e779d84"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 31,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L31-L43",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 43,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 65,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L65-L100",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 100,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 54
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.2.4",
+      "expert_section": "3.2",
+      "requirement_original": "Explain how the 364 historical questions were generated: manual, automatic, or mixed",
+      "requirement_fa": "چگونگی ساخت ۳۶۴ پرسش",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P1",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "دو قالب ۳۳۶ پرسش WDI روشن شود؛ منشأ نگارش/بررسی ۲۸ پرسش قبلی مستند، یا محدودیت آن دقیق ثبت گردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 230,
+          "line_end": 258
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 31,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L31-L35",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 35,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 80,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L80-L91",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 91,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/legacy/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/legacy/questions.csv#L1-L3",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 3,
+          "git_blob_sha": "192917394ab40bde11877efbf39f20b1fba0d193",
+          "snapshot_sha256": "f44d20b150c92b2afd8ec722a159d466d1857e820436e7bce61d15958970eaf2"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.2.5",
+      "expert_section": "3.2",
+      "requirement_original": "Explain and demonstrate verification of questions and reference answers",
+      "requirement_fa": "اعتبار پرسش و پاسخ مرجع",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P1",
+      "supporting_work_packages": [
+        "P2",
+        "P7",
+        "P8"
+      ],
+      "completion_criterion_fa": "ثبت بررسی معنایی مرجع و رابطه، واحد، تاریخ و قید آماده شود؛ موارد مبهم در تحلیل نسخه‌دار تعیین تکلیف شوند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 49,
+          "line_end": 74
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 127
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 303
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 23
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 41,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L41-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 49,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L49-L64",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 64,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 55,
+          "line_end": 68
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.2.6",
+      "expert_section": "3.2",
+      "requirement_original": "State whether inherited documents and trust labels were re-audited",
+      "requirement_fa": "وضعیت بازبینی اسناد و برچسب‌های قبلی",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P1",
+      "supporting_work_packages": [
+        "P0",
+        "P8"
+      ],
+      "completion_criterion_fa": "عدم بازبینی مستقل قبلی به‌صراحت درج شود؛ هر بررسی تازه با داور، تاریخ، منبع و نتیجهٔ واقعی ثبت گردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 250,
+          "line_end": 258
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 329
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 45,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L45-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 63,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L63-L67",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 67,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.2.7",
+      "expert_section": "3.2",
+      "requirement_original": "Make source-document, chunk, and question relationships traceable",
+      "requirement_fa": "پیوند ردیابی‌پذیر سند، قطعه و پرسش",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P1"
+      ],
+      "completion_criterion_fa": "جدول پیوند و قواعد کلیدها با همان چهار جدول تأییدشده تحویل شود؛ هویت ورودی اجرای اصلی جدا مشخص گردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 100,
+          "line_end": 110
+        },
+        {
+          "path": "/workspace/revision/experiment/clean_documents.json",
+          "line_start": 3,
+          "line_end": 9
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 33
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L4",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 4,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 65,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L65-L100",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 100,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 68
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.2.8",
+      "expert_section": "3.2",
+      "requirement_original": "Account for correlated question formulations and shared facts in uncertainty",
+      "requirement_fa": "وابستگی صورت‌های پرسش در عدم‌قطعیت",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P7",
+      "supporting_work_packages": [
+        "P1",
+        "P2",
+        "P8"
+      ],
+      "completion_criterion_fa": "واحد فکت/خانواده و پرسش مشخص و تحلیل مناسب گروه‌بندی شود؛ محدودیت نمایهٔ مشترک B و کش گزارش گردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 73
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 167
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 248,
+          "line_end": 250
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 307
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 124,
+          "line_end": 136
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 16,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L16",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 49,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L49-L64",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 64,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.3.1",
+      "expert_section": "3.3",
+      "requirement_original": "Release all 104 historical target questions",
+      "requirement_fa": "تمام ۱۰۴ پرسش هدف تاریخی",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P1"
+      ],
+      "completion_criterion_fa": "فهرست واقعی و commit ثابت با پیوند هر پرسش به متن حمله منتشر شود؛ ارتباط با اجرای اصلی جدا ارزیابی گردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L6",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 6,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 51,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L51-L55",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 55,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.3.2",
+      "expert_section": "3.3",
+      "requirement_original": "Release the correct answer for each historical target",
+      "requirement_fa": "پاسخ درست هر هدف تاریخی",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P1",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "پاسخ‌های موجود و منشأ آن‌ها ثبت و دامنهٔ بررسی واقعی بیان شود؛ صحت منبع و صرف تطبیق عدد جدا بماند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 4,
+          "line_end": 7
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L6",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 6,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.3.3",
+      "expert_section": "3.3",
+      "requirement_original": "Release the attacker-selected false value for each historical target",
+      "requirement_fa": "مقدار نادرست مورد نظر مهاجم",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P1",
+      "supporting_work_packages": [
+        "P2",
+        "P8"
+      ],
+      "completion_criterion_fa": "مقدار هدف با پرسش، واحد، تاریخ و قید مقایسه شود؛ برای ادعای موفقیت واقعی، نادرستی آن مستند باشد و موارد حل‌نشده جدا گزارش شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 5,
+          "line_end": 7
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.3.4",
+      "expert_section": "3.3",
+      "requirement_original": "Release the complete text of every historical poison passage",
+      "requirement_fa": "متن کامل همهٔ حملات تاریخی",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P1"
+      ],
+      "completion_criterion_fa": "تمام ۱۰۴ متن اصلی بدون بازسازی حدسی و با شناسه و هش در بستهٔ دسترس‌پذیر پیوند شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/insertions.json",
+          "line_start": 2,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.3.5",
+      "expert_section": "3.3",
+      "requirement_original": "Provide the original-source identifier linked to each historical attack",
+      "requirement_fa": "شناسهٔ منبع متصل به هر حمله",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P1"
+      ],
+      "completion_criterion_fa": "پیوند هدف، مرجع پاک، سند و حمله در جدول و کنترل روابط موجود باشد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 106,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L4",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 4,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L6",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 6,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 54
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.3.6",
+      "expert_section": "3.3",
+      "requirement_original": "Provide trust labels used for each attack condition",
+      "requirement_fa": "برچسب‌های اعتماد هر شرط حمله",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P3",
+        "P8"
+      ],
+      "completion_criterion_fa": "برچسب پایه، شرط برچسب تغییریافتهٔ B و نبود رکورد اصلی تاریخی جدا ثبت شود؛ برچسب ورودی با تأیید نهادی برابر دانسته نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 33,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/experiment/insertions.json",
+          "line_start": 4,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 53,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L53-L64",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 64,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.3.7",
+      "expert_section": "3.3",
+      "requirement_original": "Explain the attack-generation process",
+      "requirement_fa": "روند تولید حمله",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P1",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "حملات الگوریتمی WDI از ۲۰ متن قبلی جدا شرح داده شود؛ سابقهٔ ناموجود نگارش دستی اختراع نگردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 143,
+          "line_end": 145
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 29,
+          "line_end": 35
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 94,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 84,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L84-L100",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 100,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/attacks/poison_generator.py",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/attacks/poison_generator.py#L3-L16",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 16,
+          "git_blob_sha": "4a1a0ffc5f982bd48e170944a993486e252138b2",
+          "snapshot_sha256": "53ccb8396220731a6650b79cd9f48cb15f83c1557eb2a0c025f26f23e744a4bb"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/legacy/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/legacy/poisoned_passages.csv#L1-L3",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 3,
+          "git_blob_sha": "09979d050292a45c7428d1756f166708bc8c6413",
+          "snapshot_sha256": "4c8382f5370832a3f6425a69032bfac62bae97ed44d0f04633212e37f4aa80b5"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.3.8",
+      "expert_section": "3.3",
+      "requirement_original": "Describe attack length, structure, vocabulary, and similarity to clean material",
+      "requirement_fa": "طول، ساختار و شباهت متن حمله",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P1",
+      "supporting_work_packages": [
+        "P6",
+        "P8"
+      ],
+      "completion_criterion_fa": "توصیف واژه/طول/قالب/شباهت از متن‌های ثابت A و B جدا استخراج و تفاوت دامنهٔ حملات بیان شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 143,
+          "line_end": 145
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 29,
+          "line_end": 35
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 33
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 53,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L53-L55",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 55,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.4.1",
+      "expert_section": "3.4",
+      "requirement_original": "Explain exact answer-value scoring with examples",
+      "requirement_fa": "تعریف اجرایی ارزیابی و مثال",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P2",
+      "supporting_work_packages": [
+        "P7",
+        "P8"
+      ],
+      "completion_criterion_fa": "قاعدهٔ هر نسخهٔ ارزیاب همراه مثال ورودی/خروجی واقعی، مخرج و نام معیار مستند شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 75
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 36,
+          "line_end": 49
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 88,
+          "line_end": 102
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/evaluation/metrics.py",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/evaluation/metrics.py#L1-L68",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 68,
+          "git_blob_sha": "a5c2eafd5c69c2349ed5f782526efd0996e00271",
+          "snapshot_sha256": "2cec48fd4a2f8de320807ab8d23b7ad923c0364beb4c4acba767ee3634796972"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 75,
+          "line_end": 90
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.4.2",
+      "expert_section": "3.4",
+      "requirement_original": "Specify numeric, year, unit, decimal, and format normalization",
+      "requirement_fa": "نارمل‌سازی عدد، سال، واحد و اعشار",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P2",
+      "supporting_work_packages": [
+        "P1",
+        "P7",
+        "P8"
+      ],
+      "completion_criterion_fa": "قواعد صریح قالب، تبدیل مجاز واحد، قید مقدار، نفی، UNKNOWN و نام‌های رقمی ثبت و با نمونه‌های معنادار بررسی شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 36,
+          "line_end": 49
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 75
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 344,
+          "line_end": 349
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/evaluation/metrics.py",
+          "line_start": 23,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/evaluation/metrics.py#L23-L68",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 68,
+          "git_blob_sha": "a5c2eafd5c69c2349ed5f782526efd0996e00271",
+          "snapshot_sha256": "2cec48fd4a2f8de320807ab8d23b7ad923c0364beb4c4acba767ee3634796972"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 70,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L70-L84",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 84,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.4.3",
+      "expert_section": "3.4",
+      "requirement_original": "Recheck results against references with executable scoring",
+      "requirement_fa": "بازنمره‌دهی اجرایی در برابر مرجع",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P2",
+      "supporting_work_packages": [
+        "P3",
+        "P7",
+        "P8"
+      ],
+      "completion_criterion_fa": "ممیزی B و تحلیل اصلاحی جدا بازتولید شود؛ ارقام A تنها در صورت دسترسی به آرشیو همان اجرا دوباره تأیید شوند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 107
+        },
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "line_start": 7
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 3,
+          "line_end": 24
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 59,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L59-L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 69,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.4.4",
+      "expert_section": "3.4",
+      "requirement_original": "Show correct, incorrect, and ambiguous automatic-scoring examples",
+      "requirement_fa": "نمونه‌های صحیح، غلط و مبهم ارزیابی",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P2",
+      "supporting_work_packages": [
+        "P7",
+        "P8"
+      ],
+      "completion_criterion_fa": "نمونهٔ واقعی با شناسه، پاسخ، مرجع، زمینه و دلیل طبقه‌بندی به گزارش افزوده شود؛ تحلیل ماشینی انسانی نامیده نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 242
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 8
+        },
+        {
+          "path": "/workspace/revision/experiment/posthoc_output_diagnostics.json",
+          "line_start": 1,
+          "line_end": 8
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.4.5",
+      "expert_section": "3.4",
+      "requirement_original": "Compare a human-reviewed sample with automatic judgments",
+      "requirement_fa": "مقایسه با نمونهٔ داوری انسانی در صورت امکان",
+      "expert_force": "optional_where_possible",
+      "expert_force_fa": "اختیاری در صورت امکان",
+      "research_status": "unsupported",
+      "primary_work_package": "P2",
+      "supporting_work_packages": [
+        "P7",
+        "P8"
+      ],
+      "completion_criterion_fa": "اگر اجرا شد، برچسب واقعی انسان، طرح نمونه‌گیری، اختلاف و مقایسهٔ خطای خودکار تحویل شود؛ اگر ممکن نبود، عدم انجام و حد ادعا آشکار بماند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 171
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 23
+        },
+        {
+          "path": "/workspace/revision/experiment/HUMAN_REVIEW_INSTRUCTIONS.md",
+          "line_start": 1,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/revision/experiment/human_review_blinded.csv",
+          "line_start": 1,
+          "line_end": 2
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.4.6",
+      "expert_section": "3.4",
+      "requirement_original": "Separate correct-source retrieval, answer selection, and generative answer correctness",
+      "requirement_fa": "تفکیک بازیابی، انتخاب پاسخ و صحت مولد",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P2",
+      "supporting_work_packages": [
+        "P7",
+        "P8"
+      ],
+      "completion_criterion_fa": "بازیابی شاهد، صحت واقعی، پشتیبانی زمینه، امتناع و تأیید مقدار مهاجم در ستون‌های جدا ثبت و تعریف شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 99,
+          "line_end": 106
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 291,
+          "line_end": 293
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.5.1",
+      "expert_section": "3.5",
+      "requirement_original": "Analyze retrieval, answer selection, and attack success separately",
+      "requirement_fa": "تحلیل جداگانهٔ بازیابی، پاسخ و موفقیت حمله",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P7",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "جدول نتایج و مخرج هر مرحله جدا بماند؛ درصدهای تعریف‌متفاوت ASR مستقیماً مقایسه نشوند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 63,
+          "line_end": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217,
+          "line_end": 242
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 265
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.5.2",
+      "expert_section": "3.5",
+      "requirement_original": "Explain why more gold recall can coexist with lower answer accuracy",
+      "requirement_fa": "تحلیل افزایش بازیابی و کاهش صحت",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P7",
+      "supporting_work_packages": [
+        "P2",
+        "P3",
+        "P8"
+      ],
+      "completion_criterion_fa": "نمونه‌های هم‌شرطِ دارای شاهد درست و پاسخ مسئله‌دار با زمینه و پاسخ واقعی ارایه شود؛ تبیین علّی فراتر از طراحی ادعا نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 242
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 265
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 291,
+          "line_end": 293
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.5.3",
+      "expert_section": "3.5",
+      "requirement_original": "Analyze failure cases rather than only endpoint numbers",
+      "requirement_fa": "تحلیل خطا فراتر از ارقام نهایی",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P7",
+      "supporting_work_packages": [
+        "P2",
+        "P8"
+      ],
+      "completion_criterion_fa": "طبقه‌بندی خطا و موارد واقعی همراه شمار، علت طبقه‌بندی و محدودیت تأیید معنایی ارایه شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217,
+          "line_end": 242
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1,
+          "line_end": 8
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.5.4",
+      "expert_section": "3.5",
+      "requirement_original": "Bound conclusions and do not interpret zero ASR as universal immunity",
+      "requirement_fa": "تفسیر محدود صفر ASR",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P7",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "صفر تنها به موفقیت مشاهده‌شده با معیار، نمونه و فرض معین نسبت داده شود؛ مصونیت عمومی یا تضمین رسمی ادعا نگردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 153
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 315
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.6.1",
+      "expert_section": "3.6",
+      "requirement_original": "Explain how trust labels are assigned",
+      "requirement_fa": "شیوهٔ تخصیص برچسب اعتماد",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P1",
+        "P8"
+      ],
+      "completion_criterion_fa": "سازندهٔ دیتاست، برچسب‌های قبلی و فرض‌های ورودی معلوم شود؛ سیاست واقعی تأیید در صورت وجود سند جدا معرفی گردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 104,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/build_dataset.py",
+          "line_start": 71,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/build_dataset.py#L71-L76",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 76,
+          "git_blob_sha": "c2080820b46c4f381f2a0f7c3dc49e8b83de08ec",
+          "snapshot_sha256": "fb0f8733f0ffecba0c901944545e4bebc5f5d530c2d7752918fd719b9dd8646f"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 45,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L45-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 65,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L65-L67",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 67,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.6.2",
+      "expert_section": "3.6",
+      "requirement_original": "Identify the person or institution authorized to approve documents",
+      "requirement_fa": "مرجع صلاحیت تأیید سند",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "unsupported",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "اگر مرجع نهادی مستند نیست، ماهیت آزمایشی برچسب تصریح و ادعای عملیاتی محدود شود؛ در صورت حفظ ادعا، مرجع و گردش کار واقعی لازم است.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 104,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 45,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L45-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 70,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L70-L84",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 84,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.6.3",
+      "expert_section": "3.6",
+      "requirement_original": "Clarify whether metadata is backed by authentication, audit logging, and access control",
+      "requirement_fa": "احراز اصالت، صلاحیت و ثبت رویداد metadata",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P4",
+        "P8"
+      ],
+      "completion_criterion_fa": "وجود یا نبود کنترول دسترسی، هویت تأییدکننده، ثبت تغییر و تمامیت جدا بیان شود؛ تغییر مستقیم فیلد نفوذ واقعی نامیده نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 70,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L70-L84",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 84,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 63,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L63-L65",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 65,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.6.4",
+      "expert_section": "3.6",
+      "requirement_original": "Include the gate limitation in discussion and conclusion",
+      "requirement_fa": "محدودیت فیلتر در بحث و نتیجه",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "فرض درست‌بودن برچسب و جدا بودن اصالت از حقیقت در هر دو مطالعه و نتیجه حفظ شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 297,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 315
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.6.5",
+      "expert_section": "3.6",
+      "requirement_original": "Where possible test unauthorized metadata modification and its impact",
+      "requirement_fa": "آزمون تغییر غیرمجاز metadata در صورت امکان",
+      "expert_force": "optional_where_possible",
+      "expert_force_fa": "اختیاری در صورت امکان",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P6",
+        "P3",
+        "P8"
+      ],
+      "completion_criterion_fa": "آزمون برچسب موجود درست نام‌گذاری شود؛ آزمون عملیاتی تازه فقط در محیط کنترول‌شده با صلاحیت، لاگ و معیار رد/قبول اجرا شود، یا عدم اجرا روشن بماند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 85
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.7.1",
+      "expert_section": "3.7",
+      "requirement_original": "Document target selection at each attack budget",
+      "requirement_fa": "انتخاب اهداف در هر بودجه",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P3",
+      "supporting_work_packages": [
+        "P6",
+        "P8"
+      ],
+      "completion_criterion_fa": "عضویت هدف‌ها و seedهای اجرای تاریخی تنها از آرشیو منطبق تأیید شود؛ بودجه‌های فعلی با قدیمی جایگزین نگردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 321,
+          "line_end": 332
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 74,
+          "line_end": 87
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 27,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/attacks/poison_generator.py",
+          "line_start": 120,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/attacks/poison_generator.py#L120-L137",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 137,
+          "git_blob_sha": "4a1a0ffc5f982bd48e170944a993486e252138b2",
+          "snapshot_sha256": "53ccb8396220731a6650b79cd9f48cb15f83c1557eb2a0c025f26f23e744a4bb"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/config.yaml",
+          "line_start": 38,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/config.yaml#L38-L40",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 40,
+          "git_blob_sha": "46b67458d21d24edb81579a5a8d27b47793fd46a",
+          "snapshot_sha256": "32c3ef0163fe2a5961c287b614ccdd8ea3705dad0cc8b646a85fa15eacd5df90"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 55,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L55-L59",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 59,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/VALIDATION.md#L25-L27",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 27,
+          "git_blob_sha": "87c592c1e0e50f6539ce32eea71fa0f3abb5ccac",
+          "snapshot_sha256": "916eb88d8eab7f0ecb82e3335af78ba43ec47337a81bcb695a07ad0919a1814e"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.7.2",
+      "expert_section": "3.7",
+      "requirement_original": "Separate attacked-target coverage, success count, and success rate among attacked targets",
+      "requirement_fa": "تفکیک پوشش هدف، شمار موفقیت و نرخ هدف‌های حمله‌شده",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P7",
+      "supporting_work_packages": [
+        "P6",
+        "P8"
+      ],
+      "completion_criterion_fa": "شمار کل هدف، هدف واقعاً حمله‌شده، مواجهه و موفقیت با مخرج‌های مستقل در همهٔ جدول‌ها گزارش شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 73,
+          "line_end": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 131
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.7.3",
+      "expert_section": "3.7",
+      "requirement_original": "Add fixed-target evaluation across multiple attack doses",
+      "requirement_fa": "توصیهٔ دوزهای متعدد با اهداف ثابت",
+      "expert_force": "recommended",
+      "expert_force_fa": "توصیهٔ متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P6",
+      "supporting_work_packages": [
+        "P5",
+        "P3",
+        "P7",
+        "P8"
+      ],
+      "completion_criterion_fa": "در صورت انتخاب، پروتکل جدا با مجموعهٔ هدف ثابت، تعریف دوز و کنترل اندازهٔ زمینه تثبیت شود؛ یک دوز مثبت B یا تغییر شمار هدف جای آن را نگیرد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 30,
+          "line_end": 31
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 309,
+          "line_end": 311
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 24,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L24-L30",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 30,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/results/targeted-mode-validation/summary.json",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/results/targeted-mode-validation/summary.json#L3-L35",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 35,
+          "git_blob_sha": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "snapshot_sha256": "8fdb96bfbc3a2a1f919a8bf788d71edc3214e471d771f207eba0a9f8f9e1b34a"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/validate_targeted.py",
+          "line_start": 19,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/validate_targeted.py#L19-L38",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 38,
+          "git_blob_sha": "89c6561741daea62624118be3cee05adf07a46d2",
+          "snapshot_sha256": "d107338ba555c04e148d516a3d7c163f8890b1705d65516f8df5e89b1a0e3089"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.7.4",
+      "expert_section": "3.7",
+      "requirement_original": "Document seed values, use, and influence on selection",
+      "requirement_fa": "نقش و مقدار seed",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P3",
+      "supporting_work_packages": [
+        "P6",
+        "P8"
+      ],
+      "completion_criterion_fa": "seed انتخاب، ترتیب، تکرار و بوت‌استرپ با کاربرد جدا ثبت شود؛ seed تاریخی مجهول از کد فعلی حدس زده نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 322,
+          "line_end": 332
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 269,
+          "line_end": 273
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 32,
+          "line_end": 50
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 22,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L22-L28",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 28,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/attacks/poison_generator.py",
+          "line_start": 120,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/attacks/poison_generator.py#L120-L137",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 137,
+          "git_blob_sha": "4a1a0ffc5f982bd48e170944a993486e252138b2",
+          "snapshot_sha256": "53ccb8396220731a6650b79cd9f48cb15f83c1557eb2a0c025f26f23e744a4bb"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/requirements-tested.txt",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/requirements-tested.txt#L1-L10",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 10,
+          "git_blob_sha": "6b6c58cffa8d053ef36ea99a04245443f4899a5d",
+          "snapshot_sha256": "d3f106019f8792eea14836ccf2725de1e0aaf79f94c9b7411bc333b4bfc8ee83"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.8.1",
+      "expert_section": "3.8",
+      "requirement_original": "Analyze cases with retrieved correct evidence but wrong final answers",
+      "requirement_fa": "شاهد درستِ بازیابی‌شده و پاسخ غلط",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P7",
+      "supporting_work_packages": [
+        "P2",
+        "P8"
+      ],
+      "completion_criterion_fa": "موارد جفتی با شناسهٔ پرسش، رتبهٔ شاهد، زمینه و طبقهٔ پاسخ ثبت شود؛ تأیید معنایی از تطبیق عدد جدا باشد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 122
+        },
+        {
+          "path": "/workspace/revision/experiment/contexts.jsonl",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.8.2",
+      "expert_section": "3.8",
+      "requirement_original": "Analyze exposed poison when the attack nevertheless fails",
+      "requirement_fa": "مواجهه با حمله بدون موفقیت",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P7",
+      "supporting_work_packages": [
+        "P2",
+        "P8"
+      ],
+      "completion_criterion_fa": "صحت، امتناع، خطای دیگر و عدم تأیید مقدار مهاجم جدا شمرده و با نمونهٔ واقعی توضیح داده شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217
+        },
+        {
+          "path": "/workspace/revision/experiment/summary.csv",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.8.3",
+      "expert_section": "3.8",
+      "requirement_original": "Analyze attack prevention without correct-answer restoration",
+      "requirement_fa": "جلوگیری از حمله بدون بازگشت پاسخ صحیح",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P7",
+      "supporting_work_packages": [
+        "P2",
+        "P8"
+      ],
+      "completion_criterion_fa": "انتقال‌های جلوگیری، بازگشت صحت و موفقیت تازه با شمار و نمونهٔ جفتی گزارش شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 79
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        },
+        {
+          "path": "/workspace/revision/experiment/paired_defense_outcomes.csv",
+          "line_start": 1,
+          "line_end": 7
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13,
+          "note": "New research-stage independent offline artifact reconstruction; no new model calls or human labels."
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.8.4",
+      "expert_section": "3.8",
+      "requirement_original": "Analyze how changed trust labels change attack outcomes",
+      "requirement_fa": "اثر تغییر برچسب بر نتیجهٔ حمله",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P7",
+      "supporting_work_packages": [
+        "P0",
+        "P8"
+      ],
+      "completion_criterion_fa": "شرط متقابل موجود B و برچسب‌ها حفظ و تحلیل شود؛ نفوذ به سامانهٔ تأیید از آن نتیجه گرفته نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 148,
+          "line_end": 155
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.8.5",
+      "expert_section": "3.8",
+      "requirement_original": "Analyze repetition-induced changes in system behavior",
+      "requirement_fa": "تحلیل تغییر رفتار بر اثر تکرار",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "unavailable",
+      "primary_work_package": "P3",
+      "supporting_work_packages": [
+        "P5",
+        "P6",
+        "P7",
+        "P8"
+      ],
+      "completion_criterion_fa": "ابتدا آرشیو اصلی جست‌وجو شود؛ اگر بازیابی نشد، مطالعهٔ آیندهٔ مستقل یا خروج شفاف ادعای فاقد شاهد و ثبت شکاف باقیمانده انتخاب شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 31
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 309,
+          "line_end": 311
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/results/targeted-mode-validation/summary.json",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/results/targeted-mode-validation/summary.json#L3-L35",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 35,
+          "git_blob_sha": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "snapshot_sha256": "8fdb96bfbc3a2a1f919a8bf788d71edc3214e471d771f207eba0a9f8f9e1b34a"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 26,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L26-L30",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 30,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "3.8.6",
+      "expert_section": "3.8",
+      "requirement_original": "Present repetition as a separate protocol with complete execution and evaluation detail",
+      "requirement_fa": "پروتکل مستقل و کامل آزمایش تکرار",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P3",
+      "supporting_work_packages": [
+        "P6",
+        "P8"
+      ],
+      "completion_criterion_fa": "اجرای تاریخی هفت‌دوزی، تشخیص فعلی ۱٬۰۹۲ردیفی و مطالعهٔ آینده با شناسه، روش، داده و نتیجهٔ جدا نگه‌داشته شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 376,
+          "line_end": 384
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 876,
+          "line_end": 890
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/evaluation/question_comparison.py",
+          "line_start": 16,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/evaluation/question_comparison.py#L16-L65",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 65,
+          "git_blob_sha": "5702b1bc35060dc0d2710896d6c8e194c5a3f13d",
+          "snapshot_sha256": "4e596d78cb73990e6c33ffca11fd6084396baab62ff7c05aa4bbbfcebe25a815"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 26,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L26-L30",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 30,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "4.1",
+      "expert_section": "4",
+      "requirement_original": "Abstract: problem, actual method, data, major results, and main limitation",
+      "requirement_fa": "چکیدهٔ متناسب با روش و محدودیت",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P0",
+        "P7"
+      ],
+      "completion_criterion_fa": "مسئله، روش واقعی، داده، نتیجهٔ تأییدشده و مهم‌ترین محدودیت در چکیده درج و با متن و جدول‌ها تطبیق شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 18
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "4.2",
+      "expert_section": "4",
+      "requirement_original": "Methods sufficiently detailed to reconstruct the entire pipeline",
+      "requirement_fa": "روش قابل بازسازی",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "completion_criterion_fa": "نسخه، ورودی، مراحل، حمله، دفاع، ارزیاب و روش تحلیل کامل شرح داده شود؛ ادعای بازاجرای تاریخی فقط با شاهد منطبق بماند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 113,
+          "line_end": 171
+        },
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 25,
+          "line_end": 74
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 55,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L55-L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 69,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 23,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L23-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "4.3",
+      "expert_section": "4",
+      "requirement_original": "Results: precise metrics/conditions and separation of principal and supplementary experiments",
+      "requirement_fa": "تفکیک نتایج اصلی و تکمیلی",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P7"
+      ],
+      "completion_criterion_fa": "هر جدول مدل، مطالعه، پروتکل، n، دوز، مخرج و نسخهٔ معیار داشته باشد؛ شمار ردیف‌های مطالعات جمع زده نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 173,
+          "line_end": 277
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "4.4",
+      "expert_section": "4",
+      "requirement_original": "Discussion: explain retrieval/attack divergence and metadata limitations",
+      "requirement_fa": "بحث بر پایهٔ خطا و محدودیت metadata",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P7",
+        "P0"
+      ],
+      "completion_criterion_fa": "بحث به نمونه‌های ردیابی‌پذیر و حدود طراحی تکیه کند؛ اختلاف بازیابی و پاسخ و مرز اعتماد بیان گردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 285,
+          "line_end": 299
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 217,
+          "line_end": 225
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "4.5",
+      "expert_section": "4",
+      "requirement_original": "Conclusion restricted to directly supported experimental claims",
+      "requirement_fa": "نتیجه‌گیری محدود به شواهد",
+      "expert_force": "required",
+      "expert_force_fa": "الزام متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P0",
+        "P7"
+      ],
+      "completion_criterion_fa": "هر گزارهٔ نتیجه به شاهد مشخص وصل شود؛ ارقام آرشیوی و اصلاحی و ناتوانی در تعمیم روشن بماند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 303,
+          "line_end": 315
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.1",
+      "expert_section": "5",
+      "requirement_original": "Full preparation/retrieval/reranking/filtering/scoring code",
+      "requirement_fa": "کد کامل آماده‌سازی تا ارزیابی",
+      "expert_force": "requested_artifact",
+      "expert_force_fa": "قلم شواهد درخواستی",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P3",
+        "P4"
+      ],
+      "completion_criterion_fa": "کد فعلی و کد ادامهٔ تحقیق با commit و فرمان‌ها ارایه شود؛ نبود نسخهٔ منطبق اجرای اصلی مخفی نگردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 27,
+          "line_end": 42
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 38,
+          "line_end": 155
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 137,
+          "line_end": 243
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 183
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 75,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L75-L85",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 85,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 23,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L23-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/generation/llm_interface.py",
+          "line_start": 39,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/generation/llm_interface.py#L39-L48",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 48,
+          "git_blob_sha": "cb0dff0dd1a178bc8250b9af2c22806dec50ce80",
+          "snapshot_sha256": "b302d09bfde325606262e3d1c385c696686b3df33055753f1d2cacffcf964c63"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.2",
+      "expert_section": "5",
+      "requirement_original": "Original documents, chunks, questions, and reference answers",
+      "requirement_fa": "اسناد، قطعه‌ها، پرسش‌ها و مرجع‌ها",
+      "expert_force": "requested_artifact",
+      "expert_force_fa": "قلم شواهد درخواستی",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P1"
+      ],
+      "completion_criterion_fa": "چهار جدول اصلی و شِما و هش با پیوند ثابت دسترس‌پذیر باشد؛ وضعیت نشر بستهٔ B نیز جدا معلوم شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 30,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/revision/experiment/clean_documents.json",
+          "line_start": 1,
+          "line_end": 9
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 1,
+          "line_end": 33
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/dataset_manifest.json",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/dataset_manifest.json#L3-L8",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 8,
+          "git_blob_sha": "ede2759ce3f790b7b336efdea05a7703b8be54c5",
+          "snapshot_sha256": "d81ab5806d88db99dd4c78feaef289fa49a72f12139a72a5320849f541350388"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/dataset_manifest.json",
+          "line_start": 95,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/dataset_manifest.json#L95-L102",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 102,
+          "git_blob_sha": "ede2759ce3f790b7b336efdea05a7703b8be54c5",
+          "snapshot_sha256": "d81ab5806d88db99dd4c78feaef289fa49a72f12139a72a5320849f541350388"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 68
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.3",
+      "expert_section": "5",
+      "requirement_original": "Complete attack passages, IDs, targets, and desired false answers",
+      "requirement_fa": "متن، شناسه، هدف و مقدار حملات",
+      "expert_force": "requested_artifact",
+      "expert_force_fa": "قلم شواهد درخواستی",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P1",
+        "P0"
+      ],
+      "completion_criterion_fa": "بستهٔ کامل A و B با پیوندها و نسخهٔ مقدار هدف و وضعیت صحت‌سنجی ارایه شود؛ ادعای تاریخی فراتر از آرشیو نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/insertions.json",
+          "line_start": 1,
+          "line_end": 26
+        },
+        {
+          "path": "/workspace/revision/experiment/test_questions.json",
+          "line_start": 3,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 148
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/poisoned_passages.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/poisoned_passages.csv#L1-L7",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 7,
+          "git_blob_sha": "9cf95647641924028222fa4bf5ae69d9c3f846e3",
+          "snapshot_sha256": "c51aec07b62f28c3c4e0b728a221466a364dcb9aa3aca6c1dfe83d77f05100e3"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/raw/questions.csv#L1-L6",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 6,
+          "git_blob_sha": "cea735af5dd7dd4b7378ebe1629e4131f11b6472",
+          "snapshot_sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 54
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.4",
+      "expert_section": "5",
+      "requirement_original": "Complete experimental configuration and seeds",
+      "requirement_fa": "تنظیمات و seedهای کامل",
+      "expert_force": "requested_artifact",
+      "expert_force_fa": "قلم شواهد درخواستی",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P3",
+      "supporting_work_packages": [
+        "P4",
+        "P6",
+        "P8"
+      ],
+      "completion_criterion_fa": "تنظیمات هر اجرای موجود یا آینده با شناسهٔ داده/کد/مدل منطبق باشد؛ مجهولات تاریخی صریح باقی بماند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 3,
+          "line_end": 52
+        },
+        {
+          "path": "/workspace/revision/experiment/generation_freeze.json",
+          "line_start": 2,
+          "line_end": 12
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/config.yaml",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/config.yaml#L1-L49",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 49,
+          "git_blob_sha": "46b67458d21d24edb81579a5a8d27b47793fd46a",
+          "snapshot_sha256": "32c3ef0163fe2a5961c287b614ccdd8ea3705dad0cc8b646a85fa15eacd5df90"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 55,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L55-L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 69,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.5",
+      "expert_section": "5",
+      "requirement_original": "Raw per-question/per-defense/per-dose outcomes",
+      "requirement_fa": "خروجی خام هر پرسش، دفاع و دوز",
+      "expert_force": "requested_artifact",
+      "expert_force_fa": "قلم شواهد درخواستی",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P3",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "آرشیو اصلی، تشخیصی، B و آینده با وضعیت دسترسی جدا فهرست شود؛ آرشیو تشخیصی جای خروجی اصلی عرضه نگردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 36,
+          "line_end": 39
+        },
+        {
+          "path": "/workspace/revision/experiment/completion.json",
+          "line_start": 3,
+          "line_end": 7
+        },
+        {
+          "path": "/workspace/revision/experiment/scored_results.csv",
+          "line_start": 1
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 59,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L59-L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 69,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/results/targeted-mode-validation/summary.json",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/results/targeted-mode-validation/summary.json#L3-L35",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 35,
+          "git_blob_sha": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "snapshot_sha256": "8fdb96bfbc3a2a1f919a8bf788d71edc3214e471d771f207eba0a9f8f9e1b34a"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.6",
+      "expert_section": "5",
+      "requirement_original": "Executable Recall/accuracy/ASR/exposure evaluator",
+      "requirement_fa": "ارزیاب اجرایی Recall، صحت، ASR و مواجهه",
+      "expert_force": "requested_artifact",
+      "expert_force_fa": "قلم شواهد درخواستی",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P2",
+        "P3",
+        "P7"
+      ],
+      "completion_criterion_fa": "ارزیاب نسخه‌دار، مثال‌ها و فرمان بازتحلیل از خروجی خام آماده باشد؛ نسخهٔ تاریخیِ نامعلوم با نسخهٔ فعلی یکی دانسته نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 36,
+          "line_end": 55
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 155
+        },
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 175,
+          "line_end": 188
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/evaluation/metrics.py",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/evaluation/metrics.py#L1-L68",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 68,
+          "git_blob_sha": "a5c2eafd5c69c2349ed5f782526efd0996e00271",
+          "snapshot_sha256": "2cec48fd4a2f8de320807ab8d23b7ad923c0364beb4c4acba767ee3634796972"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/src/evaluation/metrics.py",
+          "line_start": 112,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/src/evaluation/metrics.py#L112-L165",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 165,
+          "git_blob_sha": "a5c2eafd5c69c2349ed5f782526efd0996e00271",
+          "snapshot_sha256": "2cec48fd4a2f8de320807ab8d23b7ad923c0364beb4c4acba767ee3634796972"
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.7",
+      "expert_section": "5",
+      "requirement_original": "Software, hardware, and environment information",
+      "requirement_fa": "محیط نرم‌افزار و سخت‌افزار",
+      "expert_force": "requested_artifact",
+      "expert_force_fa": "قلم شواهد درخواستی",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P4",
+      "supporting_work_packages": [
+        "P3",
+        "P8"
+      ],
+      "completion_criterion_fa": "فهرست نسخه و محیط هر اجرا و موارد مجهول تاریخی ثبت شود؛ میزبان فعلی برای پرکردن فیلد تاریخی استفاده نشود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/generation_freeze.json",
+          "line_start": 10,
+          "line_end": 12
+        },
+        {
+          "path": "/workspace/revision/experiment/requirements.txt",
+          "line_start": 1,
+          "line_end": 4
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 321
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 884,
+          "line_end": 887
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/VALIDATION.md",
+          "line_start": 13,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/VALIDATION.md#L13",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "87c592c1e0e50f6539ce32eea71fa0f3abb5ccac",
+          "snapshot_sha256": "916eb88d8eab7f0ecb82e3335af78ba43ec47337a81bcb695a07ad0919a1814e"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/requirements-tested.txt",
+          "line_start": 1,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/requirements-tested.txt#L1-L10",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 10,
+          "git_blob_sha": "6b6c58cffa8d053ef36ea99a04245443f4899a5d",
+          "snapshot_sha256": "d3f106019f8792eea14836ccf2725de1e0aaf79f94c9b7411bc333b4bfc8ee83"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 71,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L71-L73",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 73,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.8",
+      "expert_section": "5",
+      "requirement_original": "Data-source provenance, extraction, access dates, and verification records",
+      "requirement_fa": "منشأ، استخراج، تاریخ دسترسی و بررسی منبع",
+      "expert_force": "requested_artifact",
+      "expert_force_fa": "قلم شواهد درخواستی",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P1",
+      "supporting_work_packages": [
+        "P8"
+      ],
+      "completion_criterion_fa": "snapshotها، URL، تاریخ، هش، روش استخراج و نوع بررسی واقعی با حدود حق نشر و بازبینی قبلی ثبت شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/source_dataset_metadata.json",
+          "line_start": 2,
+          "line_end": 6
+        },
+        {
+          "path": "/workspace/revision/experiment/prepare_experiment.py",
+          "line_start": 49,
+          "line_end": 118
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 127
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 364
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/dataset_manifest.json",
+          "line_start": 9,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/dataset_manifest.json#L9-L95",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 95,
+          "git_blob_sha": "ede2759ce3f790b7b336efdea05a7703b8be54c5",
+          "snapshot_sha256": "d81ab5806d88db99dd4c78feaef289fa49a72f12139a72a5320849f541350388"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/scripts/fetch_worldbank.py",
+          "line_start": 34,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/scripts/fetch_worldbank.py#L34-L56",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 56,
+          "git_blob_sha": "d237b3eee3a4cb5014d35a6052caf813dbb1ba0f",
+          "snapshot_sha256": "165ad596c0c942b4145bcd21b46300622adec37b1d0cba781db1bc345118b929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 41,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L41-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 55,
+          "line_end": 68
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.9",
+      "expert_section": "5",
+      "requirement_original": "Explain proposed versus actually executed architecture",
+      "requirement_fa": "طرح پیشنهادی در برابر معماری اجراشده",
+      "expert_force": "requested_artifact",
+      "expert_force_fa": "قلم شواهد درخواستی",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P3",
+        "P8"
+      ],
+      "completion_criterion_fa": "جدول تفاوت‌ها با سند اصلی در صورت دسترسی، و تفکیک صریح توضیح مستند/استنباط پسینی آماده شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91,
+          "line_end": 109
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 816,
+          "line_end": 829
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 17,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L17-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 86,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L86-L96",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 96,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.10",
+      "expert_section": "5",
+      "requirement_original": "Documentation for trust-label and repetition supplementary experiments",
+      "requirement_fa": "مستند مکمل برچسب و تکرار",
+      "expert_force": "requested_artifact",
+      "expert_force_fa": "قلم شواهد درخواستی",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P3",
+        "P6",
+        "P0"
+      ],
+      "completion_criterion_fa": "برای هر پروتکل، شناسهٔ کد/داده/تنظیم/نتیجه و وضعیت کمبود جدا ثبت شود؛ نسخه‌ها و آرشیوها ادغام نگردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/run_experiment.py",
+          "line_start": 145,
+          "line_end": 152
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 225
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 275
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 69,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/results/targeted-mode-validation/summary.json",
+          "line_start": 3,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/results/targeted-mode-validation/summary.json#L3-L35",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 35,
+          "git_blob_sha": "a2934cf35a93c9100adb91bc45d402f57f306da8",
+          "snapshot_sha256": "8fdb96bfbc3a2a1f919a8bf788d71edc3214e471d771f207eba0a9f8f9e1b34a"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/docs/EXPERIMENTS.md",
+          "line_start": 26,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/docs/EXPERIMENTS.md#L26-L30",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 30,
+          "git_blob_sha": "46e2569a0341e7e50314d0e25dd99fb83fa01b95",
+          "snapshot_sha256": "3977aec867f32f258b680de5c232896047a874f151490f0d08dc43ab8fd56b60"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "5.11",
+      "expert_section": "5",
+      "requirement_original": "Explain publication/licensing restrictions and share publishable materials",
+      "requirement_fa": "محدودیت نشر و حقوق استفاده",
+      "expert_force": "conditional",
+      "expert_force_fa": "مشروط به ادعا/وضعیت",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P1"
+      ],
+      "completion_criterion_fa": "مواد قابل اشتراک با شرایط منبع و وضعیت واقعی دسترسی معرفی شود؛ حقوق قبلی حل‌نشده و مواد محلی B آشکار بماند.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/experiment/README.md",
+          "line_start": 76,
+          "line_end": 93
+        },
+        {
+          "path": "/workspace/revision/experiment/source_dataset_metadata.json",
+          "line_start": 6
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 329
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/README.md",
+          "line_start": 63,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/README.md#L63-L69",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 69,
+          "git_blob_sha": "f4bcf208e1d7caed355d32cdc18a460a0ac74ac3",
+          "snapshot_sha256": "12bad5ea0855abc04215da9d4fcfc1cb21532a93b52761aa21fed8c9d31025bd"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 41,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L41-L47",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 47,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "6.1",
+      "expert_section": "6",
+      "requirement_original": "First clarify the real methodology and used components",
+      "requirement_fa": "آغاز با روش و اجزای واقعی",
+      "expert_force": "proposed_sequence",
+      "expert_force_fa": "ترتیب پیشنهادی متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P0",
+      "supporting_work_packages": [
+        "P3",
+        "P8"
+      ],
+      "completion_criterion_fa": "سند مبنا و مرز مطالعه‌ها پیش از اصلاح نتایج آماده شود؛ عبارت کهنهٔ نبود همهٔ داده و کد A در بازنویسی اصلاح گردد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 87,
+          "line_end": 171
+        },
+        {
+          "path": "/workspace/revision/source_original_article.txt",
+          "line_start": 816,
+          "line_end": 829
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/data/DATASET_CARD.md",
+          "line_start": 5,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/data/DATASET_CARD.md#L5-L57",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 57,
+          "git_blob_sha": "019b6c7182d5aef98dfb8f0dcdbf512745e4dad0",
+          "snapshot_sha256": "c12d399759bf8e8933a2bb2367c3e428ad031d6aacf59255adaca84d541fb929"
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 23,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L23-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "6.2",
+      "expert_section": "6",
+      "requirement_original": "Then recompute and reproduce existing results from code and raw data",
+      "requirement_fa": "سپس محاسبه و بازتولید نتایج موجود",
+      "expert_force": "proposed_sequence",
+      "expert_force_fa": "ترتیب پیشنهادی متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P3",
+      "supporting_work_packages": [
+        "P2",
+        "P7",
+        "P8"
+      ],
+      "completion_criterion_fa": "بازتحلیل B و بازسازی ورودی A از بازتولید خروجی تاریخی جدا بماند؛ برای هر مسیر رسید ممیزی و وضعیت مستقل ثبت شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 91
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 334
+        },
+        {
+          "path": "/workspace/revision/experiment/analyze_experiment.py",
+          "line_start": 65,
+          "line_end": 107
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 340,
+          "line_end": 342
+        },
+        {
+          "path": "/workspace/research_phase/repo_audit/original_data_audit.json",
+          "line_start": 35,
+          "line_end": 68
+        },
+        {
+          "path": "/workspace/research_phase/artifact_audit/audit_report.md",
+          "line_start": 1,
+          "line_end": 13
+        },
+        {
+          "path": "/workspace/research_phase/repo_snapshot/research/README.md",
+          "line_start": 25,
+          "source_url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/6f76858df91277e4b962ee94b4286a25cfe08d4d/research/README.md#L25-L29",
+          "git_commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+          "line_end": 29,
+          "git_blob_sha": "7a64656236aa4d4628e5e0d4672d6d746689951a",
+          "snapshot_sha256": "107fc2f84acd0c78d07a893ee381265191836b230fbb635899f50702d8aa0673"
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "6.3",
+      "expert_section": "6",
+      "requirement_original": "Then improve evaluation, review a human sample, and report justified uncertainty",
+      "requirement_fa": "سپس بهبود ارزیابی و عدم‌قطعیت",
+      "expert_force": "proposed_sequence",
+      "expert_force_fa": "ترتیب پیشنهادی متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P2",
+      "supporting_work_packages": [
+        "P1",
+        "P7"
+      ],
+      "completion_criterion_fa": "طرح بررسی انسانی و معیار پیش از بازنمره‌دهی نهایی تثبیت و نتیجهٔ واقعی یا عدم انجام آن صریح گزارش شود؛ واحد تحلیل موجه باشد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 167,
+          "line_end": 171
+        },
+        {
+          "path": "/workspace/revision/experiment/HUMAN_REVIEW_INSTRUCTIONS.md",
+          "line_start": 15,
+          "line_end": 34
+        },
+        {
+          "path": "/workspace/revision/experiment/analysis.json",
+          "line_start": 23
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "6.4",
+      "expert_section": "6",
+      "requirement_original": "Then perform real-LLM supplementary experiments under matched conditions and fixed-target doses",
+      "requirement_fa": "سپس آزمایش مولد و مکمل متناسب",
+      "expert_force": "proposed_sequence",
+      "expert_force_fa": "ترتیب پیشنهادی متخصص",
+      "research_status": "partially_addressed",
+      "primary_work_package": "P6",
+      "supporting_work_packages": [
+        "P5",
+        "P4",
+        "P3",
+        "P7"
+      ],
+      "completion_criterion_fa": "وجود آزمایش مولد B پذیرفته بماند؛ هر مقایسهٔ تازه با سؤال تحقیق، کنترل، توقف، هزینه و معیار از پیش نوشته شود.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 157,
+          "line_end": 169
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 267
+        },
+        {
+          "path": "/workspace/revision/experiment/config.json",
+          "line_start": 30,
+          "line_end": 31
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    },
+    {
+      "requirement_id": "6.5",
+      "expert_section": "6",
+      "requirement_original": "Finally rewrite abstract/discussion/conclusion from verified results and remove unsupported claims",
+      "requirement_fa": "در پایان بازنویسی بر اساس نتایج تأییدشده",
+      "expert_force": "proposed_sequence",
+      "expert_force_fa": "ترتیب پیشنهادی متخصص",
+      "research_status": "addressed",
+      "primary_work_package": "P8",
+      "supporting_work_packages": [
+        "P7"
+      ],
+      "completion_criterion_fa": "چکیده، بحث و نتیجه پس از تثبیت تحلیل اصلاح و ادعاهای فاقد شاهد حذف یا محدود شوند؛ گزارش نهایی به شواهد وصل باشد.",
+      "evidence_basis": [
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 18
+        },
+        {
+          "path": "/workspace/revision/Revised_Manuscript.md",
+          "line_start": 285,
+          "line_end": 315
+        }
+      ],
+      "plan_status": "planned_only_no_implementation"
+    }
+  ],
+  "requirement_to_work_package": {
+    "3.1.1": {
+      "primary": "P0",
+      "supporting": [
+        "P3",
+        "P8"
+      ]
+    },
+    "3.1.2": {
+      "primary": "P0",
+      "supporting": [
+        "P3",
+        "P8"
+      ]
+    },
+    "3.1.3": {
+      "primary": "P0",
+      "supporting": [
+        "P3",
+        "P8"
+      ]
+    },
+    "3.1.4": {
+      "primary": "P0",
+      "supporting": [
+        "P6",
+        "P8"
+      ]
+    },
+    "3.1.5": {
+      "primary": "P0",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "3.2.1": {
+      "primary": "P8",
+      "supporting": [
+        "P1"
+      ]
+    },
+    "3.2.2": {
+      "primary": "P1",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "3.2.3": {
+      "primary": "P8",
+      "supporting": [
+        "P1"
+      ]
+    },
+    "3.2.4": {
+      "primary": "P1",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "3.2.5": {
+      "primary": "P1",
+      "supporting": [
+        "P2",
+        "P7",
+        "P8"
+      ]
+    },
+    "3.2.6": {
+      "primary": "P1",
+      "supporting": [
+        "P0",
+        "P8"
+      ]
+    },
+    "3.2.7": {
+      "primary": "P8",
+      "supporting": [
+        "P1"
+      ]
+    },
+    "3.2.8": {
+      "primary": "P7",
+      "supporting": [
+        "P1",
+        "P2",
+        "P8"
+      ]
+    },
+    "3.3.1": {
+      "primary": "P8",
+      "supporting": [
+        "P1"
+      ]
+    },
+    "3.3.2": {
+      "primary": "P1",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "3.3.3": {
+      "primary": "P1",
+      "supporting": [
+        "P2",
+        "P8"
+      ]
+    },
+    "3.3.4": {
+      "primary": "P8",
+      "supporting": [
+        "P1"
+      ]
+    },
+    "3.3.5": {
+      "primary": "P8",
+      "supporting": [
+        "P1"
+      ]
+    },
+    "3.3.6": {
+      "primary": "P0",
+      "supporting": [
+        "P3",
+        "P8"
+      ]
+    },
+    "3.3.7": {
+      "primary": "P1",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "3.3.8": {
+      "primary": "P1",
+      "supporting": [
+        "P6",
+        "P8"
+      ]
+    },
+    "3.4.1": {
+      "primary": "P2",
+      "supporting": [
+        "P7",
+        "P8"
+      ]
+    },
+    "3.4.2": {
+      "primary": "P2",
+      "supporting": [
+        "P1",
+        "P7",
+        "P8"
+      ]
+    },
+    "3.4.3": {
+      "primary": "P2",
+      "supporting": [
+        "P3",
+        "P7",
+        "P8"
+      ]
+    },
+    "3.4.4": {
+      "primary": "P2",
+      "supporting": [
+        "P7",
+        "P8"
+      ]
+    },
+    "3.4.5": {
+      "primary": "P2",
+      "supporting": [
+        "P7",
+        "P8"
+      ]
+    },
+    "3.4.6": {
+      "primary": "P2",
+      "supporting": [
+        "P7",
+        "P8"
+      ]
+    },
+    "3.5.1": {
+      "primary": "P7",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "3.5.2": {
+      "primary": "P7",
+      "supporting": [
+        "P2",
+        "P3",
+        "P8"
+      ]
+    },
+    "3.5.3": {
+      "primary": "P7",
+      "supporting": [
+        "P2",
+        "P8"
+      ]
+    },
+    "3.5.4": {
+      "primary": "P7",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "3.6.1": {
+      "primary": "P0",
+      "supporting": [
+        "P1",
+        "P8"
+      ]
+    },
+    "3.6.2": {
+      "primary": "P0",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "3.6.3": {
+      "primary": "P0",
+      "supporting": [
+        "P4",
+        "P8"
+      ]
+    },
+    "3.6.4": {
+      "primary": "P0",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "3.6.5": {
+      "primary": "P0",
+      "supporting": [
+        "P6",
+        "P3",
+        "P8"
+      ]
+    },
+    "3.7.1": {
+      "primary": "P3",
+      "supporting": [
+        "P6",
+        "P8"
+      ]
+    },
+    "3.7.2": {
+      "primary": "P7",
+      "supporting": [
+        "P6",
+        "P8"
+      ]
+    },
+    "3.7.3": {
+      "primary": "P6",
+      "supporting": [
+        "P5",
+        "P3",
+        "P7",
+        "P8"
+      ]
+    },
+    "3.7.4": {
+      "primary": "P3",
+      "supporting": [
+        "P6",
+        "P8"
+      ]
+    },
+    "3.8.1": {
+      "primary": "P7",
+      "supporting": [
+        "P2",
+        "P8"
+      ]
+    },
+    "3.8.2": {
+      "primary": "P7",
+      "supporting": [
+        "P2",
+        "P8"
+      ]
+    },
+    "3.8.3": {
+      "primary": "P7",
+      "supporting": [
+        "P2",
+        "P8"
+      ]
+    },
+    "3.8.4": {
+      "primary": "P7",
+      "supporting": [
+        "P0",
+        "P8"
+      ]
+    },
+    "3.8.5": {
+      "primary": "P3",
+      "supporting": [
+        "P5",
+        "P6",
+        "P7",
+        "P8"
+      ]
+    },
+    "3.8.6": {
+      "primary": "P3",
+      "supporting": [
+        "P6",
+        "P8"
+      ]
+    },
+    "4.1": {
+      "primary": "P8",
+      "supporting": [
+        "P0",
+        "P7"
+      ]
+    },
+    "4.2": {
+      "primary": "P8",
+      "supporting": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    "4.3": {
+      "primary": "P8",
+      "supporting": [
+        "P7"
+      ]
+    },
+    "4.4": {
+      "primary": "P8",
+      "supporting": [
+        "P7",
+        "P0"
+      ]
+    },
+    "4.5": {
+      "primary": "P8",
+      "supporting": [
+        "P0",
+        "P7"
+      ]
+    },
+    "5.1": {
+      "primary": "P8",
+      "supporting": [
+        "P3",
+        "P4"
+      ]
+    },
+    "5.2": {
+      "primary": "P8",
+      "supporting": [
+        "P1"
+      ]
+    },
+    "5.3": {
+      "primary": "P8",
+      "supporting": [
+        "P1",
+        "P0"
+      ]
+    },
+    "5.4": {
+      "primary": "P3",
+      "supporting": [
+        "P4",
+        "P6",
+        "P8"
+      ]
+    },
+    "5.5": {
+      "primary": "P3",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "5.6": {
+      "primary": "P8",
+      "supporting": [
+        "P2",
+        "P3",
+        "P7"
+      ]
+    },
+    "5.7": {
+      "primary": "P4",
+      "supporting": [
+        "P3",
+        "P8"
+      ]
+    },
+    "5.8": {
+      "primary": "P1",
+      "supporting": [
+        "P8"
+      ]
+    },
+    "5.9": {
+      "primary": "P0",
+      "supporting": [
+        "P3",
+        "P8"
+      ]
+    },
+    "5.10": {
+      "primary": "P8",
+      "supporting": [
+        "P3",
+        "P6",
+        "P0"
+      ]
+    },
+    "5.11": {
+      "primary": "P8",
+      "supporting": [
+        "P1"
+      ]
+    },
+    "6.1": {
+      "primary": "P0",
+      "supporting": [
+        "P3",
+        "P8"
+      ]
+    },
+    "6.2": {
+      "primary": "P3",
+      "supporting": [
+        "P2",
+        "P7",
+        "P8"
+      ]
+    },
+    "6.3": {
+      "primary": "P2",
+      "supporting": [
+        "P1",
+        "P7"
+      ]
+    },
+    "6.4": {
+      "primary": "P6",
+      "supporting": [
+        "P5",
+        "P4",
+        "P3",
+        "P7"
+      ]
+    },
+    "6.5": {
+      "primary": "P8",
+      "supporting": [
+        "P7"
+      ]
+    }
+  },
+  "additional_research_findings": [
+    {
+      "id": "R-guard",
+      "primary_work_package": "P4",
+      "acceptance_fa": "عدم تطبیق هش درخواست‌های در انتظار، پیش از هر ارسال و ادامهٔ اجرا در نسخهٔ آینده بسته شود؛ آرشیو گذشته تغییر نکند.",
+      "origin": "Research_Stage_Report_FA.md §3.8; not a newly invented expert obligation"
+    },
+    {
+      "id": "R-reference-semantic",
+      "primary_work_package": "P1",
+      "acceptance_fa": "ابهام رابطهٔ سال، قید مقدار و نام رقمی با تصمیم مستند در نسخهٔ مرجع تازه حل یا آشکار شود.",
+      "origin": "Research_Stage_Report_FA.md §3.3–3.4"
+    },
+    {
+      "id": "R-independent-test",
+      "primary_work_package": "P5",
+      "acceptance_fa": "پس از استفاده از B برای اصلاح طراحی، ادعای تأییدی تازه به مجموعهٔ مستقل و تثبیت‌شده پیش از خروجی یا نام‌گذاری اکتشافی نیاز دارد.",
+      "origin": "Research_Stage_Report_FA.md §5; design recommendation"
+    },
+    {
+      "id": "R-figures",
+      "primary_work_package": "P8",
+      "acceptance_fa": "فهرست شکل و فلوچارت موجود با دفتر نگه‌داری/اصلاح/جایگزینی تطبیق شود.",
+      "origin": "earlier user request to preserve flow diagrams"
+    },
+    {
+      "id": "R-editorial",
+      "primary_work_package": "P8",
+      "acceptance_fa": "آلودگی سربرگ در مرجع، فاصله URL و نسخهٔ منابع علمی تصحیح شود.",
+      "origin": "Research_Stage_Report_FA.md §4"
+    },
+    {
+      "id": "U-independent-test",
+      "primary_work_package": "P5",
+      "acceptance_fa": "آزمون تازهٔ C و اهداکنندگان از تمام۱۲۸ مورد قبلی و موارد دارای واقعیت/شاهد مشترک جدا و پیش از پاسخ‌گیری منجمد شوند.",
+      "origin": "earlier user request for independent test set; Research_Stage_Report_FA.md §5"
+    }
+  ],
+  "historical_reproduction_paths": [
+    {
+      "path_id": "H1",
+      "label_fa": "بازیابی مواد اصلی",
+      "requires_fa": "manifest، فایل‌های خروجی خام، کد منطبق، ورودی، config، seed، محیط و ارتباط با run_id",
+      "allowed_claim_fa": "آرشیو بازیابی و هویت آن بررسی شد؛ هنوز بازنمره‌دهی/بازاجرا انجام نشده است."
+    },
+    {
+      "path_id": "H2",
+      "label_fa": "بازنمره‌دهی خروجی اصلی",
+      "requires_fa": "خروجی واقعی بازیابی‌شده و ارزیاب منطبق یا تحلیل نسخه‌دار با ارزیاب تازه",
+      "allowed_claim_fa": "محاسبات از خروجی ذخیره‌شده بازتأیید شد؛ اجرای دوبارهٔ سیستم نیست."
+    },
+    {
+      "path_id": "H3",
+      "label_fa": "بازاجرای نسخهٔ تاریخی",
+      "requires_fa": "کد و ورودی و تنظیمات منطبق و محیط قابل بازسازی؛ ثبت اختلاف نسخه‌ها و حدود برابری",
+      "allowed_claim_fa": "بازاجرای نسخهٔ تاریخی در حدود برابری مستند؛ برای مولد شبکه‌ای برابری بایت‌به‌بایت تضمین نمی‌شود."
+    },
+    {
+      "path_id": "H4",
+      "label_fa": "بازپیاده‌سازی یا اجرای آیندهٔ مستقل",
+      "requires_fa": "نسخهٔ تازه، پروتکل پیشینی، run_id مستقل و همهٔ خروجی‌های خام",
+      "allowed_claim_fa": "ادامه/بازپیاده‌سازی مستقل؛ جایگزین آرشیو اصلی و بازتولید عین اجرای تاریخی نیست."
+    },
+    {
+      "path_id": "H0",
+      "label_fa": "آرشیو اصلی بازیابی نشد",
+      "requires_fa": "ثبت مواد و محل‌های بررسی‌شده و موارد حل‌نشده",
+      "allowed_claim_fa": "ارقام تاریخیِ گزارش‌شده با عدم تأیید مستقل خروجی و محدودیت آشکار؛ حذف/محدودسازی ادعاهای متکی به شاهد ناموجود."
+    }
+  ],
+  "alignment_fa": "شناسه و نام بسته‌ها با پلان اصلی Implementation_Plan_FA.md همسان است؛ این فایل ضمیمهٔ پوشش و معیارپذیرش آن است، نه پلان موازی با نام‌گذاری متفاوت.",
+  "priorities_fa": "اولویت صفر: اعتبار و پیش‌نیاز؛ اولویت یک: داده/اجرا/تحلیل؛ اولویت دو: بازنویسی و تحویل. اجرایC انتخاب مسیر پلان اصلی است و هنوز انجام نشده است."
+}

@@ -1,0 +1,552 @@
+{
+  "scope": "Focused primary-source research, not a systematic review or new experimental evidence",
+  "sources": [
+    {
+      "id": "AD01",
+      "title": "PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models",
+      "authors": [
+        "Wei Zou",
+        "Runpeng Geng",
+        "Binghui Wang",
+        "Jinyuan Jia"
+      ],
+      "year": 2025,
+      "venue": "34th USENIX Security Symposium (USENIX Security 25)",
+      "pages": "3827–3844",
+      "publication_status_verified": "Published conference paper, official USENIX entry and proceedings PDF",
+      "doi": null,
+      "urls": [
+        "https://www.usenix.org/conference/usenixsecurity25/presentation/zou-poisonedrag",
+        "https://www.usenix.org/system/files/usenixsecurity25-zou-poisonedrag.pdf"
+      ],
+      "full_text_read_locators": [
+        "Section 5.1: setup, targets, metrics, human validation",
+        "Section 5: ablations on attack count and retrieval depth"
+      ],
+      "establishes": "Evaluates retrieval and generation separately; validates substring-based ASR against author human judgments.",
+      "does_not_establish": "Its scores or metric validation do not validate our small corpus or numerical scorer.",
+      "study_implication_inference": "Keep retrieval/exposure/output metrics distinct and validate the selected automatic scoring rule on actual outputs."
+    },
+    {
+      "id": "AD02",
+      "title": "Practical Poisoning Attacks against Retrieval-Augmented Generation",
+      "authors": [
+        "Baolei Zhang",
+        "Yuxi Chen",
+        "Zhuqing Liu",
+        "Lihai Nie",
+        "Tong Li",
+        "Zheli Liu",
+        "Minghong Fang"
+      ],
+      "year": 2026,
+      "original_preprint_year": 2025,
+      "venue": "ACM SACMAT 2026; official accepted regular-paper list verified",
+      "arxiv": "2504.03957v2",
+      "version_date": "2026-01-08",
+      "publication_status_verified": "Official conference acceptance and author publication page; full methods read from arXiv v2",
+      "doi": "10.48550/arXiv.2504.03957",
+      "publisher_doi_verified": false,
+      "urls": [
+        "https://arxiv.org/abs/2504.03957v2",
+        "https://arxiv.org/html/2504.03957v2",
+        "https://www.sacmat.org/2026/accepted-papers.php",
+        "https://minghongfang.com/publications/"
+      ],
+      "full_text_read_locators": [
+        "Sections 4.1–4.3: attack construction",
+        "Sections 5.1.3–5.1.4: evaluation and equal one-text budgets"
+      ],
+      "establishes": "Compares attacks at one poisoned text per target; v2 uses GPT-4o-mini judgment for ASR.",
+      "does_not_establish": "An LLM judge is not independent human validation; corpus/template conditions differ from ours.",
+      "study_implication_inference": "Match dose and targets when comparing attacks and distinguish text repetition from stronger individual poisons.",
+      "bibliography_note": "Current manuscript accurately cites v1, whose author order differs (Minghong Fang third). Updating to v2 requires updating year/order and methods attribution together. ACM DOI endpoint returned 403, so publisher DOI/pages not verified from primary publisher."
+    },
+    {
+      "id": "AD03",
+      "title": "Towards More Robust Retrieval-Augmented Generation: Evaluating RAG Under Adversarial Poisoning Attacks",
+      "authors": [
+        "Jinyan Su",
+        "Jin Peng Zhou",
+        "Zhengxin Zhang",
+        "Preslav Nakov",
+        "Claire Cardie"
+      ],
+      "year": 2025,
+      "original_preprint_year": 2024,
+      "venue": "arXiv preprint; no formal venue independently verified",
+      "arxiv": "2412.16708v2",
+      "version_date": "2025-07-26",
+      "doi": "10.48550/arXiv.2412.16708",
+      "urls": [
+        "https://arxiv.org/abs/2412.16708v2",
+        "https://arxiv.org/html/2412.16708v2",
+        "https://github.com/JinyanSu1/eval_PoisonRaG"
+      ],
+      "full_text_read_locators": [
+        "Section 3: context taxonomy",
+        "Section 5.1: controlled generation contexts",
+        "Appendix E: combined retrieval/generation results"
+      ],
+      "establishes": "Separates adversarial, untouched, and guiding contexts; prompting effects vary across models.",
+      "does_not_establish": "Its context interventions are not identical to our KB-insertion unrelated control.",
+      "study_implication_inference": "Use equal-exposure context analysis to isolate generator behavior from retrieval effects."
+    },
+    {
+      "id": "AD04",
+      "title": "Certifiably Robust RAG against Retrieval Corruption",
+      "authors": [
+        "Chong Xiang",
+        "Tong Wu",
+        "Zexuan Zhong",
+        "David Wagner",
+        "Danqi Chen",
+        "Prateek Mittal"
+      ],
+      "year": 2026,
+      "original_preprint_year": 2024,
+      "venue": "IEEE Conference on Secure and Trustworthy Machine Learning (SaTML) 2026",
+      "arxiv": "2405.15556v2",
+      "version_date": "2026-04-01",
+      "doi": "10.48550/arXiv.2405.15556",
+      "publication_status_verified": "Official SaTML 2026 program and arXiv v2 full text",
+      "publisher_pages_or_doi_verified": false,
+      "urls": [
+        "https://arxiv.org/abs/2405.15556v2",
+        "https://arxiv.org/html/2405.15556v2",
+        "https://satml.org/2026/program/"
+      ],
+      "full_text_read_locators": [
+        "Sections II-B–II-D: corruption model and robustness definition",
+        "Section III: isolate-then-aggregate defense",
+        "Sections IV–V: certification and evaluation"
+      ],
+      "establishes": "Certifies quality bounds for a defined number of corrupted retrieved passages under an explicit model.",
+      "does_not_establish": "Its guarantees do not transfer to supplied-label filtering or arbitrary whole-KB poisoning.",
+      "study_implication_inference": "Specify attacker control and distinguish empirical absence of successes from certified robustness."
+    },
+    {
+      "id": "AD05",
+      "title": "Benchmarking Poisoning Attacks against Retrieval-Augmented Generation",
+      "authors": [
+        "Baolei Zhang",
+        "Haoran Xin",
+        "Jiatong Li",
+        "Dongzhe Zhang",
+        "Minghong Fang",
+        "Zhuqing Liu",
+        "Lihai Nie",
+        "Zheli Liu"
+      ],
+      "year": 2025,
+      "venue": "arXiv preprint; also labeled preprint on author publication page",
+      "arxiv": "2505.18543v1",
+      "version_date": "2025-05-24",
+      "doi": "10.48550/arXiv.2505.18543",
+      "urls": [
+        "https://arxiv.org/abs/2505.18543v1",
+        "https://arxiv.org/html/2505.18543v1",
+        "https://minghongfang.com/publications/"
+      ],
+      "full_text_read_locators": [
+        "Section 3: three attack objectives",
+        "Sections 4–5: definitions and benchmark",
+        "Introduction and expanded-dataset discussion"
+      ],
+      "establishes": "Distinguishes targeted/DoS/triggered DoS and evaluates effects of expanded correct-answer evidence.",
+      "does_not_establish": "Benchmark-wide statements do not certify our metadata gate or make UNKNOWN universally a defense success.",
+      "study_implication_inference": "Record clean evidence density and separate targeted wrong answers, abstentions, and other failures."
+    },
+    {
+      "id": "AD06",
+      "title": "RAGPart & RAGMask: Retrieval-Stage Defenses Against Corpus Poisoning in Retrieval-Augmented Generation",
+      "authors": [
+        "Pankayaraj Pathmanathan",
+        "Michael-Andrei Panaitescu-Liess",
+        "Cho-Yu Jason Chiang",
+        "Furong Huang"
+      ],
+      "year": 2025,
+      "venue": "arXiv metadata reports AAAI 2026 Workshop on New Frontiers in Information Retrieval, oral",
+      "arxiv": "2512.24268v1",
+      "version_date": "2025-12-30",
+      "doi": "10.48550/arXiv.2512.24268",
+      "publication_status_verified": "Preprint text and author-supplied workshop comment verified; independent workshop proceedings not inspected",
+      "urls": [
+        "https://arxiv.org/abs/2512.24268v1",
+        "https://arxiv.org/html/2512.24268v1"
+      ],
+      "full_text_read_locators": [
+        "Section 3: retrieval-stage defenses",
+        "Section 4: ASR means at least one poison retrieved; SR means at least one golden document retrieved",
+        "Appendix aggregation/utility comparisons"
+      ],
+      "establishes": "Tests retrieval defenses; its ASR is poison inclusion, not generation of a targeted false answer.",
+      "does_not_establish": "TF-IDF reranking implements neither method; a workshop is not main AAAI; older criticism of RobustRAG should not be transferred to its revised v2 without analysis.",
+      "study_implication_inference": "Pair attack reduction with supporting-evidence and clean-utility measures; use as positioning, not an unrun baseline."
+    },
+    {
+      "id": "AD07",
+      "title": "Security and Privacy Controls for Information Systems and Organizations",
+      "authors": [
+        "Joint Task Force"
+      ],
+      "year": 2020,
+      "venue": "NIST Special Publication 800-53 Revision 5",
+      "version_note": "Official Rev.5 publication with December 2020 updates; page also describes Release 5.2.0 of August 2025",
+      "doi": "10.6028/NIST.SP.800-53r5",
+      "urls": [
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf"
+      ],
+      "full_text_read_locators": [
+        "AC-3 access enforcement",
+        "CM-3 configuration change control",
+        "AU-9 audit protection including cryptographic protection",
+        "SI-7 information integrity including cryptographic protection"
+      ],
+      "establishes": "Defines organizational access, change, audit, and integrity controls.",
+      "does_not_establish": "It provides no RAG ASR result or guarantee that authenticated content is factually correct.",
+      "study_implication_inference": "Model who issues trust labels, who may alter them, how changes are evidenced, and what compromise means."
+    },
+    {
+      "id": "E01",
+      "title": "Enabling Large Language Models to Generate Text with Citations",
+      "authors": [
+        "Tianyu Gao",
+        "Howard Yen",
+        "Jiatong Yu",
+        "Danqi Chen"
+      ],
+      "year": 2023,
+      "venue": "Proceedings of EMNLP",
+      "pages": "6465–6488",
+      "doi": "10.18653/v1/2023.emnlp-main.398",
+      "canonical_url": "https://aclanthology.org/2023.emnlp-main.398/",
+      "full_text_url": "https://aclanthology.org/2023.emnlp-main.398.pdf",
+      "status": "Peer-reviewed conference paper",
+      "consulted_sections": [
+        "Section 3 evaluation metrics",
+        "Section 5.3 retrieval analysis",
+        "Section 6 human evaluation",
+        "Appendix F",
+        "Limitations"
+      ],
+      "verified_findings": [
+        "Fluency, correctness, and citation quality are distinct evaluated dimensions",
+        "Citation support is estimated through NLI",
+        "Automatic citation assessment was checked against human judgments",
+        "NLI limits include partial support"
+      ],
+      "implication": "Use reference-aware answer judgment and separate context/citation support diagnostics",
+      "implication_is_our_application": true,
+      "limits": [
+        "Not a targeted-poisoning benchmark",
+        "Does not validate our numerical ASR rule",
+        "NLI entailment is fallible"
+      ]
+    },
+    {
+      "id": "E02",
+      "title": "RAGAs: Automated Evaluation of Retrieval Augmented Generation",
+      "authors": [
+        "Shahul Es",
+        "Jithin James",
+        "Luis Espinosa Anke",
+        "Steven Schockaert"
+      ],
+      "year": 2024,
+      "venue": "Proceedings of EACL: System Demonstrations",
+      "pages": "150–158",
+      "doi": "10.18653/v1/2024.eacl-demo.16",
+      "canonical_url": "https://aclanthology.org/2024.eacl-demo.16/",
+      "full_text_url": "https://aclanthology.org/2024.eacl-demo.16.pdf",
+      "status": "Peer-reviewed system-demonstration paper",
+      "consulted_sections": [
+        "Section 3 Evaluation Strategies",
+        "Section 4 WikiEval",
+        "Section 5 Experiments"
+      ],
+      "verified_findings": [
+        "Faithfulness means claim support from supplied context",
+        "Answer relevance explicitly does not account for factuality",
+        "Evaluation prompts an LLM",
+        "WikiEval was built from 50 Wikipedia pages and used two annotators with disagreement discussion"
+      ],
+      "implication": "Use as auxiliary context-support/relevance diagnostics; do not infer factual security from faithfulness alone",
+      "implication_is_our_application": true,
+      "limits": [
+        "A poisoned false context can support a false answer: this is our logical inference, not a RAGAs poisoning experiment",
+        "Human agreement on WikiEval does not validate our dataset",
+        "LLM judgment is not completed independent human review"
+      ]
+    },
+    {
+      "id": "E03",
+      "title": "Survey Article: Inter-Coder Agreement for Computational Linguistics",
+      "authors": [
+        "Ron Artstein",
+        "Massimo Poesio"
+      ],
+      "year": 2008,
+      "venue": "Computational Linguistics",
+      "volume": "34",
+      "issue": "4",
+      "pages": "555–596",
+      "doi": "10.1162/coli.07-034-R2",
+      "canonical_url": "https://aclanthology.org/J08-4004/",
+      "full_text_url": "https://aclanthology.org/J08-4004.pdf",
+      "status": "Peer-reviewed survey article",
+      "consulted_sections": [
+        "Section 2.1 agreement, reliability, validity",
+        "Sections on coefficient assumptions and annotator bias"
+      ],
+      "verified_findings": [
+        "Agreement is not sufficient to establish validity",
+        "Choice and interpretation of coefficient depend on coding assumptions and label distributions"
+      ],
+      "implication": "Preserve independent labels, rubric, category counts, agreement, and adjudication separately; verify references independently",
+      "implication_is_our_application": true,
+      "limits": [
+        "No universal required number of reviewers, passing kappa, or sample size",
+        "Two annotators can share the same error"
+      ]
+    },
+    {
+      "id": "E04",
+      "title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+      "authors": [
+        "Zhilin Yang",
+        "Peng Qi",
+        "Saizheng Zhang",
+        "Yoshua Bengio",
+        "William Cohen",
+        "Ruslan Salakhutdinov",
+        "Christopher D. Manning"
+      ],
+      "year": 2018,
+      "venue": "Proceedings of EMNLP",
+      "pages": "2369–2380",
+      "doi": "10.18653/v1/D18-1259",
+      "canonical_url": "https://aclanthology.org/D18-1259/",
+      "full_text_url": "https://aclanthology.org/D18-1259.pdf",
+      "status": "Peer-reviewed dataset paper",
+      "consulted_sections": [
+        "Data splits and benchmark settings",
+        "Section 5.2 main results/evaluation metrics",
+        "Section 5.3 human performance"
+      ],
+      "verified_findings": [
+        "Distractor setting mixes two gold paragraphs with eight distractors",
+        "Answer, supporting-fact, and joint metrics are distinguished",
+        "Development and hidden test sets are separate",
+        "Additional human answers/support were collected to study ambiguity"
+      ],
+      "implication": "Describe our numerical shared-corpus subset as a derived local external evaluation and retain original IDs/support mappings",
+      "implication_is_our_application": true,
+      "limits": [
+        "Our derived setting is not the official HotpotQA distractor or full-wiki benchmark",
+        "Does not prove no API-model pretraining contamination",
+        "Numeric occurrence is not proof of relation-level reference validity"
+      ]
+    },
+    {
+      "id": "E05",
+      "title": "Datasheets for Datasets",
+      "authors": [
+        "Timnit Gebru",
+        "Jamie Morgenstern",
+        "Briana Vecchione",
+        "Jennifer Wortman Vaughan",
+        "Hanna Wallach",
+        "Hal Daumé III",
+        "Kate Crawford"
+      ],
+      "year": 2021,
+      "venue": "Communications of the ACM",
+      "volume": "64",
+      "issue": "12",
+      "pages": "86–92",
+      "doi": "10.1145/3458723",
+      "canonical_url": "https://doi.org/10.1145/3458723",
+      "author_record_url": "https://www.microsoft.com/en-us/research/publication/datasheets-for-datasets/",
+      "full_text_url": "https://arxiv.org/pdf/1803.09010",
+      "status": "Published journal article; author preprint consulted",
+      "access_note": "Publisher DOI fetch returned 403; metadata checked on coauthor-institution publication record and relevant full preprint sections read",
+      "consulted_sections": [
+        "Composition",
+        "Collection process",
+        "Preprocessing/cleaning/labeling",
+        "Uses",
+        "Distribution",
+        "Maintenance"
+      ],
+      "verified_findings": [
+        "Proposes documenting dataset motivation, composition, collection, transformations, uses, distribution, maintenance",
+        "Explicitly asks about relationships, split rationale, sample representativeness, verification of derived data, and saved raw data/software"
+      ],
+      "implication": "Maintain linked source/fact/chunk/question/reference/attack/result provenance and document missing historical assets",
+      "implication_is_our_application": true,
+      "limits": [
+        "Documentation does not authenticate sources or certify factual correctness",
+        "The framework requires adaptation to actual dataset/context"
+      ]
+    },
+    {
+      "id": "E06",
+      "title": "Leakage and the reproducibility crisis in machine-learning-based science",
+      "authors": [
+        "Sayash Kapoor",
+        "Arvind Narayanan"
+      ],
+      "year": 2023,
+      "venue": "Patterns",
+      "volume": "4",
+      "issue": "9",
+      "article_number": "100804",
+      "doi": "10.1016/j.patter.2023.100804",
+      "canonical_url": "https://doi.org/10.1016/j.patter.2023.100804",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10499856/",
+      "status": "Peer-reviewed research article",
+      "access_note": "Publisher open returned 403; relevant full-text taxonomy content inspected through the primary PMC article's indexed record",
+      "consulted_sections": [
+        "Scope and definitions",
+        "Taxonomy of leakage",
+        "L1 separation/duplicates",
+        "Test distribution and scientific claims"
+      ],
+      "verified_findings": [
+        "Distinguishes byte-level/computational reproducibility from valid scientific analysis",
+        "Taxonomy addresses test-information access, preprocessing/selection, duplicates and mismatched scientific target distributions"
+      ],
+      "implication": "Keep selection/tuning decisions separate from fresh output evaluation and make target distribution and overlap checks explicit",
+      "implication_is_our_application": true,
+      "limits": [
+        "Does not establish leakage in this study",
+        "Does not expose API pretraining data",
+        "Knowing target references for attack construction is not by itself training leakage"
+      ]
+    },
+    {
+      "id": "E07",
+      "title": "The Hitchhiker's Guide to Testing Statistical Significance in Natural Language Processing",
+      "authors": [
+        "Rotem Dror",
+        "Gili Baumer",
+        "Segev Shlomov",
+        "Roi Reichart"
+      ],
+      "year": 2018,
+      "venue": "Proceedings of ACL, Volume 1: Long Papers",
+      "pages": "1383–1392",
+      "doi": "10.18653/v1/P18-1128",
+      "canonical_url": "https://aclanthology.org/P18-1128/",
+      "full_text_url": "https://aclanthology.org/P18-1128.pdf",
+      "status": "Peer-reviewed theoretical/methodological paper",
+      "consulted_sections": [
+        "Statistical test selection discussion",
+        "Section 5 open issues: dependent observations"
+      ],
+      "verified_findings": [
+        "Test selection depends on experimental setup and metric",
+        "Standard i.i.d. assumptions are often violated by NLP examples sharing sources/documents/authors"
+      ],
+      "implication": "Declare paired/resampling units and distinguish frozen-corpus query summaries from new-corpus or fresh-generation uncertainty",
+      "implication_is_our_application": true,
+      "limits": [
+        "Does not certify the current bootstrap",
+        "Does not universally solve dependence or shared-index interference",
+        "Does not set the study's sample size/power"
+      ]
+    },
+    {
+      "id": "E08",
+      "title": "Reporting Score Distributions Makes a Difference: Performance Study of LSTM-networks for Sequence Tagging",
+      "authors": [
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ],
+      "year": 2017,
+      "venue": "Proceedings of EMNLP",
+      "pages": "338–348",
+      "doi": "10.18653/v1/D17-1035",
+      "canonical_url": "https://aclanthology.org/D17-1035/",
+      "full_text_url": "https://aclanthology.org/D17-1035.pdf",
+      "status": "Peer-reviewed empirical paper",
+      "consulted_sections": [
+        "Introduction",
+        "Nondeterministic behavior discussion",
+        "Distributional reporting conclusions"
+      ],
+      "verified_findings": [
+        "Single-run scores can conceal variation from random initialization/training",
+        "Advocates comparing distributions across actual executions"
+      ],
+      "implication": "Separate attack-selection randomness and fresh generation repeats; cached duplicate rows are not independent draws",
+      "implication_is_our_application": true,
+      "limits": [
+        "Empirical setting is LSTM training, not API generation",
+        "Does not establish a required repeat count or variance for our LLM"
+      ]
+    },
+    {
+      "id": "E09",
+      "title": "Show Your Work: Improved Reporting of Experimental Results",
+      "authors": [
+        "Jesse Dodge",
+        "Suchin Gururangan",
+        "Dallas Card",
+        "Roy Schwartz",
+        "Noah A. Smith"
+      ],
+      "year": 2019,
+      "venue": "Proceedings of EMNLP-IJCNLP",
+      "pages": "2185–2194",
+      "doi": "10.18653/v1/D19-1224",
+      "canonical_url": "https://aclanthology.org/D19-1224/",
+      "full_text_url": "https://aclanthology.org/D19-1224.pdf",
+      "status": "Peer-reviewed methodological/empirical paper",
+      "consulted_sections": [
+        "Section 5 recommendations",
+        "Text Box 1 checklist",
+        "Conclusion"
+      ],
+      "verified_findings": [
+        "Reported model rankings can depend on tuning/search budgets",
+        "Proposes fuller reporting of search space, selection criteria, results and computation context"
+      ],
+      "implication": "Preserve development decisions, failures, configuration selection, actual backend identity, and frozen-test separation",
+      "implication_is_our_application": true,
+      "limits": [
+        "Expected validation performance is not an ASR estimator",
+        "Reporting guidance does not mandate arbitrary extra experiments"
+      ]
+    },
+    {
+      "id": "ROOT01",
+      "title": "PROV-O: The PROV Ontology",
+      "authors": [
+        "Timothy Lebo",
+        "Satya Sahoo",
+        "Deborah McGuinness"
+      ],
+      "year": 2013,
+      "type": "W3C Recommendation",
+      "url": "https://www.w3.org/TR/prov-o/",
+      "finding": "Provenance vocabulary for entities, activities and agents; provenance records alone do not establish claim truth."
+    },
+    {
+      "id": "ROOT02",
+      "title": "Records of the Army Air Forces [AAF], Record Group18",
+      "author": "U.S. National Archives",
+      "year": null,
+      "type": "Official archival guide",
+      "url": "https://www.archives.gov/research/guide-fed-records/groups/018.html",
+      "consulted_sections": [
+        "18.1",
+        "18.5"
+      ],
+      "finding": "AAF establishment1941 and reorganization1942 are distinguished; relevant to question reference conflict."
+    }
+  ]
+}

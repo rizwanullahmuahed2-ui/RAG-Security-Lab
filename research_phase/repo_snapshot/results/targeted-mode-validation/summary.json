@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-09-30T06:21:59.349358+00:00",
+  "summary": [
+    {
+      "count": 0,
+      "defense": "none",
+      "n": 364,
+      "correct": 355,
+      "attacks": 0
+    },
+    {
+      "count": 10,
+      "defense": "none",
+      "n": 364,
+      "correct": 337,
+      "attacks": 27
+    },
+    {
+      "count": 10,
+      "defense": "source_filtering",
+      "n": 364,
+      "correct": 355,
+      "attacks": 0
+    }
+  ],
+  "dataset_sha256": {
+    "documents_csv": "17b66d5e08f67c8f9de1e260719f099ab1d780537e4b29b962c74be1eafc229f",
+    "chunks_csv": "d67a92e48fef7e2f159c91fdf5fe0a67674b8e9d7c201d15426ea20e1a797275",
+    "questions_csv": "14334e66aa7f6103625399fa4f2bac8ef23be9d5051736faa1beb7237526d71c",
+    "poisoned_passages_csv": "f3078c6b511a8eb24b7cabc5b7a0988fea64479394f014881fa1a29982438e6f"
+  },
+  "backends": {
+    "embedding": "hashing-lexical-v2:1024d",
+    "generation": "extractive-evidence-v2"
+  },
+  "source_sha256": {
+    "src\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\attacks\\poison_generator.py": "53ccb8396220731a6650b79cd9f48cb15f83c1557eb2a0c025f26f23e744a4bb",
+    "src\\attacks\\targeted_pool.py": "614f60a6d4bbbed9b97771bf6478864383f0b51ad88fb9897898cb2964e1ce5f",
+    "src\\attacks\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\config\\config.py": "36fe98e3c851de0257006f877f47d8b10adb33b5295b9b490d90f33bcceaf8b2",
+    "src\\config\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\data\\loaders.py": "09e84b1d0f6591e628d01a7413cea4ae682b5fc908238e5d5e2dbe46562547bd",
+    "src\\data\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\defenses\\reranker.py": "9d340d63e34442f987ea154f8fe39083e47342c19874c090ac1479fc76870fd2",
+    "src\\defenses\\source_filter.py": "01b0302ed54e7a4ab83cfdaf252d0df72537f693e1978ee022063c4ac6f0bfc6",
+    "src\\defenses\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\embeddings\\embedding_service.py": "d7fe8dec1e579974ebaf4c1e6b7810c6afd4d1459c7d6f859568dd5ec27d0232",
+    "src\\embeddings\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\evaluation\\evaluator.py": "24c0de53f5d220631d1abac5ca21e0f5286fdb0647ddd37071ba0a7c964e181b",
+    "src\\evaluation\\io.py": "a8835396837a234f97f91e785ed51db0a66b65bfb071c244c0f3ae6846ac1777",
+    "src\\evaluation\\metrics.py": "2cec48fd4a2f8de320807ab8d23b7ad923c0364beb4c4acba767ee3634796972",
+    "src\\evaluation\\question_comparison.py": "4e596d78cb73990e6c33ffca11fd6084396baab62ff7c05aa4bbbfcebe25a815",
+    "src\\evaluation\\runner.py": "3694dcb2fbff9277c16c62d3a7934c3352cf1dc890aade599b5fb3d15e242b01",
+    "src\\evaluation\\visualization.py": "3706c4e2b8682f16a3dd3b1e8a47b8921289711e37eb9e63e860a0c53a09fdab",
+    "src\\evaluation\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\generation\\llm_interface.py": "b302d09bfde325606262e3d1c385c696686b3df33055753f1d2cacffcf964c63",
+    "src\\generation\\rag_pipeline.py": "bb2e7d4c7f5d0e5c6c9724306e5e086588d546eae8f4aca64da4e81ac294ec1d",
+    "src\\generation\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\preprocessing\\chunking.py": "21c2b86960da626bd71367b29418c03c125a64802bb18955041e11de3627862b",
+    "src\\preprocessing\\text_cleaning.py": "f2447632fd82f7cba3d46c28ebadaf60af7e7b4a98cdc4b9cac43fbe2848242a",
+    "src\\preprocessing\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\retrieval\\lexical.py": "538a4546123748852cbbe7c299865aa8a2826bb6616f2941374dca39da221bfa",
+    "src\\retrieval\\retriever.py": "80592818c006a2259192ccfcc13971e4e66d4751998f02b5b2bdd7320d8eb96c",
+    "src\\retrieval\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\utils\\logging_utils.py": "e2f59c520e7f6a0a9af9a6db2414b0f22bf86355cb80b5628919309743d8177c",
+    "src\\utils\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\vectorstore\\chroma_store.py": "1ad9679a8d4ae809ee1d0c210abfac3e60d1019fb5dff005df551d2d8ba95d24",
+    "src\\vectorstore\\exact_store.py": "4ba6298ac07261d75c5e9f9dde2ba3297ef417eab3dc39368e80f2da3a730941",
+    "src\\vectorstore\\indexer.py": "5a69258c74eb58840aafeb437f9be80ec6a3ec2cb76d51060ab560f3f0516666",
+    "src\\vectorstore\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "note": "Synthetic QA assertions; same backend and clean dataset; lexical scoring; not a real-LLM experiment."
+}

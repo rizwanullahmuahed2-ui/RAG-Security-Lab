@@ -1,3 +1,11 @@
+# Current research documents
+
+The revised paper and Dari implementation report are in [current/](current/). Start with [the current article PDF](current/RAG_Security_Article.pdf), [the implementation report PDF](current/Implementation_Report_FA.pdf) and [the author semantic findings](../rag_security_revision_v2/manual_review/Author_Semantic_Findings_FA.md). Complete frozen evidence and the offline verification command are linked from the repository README.
+
+The supplied original paper below is retained as historical evidence and is not the current revision.
+
+---
+
 # RAG security manuscript
 
 [Read the paper (PDF)](RAG_Security_Research.pdf) · [BibTeX citation](CITATION.bib) · [File manifest](manifest.json)

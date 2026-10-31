@@ -1,0 +1,16 @@
+{
+  "status": "required_pending_actual_human_review",
+  "case_count": 376,
+  "completed_schema_valid_stage1_cases_by_asserted_reviewer": {},
+  "completed_schema_valid_stage2_cases_by_asserted_reviewer": {},
+  "adjudication_complete": false,
+  "blocking_reasons": [
+    "Stage 1: exactly two complete independent-review submissions are still required",
+    "Stage 2: exactly two complete independent-review submissions are still required",
+    "Actual human identities and initial independence have not been confirmed by the coordinator",
+    "Source-linked final adjudication and unresolved-case decisions are incomplete"
+  ],
+  "software_cannot_authenticate_human_identity_or_independence": true,
+  "pending_is_not_abandoned": true,
+  "no_human_labels_created_by_this_command": true
+}

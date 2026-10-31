@@ -1,0 +1,40 @@
+{
+  "created_at_utc": "2026-10-26T07:08:54.379409+00:00",
+  "mandatory_figures": [
+    {
+      "file": "/workspace/revision/figures/original_pipeline.png",
+      "sha256": "b54b430ba3444a62141c5b316b9f7605831a7649d9583b49efc409626a562fc6",
+      "study": "A_historical",
+      "role": "historical pipeline",
+      "original_pdf_page": 6,
+      "preservation_requirement": "Keep original bytes; if historical outcome cannot be re-established, retain versioned historical caption or appendix status. New results require a separate figure."
+    },
+    {
+      "file": "/workspace/revision/figures/original_answer_accuracy.png",
+      "sha256": "bd7a6c532b0d6f6bec97b0d4f37d9e7bedf28c85f961ed82484154b1cb2765b2",
+      "study": "A_historical",
+      "role": "historical reported result",
+      "original_pdf_page": 10,
+      "preservation_requirement": "Keep original bytes; if historical outcome cannot be re-established, retain versioned historical caption or appendix status. New results require a separate figure."
+    },
+    {
+      "file": "/workspace/revision/figures/original_attack_success.png",
+      "sha256": "c8572a1c0a9d486d8b6b56510357c0d3230e1862cf82890c7fa80e950115a354",
+      "study": "A_historical",
+      "role": "historical reported result",
+      "original_pdf_page": 10,
+      "preservation_requirement": "Keep original bytes; if historical outcome cannot be re-established, retain versioned historical caption or appendix status. New results require a separate figure."
+    },
+    {
+      "file": "/workspace/revision/figures/generative_outcomes.png",
+      "sha256": "f069ced479ff2749a6ddd6b2aaa4660ea781115168c23dc4d3d923f254ff8cbc",
+      "study": "B_archived",
+      "role": "archived numerical-containment outcomes",
+      "preservation_requirement": "Keep as archived B numerical figure; corrected/semantic/reanalysis or C results must be separate and cannot silently replace the original."
+    }
+  ],
+  "mandatory_figure_count": 4,
+  "original_source_pdf_sha256": "87059e66898a6aaecede4d4d8224e2de97ed045f79b822eb2d903fbd3cc7533f",
+  "existing_figures_verified_unchanged": true,
+  "new_manuscript_embedding_not_yet_verified_by_this_task": true
+}

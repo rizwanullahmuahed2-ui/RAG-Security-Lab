@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-10-25T19:40:42.131790+00:00",
+  "scope": "Completed implementation-plan stage only; experiment and manuscript changes unexecuted",
+  "files": {
+    "Implementation_Plan_FA.pdf": "359344fd2a891820971ef5f96606bb79e95353b901f0e4adfd7a0b06bfc1cbdc",
+    "Implementation_Plan_FA.docx": "4436b87592cc2d72e66bd7007f6ac42dcd7d1058515ba06645e41f5f07254502",
+    "Implementation_Plan_FA.md": "e50e2debb39826ac5fd79ea66ac6ba2ba87412f153bb4b6d11fd6beec8c14876",
+    "Implementation_Plan_FA.html": "81e5bd677bf6e9b2792a5208f7a629550d67805ba637ad956a1045cf44740e05",
+    "Implementation_Tracker_FA.csv": "4619a82874f663ef0869022c7349703fc3c9aa47eade27731a9d7ccf2b31574e",
+    "Experiment_Blueprint.json": "c84c90243e28cd76e511435c18095da5128eb4f7f84533b3697b1c5014a329c1",
+    "work_packages_requirements.md": "d48481d64455703e82088c1e9f3af2d698b596ac768e21b959676eb023acd901",
+    "requirements_work_package_map.json": "5db228538db5c46cb5afb877e4a34cdeed10b9f3d84c5c21806d77909f881b26",
+    "README_FA.md": "e57ea119409f850984c293e2c4c5f12f92f8763353fa3fb37dae66f511ad22b2",
+    "PLAN_QUALITY_CHECKS.json": "75cde9b0ed46c18565a99cf42d76f1cb1dff74eb634ca27490263fe64c43822a",
+    "baseline_files_sha256.json": "3f217c8a068d8f83eeb47bfab850655d4b3dd9836ba0f274f4be9016edcdd301",
+    "format_plan.py": "e8d01a45e3257596ecc80b047c50e3caa6669db502b53ae3bcb14ccf0415f888",
+    "render_plan_pdf.py": "674460a441739a91273a7ffc6d365d020a7f05dab8bdb62197bdeab9d0e6103d",
+    "plan_body.html": "43fa63ef3632baa007745a115f68d482c97c00688a7a0df59b9278bb354883c8",
+    "check_plan.py": "23dd3c6d8f04450ab365dc1e3d1fb10e0966d331b056f0ff646dc9a758100d6a"
+  }
+}

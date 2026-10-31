@@ -1,0 +1,8 @@
+{
+  "completed_at_utc": "2026-10-22T10:56:56.372004+00:00",
+  "unique_responses": 376,
+  "condition_evaluations": 1280,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "model_fallbacks": 0,
+  "responses_sha256": "87d9ae29ab7713d61f1fa878efb7b839a10200a4d25aa392e8c997adf0fb5132"
+}

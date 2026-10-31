@@ -1,4 +1,34 @@
-# RAG Security Lab
+# RAG Security Lab — نسخهٔ پژوهشی جاری
+
+**برای بررسی متخصص، از همین صفحه آغاز کنید.** مقاله، گزارش، یافته‌های معنایی و تمام شواهد لازم برای بازحساب در همین ریپو قرار دارند.
+
+- **[مقالهٔ اصلاح‌شده — PDF](research/current/RAG_Security_Article.pdf)** · [Word](research/current/RAG_Security_Article.docx)
+- **[گزارش تطبیق اصلاحات — PDF](research/current/Implementation_Report_FA.pdf)** · [Word](research/current/Implementation_Report_FA.docx)
+- **[یافته‌های بررسی دستی معنایی نویسنده: ۷۲ مورد](rag_security_revision_v2/manual_review/Author_Semantic_Findings_FA.md)**
+- **[راهنمای بررسی مستقل شواهد، بدون API](rag_security_revision_v2/release/GITHUB_EVIDENCE_README_FA.md)**
+- [جدول پیگیری ۶۷ مورد](rag_security_revision_v2/report/Implementation_Progress_67_FA.csv) · [پاسخ‌های خام مدل](rag_security_revision_v2/study_c/responses.jsonl) · [فهرست و هش فایل‌ها](rag_security_revision_v2/release/PUBLICATION_MANIFEST.json)
+
+## بررسی سریع شواهد
+
+ریپو را Clone یا از **Code → Download ZIP** دریافت کنید. از ریشهٔ آن، با Python 3.11 یا جدیدتر اجرا کنید:
+
+```bash
+python rag_security_revision_v2/release/verify_evidence.py
+```
+
+کلید API و نصب کتابخانهٔ اضافی لازم نیست. این دستور دو انجماد، هش‌ها، **۲٬۵۵۹ پاسخ مولد در سه نوبت**، اتصال به **۵٬۲۰۸ ردیف شرط**، **۱۹۶ سلول خلاصه**، **۴۸ شمار انتقال جفتی** و **۲۴۴ فایل مبنای تاریخی** را تطبیق می‌دهد. نتیجهٔ موفق با `verification: passed` مشخص می‌شود؛ فایل‌های انتشار تغییر نمی‌کنند.
+
+## دامنهٔ نتیجه‌ها
+
+C مطالعهٔ اصلی مولد با ۶۲ پرسش، ۶۲۰ متن پاک، کنترل هدفمند/نامرتبط/مرجع‌سازگار، کنترل مواجهه و تکرار در اهداف ثابت است. B به‌عنوان بازتحلیل تشخیصی پسینی و A به‌عنوان زمینهٔ تاریخی نگه داشته شده‌اند. آرشیو دقیق اجرای اصلی A بازیابی نشده و اجرای C جای آن معرفی نمی‌شود.
+
+نویسنده بررسی دستی معنایی ۷۲ مورد را گزارش کرده است: ۶۴ مورد اصلی شامل ۴۱ سازگار با منبع، ۱۶ مخالف، ۳ امتناع کامل و ۴ نامشخص؛ هشت مورد تشخیصی جدا بررسی شده‌اند. این شمارها دقت تمام سیستم یا درصد موفقیت معنایی کل حملات نیستند. یادداشت‌های کمکی دستیار با منشأ خود حفظ شده‌اند و جدول نمره‌های فردی انسانی ساختگی تولید نشده است.
+
+چهار شکل قبلی حفظ شده و شکل نتایج C افزوده شده است. عنوان‌های PDF سیاه‌اند. فایل‌های مراحل پیشین برای حفظ تاریخچه و کنترل هش نگه داشته شده‌اند؛ روش جاری را مقاله و گزارش بخش بالا تعیین می‌کنند. داده‌های HotpotQA/Wikipedia با انتساب و شرایط منبع توزیع می‌شوند؛ متن‌های حمله صرفاً ساختگی و آزمایشی‌اند. کلید یا فایل `.env` در این انتشار وجود ندارد.
+
+---
+
+## Original offline workbench
 
 A reproducible research workbench for measuring knowledge-base poisoning against an Afghanistan-focused RAG pipeline. Compare retrieval, answer quality, targeted attack success, and the accuracy cost of defenses. Explore individual answers and their evidence in Streamlit, or run the full benchmark from the command line.
 

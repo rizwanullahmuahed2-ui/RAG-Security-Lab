@@ -1,0 +1,243 @@
+{
+  "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.DYN.TFRT.IN?date=2010:2023&format=json&per_page=1000&source=2",
+  "retrieved_at": "2026-09-21T05:53:14.442513+00:00",
+  "response_sha256": "b0a87c324558678a11e204e2c99edb22d141b3ccafd02f80a8be25553d22b037",
+  "response_body": "[{\"page\":1,\"pages\":1,\"per_page\":1000,\"total\":14,\"sourceid\":\"2\",\"lastupdated\":\"2026-07-13\"},[{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2023\",\"value\":4.84,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2022\",\"value\":4.932,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2021\",\"value\":5.039,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2020\",\"value\":5.145,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2019\",\"value\":5.238,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2018\",\"value\":5.327,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2017\",\"value\":5.433,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2016\",\"value\":5.542,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2015\",\"value\":5.652,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2014\",\"value\":5.77,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2013\",\"value\":5.879,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2012\",\"value\":5.985,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2011\",\"value\":6.094,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1},{\"indicator\":{\"id\":\"SP.DYN.TFRT.IN\",\"value\":\"Fertility rate, total (births per woman)\"},\"country\":{\"id\":\"AF\",\"value\":\"Afghanistan\"},\"countryiso3code\":\"AFG\",\"date\":\"2010\",\"value\":6.195,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":1}]]",
+  "category": "Health",
+  "payload": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": 1000,
+      "total": 14,
+      "sourceid": "2",
+      "lastupdated": "2026-07-13"
+    },
+    [
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2023",
+        "value": 4.84,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2022",
+        "value": 4.932,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2021",
+        "value": 5.039,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2020",
+        "value": 5.145,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2019",
+        "value": 5.238,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2018",
+        "value": 5.327,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2017",
+        "value": 5.433,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2016",
+        "value": 5.542,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2015",
+        "value": 5.652,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2014",
+        "value": 5.77,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2013",
+        "value": 5.879,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2012",
+        "value": 5.985,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2011",
+        "value": 6.094,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "SP.DYN.TFRT.IN",
+          "value": "Fertility rate, total (births per woman)"
+        },
+        "country": {
+          "id": "AF",
+          "value": "Afghanistan"
+        },
+        "countryiso3code": "AFG",
+        "date": "2010",
+        "value": 6.195,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      }
+    ]
+  ]
+}

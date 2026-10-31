@@ -1,0 +1,42 @@
+{
+  "built_at_utc": "2026-10-31T07:20:41.764349+00:00",
+  "paper_status": "research_revision_single_author_semantic_inspection",
+  "study_c_completed_archive_included": true,
+  "study_c_analysis_sha256": "8934b4eb844814523dd24aca3c3b5180a25203d4c4a625656fc73874b1410632",
+  "tables": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "preserved_figure_count": 4,
+  "total_figure_count": 5,
+  "study_c_figure_embedded_unmodified_in_docx": true,
+  "abstract_word_count": 254,
+  "preserved_figure_hashes": {
+    "original_pipeline.png": "b54b430ba3444a62141c5b316b9f7605831a7649d9583b49efc409626a562fc6",
+    "generative_outcomes.png": "f069ced479ff2749a6ddd6b2aaa4660ea781115168c23dc4d3d923f254ff8cbc",
+    "original_answer_accuracy.png": "bd7a6c532b0d6f6bec97b0d4f37d9e7bedf28c85f961ed82484154b1cb2765b2",
+    "original_attack_success.png": "c8572a1c0a9d486d8b6b56510357c0d3230e1862cf82890c7fa80e950115a354"
+  },
+  "historical_source_and_figures_unchanged": true,
+  "all_original_figures_embedded_unmodified_in_docx": true,
+  "structured_item_level_human_ratings_claimed": 0,
+  "author_manual_inspection_reported_completed": true,
+  "documented_AI_case_assessments": 72,
+  "source_manuscript_sha256": "06e6da24cc283413c2bf6df1a4055715e0f8d4d24564427cb13802eddfa862fb",
+  "generated_files_sha256": {
+    "Working_Manuscript_v2.md": "e271b38723f04463d3359cf90e0df13d91e4b9572ac19c0469be3e239f8d30e0",
+    "Working_Manuscript_v2.docx": "ba7e80dfbe8adf7967252d19a8f3020bc10c6abd64f99c2f3b1a56ebbb392e03",
+    "Working_Manuscript_v2.html": "8a43e4f91a9d96252497388acdf8d210fb983c176268410fc414a516f3dfc6a8"
+  }
+}

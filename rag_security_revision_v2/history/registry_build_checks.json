@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-10-26T07:08:54.379409+00:00",
+  "baseline_files_checked": 244,
+  "baseline_files_changed": [],
+  "fresh_git_metadata_requests": 8,
+  "trees_inspected": 3,
+  "tree_blob_counts": [
+    121,
+    118,
+    104
+  ],
+  "visible_commits": 3,
+  "visible_workflow_runs": 3,
+  "claims_registered": 25,
+  "studies_registered": 6,
+  "mandatory_figures_hash_checked": 4,
+  "new_llm_calls": 0,
+  "human_judgments": 0,
+  "original_principal_replay_executed": false,
+  "new_A_prime_executed": false
+}

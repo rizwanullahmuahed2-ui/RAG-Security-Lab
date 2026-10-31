@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-10-25T19:40:30.739506+00:00",
+  "scope": "Implementation plan only; no manuscript revision, experimental execution or API inference",
+  "work_packages": 9,
+  "review_requirements_mapped": 67,
+  "expert_force_and_research_status_preserved": true,
+  "baseline_files_checked": 244,
+  "baseline_files_unchanged": true,
+  "pdf_pages": 13,
+  "docx_tables": 3,
+  "pdf_replacement_glyphs": 0,
+  "pdf_words_outside_page": [],
+  "pdf_text_validation_engine": "Poppler pdftotext bbox-layout; pypdf page count",
+  "budget_arithmetic_checked": true,
+  "new_generation_calls": 0,
+  "new_embedding_calls": 0,
+  "completed_human_judgments": 0,
+  "new_protocol_frozen": false,
+  "visual_review": "Completed: first page, package/scoring/history sections, statistical analysis, budget table and final source page inspected; no orphan final page.",
+  "peer_review": "Requirements coverage, experimental protocol and formal Dari prose independently reviewed; material corrections applied.",
+  "additional_reader_observation": "PyMuPDF 1.26.6 text extraction faults on the budget page; Poppler rendering/text extraction and pypdf extraction of all pages pass."
+}

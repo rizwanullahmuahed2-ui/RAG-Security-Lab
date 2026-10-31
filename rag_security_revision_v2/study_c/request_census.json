@@ -1,0 +1,11 @@
+{
+  "context_rows_per_round": 1736,
+  "rounds": 3,
+  "condition_evaluations": 5208,
+  "unique_payloads": 853,
+  "logical_generation_calls": 2559,
+  "max_transport_attempts": 7677,
+  "successful_output_tokens_max": 163776,
+  "input_token_byte_upper_all_rounds": 10349298,
+  "primary_unit": "Question/shared-fact group; condition rows and rounds are not independent questions"
+}

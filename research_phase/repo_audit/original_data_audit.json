@@ -1,0 +1,483 @@
+{
+  "audited_at_utc": "2026-10-25T12:05:35.786575+00:00",
+  "scope": "Independent read-only inspection of verified text snapshot; repository code not executed, no network/model calls",
+  "repository": "rizwanullahmuahed2-ui/RAG-Security-Lab",
+  "commit": "6f76858df91277e4b962ee94b4286a25cfe08d4d",
+  "snapshot_kind": "Selected text files fetched through GitHub connector; binary files and large validation records excluded",
+  "snapshot_file_hash_checks": 117,
+  "all_snapshot_git_blobs_and_sha256_verified": true,
+  "repository_files_unchanged": true,
+  "counts": {
+    "documents": 224,
+    "chunks": 225,
+    "questions": 364,
+    "poisoned_passages": 104
+  },
+  "legacy_counts": {
+    "documents": 56,
+    "chunks": 21,
+    "questions": 28,
+    "poisoned_passages": 20
+  },
+  "unique_ids": {
+    "documents": true,
+    "chunks": true,
+    "questions": true,
+    "poisoned_passages": true
+  },
+  "canonical_csv_sha256_matches": {
+    "chunks.csv": true,
+    "documents.csv": true,
+    "poisoned_passages.csv": true,
+    "questions.csv": true
+  },
+  "root_documents_csv_matches_canonical_bytes": true,
+  "relationships": {
+    "all_documents_indexed": true,
+    "all_question_gold_links_valid": true,
+    "all_attack_question_query_reference_links_valid": true,
+    "one_poison_per_designated_target": true,
+    "original_indexed_documents": 20,
+    "previously_unindexed_legacy_documents_now_indexed": 36,
+    "legacy_fields_preserved": {
+      "documents": true,
+      "chunks": true,
+      "questions": true,
+      "poisoned_passages": true
+    },
+    "independent_all_field_reconstruction_from_saved_inputs": {
+      "documents": true,
+      "chunks": true,
+      "questions": true,
+      "poisoned_passages": true
+    }
+  },
+  "question_gold_coverage": {
+    "gold_referenced_documents": 188,
+    "total_documents": 224,
+    "gold_referenced_chunks": 188,
+    "total_chunks": 225,
+    "documents_without_any_gold_link": [
+      "DOC-021",
+      "DOC-022",
+      "DOC-023",
+      "DOC-024",
+      "DOC-025",
+      "DOC-026",
+      "DOC-027",
+      "DOC-028",
+      "DOC-029",
+      "DOC-030",
+      "DOC-031",
+      "DOC-032",
+      "DOC-033",
+      "DOC-034",
+      "DOC-035",
+      "DOC-036",
+      "DOC-037",
+      "DOC-038",
+      "DOC-039",
+      "DOC-040",
+      "DOC-041",
+      "DOC-042",
+      "DOC-043",
+      "DOC-044",
+      "DOC-045",
+      "DOC-046",
+      "DOC-047",
+      "DOC-048",
+      "DOC-049",
+      "DOC-050",
+      "DOC-051",
+      "DOC-052",
+      "DOC-053",
+      "DOC-054",
+      "DOC-055",
+      "DOC-056"
+    ],
+    "rejected_chunk_gold_linked_questions": 0,
+    "multi_document_typed_questions": [
+      {
+        "question_id": "Q011",
+        "gold_document_id": "DOC-004",
+        "gold_chunk_id": "CHK-004-01"
+      }
+    ]
+  },
+  "text_length_profiles": {
+    "documents_legacy": {
+      "n": 56,
+      "whitespace_words_min": 36,
+      "whitespace_words_median": 79.0,
+      "whitespace_words_mean": 77.92857142857143,
+      "whitespace_words_max": 177
+    },
+    "documents_worldbank": {
+      "n": 168,
+      "whitespace_words_min": 37,
+      "whitespace_words_median": 41.0,
+      "whitespace_words_mean": 40.5,
+      "whitespace_words_max": 42
+    },
+    "chunks_legacy": {
+      "n": 57,
+      "whitespace_words_min": 36,
+      "whitespace_words_median": 80,
+      "whitespace_words_mean": 77.10526315789474,
+      "whitespace_words_max": 127
+    },
+    "chunks_worldbank": {
+      "n": 168,
+      "whitespace_words_min": 37,
+      "whitespace_words_median": 41.0,
+      "whitespace_words_mean": 40.5,
+      "whitespace_words_max": 42
+    },
+    "poisoned_passages_legacy": {
+      "n": 20,
+      "whitespace_words_min": 25,
+      "whitespace_words_median": 31.0,
+      "whitespace_words_mean": 32.8,
+      "whitespace_words_max": 46
+    },
+    "poisoned_passages_worldbank": {
+      "n": 84,
+      "whitespace_words_min": 26,
+      "whitespace_words_median": 30.0,
+      "whitespace_words_mean": 29.5,
+      "whitespace_words_max": 31
+    }
+  },
+  "wdi": {
+    "snapshot_count": 12,
+    "observations": 168,
+    "question_phrasings": 336,
+    "targets": 84,
+    "reference_rounding": "Decimal(str(value)), ROUND_HALF_UP to two decimals with grouping commas",
+    "all_response_body_hashes_and_parsed_payloads_match": true,
+    "all_observations_AFG_correct_indicator_2010_through_2023_nonmissing": true,
+    "all_168_documents_and_336_question_rows_match_independent_reconstruction": true,
+    "all_84_attack_rows_match_independent_reconstruction": true,
+    "two_phrasings_share_one_fact_group": true,
+    "sources": [
+      {
+        "indicator": "AG.LND.AGRI.ZS",
+        "label": "Agricultural land (% of land area)",
+        "observations": 14,
+        "split": "development",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:15.940813+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/AG.LND.AGRI.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "af35f8bc2036632366d79f6f64060fdc4be91a45138318005b97d955265b91a4"
+      },
+      {
+        "indicator": "AG.LND.FRST.ZS",
+        "label": "Forest area (% of land area)",
+        "observations": 14,
+        "split": "development",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:16.452545+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/AG.LND.FRST.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "28d3a8c9ef08fda91350e7300835b510d4bdb5c7f95b5659d26dcbecf525b027"
+      },
+      {
+        "indicator": "EG.ELC.ACCS.ZS",
+        "label": "Access to electricity (% of population)",
+        "observations": 14,
+        "split": "development",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:16.033507+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/EG.ELC.ACCS.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "c94a466d2e79a01fff75566af637a9601ba3dab08cba5c5fe137e31de8d4c81c"
+      },
+      {
+        "indicator": "IT.CEL.SETS.P2",
+        "label": "Mobile cellular subscriptions (per 100 people)",
+        "observations": 14,
+        "split": "development",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:15.876187+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/IT.CEL.SETS.P2?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "76480b736c08ad17cd767e4fe8663ed92a23415c24eb7cfd229e0526bdaf12e4"
+      },
+      {
+        "indicator": "IT.NET.USER.ZS",
+        "label": "Individuals using the Internet (% of population)",
+        "observations": 14,
+        "split": "validation",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:15.875247+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/IT.NET.USER.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "71dc2bf9724544303c3f3678688eb0e4901cda6c92cb087b3d8d2251005d4248"
+      },
+      {
+        "indicator": "NY.GDP.MKTP.CD",
+        "label": "GDP (current US$)",
+        "observations": 14,
+        "split": "validation",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:15.075719+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/NY.GDP.MKTP.CD?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "bbe1bbff5ef8fbaccb8c08d36f10c6eaba838ac6c82434bcafe57b1f2bc82bcd"
+      },
+      {
+        "indicator": "NY.GDP.PCAP.CD",
+        "label": "GDP per capita (current US$)",
+        "observations": 14,
+        "split": "validation",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:15.135081+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/NY.GDP.PCAP.CD?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "20bdf6008106a10ff039a4ba1e47c4dc84032744aa32c747f62a98c01558541c"
+      },
+      {
+        "indicator": "SP.DYN.IMRT.IN",
+        "label": "Mortality rate, infant (per 1,000 live births)",
+        "observations": 14,
+        "split": "validation",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:14.790288+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.DYN.IMRT.IN?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "7d7f371ceb18a3ea58b5f2c5a8f206cc283aca6b79e41a486e517498c53fd221"
+      },
+      {
+        "indicator": "SP.DYN.LE00.IN",
+        "label": "Life expectancy at birth, total (years)",
+        "observations": 14,
+        "split": "test",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:14.499756+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.DYN.LE00.IN?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "be2ee03990ae89e01e83b7ae0dd4fee9538109bf1f57d9ed377b6af0c3341990"
+      },
+      {
+        "indicator": "SP.DYN.TFRT.IN",
+        "label": "Fertility rate, total (births per woman)",
+        "observations": 14,
+        "split": "test",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:14.442513+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.DYN.TFRT.IN?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "b0a87c324558678a11e204e2c99edb22d141b3ccafd02f80a8be25553d22b037"
+      },
+      {
+        "indicator": "SP.POP.TOTL",
+        "label": "Population, total",
+        "observations": 14,
+        "split": "test",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:14.669710+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.POP.TOTL?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "abd0adbe165a2ef254ee7ed8df41985ab1d6f7af8fb0849d34f842f477eae052"
+      },
+      {
+        "indicator": "SP.URB.TOTL.IN.ZS",
+        "label": "Urban population (% of total population)",
+        "observations": 14,
+        "split": "test",
+        "response_body_hash_matches": true,
+        "payload_matches_body": true,
+        "retrieved_at": "2026-09-21T05:53:14.202874+00:00",
+        "url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.URB.TOTL.IN.ZS?date=2010:2023&format=json&per_page=1000&source=2",
+        "response_sha256": "f31d17ff543d707cc6c3af0b99bcff1b1a830983b428fdb5a1992173725eaacf"
+      }
+    ],
+    "fact_group_count": 168
+  },
+  "labels": {
+    "document_labels": {
+      "high/verified": 187,
+      "medium/verified": 35,
+      "low/verified": 2
+    },
+    "chunk_labels": {
+      "high/verified": 188,
+      "medium/verified": 35,
+      "low/verified": 2
+    },
+    "poison_labels": {
+      "untrusted/unverified": 104
+    },
+    "legacy_document_labels": {
+      "high/verified": 19,
+      "medium/verified": 35,
+      "low/verified": 2
+    },
+    "eligible_clean_chunks": 223,
+    "rejected_clean_chunks": 2,
+    "rejected_clean_chunk_records": [
+      {
+        "chunk_id": "CHK-047-01",
+        "document_id": "DOC-047",
+        "title": "Afghanistan's Lithium and Rare Earth Mineral Deposits",
+        "trust_level": "low",
+        "verification_status": "verified"
+      },
+      {
+        "chunk_id": "CHK-048-01",
+        "document_id": "DOC-048",
+        "title": "Hajigak Iron Ore Deposit",
+        "trust_level": "low",
+        "verification_status": "verified"
+      }
+    ]
+  },
+  "splits": {
+    "question_counts": {
+      "development": 140,
+      "validation": 112,
+      "test": 112
+    },
+    "target_counts": {
+      "development": 48,
+      "validation": 28,
+      "test": 28
+    },
+    "family_to_single_split": {
+      "legacy": "development",
+      "AG.LND.AGRI.ZS": "development",
+      "AG.LND.FRST.ZS": "development",
+      "EG.ELC.ACCS.ZS": "development",
+      "IT.CEL.SETS.P2": "development",
+      "IT.NET.USER.ZS": "validation",
+      "NY.GDP.MKTP.CD": "validation",
+      "NY.GDP.PCAP.CD": "validation",
+      "SP.DYN.IMRT.IN": "validation",
+      "SP.DYN.LE00.IN": "test",
+      "SP.DYN.TFRT.IN": "test",
+      "SP.POP.TOTL": "test",
+      "SP.URB.TOTL.IN.ZS": "test"
+    },
+    "question_types": {
+      "direct_factual": 27,
+      "multi_document": 1,
+      "numeric_temporal": 168,
+      "paraphrase_transfer": 168
+    },
+    "boundary": "Administrative partitions exist; prior development inspection in the manuscript prevents treating them as untouched final test data."
+  },
+  "provenance": {
+    "repository_paper_hash": "87059e66898a6aaecede4d4d8224e2de97ed045f79b822eb2d903fbd3cc7533f",
+    "source_original_pdf_hash": "87059e66898a6aaecede4d4d8224e2de97ed045f79b822eb2d903fbd3cc7533f",
+    "hashes_equal": true,
+    "repository_paper_pages": 18,
+    "manuscript_date_assigned_by_repo": null,
+    "publication_venue": null,
+    "doi": null,
+    "scope": "The inspected repository manifest declares the same original 18-page PDF fingerprint. The binary repository PDF was excluded from this text snapshot; this audit compared its declared fingerprint with our original figure-source fingerprint."
+  },
+  "current_versus_historical": {
+    "historical_principal_budgets": [
+      0,
+      10,
+      30,
+      60,
+      104
+    ],
+    "current_config_budgets": [
+      0,
+      10,
+      20,
+      50,
+      104
+    ],
+    "current_backend_names": {
+      "embedding": "hashing-lexical-v2:1024d",
+      "generation": "extractive-evidence-v2",
+      "reranking": "lexical_overlap_tfidf"
+    },
+    "current_retrieval_difference": "When hashing-lexical-v2 is active, scans all eligible texts and ranks sentence coverage/proximity before vector-similarity tie break; not pure historical exact-cosine candidate selection.",
+    "historical_principal_record_count_reported": 21840,
+    "historical_principal_archive_available_in_text_snapshot": false,
+    "paper_development_archives_bundled": false,
+    "separate_diagnostic_summary": [
+      {
+        "count": 0,
+        "defense": "none",
+        "n": 364,
+        "correct": 355,
+        "attacks": 0
+      },
+      {
+        "count": 10,
+        "defense": "none",
+        "n": 364,
+        "correct": 337,
+        "attacks": 27
+      },
+      {
+        "count": 10,
+        "defense": "source_filtering",
+        "n": 364,
+        "correct": 355,
+        "attacks": 0
+      }
+    ],
+    "separate_diagnostic_backends": {
+      "embedding": "hashing-lexical-v2:1024d",
+      "generation": "extractive-evidence-v2"
+    },
+    "diagnostic_dataset_hash_alignment": {
+      "documents_csv": "CRLF_equivalent",
+      "chunks_csv": "CRLF_equivalent",
+      "questions_csv": "CRLF_equivalent",
+      "poisoned_passages_csv": "CRLF_equivalent"
+    },
+    "diagnostic_source_hash_alignment_counts": {
+      "exact_bytes": 29,
+      "different": 6
+    },
+    "diagnostic_changed_source_files": [
+      "src/config/config.py",
+      "src/data/loaders.py",
+      "src/defenses/reranker.py",
+      "src/evaluation/runner.py",
+      "src/generation/rag_pipeline.py",
+      "src/retrieval/retriever.py"
+    ],
+    "diagnostic_full_records_audited": false,
+    "diagnostic_synthetic_pool_rows": 364,
+    "diagnostic_synthetic_pool_payload_hashes_verified": true,
+    "diagnostic_pool_construction_methods": {
+      "existing_attack_value": 104,
+      "different_question_distractor": 6,
+      "synthetic_numeric_perturbation": 254
+    },
+    "boundary": "Separate 364-question, per-target 0-versus-10-copy diagnostic is not the historical shared-KB principal grid or the local 64-question real-LLM extension."
+  },
+  "passed": [
+    "All 117 inspected text files match the supplied Git-blob/SHA-256 snapshot manifest.",
+    "Counts 224/225/364/104, unique identifiers, all reference relationships, and attack/query/value linkage verified.",
+    "All canonical CSV hashes match dataset_manifest; synchronized root documents.csv is byte-identical.",
+    "All 12 World Bank saved response hashes match bodies and payloads; 168 nonmissing AFG indicator-year observations produce exactly 336 deterministic phrasings and 84 targeted attacks.",
+    "All four canonical tables reconstructed field-for-field using independent audit logic from legacy CSVs and saved WDI records; no repo builder was executed.",
+    "Inherited records preserve legacy field values; legacy unindexed documents are now covered.",
+    "223 clean chunks pass the declared gate, two low-trust verified chunks do not; all 104 attacks are rejected-label by construction.",
+    "The repository paper manifest and the figure-source manifest refer to the same original 18-page PDF fingerprint.",
+    "All four separate diagnostic input hashes reconcile with current raw CSVs by LF-to-CRLF conversion; this is an encoding/line-ending difference, not evidence of changed table values."
+  ],
+  "unresolved": [
+    "The principal 21,840 response archive, original effective config, exact historical source snapshot and run manifest remain absent from this current text snapshot; its ASR/accuracy curves cannot be freshly rescored here.",
+    "Stored World Bank payload agreement verifies the recorded snapshot values, not external authentication of the original HTTP session or current revised World Bank estimates.",
+    "56 inherited document claims and verification labels have not been independently fact-checked; a verified label is not evidence of fresh review.",
+    "No reviewer identity/authority, document signature validation, protected label-change workflow or operational trust-source authentication is established by the CSV metadata.",
+    "Only 188/224 documents and 188/225 chunks have a gold-linked question. All 36 newly indexed legacy documents have no direct gold question; neither of the two rejected low-trust mineral chunks has one. Zero observed clean cost is weak evidence about rejecting task-relevant legitimate documents.",
+    "Short templated WDI observations (median 41 words) dominate added data; legacy document records have median 79 words. Record counts do not establish the diversity of full original source documents.",
+    "The three named question splits are not new output-held-out data when prior development has inspected them; WDI paired formulations and years are correlated.",
+    "The 6.8MB diagnostic records file was excluded from the local snapshot. Summary counts 355/337/27 are reported, not response-level recomputed by this audit.",
+    "Six current source files differ from the separate diagnostic source hashes; current code is not a byte-identical historical run snapshot.",
+    "The repository snapshot does not supply the local HotpotQA/GPT-4.1-mini experiment archive; the local 64-question Study B remains a separate artifact bundle.",
+    "No code execution, model inference, new attack experiment, live data refresh, or human semantic adjudication was performed in this audit."
+  ]
+}

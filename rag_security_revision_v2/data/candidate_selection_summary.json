@@ -1,0 +1,59 @@
+{
+  "created_at_utc": "2026-10-26T17:02:57.365219+00:00",
+  "scope": "Prospective automatic candidate screening only; no test/donor assignment, insertions, final freeze, model outputs or human validation",
+  "source_sha256": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+  "source_rows": 7405,
+  "source_file": "/workspace/rag_security_revision_v2/data/source_validation.parquet",
+  "selection_order": "SHA256('rag-security-followup-v1:' + id), ascending",
+  "prior_B_test_and_donor_ids": 128,
+  "prior_B_distinct_normalized_context_titles": 1280,
+  "A_exact_overlap_inventory": [
+    {
+      "path": "/workspace/research_phase/repo_snapshot/data/raw/questions.csv",
+      "sha256": "ac6b857d2e3efdd3003196b7f4dc7edceb942d2f6203db72949a1e31970d3bcf"
+    },
+    {
+      "path": "/workspace/research_phase/repo_snapshot/data/raw/documents.csv",
+      "sha256": "0282dff7366adfe8d6cb1cec635aed28cd55c216ab30308f2a3571169d18e1ea"
+    }
+  ],
+  "exact_integer_surface_rows": 465,
+  "noninteger_surface_rows": 6940,
+  "automatic_screen_passes_before_fresh_title_greedy_selection": 301,
+  "automatic_screen_rejected_rows": 164,
+  "automatic_rejection_reason_counts": {
+    "context_does_not_have_ten_unique_titles": 2,
+    "context_title_overlaps_prior_B_test_or_donor": 147,
+    "prior_B_question_or_donor_id": 128,
+    "question_requests_approximation_or_bound": 7,
+    "reference_may_be_numeric_proper_name_or_designator": 2,
+    "reference_occurrence_qualified_by_bound_or_approximation": 19,
+    "reference_value_absent_from_annotated_support": 1,
+    "reference_value_present_in_question": 1,
+    "time_varying_season_count_without_reference_date": 1
+  },
+  "fresh_global_title_overlap_rejections": 19,
+  "requested_candidate_count": 128,
+  "selected_potential_candidate_count": 128,
+  "selected_unique_context_titles": 1280,
+  "selected_answer_unit_counts": {
+    "duration_count": 2,
+    "year": 95,
+    "population": 13,
+    "area_or_distance_count": 1,
+    "count": 17
+  },
+  "target_128_automatic_feasibility": true,
+  "semantic_and_human_feasibility": "Not established: each original question and full support bridge must be reviewed before role assignment or inference",
+  "selected_ids_overlap_B": false,
+  "selected_titles_overlap_B": false,
+  "all_selected_context_title_sets_pairwise_disjoint": true,
+  "new_API_calls": 0,
+  "new_model_outputs": 0,
+  "new_human_judgments": 0,
+  "limitations": [
+    "Automatic number and qualifier checks do not validate entity-relation identity, temporal scope or external truth.",
+    "Title disjointness does not prove semantic/source-family independence or absence from model pretraining.",
+    "No candidate is made acceptable merely to fill the design target."
+  ]
+}

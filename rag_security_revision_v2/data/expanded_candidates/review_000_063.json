@@ -1,0 +1,978 @@
+{
+  "scope": "C prospective candidates indices 0–63; no model outcomes observed",
+  "review_complete": true,
+  "human_judgments": 0,
+  "records": [
+    {
+      "index": 0,
+      "qid": "5ab2c0de5542992953946870",
+      "decision": "exclude",
+      "reason": "The question attaches a coach to football as a whole although the Wisoon paragraph says he coached the national under-23 team. More decisively, the full context gives November 18 for the football start and December 1 for the opening ceremony, a 13-day interval, while the annotated sentence says 14 days. This internal numerical contradiction prevents a unique source-validated exact duration.",
+      "corrected_unit_class": "duration_days",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Football at the 2006 Asian Games with Wisoon Wichaya as its coach was played how many days prior to the opening ceromony in Doha, Qatar in 2006? ",
+      "reference_original": "14",
+      "support_titles": [
+        "Football at the 2006 Asian Games",
+        "Wisoon Wichaya"
+      ]
+    },
+    {
+      "index": 1,
+      "qid": "5a7f9cb55542995d8a8ddec1",
+      "decision": "exclude",
+      "reason": "Sunrise Avenue is said to have formed in 2002 but to have changed to that name in 2001; the separate discography paragraph explicitly says originally formed in 1992 as Sunrise. Franz Ferdinand is formed in 2002, but the shared-year question relies on an internally contradictory formation date for the other band.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "IN what year were both Franz Ferdinand and Sunrise Avenue formed?",
+      "reference_original": "2002",
+      "support_titles": [
+        "Franz Ferdinand (band)",
+        "Sunrise Avenue"
+      ]
+    },
+    {
+      "index": 2,
+      "qid": "5a82ffe755429940e5e1a949",
+      "decision": "accepted_source_supported",
+      "reason": "Lou Pai is explicitly a former Enron executive; the Enron paragraph dates its bankruptcy to December 2, 2001. The question asks that fixed bankruptcy year, not Pai's 2001 departure or Enron's 1985 foundation. The other company titles do not change the identified relation.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Lou Pai is a former executive of an energy company that went bankrupt in what year?",
+      "reference_original": "2001",
+      "support_titles": [
+        "Enron",
+        "Lou Pai"
+      ]
+    },
+    {
+      "index": 3,
+      "qid": "5ac42a64554299076e296d7b",
+      "decision": "accepted_source_supported",
+      "reason": "The cargo passage explicitly identifies Clipper Cargo/Pan Am Cargo as a subsidiary of Pan American World Airways. The parent-airline paragraph expressly states Founded in 1927, distinguishing foundation from the 1991 collapse and 1963 cargo jet service.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Clipper Cargo was a subsidiary cargo airline of  the principal and largest international air carrier in the United States that was founded in what year?",
+      "reference_original": "1927",
+      "support_titles": [
+        "Pan Am Cargo",
+        "Pan American World Airways"
+      ]
+    },
+    {
+      "index": 4,
+      "qid": "5a7526945542993748c897d2",
+      "decision": "exclude",
+      "reason": "Tess Asplund faced the Swedish Nordic Resistance Movement, while the other passage says only its Danish branch was disbanded for inactivity in 2016. The original question attributes disbandment to the movement as a whole and does not identify the Danish branch; 2016 belongs to a different organizational scope.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What year did the movement that Tess Asplund protested in the viral image of her with her fist in the air disband?",
+      "reference_original": "2016",
+      "support_titles": [
+        "Nordic Resistance Movement",
+        "Tess Asplund"
+      ]
+    },
+    {
+      "index": 5,
+      "qid": "5a86ed6155429960ec39b6d9",
+      "decision": "accepted_source_supported",
+      "reason": "The What If? paragraph attributes its Fishin' in the Dark cover to the Nitty Gritty Dirt Band, and the band paragraph explicitly gives founding in Long Beach in 1966. Album release 2004 and later membership dates are different relations.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In what year was the American country rock band who's number one song was done as a cover on the album \"What If?\" founded?",
+      "reference_original": "1966",
+      "support_titles": [
+        "Nitty Gritty Dirt Band",
+        "What If? (Emerson Drive album)"
+      ]
+    },
+    {
+      "index": 6,
+      "qid": "5a7625e8554299109176e66a",
+      "decision": "accepted_source_supported",
+      "reason": "The 1925 Birthday Honours paragraph names King George V; his full birth/death range gives June 3, 1865 as birth. Other Birthday Honours entries concern other monarchs or years and do not override the specified 1925 event.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In which year was the King who made the 1925 Birthday Honours born?",
+      "reference_original": "1865",
+      "support_titles": [
+        "1925 Birthday Honours",
+        "George V"
+      ]
+    },
+    {
+      "index": 7,
+      "qid": "5a7d109855429909bec7692f",
+      "decision": "accepted_source_supported",
+      "reason": "Panic 5 Bravo is explicitly directed by Kuno Becker, and Eduardo Kuno Becker Paz is explicitly born January 14, 1978. The chain identifies one director and a precise historical birth year.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "The director of Panic 5 Bravo was born in what year?",
+      "reference_original": "1978",
+      "support_titles": [
+        "Kuno Becker",
+        "Panic 5 Bravo"
+      ]
+    },
+    {
+      "index": 8,
+      "qid": "5ae2ce505542996483e64a72",
+      "decision": "accepted_source_supported",
+      "reason": "Brock Marion's college is explicitly the University of Nevada, Reno, whose paragraph states Founded October 12, 1874. His father Jerry Marion attended Wyoming, but that separate full paragraph concerns a different person and does not contradict Brock's university.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In which year was this public research university in which Brock Marion played college football founded?",
+      "reference_original": "1874",
+      "support_titles": [
+        "Brock Marion",
+        "University of Nevada, Reno"
+      ]
+    },
+    {
+      "index": 9,
+      "qid": "5a8f54165542992414482a52",
+      "decision": "accepted_source_supported",
+      "reason": "The parkway connects to Southern State Parkway in North Merrick, and its population paragraph gives 12,272 at the 2010 census. The question repeats the census year, fixing place, time and unit people; other parkway endpoints are distinguishable.",
+      "corrected_unit_class": "population",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "The Meadowbrook State Parkway connects to the Southern State Parkway in a community with what population as of the 2010 census?",
+      "reference_original": "12,272",
+      "support_titles": [
+        "Meadowbrook State Parkway",
+        "North Merrick, New York"
+      ]
+    },
+    {
+      "index": 10,
+      "qid": "5ae1fbf05542997f29b3c1e7",
+      "decision": "accepted_source_supported",
+      "reason": "Despite awkward syntax, the 2014 series paragraph explicitly identifies the Sports Car Club of America as the sanctioning club, and that club's paragraph states Formed in 1944. The 46th-running ordinal and the series' 2014 date are not the requested club-foundation year.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "When was the American automobile club which has 2014 Trans-Am Series as the 46th running of the Sports formed? ",
+      "reference_original": "1944",
+      "support_titles": [
+        "2014 Trans-Am Series",
+        "Sports Car Club of America"
+      ]
+    },
+    {
+      "index": 11,
+      "qid": "5a7cba005542990527d55516",
+      "decision": "exclude",
+      "reason": "The Reece paragraph reports that he taught in 1979 and 1980, but never states when he stopped teaching. Kelly's death in 1979 is explicit; the other comparison event lacks an explicit cessation date. Inferring a final teaching end from two teaching years would introduce an unsupported relation.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What is the year of the event that occured first, Skeeter stopped teaching at his alma mater,or Emmett Kelly died?",
+      "reference_original": "1979",
+      "support_titles": [
+        "Emmett Kelly",
+        "Zachary &quot;Skeeter&quot; Reece"
+      ]
+    },
+    {
+      "index": 12,
+      "qid": "5a7195a05542994082a3e881",
+      "decision": "accepted_source_supported",
+      "reason": "Ezer Weizman is explicitly Israel's seventh president, and the election paragraph states that the election following his resignation was held July 31, 2000. Other national elections in the context do not refer to the specified country or president.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "in what year did the Israeli presidential elections take place after the resignation of the seventh president of Israel?",
+      "reference_original": "2000",
+      "support_titles": [
+        "Ezer Weizman",
+        "Israeli presidential election, 2000"
+      ]
+    },
+    {
+      "index": 13,
+      "qid": "5a8d42c95542994ba4e3dc43",
+      "decision": "accepted_source_supported",
+      "reason": "The institute paragraph explicitly identifies Saleha Mahmood Abedin as Huma Abedin's mother. The Huma paragraph states birth on July 28, 1976; unrelated people named Mahmood or other family biographies do not alter this stated mother-daughter link.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Dr. Saleha Mahmood Abedin's daughter was born in what year ?",
+      "reference_original": "1976",
+      "support_titles": [
+        "Huma Abedin",
+        "Institute of Muslim Minority Affairs"
+      ]
+    },
+    {
+      "index": 14,
+      "qid": "5ab29cef554299449642c936",
+      "decision": "accepted_source_supported",
+      "reason": "Businger is explicitly an emeritus professor at the University of Washington, and the university paragraph expressly states established in 1861. The question targets university establishment rather than the professor's 1924 birth.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In which year was the University where Joost Alois Businger is an emeritus professor established ?",
+      "reference_original": "1861",
+      "support_titles": [
+        "Joost Businger",
+        "University of Washington"
+      ]
+    },
+    {
+      "index": 15,
+      "qid": "5ae66d515542992ae0d16346",
+      "decision": "accepted_source_supported",
+      "reason": "The song paragraph explicitly says Patti Page popularized it in 1949 and separately mentions an Armstrong cover. The Patti Page paragraph gives November 8, 1927 as her birth date. Popularized is therefore linked to Page, not all artists who covered the song.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In what year was the singer who popularized \"I'll Keep the Lovelight Burning\" born?",
+      "reference_original": "1927",
+      "support_titles": [
+        "I'll Keep the Lovelight Burning",
+        "Patti Page"
+      ]
+    },
+    {
+      "index": 16,
+      "qid": "5ab5e4e15542997d4ad1f229",
+      "decision": "accepted_source_supported",
+      "reason": "Walter Otto Davis explicitly played centre forward for Millwall; the full club paragraph says founded as Millwall Rovers in 1885. The later 1910 and 1993 dates concern locations, not formation.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "When was the football club founded in which Walter Otto Davisplayed at centre forward?",
+      "reference_original": "1885",
+      "support_titles": [
+        "Millwall F.C.",
+        "Walter Davis (footballer)"
+      ]
+    },
+    {
+      "index": 17,
+      "qid": "5a7e72dd55429949594199bf",
+      "decision": "exclude",
+      "reason": "The Spokane paragraph gives about 615 square kilometres or 237 square miles, so 237 is a rounded approximate area, not an exact total. A nearby designated alternative cannot be established false from that approximation; the question drops the about qualifier and lacks a dated boundary definition.",
+      "corrected_unit_class": "approximate_square_miles",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Among the prominent members of the Walla Walla expeditions was member of tribe whose reservation is how many square miles in total?",
+      "reference_original": "237",
+      "support_titles": [
+        "Spokane people",
+        "Walla Walla expeditions"
+      ]
+    },
+    {
+      "index": 18,
+      "qid": "5ae5fc345542993aec5ec1f8",
+      "decision": "accepted_source_supported",
+      "reason": "The question retains the alleged qualifier from the Kiki Preston paragraph and identifies Prince George, Duke of Kent. His full birth/death range gives December 20, 1902 as birth. This source-supported selection does not certify the alleged parentage as historical fact.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Kiki Preston was the alleged mother of a child born out of wedlock with a prince born in which year ?",
+      "reference_original": "1902",
+      "support_titles": [
+        "Kiki Preston",
+        "Prince George, Duke of Kent"
+      ]
+    },
+    {
+      "index": 19,
+      "qid": "5a74b55455429974ef308c39",
+      "decision": "accepted_source_supported",
+      "reason": "Cosmic Variance is explicitly a successor to Carroll's earlier Preposterous Universe blog. The Sean Michael Carroll biography states birth on October 5, 1966; the 2004–2005 dates concern operation of the blog rather than the author's birth.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "what year was the writer of the blog Preposterous Universe born?",
+      "reference_original": "1966",
+      "support_titles": [
+        "Cosmic Variance (blog)",
+        "Sean M. Carroll"
+      ]
+    },
+    {
+      "index": 20,
+      "qid": "5a82edae55429966c78a6a9f",
+      "decision": "exclude",
+      "reason": "The annotated Blue paragraph calls the single release 1986, but the full The Captain of Her Heart paragraph calls it a 1985 single taken from a 1985 album. The original question specifies no territory or release edition. The source set therefore contains competing release years, so 1986 is not uniquely validated.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Swiss music duo Double released their best known single \"The Captain of Her Heart\" in what year?",
+      "reference_original": "1986",
+      "support_titles": [
+        "Blue (Double album)",
+        "Double (band)"
+      ]
+    },
+    {
+      "index": 21,
+      "qid": "5a8842435542994846c1ce6d",
+      "decision": "accepted_source_supported",
+      "reason": "The mission paragraph explicitly says St. Marys, Kansas was established around this mission; the city paragraph gives population 2,627 at the 2010 census. The question specifies 2010, distinguishing this city from other St. Mary's institutions and fixing the population time.",
+      "corrected_unit_class": "population",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What was the 2010 population of the city established around St. Mary's Mission?",
+      "reference_original": "2,627",
+      "support_titles": [
+        "St. Mary's Mission (Kansas)",
+        "St. Marys, Kansas"
+      ]
+    },
+    {
+      "index": 22,
+      "qid": "5ab6c65e554299710c8d1f58",
+      "decision": "accepted_source_supported",
+      "reason": "Catawissa is placed at Waterford in Saratoga County, New York; the question explicitly asks for the town, whose paragraph distinguishes it from its same-named village and reports 8,515 at the 2000 census. Place level, unit people and year match the asked relation.",
+      "corrected_unit_class": "population",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What was the population of the town as of 2000 where the historic tugboat Catawissa is located?",
+      "reference_original": "8,515",
+      "support_titles": [
+        "Catawissa (tugboat)",
+        "Waterford, New York"
+      ]
+    },
+    {
+      "index": 23,
+      "qid": "5a83a4bc554299123d8c217f",
+      "decision": "accepted_source_supported",
+      "reason": "Bobby Arora is explicitly trading director of B & M, and the B&M paragraph states formed in 1978. Other Arora biographies and a 1978 Sears corporate event refer to different entities and do not contradict the identified chain.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Bobby Arora is the trading director of a retail chain that was formed in what year?",
+      "reference_original": "1978",
+      "support_titles": [
+        "B &amp; M",
+        "Bobby Arora"
+      ]
+    },
+    {
+      "index": 24,
+      "qid": "5a732aa055429901807daf9f",
+      "decision": "accepted_source_supported",
+      "reason": "The GICC paragraph identifies Georgia World Congress Center as the larger centre, and the GWCC paragraph states Opened in 1976. The comparison is within Georgia, not the national third-largest ranking; the 1971 charter year belongs to the authority, not centre opening.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What year did the largest convention center in the U.S. state of Georgia open?",
+      "reference_original": "1976",
+      "support_titles": [
+        "Georgia International Convention Center",
+        "Georgia World Congress Center"
+      ]
+    },
+    {
+      "index": 25,
+      "qid": "5abffc41554299012d1db551",
+      "decision": "accepted_source_supported",
+      "reason": "The 1984 documentary Marlene explicitly concerns Marlene Dietrich; her complete birth/death range gives December 27, 1901 as birth. Film-production year 1984 and death year 1992 are separate relations.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "The 1984 film \"Marlene\" is a documentary about an actress born in what year?",
+      "reference_original": "1901",
+      "support_titles": [
+        "Marlene (1984 film)",
+        "Marlene Dietrich"
+      ]
+    },
+    {
+      "index": 26,
+      "qid": "5a7b78c35542997c3ec971a9",
+      "decision": "exclude",
+      "reason": "The question names neither a series, a character nor an actress, merely an animated series premiered on Cartoon Network. The full context supplies Lara Jill Miller for Juniper Lee but also Kat Cressida, born 1968, voicing Dee Dee in Dexter's Laboratory, another Cartoon Network series. There is no unique entity linking the unrestricted question to 1967.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What year was the voice actress of an animated television series premiered on Cartoon Network born?",
+      "reference_original": "1967",
+      "support_titles": [
+        "Lara Jill Miller",
+        "The Life and Times of Juniper Lee"
+      ]
+    },
+    {
+      "index": 27,
+      "qid": "5abc8d00554299700f9d78fd",
+      "decision": "accepted_source_supported",
+      "reason": "Butturini is explicitly born in Murwillumbah, whose paragraph states 848 km north-east of Sydney on the Tweed River. The numeric report and unit kilometres match the question; 13 and 132 km in that paragraph refer to different destinations. This validates the stated source distance, not a newly measured route or geodesic distance.",
+      "corrected_unit_class": "distance_km",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Matthew Butturini was born in a town on the Tweed River how many km north-east of Sydney?",
+      "reference_original": "848",
+      "support_titles": [
+        "Matthew Butturini",
+        "Murwillumbah"
+      ]
+    },
+    {
+      "index": 28,
+      "qid": "5ac5382c5542996feb3fea43",
+      "decision": "accepted_source_supported",
+      "reason": "Forever Kingdom is explicitly described as released for PlayStation 2 by FromSoftware, whose paragraph states founded in November 1986. The source chain identifies the company and founding event; it does not require substituting the game's release year.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What year was the company, who released Forever Kingdom for PlayStation 2, founded?",
+      "reference_original": "1986",
+      "support_titles": [
+        "Forever Kingdom",
+        "FromSoftware"
+      ]
+    },
+    {
+      "index": 29,
+      "qid": "5ae1faf15542997f29b3c1e3",
+      "decision": "accepted_source_supported",
+      "reason": "Ticknor is explicitly president and board chairman of Commercial Solvents Corporation; the company paragraph calls it an American chemical and biotechnology company created in 1919. Commercial Pigments is separately named but is not the company satisfying the specified descriptor.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "William Davis Ticknor, Sr. served on the board of a chemical and biotechnology company created in what year?",
+      "reference_original": "1919",
+      "support_titles": [
+        "Commercial Solvents Corporation",
+        "William Davis Ticknor, Sr."
+      ]
+    },
+    {
+      "index": 30,
+      "qid": "5ac2ca84554299218029db55",
+      "decision": "accepted_source_supported",
+      "reason": "The Zelo biography explicitly identifies Choi Jun-hong as a B.A.P member; the band paragraph expressly states formed in 2012. A prior Bang&Zelo sub-unit single in November 2011 is described separately and does not itself assert a conflicting formation year for the complete group.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Choi Jun-hong  is best known as a member of a group formed in which year ?",
+      "reference_original": "2012",
+      "support_titles": [
+        "B.A.P (South Korean band)",
+        "Zelo"
+      ]
+    },
+    {
+      "index": 31,
+      "qid": "5a8e03375542995a26add458",
+      "decision": "accepted_source_supported",
+      "reason": "The crescograph paragraph names its inventor as Jagadish Chandra Bose; his full biography gives November 30, 1858 as birth and separately repeats the invention. The early-twentieth-century invention period is not the requested birth year.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What year was the man, who is credited for developing a Crescograph, born?",
+      "reference_original": "1858",
+      "support_titles": [
+        "Crescograph",
+        "Jagadish Chandra Bose"
+      ]
+    },
+    {
+      "index": 32,
+      "qid": "5a8e06785542995085b37383",
+      "decision": "accepted_source_supported",
+      "reason": "T-Bolan explicitly took its name from T. Rex and Marc Bolan. The T. Rex paragraph dates the band's formation to 1967 and separately explains a 1970 shortening of its earlier Tyrannosaurus Rex name; the question asks formation, not renaming.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "The name of the Japanese rock band T-Bolan was inspired by the name of an English rock band formed in what year?",
+      "reference_original": "1967",
+      "support_titles": [
+        "T-Bolan",
+        "T. Rex (band)"
+      ]
+    },
+    {
+      "index": 33,
+      "qid": "5ae72fd95542991e8301cbb4",
+      "decision": "accepted_source_supported",
+      "reason": "The Newcastle Civic Centre paragraph names King Olav V as the person formally opening it on November 14, 1968; his full biography gives July 2, 1903 as birth. The building's 1967 completion is a different event.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "The King who opened Newcastle Civic Center in 1968 was born in what year?",
+      "reference_original": "1903",
+      "support_titles": [
+        "Newcastle Civic Centre",
+        "Olav V of Norway"
+      ]
+    },
+    {
+      "index": 34,
+      "qid": "5ac31129554299741d48a1a2",
+      "decision": "accepted_source_supported",
+      "reason": "Woodland is explicitly a CDP within the town of Baileyville. The question asks the town's 2010 population, which Baileyville's paragraph gives as 1,521. Woodland's separate 952 count is the CDP and therefore does not contradict the specified geographic level.",
+      "corrected_unit_class": "population",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Woodland is a census-designated place in a town that had this population as of the 2010 census?",
+      "reference_original": "1,521",
+      "support_titles": [
+        "Baileyville, Maine",
+        "Woodland, Washington County, Maine"
+      ]
+    },
+    {
+      "index": 35,
+      "qid": "5ac50dd05542994611c8b343",
+      "decision": "accepted_source_supported",
+      "reason": "Phil Lloyd's portrayal of Tim Mathieson identifies Julia Gillard; her biography expressly states 27th Prime Minister from 2010 to 2013. The separate Gillard Government paragraph independently within the snapshot gives its end in June 2013.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Phil Lloyd played Tim Mathieson, the partner of this prime minister who was the 27th Prime Minister of Australia from 2010 to when",
+      "reference_original": "2013",
+      "support_titles": [
+        "Julia Gillard",
+        "Phil Lloyd (actor)"
+      ]
+    },
+    {
+      "index": 36,
+      "qid": "5a714f6f5542994082a3e7b3",
+      "decision": "exclude",
+      "reason": "The question asks how many people live in Collier County without an as-of date. The supplied 321,520 is explicitly a 2010 census value. The question does not fix that census or year, so a changing present-tense population cannot be validated as the specified exact reference.",
+      "corrected_unit_class": "undated_population",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "How many people live in the County serviced by The Collier Area Transit system?",
+      "reference_original": "321,520",
+      "support_titles": [
+        "Collier Area Transit",
+        "Collier County, Florida"
+      ]
+    },
+    {
+      "index": 37,
+      "qid": "5ab7178f5542991d32223774",
+      "decision": "accepted_source_supported",
+      "reason": "The Navakoti Narayana paragraph expressly identifies Purandara Dasa and gives his life dates 1484–1564; his full biography repeats the same range. The question asks the birth year, not the film's 1964 release. This is a snapshot-reported historical date, not independent authentication of the tradition.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "The film Navakoti Narayana was based on the life of Purandara Dasa who was born in what year?",
+      "reference_original": "1484",
+      "support_titles": [
+        "Navakoti Narayana",
+        "Purandara Dasa"
+      ]
+    },
+    {
+      "index": 38,
+      "qid": "5ab3f6b9554299753aec5a03",
+      "decision": "exclude",
+      "reason": "John Huston is the named director of Wise Blood, but the numerical sentence counts 37 feature films, not all films of every format. The original question asks how many films without limiting the scope to features; the source does not establish a total including shorts or documentaries.",
+      "corrected_unit_class": "feature_films_scope_not_specified",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "How many films were directed by the director of Wise Blood?",
+      "reference_original": "37",
+      "support_titles": [
+        "John Huston",
+        "Wise Blood (film)"
+      ]
+    },
+    {
+      "index": 39,
+      "qid": "5abda2b755429933744ab80f",
+      "decision": "accepted_source_supported",
+      "reason": "Göring's biography explicitly identifies him as a World War I fighter pilot; the war paragraph states the conflict lasted through November 11, 1918. World War II pilots in other passages concern different people and do not change the identified war.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Hermann Wilhelm Göring was a veteran fighter pilot in a war that ended in what year?",
+      "reference_original": "1918",
+      "support_titles": [
+        "Hermann Göring",
+        "World War I"
+      ]
+    },
+    {
+      "index": 40,
+      "qid": "5a80b35c5542992bc0c4a7b8",
+      "decision": "accepted_source_supported",
+      "reason": "Sinimole Paulose's two specified events are 800 and 1500 metres, fixing the other event as 1500 metres. Its paragraph explicitly states that this distance has been contested at the Summer Olympics since 1896, distinct from World Championships since 1983.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Sinimole Paulose's favorite events are the 800 metres and another event that has been a contest at the Summer Olympics begining in what year?",
+      "reference_original": "1896",
+      "support_titles": [
+        "1500 metres",
+        "Sinimole Paulose"
+      ]
+    },
+    {
+      "index": 41,
+      "qid": "5ae4b8fc55429913cc2044e5",
+      "decision": "exclude",
+      "reason": "The support identifies the historical Province of Quebec (1763–1791), created by a proclamation renaming part of New France in 1763. The question instead asks when the place acquired its present name, without distinguishing that former colonial jurisdiction from a present-day place. The supplied historic renaming alone does not resolve the present-entity scope.",
+      "corrected_unit_class": "historical_jurisdiction_renaming_year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "When did the place in Canada where François Beaucourt (1740-1794) was mainly active acquired its present name?",
+      "reference_original": "1763",
+      "support_titles": [
+        "François Beaucourt",
+        "Province of Quebec (1763–1791)"
+      ]
+    },
+    {
+      "index": 42,
+      "qid": "5a7c78c955429935c91b51d2",
+      "decision": "accepted_source_supported",
+      "reason": "Foote is explicitly originally from Vancouver. Its paragraph distinguishes the city population of 631,486 at the 2016 census from Greater Vancouver's 2,463,431 and the city's 2011 count. The question specifies city and 2016, so entity level, year and unit people align.",
+      "corrected_unit_class": "population",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What was the population in 2016 of the city that Norman Foote is originally from?",
+      "reference_original": "631,486",
+      "support_titles": [
+        "Norman Foote",
+        "Vancouver"
+      ]
+    },
+    {
+      "index": 43,
+      "qid": "5ac1a9cc5542994ab5c67dc0",
+      "decision": "exclude",
+      "reason": "Crucible is explicitly created by Tesco, but the retailer paragraph's twelve-country store footprint has no as-of date and the question asks a present-tense changing company count. No year or reporting period anchors that exact twelve-country reference.",
+      "corrected_unit_class": "undated_country_footprint_count",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Crucible is a geodemography computer system created by a company that has stores in how many countries?",
+      "reference_original": "12",
+      "support_titles": [
+        "Crucible (geodemography)",
+        "Tesco"
+      ]
+    },
+    {
+      "index": 44,
+      "qid": "5abd889f55429924427fd046",
+      "decision": "accepted_source_supported",
+      "reason": "The series paragraph gives Ghost School and Ghost School Horror as aliases of Whispering Corridors, and the Voice paragraph explicitly calls it the fourth installment. The answer is a quantitative ordinal, not merely digits in an unrelated proper name.",
+      "corrected_unit_class": "ordinal_film_installment",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What number installment of the Ghost School and Ghost School Horror was the film Voice?",
+      "reference_original": "4",
+      "support_titles": [
+        "Voice (film)",
+        "Whispering Corridors (film series)"
+      ]
+    },
+    {
+      "index": 45,
+      "qid": "5ae1810555429901ffe4aecf",
+      "decision": "needs_resolution",
+      "reason": "The supplied passages identify The Second City as the troupe where these performers studied, and date The Second City Theatre's opening to December 16, 1959. They do not explicitly date the troupe or enterprise's founding. Equating theatre opening with organizational foundation requires confirmation; the full context also names the earlier Compass Players as a predecessor.",
+      "corrected_unit_class": "organizational_foundation_year_not_explicit",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "When was the improvisational troupe, which trained Amy Sedaris, Paul Dinello, and Stephen Colber, founded?",
+      "reference_original": "1959",
+      "support_titles": [
+        "Exit 57",
+        "The Second City"
+      ]
+    },
+    {
+      "index": 46,
+      "qid": "5a88982155429938390d3f81",
+      "decision": "accepted_source_supported",
+      "reason": "Queensway is explicitly numbered B411 and hosts Whiteleys. The Whiteleys paragraph distinctly dates the shopping centre opening to 1989 and the former department-store opening to 1911; the question explicitly asks for the later shopping centre in the old retail space.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What year did the shopping centre on the street numbered B411 open in the space of in the retail space of the former William Whiteley Limited department store?",
+      "reference_original": "1989",
+      "support_titles": [
+        "Queensway, London",
+        "Whiteleys"
+      ]
+    },
+    {
+      "index": 47,
+      "qid": "5a89e6615542992e4fca8462",
+      "decision": "accepted_source_supported",
+      "reason": "The Murray paragraph identifies it as Kentucky's twentieth-largest city in the snapshot and places it in Calloway County. The county paragraph explicitly states founding in November 1822. The requested historical founding date is distinct from the undated identifying city rank and the 2010 population figures.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In what year was the county in which Kentucky's 20th-largest city is located founded?",
+      "reference_original": "1822",
+      "support_titles": [
+        "Calloway County, Kentucky",
+        "Murray, Kentucky"
+      ]
+    },
+    {
+      "index": 48,
+      "qid": "5a86d7825542996432c571ec",
+      "decision": "accepted_source_supported",
+      "reason": "The group paragraph lists Adrienne Bailon together with the three people named in the question, uniquely identifying the remaining singer. Her biography gives birth on October 24, 1983. Group dates and other Cheetah Girls members' biographies concern different relations or people.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In what year was the American singer, who with Kiely Williams, Sabrina Bryan, and Raven-Symoné made up The Cheetah Girls, born?",
+      "reference_original": "1983",
+      "support_titles": [
+        "Adrienne Bailon",
+        "The Cheetah Girls (group)"
+      ]
+    },
+    {
+      "index": 49,
+      "qid": "5ab3b0bf5542992ade7c6e39",
+      "decision": "accepted_source_supported",
+      "reason": "The film description uniquely identifies End of Days through Schwarzenegger's former-NYPD character. The Guns N' Roses song paragraph dates both Oh My God's soundtrack release and its radio-promo circulation to 1999. This supports the recorded promotional song interpretation, not a separately established live-performance event.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+      "reference_original": "1999",
+      "support_titles": [
+        "End of Days (film)",
+        "Oh My God (Guns N' Roses song)"
+      ]
+    },
+    {
+      "index": 50,
+      "qid": "5ac1b3a75542994ab5c67dd2",
+      "decision": "accepted_source_supported",
+      "reason": "The Park Avenue South paragraph explicitly places the two-night live recording in a Manhattan Starbucks branch. The company paragraph expressly states founded in Seattle in 1971; album year 2003 and store counts in 2016 are separate facts.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In what year was the company founded whose Manhattan branch was the site for the recording of the live album, Park Avenue South, by Dave Brubeck and his quartet? ",
+      "reference_original": "1971",
+      "support_titles": [
+        "Park Avenue South (album)",
+        "Starbucks"
+      ]
+    },
+    {
+      "index": 51,
+      "qid": "5a899bf955429946c8d6e959",
+      "decision": "accepted_source_supported",
+      "reason": "The NBA 2K16 paragraph identifies Anthony Davis as the cover athlete associated with New Orleans Pelicans. His biography states first-overall selection in the 2012 draft. Other context explains the Hornets-to-Pelicans rename after 2012–2013, but the question identifies the player by his later cover affiliation rather than claiming that draft occurred under the Pelicans name.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "When was the New Orleans Pelicans player featured on the NBA 2K16 cover first drafted?",
+      "reference_original": "2012",
+      "support_titles": [
+        "Anthony Davis (basketball)",
+        "NBA 2K16"
+      ]
+    },
+    {
+      "index": 52,
+      "qid": "5aba9e2455429939ce03dd3a",
+      "decision": "accepted_source_supported",
+      "reason": "The Rejuvelac paragraph explicitly names Ann Wigmore as its inventor/promoter; her biography gives 1909–1994 as her life span. The requested birth year is 1909. No efficacy or health benefit claim is being inferred from the holistic-health description.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Rejuvelac is kind of grain water invented and promoted by a \"holistic health\" practitioner born in which year ?",
+      "reference_original": "1909",
+      "support_titles": [
+        "Ann Wigmore",
+        "Rejuvelac"
+      ]
+    },
+    {
+      "index": 53,
+      "qid": "5ab84bf555429916710eb01f",
+      "decision": "accepted_source_supported",
+      "reason": "Euromarché's paragraph names Carrefour as its 1991 purchaser. Carrefour's paragraph reports exactly 1,462 hypermarkets at the end of 2016, and the question retains that year and store category. The separate more-than-thirty-country statement is not the requested unit.",
+      "corrected_unit_class": "hypermarket_count",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In 1991 Euromarché was bought by a chain that operated how any hypermarkets at the end of 2016?",
+      "reference_original": "1,462",
+      "support_titles": [
+        "Carrefour",
+        "Euromarché"
+      ]
+    },
+    {
+      "index": 54,
+      "qid": "5a7415cf55429979e28828a6",
+      "decision": "accepted_source_supported",
+      "reason": "Matthews' paragraph identifies Fulgencio Batista as the person claiming Castro had been killed. Batista's biography distinguishes effective control through other presidents from 1933 from his own first elected presidency beginning in 1940; the question asks when he first served as President himself.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "When did the person who claimed that Fidel Castro was killed in the 26th July Movement but was proven wrong by Herbert Matthews first serve as President of Cuba?",
+      "reference_original": "1940",
+      "support_titles": [
+        "Fulgencio Batista",
+        "Herbert Matthews"
+      ]
+    },
+    {
+      "index": 55,
+      "qid": "5a87560d5542994775f607d9",
+      "decision": "accepted_source_supported",
+      "reason": "The Red Flash paragraph explicitly names Big Red as its competing drink, and Big Red's paragraph states creation in 1937. Later name changes in 1959 and 1969 and Red Flash's introduction in 2000 are distinct from creation of the identified competing drink.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In what year was the soft drink that the Coca-Cola Company designed Red Flash to compete against created?",
+      "reference_original": "1937",
+      "support_titles": [
+        "Big Red (drink)",
+        "Red Flash"
+      ]
+    },
+    {
+      "index": 56,
+      "qid": "5ae731c4554299572ea54781",
+      "decision": "accepted_source_supported",
+      "reason": "The full Barks paragraph expressly distinguishes best known for comics about Donald Duck from creator of Scrooge McDuck. Donald Duck's paragraph gives creation in 1934. The separate 1947 Scrooge and 1951 Junior Woodchucks creation dates apply to other named characters and do not contradict the specific best-known-comics relation.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Carl Barks is best known for his comics about the cartoon character created in what year?",
+      "reference_original": "1934",
+      "support_titles": [
+        "Carl Barks",
+        "Donald Duck"
+      ]
+    },
+    {
+      "index": 57,
+      "qid": "5a78f1b555429970f5fffde9",
+      "decision": "accepted_source_supported",
+      "reason": "The Orange song paragraph explicitly identifies David O'Doherty as performer; his biography gives birth on December 18, 1975. The song's 2007 release and other biographies in the context are not the requested performer birth year.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "What year was the singer of \"Orange\" born?",
+      "reference_original": "1975",
+      "support_titles": [
+        "David O'Doherty",
+        "Orange (song)"
+      ]
+    },
+    {
+      "index": 58,
+      "qid": "5a807f6a5542992bc0c4a737",
+      "decision": "accepted_source_supported",
+      "reason": "HMS Seraph's paragraph identifies Operation Mincemeat, whose paragraph expressly says it was intended to cover the 1943 Allied invasion of Sicily. The full related operation and book paragraphs also place that invasion in 1943; mainland Italy and book-publication dates are distinguishable.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "The HMS Seraph is most famous for a WWII operation intended to cover the allied invasion of Sicily in what year?",
+      "reference_original": "1943",
+      "support_titles": [
+        "HMS Seraph (P219)",
+        "Operation Mincemeat"
+      ]
+    },
+    {
+      "index": 59,
+      "qid": "5a7f35015542992e7d278c8a",
+      "decision": "needs_resolution",
+      "reason": "The question names Cal Hovde, but the supplied person paragraph names Carl Frederick Hovde, Dean of Columbia College. Columbia's 1754 foundation is explicit for the apparent intended person, but accepting it requires resolving the person-name mismatch as a typo; the original question must not be silently rewritten.",
+      "corrected_unit_class": "person_name_mismatch",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "In what year was the college that Cal Hovde served as dean for founded?",
+      "reference_original": "1754",
+      "support_titles": [
+        "Carl Hovde",
+        "Columbia College, Columbia University"
+      ]
+    },
+    {
+      "index": 60,
+      "qid": "5aba92da55429901930fa840",
+      "decision": "needs_resolution",
+      "reason": "The novel paragraph says it was the best-selling book of the year in Spain in both 2007 and 2008, but does not say 2007 was its first such year. The novel was published in 2006, which is not ruled out by that sentence. The first-ever relation in the original question therefore needs confirmation beyond taking the earliest mentioned year.",
+      "corrected_unit_class": "first_occurrence_not_explicit",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "When did Gemma Ortega's Holocaust novel translation first receive best selling book of the year in Spain?",
+      "reference_original": "2007",
+      "support_titles": [
+        "Gemma Rovira Ortega",
+        "The Boy in the Striped Pyjamas"
+      ]
+    },
+    {
+      "index": 61,
+      "qid": "5a7dbb605542997cc2c47486",
+      "decision": "exclude",
+      "reason": "The source directly supports 5249 as the Roud Folk Song Index identifier of Pop Goes the Weasel, but that number is a catalog identifier rather than a count, measurement, date or quantitative ordinal. It does not meet the planned quantitative/year subset definition; reclassifying it as a count would repeat the numeric-name eligibility problem.",
+      "corrected_unit_class": "catalog_identifier",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Many jack-in-the-boxes use an English nursery rhyme with a Roud Folk Song Index number of what?",
+      "reference_original": "5249",
+      "support_titles": [
+        "Jack-in-the-box",
+        "Pop Goes the Weasel"
+      ]
+    },
+    {
+      "index": 62,
+      "qid": "5a8ea03e5542990e94052b81",
+      "decision": "accepted_source_supported",
+      "reason": "The marker is explicitly located within Underground Atlanta Historic District, and the Underground Atlanta paragraph states that the shopping/entertainment district first opened in 1969. This supports the district's commercial opening year, not a marker-installation year or a formal historic-register designation date.",
+      "corrected_unit_class": "year",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "Atlanta Zero Mile Post is located within a historic area opened in what year ?",
+      "reference_original": "1969",
+      "support_titles": [
+        "Atlanta Zero Mile Post",
+        "Underground Atlanta"
+      ]
+    },
+    {
+      "index": 63,
+      "qid": "5adcaa7f5542990d50227cdb",
+      "decision": "exclude",
+      "reason": "The artist passage identifies Seito Shokun!, but its paragraph says individual chapters were collected into 24 tankōbon volumes. Twenty-four counts collected volumes, not chapters. The source gives no total chapter count, so the original question and reference use different units.",
+      "corrected_unit_class": "collected_volumes_not_chapters",
+      "review_type": "AI_assistant_source_audit",
+      "human_judgments": 0,
+      "question_original": "How many chapters does Yōko Shōji's most famous manga have?",
+      "reference_original": "24",
+      "support_titles": [
+        "Seito Shokun!",
+        "Yōko Shōji"
+      ]
+    }
+  ],
+  "created_at_utc": "2026-10-26T17:13:09.854431+00:00",
+  "input_sha256": "4fdc2f119126864e88bd5115c70e7e96f72dc26d2ce282b384aaa8d79d70b54d",
+  "source_review_scope": "Complete supplied supporting paragraphs; context titles screened and related distractor paragraphs read for alternative entities, dates and contradictions. No external truth certification or human judgment.",
+  "questions_modified": false,
+  "model_api_calls": 0,
+  "model_outputs_observed_for_C": false,
+  "summary": {
+    "exclude": 13,
+    "accepted_source_supported": 48,
+    "needs_resolution": 3
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "recorded_at_utc": "2026-10-27T00:44:38.264849+00:00",
+  "command": "python /workspace/rag_security_revision_v2/analysis/test_analyze_study_c.py",
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "result": "passed",
+  "evidence": "Observed unittest output: Ran 7 tests in 0.483s; OK",
+  "fixtures": "Explicitly synthetic temporary data; no real model invocation, no human judgments, no Study C results",
+  "coverage": [
+    "missing outputs remain unknown with planned-denominator bounds",
+    "within-question mean across rounds rather than any-of-three",
+    "one-sided paired missingness difference bounds",
+    "prevention/restoration/new failures distinct",
+    "full saved evidence join across core/controlled/dose",
+    "incomplete archive refused unless explicitly bounded",
+    "tampered response refused"
+  ],
+  "source_sha256": {
+    "analyze_study_c.py": "be683997bbf317f4282382d749efb1b584fe2469a72225f45ad23b30c35553c6",
+    "test_analyze_study_c.py": "1aea626137af90bc2a62bdb25548f0d6da48d947765bb974f7c523ab0bde9c40"
+  }
+}

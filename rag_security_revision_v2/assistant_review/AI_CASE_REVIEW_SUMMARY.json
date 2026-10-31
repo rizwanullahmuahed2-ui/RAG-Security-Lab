@@ -1,0 +1,140 @@
+{
+  "status": "completed_AI_case_wise_semantic_assessment",
+  "created_at_utc": "2026-10-29T17:19:24.986113+00:00",
+  "total_cases": 72,
+  "uniform_sample_cases": 64,
+  "uniform_sample_by_study": {
+    "B": 32,
+    "C": 32
+  },
+  "diagnostic_supplement_cases": 8,
+  "assessment_origin": "AI assistant contexts reading original questions, exact answers and saved evidence; not human item-level ratings.",
+  "author_manual_inspection_reported_completed": true,
+  "author_inspection_distinct_from_this_72_case_assessment": true,
+  "structured_human_ratings_received_for_these_cases": 0,
+  "selection_sha256": "bbaef63ede64f1632ae4ca5513c2d5841f45b335486a17c1e948f3902099b7c0",
+  "notes_sha256": "da29a04a920e11e0bd90d8c044b700638296ea875cb9fc5aed22cca0536f5759",
+  "verbatim_quotes_verified": 188,
+  "groups": [
+    {
+      "selection_group": "uniform_sample",
+      "study": "B",
+      "n_cases": 32,
+      "counts": {
+        "ai_answer_vs_source": {
+          "agrees": 23,
+          "no_answer_claim": 2,
+          "undetermined": 4,
+          "contradicts": 3
+        },
+        "ai_support_any_provided": {
+          "yes": 25,
+          "not_applicable": 2,
+          "partial": 2,
+          "no": 3
+        },
+        "ai_contradicted_by_provided": {
+          "no": 24,
+          "undetermined": 2,
+          "yes": 6
+        },
+        "ai_support_actual_clean_subset": {
+          "no": 8,
+          "yes": 18,
+          "not_applicable": 2,
+          "partial": 4
+        },
+        "ai_abstention": {
+          "none": 30,
+          "full": 2
+        },
+        "ai_reference_annotation": {
+          "source_consistent": 26,
+          "ambiguous_question": 5,
+          "incorrect_same_question": 1
+        }
+      }
+    },
+    {
+      "selection_group": "uniform_sample",
+      "study": "C",
+      "n_cases": 32,
+      "counts": {
+        "ai_answer_vs_source": {
+          "agrees": 18,
+          "contradicts": 13,
+          "no_answer_claim": 1
+        },
+        "ai_support_any_provided": {
+          "yes": 28,
+          "partial": 2,
+          "not_applicable": 1,
+          "no": 1
+        },
+        "ai_contradicted_by_provided": {
+          "yes": 7,
+          "no": 25
+        },
+        "ai_support_actual_clean_subset": {
+          "yes": 15,
+          "no": 13,
+          "partial": 3,
+          "not_applicable": 1
+        },
+        "ai_abstention": {
+          "none": 31,
+          "full": 1
+        },
+        "ai_reference_annotation": {
+          "source_consistent": 32
+        }
+      }
+    },
+    {
+      "selection_group": "flagged_diagnostic_supplement",
+      "study": "B",
+      "n_cases": 8,
+      "counts": {
+        "ai_answer_vs_source": {
+          "partly_agrees": 2,
+          "undetermined": 1,
+          "agrees": 4,
+          "no_answer_claim": 1
+        },
+        "ai_support_any_provided": {
+          "partial": 4,
+          "yes": 3,
+          "not_applicable": 1
+        },
+        "ai_contradicted_by_provided": {
+          "no": 8
+        },
+        "ai_support_actual_clean_subset": {
+          "partial": 4,
+          "yes": 3,
+          "not_applicable": 1
+        },
+        "ai_abstention": {
+          "none": 4,
+          "partial": 1,
+          "full": 1,
+          "conflicting": 2
+        },
+        "ai_reference_annotation": {
+          "source_consistent": 6,
+          "ambiguous_question": 1,
+          "incorrect_same_question": 1
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Retrospective analysis after main automatic results were known.",
+    "Unique displayed cases, not independent questions; case reuse and shared evidence remain.",
+    "Diagnostic supplement selected using automatic review flags, separate from the uniform64.",
+    "Source-relative assistant judgments are not external factual verification or human metric calibration.",
+    "No independent two-person human agreement, adjudication or semantic ASR is claimed."
+  ],
+  "subsequent_author_report": "manual_review/author_reported_findings.json",
+  "provenance_note": "The author subsequently supplied aggregate findings for the72-case selection. Original assistant item-level notes retain their AI origin; no synthetic individual human ratings were added."
+}

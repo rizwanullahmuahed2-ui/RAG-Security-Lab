@@ -1,0 +1,7 @@
+condition,defense,initial_successes,prevented,gold_value_restored,new_successes,prevention_rate,restoration_rate
+targeted,rerank,34,24,11,7,0.7058823529411765,0.3235294117647059
+targeted,filter,34,34,17,0,1.0,0.5
+targeted,filter_rerank,34,34,19,0,1.0,0.5588235294117647
+accepted_label,rerank,34,24,11,7,0.7058823529411765,0.3235294117647059
+accepted_label,filter,34,0,0,0,0.0,0.0
+accepted_label,filter_rerank,34,24,11,7,0.7058823529411765,0.3235294117647059

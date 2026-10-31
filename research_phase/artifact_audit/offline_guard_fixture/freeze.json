@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-10-22T10:51:17.688544+00:00",
+  "source_parquet_sha256": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+  "eligible_numeric_candidates": 461,
+  "hashes": {
+    "prepare_experiment.py": "25571c3176229c046d73883976f627a0bf97adfb99706fb14581ce5f69f5c1b6",
+    "test_questions.json": "80d9e821acdbc4928a932dffeb27ec23bbc8cbc43dde00f04305762d1ca32398",
+    "control_donors.json": "3f09b829dcc27cba31de9d55ea231672f541a15351b16e22ed3c6744ff8e3306",
+    "clean_documents.json": "a51efcd6d9df38e5bcf706d399bd2267c49cc1fd997bea8182f8f3479674dad4",
+    "insertions.json": "bfac67c4c3ca4c34841881e0da42c56b8c0c895f2d08d7c31451369bc928e767",
+    "config.json": "65785a2bc6fad599bf6edc2a5b044b2d6ca3f0203ab30a18747fa29e3e68c28e",
+    "source_dataset_metadata.json": "6aca657ba5a5c3d54ac74bbbe944dd33a99c765926d6f5bf94bba29286bada65"
+  }
+}

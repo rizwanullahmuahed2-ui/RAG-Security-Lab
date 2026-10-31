@@ -1,0 +1,11 @@
+condition_a,condition_b,defense,metric,difference_pp,ci95_low_pp,ci95_high_pp,n_question_units,bootstrap_draws
+targeted,unrelated,none,numeric_false_only,53.125,40.625,65.625,64,10000
+targeted,unrelated,none,numeric_gold_only,-25.0,-37.5,-12.5,64,10000
+targeted,benign,none,numeric_false_only,53.125,40.625,65.625,64,10000
+targeted,benign,none,numeric_gold_only,-62.5,-73.4375,-50.0,64,10000
+targeted,clean,none,numeric_false_only,53.125,40.625,65.625,64,10000
+targeted,clean,none,numeric_gold_only,-26.5625,-39.0625,-15.625,64,10000
+accepted_label,targeted,filter,numeric_false_only,53.125,40.625,65.625,64,10000
+accepted_label,targeted,filter,numeric_gold_only,-26.5625,-39.0625,-15.625,64,10000
+accepted_label,targeted,filter_rerank,numeric_false_only,26.5625,15.625,37.5,64,10000
+accepted_label,targeted,filter_rerank,numeric_gold_only,-15.625,-26.5625,-4.6875,64,10000

@@ -1,0 +1,13 @@
+{
+  "released_at_utc": "2026-10-27T00:44:27.391907+00:00",
+  "purpose": "Preserve the initially released blank B review packet; reviewers fill their own copies; no labels were created by release",
+  "cases": 376,
+  "human_labels_completed": 0,
+  "initial_template_hashes": {
+    "human_review_packet/Stage1_Reviewer_2_BLINDED.csv": "075fa871e4ac35d1b45994af2e6b2247c8b6975c8c72a218ad5d54b71606cf7b",
+    "human_review_packet/Stage1_Reviewer_1_BLINDED.csv": "075fa871e4ac35d1b45994af2e6b2247c8b6975c8c72a218ad5d54b71606cf7b",
+    "human_review_packet/REVIEW_STATUS.json": "4f4d9d9662d164adc19bc6ba414cb033c97d1b8acba08c72c9ac0732db51d7f7",
+    "HUMAN_REVIEW_RUBRIC_EN.md": "3d9de551879b4d011010854c22dac81a0aa6b1e02cbde31e6a65d25a931c74c9",
+    "HUMAN_REVIEW_INSTRUCTIONS_FA.md": "33b757878468cdafb87202971b4d1139a34e28b86f88b19107e8d0ed0894113d"
+  }
+}

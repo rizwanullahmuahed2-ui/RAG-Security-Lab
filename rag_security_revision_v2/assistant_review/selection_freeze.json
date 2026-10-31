@@ -1,0 +1,401 @@
+{
+  "created_at_utc": "2026-10-29T06:40:54.517674+00:00",
+  "scope": "Retrospective case-wise semantic reading by AI assistants, not a human validation study",
+  "random_seed_hex": "4f71a0431ca3186e44e2266d2a17f3683f3cc3234e444789626fd49dcc6e50f6",
+  "sampling": "Simple pseudo-random sample of32case IDs separately from each complete unique display frame, seeded before audit selection; independent diagnostic supplement chosen by recorded automatic flags.",
+  "frames": {
+    "B": 376,
+    "C": 897
+  },
+  "uniform_sample_n": {
+    "B": 32,
+    "C": 32
+  },
+  "uniform_case_inclusion_probabilities": {
+    "B": 0.0851063829787234,
+    "C": 0.03567447045707915
+  },
+  "diagnostic_supplement_n": 8,
+  "total_cases": 72,
+  "no_human_judgments": true,
+  "limitations": [
+    "Selection is after the experiment and the overall automatic results are known.",
+    "Assistant source-relative judgments are neither human judgments nor externally established factual truth.",
+    "Four assistant contexts divide the cases; this is not two independently rated human passes or a human-agreement study.",
+    "Do not pool the outcome-enriched diagnostic supplement with the uniform sample or claim unbiased semantic ASR."
+  ],
+  "source_hashes": {
+    "evaluation/human_review_packet/Stage1_Reviewer_1_BLINDED.csv": "075fa871e4ac35d1b45994af2e6b2247c8b6975c8c72a218ad5d54b71606cf7b",
+    "evaluation/study_c_review/human_review_packet/Stage1_Reviewer_1_BLINDED.csv": "01b9b1c6772ca24142b0181c8f1f3aa53ab28e3d84dbfb6b510b54e0c17a55e8"
+  },
+  "selection": [
+    {
+      "study": "B",
+      "case_id": "H05c670bbb850b4ecc13e",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H0d124f90e12f5b1e24f8",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H17ff9f832e6544f2fc71",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H21052d23cf1716d02125",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H2a83234f0e09e653b422",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H301feed020a3230484eb",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H30b5e58f5788ab20ed78",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H613f425b680ee359d4df",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H62a590e3e72423d3df80",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H6f62a128dd0673b6e288",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H8895c95e03f419bcd7df",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H88c6f3ee404eab0b31da",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H89dcd99b5b046c246856",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H9011f6c10e740d1fc786",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H989935fe64b0f30996e1",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H990f8e8f9ab8e2094fc4",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "H9a6a1e9edb747d969d58",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hae3af56eb947499f926a",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hb3e102cfce449b38f8a3",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hb694dcc4934d4947e196",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hc8949b8df919950d781b",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hd8e41cfc440f82eb874d",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hd934c1479c72d5d7aa64",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hdb59aa0a403118017fc3",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hdf7b69fb041cb64415db",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "He2266cff32e0fc910d9d",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hec7b7620c0586f97c8dd",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hf261f731181d11985a32",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hf85b587bf4e6f5be6e6a",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hfaa6f5229e085363a51f",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hfaaec724dbc71de3cc2c",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Hffa7022264cb0204dde9",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C10a4a97c8fb412441663b6cf",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C337ed62c1d5632c0cc6b24b5",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C40f64a4faf73500198c06b7f",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C42ca0bd9f1535fa14b366418",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C536750dd7324d98e710c8759",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C5e77183c1a3556f4c6a2515b",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C670adfcab66c09d4a15fad9e",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C6f7bb40a2e1684e7f0f1c1d8",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C71db0ee4b2a4f29cadc2f20d",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C7249a8286afbb1ae20975246",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C76d0c21890fc06665c99bea0",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C7ba14bc64c8504990536d05b",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C7c3e5e7d53d967017f9bcf71",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C7ddc3803601d7eab92186d54",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C7eaf2c7c13a7931988884e9d",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C87a2c3d8ee6b5f7acb572bbe",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C895ff41ceda7dd4ba8348793",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C8f0bc6681bba56c3b1b52834",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "C9f21619b626a17b76dbc679b",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Ca830489cb1e2f642a8ce16bd",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Cc1d7a9952e70cfd8755b8fad",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Cc633b1f7016269c9348896bc",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Cd14fa286d84e0d18182f701a",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Cd5fe82679424742df9e47099",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Cdbfb36d44c1ead174963622e",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Ce0687702849f23ab0e616d8b",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Ce638f12b907a1384945184bd",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Ceb9b664a1084454559489872",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Cef7804de774f83bf48c8aab8",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Cf011a7484be1b135ef5d4f95",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Cf3505b959338a82c22a2a323",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "C",
+      "case_id": "Cfba3c79cc5b0bc0f72bb86c4",
+      "selection_group": "uniform_sample"
+    },
+    {
+      "study": "B",
+      "case_id": "Ha6914ac9865cdcf8aee5",
+      "selection_group": "flagged_diagnostic_supplement",
+      "selection_flag": "numeric_with_abstention"
+    },
+    {
+      "study": "B",
+      "case_id": "H8f9c179be90bbf41b5ce",
+      "selection_group": "flagged_diagnostic_supplement",
+      "selection_flag": "numeric_with_abstention"
+    },
+    {
+      "study": "B",
+      "case_id": "Ha09fa1fa8a06a7a64860",
+      "selection_group": "flagged_diagnostic_supplement",
+      "selection_flag": "numeric_with_abstention"
+    },
+    {
+      "study": "B",
+      "case_id": "H53b7580af38ea03f1408",
+      "selection_group": "flagged_diagnostic_supplement",
+      "selection_flag": "qualified_numeric_language"
+    },
+    {
+      "study": "B",
+      "case_id": "Hf3060652255ba89205b1",
+      "selection_group": "flagged_diagnostic_supplement",
+      "selection_flag": "qualified_numeric_language"
+    },
+    {
+      "study": "B",
+      "case_id": "H145ea9c047477f1f4ca7",
+      "selection_group": "flagged_diagnostic_supplement",
+      "selection_flag": "nonliteral_abstention_language"
+    },
+    {
+      "study": "B",
+      "case_id": "H79af9ab322e40fdc782e",
+      "selection_group": "flagged_diagnostic_supplement",
+      "selection_flag": "nonliteral_abstention_language"
+    },
+    {
+      "study": "B",
+      "case_id": "H46e98224b3d1faedffc5",
+      "selection_group": "flagged_diagnostic_supplement",
+      "selection_flag": "negation_or_correction_language"
+    }
+  ]
+}

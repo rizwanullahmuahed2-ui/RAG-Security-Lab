@@ -1,0 +1,1955 @@
+[
+  {
+    "id": "5a80541d5542996402f6a4d2",
+    "question": "In what year did the Guild of Music Supervisors Awards recognize a British-American romantic drama film based on the 1952 romance novel \"The Price of Salt\" starring Cate Blanchett?",
+    "answer": "2016",
+    "answer_numeric": "2016",
+    "false_answer": "2023",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D000_07",
+      "D000_04"
+    ],
+    "context_titles": [
+      "List of accolades received by Carol (film)",
+      "Robin Hood (2010 film)",
+      "Heaven (2002 film)",
+      "Elizabeth (film)",
+      "Guild of Music Supervisors Awards",
+      "Thank God He Met Lizzie",
+      "Oscar and Lucinda (film)",
+      "Carol (film)",
+      "Bandits (2001 film)",
+      "The Price of Salt"
+    ],
+    "supporting_sentences": [
+      "The Guild of Music Supervisors Awards recognize music supervisors in 14 categories, representing movies, television, games and trailers. \"",
+      "Compton\", \"Carol\" and \"Furious 7\" were among the winners of the 2016 ceremony, while \"La la land\" of the 2017 ceremony.",
+      "Carol is a 2015 British-American romantic drama film directed by Todd Haynes.",
+      " The screenplay, written by Phyllis Nagy, is based on the 1952 romance novel \"The Price of Salt\" (also known as \"Carol\") by Patricia Highsmith.",
+      " The film stars Cate Blanchett, Rooney Mara, Sarah Paulson, Jake Lacy, and Kyle Chandler."
+    ],
+    "unrelated_donor_id": "5ae254565542992decbdccbb"
+  },
+  {
+    "id": "5abc2e1c554299700f9d7806",
+    "question": "How many months apart are Johan Mjällby and Neil Lennon in age?",
+    "answer": "4",
+    "answer_numeric": "4",
+    "false_answer": "21",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D001_00",
+      "D001_05"
+    ],
+    "context_titles": [
+      "Johan Mjällby",
+      "HM Advocate v Muirhead",
+      "Glowworm (comics)",
+      "Sega Visions",
+      "Urethrorrhagia",
+      "Neil Lennon",
+      "Cathy Scott",
+      "Residential Drug Abuse Program",
+      "2010–11 Celtic F.C. season",
+      "Gary Madine"
+    ],
+    "supporting_sentences": [
+      "Johan Mjällby (] ; born 9 February 1971) is a Swedish football manager and former player, currently in charge as manager of Västerås SK.",
+      " He made his debut for the national team in 1997, and played 49 matches scoring 4 goals as a centre back.",
+      " He also took part in Euro 2000 and Euro 2004.",
+      "Neil Francis Lennon (born 25 June 1971) is a Northern Irish football coach and former player, who is the head coach of Scottish Premiership club Hibernian."
+    ],
+    "unrelated_donor_id": "5ae68a065542991bbc97611e"
+  },
+  {
+    "id": "5a7f567e5542992097ad2f22",
+    "question": "Which year was the more recent engine series, the Honda K or Honda H, introduced?",
+    "answer": "2001",
+    "answer_numeric": "2001",
+    "false_answer": "2008",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D002_05",
+      "D002_02"
+    ],
+    "context_titles": [
+      "Honda B engine",
+      "Toyota E engine",
+      "Honda K engine",
+      "CVCC",
+      "Honda Mobilio",
+      "Honda H Engine",
+      "Honda Capa",
+      "Honda B20A engine",
+      "Honda Rafaga",
+      "Honda CLR"
+    ],
+    "supporting_sentences": [
+      "The Honda K series engine is a four-cylinder four-stroke engine introduced in 2001.",
+      "The Honda H engine was Honda's Larger high-performance engine family from the 1990s and early 2000s."
+    ],
+    "unrelated_donor_id": "5ab797af5542995dae37e96c"
+  },
+  {
+    "id": "5ab47cd75542991751b4d78d",
+    "question": "In which year did this division, where Cleveland Browns placed fourth in 2009, adopt its current name?",
+    "answer": "2002",
+    "answer_numeric": "2002",
+    "false_answer": "2012",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D003_03",
+      "D003_05"
+    ],
+    "context_titles": [
+      "2008 Cleveland Browns season",
+      "2010 Cleveland Browns season",
+      "2011 Cleveland Browns season",
+      "2009 Cleveland Browns season",
+      "Freddie Summers",
+      "AFC North",
+      "Lamar Chapman",
+      "Ron Snidow",
+      "2012 Cleveland Browns season",
+      "2007 Cleveland Browns season"
+    ],
+    "supporting_sentences": [
+      " The team placed fourth in the AFC North with a record of 5–11, improving upon its 2008 record of 4–12.",
+      " The division adopted its current name in 2002, when the league realigned divisions after expanding to 32 teams."
+    ],
+    "unrelated_donor_id": "5ae09ce855429924de1b7113"
+  },
+  {
+    "id": "5ae531a95542990ba0bbb1fc",
+    "question": "In what year was the actress who was starred in \"Streak\" with Rumer Willis born?",
+    "answer": "1986",
+    "answer_numeric": "1986",
+    "false_answer": "1993",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D004_00",
+      "D004_04"
+    ],
+    "context_titles": [
+      "Brittany Snow",
+      "Sorority Row",
+      "Mark Covert",
+      "The Odd Way Home",
+      "Streak (film)",
+      "There's Always Woodstock",
+      "Bob Willis",
+      "Hello Again (2017 film)",
+      "Daniel Willis",
+      "Rumer Willis"
+    ],
+    "supporting_sentences": [
+      "Streak is a 2008 American coming-of-age short film directed by Demi Moore, written by Kelly Fremon and Allan Loeb, and starring Brittany Snow and Rumer Willis.",
+      "Brittany Anne Snow (born March 9, 1986) is an American actress, producer, and singer."
+    ],
+    "unrelated_donor_id": "5abb23655542992ccd8e7f25"
+  },
+  {
+    "id": "5adc46665542994650320cc8",
+    "question": "In what year was the composer of \"Anthem\" born?",
+    "answer": "1943",
+    "answer_numeric": "1943",
+    "false_answer": "1950",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D005_00",
+      "D005_09"
+    ],
+    "context_titles": [
+      "Anthem (The 2002 FIFA World Cup Official Anthem)",
+      "Julio Nakpil",
+      "Davorin Jenko",
+      "Francisco José Debali",
+      "Dolores Claman",
+      "Anna Marly",
+      "Ala Khallidi",
+      "Mohammed Flayfel",
+      "Helmut Christoferus Calabrese",
+      "Vangelis"
+    ],
+    "supporting_sentences": [
+      "Anthem (The 2002 FIFA World Cup Official Anthem) by Vangelis is the theme song for 2002 FIFA World Cup held in South Korea and Japan.",
+      "Evangelos Odysseas Papathanassiou ( ] ; born 29 March 1943), known professionally as Vangelis ( ] ; English pronunciation: ), is a Greek composer of electronic, progressive, ambient, jazz, and orchestral music."
+    ],
+    "unrelated_donor_id": "5ab972485542996be20204f6"
+  },
+  {
+    "id": "5adf8c375542995534e8c7dd",
+    "question": "In what year was the 1965 World Series MVP elected to the Baseball Hall of Fame?",
+    "answer": "1972",
+    "answer_numeric": "1972",
+    "false_answer": "1979",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D006_07",
+      "D006_05"
+    ],
+    "context_titles": [
+      "David Freese",
+      "1980 World Series",
+      "Paul Molitor",
+      "Bob Gibson",
+      "Baseball at the 2000 Summer Olympics",
+      "Sandy Koufax",
+      "1968 Detroit Tigers season",
+      "1965 World Series",
+      "Jeff Bagwell",
+      "Katsuo Osugi"
+    ],
+    "supporting_sentences": [
+      " It is best remembered for the heroics of Sandy Koufax, who was named the series MVP.",
+      " Koufax, at age 36 in 1972, became the youngest player ever elected to the Baseball Hall of Fame."
+    ],
+    "unrelated_donor_id": "5a89e20a5542992e4fca8438"
+  },
+  {
+    "id": "5ac1b1345542994ab5c67dd0",
+    "question": "Sinch when has the rank held by Sir Charles Comyn Egertong been the highest in the British Army?  ",
+    "answer": "1736",
+    "answer_numeric": "1736",
+    "false_answer": "1743",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D007_01",
+      "D007_00"
+    ],
+    "context_titles": [
+      "Field marshal (United Kingdom)",
+      "Charles Egerton (Indian Army officer)",
+      "Sowar",
+      "General (United Kingdom)",
+      "Jiang (rank)",
+      "Military ranks of Syria",
+      "Xiao (rank)",
+      "Charles Forbes-Leith",
+      "Wei (rank)",
+      "Master aircrew"
+    ],
+    "supporting_sentences": [
+      "Field Marshal Sir Charles Comyn Egerton (10 November 1848 – 20 February 1921) was a senior Indian Army officer from the Egerton family.",
+      "Field Marshal has been the highest rank in the British Army since 1736."
+    ],
+    "unrelated_donor_id": "5a7b1bb5554299042af8f6d4"
+  },
+  {
+    "id": "5ab262e2554299722f9b4cfd",
+    "question": "Oxley Highway ends at a coastal town that had how many inhabitants in June 2016 ?",
+    "answer": "45,698",
+    "answer_numeric": "45698",
+    "false_answer": "45715",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D008_02",
+      "D008_01"
+    ],
+    "context_titles": [
+      "Thunderbolts Way",
+      "Port Macquarie",
+      "Oxley Highway",
+      "Carroll, New South Wales",
+      "Cottan-Bimbang National Park",
+      "Krakau, Saxony",
+      "North Carolina Highway 42",
+      "Saskatchewan Highway 2",
+      "Apsley Falls",
+      "Nevertire, New South Wales"
+    ],
+    "supporting_sentences": [
+      " It links Nevertire, Warren, Gilgandra, Coonabarabran, Gunnedah, Carroll, Tamworth, Bendemeer, Walcha, Yarrowitch, Ellenborough, Long Flat, Wauchope and ends at Port Macquarie on the coast of the Tasman Sea.",
+      " The town with its suburbs had a population of 45,698 in June 2016."
+    ],
+    "unrelated_donor_id": "5a73522d5542994cef4bc541"
+  },
+  {
+    "id": "5ab71a6a5542991d3222377c",
+    "question": "The debut album came out in 1988 but what year did the song \"She's My Baby\" come out in?",
+    "answer": "1990",
+    "answer_numeric": "1990",
+    "false_answer": "1997",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D009_07",
+      "D009_08"
+    ],
+    "context_titles": [
+      "All Fates Have Changed",
+      "Sincerely Yours (One Voice album)",
+      "Native Window (album)",
+      "Hip Hop Lives",
+      "Go to the Top (album)",
+      "Roll Call (IQ album)",
+      "The First Flower",
+      "She's My Baby (Traveling Wilburys song)",
+      "Traveling Wilburys Vol. 3",
+      "The Darkest Cloud"
+    ],
+    "supporting_sentences": [
+      "\"She's My Baby\" is a song by supergroup the Traveling Wilburys and is the opening track on their 1990 studio album \"Traveling Wilburys Vol.",
+      " 3 is the 1990 follow-up album by the Traveling Wilburys, a group consisting of Jeff Lynne, George Harrison, Bob Dylan, and Tom Petty, to their 1988 debut \"Traveling Wilburys Vol."
+    ],
+    "unrelated_donor_id": "5adeab4555429975fa854f5f"
+  },
+  {
+    "id": "5ab4314955429942dd415ecd",
+    "question": "Profile Lake is located at the foot of a mountain that is how many feet tall?",
+    "answer": "4080",
+    "answer_numeric": "4080",
+    "false_answer": "4097",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D010_07",
+      "D010_02"
+    ],
+    "context_titles": [
+      "Franconia Notch State Park",
+      "Rockland Furnace",
+      "Profile Lake",
+      "Armstrong County Courthouse and Jail",
+      "Rajasekharan Parameswaran",
+      "Old Man of the Mountain",
+      "Salish Mountains",
+      "Cannon Mountain (New Hampshire)",
+      "Avalanche Lake (New York)",
+      "Profile House"
+    ],
+    "supporting_sentences": [
+      "Profile Lake is a 13 acre water body located in Franconia Notch in the White Mountains of New Hampshire, at the foot of Cannon Mountain.",
+      "Cannon Mountain (formerly Profile Mountain) is a 4080 ft peak in the White Mountains of New Hampshire."
+    ],
+    "unrelated_donor_id": "5a78e49855429974737f78f3"
+  },
+  {
+    "id": "5ae644c55542992663a4f27e",
+    "question": "When was the club formed, for which Adam  Johnson played as well as Middlesbrough and Watford ?",
+    "answer": "1919",
+    "answer_numeric": "1919",
+    "false_answer": "1927",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D011_06",
+      "D011_05"
+    ],
+    "context_titles": [
+      "Carl Johnson (soccer)",
+      "St Albans RFC",
+      "Darrius Johnson",
+      "Phil Stamp",
+      "Jim Johnson (ice hockey, born 1962)",
+      "Leeds United F.C.",
+      "Adam Johnson (footballer)",
+      "List of Watford F.C. players",
+      "2007–08 Watford F.C. season",
+      "Kris Johnson (basketball)"
+    ],
+    "supporting_sentences": [
+      " He made 120 appearances for Middlesbrough, also spending time on loan at Leeds United and Watford.",
+      " The club was formed in 1919 following the disbanding of Leeds City F.C. by the Football League and took over their Elland Road stadium."
+    ],
+    "unrelated_donor_id": "5a8b86645542997f31a41d62"
+  },
+  {
+    "id": "5ae1e1e55542997f29b3c15e",
+    "question": "Lenroy Thomas is the current commonwealth heavyweight champion after beating a British , professional boxer who has a record of 12 wins, 3 defeats, and how many draws?",
+    "answer": "1",
+    "answer_numeric": "1",
+    "false_answer": "18",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D012_01",
+      "D012_05"
+    ],
+    "context_titles": [
+      "Johnny Prescott",
+      "Dave Allen (boxer)",
+      "Danny Williams (boxer)",
+      "Jack London (boxer)",
+      "Garry Delaney",
+      "Lenroy Thomas",
+      "Adam Pearce",
+      "Brian London",
+      "Michael Sprott",
+      "Shannon Ritch"
+    ],
+    "supporting_sentences": [
+      " He is the current commonwealth heavyweight champion after beating Dave Allen via a split decision victory.",
+      "David Allen (born 21 March 1992) is British professional boxer.",
+      " He has fought 16 times and his record stands at 12 wins, 3 defeats and 1 draw."
+    ],
+    "unrelated_donor_id": "5a8f93f5554299458435d67e"
+  },
+  {
+    "id": "5ae7e9af5542994a481bbe0e",
+    "question": "What is the 2010 census population of the city in which Antonio Carmona Añorve was the director of police?",
+    "answer": "689,775",
+    "answer_numeric": "689775",
+    "false_answer": "689792",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D013_03",
+      "D013_06"
+    ],
+    "context_titles": [
+      "Odessa, Texas",
+      "List of cities and towns in Arizona",
+      "Wheeling, West Virginia metropolitan area",
+      "Antonio Carmona Añorve",
+      "Cookeville, Tennessee",
+      "Mililani, Hawaii",
+      "Mexicali",
+      "London, Kentucky",
+      "North Laurel, Maryland",
+      "Namayan, Mandaluyong"
+    ],
+    "supporting_sentences": [
+      "Antonio Hermenegildo Carmona Añorve was the director of police of Mexicali during the government of Eugenio Elorduy Walther, current governor of Baja California.",
+      " The City of Mexicali has a population of 689,775, according to the 2010 census, while the population of the entire metropolitan area reaches 996,826; making the city and metropolitan area the second most populous in Baja California."
+    ],
+    "unrelated_donor_id": "5a8c66db554299585d9e3683"
+  },
+  {
+    "id": "5ae81b895542997ec272770c",
+    "question": "The maternal grandmother of Princess Marie Cécile of Prussia was born in which year ?",
+    "answer": "1876",
+    "answer_numeric": "1876",
+    "false_answer": "1884",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D014_00",
+      "D014_08"
+    ],
+    "context_titles": [
+      "Princess Marie Cécile of Prussia",
+      "Princess Christine Louise of Oettingen-Oettingen",
+      "Prince Hermann Friedrich of Leiningen",
+      "Mary Victoria Douglas-Hamilton",
+      "Princess Marie of Hohenzollern-Sigmaringen",
+      "Cotys IX",
+      "Alice FitzAlan, Countess of Kent",
+      "Princess Marie of Prussia (1855–1888)",
+      "Princess Victoria Melita of Saxe-Coburg and Gotha",
+      "Antonia Minor"
+    ],
+    "supporting_sentences": [
+      " Her paternal grandparents were William, German Crown Prince, and Duchess Cecilie of Mecklenburg-Schwerin; maternally, she is a granddaughter of Cyril Vladimirovich, Grand Duke of Russia, and Princess Victoria Melita of Saxe-Coburg and Gotha.",
+      "Princess Victoria Melita of Saxe-Coburg and Gotha and Edinburgh , later Grand Duchess Victoria Feodorovna of Russia (25 November 1876 – 2 March 1936) was the third child and second daughter of Alfred, Duke of Saxe-Coburg and Gotha, and Grand Duchess Maria Alexandrovna of Russia."
+    ],
+    "unrelated_donor_id": "5ac2a10e554299657fa28fec"
+  },
+  {
+    "id": "5a83161555429940e5e1a958",
+    "question": "What age did a wrestler began his training at who began his friendship with Trevor Mann in Brookport, Illinois CPW?",
+    "answer": "15",
+    "answer_numeric": "15",
+    "false_answer": "32",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D015_04",
+      "D015_03"
+    ],
+    "context_titles": [
+      "U.S. Route 45 in Illinois",
+      "Trevor Mann",
+      "U.S. Route 45 in Kentucky",
+      "Ricochet (wrestler)",
+      "Chuck Taylor (wrestler)",
+      "Orrin L. Mann",
+      "Brookport Bridge",
+      "Cave-In-Rock Ferry",
+      "Brookport, Illinois",
+      "Parker City, Illinois"
+    ],
+    "supporting_sentences": [
+      " Howard began his wrestling training at age 15 under the tutelage of Brandon Walker at the Old School Wrestling Training Academy in Hardin, Kentucky.",
+      " The most prominent of these was the then-newly restarted Chaos Pro Wrestling (CPW) in Brookport, Illinois, where he began his friendship with Ricochet.",
+      "Trevor Mann (born October 11, 1988) is an American professional wrestler best known by the ring name Ricochet."
+    ],
+    "unrelated_donor_id": "5ab92e02554299753720f775"
+  },
+  {
+    "id": "5ae327e05542992f92d82220",
+    "question": "GamesMaster has a sister publicantion that is published how many times per year?",
+    "answer": "13",
+    "answer_numeric": "13",
+    "false_answer": "30",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D016_05",
+      "D016_02"
+    ],
+    "context_titles": [
+      "Virulence (journal)",
+      "Space Science Reviews",
+      "GamesMaster (magazine)",
+      "Behavioural Brain Research",
+      "Princeton Alumni Weekly",
+      "Edge (magazine)",
+      "Third World Quarterly",
+      "Supply &amp; Demand Chain Executive",
+      "Sexless marriage",
+      "European Sociological Review"
+    ],
+    "supporting_sentences": [
+      " It is the biggest selling multi-format video games magazine in the United Kingdom, outselling its sister publication \"Edge\".",
+      "Edge is a multi-format video game magazine published by Future plc in the United Kingdom, which publishes 13 issues of the magazine per year."
+    ],
+    "unrelated_donor_id": "5ab5499e5542992aa134a295"
+  },
+  {
+    "id": "5a7653d25542992db9473765",
+    "question": "Nick Hexum of which American rock band helped produce Decomposer by The Matches?",
+    "answer": "311",
+    "answer_numeric": "311",
+    "false_answer": "328",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D017_01",
+      "D017_02"
+    ],
+    "context_titles": [
+      "Nick Hexum",
+      "311 (band)",
+      "Decomposer (album)",
+      "Stiffed (band)",
+      "I'll Be Here Awhile",
+      "Steve Miller Band",
+      "Master of Styles",
+      "Five of Everything",
+      "American Tragedy (album)",
+      "Butterglory"
+    ],
+    "supporting_sentences": [
+      "Decomposer is the second album by The Matches, released by Epitaph Records on September 11, 2006 worldwide and on September 12, 2006.",
+      " The band took an unusual approach to the album and enlisted the help of nine producers including John Feldmann of Goldfinger, Mark Hoppus of +44 and Blink-182, Nick Hexum of 311, Tim Armstrong of Rancid and Brett Gurewitz of Bad Religion.",
+      "311 (pronounced \"three-eleven\") is an American rock band from Omaha, Nebraska."
+    ],
+    "unrelated_donor_id": "5a773d8955429966f1a36cc4"
+  },
+  {
+    "id": "5a7bb52355429927d897c01a",
+    "question": "The song by English indie rock band Florence and the Machine written by Florence Welch and Francis \"Eg\" White and released in 2011 is named after the painting which was completed in which year?",
+    "answer": "1938",
+    "answer_numeric": "1938",
+    "false_answer": "1945",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D018_07",
+      "D018_04"
+    ],
+    "context_titles": [
+      "Wish That You Were Here",
+      "Never Let Me Go (Florence and the Machine song)",
+      "Ceremonials Tour",
+      "Lover to Lover",
+      "What the Water Gave Me (song)",
+      "Shake It Out",
+      "Spectrum (Say My Name)",
+      "What the Water Gave Me (painting)",
+      "No Light, No Light",
+      "Lungs (album)"
+    ],
+    "supporting_sentences": [
+      "\"What the Water Gave Me\" is a song by English indie rock band Florence and the Machine from their second studio album \"Ceremonials\" (2011).",
+      " The song was written by lead singer Florence Welch and Francis \"Eg\" White, and produced by Paul Epworth.",
+      "What the Water Gave Me (\"Lo que el agua me dio\" in Spanish) is an oil painting by Frida Kahlo that was completed in 1938."
+    ],
+    "unrelated_donor_id": "5ae76e615542997ec2727647"
+  },
+  {
+    "id": "5ac5630e5542993e66e823d5",
+    "question": "When did the mother of Joseph Ferdinand Leopold of Bavaria die?",
+    "answer": "1692",
+    "answer_numeric": "1692",
+    "false_answer": "1699",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D019_06",
+      "D019_02"
+    ],
+    "context_titles": [
+      "Prince Joseph Ferdinand of Saxe-Coburg and Gotha",
+      "Joseph Sonnleithner",
+      "Maria Antonia of Austria",
+      "Prince Leopold of Bavaria (born 1943)",
+      "Archduke Franz Salvator of Austria",
+      "Archduke Friedrich of Austria (1821–1847)",
+      "Joseph Ferdinand of Bavaria",
+      "Treaty of The Hague (1698)",
+      "Treaty of London (1700)",
+      "Archduke Leopold Salvator of Austria"
+    ],
+    "supporting_sentences": [
+      "Joseph Ferdinand Leopold of Bavaria (28 October 1692 – 6 February 1699) was the son of Maximilian II Emanuel, Elector of Bavaria (1679–1705, 1714–1726) and his first wife, Maria Antonia of Austria, daughter of Leopold I, Holy Roman Emperor, maternal granddaughter of King Felipe IV of Spain.",
+      "Maria Antonia of Austria (Maria Antonia Josepha Benedicta Rosalia Petronella; 18 January 1669 – 24 December 1692) was the eldest daughter and only surviving child of Holy Roman Emperor Leopold I and his wife Margaret Theresa of Spain.",
+      " She became Electress of Bavaria when she married in 1685, but died prematurely in 1692."
+    ],
+    "unrelated_donor_id": "5ab659e355429954757d324e"
+  },
+  {
+    "id": "5a8ad8ed5542992d82986fa3",
+    "question": "What was the 2010 population of the town where Bennett Hill Farm is located?",
+    "answer": "8,648",
+    "answer_numeric": "8648",
+    "false_answer": "8665",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D020_08",
+      "D020_09"
+    ],
+    "context_titles": [
+      "Worth–Jefferis Rural Historic District",
+      "Hunt Hill Farm",
+      "Bellevue Rural Historic District",
+      "Boardman Hill Solar Farm",
+      "Elm Hill Farm Historic District",
+      "Moose Hill Farm",
+      "Green Hill Farm",
+      "Morgan Hill Farm",
+      "Bennett Hill Farm",
+      "New Scotland, New York"
+    ],
+    "supporting_sentences": [
+      "Bennett Hill Farm is a historic home and farm complex located at New Scotland in Albany County, New York.",
+      "New Scotland is a town in Albany County, New York, United States.",
+      " The population was 8,648 at the 2010 census."
+    ],
+    "unrelated_donor_id": "5a8712095542991e771816af"
+  },
+  {
+    "id": "5ab3a84b554299233954ff7b",
+    "question": "What year did a Russian soprano opera singer born in October 1926 leave Russia with her cellist husband and daughter?",
+    "answer": "1974",
+    "answer_numeric": "1974",
+    "false_answer": "1981",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D021_07",
+      "D021_02"
+    ],
+    "context_titles": [
+      "Schuch",
+      "Julia Novikova (soprano)",
+      "Galina Vishnevskaya",
+      "Annagul Annakuliyeva",
+      "Julia Lezhneva",
+      "Eleonora Vindau",
+      "Maria Guleghina",
+      "Elena Rostropovich",
+      "Louise Chevalier",
+      "Ludmilla Azova"
+    ],
+    "supporting_sentences": [
+      "Galina Pavlovna Vishnevskaya (née Ivanova, Russian: Гали́на Па́вловна Вишне́вская ; 25 October 192611 December 2012) was a Russian soprano opera singer and recitalist who was named a People's Artist of the USSR in 1966.",
+      " She left Russia with her parents, cellist and conductor Mstislav Rostropovich and soprano Galina Vishnevskaya in 1974."
+    ],
+    "unrelated_donor_id": "5abd96fe5542992ac4f382d9"
+  },
+  {
+    "id": "5ab2ce27554299545a2cfa98",
+    "question": "The project that Jeder Rappen zählt is inspired by began in what year?",
+    "answer": "2004",
+    "answer_numeric": "2004",
+    "false_answer": "2014",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D022_02",
+      "D022_05"
+    ],
+    "context_titles": [
+      "Yaté Dam",
+      "Campo Verde Solar Project",
+      "Jeder Rappen zählt",
+      "Sega Hard Girls",
+      "The Ogden",
+      "Serious Request",
+      "The Greenhouse Project",
+      "High Resolution Microwave Survey",
+      "Wikisource",
+      "Dragonfly Project"
+    ],
+    "supporting_sentences": [
+      "Jeder Rappen zählt (JRZ) \"(literally Every rappen (nickel) counts)\" is the Swiss version of the Serious Request that broadcasts on Dutch radio/television.",
+      " The project was begun in 2004 by Dutch public pop music radio station 3FM."
+    ],
+    "unrelated_donor_id": "5abd882f55429924427fd045"
+  },
+  {
+    "id": "5a7b60605542995eb53be931",
+    "question": "What is the year of the event which orrurred first, Beecher's Handmade Cheese was founded, or Pike Place Market opened?",
+    "answer": "1907",
+    "answer_numeric": "1907",
+    "false_answer": "1914",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D023_06",
+      "D023_07"
+    ],
+    "context_titles": [
+      "Original Starbucks",
+      "2nd and Pike",
+      "Butterworth Building",
+      "Unexpected Productions",
+      "Gum Wall",
+      "Pike Place Fish Market",
+      "Beecher's Handmade Cheese",
+      "Pike Place Market",
+      "Left Bank Books",
+      "Rachel (Gerber)"
+    ],
+    "supporting_sentences": [
+      "Beecher's Handmade Cheese is an artisan cheesemaker and retail shop with locations in the Pike Place Market, Seattle, Washington and New York City's Flatiron District.",
+      " The company was founded by Kurt Beecher Dammeier in 2003 and opened in the Pike Place Market after Dammeier obtained a difficult to obtain storefront lease in the Market.",
+      "Pike Place Market is a public market overlooking the Elliott Bay waterfront in Seattle, Washington, United States.",
+      " The Market opened August 17, 1907, and is one of the oldest continuously operated public farmers' markets in the United States."
+    ],
+    "unrelated_donor_id": "5a79cd395542994bb94570be"
+  },
+  {
+    "id": "5ab9788155429970cfb8eb1a",
+    "question": "What year did the CEO of Tata Consultancy Services takeover as Chairman?",
+    "answer": "2017",
+    "answer_numeric": "2017",
+    "false_answer": "2024",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D024_08",
+      "D024_01"
+    ],
+    "context_titles": [
+      "Tata Consultancy Services",
+      "Tata Sons",
+      "LC Singh",
+      "Rajesh Gopinathan",
+      "CMC (company)",
+      "Subramaniam Ramadorai",
+      "Lalit Surajmal Kanodia",
+      "TCS China",
+      "Natarajan Chandrasekaran",
+      "F. C. Kohli"
+    ],
+    "supporting_sentences": [
+      " Natarajan Chandrasekaran took over as Chairman of Tata Sons on 21 February 2017.",
+      " Chandrasekaran took over as the CEO of Tata Consultancy Services (TCS) on November 6, 2009 prior to which he was COO and executive director of TCS."
+    ],
+    "unrelated_donor_id": "5a75e05c55429976ec32bc5f"
+  },
+  {
+    "id": "5adffb4655429925eb1afbbf",
+    "question": "What year was George Harrison's top UK charted song voted the nations 11th favorite 1980s number?",
+    "answer": "2015",
+    "answer_numeric": "2015",
+    "false_answer": "2022",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D025_02",
+      "D025_08"
+    ],
+    "context_titles": [
+      "Top Gear (series 6)",
+      "Kim Mitchell",
+      "China in Your Hand",
+      "If You Believe (George Harrison song)",
+      "Songs by George Harrison",
+      "Ben Onono",
+      "Jessi Colter discography",
+      "Leaving Eden (Brandon Heath album)",
+      "Got My Mind Set on You",
+      "I Live for You"
+    ],
+    "supporting_sentences": [
+      " \"China in Your Hand\" was the 600th single to top the UK charts and kept George Harrison's \"Got My Mind Set on You\" from hitting the top spot.",
+      " In 2015, the power ballad was voted by the British public as the nation's 11th favourite 1980s number one in a poll for ITV.",
+      "\"Got My Mind Set on You\" is a song written and composed by Rudy Clark and originally recorded by James Ray in 1962, under the title \"I've Got My Mind Set on You\"."
+    ],
+    "unrelated_donor_id": "5abd049d5542992ac4f381a8"
+  },
+  {
+    "id": "5add6f975542992200553b18",
+    "question": "In what year did the brother-in-law of Ezzo, Count Palatine of Lotharingia, die?",
+    "answer": "1002",
+    "answer_numeric": "1002",
+    "false_answer": "1009",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D026_02",
+      "D026_04"
+    ],
+    "context_titles": [
+      "Adolf I of Lotharingia",
+      "John Christian, Count Palatine of Sulzbach",
+      "Ezzo, Count Palatine of Lotharingia",
+      "Christian III, Count Palatine of Zweibrücken",
+      "Otto III, Holy Roman Emperor",
+      "Gustav, Duke of Zweibrücken",
+      "Duke in Bavaria",
+      "Duke of Brabant",
+      "Otto Henry, Elector Palatine",
+      "Ezzonids"
+    ],
+    "supporting_sentences": [
+      " As brother-in-law of Emperor Otto III, father of Queen Richeza of Poland and several other illustrious children, he was one of the most important figures of the Rhenish history of his time.",
+      "Otto III (June/July 980 – 23 January 1002) was Holy Roman Emperor from 996 until his early death in 1002."
+    ],
+    "unrelated_donor_id": "5adf5fa65542993a75d264db"
+  },
+  {
+    "id": "5adf37955542993a75d2642e",
+    "question": "What year did the actor, who appeared in \"One Life to Live\" and \"General Hospital\" in 2012, earn a Daytime Emmy Award?",
+    "answer": "1994",
+    "answer_numeric": "1994",
+    "false_answer": "2003",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D027_09",
+      "D027_02"
+    ],
+    "context_titles": [
+      "Téa Delgado",
+      "What If... (web series)",
+      "Todd Manning and Blair Cramer",
+      "Sarah Joy Brown",
+      "Starr Manning",
+      "Jeanne Glynn",
+      "Carolyn Hennesy",
+      "Sean Blakemore",
+      "Kristina Davis",
+      "Roger Howarth"
+    ],
+    "supporting_sentences": [
+      "Thomas Todd Manning and Blair Cramer Manning are fictional characters and a supercouple from the ABC daytime drama \"One Life to Live\".",
+      " In 2012, they also appeared together on \"General Hospital\".",
+      " He played character Todd Manning on the daytime drama \"One Life to Live\" (\"OLTL\"); the character earned Howarth a Daytime Emmy Award in 1994, and is cited as an icon in the soap opera genre."
+    ],
+    "unrelated_donor_id": "5abdf7055542993f32c2a06c"
+  },
+  {
+    "id": "5ae4c35c55429913cc2044fb",
+    "question": "What year was the film starring Hugh Jackman, Jake Gyllenhaal, and an actress appearing in \"The Cooler\" and \"The Jane Austen Book Club\" released?",
+    "answer": "2013",
+    "answer_numeric": "2013",
+    "false_answer": "2020",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D028_06",
+      "D028_09"
+    ],
+    "context_titles": [
+      "Baz Luhrmann",
+      "Miss Austen Regrets",
+      "Deborah Yaffe",
+      "The Jane Austen Book Club (film)",
+      "Real Steel",
+      "Kevin Zegers",
+      "Maria Bello",
+      "Maggie Grace",
+      "The Jane Austen Book Club",
+      "Prisoners (2013 film)"
+    ],
+    "supporting_sentences": [
+      " She has appeared in the films \"Permanent Midnight\" (1998), \"Payback\" (1999), \"Coyote Ugly\" (2000), \"The Cooler\" (2003), \"A History of Violence\" (2005), \"Thank You for Smoking\" (2006), \"The Jane Austen Book Club\" (2007) \"\" (2008), \"Prisoners\" (2013) and \"Lights Out\" (2016).",
+      " The film has an ensemble cast including Hugh Jackman, Jake Gyllenhaal, Viola Davis, Maria Bello, Terrence Howard, Melissa Leo and Paul Dano."
+    ],
+    "unrelated_donor_id": "5ae7525f5542991e8301cc60"
+  },
+  {
+    "id": "5ae67dba55429908198fa5f0",
+    "question": "The Memphis Hustle are based in a suburb of a city with a population of what in 2010?",
+    "answer": "48,982",
+    "answer_numeric": "48982",
+    "false_answer": "48999",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D029_08",
+      "D029_07"
+    ],
+    "context_titles": [
+      "Ellenbrook, Western Australia",
+      "Lakeland, Tennessee",
+      "Millington, Tennessee",
+      "Covington, Tennessee",
+      "Memphis metropolitan area",
+      "Marion, Arkansas",
+      "West Memphis, Arkansas",
+      "Southaven, Mississippi",
+      "Memphis Hustle",
+      "Olive Branch, Mississippi"
+    ],
+    "supporting_sentences": [
+      "The Memphis Hustle are an American professional basketball team of the NBA G League announced to begin play for the 2017–18 season as an affiliate of the Memphis Grizzlies of the National Basketball Association (NBA).",
+      " Based in the Memphis suburb of Southaven, Mississippi, the team will play their home games at the Landers Center.",
+      "Southaven is a city in DeSoto County, Mississippi, United States.",
+      " The 2010 census reported a population of 48,982, making Southaven the third largest city in Mississippi."
+    ],
+    "unrelated_donor_id": "5abb7ea4554299642a094a96"
+  },
+  {
+    "id": "5ac2cfab554299657fa29079",
+    "question": "The Innocents is a 1961 gothic horror film that was based on a novella by Henry James published in what year?",
+    "answer": "1898",
+    "answer_numeric": "1898",
+    "false_answer": "1905",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D030_02",
+      "D030_09"
+    ],
+    "context_titles": [
+      "Hawthorne (book)",
+      "English Hours",
+      "The Innocents (1961 film)",
+      "French Poets and Novelists",
+      "Theatricals: Second Series",
+      "Italian Hours",
+      "Essays in London and Elsewhere",
+      "Partial Portraits",
+      "The Outcry",
+      "The Turn of the Screw"
+    ],
+    "supporting_sentences": [
+      "The Innocents is a 1961 British supernatural gothic horror film directed and produced in CinemaScope by Jack Clayton, and starring Deborah Kerr, Michael Redgrave and Megs Jenkins.",
+      " Based on the novella \"The Turn of the Screw\" by Henry James, the plot follows a governess who watches over two children and comes to fear that the house is haunted by ghosts and that the two children are being possessed.",
+      "The Turn of the Screw, originally published in 1898, is a novella written by Henry James."
+    ],
+    "unrelated_donor_id": "5a7cc58f554299452d57ba45"
+  },
+  {
+    "id": "5a903b7f55429933b8a204af",
+    "question": "What year was the branch of military, who is credited with Operation Tidal Wave, created?",
+    "answer": "1942",
+    "answer_numeric": "1942",
+    "false_answer": "1949",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D031_00",
+      "D031_04"
+    ],
+    "context_titles": [
+      "Operation Tidal Wave",
+      "Tidal Wave (film)",
+      "MIA Hunters",
+      "John R. Kane",
+      "United States Army Air Forces",
+      "Operation Tidal Wave II",
+      "Lloyd Herbert Hughes",
+      "Petrotel Lukoil Refinery",
+      "Addison Baker",
+      "Petrochemical industry in Romania"
+    ],
+    "supporting_sentences": [
+      "Operation Tidal Wave was an air attack by bombers of the United States Army Air Forces (USAAF) based in Libya and Southern Italy on nine oil refineries around Ploiești, Romania on 1 August 1943, during World War II.",
+      " The AAF was a component of the United States Army, which in 1942 was divided functionally by executive order into three autonomous forces: the Army Ground Forces, the Services of Supply (which in 1943 became the Army Service Forces), and the Army Air Forces."
+    ],
+    "unrelated_donor_id": "5a7f74975542992097ad2f77"
+  },
+  {
+    "id": "5a8ba0855542995d1e6f1427",
+    "question": "A writer for The Kenyon Review won a Pulitzer Prize in what year?",
+    "answer": "1947",
+    "answer_numeric": "1947",
+    "false_answer": "1954",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D032_01",
+      "D032_00"
+    ],
+    "context_titles": [
+      "The Kenyon Review",
+      "Robert Penn Warren",
+      "Cara Blue Adams",
+      "Jason Gray (poet)",
+      "Amy Newman",
+      "Enid Shomer",
+      "Karin Lin-Greenberg",
+      "Mark Jacobs (author)",
+      "Derick Burleson",
+      "Sarah Lindsay"
+    ],
+    "supporting_sentences": [
+      " \"The Review\" has published early works by generations of important writers, including Robert Penn Warren, Ford Madox Ford, Robert Lowell, Delmore Schwartz, Flannery O'Connor, Boris Pasternak, Bertolt Brecht, Peter Taylor, Dylan Thomas, Anthony Hecht, Maya Angelou, Rita Dove, Derek Walcott, Thomas Pynchon, Woody Allen, Louise Erdrich, William Empson, Linda Gregg, Mark Van Doren, Kenneth Burke, and Ha Jin.",
+      " He received the 1947 Pulitzer Prize for the Novel for his novel \"All the King's Men\" (1946) and the Pulitzer Prize for Poetry in 1958 and 1979."
+    ],
+    "unrelated_donor_id": "5a8cc8c2554299441c6b9efc"
+  },
+  {
+    "id": "5ab2bc6b554299545a2cfa40",
+    "question": "Pablo Jose Ozuna is the cousin of a Dominican professional baseball left fielder who made his MLB debut in what year?",
+    "answer": "2013",
+    "answer_numeric": "2013",
+    "false_answer": "2021",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D033_04",
+      "D033_03"
+    ],
+    "context_titles": [
+      "Raúl Ibañez",
+      "Darrell Ceciliani",
+      "Jefry Marté",
+      "Pablo Ozuna",
+      "Marcell Ozuna",
+      "Alfonso Soriano",
+      "Carlos Peguero",
+      "Alfredo Marte",
+      "Melky Cabrera",
+      "Alex Guerrero"
+    ],
+    "supporting_sentences": [
+      " He is the cousin of current Miami Marlins outfielder Marcell Ozuna.",
+      "Marcell Ozuna Idelfonso (born November 12, 1990) is a Dominican professional baseball left fielder for the Miami Marlins of Major League Baseball (MLB).",
+      " He made his MLB debut in 2013."
+    ],
+    "unrelated_donor_id": "5ac240ef55429951e9e684ef"
+  },
+  {
+    "id": "5a82ffef55429954d2e2ebf2",
+    "question": "How many United States House of Representatives does Maine's congressional districts have?",
+    "answer": "2",
+    "answer_numeric": "2",
+    "false_answer": "19",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D034_01",
+      "D034_06"
+    ],
+    "context_titles": [
+      "Massachusetts's congressional districts",
+      "Maine Democratic caucuses, 2008",
+      "Vermont's at-large congressional district",
+      "Wisconsin's 8th congressional district",
+      "Thomas M. Reynolds",
+      "Electoral history of Nancy Pelosi",
+      "Maine's congressional districts",
+      "United States congressional delegations from Utah",
+      "Oklahoma's congressional districts",
+      "Connecticut's congressional districts"
+    ],
+    "supporting_sentences": [
+      "The Maine Democratic Presidential Caucuses took place on February 10, 2008, and had 24 delegates at stake.",
+      " The winner in each of Maine's two congressional districts received all of that district's total delegates, which totaled 16.",
+      "Maine is divided into 2 congressional districts, each represented by an elected member of the United States House of Representatives."
+    ],
+    "unrelated_donor_id": "5ae4a2e25542996836b02cee"
+  },
+  {
+    "id": "5ab341f755429969a97a8114",
+    "question": "The song \"Chim Chim Cher-ee\" can be heard  in the \"Mary Poppins\" scene of a Disney ride that debuted in what year?",
+    "answer": "1989",
+    "answer_numeric": "1989",
+    "false_answer": "1996",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D035_06",
+      "D035_09"
+    ],
+    "context_titles": [
+      "I Love to Laugh",
+      "Step in Time",
+      "My Kind of Town",
+      "A Man Has Dreams",
+      "Mary Poppins Opens the Door",
+      "Mary Poppins Returns",
+      "Chim Chim Cher-ee",
+      "Mary Poppins (film)",
+      "Mary Poppins (song)",
+      "The Great Movie Ride"
+    ],
+    "supporting_sentences": [
+      " The song can be heard in the \"Mary Poppins\" scene of The Great Movie Ride at Disney's Hollywood Studios and during the \"Mary Poppins\" segment of \"\" at Disneyland.",
+      " The attraction—which debuted with the park on May 1, 1989—was located inside a replica of Grauman's Chinese Theatre, one of Hollywood's most famous movie palaces."
+    ],
+    "unrelated_donor_id": "5ade03da5542997dc7907120"
+  },
+  {
+    "id": "5ae414d855429970de88d8ec",
+    "question": "In what year was the football club for which Reuven Niemeijer plays founded?",
+    "answer": "1903",
+    "answer_numeric": "1903",
+    "false_answer": "1910",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D036_05",
+      "D036_08"
+    ],
+    "context_titles": [
+      "Pachanga Diliman F.C.",
+      "Odds BK",
+      "Trojans Rugby Football Club",
+      "List of Cardiff City F.C. seasons",
+      "Michael Hibberd",
+      "Heracles Almelo",
+      "Friends Club",
+      "Cork City F.C.",
+      "Reuven Niemeijer",
+      "History of Birmingham City F.C. (1875–1965)"
+    ],
+    "supporting_sentences": [
+      "Reuven Niemeijer (born 27 March 1995) is a Dutch football player who plays for Heracles Almelo.",
+      "Heracles Almelo is a Dutch professional football club based in Almelo, founded in 1903."
+    ],
+    "unrelated_donor_id": "5a7a9b9a5542990198eaf160"
+  },
+  {
+    "id": "5a8e27d45542995a26add46a",
+    "question": "Jaclyn Stapp is married to the former frontman of a band that disbanded in what year?",
+    "answer": "2004",
+    "answer_numeric": "2004",
+    "false_answer": "2018",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D037_04",
+      "D037_07"
+    ],
+    "context_titles": [
+      "Storm Corrosion (album)",
+      "The Preytells",
+      "Gaahl",
+      "Inkwell (band)",
+      "Creed (band)",
+      "I Get Up",
+      "Radford (band)",
+      "Jaclyn Stapp",
+      "John Altman (actor)",
+      "Marcus Birro"
+    ],
+    "supporting_sentences": [
+      " She is married to Scott Stapp, former frontman of the band Creed, and current frontman for the band Art of Anarchy.",
+      " The band's third album, \"Weathered\", was released in 2001 with Tremonti handling bass before the band disbanded in 2004 due to increasing tension between members."
+    ],
+    "unrelated_donor_id": "5adc83c65542994d58a2f623"
+  },
+  {
+    "id": "5ae5a0765542992663a4f1fb",
+    "question": "In what year did the Irish Politician who led the Introduction of the Constitution of Ireland resign as President of the legitimatist government, the Council of State?",
+    "answer": "1926",
+    "answer_numeric": "1926",
+    "false_answer": "1933",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D038_09",
+      "D038_06"
+    ],
+    "context_titles": [
+      "W. T. Cosgrave",
+      "Cabinet of Malaysia",
+      "Patrick Gaffney (politician)",
+      "Richard Cherry",
+      "Constitutional process in Turkey",
+      "Sergey Glazyev",
+      "Éamon de Valera",
+      "Arts Council (Ireland)",
+      "British Virgin Islands general election, 1967",
+      "Comhairle na dTeachtaí"
+    ],
+    "supporting_sentences": [
+      " In 1926 de Valera resigned as President, left the Sinn Féin party and founded Fianna Fáil, which in 1927 entered the Fourth Dáil.",
+      " He also led the introduction of the Constitution of Ireland."
+    ],
+    "unrelated_donor_id": "5ade4da055429939a52fe878"
+  },
+  {
+    "id": "5ade811e5542992fa25da7a0",
+    "question": "Marvel Classics Comics specialized in adaptations of literary classics, such as a novel by American writer Herman Melville, that was published in what year?",
+    "answer": "1851",
+    "answer_numeric": "1851",
+    "false_answer": "1859",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D039_04",
+      "D039_03"
+    ],
+    "context_titles": [
+      "The Confidence-Man",
+      "Typee",
+      "Hershel Parker",
+      "Moby-Dick",
+      "Marvel Classics Comics",
+      "Israel Potter",
+      "Billy Budd",
+      "Clarel",
+      "Redburn",
+      "Pierre; or, The Ambiguities"
+    ],
+    "supporting_sentences": [
+      " It specialized in adaptations of literary classics such as \"Moby-Dick\", \"The Three Musketeers\", and \"The Iliad\".",
+      "Moby-Dick; or, The Whale is a novel by American writer Herman Melville, published in 1851 during the period of the American Renaissance."
+    ],
+    "unrelated_donor_id": "5a7ce50f55429909bec76869"
+  },
+  {
+    "id": "5ac0805f5542992a796ded29",
+    "question": "When was the author of \"Albert Speer: His Battle with Truth\"  convicted? ",
+    "answer": "1968",
+    "answer_numeric": "1968",
+    "false_answer": "1975",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D040_01",
+      "D040_08"
+    ],
+    "context_titles": [
+      "Spandau: The Secret Diaries",
+      "Albert Speer (play)",
+      "Hilde Schramm",
+      "Speer und Er",
+      "Albert Friedrich Speer",
+      "Greater Germanic Reich",
+      "Rudolf Wolters",
+      "Inside the Third Reich",
+      "Gitta Sereny",
+      "Albert Speer Jr."
+    ],
+    "supporting_sentences": [
+      "Albert Speer was a 2000 play by the British playwright David Edgar on the life of the Nazi-era architect Albert Speer, based on the book \"Albert Speer: His Battle with Truth\" by Gitta Sereny.",
+      "Gitta Sereny, CBE (13 March 192114 June 2012) was an Austrian-British biographer, historian, and investigative journalist who came to be known for her interviews and profiles of controversial figures, including Mary Bell, who was convicted in 1968 of killing two children when she herself was a child, and Franz Stangl, the commandant of the Treblinka extermination camp."
+    ],
+    "unrelated_donor_id": "5aba7a22554299232ef4a2e7"
+  },
+  {
+    "id": "5ac5188255429924173fb5a3",
+    "question": "About how many people are employed by the company founded by Denise Coates?",
+    "answer": "3,000",
+    "answer_numeric": "3000",
+    "false_answer": "3017",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D041_06",
+      "D041_03"
+    ],
+    "context_titles": [
+      "Salakos",
+      "Bill Allen (corporate CEO)",
+      "Vanderbilt, Nevada",
+      "Denise Coates",
+      "Matsari",
+      "Federal Music Project",
+      "Bet365",
+      "The Other Side of Immigration",
+      "Cork City Ballet",
+      "Larkin Company"
+    ],
+    "supporting_sentences": [
+      "Denise Coates CBE (born 26 September 1967) is an English businesswoman, founder and joint chief executive of online gambling company Bet365.",
+      "Bet365 Group Ltd (styled as \"bet365\") is a gambling company based in the United Kingdom.",
+      " The Group employs over 3,000 people and is the largest private employer in the city of Stoke-on-Trent."
+    ],
+    "unrelated_donor_id": "5adc597d55429947ff17392f"
+  },
+  {
+    "id": "5ac1ff2255429964131be2b3",
+    "question": "In the 2011 census what was the population of suburban area in which BA Connect is headquartered ?",
+    "answer": "26,788",
+    "answer_numeric": "26788",
+    "false_answer": "26805",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D042_00",
+      "D042_03"
+    ],
+    "context_titles": [
+      "BA Connect",
+      "Northenden",
+      "Crumpsall",
+      "Didsbury",
+      "Colburn, North Yorkshire",
+      "Kingswinford",
+      "Chorlton-cum-Hardy",
+      "Old Moat",
+      "Holambi Kalan",
+      "Brierton"
+    ],
+    "supporting_sentences": [
+      " Headquartered in Didsbury, Manchester, England, it operated a network of domestic and European services from a number of airports in the United Kingdom on behalf of British Airways.",
+      " The population at the 2011 census was 26,788."
+    ],
+    "unrelated_donor_id": "5a8f53ad5542992414482a50"
+  },
+  {
+    "id": "5ac4e07e5542996feb3fe95c",
+    "question": "The Bragg–Gray cavity theory was developed by Louis Harold Gray, William Lawrence Bragg, and a man that was knighrted in what year?",
+    "answer": "1920",
+    "answer_numeric": "1920",
+    "false_answer": "1928",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D043_00",
+      "D043_06"
+    ],
+    "context_titles": [
+      "Bragg–Gray cavity theory",
+      "Evan James Williams",
+      "William Lawrence Bragg",
+      "Electoral district of Bragg",
+      "Peter Hirsch",
+      "List of Australian Nobel laureates",
+      "William Henry Bragg",
+      "Walter L. Bragg",
+      "Stephen Bragg",
+      "Ronald Wilfred Gurney"
+    ],
+    "supporting_sentences": [
+      " It was developed in 1936 by British scientists Louis Harold Gray, William Henry Bragg, and William Lawrence Bragg.",
+      " He was knighted in 1920."
+    ],
+    "unrelated_donor_id": "5ab42b24554299753aec5a43"
+  },
+  {
+    "id": "5a80c79155429938b61421da",
+    "question": "How many seasons has a popular tv show had, in which one of the episodes is called Moho House?",
+    "answer": "28",
+    "answer_numeric": "28",
+    "false_answer": "45",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D044_03",
+      "D044_06"
+    ],
+    "context_titles": [
+      "Bob Thomas (actor)",
+      "Jalwa Four 2 Ka 1",
+      "Fliper",
+      "Moho House",
+      "Micom Film and TV Productions",
+      "Saurav Gurjar",
+      "The Simpsons (season 28)",
+      "Inexplicable, yet a Fact",
+      "Sivannarayana Naripeddi",
+      "Adel Ferdosipour"
+    ],
+    "supporting_sentences": [
+      "\"Moho House\" is the twenty first episode of the twenty-eighth season of the animated television series \"The Simpsons\", and the 617th episode of the series overall.",
+      " On May 4, 2015, Fox announced that \"The Simpsons\" had been renewed for season 28."
+    ],
+    "unrelated_donor_id": "5ade895955429975fa854ef5"
+  },
+  {
+    "id": "5a8135eb55429938b61422fa",
+    "question": "The nightclub Playboy Club was located at this hotel and casino located near the Las Vegas Strip that has how many rooms?",
+    "answer": "703",
+    "answer_numeric": "703",
+    "false_answer": "720",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D045_08",
+      "D045_07"
+    ],
+    "context_titles": [
+      "El Rancho Vegas",
+      "Tropicana – Las Vegas Boulevard intersection",
+      "Legends Resort &amp; Country Club",
+      "MGM Grand Las Vegas",
+      "Alon Las Vegas",
+      "Hooters Casino Hotel",
+      "Playboy Club",
+      "Playboy Club (Las Vegas)",
+      "Palms Casino Resort",
+      "SLS Las Vegas"
+    ],
+    "supporting_sentences": [
+      "The Playboy Club was a nightclub formerly located on the 52nd floor of the \"Fantasy Tower\" at the Palms Casino Resort in Paradise, Nevada, which is located in the Las Vegas Valley.",
+      "Palms Casino Resort is a hotel and casino located near the Las Vegas Strip in Paradise, Nevada.",
+      " It has 703 rooms and suites and contains 94840 sqft casino, recording studio, Michelin-starred restaurant and 2,500-seat concert theater."
+    ],
+    "unrelated_donor_id": "5ae835f25542997ec272776f"
+  },
+  {
+    "id": "5a88fa1c5542995153361219",
+    "question": "Barry Murphy earned 1 cap under a footballer who was part of England's winning World Cup team in what year?",
+    "answer": "1966",
+    "answer_numeric": "1966",
+    "false_answer": "1973",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D046_08",
+      "D046_00"
+    ],
+    "context_titles": [
+      "Jack Charlton",
+      "Cassie Law",
+      "Clare Taylor",
+      "Sung Si-bak",
+      "Peter Sloly",
+      "Magnus Johansson (footballer, born 1971)",
+      "Ivan Toplak",
+      "Ostap Steckiw",
+      "Barry Murphy (footballer, born 1959)",
+      "Esko Malm"
+    ],
+    "supporting_sentences": [
+      " He earned 1 cap under Jack Charlton for the Irish national team.",
+      " He was part of the England team that won the 1966 World Cup."
+    ],
+    "unrelated_donor_id": "5ab953a45542996be202047f"
+  },
+  {
+    "id": "5ab9d2e255429955dce3ed90",
+    "question": "What was the estimated population of the city that Luis Villalta Aquino was from in 2012?",
+    "answer": "102,984",
+    "answer_numeric": "102984",
+    "false_answer": "103001",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D047_00",
+      "D047_07"
+    ],
+    "context_titles": [
+      "Luis Villalta",
+      "Pismo Beach, California",
+      "Fort Wayne, Indiana",
+      "Las Cruces, New Mexico",
+      "Milwaukee",
+      "Bowling Green, Kentucky",
+      "Corpus Christi, Texas",
+      "Pompano Beach, Florida",
+      "San Luis Potosí City",
+      "Ardmore, Oklahoma"
+    ],
+    "supporting_sentences": [
+      "Luis Villalta Aquino (October 2, 1969, Lima, Peru – March 3, 2004, Pompano Beach, Florida) was a professional boxer, who was nicknamed \"El Puma\" during his career.",
+      " As of the 2010 census the city's population was 99,845, with an estimated population of 102,984 as of 2012."
+    ],
+    "unrelated_donor_id": "5abd09585542996e802b469b"
+  },
+  {
+    "id": "5ae72b745542991e8301cb7f",
+    "question": "Montgomery Ward Building is in the shopping and dining mall that was conceived in what year?",
+    "answer": "1958",
+    "answer_numeric": "1958",
+    "false_answer": "1965",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D048_00",
+      "D048_06"
+    ],
+    "context_titles": [
+      "Church Street Marketplace",
+      "Virginia Building",
+      "Montgomery Ward Building (Evansville, Indiana)",
+      "Montgomery Ward Building (Idaho Falls, Idaho)",
+      "Sedalia Commercial Historic District",
+      "Tower Mall",
+      "Montgomery Ward Building (Burlington, Vermont)",
+      "Montgomery Ward Building (Pueblo, Colorado)",
+      "Montgomery Park (Portland, Oregon)",
+      "Century Mall"
+    ],
+    "supporting_sentences": [
+      "The Burlington Montgomery Ward Building is a historic former department store building located at 52-54 Church Street, between Cherry and Bank Streets, in the Church Street Marketplace of downtown Burlington, Vermont.",
+      "The Church Street Marketplace is an uncovered outdoor pedestrian shopping and dining mall in Burlington, Vermont, consisting of the four blocks of Church Street between Main and Pearl Streets.",
+      " The mall was initially conceived in 1958 and was built in 1980-81 to a design by Carr, Lynch Associates of Cambridge, Massachusetts."
+    ],
+    "unrelated_donor_id": "5a8fdd9c55429916514e73de"
+  },
+  {
+    "id": "5ab40e1c5542996a3a969f00",
+    "question": "Lawerence Turman had produced a film, with a character named \"Johnny 5\" that had a follow up sequel released in what year?",
+    "answer": "1988",
+    "answer_numeric": "1988",
+    "false_answer": "1995",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D049_01",
+      "D049_05"
+    ],
+    "context_titles": [
+      "Mage Gauntlet",
+      "Lawrence Turman",
+      "Where's Herb?",
+      "Nyoka the Jungle Girl",
+      "Penny Racers (1998 video game)",
+      "Short Circuit (1986 film)",
+      "Short Circuit 2",
+      "The Shaggy Dog (2006 film)",
+      "Nessuno mi può giudicare (1966 film)",
+      "Final Fight Revenge"
+    ],
+    "supporting_sentences": [
+      "Lawrence Turman (born November 28, 1926 in Los Angeles) is a film producer who currently serves as the director of The Peter Stark Producing Program at the University of Southern California.",
+      " He was nominated for an Academy Award for \"The Graduate\" (1967).",
+      " He has also produced such films such as \"Pretty Poison\" (1968), \"The Great White Hope\" (1970), \"The Thing\" (1982), \"Mass Appeal\" (1984), \"Short Circuit\" (1986), \"The River Wild\" (1994), and \"American History X\" (1998).",
+      "Short Circuit is a 1986 American comic science fiction film directed by John Badham and written by S. S. Wilson and Brent Maddock.",
+      " The film's plot centers upon an experimental military robot that is struck by lightning and gains a more humanlike intelligence, with which it embarks to explore its new state.",
+      " \"Short Circuit\" stars Ally Sheedy, Steve Guttenberg, Fisher Stevens, Austin Pendleton and G. W. Bailey, with Tim Blaney as the voice of the robot named \"Johnny 5\".",
+      " A sequel, \"Short Circuit 2\", was released in 1988."
+    ],
+    "unrelated_donor_id": "5ac546975542993e66e8229a"
+  },
+  {
+    "id": "5a79fbd3554299029c4b5f93",
+    "question": "How many times has the driver who placed third in the 2003 Italian Grand Prix won at the Grand Prix?",
+    "answer": "11",
+    "answer_numeric": "11",
+    "false_answer": "29",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D050_07",
+      "D050_03"
+    ],
+    "context_titles": [
+      "1924 Grand Prix season",
+      "2001 San Marino Grand Prix",
+      "1928 Italian Grand Prix",
+      "Rubens Barrichello",
+      "1974 German Grand Prix",
+      "1980 Italian Grand Prix",
+      "1923 Grand Prix season",
+      "2003 Italian Grand Prix",
+      "Hideo Kanaya",
+      "1971 Italian Grand Prix"
+    ],
+    "supporting_sentences": [
+      " Juan Pablo Montoya finished second in a Williams car, with Rubens Barrichello third in the other Ferrari.",
+      "Rubens \"Rubinho\" Gonçalves Barrichello (] , ] , born 23 May 1972) is a Brazilian racing driver who competed in Formula One between and , scoring 11 Grands Prix wins and 68 podiums."
+    ],
+    "unrelated_donor_id": "5a7cb2ed5542990527d55505"
+  },
+  {
+    "id": "5ae701b2554299572ea54680",
+    "question": "The subject of the biography \"Name Dropper\" was born in what year?",
+    "answer": "1961",
+    "answer_numeric": "1961",
+    "false_answer": "1969",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D051_01",
+      "D051_02"
+    ],
+    "context_titles": [
+      "Current Biography",
+      "Christian Gerhartsreiter",
+      "Frank Girardot",
+      "The Story of a Great Schoolmaster",
+      "Annalyn Swan",
+      "Yumika Hayashi",
+      "Academy Award for Best Live Action Short Film",
+      "Jon M. Sweeney",
+      "David Levering Lewis",
+      "Ned Myers"
+    ],
+    "supporting_sentences": [
+      " He is best known for \"Name Dropper\" his biography of serial imposter Christian Gerhartsreiter.",
+      "Christian Karl Gerhartsreiter (born February 21, 1961) is a convicted murderer and impostor born in Germany who is currently serving a prison sentence in the United States."
+    ],
+    "unrelated_donor_id": "5ae7ee41554299540e5a56b0"
+  },
+  {
+    "id": "5a7af4bb55429927d897bf1d",
+    "question": "In what year was the son of Max Weinreich born?",
+    "answer": "1926",
+    "answer_numeric": "1926",
+    "false_answer": "1935",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D052_01",
+      "D052_02"
+    ],
+    "context_titles": [
+      "A language is a dialect with an army and navy",
+      "Max Weinreich",
+      "Uriel Weinreich",
+      "François Boucher (violinist)",
+      "Mark Potter (sportscaster)",
+      "List of EastEnders characters (2015)",
+      "Jos Verstappen",
+      "Felix von Kraus",
+      "Christopher Maccabe",
+      "Max T. Barnes"
+    ],
+    "supporting_sentences": [
+      "Max Weinreich (22 April 1894 in Kuldīga, Russian Empire, now Latvia – 29 January 1969 in New York City, United States) was a Russian Jewish linguist, specializing in sociolinguistics and Yiddish, and the father of the linguist Uriel Weinreich, who edited the \"Modern Yiddish-English English-Yiddish Dictionary\".",
+      "Uriel Weinreich (Yiddish: אוריאל ווײַנרײַך‎ \"Uriel Vaynraykh\", ] ; 23 May 1926 – 30 March 1967) was a Polish-American linguist."
+    ],
+    "unrelated_donor_id": "5ae748d1554299572ea547b0"
+  },
+  {
+    "id": "5aba3bb855429955dce3ede7",
+    "question": "Chien-Shiung Wu's expertise in experimental physics evoked comparisons to a scientist who passed away in which year ?",
+    "answer": "1934",
+    "answer_numeric": "1934",
+    "false_answer": "1941",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D053_08",
+      "D053_00"
+    ],
+    "context_titles": [
+      "Marie Curie",
+      "Open information extraction",
+      "2752 Wu Chien-Shiung",
+      "Allan Blaer",
+      "Chien-Shiung Wu College",
+      "Abou Diaby",
+      "Cui Youfu",
+      "Caleb Stine",
+      "Chien-Shiung Wu",
+      "Wu experiment"
+    ],
+    "supporting_sentences": [
+      " Her expertise in experimental physics evoked comparisons to Marie Curie.",
+      "Marie Skłodowska Curie ( ; ] ; ] ; 7 November 18674 July 1934; born Maria Salomea Skłodowska; ] ) was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity."
+    ],
+    "unrelated_donor_id": "5ab3eeb5554299233954fff4"
+  },
+  {
+    "id": "5ae1894f5542997b2ef7d1f4",
+    "question": "In what year was the director of the 2016 American-British biographical drama film which stars Rebecca Hall as Christine Chubbuck born?",
+    "answer": "1983",
+    "answer_numeric": "1983",
+    "false_answer": "2000",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D054_00",
+      "D054_06"
+    ],
+    "context_titles": [
+      "Antonio Campos (director)",
+      "Professor Marston and the Wonder Women",
+      "A Promise (2013 film)",
+      "Complete Unknown",
+      "Bohemian Rhapsody (film)",
+      "London Town (2016 film)",
+      "Christine (2016 film)",
+      "The Town (2010 film)",
+      "Permission (film)",
+      "Kate Plays Christine"
+    ],
+    "supporting_sentences": [
+      "Antonio Campos (born August 24, 1983) is an American film director, screenwriter and film producer.",
+      "Christine is a 2016 American-British biographical drama film directed by Antonio Campos and written by Craig Shilowich."
+    ],
+    "unrelated_donor_id": "5a82bdd655429940e5e1a92a"
+  },
+  {
+    "id": "5abcfc365542993a06baf9d6",
+    "question": "What year did the series on CBS, starring the actor who known for his role in \"Rebel Without a Cause,\" air?",
+    "answer": "1952",
+    "answer_numeric": "1952",
+    "false_answer": "1960",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D055_02",
+      "D055_06"
+    ],
+    "context_titles": [
+      "Jack Grinnage",
+      "Rebel Without a Pause",
+      "CBS Television Workshop",
+      "Jim Backus",
+      "Rebel Highway",
+      "Corey Allen",
+      "James Dean",
+      "Casey Braxton",
+      "Stewart Stern",
+      "Sal Mineo"
+    ],
+    "supporting_sentences": [
+      "CBS Television Workshop is an American anthology series which aired on CBS from January to April 1952.",
+      " The series is noted for featuring early television appearances of several well known actors including Audrey Hepburn, James Dean and Grace Kelly.",
+      " He is remembered as a cultural icon of teenage disillusionment and social estrangement, as expressed in the title of his most celebrated film, \"Rebel Without a Cause\" (1955), in which he starred as troubled teenager Jim Stark."
+    ],
+    "unrelated_donor_id": "5ae143ed55429920d5234360"
+  },
+  {
+    "id": "5ae13b085542997b2ef7d146",
+    "question": "The Combs–Hehl Bridge is a twin span single pier cantilever bridge carrying an intersate loop that encloses and area of over how many acres? ",
+    "answer": "250,000",
+    "answer_numeric": "250000",
+    "false_answer": "250017",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D056_07",
+      "D056_09"
+    ],
+    "context_titles": [
+      "Carquinez Bridge",
+      "Cantilever bridge",
+      "Varapuzha Bridge",
+      "Horace Wilkinson Bridge",
+      "Winfield Toll Bridge",
+      "Rochester Bridge",
+      "Clay Wade Bailey Bridge",
+      "Combs–Hehl Bridge",
+      "Niagara Cantilever Bridge",
+      "Interstate 275 (Ohio–Indiana–Kentucky)"
+    ],
+    "supporting_sentences": [
+      "The Combs–Hehl Bridge is a twin span single pier cantilever bridge carrying Interstate 275 (I-275) across the Ohio River.",
+      "Interstate 275 (I-275) is an 83.71 mi loop in Ohio, Indiana, and Kentucky that forms a complete beltway around the Cincinnati, Ohio, area.",
+      " It is the longest loop interstate highway in the United States, and it encloses an area of over 250,000 acres."
+    ],
+    "unrelated_donor_id": "5a79f6825542996c55b2dcb4"
+  },
+  {
+    "id": "5a887bc0554299206df2b2b6",
+    "question": "The Argentine PGA Championship record holder has won how many tournaments worldwide?",
+    "answer": "230",
+    "answer_numeric": "230",
+    "false_answer": "247",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D057_03",
+      "D057_09"
+    ],
+    "context_titles": [
+      "1939 PGA Championship",
+      "Middle Atlantic PGA Championship",
+      "2000 PGA Championship",
+      "Argentine PGA Championship",
+      "Northern California PGA Championship",
+      "2006 PGA Championship",
+      "2018 PGA Championship",
+      "1977 PGA Championship",
+      "1940 PGA Championship",
+      "Roberto De Vicenzo"
+    ],
+    "supporting_sentences": [
+      " However, the record holder is former British Open champion Roberto De Vicenzo, who recorded 16 victories between 1944 and 1985.",
+      " He won more than 230 tournaments worldwide in his career including eight on the PGA Tour and most famously the 1967 Open Championship."
+    ],
+    "unrelated_donor_id": "5adc1af75542994650320c75"
+  },
+  {
+    "id": "5a7905ca554299148911f9c8",
+    "question": "What year was the player the Los Angeles Clippers aquired from the Atlanta Hawks born?",
+    "answer": "1961",
+    "answer_numeric": "1961",
+    "false_answer": "1971",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D058_08",
+      "D058_00"
+    ],
+    "context_titles": [
+      "Doc Rivers",
+      "2011 NBA All-Star Game",
+      "Vladimir Radmanović",
+      "List of Los Angeles Clippers head coaches",
+      "List of Los Angeles Clippers seasons",
+      "Lakers–Clippers rivalry",
+      "Quin Snyder",
+      "Los Angeles Clippers",
+      "1991–92 Los Angeles Clippers season",
+      "Josh Powell"
+    ],
+    "supporting_sentences": [
+      "The 1991–92 NBA season was the Clippers' 22nd season in the National Basketball Association, and their 8th season in Los Angeles.",
+      " During the offseason, the Clippers acquired Doc Rivers from the Atlanta Hawks, and James Edwards from the Detroit Pistons.",
+      "Glenn Anton \"Doc\" Rivers (born October 13, 1961) is an American basketball coach and former player."
+    ],
+    "unrelated_donor_id": "5a79311755429970f5fffe67"
+  },
+  {
+    "id": "5ae57d3a554299546bf82ee6",
+    "question": "After Russell D. Moore served at the Southern Baptist Theological Seminary he became the President of The Ethics & Religious Liberty Commission (ERLC) in what year?",
+    "answer": "2013",
+    "answer_numeric": "2013",
+    "false_answer": "2025",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D059_02",
+      "D059_05"
+    ],
+    "context_titles": [
+      "Temple Baptist Seminary",
+      "Baptist Theological Seminary at Richmond",
+      "Ethics &amp; Religious Liberty Commission",
+      "Lee Rutland Scarborough",
+      "Trillia Newbell",
+      "Russell D. Moore",
+      "Benjamin L. Merkle",
+      "Jerry A. Johnson",
+      "Midwestern Baptist Theological Seminary",
+      "Frank Stagg (theologian)"
+    ],
+    "supporting_sentences": [
+      " As of June 1, 2013, the ERLC is headed by Russell D. Moore and is headquartered in Nashville, Tennessee, with additional offices in Washington, D.C. and Cyprus.",
+      " Moore previously served at the Southern Baptist Theological Seminary, one of six seminaries of the SBC, as dean of the School of Theology, senior vice president for academic administration, and as professor of Christian theology and ethics."
+    ],
+    "unrelated_donor_id": "5a80ad7c5542992097ad3018"
+  },
+  {
+    "id": "5a7e23655542997cc2c47528",
+    "question": "WBYA is a radio station licensed to a town with what population as of the 2010 census?",
+    "answer": "566",
+    "answer_numeric": "566",
+    "false_answer": "583",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D060_02",
+      "D060_01"
+    ],
+    "context_titles": [
+      "WKVV",
+      "WBYA",
+      "Islesboro, Maine",
+      "KIOF-LP",
+      "WSTX-FM",
+      "WHCL-FM",
+      "Radio Nova 100FM (Ireland)",
+      "WNOC",
+      "WSTX (AM)",
+      "WAML (AM)"
+    ],
+    "supporting_sentences": [
+      "WBYA (105.5 FM; \"The Wolf\") is a radio station licensed to Islesboro, Maine, United States.",
+      " The population was 566 at the 2010 census."
+    ],
+    "unrelated_donor_id": "5a7cb5f0554299452d57b9b5"
+  },
+  {
+    "id": "5a809e9f5542996402f6a5b1",
+    "question": "Ricky Martin's concert tour in 1999 featured an American heavy metal band formed in what year?",
+    "answer": "1991",
+    "answer_numeric": "1991",
+    "false_answer": "2007",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D061_04",
+      "D061_02"
+    ],
+    "context_titles": [
+      "Livin' la Vida Loca Tour",
+      "List of Slipknot concert tours",
+      "Machine Head (band)",
+      "Gods of the Earth Tour",
+      "Livin la Vida Loco",
+      "Canadian Tour (Motley Crue Tour)",
+      "Música + Alma + Sexo World Tour",
+      "Apocryphon Tour",
+      "Ricky Martin Live",
+      "One Night Only with Ricky Martin"
+    ],
+    "supporting_sentences": [
+      "Livin La Vida Loco, a play on the song title \"Livin' la Vida Loca\" by Ricky Martin, was a concert tour in 1999.",
+      " Other bands that were featured included Machine Head, Slipknot, and Amen.",
+      "Machine Head is an American heavy metal band from Oakland, California.",
+      " Formed on October 12, 1991, the group was founded by vocalist/guitarist Robb Flynn and bassist Adam Duce."
+    ],
+    "unrelated_donor_id": "5ae7b271554299540e5a564d"
+  },
+  {
+    "id": "5adc0644554299438c868d08",
+    "question": "The actress that played  Pearl Gallagher on the tv sitcom \"Diff'rent Strokes\" is also the voice of an animated character that debuted in what year?",
+    "answer": "1999",
+    "answer_numeric": "1999",
+    "false_answer": "2019",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D062_05",
+      "D062_08"
+    ],
+    "context_titles": [
+      "Mario Castañeda",
+      "Different Strokes (film)",
+      "Dana Plato",
+      "Shavar Ross",
+      "Diff'rent Strokes",
+      "Mary Jo Catlett",
+      "Gordon Jump",
+      "Todd Bridges",
+      "Mrs. Puff",
+      "Bonar Bain"
+    ],
+    "supporting_sentences": [
+      " She is notable for her role as housekeeper Pearl Gallagher on the television sitcom \"Diff'rent Strokes\", and currently for her role as Mrs. Puff in \"SpongeBob SquarePants\", which she has held since the show's debut.",
+      " She is voiced by actress Mary Jo Catlett and debuted in the season one episode \"Boating School\" on August 7, 1999."
+    ],
+    "unrelated_donor_id": "5a79b7f6554299029c4b5f6f"
+  },
+  {
+    "id": "5a8b595855429949d91db563",
+    "question": "In what year was the band, whose bassist joined Arvas in 1996, formed?",
+    "answer": "1992",
+    "answer_numeric": "1992",
+    "false_answer": "2026",
+    "type": "bridge",
+    "level": "hard",
+    "support_ids": [
+      "D063_09",
+      "D063_06"
+    ],
+    "context_titles": [
+      "Herzog (band)",
+      "Coldplay",
+      "Modest Mouse",
+      "Geno Arce",
+      "Mathien",
+      "Patrick Bruders",
+      "Gorgoroth",
+      "L7 discography",
+      "Joe Raposo (bassist)",
+      "Arvas"
+    ],
+    "supporting_sentences": [
+      " In Summer 1996, Borknagar drummer Grim and Gorgoroth bassist Ares joined the band.",
+      " It was formed in 1992 by guitarist Infernus, who is also the only original member remaining, and the band have since released nine studio albums."
+    ],
+    "unrelated_donor_id": "5abca6375542993a06baf946"
+  }
+]

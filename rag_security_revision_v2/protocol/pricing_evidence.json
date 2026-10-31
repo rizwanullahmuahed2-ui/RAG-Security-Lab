@@ -1,0 +1,22 @@
+{
+  "checked_date_utc": "2026-10-26",
+  "purpose": "Conservative standard token pricing for prospective execution; provider invoice may reflect input caching and retries.",
+  "currency": "USD",
+  "unit": "per 1000000 tokens",
+  "generation": {
+    "model": "gpt-4.1-mini-2025-04-14",
+    "input": 0.4,
+    "cached_input": 0.1,
+    "output": 1.6,
+    "budget_basis": "Use uncached input rate; do not assume cache discounts.",
+    "official_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+    "source_opened": true
+  },
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "input": 0.02,
+    "official_source": "https://developers.openai.com/api/docs/models/text-embedding-3-small",
+    "source_opened": true
+  },
+  "caveat": "Pricing evidence is not evidence of current model access; access must be verified separately. The initial availability check failed authentication because the key expired."
+}
