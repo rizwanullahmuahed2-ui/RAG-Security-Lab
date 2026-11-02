@@ -1,0 +1,147 @@
+[
+  {
+    "expert_item": "مقاله",
+    "description_fa": "مقالهٔ اصلاح‌شده PDF",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/research/current/RAG_Security_Article.pdf"
+  },
+  {
+    "expert_item": "گزارش",
+    "description_fa": "گزارش تفصیلی تطبیق اصلاحات PDF",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/research/current/Implementation_Report_FA.pdf"
+  },
+  {
+    "expert_item": "پاسخ امروز",
+    "description_fa": "پاسخ بندبه‌بند به گزارش متخصص",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/research/current/Response_to_Expert_FA.pdf"
+  },
+  {
+    "expert_item": "۵.۱",
+    "description_fa": "کد کامل آزمایش مولد C",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/tree/main/rag_security_revision_v2/runner"
+  },
+  {
+    "expert_item": "۵.۱",
+    "description_fa": "کد ساخت دیتای پیگیری",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/data/build_followup_dataset.py"
+  },
+  {
+    "expert_item": "۵.۲",
+    "description_fa": "اسناد، قطعه‌ها، پرسش‌ها و حمله‌های A",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/tree/main/data/raw"
+  },
+  {
+    "expert_item": "۵.۲",
+    "description_fa": "ورودی‌ها و فایل‌های منبع C",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/tree/main/rag_security_revision_v2/data"
+  },
+  {
+    "expert_item": "۵.۳",
+    "description_fa": "متن و شناسهٔ ۱۰۴ درج تاریخی",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/data/raw/poisoned_passages.csv"
+  },
+  {
+    "expert_item": "۵.۳",
+    "description_fa": "متن کامل درج‌های متناظر C",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/data/insertions.json"
+  },
+  {
+    "expert_item": "۵.۴",
+    "description_fa": "تنظیمات کامل C",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/data/config.json"
+  },
+  {
+    "expert_item": "۵.۵",
+    "description_fa": "پاسخ‌های خام ۲۵۵۹ فراخوانی مولد C",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/study_c/responses.jsonl"
+  },
+  {
+    "expert_item": "۵.۵",
+    "description_fa": "زمینه‌ها و اتصال شرط به درخواست",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/study_c/contexts.jsonl"
+  },
+  {
+    "expert_item": "۵.۵",
+    "description_fa": "آرشیف آزمایش مولد B",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/tree/main/revision/experiment"
+  },
+  {
+    "expert_item": "۵.۶",
+    "description_fa": "ارزیاب اجرایی پاسخ‌ها",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/evaluation/evaluator_v2.py"
+  },
+  {
+    "expert_item": "۵.۶",
+    "description_fa": "کد تحلیل جفتی و معیارهای C",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/analysis/analyze_study_c.py"
+  },
+  {
+    "expert_item": "۵.۷",
+    "description_fa": "نسخه‌های محیط نرم‌افزار مشتری",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/protocol/client_environment.json"
+  },
+  {
+    "expert_item": "۵.۷",
+    "description_fa": "مشخصات سخت‌افزار مشاهده‌شدهٔ مشتری",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/protocol/client_hardware_observation.json"
+  },
+  {
+    "expert_item": "۵.۸",
+    "description_fa": "منشأ و هش snapshot دیتا",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/data/source_dataset_metadata.json"
+  },
+  {
+    "expert_item": "۵.۸",
+    "description_fa": "ممیزی مرجع‌های B",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/reference_audit/B_reference_cards_v2.json"
+  },
+  {
+    "expert_item": "۵.۹",
+    "description_fa": "معماری واقعی، حدود A/B/C و روش مقاله",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/manuscript/Working_Manuscript_v2.md"
+  },
+  {
+    "expert_item": "۵.۱۰",
+    "description_fa": "نتایج ماژول‌ها و تحلیل‌های تکمیلی",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/tree/main/rag_security_revision_v2/analysis/study_c"
+  },
+  {
+    "expert_item": "۵.۱۰",
+    "description_fa": "آزمایش جداگانهٔ خطای برچسب",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/study_c/retrieval_label_stress_summary.json"
+  },
+  {
+    "expert_item": "۳.۴ و۶.۳",
+    "description_fa": "یافته‌های بررسی معنایی نویسنده",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/manual_review/Author_Semantic_Findings_FA.md"
+  },
+  {
+    "expert_item": "۳.۴ و۶.۳",
+    "description_fa": "موارد نمونه و یادداشت‌های کمکی با منشأ ثبت‌شده",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/assistant_review/Case_Review_72.csv"
+  },
+  {
+    "expert_item": "پیگیری",
+    "description_fa": "جدول وضعیت ۶۷ مورد",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/report/Implementation_Progress_67_FA.csv"
+  },
+  {
+    "expert_item": "بازتولید",
+    "description_fa": "وضعیت دقیق آرشیف تاریخی A",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/history/reproducibility_decision.md"
+  },
+  {
+    "expert_item": "بازتولید",
+    "description_fa": "راهنمای کنترول مستقل بدون API",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/release/GITHUB_EVIDENCE_README_FA.md"
+  },
+  {
+    "expert_item": "تمامیت",
+    "description_fa": "فهرست و هش فایل‌های انتشار",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/release/PUBLICATION_MANIFEST.json"
+  },
+  {
+    "expert_item": "کنترل خودکار",
+    "description_fa": "اجرای بررسی شواهد در GitHub",
+    "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/actions/workflows/research-evidence.yml"
+  }
+]

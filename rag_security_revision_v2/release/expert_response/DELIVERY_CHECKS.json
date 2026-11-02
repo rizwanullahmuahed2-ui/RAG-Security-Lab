@@ -1,0 +1,18 @@
+{
+  "received_review_sha256": "60373fae288018a9afa01bde85760845c9968fd4b7a70e9d56f6db694a06e2d3",
+  "received_review_pages": 9,
+  "response_pdf_pages": 4,
+  "response_text_outside_page": 0,
+  "heading_color": "black,verifiedbyrenderer",
+  "new_experimental_results_added": false,
+  "links": 29,
+  "current_numeric_evidence": "ExistingcompletedC2559responses/5208rows; no newmodelcalls",
+  "remaining_limitations": [
+    "A matching21840/3016responsearchivesunrecovered",
+    "Bsourcevaliditydefectsretainedwithoverlap",
+    "Single-author source-relative caseinspection; noindependentsemanticASRcalibration",
+    "Singlemodel/narrowquestiondomains/nooperationalauthenticationimplemented"
+  ],
+  "dari_vocabulary_applied": true,
+  "thousands_separators_in_counts": false
+}

@@ -10,7 +10,7 @@
     "evidence_files": "baseline/study_registry.json; baseline/claims_registry.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "شناسهٔ دقیق کد و محیط اجرای اصلی تاریخی همچنان بازیابی نشده است.",
     "completion_criterion_fa": "برای مطالعهٔ تاریخی، کد فعلی، آزمایش تشخیصی و مطالعهٔ B، اجزای فعال، شناسهٔ نسخه و نوع خروجی جدا ثبت شود؛ ناشناخته‌ها مشخص بماند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.1.2",
@@ -23,7 +23,7 @@
     "evidence_files": "baseline/study_registry.json; manuscript/Working_Manuscript_v2.md",
     "remaining_work_or_limit_fa": "سند تصمیم اولیه برای انتخاب Hashing/TF-IDF و غیرفعال‌بودن اجزای پیشنهادی در دست نیست.",
     "completion_criterion_fa": "دلیل مستند فعلی از توضیح پسینی و نیت تاریخی جدا شود؛ طرح اصلی یا سابقهٔ تصمیم ضمیمه، یا نبود آن آشکار بیان گردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.1.3",
@@ -36,7 +36,7 @@
     "evidence_files": "baseline/study_registry.json; manuscript/Working_Manuscript_v2.md",
     "remaining_work_or_limit_fa": "سند تصمیم اولیه برای انتخاب Hashing/TF-IDF و غیرفعال‌بودن اجزای پیشنهادی در دست نیست.",
     "completion_criterion_fa": "جدول پیشنهادی/اجراشده تنها بر سند تکیه کند؛ از روی نام مدل در تنظیمات، فعال‌بودن یا علت عدم استفاده استنباط نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.1.4",
@@ -45,11 +45,11 @@
     "expert_force_fa": "مشروط به ادعا/وضعیت",
     "primary_work_package": "P0",
     "implementation_status_fa": "آزمایش‌های واقعی B و C مستند",
-    "implemented_action_fa": "آرشیو واقعی مدل در B و، در صورت وجود رسید تأییدشده، اجرای سه‌نوبتی C از آزمون‌های ساختگی کد جدا ثبت شده است.",
+    "implemented_action_fa": "آرشیف واقعی مدل در B و، در صورت وجود رسید تأییدشده، اجرای سه‌نوبتی C از آزمایش‌های ساختگی کد جدا ثبت شده است.",
     "evidence_files": "evaluation/B_reanalysis_v2_summary.json; /workspace/revision/experiment/completion.json; study_c/completion.json",
-    "remaining_work_or_limit_fa": "نتیجه به مدل و دادهٔ معین محدود است؛ وجود LLM جای اعتبارسنجی معنایی را نمی‌گیرد.",
-    "completion_criterion_fa": "مطالعهٔ B موجود با آرشیو و حدودش مستند بماند؛ وجود LLM به درخواست تازهٔ API نیاز ندارد. آزمایش تازه فقط برای مقایسهٔ علمی تعیین‌شده طراحی شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "نتیجه به مدل و دیتای معین محدود است؛ وجود LLM جای اعتبارسنجی معنایی را نمی‌گیرد.",
+    "completion_criterion_fa": "مطالعهٔ B موجود با آرشیف و حدودش مستند بماند؛ وجود LLM به درخواست تازهٔ API نیاز ندارد. آزمایش تازه فقط برای مقایسهٔ علمی تعیین‌شده طراحی شود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.1.5",
@@ -60,9 +60,9 @@
     "implementation_status_fa": "اصلاح ادعا در نسخهٔ کاری",
     "implemented_action_fa": "صفر مشاهده‌شده و برچسب آزمایشی به مصونیت عمومی تعبیر نمی‌شود؛ حدود مطالعه در متن درج شد.",
     "evidence_files": "manuscript/Working_Manuscript_v2.md; baseline/claims_registry.json",
-    "remaining_work_or_limit_fa": "بازخوانی نهایی متن پس از تکمیل داوری انسانی لازم است.",
+    "remaining_work_or_limit_fa": "ادعاها با نتیجه‌های ثبت‌شده و بررسی موردی نویسنده هماهنگ شده‌اند؛ مصونیت عمومی، احراز اصالت عملیاتی یا تعمیم به مدل‌های دیگر ادعا نشده است.",
     "completion_criterion_fa": "عنوان، چکیده و نتیجه با شواهد حفظ‌شده هم‌خوان شود؛ مطالعات بازیابی و مولد و حدود تعمیم یک مدل جدا بماند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.2.1",
@@ -71,11 +71,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P8",
     "implementation_status_fa": "ورودی‌های موجود ردیابی شده",
-    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ مخزن و ممیزی ساختار مرتبط شد.",
+    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ ریپو و ممیزی ساختار مرتبط شد.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "دسترسی به این ورودی‌ها، هویت و بازتولید خروجی اجرای اصلی را ثابت نمی‌کند؛ نشر مواد جدید باید با manifest همراه باشد.",
-    "completion_criterion_fa": "فهرست سندها و URLها با پیوند commit ثابت و تعریف وضعیت بررسی منتشر شود؛ دسترسی ورودی با بازتولید خروجی تاریخی خلط نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "فهرست سندها و URLها با لینک commit ثابت و تعریف وضعیت بررسی منتشر شود؛ دسترسی ورودی با بازتولید خروجی تاریخی خلط نشود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.2.2",
@@ -88,7 +88,7 @@
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json",
     "remaining_work_or_limit_fa": "تطبیق با snapshot ذخیره‌شده به معنای تصدیق مستقل تمام واقعیت‌های بیرونی نیست.",
     "completion_criterion_fa": "۱۲ خانواده، بازه و قواعد انتخاب، گردکردن و ۱۶۸ مشاهده به snapshotهای ذخیره‌شده وصل شود؛ تطبیق snapshot، حقیقت مستقل نامیده نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.2.3",
@@ -97,11 +97,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P8",
     "implementation_status_fa": "ورودی‌های موجود ردیابی شده",
-    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ مخزن و ممیزی ساختار مرتبط شد.",
+    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ ریپو و ممیزی ساختار مرتبط شد.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "دسترسی به این ورودی‌ها، هویت و بازتولید خروجی اجرای اصلی را ثابت نمی‌کند؛ نشر مواد جدید باید با manifest همراه باشد.",
-    "completion_criterion_fa": "نام فیلدها، نوع، کلید و رابطهٔ چهار جدول و نمونهٔ واقعی در فرهنگ داده درج و آزمون پیوندها ارایه شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "نام فیلدها، نوع، کلید و رابطهٔ چهار جدول و نمونهٔ واقعی در فرهنگ دیتا درج و آزمایش لینکها ارایه شود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.2.4",
@@ -114,7 +114,7 @@
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; manuscript/Working_Manuscript_v2.md",
     "remaining_work_or_limit_fa": "سابقهٔ واقعی نگارش و بازبینی موارد قبلی کامل نیست و اختراع نشده است.",
     "completion_criterion_fa": "دو قالب ۳۳۶ پرسش WDI روشن شود؛ منشأ نگارش/بررسی ۲۸ پرسش قبلی مستند، یا محدودیت آن دقیق ثبت گردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.2.5",
@@ -123,11 +123,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P1",
     "implementation_status_fa": "A ردیابی شد؛ صحت مستقل مرجع‌های آن باز است",
-    "implemented_action_fa": "پرسش و مرجع‌های A به ورودی فعلی مخزن وصل شد. ممیزی رابطه و قیدِ ۶۴ پرسش B جدا اجرا شد و اعتبار مرجع‌های A را ثابت نمی‌کند.",
+    "implemented_action_fa": "پرسش و مرجع‌های A به ورودی فعلی ریپو وصل شد. ممیزی رابطه و قیدِ ۶۴ پرسش B جدا اجرا شد و اعتبار مرجع‌های A را ثابت نمی‌کند.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; reference_audit/B_reference_cards_v2.json",
     "remaining_work_or_limit_fa": "بازبینی جامع منبع و صحت مستقل مرجع‌های تاریخی A، از جمله موارد پیشین غیر-WDI، تکمیل نشده است؛ ممیزی دستیار B جانشین آن نیست.",
     "completion_criterion_fa": "ثبت بررسی معنایی مرجع و رابطه، واحد، تاریخ و قید آماده شود؛ موارد مبهم در تحلیل نسخه‌دار تعیین تکلیف شوند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.2.6",
@@ -140,20 +140,20 @@
     "evidence_files": "history/reproducibility_decision.json; protocol/study_c_protocol.json",
     "remaining_work_or_limit_fa": "بازبینی مستقل ۵۶ سند پیشین و برچسب‌های آنان همچنان کامل نیست.",
     "completion_criterion_fa": "عدم بازبینی مستقل قبلی به‌صراحت درج شود؛ هر بررسی تازه با داور، تاریخ، منبع و نتیجهٔ واقعی ثبت گردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.2.7",
     "expert_section": "3.2",
-    "requirement_fa": "پیوند ردیابی‌پذیر سند، قطعه و پرسش",
+    "requirement_fa": "لینک ردیابی‌پذیر سند، قطعه و پرسش",
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P8",
     "implementation_status_fa": "ورودی‌های موجود ردیابی شده",
-    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ مخزن و ممیزی ساختار مرتبط شد.",
+    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ ریپو و ممیزی ساختار مرتبط شد.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "دسترسی به این ورودی‌ها، هویت و بازتولید خروجی اجرای اصلی را ثابت نمی‌کند؛ نشر مواد جدید باید با manifest همراه باشد.",
-    "completion_criterion_fa": "جدول پیوند و قواعد کلیدها با همان چهار جدول تأییدشده تحویل شود؛ هویت ورودی اجرای اصلی جدا مشخص گردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "جدول لینک و قواعد کلیدها با همان چهار جدول تأییدشده تحویل شود؛ هویت ورودی اجرای اصلی جدا مشخص گردد.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.2.8",
@@ -162,11 +162,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P7",
     "implementation_status_fa": "قاعدهٔ تحلیل پیاده‌شده",
-    "implemented_action_fa": "پرسش، ردیف شرط، فراخوانی واقعی، پوشش هدف و مواجهه مخرج‌های جدا دارند؛ میانگین سه نوبت درون هر پرسش محاسبه می‌شود.",
+    "implemented_action_fa": "پرسش، سطر شرط، فراخوانی واقعی، پوشش هدف و مواجهه مخرج‌های جدا دارند؛ میانگین سه نوبت درون هر پرسش محاسبه می‌شود.",
     "evidence_files": "analysis/analyze_study_c.py; protocol/study_c_protocol.json; analysis/README_ANALYSIS.md",
     "remaining_work_or_limit_fa": "نمایهٔ مشترک و وابستگی معنایی خانواده‌های منبع محدودیت تعمیم می‌ماند.",
     "completion_criterion_fa": "واحد فکت/خانواده و پرسش مشخص و تحلیل مناسب گروه‌بندی شود؛ محدودیت نمایهٔ مشترک B و کش گزارش گردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.3.1",
@@ -175,11 +175,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P8",
     "implementation_status_fa": "ورودی‌های موجود ردیابی شده",
-    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ مخزن و ممیزی ساختار مرتبط شد.",
+    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ ریپو و ممیزی ساختار مرتبط شد.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "دسترسی به این ورودی‌ها، هویت و بازتولید خروجی اجرای اصلی را ثابت نمی‌کند؛ نشر مواد جدید باید با manifest همراه باشد.",
-    "completion_criterion_fa": "فهرست واقعی و commit ثابت با پیوند هر پرسش به متن حمله منتشر شود؛ ارتباط با اجرای اصلی جدا ارزیابی گردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "فهرست واقعی و commit ثابت با لینک هر پرسش به متن حمله منتشر شود؛ ارتباط با اجرای اصلی جدا ارزیابی گردد.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.3.2",
@@ -188,11 +188,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P1",
     "implementation_status_fa": "هدف‌های A ردیابی شد؛ اعتبار معنایی مستقل باز است",
-    "implemented_action_fa": "مقادیر مرجع و مقادیر تعیین‌شدهٔ ۱۰۴ هدف A در ورودی‌های نسخه‌دار قابل ردیابی‌اند. پرونده‌های ممیزی B و C فقط به همان مطالعه‌های جدا تعلق دارند.",
+    "implemented_action_fa": "مقادیر مرجع و مقادیر تعیین‌شدهٔ ۱۰۴ هدف A در ورودی‌های نسخه‌دار قابل ردیابی‌اند. فایل‌های ممیزی B و C فقط به همان مطالعه‌های جدا تعلق دارند.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; history/reproducibility_decision.json; reference_audit/B_reference_cards_v2.json",
-    "remaining_work_or_limit_fa": "این اقدام تأیید مستقل درستی همهٔ مرجع‌های A یا غلط‌بودن همهٔ ادعاهای حملهٔ A نیست. آرشیو دقیق خروجی تاریخی و بازبینی معنایی منبع‌دار آن همچنان باز است.",
+    "remaining_work_or_limit_fa": "این اقدام تأیید مستقل درستی همهٔ مرجع‌های A یا غلط‌بودن همهٔ ادعاهای حملهٔ A نیست. آرشیف دقیق خروجی تاریخی و بازبینی معنایی منبع‌دار آن همچنان باز است.",
     "completion_criterion_fa": "پاسخ‌های موجود و منشأ آن‌ها ثبت و دامنهٔ بررسی واقعی بیان شود؛ صحت منبع و صرف تطبیق عدد جدا بماند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.3.3",
@@ -201,11 +201,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P1",
     "implementation_status_fa": "هدف‌های A ردیابی شد؛ اعتبار معنایی مستقل باز است",
-    "implemented_action_fa": "مقادیر مرجع و مقادیر تعیین‌شدهٔ ۱۰۴ هدف A در ورودی‌های نسخه‌دار قابل ردیابی‌اند. پرونده‌های ممیزی B و C فقط به همان مطالعه‌های جدا تعلق دارند.",
+    "implemented_action_fa": "مقادیر مرجع و مقادیر تعیین‌شدهٔ ۱۰۴ هدف A در ورودی‌های نسخه‌دار قابل ردیابی‌اند. فایل‌های ممیزی B و C فقط به همان مطالعه‌های جدا تعلق دارند.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; history/reproducibility_decision.json; reference_audit/B_reference_cards_v2.json",
-    "remaining_work_or_limit_fa": "این اقدام تأیید مستقل درستی همهٔ مرجع‌های A یا غلط‌بودن همهٔ ادعاهای حملهٔ A نیست. آرشیو دقیق خروجی تاریخی و بازبینی معنایی منبع‌دار آن همچنان باز است.",
+    "remaining_work_or_limit_fa": "این اقدام تأیید مستقل درستی همهٔ مرجع‌های A یا غلط‌بودن همهٔ ادعاهای حملهٔ A نیست. آرشیف دقیق خروجی تاریخی و بازبینی معنایی منبع‌دار آن همچنان باز است.",
     "completion_criterion_fa": "مقدار هدف با پرسش، واحد، تاریخ و قید مقایسه شود؛ برای ادعای موفقیت واقعی، نادرستی آن مستند باشد و موارد حل‌نشده جدا گزارش شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.3.4",
@@ -214,11 +214,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P8",
     "implementation_status_fa": "ورودی‌های موجود ردیابی شده",
-    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ مخزن و ممیزی ساختار مرتبط شد.",
+    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ ریپو و ممیزی ساختار مرتبط شد.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "دسترسی به این ورودی‌ها، هویت و بازتولید خروجی اجرای اصلی را ثابت نمی‌کند؛ نشر مواد جدید باید با manifest همراه باشد.",
-    "completion_criterion_fa": "تمام ۱۰۴ متن اصلی بدون بازسازی حدسی و با شناسه و هش در بستهٔ دسترس‌پذیر پیوند شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "تمام ۱۰۴ متن اصلی بدون بازسازی حدسی و با شناسه و هش در بستهٔ دسترس‌پذیر لینک شود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.3.5",
@@ -227,11 +227,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P8",
     "implementation_status_fa": "ورودی‌های موجود ردیابی شده",
-    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ مخزن و ممیزی ساختار مرتبط شد.",
+    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ ریپو و ممیزی ساختار مرتبط شد.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "دسترسی به این ورودی‌ها، هویت و بازتولید خروجی اجرای اصلی را ثابت نمی‌کند؛ نشر مواد جدید باید با manifest همراه باشد.",
-    "completion_criterion_fa": "پیوند هدف، مرجع پاک، سند و حمله در جدول و کنترل روابط موجود باشد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "لینک هدف، مرجع پاک، سند و حمله در جدول و کنترول روابط موجود باشد.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.3.6",
@@ -239,12 +239,12 @@
     "requirement_fa": "برچسب‌های اعتماد هر شرط حمله",
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P0",
-    "implementation_status_fa": "فرض اعتماد روشن؛ سامانهٔ عملیاتی اجرا نشده",
+    "implementation_status_fa": "فرض اعتماد روشن؛ سیستم عملیاتی اجرا نشده",
     "implemented_action_fa": "تغییر metadata آزمایش صفات ورودی است؛ صلاحیت نهادی، احراز هویت و نفوذ واقعی ادعا نشده است.",
     "evidence_files": "protocol/study_c_protocol.json; baseline/claims_registry.json; manuscript/Working_Manuscript_v2.md",
-    "remaining_work_or_limit_fa": "سامانهٔ عملیاتی تأیید، کنترل صلاحیت و آزمون نفوذ به روند تأیید ساخته و آزمایش نشده است.",
+    "remaining_work_or_limit_fa": "سیستم عملیاتی تأیید، کنترول صلاحیت و آزمایش نفوذ به روند تأیید ساخته و آزمایش نشده است.",
     "completion_criterion_fa": "برچسب پایه، شرط برچسب تغییریافتهٔ B و نبود رکورد اصلی تاریخی جدا ثبت شود؛ برچسب ورودی با تأیید نهادی برابر دانسته نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.3.7",
@@ -257,7 +257,7 @@
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; manuscript/Working_Manuscript_v2.md",
     "remaining_work_or_limit_fa": "سابقهٔ واقعی نگارش و بازبینی موارد قبلی کامل نیست و اختراع نشده است.",
     "completion_criterion_fa": "حملات الگوریتمی WDI از ۲۰ متن قبلی جدا شرح داده شود؛ سابقهٔ ناموجود نگارش دستی اختراع نگردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.3.8",
@@ -265,12 +265,12 @@
     "requirement_fa": "طول، ساختار و شباهت متن حمله",
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P1",
-    "implementation_status_fa": "کنترل‌های C ساخته و اجرا شده",
-    "implemented_action_fa": "قالب حمله‌های قدیمی محفوظ است؛ C طول ۱۲۰ واژه و واحد یکسان را پیش از پاسخ‌ها تعیین کرده است.",
-    "evidence_files": "protocol/study_c_protocol.json; data/config.json; /workspace/research_phase/artifact_audit",
-    "remaining_work_or_limit_fa": "واقع‌نمایی این قالب کنترل‌شده برای تمام حمله‌های طبیعی اثبات نشده است.",
+    "implementation_status_fa": "ویژگی درج‌ها مستند و کنترول‌های متناظر اجرا شده",
+    "implemented_action_fa": "در B/C تعداد، طول درج، قالب و برچسب‌ها ثبت شده‌اند؛ در C درج‌های۱۲۰واژه‌ای و کنترول مواجههٔ جدا اجرا شده است.",
+    "evidence_files": "data/dataset_build_manifest.json; data/insertions.json; data/controlled_contexts.json; analysis/study_c/analysis.json",
+    "remaining_work_or_limit_fa": "هم‌طولی به معنی هم‌معنایی یا برابری بازیابی نیست؛ دامنهٔ قالب حمله در مقاله محدود بیان شده است.",
     "completion_criterion_fa": "توصیف واژه/طول/قالب/شباهت از متن‌های ثابت A و B جدا استخراج و تفاوت دامنهٔ حملات بیان شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.4.1",
@@ -279,11 +279,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P2",
     "implementation_status_fa": "کد و مثال اجرایی آماده",
-    "implemented_action_fa": "تطبیق قدیمی از انتخاب عددی سخت‌گیرانه، نفی، نقل قول، قید و امتناع جمله‌ای جدا شد؛ ۱۱ آزمون مرزی گذشت.",
+    "implemented_action_fa": "تطبیق قدیمی از انتخاب عددی سخت‌گیرانه، نفی، نقل قول، قید و امتناع جمله‌ای جدا شد؛ ۱۱ آزمایش مرزی گذشت.",
     "evidence_files": "evaluation/evaluator_v2.py; evaluation/test_evaluator_v2.py; evaluation/HUMAN_REVIEW_RUBRIC_EN.md",
     "remaining_work_or_limit_fa": "شناسهٔ خودکارِ انتخاب عددی به‌تنهایی صحت واقعیت یا پذیرش معنایی را تصدیق نمی‌کند.",
     "completion_criterion_fa": "قاعدهٔ هر نسخهٔ ارزیاب همراه مثال ورودی/خروجی واقعی، مخرج و نام معیار مستند شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.4.2",
@@ -292,11 +292,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P2",
     "implementation_status_fa": "کد و مثال اجرایی آماده",
-    "implemented_action_fa": "تطبیق قدیمی از انتخاب عددی سخت‌گیرانه، نفی، نقل قول، قید و امتناع جمله‌ای جدا شد؛ ۱۱ آزمون مرزی گذشت.",
+    "implemented_action_fa": "تطبیق قدیمی از انتخاب عددی سخت‌گیرانه، نفی، نقل قول، قید و امتناع جمله‌ای جدا شد؛ ۱۱ آزمایش مرزی گذشت.",
     "evidence_files": "evaluation/evaluator_v2.py; evaluation/test_evaluator_v2.py; evaluation/HUMAN_REVIEW_RUBRIC_EN.md",
     "remaining_work_or_limit_fa": "شناسهٔ خودکارِ انتخاب عددی به‌تنهایی صحت واقعیت یا پذیرش معنایی را تصدیق نمی‌کند.",
     "completion_criterion_fa": "قواعد صریح قالب، تبدیل مجاز واحد، قید مقدار، نفی، UNKNOWN و نام‌های رقمی ثبت و با نمونه‌های معنادار بررسی شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.4.3",
@@ -305,11 +305,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P2",
     "implementation_status_fa": "B بازتحلیل شد؛ خروجی تاریخی A باز است",
-    "implemented_action_fa": "قاعدهٔ قدیمی روی تمام ۱۲۸۰ ردیف B با صفر اختلاف محاسباتی بازتولید شد؛ ورودی A جدا بازسازی شده است.",
+    "implemented_action_fa": "قاعدهٔ قدیمی روی تمام ۱۲۸۰ سطر B با صفر اختلاف محاسباتی بازتولید شد؛ ورودی A جدا بازسازی شده است.",
     "evidence_files": "evaluation/B_reanalysis_v2_summary.json; history/reproducibility_decision.json",
-    "remaining_work_or_limit_fa": "بازنمره‌دهی ۲۱٬۸۴۰ و ۳٬۰۱۶ ردیف تاریخی بدون آرشیو همان اجرا تکمیل نشده است.",
-    "completion_criterion_fa": "ممیزی B و تحلیل اصلاحی جدا بازتولید شود؛ ارقام A تنها در صورت دسترسی به آرشیو همان اجرا دوباره تأیید شوند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "بازنمره‌دهی ۲۱۸۴۰ و ۳۰۱۶ سطر تاریخی بدون آرشیف همان اجرا تکمیل نشده است.",
+    "completion_criterion_fa": "ممیزی B و تحلیل اصلاحی جدا بازتولید شود؛ ارقام A تنها در صورت دسترسی به آرشیف همان اجرا دوباره تأیید شوند.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.4.4",
@@ -320,9 +320,9 @@
     "implementation_status_fa": "بررسی دستی معنایی نویسنده انجام و یافته‌ها ثبت شده",
     "implemented_action_fa": "نویسنده بررسی۷۲مورد را گزارش کرده است:۳۲B،۳۲C و۸تشخیصی؛ نمونهٔ اصلی۶۴مورد با۴۱سازگار،۱۶مخالف،۳امتناع کامل و۴نامشخص و نمونه‌های معنایی ارائه شد.",
     "evidence_files": "manual_review/author_reported_findings.json; assistant_review/Case_Review_72.csv; manuscript/Working_Manuscript_v2.md",
-    "remaining_work_or_limit_fa": "شمارها مربوط به نمونهٔ پسینی است؛ توافق بین ارزیابان یا درصد موفقیت معنایی برای کل آزمایش ادعا نشده است.",
+    "remaining_work_or_limit_fa": "شمارها مربوط به نمونهٔ پسینی است؛ توافق بین ارزیابان یا فیصد موفقیت معنایی برای کل آزمایش ادعا نشده است.",
     "completion_criterion_fa": "نمونهٔ واقعی با شناسه، پاسخ، مرجع، زمینه و دلیل طبقه‌بندی به گزارش افزوده شود؛ تحلیل ماشینی انسانی نامیده نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.4.5",
@@ -333,9 +333,9 @@
     "implementation_status_fa": "بررسی دستی معنایی نویسنده انجام و یافته‌ها ثبت شده",
     "implemented_action_fa": "نویسنده بررسی۷۲مورد را گزارش کرده است:۳۲B،۳۲C و۸تشخیصی؛ نمونهٔ اصلی۶۴مورد با۴۱سازگار،۱۶مخالف،۳امتناع کامل و۴نامشخص و نمونه‌های معنایی ارائه شد.",
     "evidence_files": "manual_review/author_reported_findings.json; assistant_review/Case_Review_72.csv; manuscript/Working_Manuscript_v2.md",
-    "remaining_work_or_limit_fa": "شمارها مربوط به نمونهٔ پسینی است؛ توافق بین ارزیابان یا درصد موفقیت معنایی برای کل آزمایش ادعا نشده است.",
+    "remaining_work_or_limit_fa": "شمارها مربوط به نمونهٔ پسینی است؛ توافق بین ارزیابان یا فیصد موفقیت معنایی برای کل آزمایش ادعا نشده است.",
     "completion_criterion_fa": "اگر اجرا شد، برچسب واقعی انسان، طرح نمونه‌گیری، اختلاف و مقایسهٔ خطای خودکار تحویل شود؛ اگر ممکن نبود، عدم انجام و حد ادعا آشکار بماند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.4.6",
@@ -348,7 +348,7 @@
     "evidence_files": "evaluation/evaluator_v2.py; analysis/analyze_study_c.py; evaluation/HUMAN_REVIEW_RUBRIC_EN.md",
     "remaining_work_or_limit_fa": "ستون صحت معنایی و استلزام تا داوری واقعی سنجیده‌نشده باقی است.",
     "completion_criterion_fa": "بازیابی شاهد، صحت واقعی، پشتیبانی زمینه، امتناع و تأیید مقدار مهاجم در ستون‌های جدا ثبت و تعریف شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.5.1",
@@ -360,8 +360,8 @@
     "implemented_action_fa": "بازیابی شاهد، مواجهه، انتخاب مقدار مرجع، انتخاب مقدار مهاجم، پشتیبانی و امتناع معیارهای جدا دارند.",
     "evidence_files": "evaluation/evaluator_v2.py; analysis/analyze_study_c.py; evaluation/HUMAN_REVIEW_RUBRIC_EN.md",
     "remaining_work_or_limit_fa": "ستون صحت معنایی و استلزام تا داوری واقعی سنجیده‌نشده باقی است.",
-    "completion_criterion_fa": "جدول نتایج و مخرج هر مرحله جدا بماند؛ درصدهای تعریف‌متفاوت ASR مستقیماً مقایسه نشوند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "جدول نتایج و مخرج هر مرحله جدا بماند؛ فیصدهای تعریف‌متفاوت ASR مستقیماً مقایسه نشوند.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.5.2",
@@ -372,9 +372,9 @@
     "implementation_status_fa": "تحلیل خودکار B و C انجام‌شده",
     "implemented_action_fa": "جلوگیری از مقدار هدف، بازگشت مقدار مرجع و خطاهای تازه جدا است؛ گروه‌های شکست و انتخاب نمونه با قاعدهٔ ثابت تعریف شد.",
     "evidence_files": "analysis/study_c/analysis.json; analysis/study_c/cases.jsonl; analysis/README_ANALYSIS.md; /workspace/research_phase/artifact_audit",
-    "remaining_work_or_limit_fa": "نتایج C در فایل‌های واقعی تحلیل قرار دارد؛ تفسیر معنایی نهایی منتظر انسان است.",
+    "remaining_work_or_limit_fa": "تحلیل C و یافته‌های بررسی۷۲موردی نویسنده موجودند؛ شمارهای نمونهٔ معنایی به تمام پاسخ‌ها تعمیم ارائه نشده و نمره‌های آرشیفی بدون نام نسخه جایگزین نشده‌اند.",
     "completion_criterion_fa": "نمونه‌های هم‌شرطِ دارای شاهد درست و پاسخ مسئله‌دار با زمینه و پاسخ واقعی ارایه شود؛ تبیین علّی فراتر از طراحی ادعا نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.5.3",
@@ -385,9 +385,9 @@
     "implementation_status_fa": "تحلیل خودکار B و C انجام‌شده",
     "implemented_action_fa": "جلوگیری از مقدار هدف، بازگشت مقدار مرجع و خطاهای تازه جدا است؛ گروه‌های شکست و انتخاب نمونه با قاعدهٔ ثابت تعریف شد.",
     "evidence_files": "analysis/study_c/analysis.json; analysis/study_c/cases.jsonl; analysis/README_ANALYSIS.md; /workspace/research_phase/artifact_audit",
-    "remaining_work_or_limit_fa": "نتایج C در فایل‌های واقعی تحلیل قرار دارد؛ تفسیر معنایی نهایی منتظر انسان است.",
+    "remaining_work_or_limit_fa": "تحلیل C و یافته‌های بررسی۷۲موردی نویسنده موجودند؛ شمارهای نمونهٔ معنایی به تمام پاسخ‌ها تعمیم ارائه نشده و نمره‌های آرشیفی بدون نام نسخه جایگزین نشده‌اند.",
     "completion_criterion_fa": "طبقه‌بندی خطا و موارد واقعی همراه شمار، علت طبقه‌بندی و محدودیت تأیید معنایی ارایه شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.5.4",
@@ -398,9 +398,9 @@
     "implementation_status_fa": "اصلاح ادعا در نسخهٔ کاری",
     "implemented_action_fa": "صفر مشاهده‌شده و برچسب آزمایشی به مصونیت عمومی تعبیر نمی‌شود؛ حدود مطالعه در متن درج شد.",
     "evidence_files": "manuscript/Working_Manuscript_v2.md; baseline/claims_registry.json",
-    "remaining_work_or_limit_fa": "بازخوانی نهایی متن پس از تکمیل داوری انسانی لازم است.",
+    "remaining_work_or_limit_fa": "ادعاها با نتیجه‌های ثبت‌شده و بررسی موردی نویسنده هماهنگ شده‌اند؛ مصونیت عمومی، احراز اصالت عملیاتی یا تعمیم به مدل‌های دیگر ادعا نشده است.",
     "completion_criterion_fa": "صفر تنها به موفقیت مشاهده‌شده با معیار، نمونه و فرض معین نسبت داده شود؛ مصونیت عمومی یا تضمین رسمی ادعا نگردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.6.1",
@@ -408,12 +408,12 @@
     "requirement_fa": "شیوهٔ تخصیص برچسب اعتماد",
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P0",
-    "implementation_status_fa": "فرض اعتماد روشن؛ سامانهٔ عملیاتی اجرا نشده",
+    "implementation_status_fa": "فرض اعتماد روشن؛ سیستم عملیاتی اجرا نشده",
     "implemented_action_fa": "تغییر metadata آزمایش صفات ورودی است؛ صلاحیت نهادی، احراز هویت و نفوذ واقعی ادعا نشده است.",
     "evidence_files": "protocol/study_c_protocol.json; baseline/claims_registry.json; manuscript/Working_Manuscript_v2.md",
-    "remaining_work_or_limit_fa": "سامانهٔ عملیاتی تأیید، کنترل صلاحیت و آزمون نفوذ به روند تأیید ساخته و آزمایش نشده است.",
+    "remaining_work_or_limit_fa": "سیستم عملیاتی تأیید، کنترول صلاحیت و آزمایش نفوذ به روند تأیید ساخته و آزمایش نشده است.",
     "completion_criterion_fa": "سازندهٔ دیتاست، برچسب‌های قبلی و فرض‌های ورودی معلوم شود؛ سیاست واقعی تأیید در صورت وجود سند جدا معرفی گردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.6.2",
@@ -421,12 +421,12 @@
     "requirement_fa": "مرجع صلاحیت تأیید سند",
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P0",
-    "implementation_status_fa": "فرض اعتماد روشن؛ سامانهٔ عملیاتی اجرا نشده",
+    "implementation_status_fa": "فرض اعتماد روشن؛ سیستم عملیاتی اجرا نشده",
     "implemented_action_fa": "تغییر metadata آزمایش صفات ورودی است؛ صلاحیت نهادی، احراز هویت و نفوذ واقعی ادعا نشده است.",
     "evidence_files": "protocol/study_c_protocol.json; baseline/claims_registry.json; manuscript/Working_Manuscript_v2.md",
-    "remaining_work_or_limit_fa": "سامانهٔ عملیاتی تأیید، کنترل صلاحیت و آزمون نفوذ به روند تأیید ساخته و آزمایش نشده است.",
+    "remaining_work_or_limit_fa": "سیستم عملیاتی تأیید، کنترول صلاحیت و آزمایش نفوذ به روند تأیید ساخته و آزمایش نشده است.",
     "completion_criterion_fa": "اگر مرجع نهادی مستند نیست، ماهیت آزمایشی برچسب تصریح و ادعای عملیاتی محدود شود؛ در صورت حفظ ادعا، مرجع و گردش کار واقعی لازم است.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.6.3",
@@ -434,12 +434,12 @@
     "requirement_fa": "احراز اصالت، صلاحیت و ثبت رویداد metadata",
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P0",
-    "implementation_status_fa": "فرض اعتماد روشن؛ سامانهٔ عملیاتی اجرا نشده",
+    "implementation_status_fa": "فرض اعتماد روشن؛ سیستم عملیاتی اجرا نشده",
     "implemented_action_fa": "تغییر metadata آزمایش صفات ورودی است؛ صلاحیت نهادی، احراز هویت و نفوذ واقعی ادعا نشده است.",
     "evidence_files": "protocol/study_c_protocol.json; baseline/claims_registry.json; manuscript/Working_Manuscript_v2.md",
-    "remaining_work_or_limit_fa": "سامانهٔ عملیاتی تأیید، کنترل صلاحیت و آزمون نفوذ به روند تأیید ساخته و آزمایش نشده است.",
+    "remaining_work_or_limit_fa": "سیستم عملیاتی تأیید، کنترول صلاحیت و آزمایش نفوذ به روند تأیید ساخته و آزمایش نشده است.",
     "completion_criterion_fa": "وجود یا نبود کنترول دسترسی، هویت تأییدکننده، ثبت تغییر و تمامیت جدا بیان شود؛ تغییر مستقیم فیلد نفوذ واقعی نامیده نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.6.4",
@@ -450,22 +450,22 @@
     "implementation_status_fa": "اصلاح ادعا در نسخهٔ کاری",
     "implemented_action_fa": "صفر مشاهده‌شده و برچسب آزمایشی به مصونیت عمومی تعبیر نمی‌شود؛ حدود مطالعه در متن درج شد.",
     "evidence_files": "manuscript/Working_Manuscript_v2.md; baseline/claims_registry.json",
-    "remaining_work_or_limit_fa": "بازخوانی نهایی متن پس از تکمیل داوری انسانی لازم است.",
+    "remaining_work_or_limit_fa": "ادعاها با نتیجه‌های ثبت‌شده و بررسی موردی نویسنده هماهنگ شده‌اند؛ مصونیت عمومی، احراز اصالت عملیاتی یا تعمیم به مدل‌های دیگر ادعا نشده است.",
     "completion_criterion_fa": "فرض درست‌بودن برچسب و جدا بودن اصالت از حقیقت در هر دو مطالعه و نتیجه حفظ شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.6.5",
     "expert_section": "3.6",
-    "requirement_fa": "آزمون تغییر غیرمجاز metadata در صورت امکان",
+    "requirement_fa": "آزمایش تغییر غیرمجاز metadata در صورت امکان",
     "expert_force_fa": "اختیاری در صورت امکان",
     "primary_work_package": "P0",
-    "implementation_status_fa": "فرض اعتماد روشن؛ سامانهٔ عملیاتی اجرا نشده",
+    "implementation_status_fa": "فرض اعتماد روشن؛ سیستم عملیاتی اجرا نشده",
     "implemented_action_fa": "تغییر metadata آزمایش صفات ورودی است؛ صلاحیت نهادی، احراز هویت و نفوذ واقعی ادعا نشده است.",
     "evidence_files": "protocol/study_c_protocol.json; baseline/claims_registry.json; manuscript/Working_Manuscript_v2.md",
-    "remaining_work_or_limit_fa": "سامانهٔ عملیاتی تأیید، کنترل صلاحیت و آزمون نفوذ به روند تأیید ساخته و آزمایش نشده است.",
-    "completion_criterion_fa": "آزمون برچسب موجود درست نام‌گذاری شود؛ آزمون عملیاتی تازه فقط در محیط کنترول‌شده با صلاحیت، لاگ و معیار رد/قبول اجرا شود، یا عدم اجرا روشن بماند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "سیستم عملیاتی تأیید، کنترول صلاحیت و آزمایش نفوذ به روند تأیید ساخته و آزمایش نشده است.",
+    "completion_criterion_fa": "آزمایش برچسب موجود درست نام‌گذاری شود؛ آزمایش عملیاتی تازه فقط در محیط کنترول‌شده با صلاحیت، لاگ و معیار رد/قبول اجرا شود، یا عدم اجرا روشن بماند.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.7.1",
@@ -476,9 +476,9 @@
     "implementation_status_fa": "نسخهٔ تازه روشن؛ عضویت تاریخی نامعلوم",
     "implemented_action_fa": "بودجه‌ها و seedهای گزارش‌شدهٔ تاریخی از پیش‌فرض فعلی جدا و قواعد ترتیب/تکرار C ثبت شد.",
     "evidence_files": "history/reproducibility_decision.json; protocol/study_c_protocol.json; data/config.json",
-    "remaining_work_or_limit_fa": "عضویت دقیق هدف‌ها و تنظیمات مؤثر همان اجرای تاریخی بدون آرشیو تأیید نمی‌شود.",
-    "completion_criterion_fa": "عضویت هدف‌ها و seedهای اجرای تاریخی تنها از آرشیو منطبق تأیید شود؛ بودجه‌های فعلی با قدیمی جایگزین نگردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "عضویت دقیق هدف‌ها و تنظیمات مؤثر همان اجرای تاریخی بدون آرشیف تأیید نمی‌شود.",
+    "completion_criterion_fa": "عضویت هدف‌ها و seedهای اجرای تاریخی تنها از آرشیف منطبق تأیید شود؛ بودجه‌های فعلی با قدیمی جایگزین نگردد.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.7.2",
@@ -487,11 +487,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P7",
     "implementation_status_fa": "قاعدهٔ تحلیل پیاده‌شده",
-    "implemented_action_fa": "پرسش، ردیف شرط، فراخوانی واقعی، پوشش هدف و مواجهه مخرج‌های جدا دارند؛ میانگین سه نوبت درون هر پرسش محاسبه می‌شود.",
+    "implemented_action_fa": "پرسش، سطر شرط، فراخوانی واقعی، پوشش هدف و مواجهه مخرج‌های جدا دارند؛ میانگین سه نوبت درون هر پرسش محاسبه می‌شود.",
     "evidence_files": "analysis/analyze_study_c.py; protocol/study_c_protocol.json; analysis/README_ANALYSIS.md",
     "remaining_work_or_limit_fa": "نمایهٔ مشترک و وابستگی معنایی خانواده‌های منبع محدودیت تعمیم می‌ماند.",
     "completion_criterion_fa": "شمار کل هدف، هدف واقعاً حمله‌شده، مواجهه و موفقیت با مخرج‌های مستقل در همهٔ جدول‌ها گزارش شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.7.3",
@@ -503,8 +503,8 @@
     "implemented_action_fa": "دوزهای ۱، ۲ و ۵ برای همان ۶۲ هدف و دو دفاع none/rerank پیش از خروجی انتخاب شد.",
     "evidence_files": "protocol/study_c_protocol.json; analysis/study_c/analysis.json",
     "remaining_work_or_limit_fa": "این ماژول بازاجرای آزمایش تکرار قدیمی نیست؛ تفسیر آن به مدل و قالب ثابت محدود است.",
-    "completion_criterion_fa": "در صورت انتخاب، پروتکل جدا با مجموعهٔ هدف ثابت، تعریف دوز و کنترل اندازهٔ زمینه تثبیت شود؛ یک دوز مثبت B یا تغییر شمار هدف جای آن را نگیرد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "در صورت انتخاب، پروتکل جدا با مجموعهٔ هدف ثابت، تعریف دوز و کنترول اندازهٔ زمینه تثبیت شود؛ یک دوز مثبت B یا تغییر شمار هدف جای آن را نگیرد.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.7.4",
@@ -515,9 +515,9 @@
     "implementation_status_fa": "نسخهٔ تازه روشن؛ عضویت تاریخی نامعلوم",
     "implemented_action_fa": "بودجه‌ها و seedهای گزارش‌شدهٔ تاریخی از پیش‌فرض فعلی جدا و قواعد ترتیب/تکرار C ثبت شد.",
     "evidence_files": "history/reproducibility_decision.json; protocol/study_c_protocol.json; data/config.json",
-    "remaining_work_or_limit_fa": "عضویت دقیق هدف‌ها و تنظیمات مؤثر همان اجرای تاریخی بدون آرشیو تأیید نمی‌شود.",
+    "remaining_work_or_limit_fa": "عضویت دقیق هدف‌ها و تنظیمات مؤثر همان اجرای تاریخی بدون آرشیف تأیید نمی‌شود.",
     "completion_criterion_fa": "seed انتخاب، ترتیب، تکرار و بوت‌استرپ با کاربرد جدا ثبت شود؛ seed تاریخی مجهول از کد فعلی حدس زده نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.8.1",
@@ -528,9 +528,9 @@
     "implementation_status_fa": "تحلیل خودکار B و C انجام‌شده",
     "implemented_action_fa": "جلوگیری از مقدار هدف، بازگشت مقدار مرجع و خطاهای تازه جدا است؛ گروه‌های شکست و انتخاب نمونه با قاعدهٔ ثابت تعریف شد.",
     "evidence_files": "analysis/study_c/analysis.json; analysis/study_c/cases.jsonl; analysis/README_ANALYSIS.md; /workspace/research_phase/artifact_audit",
-    "remaining_work_or_limit_fa": "نتایج C در فایل‌های واقعی تحلیل قرار دارد؛ تفسیر معنایی نهایی منتظر انسان است.",
+    "remaining_work_or_limit_fa": "تحلیل C و یافته‌های بررسی۷۲موردی نویسنده موجودند؛ شمارهای نمونهٔ معنایی به تمام پاسخ‌ها تعمیم ارائه نشده و نمره‌های آرشیفی بدون نام نسخه جایگزین نشده‌اند.",
     "completion_criterion_fa": "موارد جفتی با شناسهٔ پرسش، رتبهٔ شاهد، زمینه و طبقهٔ پاسخ ثبت شود؛ تأیید معنایی از تطبیق عدد جدا باشد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.8.2",
@@ -541,9 +541,9 @@
     "implementation_status_fa": "تحلیل خودکار B و C انجام‌شده",
     "implemented_action_fa": "جلوگیری از مقدار هدف، بازگشت مقدار مرجع و خطاهای تازه جدا است؛ گروه‌های شکست و انتخاب نمونه با قاعدهٔ ثابت تعریف شد.",
     "evidence_files": "analysis/study_c/analysis.json; analysis/study_c/cases.jsonl; analysis/README_ANALYSIS.md; /workspace/research_phase/artifact_audit",
-    "remaining_work_or_limit_fa": "نتایج C در فایل‌های واقعی تحلیل قرار دارد؛ تفسیر معنایی نهایی منتظر انسان است.",
+    "remaining_work_or_limit_fa": "تحلیل C و یافته‌های بررسی۷۲موردی نویسنده موجودند؛ شمارهای نمونهٔ معنایی به تمام پاسخ‌ها تعمیم ارائه نشده و نمره‌های آرشیفی بدون نام نسخه جایگزین نشده‌اند.",
     "completion_criterion_fa": "صحت، امتناع، خطای دیگر و عدم تأیید مقدار مهاجم جدا شمرده و با نمونهٔ واقعی توضیح داده شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.8.3",
@@ -554,9 +554,9 @@
     "implementation_status_fa": "تحلیل خودکار B و C انجام‌شده",
     "implemented_action_fa": "جلوگیری از مقدار هدف، بازگشت مقدار مرجع و خطاهای تازه جدا است؛ گروه‌های شکست و انتخاب نمونه با قاعدهٔ ثابت تعریف شد.",
     "evidence_files": "analysis/study_c/analysis.json; analysis/study_c/cases.jsonl; analysis/README_ANALYSIS.md; /workspace/research_phase/artifact_audit",
-    "remaining_work_or_limit_fa": "نتایج C در فایل‌های واقعی تحلیل قرار دارد؛ تفسیر معنایی نهایی منتظر انسان است.",
+    "remaining_work_or_limit_fa": "تحلیل C و یافته‌های بررسی۷۲موردی نویسنده موجودند؛ شمارهای نمونهٔ معنایی به تمام پاسخ‌ها تعمیم ارائه نشده و نمره‌های آرشیفی بدون نام نسخه جایگزین نشده‌اند.",
     "completion_criterion_fa": "انتقال‌های جلوگیری، بازگشت صحت و موفقیت تازه با شمار و نمونهٔ جفتی گزارش شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.8.4",
@@ -567,9 +567,9 @@
     "implementation_status_fa": "شرط برچسب B و C تحلیل شده",
     "implemented_action_fa": "مقایسهٔ متن و شناسهٔ یکسان با برچسب تغییریافته حفظ و از نفوذ عملیاتی جدا نام‌گذاری شد.",
     "evidence_files": "/workspace/research_phase/artifact_audit; evaluation/B_automatic_comparison_v2.csv; protocol/study_c_protocol.json",
-    "remaining_work_or_limit_fa": "اثر برچسب آزمایشی وجود صلاحیت یا تمامیت سامانهٔ واقعی تأیید را ثابت نمی‌کند.",
-    "completion_criterion_fa": "شرط متقابل موجود B و برچسب‌ها حفظ و تحلیل شود؛ نفوذ به سامانهٔ تأیید از آن نتیجه گرفته نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "اثر برچسب آزمایشی وجود صلاحیت یا تمامیت سیستم واقعی تأیید را ثابت نمی‌کند.",
+    "completion_criterion_fa": "شرط متقابل موجود B و برچسب‌ها حفظ و تحلیل شود؛ نفوذ به سیستم تأیید از آن نتیجه گرفته نشود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.8.5",
@@ -578,11 +578,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P3",
     "implementation_status_fa": "شکاف تاریخی ثبت؛ مطالعهٔ تازه جدا",
-    "implemented_action_fa": "جست‌وجوی محدود آرشیو ثبت شد؛ ۳٬۰۱۶ ردیف تاریخی و تشخیص ۱٬۰۹۲ردیفی به جای یکدیگر استفاده نشدند.",
+    "implemented_action_fa": "جست‌وجوی محدود آرشیف ثبت شد؛ ۳۰۱۶ سطر تاریخی و تشخیص ۱۰۹۲سطری به جای یکدیگر استفاده نشدند.",
     "evidence_files": "history/bounded_search_results.json; history/reproducibility_decision.json; protocol/study_c_protocol.json",
-    "remaining_work_or_limit_fa": "آرشیو تکرار تاریخی بازیابی نشده است؛ نتایج ماژول دوز C فقط به مطالعهٔ تازه تعلق دارد.",
-    "completion_criterion_fa": "ابتدا آرشیو اصلی جست‌وجو شود؛ اگر بازیابی نشد، مطالعهٔ آیندهٔ مستقل یا خروج شفاف ادعای فاقد شاهد و ثبت شکاف باقیمانده انتخاب شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "آرشیف تکرار تاریخی بازیابی نشده است؛ نتایج ماژول دوز C فقط به مطالعهٔ تازه تعلق دارد.",
+    "completion_criterion_fa": "ابتدا آرشیف اصلی جست‌وجو شود؛ اگر بازیابی نشد، مطالعهٔ آیندهٔ مستقل یا خروج شفاف ادعای فاقد شاهد و ثبت شکاف باقیمانده انتخاب شود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "3.8.6",
@@ -591,11 +591,11 @@
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P3",
     "implementation_status_fa": "شکاف تاریخی ثبت؛ مطالعهٔ تازه جدا",
-    "implemented_action_fa": "جست‌وجوی محدود آرشیو ثبت شد؛ ۳٬۰۱۶ ردیف تاریخی و تشخیص ۱٬۰۹۲ردیفی به جای یکدیگر استفاده نشدند.",
+    "implemented_action_fa": "جست‌وجوی محدود آرشیف ثبت شد؛ ۳۰۱۶ سطر تاریخی و تشخیص ۱۰۹۲سطری به جای یکدیگر استفاده نشدند.",
     "evidence_files": "history/bounded_search_results.json; history/reproducibility_decision.json; protocol/study_c_protocol.json",
-    "remaining_work_or_limit_fa": "آرشیو تکرار تاریخی بازیابی نشده است؛ نتایج ماژول دوز C فقط به مطالعهٔ تازه تعلق دارد.",
-    "completion_criterion_fa": "اجرای تاریخی هفت‌دوزی، تشخیص فعلی ۱٬۰۹۲ردیفی و مطالعهٔ آینده با شناسه، روش، داده و نتیجهٔ جدا نگه‌داشته شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "آرشیف تکرار تاریخی بازیابی نشده است؛ نتایج ماژول دوز C فقط به مطالعهٔ تازه تعلق دارد.",
+    "completion_criterion_fa": "اجرای تاریخی هفت‌دوزی، تشخیص فعلی ۱۰۹۲سطری و مطالعهٔ آینده با شناسه، روش، دیتا و نتیجهٔ جدا نگه‌داشته شود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "4.1",
@@ -603,12 +603,12 @@
     "requirement_fa": "چکیدهٔ متناسب با روش و محدودیت",
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P8",
-    "implementation_status_fa": "بازنویسی در نسخهٔ کاری",
-    "implemented_action_fa": "روش، مطالعه‌ها، مخرج‌ها، محدودیت اعتماد و تمایز رقم آرشیوی/اصلاحی در مقالهٔ کاری بازنویسی شد.",
+    "implementation_status_fa": "بازنویسی و بازسازی از شواهد موجود انجام‌شده",
+    "implemented_action_fa": "روش، مطالعه‌ها، مخرج‌ها، محدودیت اعتماد و تمایز رقم آرشیفی/اصلاحی در مقالهٔ کاری بازنویسی شد.",
     "evidence_files": "manuscript/Working_Manuscript_v2.md; manuscript/build_working_manuscript.py",
-    "remaining_work_or_limit_fa": "ساخت نهایی مقاله پس از آخرین تحلیل و داوری انسانی باید تکرار و بازخوانی شود؛ این وضعیت آمادگی نشر نیست.",
-    "completion_criterion_fa": "مسئله، روش واقعی، داده، نتیجهٔ تأییدشده و مهم‌ترین محدودیت در چکیده درج و با متن و جدول‌ها تطبیق شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "نسخهٔ مقاله و گزارش با تحلیل منطبق بازسازی شده است؛ تصمیم علمی دربارهٔ پذیرش یا نشر به بررسی متخصص وابسته است.",
+    "completion_criterion_fa": "مسئله، روش واقعی، دیتا، نتیجهٔ تأییدشده و مهم‌ترین محدودیت در چکیده درج و با متن و جدول‌ها تطبیق شود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "4.2",
@@ -616,12 +616,12 @@
     "requirement_fa": "روش قابل بازسازی",
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P8",
-    "implementation_status_fa": "بازنویسی در نسخهٔ کاری",
-    "implemented_action_fa": "روش، مطالعه‌ها، مخرج‌ها، محدودیت اعتماد و تمایز رقم آرشیوی/اصلاحی در مقالهٔ کاری بازنویسی شد.",
+    "implementation_status_fa": "بازنویسی و بازسازی از شواهد موجود انجام‌شده",
+    "implemented_action_fa": "روش، مطالعه‌ها، مخرج‌ها، محدودیت اعتماد و تمایز رقم آرشیفی/اصلاحی در مقالهٔ کاری بازنویسی شد.",
     "evidence_files": "manuscript/Working_Manuscript_v2.md; manuscript/build_working_manuscript.py",
-    "remaining_work_or_limit_fa": "ساخت نهایی مقاله پس از آخرین تحلیل و داوری انسانی باید تکرار و بازخوانی شود؛ این وضعیت آمادگی نشر نیست.",
+    "remaining_work_or_limit_fa": "نسخهٔ مقاله و گزارش با تحلیل منطبق بازسازی شده است؛ تصمیم علمی دربارهٔ پذیرش یا نشر به بررسی متخصص وابسته است.",
     "completion_criterion_fa": "نسخه، ورودی، مراحل، حمله، دفاع، ارزیاب و روش تحلیل کامل شرح داده شود؛ ادعای بازاجرای تاریخی فقط با شاهد منطبق بماند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "4.3",
@@ -629,12 +629,12 @@
     "requirement_fa": "تفکیک نتایج اصلی و تکمیلی",
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P8",
-    "implementation_status_fa": "بازنویسی در نسخهٔ کاری",
-    "implemented_action_fa": "روش، مطالعه‌ها، مخرج‌ها، محدودیت اعتماد و تمایز رقم آرشیوی/اصلاحی در مقالهٔ کاری بازنویسی شد.",
+    "implementation_status_fa": "بازنویسی و بازسازی از شواهد موجود انجام‌شده",
+    "implemented_action_fa": "روش، مطالعه‌ها، مخرج‌ها، محدودیت اعتماد و تمایز رقم آرشیفی/اصلاحی در مقالهٔ کاری بازنویسی شد.",
     "evidence_files": "manuscript/Working_Manuscript_v2.md; manuscript/build_working_manuscript.py",
-    "remaining_work_or_limit_fa": "ساخت نهایی مقاله پس از آخرین تحلیل و داوری انسانی باید تکرار و بازخوانی شود؛ این وضعیت آمادگی نشر نیست.",
-    "completion_criterion_fa": "هر جدول مدل، مطالعه، پروتکل، n، دوز، مخرج و نسخهٔ معیار داشته باشد؛ شمار ردیف‌های مطالعات جمع زده نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "نسخهٔ مقاله و گزارش با تحلیل منطبق بازسازی شده است؛ تصمیم علمی دربارهٔ پذیرش یا نشر به بررسی متخصص وابسته است.",
+    "completion_criterion_fa": "هر جدول مدل، مطالعه، پروتکل، n، دوز، مخرج و نسخهٔ معیار داشته باشد؛ شمار سطرهای مطالعات جمع زده نشود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "4.4",
@@ -642,12 +642,12 @@
     "requirement_fa": "بحث بر پایهٔ خطا و محدودیت metadata",
     "expert_force_fa": "الزام متخصص",
     "primary_work_package": "P8",
-    "implementation_status_fa": "بازنویسی در نسخهٔ کاری",
-    "implemented_action_fa": "روش، مطالعه‌ها، مخرج‌ها، محدودیت اعتماد و تمایز رقم آرشیوی/اصلاحی در مقالهٔ کاری بازنویسی شد.",
+    "implementation_status_fa": "بازنویسی و بازسازی از شواهد موجود انجام‌شده",
+    "implemented_action_fa": "روش، مطالعه‌ها، مخرج‌ها، محدودیت اعتماد و تمایز رقم آرشیفی/اصلاحی در مقالهٔ کاری بازنویسی شد.",
     "evidence_files": "manuscript/Working_Manuscript_v2.md; manuscript/build_working_manuscript.py",
-    "remaining_work_or_limit_fa": "ساخت نهایی مقاله پس از آخرین تحلیل و داوری انسانی باید تکرار و بازخوانی شود؛ این وضعیت آمادگی نشر نیست.",
+    "remaining_work_or_limit_fa": "نسخهٔ مقاله و گزارش با تحلیل منطبق بازسازی شده است؛ تصمیم علمی دربارهٔ پذیرش یا نشر به بررسی متخصص وابسته است.",
     "completion_criterion_fa": "بحث به نمونه‌های ردیابی‌پذیر و حدود طراحی تکیه کند؛ اختلاف بازیابی و پاسخ و مرز اعتماد بیان گردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "4.5",
@@ -658,22 +658,22 @@
     "implementation_status_fa": "اصلاح ادعا در نسخهٔ کاری",
     "implemented_action_fa": "صفر مشاهده‌شده و برچسب آزمایشی به مصونیت عمومی تعبیر نمی‌شود؛ حدود مطالعه در متن درج شد.",
     "evidence_files": "manuscript/Working_Manuscript_v2.md; baseline/claims_registry.json",
-    "remaining_work_or_limit_fa": "بازخوانی نهایی متن پس از تکمیل داوری انسانی لازم است.",
-    "completion_criterion_fa": "هر گزارهٔ نتیجه به شاهد مشخص وصل شود؛ ارقام آرشیوی و اصلاحی و ناتوانی در تعمیم روشن بماند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "ادعاها با نتیجه‌های ثبت‌شده و بررسی موردی نویسنده هماهنگ شده‌اند؛ مصونیت عمومی، احراز اصالت عملیاتی یا تعمیم به مدل‌های دیگر ادعا نشده است.",
+    "completion_criterion_fa": "هر گزارهٔ نتیجه به شاهد مشخص وصل شود؛ ارقام آرشیفی و اصلاحی و ناتوانی در تعمیم روشن بماند.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.1",
     "expert_section": "5",
-    "requirement_fa": "کد کامل آماده‌سازی تا ارزیابی",
+    "requirement_fa": "کد کامل آماده‌ساختن تا ارزیابی",
     "expert_force_fa": "قلم شواهد درخواستی",
     "primary_work_package": "P8",
     "implementation_status_fa": "کد ادامه و بازتحلیل موجود",
-    "implemented_action_fa": "آماده‌سازی، اجرا و تحلیل تازه نسخه‌دار است و ممیزی B از خروجی خام امکان دارد.",
+    "implemented_action_fa": "آماده‌ساختن، اجرا و تحلیل تازه نسخه‌دار است و ممیزی B از خروجی خام امکان دارد.",
     "evidence_files": "runner/run_study.py; evaluation/evaluator_v2.py; analysis/analyze_study_c.py; data/prepare_candidates.py",
     "remaining_work_or_limit_fa": "کد فعلی جای نسخهٔ منطبقِ بازیابی‌نشدهٔ اجرای تاریخی معرفی نمی‌شود؛ بستهٔ نهایی باید فرمان و هش داشته باشد.",
     "completion_criterion_fa": "کد فعلی و کد ادامهٔ تحقیق با commit و فرمان‌ها ارایه شود؛ نبود نسخهٔ منطبق اجرای اصلی مخفی نگردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.2",
@@ -682,11 +682,11 @@
     "expert_force_fa": "قلم شواهد درخواستی",
     "primary_work_package": "P8",
     "implementation_status_fa": "ورودی‌های موجود ردیابی شده",
-    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ مخزن و ممیزی ساختار مرتبط شد.",
+    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ ریپو و ممیزی ساختار مرتبط شد.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "دسترسی به این ورودی‌ها، هویت و بازتولید خروجی اجرای اصلی را ثابت نمی‌کند؛ نشر مواد جدید باید با manifest همراه باشد.",
-    "completion_criterion_fa": "چهار جدول اصلی و شِما و هش با پیوند ثابت دسترس‌پذیر باشد؛ وضعیت نشر بستهٔ B نیز جدا معلوم شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "چهار جدول اصلی و شِما و هش با لینک ثابت دسترس‌پذیر باشد؛ وضعیت نشر بستهٔ B نیز جدا معلوم شود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.3",
@@ -695,11 +695,11 @@
     "expert_force_fa": "قلم شواهد درخواستی",
     "primary_work_package": "P8",
     "implementation_status_fa": "ورودی‌های موجود ردیابی شده",
-    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ مخزن و ممیزی ساختار مرتبط شد.",
+    "implemented_action_fa": "جداول ۲۲۴ سند، ۲۲۵ قطعه، ۳۶۴ پرسش و ۱۰۴ حملهٔ موجود با نسخهٔ ریپو و ممیزی ساختار مرتبط شد.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "دسترسی به این ورودی‌ها، هویت و بازتولید خروجی اجرای اصلی را ثابت نمی‌کند؛ نشر مواد جدید باید با manifest همراه باشد.",
-    "completion_criterion_fa": "بستهٔ کامل A و B با پیوندها و نسخهٔ مقدار هدف و وضعیت صحت‌سنجی ارایه شود؛ ادعای تاریخی فراتر از آرشیو نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "بستهٔ کامل A و B با لینکها و نسخهٔ مقدار هدف و وضعیت صحت‌سنجی ارایه شود؛ ادعای تاریخی فراتر از آرشیف نشود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.4",
@@ -710,9 +710,9 @@
     "implementation_status_fa": "نسخهٔ تازه روشن؛ عضویت تاریخی نامعلوم",
     "implemented_action_fa": "بودجه‌ها و seedهای گزارش‌شدهٔ تاریخی از پیش‌فرض فعلی جدا و قواعد ترتیب/تکرار C ثبت شد.",
     "evidence_files": "history/reproducibility_decision.json; protocol/study_c_protocol.json; data/config.json",
-    "remaining_work_or_limit_fa": "عضویت دقیق هدف‌ها و تنظیمات مؤثر همان اجرای تاریخی بدون آرشیو تأیید نمی‌شود.",
-    "completion_criterion_fa": "تنظیمات هر اجرای موجود یا آینده با شناسهٔ داده/کد/مدل منطبق باشد؛ مجهولات تاریخی صریح باقی بماند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "عضویت دقیق هدف‌ها و تنظیمات مؤثر همان اجرای تاریخی بدون آرشیف تأیید نمی‌شود.",
+    "completion_criterion_fa": "تنظیمات هر اجرای موجود یا آینده با شناسهٔ دیتا/کد/مدل منطبق باشد؛ مجهولات تاریخی صریح باقی بماند.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.5",
@@ -720,12 +720,12 @@
     "requirement_fa": "خروجی خام هر پرسش، دفاع و دوز",
     "expert_force_fa": "قلم شواهد درخواستی",
     "primary_work_package": "P3",
-    "implementation_status_fa": "B/C محفوظ؛ آرشیو تاریخی A بازیابی نشده",
-    "implemented_action_fa": "وضعیت دسترسی principal، تکرار، تشخیصی و B/C جدا ثبت شده است؛ تکمیل C با رسید و هش آرشیو خودش سنجیده می‌شود.",
+    "implementation_status_fa": "B/C محفوظ؛ آرشیف تاریخی A بازیابی نشده",
+    "implemented_action_fa": "وضعیت دسترسی principal، تکرار، تشخیصی و B/C جدا ثبت شده است؛ تکمیل C با رسید و هش آرشیف خودش سنجیده می‌شود.",
     "evidence_files": "history/reproducibility_decision.json; /workspace/revision/experiment/responses.jsonl; study_c/responses.jsonl; study_c/completion.json",
-    "remaining_work_or_limit_fa": "خروجی کامل principal و تکرار تاریخی موجود نیست؛ C فقط در صورت تکمیل آرشیو خودش شاهد تازه است.",
-    "completion_criterion_fa": "آرشیو اصلی، تشخیصی، B و آینده با وضعیت دسترسی جدا فهرست شود؛ آرشیو تشخیصی جای خروجی اصلی عرضه نگردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "خروجی کامل principal و تکرار تاریخی موجود نیست؛ C فقط در صورت تکمیل آرشیف خودش شاهد تازه است.",
+    "completion_criterion_fa": "آرشیف اصلی، تشخیصی، B و آینده با وضعیت دسترسی جدا فهرست شود؛ آرشیف تشخیصی جای خروجی اصلی عرضه نگردد.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.6",
@@ -734,11 +734,11 @@
     "expert_force_fa": "قلم شواهد درخواستی",
     "primary_work_package": "P8",
     "implementation_status_fa": "کد ادامه و بازتحلیل موجود",
-    "implemented_action_fa": "آماده‌سازی، اجرا و تحلیل تازه نسخه‌دار است و ممیزی B از خروجی خام امکان دارد.",
+    "implemented_action_fa": "آماده‌ساختن، اجرا و تحلیل تازه نسخه‌دار است و ممیزی B از خروجی خام امکان دارد.",
     "evidence_files": "runner/run_study.py; evaluation/evaluator_v2.py; analysis/analyze_study_c.py; data/prepare_candidates.py",
     "remaining_work_or_limit_fa": "کد فعلی جای نسخهٔ منطبقِ بازیابی‌نشدهٔ اجرای تاریخی معرفی نمی‌شود؛ بستهٔ نهایی باید فرمان و هش داشته باشد.",
     "completion_criterion_fa": "ارزیاب نسخه‌دار، مثال‌ها و فرمان بازتحلیل از خروجی خام آماده باشد؛ نسخهٔ تاریخیِ نامعلوم با نسخهٔ فعلی یکی دانسته نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.7",
@@ -746,12 +746,12 @@
     "requirement_fa": "محیط نرم‌افزار و سخت‌افزار",
     "expert_force_fa": "قلم شواهد درخواستی",
     "primary_work_package": "P4",
-    "implementation_status_fa": "کنترل اجرا و محیط C مستند",
-    "implemented_action_fa": "کنترل هش پیش از هر ارسال/ادامه، مدل برگشتی، سقف هزینه و توقف خطا در runner پیاده شد؛ محیط مشتری ثبت است.",
+    "implementation_status_fa": "کنترول اجرا و محیط C مستند",
+    "implemented_action_fa": "کنترول هش پیش از هر ارسال/ادامه، مدل برگشتی، سقف هزینه و توقف خطا در runner پیاده شد؛ محیط مشتری ثبت است.",
     "evidence_files": "runner/run_study.py; runner/test_run_study.py; protocol/client_environment.json; protocol/client_hardware_observation.json",
     "remaining_work_or_limit_fa": "سخت‌افزار سرویس مدل و محیط دقیق تاریخی نامعلوم است؛ محیط فعلی جای آن ثبت نشده است.",
     "completion_criterion_fa": "فهرست نسخه و محیط هر اجرا و موارد مجهول تاریخی ثبت شود؛ میزبان فعلی برای پرکردن فیلد تاریخی استفاده نشود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.8",
@@ -760,11 +760,11 @@
     "expert_force_fa": "قلم شواهد درخواستی",
     "primary_work_package": "P1",
     "implementation_status_fa": "منشأ نسخه‌دار ثبت؛ تصدیق جامع بیرونی باز است",
-    "implemented_action_fa": "ورودی‌های فعلی A، snapshot منبع B/C و پرونده‌های رابطه و قید B/C با نسخه و مسیر شاهد ثبت شده‌اند؛ نوع بررسی دستیار از داوری انسانی جدا است.",
+    "implemented_action_fa": "ورودی‌های فعلی A، snapshot منبع B/C و فایل‌های رابطه و قید B/C با نسخه و مسیر شاهد ثبت شده‌اند؛ نوع بررسی دستیار از داوری انسانی جدا است.",
     "evidence_files": "/workspace/research_phase/repo_audit/original_data_audit.json; data/source_dataset_metadata.json; data/reference_cards.json; reference_audit/B_reference_audit_summary.json",
     "remaining_work_or_limit_fa": "ثبت منشأ و تطبیق snapshot، صحت مستقل تمام واقعیت‌های بیرونی A/B/C را ثابت نمی‌کند؛ داوری واقعی و بررسی منابع مسئله‌دار همچنان لازم است.",
     "completion_criterion_fa": "snapshotها، URL، تاریخ، هش، روش استخراج و نوع بررسی واقعی با حدود حق نشر و بازبینی قبلی ثبت شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.9",
@@ -777,7 +777,7 @@
     "evidence_files": "baseline/study_registry.json; baseline/claims_registry.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "شناسهٔ دقیق کد و محیط اجرای اصلی تاریخی همچنان بازیابی نشده است.",
     "completion_criterion_fa": "جدول تفاوت‌ها با سند اصلی در صورت دسترسی، و تفکیک صریح توضیح مستند/استنباط پسینی آماده شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.10",
@@ -786,11 +786,11 @@
     "expert_force_fa": "قلم شواهد درخواستی",
     "primary_work_package": "P8",
     "implementation_status_fa": "شکاف تاریخی ثبت؛ مطالعهٔ تازه جدا",
-    "implemented_action_fa": "جست‌وجوی محدود آرشیو ثبت شد؛ ۳٬۰۱۶ ردیف تاریخی و تشخیص ۱٬۰۹۲ردیفی به جای یکدیگر استفاده نشدند.",
+    "implemented_action_fa": "جست‌وجوی محدود آرشیف ثبت شد؛ ۳۰۱۶ سطر تاریخی و تشخیص ۱۰۹۲سطری به جای یکدیگر استفاده نشدند.",
     "evidence_files": "history/bounded_search_results.json; history/reproducibility_decision.json; protocol/study_c_protocol.json",
-    "remaining_work_or_limit_fa": "آرشیو تکرار تاریخی بازیابی نشده است؛ نتایج ماژول دوز C فقط به مطالعهٔ تازه تعلق دارد.",
-    "completion_criterion_fa": "برای هر پروتکل، شناسهٔ کد/داده/تنظیم/نتیجه و وضعیت کمبود جدا ثبت شود؛ نسخه‌ها و آرشیوها ادغام نگردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "آرشیف تکرار تاریخی بازیابی نشده است؛ نتایج ماژول دوز C فقط به مطالعهٔ تازه تعلق دارد.",
+    "completion_criterion_fa": "برای هر پروتکل، شناسهٔ کد/دیتا/تنظیم/نتیجه و وضعیت کمبود جدا ثبت شود؛ نسخه‌ها و آرشیفها ادغام نگردد.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "5.11",
@@ -799,11 +799,11 @@
     "expert_force_fa": "مشروط به ادعا/وضعیت",
     "primary_work_package": "P8",
     "implementation_status_fa": "تاحدی؛ شرایط استفاده باید حفظ شود",
-    "implemented_action_fa": "منشأ عمومی و نسخهٔ منبع معرفی شده؛ عمومی‌بودن داده با انتقال بی‌قید حقوق برابر گرفته نشده است.",
+    "implemented_action_fa": "منشأ عمومی و نسخهٔ منبع معرفی شده؛ عمومی‌بودن دیتا با انتقال بی‌قید حقوق برابر گرفته نشده است.",
     "evidence_files": "data/source_dataset_metadata.json; manuscript/Working_Manuscript_v2.md; /workspace/research_phase/source_catalog.json",
     "remaining_work_or_limit_fa": "حقوق تمام منابع قبلی مستقلاً حل نشده؛ اشتراک عمومی بسته نیازمند حفظ شرایط منبع و اعلام مواد محلی است.",
     "completion_criterion_fa": "مواد قابل اشتراک با شرایط منبع و وضعیت واقعی دسترسی معرفی شود؛ حقوق قبلی حل‌نشده و مواد محلی B آشکار بماند.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "6.1",
@@ -815,8 +815,8 @@
     "implemented_action_fa": "مطالعهٔ تاریخی، کد فعلی، آزمایش تشخیصی و B/C در دفتر نسخه و ادعا جدا ثبت شد.",
     "evidence_files": "baseline/study_registry.json; baseline/claims_registry.json; history/reproducibility_decision.json",
     "remaining_work_or_limit_fa": "شناسهٔ دقیق کد و محیط اجرای اصلی تاریخی همچنان بازیابی نشده است.",
-    "completion_criterion_fa": "سند مبنا و مرز مطالعه‌ها پیش از اصلاح نتایج آماده شود؛ عبارت کهنهٔ نبود همهٔ داده و کد A در بازنویسی اصلاح گردد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "completion_criterion_fa": "سند مبنا و مرز مطالعه‌ها پیش از اصلاح نتایج آماده شود؛ عبارت کهنهٔ نبود همهٔ دیتا و کد A در بازنویسی اصلاح گردد.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "6.2",
@@ -825,11 +825,11 @@
     "expert_force_fa": "ترتیب پیشنهادی متخصص",
     "primary_work_package": "P3",
     "implementation_status_fa": "B بازتحلیل شد؛ خروجی تاریخی A باز است",
-    "implemented_action_fa": "قاعدهٔ قدیمی روی تمام ۱۲۸۰ ردیف B با صفر اختلاف محاسباتی بازتولید شد؛ ورودی A جدا بازسازی شده است.",
+    "implemented_action_fa": "قاعدهٔ قدیمی روی تمام ۱۲۸۰ سطر B با صفر اختلاف محاسباتی بازتولید شد؛ ورودی A جدا بازسازی شده است.",
     "evidence_files": "evaluation/B_reanalysis_v2_summary.json; history/reproducibility_decision.json",
-    "remaining_work_or_limit_fa": "بازنمره‌دهی ۲۱٬۸۴۰ و ۳٬۰۱۶ ردیف تاریخی بدون آرشیو همان اجرا تکمیل نشده است.",
+    "remaining_work_or_limit_fa": "بازنمره‌دهی ۲۱۸۴۰ و ۳۰۱۶ سطر تاریخی بدون آرشیف همان اجرا تکمیل نشده است.",
     "completion_criterion_fa": "بازتحلیل B و بازسازی ورودی A از بازتولید خروجی تاریخی جدا بماند؛ برای هر مسیر رسید ممیزی و وضعیت مستقل ثبت شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "6.3",
@@ -840,9 +840,9 @@
     "implementation_status_fa": "بررسی دستی معنایی نویسنده انجام و یافته‌ها ثبت شده",
     "implemented_action_fa": "نویسنده بررسی۷۲مورد را گزارش کرده است:۳۲B،۳۲C و۸تشخیصی؛ نمونهٔ اصلی۶۴مورد با۴۱سازگار،۱۶مخالف،۳امتناع کامل و۴نامشخص و نمونه‌های معنایی ارائه شد.",
     "evidence_files": "manual_review/author_reported_findings.json; assistant_review/Case_Review_72.csv; manuscript/Working_Manuscript_v2.md",
-    "remaining_work_or_limit_fa": "شمارها مربوط به نمونهٔ پسینی است؛ توافق بین ارزیابان یا درصد موفقیت معنایی برای کل آزمایش ادعا نشده است.",
+    "remaining_work_or_limit_fa": "شمارها مربوط به نمونهٔ پسینی است؛ توافق بین ارزیابان یا فیصد موفقیت معنایی برای کل آزمایش ادعا نشده است.",
     "completion_criterion_fa": "طرح بررسی انسانی و معیار پیش از بازنمره‌دهی نهایی تثبیت و نتیجهٔ واقعی یا عدم انجام آن صریح گزارش شود؛ واحد تحلیل موجه باشد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "6.4",
@@ -851,11 +851,11 @@
     "expert_force_fa": "ترتیب پیشنهادی متخصص",
     "primary_work_package": "P6",
     "implementation_status_fa": "مطالعهٔ C اجرا و تحلیل شده",
-    "implemented_action_fa": "پرسش تحقیق، کنترل نامرتبط و بی‌ضرر، زمینهٔ ثابت، دوز، مدل ثابت، توقف و سقف USD5 پیش از خروجی ثبت شد.",
+    "implemented_action_fa": "پرسش تحقیق، کنترول نامرتبط و بی‌ضرر، زمینهٔ ثابت، دوز، مدل ثابت، توقف و سقف USD5 پیش از خروجی ثبت شد.",
     "evidence_files": "analysis/study_c/analysis.json; protocol/study_c_protocol.json",
-    "remaining_work_or_limit_fa": "نتیجهٔ خودکار جای داوری معنایی نمی‌گیرد؛ پیش‌آموزش و تعمیم به مدل‌های دیگر کنترل نشده است.",
-    "completion_criterion_fa": "وجود آزمایش مولد B پذیرفته بماند؛ هر مقایسهٔ تازه با سؤال تحقیق، کنترل، توقف، هزینه و معیار از پیش نوشته شود.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "remaining_work_or_limit_fa": "نتیجهٔ خودکار جای داوری معنایی نمی‌گیرد؛ پیش‌آموزش و تعمیم به مدل‌های دیگر کنترول نشده است.",
+    "completion_criterion_fa": "وجود آزمایش مولد B پذیرفته بماند؛ هر مقایسهٔ تازه با سؤال تحقیق، کنترول، توقف، هزینه و معیار از پیش نوشته شود.",
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   },
   {
     "requirement_id": "6.5",
@@ -863,11 +863,11 @@
     "requirement_fa": "در پایان بازنویسی بر اساس نتایج تأییدشده",
     "expert_force_fa": "ترتیب پیشنهادی متخصص",
     "primary_work_package": "P8",
-    "implementation_status_fa": "بازنویسی در نسخهٔ کاری",
-    "implemented_action_fa": "روش، مطالعه‌ها، مخرج‌ها، محدودیت اعتماد و تمایز رقم آرشیوی/اصلاحی در مقالهٔ کاری بازنویسی شد.",
+    "implementation_status_fa": "بازنویسی و بازسازی از شواهد موجود انجام‌شده",
+    "implemented_action_fa": "روش، مطالعه‌ها، مخرج‌ها، محدودیت اعتماد و تمایز رقم آرشیفی/اصلاحی در مقالهٔ کاری بازنویسی شد.",
     "evidence_files": "manuscript/Working_Manuscript_v2.md; manuscript/build_working_manuscript.py",
-    "remaining_work_or_limit_fa": "ساخت نهایی مقاله پس از آخرین تحلیل و داوری انسانی باید تکرار و بازخوانی شود؛ این وضعیت آمادگی نشر نیست.",
+    "remaining_work_or_limit_fa": "نسخهٔ مقاله و گزارش با تحلیل منطبق بازسازی شده است؛ تصمیم علمی دربارهٔ پذیرش یا نشر به بررسی متخصص وابسته است.",
     "completion_criterion_fa": "چکیده، بحث و نتیجه پس از تثبیت تحلیل اصلاح و ادعاهای فاقد شاهد حذف یا محدود شوند؛ گزارش نهایی به شواهد وصل باشد.",
-    "assessed_at_utc": "2026-10-31T07:22:25.583841+00:00"
+    "assessed_at_utc": "2026-11-02T12:50:14.810332+00:00"
   }
 ]

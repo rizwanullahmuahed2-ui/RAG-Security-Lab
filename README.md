@@ -1,7 +1,8 @@
-# RAG Security Lab — نسخهٔ پژوهشی جاری
+# RAG Security Lab — نسخهٔ تحقیقی جاری
 
 **برای بررسی متخصص، از همین صفحه آغاز کنید.** مقاله، گزارش، یافته‌های معنایی و تمام شواهد لازم برای بازحساب در همین ریپو قرار دارند.
 
+- **[پاسخ بندبه‌بند به گزارش متخصص — PDF چهارصفحه‌ای](research/current/Response_to_Expert_FA.pdf)** · [فهرست ۲۹ لینک جداگانه](research/current/Link_Register_FA.md)
 - **[مقالهٔ اصلاح‌شده — PDF](research/current/RAG_Security_Article.pdf)** · [Word](research/current/RAG_Security_Article.docx)
 - **[گزارش تطبیق اصلاحات — PDF](research/current/Implementation_Report_FA.pdf)** · [Word](research/current/Implementation_Report_FA.docx)
 - **[یافته‌های بررسی دستی معنایی نویسنده: ۷۲ مورد](rag_security_revision_v2/manual_review/Author_Semantic_Findings_FA.md)**
@@ -16,15 +17,15 @@
 python rag_security_revision_v2/release/verify_evidence.py
 ```
 
-کلید API و نصب کتابخانهٔ اضافی لازم نیست. این دستور دو انجماد، هش‌ها، **۲٬۵۵۹ پاسخ مولد در سه نوبت**، اتصال به **۵٬۲۰۸ ردیف شرط**، **۱۹۶ سلول خلاصه**، **۴۸ شمار انتقال جفتی** و **۲۴۴ فایل مبنای تاریخی** را تطبیق می‌دهد. نتیجهٔ موفق با `verification: passed` مشخص می‌شود؛ فایل‌های انتشار تغییر نمی‌کنند.
+کلید API و نصب کتابخانهٔ اضافی لازم نیست. این دستور دو انجماد، هش‌ها، **۲۵۵۹ پاسخ مولد در سه نوبت**، اتصال به **۵۲۰۸ سطر شرط**، **۱۹۶ سلول خلاصه**، **۴۸ شمار انتقال جفتی** و **۲۴۴ فایل مبنای تاریخی** را تطبیق می‌دهد. نتیجهٔ موفق با `verification: passed` مشخص می‌شود؛ فایل‌های انتشار تغییر نمی‌کنند.
 
 ## دامنهٔ نتیجه‌ها
 
-C مطالعهٔ اصلی مولد با ۶۲ پرسش، ۶۲۰ متن پاک، کنترل هدفمند/نامرتبط/مرجع‌سازگار، کنترل مواجهه و تکرار در اهداف ثابت است. B به‌عنوان بازتحلیل تشخیصی پسینی و A به‌عنوان زمینهٔ تاریخی نگه داشته شده‌اند. آرشیو دقیق اجرای اصلی A بازیابی نشده و اجرای C جای آن معرفی نمی‌شود.
+C مطالعهٔ اصلی مولد با ۶۲ پرسش، ۶۲۰ متن پاک، کنترول هدفمند/نامرتبط/مرجع‌سازگار، کنترول مواجهه و تکرار در اهداف ثابت است. B به‌عنوان بازتحلیل تشخیصی پسینی و A به‌عنوان زمینهٔ تاریخی نگه داشته شده‌اند. آرشیف دقیق اجرای اصلی A بازیابی نشده و اجرای C جای آن معرفی نمی‌شود.
 
-نویسنده بررسی دستی معنایی ۷۲ مورد را گزارش کرده است: ۶۴ مورد اصلی شامل ۴۱ سازگار با منبع، ۱۶ مخالف، ۳ امتناع کامل و ۴ نامشخص؛ هشت مورد تشخیصی جدا بررسی شده‌اند. این شمارها دقت تمام سیستم یا درصد موفقیت معنایی کل حملات نیستند. یادداشت‌های کمکی دستیار با منشأ خود حفظ شده‌اند و جدول نمره‌های فردی انسانی ساختگی تولید نشده است.
+نویسنده بررسی دستی معنایی ۷۲ مورد را گزارش کرده است: ۶۴ مورد اصلی شامل ۴۱ سازگار با منبع، ۱۶ مخالف، ۳ امتناع کامل و ۴ نامشخص؛ هشت مورد تشخیصی جدا بررسی شده‌اند. این شمارها دقت تمام سیستم یا فیصد موفقیت معنایی کل حملات نیستند. یادداشت‌های کمکی دستیار با منشأ خود حفظ شده‌اند.
 
-چهار شکل قبلی حفظ شده و شکل نتایج C افزوده شده است. عنوان‌های PDF سیاه‌اند. فایل‌های مراحل پیشین برای حفظ تاریخچه و کنترل هش نگه داشته شده‌اند؛ روش جاری را مقاله و گزارش بخش بالا تعیین می‌کنند. داده‌های HotpotQA/Wikipedia با انتساب و شرایط منبع توزیع می‌شوند؛ متن‌های حمله صرفاً ساختگی و آزمایشی‌اند. کلید یا فایل `.env` در این انتشار وجود ندارد.
+چهار شکل قبلی حفظ شده و شکل نتایج C افزوده شده است. عنوان‌های PDF سیاه‌اند. فایل‌های مراحل پیشین برای حفظ تاریخچه و کنترول هش نگه داشته شده‌اند؛ روش جاری را مقاله و گزارش بخش بالا تعیین می‌کنند. دیتای HotpotQA/Wikipedia با انتساب و شرایط منبع توزیع می‌شوند؛ متن‌های حمله صرفاً ساختگی و آزمایشی‌اند. کلید یا فایل `.env` در این انتشار وجود ندارد.
 
 ---
 
@@ -82,7 +83,7 @@ python main.py --offline --experiment all --split test --seeds 17 42 91
 python -m pytest -q
 ```
 
-The default grid is five poison budgets (0, 10, 20, 50, 104) × four defenses, or 20 configurations per seed. Three seeds across all 364 questions produce 21,840 observations. `--experiment` also accepts `poisoning`, `reranking`, `source_filtering`, and `filtering` (both defenses). Use `--config path/to/config.yaml` for alternative settings; paths resolve from that file.
+The default grid is five poison budgets (0, 10, 20, 50, 104) × four defenses, or 20 configurations per seed. Three seeds across all 364 questions produce 21840 observations. `--experiment` also accepts `poisoning`, `reranking`, `source_filtering`, and `filtering` (both defenses). Use `--config path/to/config.yaml` for alternative settings; paths resolve from that file.
 
 A selection seed controls the attack-pool shuffle. With the same dataset and seed, a budget of 20 includes the first 10 passages plus 10 more. In repeated-target stress mode, copies of one assigned attack are duplicate evidence; changing the seed does not change their text. More injected passages may leave an answer unchanged when retrieval, defenses, or the finite context prevent additional exposure.
 

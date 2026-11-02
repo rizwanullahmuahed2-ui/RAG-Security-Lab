@@ -1,0 +1,312 @@
+{
+  "checked_at_utc": "2026-11-02T12:26:53.307049+00:00",
+  "verification_type": "Read-only assistant/programmatic cross-check; not independent human review or external replication",
+  "provided_expert_pdf_sha256": "60373fae288018a9afa01bde85760845c9968fd4b7a70e9d56f6db694a06e2d3",
+  "provided_expert_pdf_pages": 9,
+  "repo_base_commit": "3cd68d2442b3ef667f7d4ff36b34823874f87de6",
+  "sections": {
+    "3.1": {
+      "status": "implemented_for_B_C_with_historical_qualification",
+      "implemented": "Actual extractive A/current-workbench architecture distinguished from real API generator and neural embeddings in B/C. C archives2559normal replies,853payloads,3rounds,5208condition rows.",
+      "qualification": "Matching original A runtime and contemporaneous reason for each inactive proposed component were not recovered. Do not invent historical author intent.",
+      "paths": [
+        "rag_security_revision_v2/baseline/study_registry.json",
+        "rag_security_revision_v2/study_c/completion.json",
+        "rag_security_revision_v2/data/config.json",
+        "rag_security_revision_v2/history/reproducibility_decision.json"
+      ]
+    },
+    "3.2": {
+      "status": "input_lineage_and_documentation_done_source_truth_qualified",
+      "implemented": "A224documents/225chunks/364questions/104attack inputs available. Reconstruction records56legacy+168WDIobservations;336WDIquestions aretwoforms per observation plus28legacyquestions. Csource/provenance/schema/selection/exclusions archived.",
+      "qualification": "Reconstruction against saved WDI snapshots is not independent verification of all legacy sources, all A references or external-world truth. Paired question forms and shared corpus are dependent.",
+      "paths": [
+        "data/raw/documents.csv",
+        "data/raw/chunks.csv",
+        "data/raw/questions.csv",
+        "data/DATASET_CARD.md",
+        "research_phase/repo_audit/original_data_audit.json",
+        "rag_security_revision_v2/data/dataset_build_manifest.json"
+      ]
+    },
+    "3.3": {
+      "status": "attack_input_artifacts_available",
+      "implemented": "Original104Apoison passages and question/source relations are present; Ccomplete targeted/unrelated/benign pools, exact IDs/text/values/labels and120-word matching are supplied.",
+      "qualification": "Input availability does not recover the original A execution membership or independently verify every inherited reference/target proposition.",
+      "paths": [
+        "data/raw/poisoned_passages.csv",
+        "rag_security_revision_v2/data/insertions.json",
+        "rag_security_revision_v2/data/test_questions.json",
+        "rag_security_revision_v2/data/pair_audit.json"
+      ]
+    },
+    "3.4": {
+      "status": "executable_diagnostics_and_author_reported_case_inspection_done",
+      "implemented": "Old Bnumerical rule reproduced on1280rows withzero disagreements. New diagnostics separate concise value choice, quotation/negation/qualification/abstention flags and source support. Author supplies72-case report:64main with41consistent/16contradicted/3fullabstention/4undetermined plus8diagnostic cases, including2conflicting assertion-abstention cases.",
+      "qualification": "Author report is single-author retrospective source-relative inspection; no independent human inter-rater agreement or population semantic ASR is available. The original expert PDF does not explicitly require two independent reviewers. No per-case assistant labels may be relabelled as human ratings.",
+      "paths": [
+        "rag_security_revision_v2/evaluation/evaluator_v2.py",
+        "rag_security_revision_v2/evaluation/B_reanalysis_v2_summary.json",
+        "rag_security_revision_v2/manual_review/author_reported_findings.json",
+        "rag_security_revision_v2/manual_review/Author_Semantic_Findings_FA.md",
+        "rag_security_revision_v2/assistant_review/Case_Review_72.csv"
+      ]
+    },
+    "3.5": {
+      "status": "paired_and_case_analysis_implemented_with_bounded_claims",
+      "implemented": "Retrieval, insertion exposure, reference/target output and prevention/restoration/new failures are separate. Cstrict target-choice proxy37.6344%targeted,0%unrelated,20.9677%reranked; clean reference-choice59.1398%to45.6989%under reranking.",
+      "qualification": "These are automatic/source-relative outcomes, not certified factual correctness or universal security. Historical A values are not fresh reproducibility results.",
+      "paths": [
+        "rag_security_revision_v2/analysis/study_c/analysis.json",
+        "rag_security_revision_v2/analysis/study_c/paired_defense_outcomes.csv",
+        "rag_security_revision_v2/analysis/study_c/cases.jsonl",
+        "rag_security_revision_v2/reference_audit/B_reference_audit_summary.json"
+      ]
+    },
+    "3.6": {
+      "status": "assigned_label_intervention_done_operational_authentication_unimplemented",
+      "implemented": "Gate rule and constructor-supplied labels documented. Identical targeted text receives accepted labels in a separate condition; filter target-choice returns37.6344%versus0%withrejected labels. Retrieval-only required-support label-error test supplied.",
+      "qualification": "This is experimental metadata reassignment, not a penetration test against an institutional authentication/authorization/audit service. No document approval authority or ministry deployment was implemented.",
+      "paths": [
+        "rag_security_revision_v2/data/config.json",
+        "rag_security_revision_v2/study_c/contexts.jsonl",
+        "rag_security_revision_v2/study_c/retrieval_label_stress_summary.json"
+      ]
+    },
+    "3.7": {
+      "status": "fresh_fixed_target_dose_module_done_historical_membership_unrecovered",
+      "implemented": "Ckeeps62targets fixed for1/2/5identicalcopies; no-defense strict-target proxies37.6344%,53.7634%,96.7742%. Corpora/doses/selection/order and rounds archived separately.",
+      "qualification": "Cdoes not reproduce A0/10/30/60/104budget×17/42/91seedmembership. Three fresh generator rounds are not independent questions or the historical attack-selection seeds.",
+      "paths": [
+        "rag_security_revision_v2/protocol/study_c_protocol.json",
+        "rag_security_revision_v2/data/config.json",
+        "rag_security_revision_v2/analysis/study_c/summary.csv",
+        "rag_security_revision_v2/analysis/study_c/summary_by_round.csv"
+      ]
+    },
+    "3.8": {
+      "status": "C_failure_groups_controlled_exposure_and_repetition_done",
+      "implemented": "Predefined case groups preserve support-retained target outputs, exposed poison without target choice, prevention without reference restoration and accepted-label changes. Controlled contexts and fresh repetition are documented.",
+      "qualification": "Original3016rowrepetition archive remains unrecovered. New Cmodule is a separate experiment, not its replay. Case illustrations and author72sample do not define an overall human-calibrated attack-success rate.",
+      "paths": [
+        "rag_security_revision_v2/analysis/study_c/case_index.csv",
+        "rag_security_revision_v2/analysis/study_c/cases.jsonl",
+        "rag_security_revision_v2/data/controlled_contexts.json",
+        "rag_security_revision_v2/history/reproducibility_decision.json"
+      ]
+    }
+  },
+  "structural_sections": {
+    "4": "Current article/report rewritten and study boundaries separated; no scientific-publication-readiness certification is supplied.",
+    "6": "Method documentation, B recalculation, current C experimentation and bounded rewriting done; exact A output replay remains unresolved."
+  },
+  "original_section5_required_package_items": [
+    {
+      "id": "5.1",
+      "request": "Complete preparation/retrieval/defense/generation/evaluation code",
+      "artifacts": [
+        {
+          "path": "rag_security_revision_v2/runner/run_study.py",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/runner/run_study.py"
+        },
+        {
+          "path": "rag_security_revision_v2/data/build_followup_dataset.py",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/data/build_followup_dataset.py"
+        },
+        {
+          "path": "rag_security_revision_v2/analysis/analyze_study_c.py",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/analysis/analyze_study_c.py"
+        }
+      ],
+      "qualification": "Current B/C code is supplied; exact matching historical A runtime is not recovered."
+    },
+    {
+      "id": "5.2",
+      "request": "Original documents/chunks/questions/references",
+      "artifacts": [
+        {
+          "path": "data/raw",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/tree/main/data/raw"
+        },
+        {
+          "path": "rag_security_revision_v2/data",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/tree/main/rag_security_revision_v2/data"
+        }
+      ],
+      "qualification": "Canonical inputs exist; full independent legacy fact verification is not claimed."
+    },
+    {
+      "id": "5.3",
+      "request": "Poison texts/IDs/targets/values",
+      "artifacts": [
+        {
+          "path": "data/raw/poisoned_passages.csv",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/data/raw/poisoned_passages.csv"
+        },
+        {
+          "path": "rag_security_revision_v2/data/insertions.json",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/data/insertions.json"
+        }
+      ],
+      "qualification": "Ainput attack relations present; no claim of recovered historical output membership."
+    },
+    {
+      "id": "5.4",
+      "request": "Parameters/configuration/seeds",
+      "artifacts": [
+        {
+          "path": "rag_security_revision_v2/data/config.json",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/data/config.json"
+        },
+        {
+          "path": "rag_security_revision_v2/protocol/study_c_protocol.json",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/protocol/study_c_protocol.json"
+        },
+        {
+          "path": "config.yaml",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/config.yaml"
+        }
+      ],
+      "qualification": "Current workbench config is not the exact missing principal A config."
+    },
+    {
+      "id": "5.5",
+      "request": "Raw per-question/per-defense/per-dose outputs",
+      "artifacts": [
+        {
+          "path": "rag_security_revision_v2/study_c/responses.jsonl",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/study_c/responses.jsonl"
+        },
+        {
+          "path": "rag_security_revision_v2/study_c/contexts.jsonl",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/study_c/contexts.jsonl"
+        },
+        {
+          "path": "rag_security_revision_v2/analysis/study_c/scored_rows.csv",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/analysis/study_c/scored_rows.csv"
+        },
+        {
+          "path": "revision/experiment/responses.jsonl",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/revision/experiment/responses.jsonl"
+        }
+      ],
+      "qualification": "B/Ccomplete archives supplied; A21840principal/3016repetition outputs remain unrecovered."
+    },
+    {
+      "id": "5.6",
+      "request": "Executable metrics",
+      "artifacts": [
+        {
+          "path": "rag_security_revision_v2/evaluation/evaluator_v2.py",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/evaluation/evaluator_v2.py"
+        },
+        {
+          "path": "rag_security_revision_v2/analysis/analyze_study_c.py",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/analysis/analyze_study_c.py"
+        }
+      ],
+      "qualification": "Automatic definitions do not establish full semantic truth."
+    },
+    {
+      "id": "5.7",
+      "request": "Software/hardware/dependencies",
+      "artifacts": [
+        {
+          "path": "rag_security_revision_v2/protocol/client_environment.json",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/protocol/client_environment.json"
+        },
+        {
+          "path": "rag_security_revision_v2/protocol/client_hardware_observation.json",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/protocol/client_hardware_observation.json"
+        },
+        {
+          "path": "rag_security_revision_v2/release/requirements-reanalysis.txt",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/release/requirements-reanalysis.txt"
+        }
+      ],
+      "qualification": "Provider hardware and exact historical environment remain unknown."
+    },
+    {
+      "id": "5.8",
+      "request": "Data provenance/extraction/source review",
+      "artifacts": [
+        {
+          "path": "rag_security_revision_v2/data/source_dataset_metadata.json",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/data/source_dataset_metadata.json"
+        },
+        {
+          "path": "rag_security_revision_v2/data/dataset_build_manifest.json",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/data/dataset_build_manifest.json"
+        },
+        {
+          "path": "data/DATASET_CARD.md",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/data/DATASET_CARD.md"
+        }
+      ],
+      "qualification": "Saved-source agreement is not external truth certification."
+    },
+    {
+      "id": "5.9",
+      "request": "Proposed versus actual architecture",
+      "artifacts": [
+        {
+          "path": "rag_security_revision_v2/baseline/study_registry.json",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/baseline/study_registry.json"
+        },
+        {
+          "path": "research/current/RAG_Security_Article.pdf",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/research/current/RAG_Security_Article.pdf"
+        }
+      ],
+      "qualification": "Exact reasons for historical component omissions absent a decision record remain unknown."
+    },
+    {
+      "id": "5.10",
+      "request": "Label and repetition supplementary methods",
+      "artifacts": [
+        {
+          "path": "rag_security_revision_v2/protocol/study_c_protocol.json",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/protocol/study_c_protocol.json"
+        },
+        {
+          "path": "rag_security_revision_v2/study_c/retrieval_label_stress_summary.json",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/study_c/retrieval_label_stress_summary.json"
+        },
+        {
+          "path": "rag_security_revision_v2/analysis/study_c/summary.csv",
+          "url": "https://github.com/rizwanullahmuahed2-ui/RAG-Security-Lab/blob/main/rag_security_revision_v2/analysis/study_c/summary.csv"
+        }
+      ],
+      "qualification": "Cfresh modules supplied; old repetition archive remains unrecovered."
+    }
+  ],
+  "critical_data_validity_B": {
+    "n": 64,
+    "reference_statuses": {
+      "accepted_relative_to_source": 53,
+      "ambiguous": 5,
+      "needs_correction": 6
+    },
+    "target_statuses": {
+      "source_contradicted": 54,
+      "not_proven_false": 10
+    },
+    "overlap_note": "Reference statuses and target-validity statuses are different axes and overlap. Do not add5+6+10as21distinct defective questions.",
+    "retrospective_sensitivity_n": 50
+  },
+  "A_archives_unrecovered": [
+    21840,
+    3016
+  ],
+  "study_C": {
+    "questions": 62,
+    "unique_payloads": 853,
+    "fresh_responses": 2559,
+    "rounds": 3,
+    "condition_rows": 5208,
+    "normal_stops": 2559,
+    "truncations": 0
+  },
+  "no_new_D_study": "No broader-model/dataset D experiment exists in the inspected evidence. It must not be reported as completed.",
+  "tracker_note": "Some remaining-work fields in the current67tracker still contain earlier human-pending language. Root notified to refresh wording accurately; do not mark all67scientifically closed."
+}

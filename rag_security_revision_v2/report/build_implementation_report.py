@@ -11,7 +11,7 @@ import subprocess
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
-from review_addendum import apply_report_addendum
+from review_addendum import apply_report_addendum, dari_text
 
 ROOT = Path(__file__).resolve().parent
 WORK = ROOT.parent
@@ -222,6 +222,18 @@ def build():
                       'نویسنده بررسی۷۲مورد را گزارش کرده است:۳۲B،۳۲C و۸تشخیصی؛ نمونهٔ اصلی۶۴مورد با۴۱سازگار،۱۶مخالف،۳امتناع کامل و۴نامشخص و نمونه‌های معنایی ارائه شد.',
                       'manual_review/author_reported_findings.json; assistant_review/Case_Review_72.csv; manuscript/Working_Manuscript_v2.md',
                       'شمارها مربوط به نمونهٔ پسینی است؛ توافق بین ارزیابان یا درصد موفقیت معنایی برای کل آزمایش ادعا نشده است.']
+    if c is not None:
+        for rid in ['3.1.5','3.5.4','3.6.4','4.5']:
+            updates[rid][3]='ادعاها با نتیجه‌های ثبت‌شده و بررسی موردی نویسنده هماهنگ شده‌اند؛ مصونیت عمومی، احراز اصالت عملیاتی یا تعمیم به مدل‌های دیگر ادعا نشده است.'
+        for rid in ['3.5.2','3.5.3','3.8.1','3.8.2','3.8.3']:
+            updates[rid][3]='تحلیل C و یافته‌های بررسی۷۲موردی نویسنده موجودند؛ شمارهای نمونهٔ معنایی به تمام پاسخ‌ها تعمیم داده نشده و نمره‌های آرشیوی بدون نام نسخه جایگزین نشده‌اند.'
+        for rid in ['4.1','4.2','4.3','4.4','6.5']:
+            updates[rid][0]='بازنویسی و بازسازی از شواهد موجود انجام‌شده'
+            updates[rid][3]='نسخهٔ مقاله و گزارش با تحلیل منطبق بازسازی شده است؛ تصمیم علمی دربارهٔ پذیرش یا نشر به بررسی متخصص وابسته است.'
+        updates['3.3.8']=['ویژگی درج‌ها مستند و کنترل‌های متناظر اجرا شده',
+                          'در B/C تعداد، طول درج، قالب و برچسب‌ها ثبت شده‌اند؛ در C درج‌های۱۲۰واژه‌ای و کنترل مواجههٔ جدا اجرا شده است.',
+                          'data/dataset_build_manifest.json; data/insertions.json; data/controlled_contexts.json; analysis/study_c/analysis.json',
+                          'هم‌طولی به معنی هم‌معنایی یا برابری بازیابی نیست؛ دامنهٔ قالب حمله در مقاله محدود بیان شده است.']
     rows = []
     for req in mapping['requirements']:
         rid = req['requirement_id']
@@ -235,6 +247,10 @@ def build():
                      'remaining_work_or_limit_fa': remaining,
                      'completion_criterion_fa': req['completion_criterion_fa'], 'assessed_at_utc': now})
     assert len(rows) == len({r['requirement_id'] for r in rows}) == 67
+    for row in rows:
+        for key in list(row):
+            if key.endswith('_fa'):
+                row[key]=dari_text(row[key])
     with (ROOT/'Implementation_Progress_67_FA.csv').open('w', encoding='utf-8-sig', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=list(rows[0])); writer.writeheader(); writer.writerows(rows)
     (ROOT/'Implementation_Progress_67_FA.json').write_text(json.dumps(rows, ensure_ascii=False, indent=2))
@@ -338,7 +354,7 @@ Security of Retrieval-Augmented Generation Against Targeted Knowledge-Base Poiso
 
 **مبنای گزارش:** ملاحظات متخصص، گزارش ریسرچ، پلان اجرایی و فایل‌های شاهد هر مطالعه.
 
-**تاریخ ساخت به وقت UTC:** {display_date}
+**رسید نسخه:** زمان دقیق ساخت و هش فایل‌های مبنا در رسید همراه ثبت شده است.
 
 **ماهیت سند:** گزارش وضعیت واقعی تطبیق اصلاحات. آماده‌بودن ابزار، فورم یا متن کاری با تکمیل آزمایش و داوری یکسان محسوب نمی‌شود.
 

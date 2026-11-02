@@ -1,6 +1,10 @@
 """Integrate the author's completed source-based semantic case report."""
 import json
 import re
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"release"))
+from dari_style import dari_text
 
 def apply_report_addendum(content,work):
  a=json.loads((work/'protocol/author_manual_review_statement.json').read_text())
@@ -49,4 +53,4 @@ def apply_report_addendum(content,work):
  content=content.replace('منتظر داوری واقعی انسان','بررسی موردی نویسنده در دامنهٔ جاری ثبت شده')
  content=content.replace('| evaluation/human_review_packet و coordinator_only | فورم اولیهٔ جدا از کلید شرط و فورم مرحلهٔ بعد |','| manual_review/author_reported_findings.json | گزارش تجمیعی نویسنده از۷۲مورد و یافته‌های معنایی |')
  content=content.replace('| evaluation/study_c_review/ | قاب مستقل داوری C و کلید خصوصی اتصال به شرایط و نوبت‌ها |','| assistant_review/selection_freeze.json و pass1_input_*.json | شناسهٔ نمونه‌ها و متن کامل پرسش، پاسخ و شواهد بررسی‌شده |')
- return content
+ return dari_text(content)
