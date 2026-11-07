@@ -27,4 +27,4 @@ python -m streamlit run app.py
 
 Set Injected passages to 0, choose no defense, and run `what is capital of afghanistan`. The first retrieved passage should be `CHK-002-01`, and the answer should begin `Kabul is the national capital of Afghanistan`.
 
-Older saved benchmark runs remain unchanged. The deployment keeps backups of replaced files under `backups/clean-answer-fix-<timestamp>/`.
+Older saved benchmark runs remain unchanged. The deployment keeps backups of replaced files in `research_phase/repo_snapshot/backups/` and Git history.

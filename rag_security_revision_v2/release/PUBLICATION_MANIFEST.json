@@ -8,7 +8,7 @@
   "current_review_scope": "See current article and author-reported manual findings; archived optional review-protocol definitions are retained only to preserve frozen input hashes.",
   "files_sha256": {
     ".github/workflows/research-evidence.yml": "052a733979d67a5bfcf1e4cd80b9b1ade90d70902a7746d9c36c855ac31d202e",
-    "README.md": "124fc325aaac8d5efd563ac524c95f534b859427ae61422c8d8cfc8e0ae32fb7",
+    "README.md": "856de55895c55ab573d0e6c7854044d4127c712bf27b8dcefab2a9dd60be1ccc",
     "final_submission/Message_to_Supervisor_FA.txt": "67b9706d6a4c38ff8f39f89806d0934ce6561dd3e3b8afa1d158cbc617a67c0e",
     "final_submission/RAG_Security_Research_Final.docx": "ac1131f68adeac624f4cc35191cf99a2e4dc7fccb84effc8d75d94b2c5502622",
     "final_submission/RAG_Security_Research_Final.pdf": "1e34c849fa0361c69f918d0685f45db6205b59a4c794be7ec090c8b15b3eb8d1",

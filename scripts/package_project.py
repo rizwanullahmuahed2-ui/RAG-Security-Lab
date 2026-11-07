@@ -10,7 +10,7 @@ def package():
     files = set()
     for pattern in ("*.py", "*.md", "*.yaml", "requirements*.txt", "documents.csv", ".gitignore"):
         files.update(ROOT.glob(pattern))
-    for folder in ("src", "tests", "scripts", "data", ".github"):
+    for folder in ("src", "tests", "scripts", "data", "docs", "research", ".github", ".streamlit"):
         files.update(p for p in (ROOT / folder).rglob("*") if p.is_file()
                      and not {"__pycache__", "chroma", "chroma_test"}.intersection(p.parts))
     latest = ROOT / "results/latest.json"

@@ -28,4 +28,4 @@ An exhaustive 1,092-response audit covered every one of the 364 questions in thr
 
 Every source-filtered answer exactly matched the same question's undefended clean answer, and zero poison passages reached the filtered context. The 27 successes include questions already incorrect at baseline; do not equate this count with the 18 net lost answer matches. Nine clean answer-match failures remain. The scoring is lexical, the answerer is an offline extractor, and these are diagnostic results, not new real-LLM paper results.
 
-Records, source/data hashes, and the generated attack pool are saved in `results/targeted-mode-validation/`. Restart Streamlit after installation using `python -m streamlit run app.py` from this project directory. Old files are backed up under `backups/targeted-question-fix-<timestamp>/`.
+Records, source/data hashes, and the generated attack pool are saved in `results/targeted-mode-validation/`. Restart Streamlit after installation using `python -m streamlit run app.py` from this project directory. Old files are backed up in `research_phase/repo_snapshot/backups/` and Git history.
